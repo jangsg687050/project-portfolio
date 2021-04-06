@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>컨쇼마트</title>
+
+	<!-- 파비콘 -->
+	<link rel="shortcut icon" href="/assets/icons/favicon.ico">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/user/lib/css/reset.min.css">
+	<link rel="stylesheet" href="/user/lib/css/fonts.css">
+	<link rel="stylesheet" href="/user/lib/css/common.css">
+    <link rel="stylesheet" href="/user/lib/css/style_sg.css">
+    <link rel="stylesheet" href="/user/lib/css/style_sb.css">
+
+	<!-- JS -->
+	<script src="/user/lib/js/jquery-3.2.1.min.js"></script>
+	<script src="/user/lib/js/script.js"></script>
+</head>
+<body>
+	<!-- header -->
+	<header id="header">
+		<div class="header-st1 gry">
+			<a class="back" href="javascript:;"><img src="/user/images/common/ic_back.png" alt=""></a>
+			<strong>유사도 검사</strong>
+		</div>
+	</header>
+	<!-- //header -->
+
+	<!-- contents -->
+	<section id="contents">
+		<!-- 서브 -->
+		<div class="similarity_list">
+			<div class="similarity_list_bg">
+				<dl>
+					<dt>검사할 활동과</dt>
+					<dd>자료 입력 방식을 선택해주세요.</dd>
+				</dl>
+			</div>
+
+			<div class="similarity_list_select">
+				<strong class="txt-tit">검사할 활동 선택</strong>
+				<div class="flex_select">
+					<label class="radio_similarity" for="r1">
+						<input id="r1" type="radio" name="similarity" value="" checked>
+						<span class="chk">자율 활동</span>
+					</label>
+					<label class="radio_similarity" for="r7">
+						<input type="radio" id="r7" name="similarity" value=""><span class="chk">진로 활동</span>
+					</label>
+					<label class="radio_similarity" for="r2">
+						<input type="radio" id="r2" name="similarity" value=""><span class="chk">동아리 활동</span>
+					</label>
+					<label class="radio_similarity" for="r3">
+						<input type="radio" id="r3" name="similarity" value=""><span class="chk">세특(국어)</span>
+					</label>
+					<label class="radio_similarity" for="r4">
+						<input type="radio" id="r4" name="similarity" value=""><span class="chk">세특(수학)</span>
+					</label>
+					<label class="radio_similarity" for="r5">
+						<input type="radio" id="r5" name="similarity" value=""><span class="chk">세특(영어)</span>
+					</label>
+					<label class="radio_similarity" for="r6">
+						<input type="radio" id="r6" name="similarity" value=""><span class="chk">세특(사회)</span>
+					</label>
+					<label class="radio_similarity" for="r8">
+						<input type="radio" id="r8" name="similarity" value=""><span class="chk">세특(과학)</span>
+					</label>
+				</div>	
+			</div>
+
+			<div class="gry-line">
+			</div>
+
+			<div class="similarity_list_activity">
+				<strong class="txt-tit">입력 방식 선택</strong>
+				<ul>
+					<li>	
+						<label class="radio_activity_list chk" for="r9">
+							<input class="" type="radio" id="r9" name="activity_list" value="" checked>
+							<span class="chk">
+							<em class="direct_input"></em>
+							직접 입력
+							</span>
+						</label>
+					</li>
+					<li>
+						<label class="radio_activity_list chk" for="r10">
+							<input class="" type="radio" id="r10" name="activity_list" value="">
+							<span class="chk">
+							<em class="gallery"></em>
+							사진 선택</span>
+						</label>
+					</li>
+				</ul>
+				<!-- <ul>
+					<li><a href="javascript:;">
+							<div class="direct_input"></div>
+							<span>직접 입력</span>
+						</a>
+					</li>
+					<li><a href="javascript:;">
+							<div class="select_file"></div>
+							<span>직접 입력</span>
+						</a>
+					</li>
+					<li><a href="javascript:;">
+							<div class="gallery"></div>
+							<span>사진 선택</span>
+						</a>
+					</li>
+					<li><a href="javascript:;">
+							<div class="camera"></div>
+							<span>직접 입력</span>
+						</a>
+					</li>
+				</ul> -->
+			</div>
+
+			<div class="gry-line">
+			</div>
+
+			<div class="activity_con">
+				<ul class="similarity_reference_list">
+					<li>파일, 사진 첨부의 경우 OCR 판독 시 해상도, 밝기, 각도 등의 문제로 인식률이 저하 될 수 있습니다. 검사 시작 전에 변환된 텍스트를 확인해주세요.</li>
+				</ul>
+			</div>
+			<div class="similarity_list_btn">
+				<a class="btn-or" href="javascript:;">다음</a>
+			</div>
+
+		</div>
+		<!-- //서브 -->
+	</section>
+	<!-- //contents -->
+
+	<!-- footer -->
+	<footer id="footer">
+		
+	</footer>
+	<!-- //footer -->
+</body>
+</html>

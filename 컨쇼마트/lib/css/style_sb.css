@@ -1,0 +1,71 @@
+/*
+	프로젝트명 : 컨쇼마트
+	작업자 : 서샛별
+*/
+
+/* 헤더 */
+#header { position: relative; height: 15.55556vw; }
+#header .logo { position: absolute; left: 4.4444vw; top: 3.61111vw; }
+#header .logo > a { display: block; }
+#header .logo img { width: 23.61111vw; height: auto; }
+#header .menu-link { position: absolute; display: block; padding: 2.22222vw; right: 2.22222vw; top: 3.33333vw; text-indent: 100%; white-space:nowrap; overflow: hidden; }
+#header .menu-link span { display: block; width: 5.55556vw; height: 0.55556vw; background: #111; margin-bottom: 1.38889vw; }
+#header .menu-link span:last-child { margin-bottom: 0; }
+
+/* 메뉴 */
+#menu { display: none; position: fixed; left: 0; top: 0; right: 0; bottom: 0; width: 100%; height: 100%; background: #fff; z-index: 2021; overflow: auto; }
+
+/* 메인 */
+
+#main { padding: 5.55556vw 0 8.55556vw; }
+#main .main-title { position: relative; font-size: 6.11111vw; font-weight: bold; margin-bottom: 4.72222vw; color: #000; }
+#main .main-title.main-tit-logo { padding-left: 11.6667vw; }
+#main .main-title.main-tit-logo:before{ content: ""; position: absolute; left: 0; display: block; background: url(/user/images/main/ico_iclogo.png)no-repeat center; width: 9.1667vw; height: 9.1667vw; background-size: contain; }
+#main .main-section1 { padding-bottom: 10.55556vw; }
+#main .main-section1 .banner-list > li { margin-bottom: 4.72222vw; }
+#main .main-section1 .banner-list > li:last-child { margin-bottom: 0; }
+#main .main-section1 .banner-list > li > a { display: block; overflow: hidden; height: 39.72222vw; margin-bottom: 0; padding: 8.05556vw 5.55556vw; border-radius: 3.33333vw; box-shadow: 0 .83333vw 1.94444vw 0 rgb(10 1 2 / 12%); }
+#main .main-section1 .banner-list > li.list1 > a { padding-right: 33.33333vw; background: url(/user/images/main/icon_banner1.png) right 5.55556vw center / 25vw auto no-repeat; }
+#main .main-section1 .banner-list > li.list2 > a { padding-left: 41.66667vw; background: url(/user/images/main/icon_banner2.png) left 5.55556vw center / 30.55556vw auto no-repeat; }
+#main .main-section1 .banner-list .banner-title { font-size: 5vw; font-weight: bold; display: block; margin-bottom: 4.16667vw; color: #222; }
+#main .main-section1 .banner-list .banner-title b { color: #f77d33; }
+#main .main-section1 .banner-list .banner-desc { font-size: 3.88889vw; text-align: center; color: #424668; }
+#main .main-section2 { margin-bottom: 6.11111vw; }
+#main .main-section2 .free-coupon { font-size: 3.61111vw; font-weight: 500; position: relative; display: block; padding: 4.72222vw 9.72222vw 4.72222vw 5.55556vw; color: #222; border-radius: 3.33333vw; background: #f8f8f8; }
+#main .main-section2 .free-coupon:after { position: absolute; top: 50%; right: 5.55556vw; display: block; width: 1.66667vw; height: 2.77778vw; margin-top: -1.38889vw; content: ''; background: url(/user/images/common/ic_more2.png) center / contain no-repeat; }
+#main .main-section2 .free-coupon span { position: relative; padding-left: 8.3333vw; }
+#main .main-section2 .free-coupon span:before { position: absolute; top: 50%; left: 0; width: 6.3889vw; height: 5.0000vw; margin-top: -2.63889vw; content: ''; background: url(/user/images/main/ic_book.png) left center no-repeat; background-size: contain; background-color: transparent; }
+#main .main-section2 .similarity-list { display: flex; flex-wrap:wrap; margin: 0 -1.3889vw; margin-bottom: 4.5vw; }
+#main .main-section2 .similarity-list > li { width: 50%; padding: 0 1.3889vw; }
+#main .main-section2 .similarity-list .item { position: relative; display: block; border-radius:3.33333vw; overflow: hidden; font-weight: 500; color: #fff; }
+#main .main-section2 .similarity-list .item:before { content:""; display: block; padding-top: 94.34%; }
+#main .main-section2 .similarity-list .item .content { position: absolute; left: 0; right: 0; top: 0; bottom: 0; padding: 5.00000vw; }
+#main .main-section2 .similarity-list > li.list1 .item { background: #f77d33; }
+#main .main-section2 .similarity-list > li.list2 .item { background: #6c59db; }
+#main .main-section2 .similarity-list .item-title { display: block; font-size: 4.16667vw; line-height: 1.4; }
+#main .main-section2 .similarity-list .item-title:before { content:""; display: block; width: 16.38889vw; height: 16.11111vw; background-size: contain; background-repeat: no-repeat; background-position: center; margin-bottom: 4.16667vw; }
+#main .main-section2 .similarity-list > li.list1 .item .item-title:before { background-image: url(/user/images/main/ic_similarity1.png); }
+#main .main-section2 .similarity-list > li.list2 .item .item-title:before { background-image: url(/user/images/main/ic_similarity2.png); }
+#main .main-section2 .similarity-list .item-title:after { content:""; display: inline-block; width: 3.61111vw; height: 2.50000vw; background: url(/user/images/common/ic_more3.png) no-repeat right center; background-size: contain; }
+#main .main-section3 .board-menu-list-wrap {  }
+#main .main-section3 .board-menu-list { position: relative; display: flex; }
+#main .main-section3 .board-menu-list:before { content:""; display: block; position: absolute; bottom: 0; width: 100vw; height: 0.27778vw; left: 0; right: 0; background: #eee; }
+#main .main-section3 .board-menu-list > li {  }
+#main .main-section3 .board-menu-list > li > a { position: relative; display: block; font-weight: bold; font-size: 4.72222vw; color: #bbb; padding: 0 3.61111vw; }
+#main .main-section3 .board-menu-list > li > a > span { position: relative; display: block; padding: 4.16667vw 0; }
+#main .main-section3 .board-menu-list > li.active > a { color: #000; }
+#main .main-section3 .board-menu-list > li.active > a span {  }
+#main .main-section3 .board-menu-list > li.active > a span:after { content:""; left: 0; right: 0; position: absolute; bottom: 0; width: 100%; height: 0.55556vw; background: #000; }
+#main .main-section3 .board-view-list-wrap { margin: 2.77778vw 0; }
+#main .main-section3 .board-view-list {  }
+#main .main-section3 .board-view-list > li {  }
+#main .main-section3 .board-view-list > li > a { display: block; padding: 3.33333vw 4.44444vw; }
+#main .main-section3 .board-view-list .board-title { display: block; font-size: 3.88889vw; font-weight: 500; color: #333; margin-bottom: 1.38889vw; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#main .main-section3 .board-view-list .board-info { display: flex; flex-wrap:wrap; color: #999; margin: 0 -2.77778vw; }
+#main .main-section3 .board-view-list .board-info > li { position: relative; color: #999; font-size: 3.33333vw; padding: 0 2.77778vw; }
+#main .main-section3 .board-view-list .board-info > li:after { position: absolute; right: 0; top: 50%; margin-top: -1.66667vw; content:""; display: block; width: 0.27778vw; height: 3.33333vw; background: #d5d5d5; }
+#main .main-section3 .board-view-list .board-info > li:last-child:after { display: none; }
+#main .main-section3 .board-view-list .board-info > li.cate-notice { color: #f77d33; }
+#main .main-section3 .notice-more { display: block; font-size: 3.61111vw; font-weight: 500; color: #f77d33; text-align: center; background: #fbefe7; border-radius:3.33333vw; height: 12.50000vw; line-height: 12.50000vw; }
+#main .main-section3 .notice-more span {  }
+#main .main-section3 .notice-more span:after { content:""; display: inline-block; width: 3.88889vw; height: 2.22222vw; background: url(/user/images/common/ic_more4.png) no-repeat right center; background-size: contain; }
