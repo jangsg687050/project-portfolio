@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>recogAi</title>
+
+
+ <!-- CSS Files -->
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/fonts.css" />
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/swiper.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
+<!--JS Files -->
+<script type="text/javascript" src="js/html5.js"></script>
+<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/ui.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+
+
+</head>
+
+<body>
+<!-- header start -->
+<header id="pub_header">
+	<div class="top_bar"><!--top_bar-->
+		<a href="#!" class="logo"></a>
+		<div class="main_header"><!--main_menu1-->
+			<ul class="depth_01">
+				<li>
+					<a href="#">About</a>
+					<div class="sub_menu_wrap">
+						<ul>
+							<li><a href="javascript:;">소개및 비전</a></li>
+							<li><a href="javascript:;">연혁</a></li>
+							<li><a href="javascript:;">cI</a></li>
+							<li><a href="javascript:;">오시는 길</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">Technology</a>
+					<div class="sub_menu_wrap">
+						<ul>
+							<li><a href="javascript:;">번호인식 엔진</a></li>
+							<li><a href="javascript:;">차량추적</a></li>
+							<li><a href="javascript:;">행동인식</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">Notice</a>
+					<div class="sub_menu_wrap">
+						<ul>
+							<li><a href="javascript:;">새소식</a></li>
+							<li><a href="javascript:;">연구개발성과</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">Content</a>
+					<div class="sub_menu_wrap">
+						<ul>
+							<li><a href="javascript:;">문의하기</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="flex-wrap">
+			<div class="incheon_uni">
+			</div>
+			<div class="main_header_btn">
+				<div class="gnb_btn">
+					<a class="main_nav" onclick="main_navToggle(this);"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="main_menu"><!-- main_menu2 -->
+		<div class="subl-menu-pc">		
+			<div class="flex-place">
+				<ul>
+					<li class="m-tit active">
+						<div>
+							01
+							<a href="javascript:;">About</a>
+						</div>
+						<ul class="subl-menu_sub">
+							<li><a href="javascript:;">소개및 비전</a></li>
+							<li><a href="javascript:;">연혁</a></li>
+							<li><a href="javascript:;">cI</a></li>
+							<li><a href="javascript:;">오시는 길</a></li>
+						</ul>
+					</li>
+					<li class="m-tit">
+						<div>
+							02
+							<a href="javascript:;">Technology</a>
+						</div>
+						<ul class="subl-menu_sub">
+							<li><a href="javascript:;">번호인식 엔진</a></li>
+							<li><a href="javascript:;">차량추적</a></li>
+							<li><a href="javascript:;">행동인식</a></li>
+						</ul>
+					</li>
+					<li class="m-tit">
+						<div>
+							03
+							<a href="javascript:;">Notice</a>
+						</div>
+						<ul class="subl-menu_sub">
+							<li><a href="javascript:;">새소식</a></li>
+							<li><a href="javascript:;">연구개발성과</a></li>
+						</ul>
+					</li>
+					<li class="m-tit">
+						<div>
+							04
+							<a href="javascript:;">Content</a>
+						</div>
+						<ul class="subl-menu_sub">
+							<li><a href="javascript:;">문의하기</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="moble-menu" style="display: block;"><!-- Mobile menu -->
+			<div class="subl-menu">
+				<ul>
+					<li class="active"><a href="javascript:;">About</a>
+						<ul class="subl-menu_sub">
+							<li><a href="javascript:;">소개및 비전</a></li>
+							<li><a href="javascript:;">연혁</a></li>
+							<li><a href="javascript:;">cI</a></li>
+							<li><a href="javascript:;">오시는 길</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">Technology</a>
+						<ul class="subl-menu_sub">
+							<li><a href="javascript:;">번호인식 엔진</a></li>
+							<li><a href="javascript:;">차량추적</a></li>
+							<li><a href="javascript:;">행동인식</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:;">Notice</a>                   
+						<ul class="subl-menu_sub">
+							<li><a href="javascript:;">새소식</a></li>
+							<li><a href="javascript:;">연구개발성과</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">Contact</a>
+						<ul class="subl-menu_sub">
+							<li><a href="javascript:;">문의하기</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="dim"></div>
+	</div>
+
+</header>
+
+<!-- banner -->
+<div class="banner">
+<!-- Swiper -->
+		<div class="swiper-container swiper-scale-effect">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div>
+						<div class="title" data-swiper-parallax="-300">We are recogAI.<div class="line"></div></div>
+						<div class="subtitle" data-swiper-parallax="-200"><em>"</em>We can recognize objects by using computer vision<br>and deep learning technologies.</div>
+					</div>
+					<div class="slide1 swiper-slide-cover"></div>
+					 <div>Slide 1</div>
+				</div>
+				<div class="swiper-slide">
+					<div>
+						<div class="title" data-swiper-parallax="-300">We are recogAI.<div class="line"></div></div>
+						<div class="subtitle" data-swiper-parallax="-200"><em>"</em>We can recognize objects by using computer vision<br>and deep learning technologies.</div>
+					</div>
+					<div class="slide2 swiper-slide-cover"></div>
+					 <div>Slide 2</div>
+				</div>
+				<div class="swiper-slide">
+					<div>
+						<div class="title" data-swiper-parallax="-300">We are recogAI.<div class="line"></div></div>
+						<div class="subtitle" data-swiper-parallax="-200"><em>"</em>We can recognize objects by using computer vision<br>and deep learning technologies.</div>
+					</div>
+					<div class="slide3 swiper-slide-cover"></div>
+					 <div>Slide 3</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Progressbar -->
+		<div class="swiper-progress-bar">
+			<div class="num num_top">01</div>
+			<div class="swiper-progress-bar-wrap ico">
+				<span class="slide_progress-bar"></span>
+			</div>
+			<div class="num num_bottom">
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="notice-wrap">
+	<div class="notice">
+		<div class="notice-subwrap">
+			<div class="notice-icon">
+				<span>Notice</span>
+			</div>
+			<div class="swiper-container notice-con-wrap swiper-container1">
+				<div class="swiper-wrapper">
+					<div class="notice-con swiper-slide">
+						<a href="#!">레코그아이에서 공지사항을 알려드립니다.</a>
+						<em class="date">2021-03-01</em>
+					</div>
+					<div class="notice-con swiper-slide">
+						<a href="#!">레코그아이에서 공지사항을 알려드립니다.11</a>
+						<em class="date">2021-03-01</em>
+					</div>
+					<div class="notice-con swiper-slide">
+						<a href="#!">레코그아이에서 공지사항을 알려드립니다.22</a>
+						<em class="date">2021-03-01</em>
+					</div>
+					<div class="notice-con swiper-slide">
+						<a href="#!">레코그아이에서 공지사항을 알려드립니다.33</a>
+						<em class="date">2021-03-01</em>
+					</div>
+					<div class="notice-con swiper-slide">
+						<a href="#!">레코그아이에서 공지사항을 알려드립니다.44</a>
+						<em class="date">2021-03-01</em>
+					</div>
+					<div class="notice-con swiper-slide">
+						<a href="#!">레코그아이에서 공지사항을 알려드립니다.55</a>
+						<em class="date">2021-03-01</em>
+					</div>
+					<div class="notice-con swiper-slide">
+						<a href="#!">레코그아이에서 공지사항을 알려드립니다.66</a>
+						<em class="date">2021-03-01</em>
+					</div>
+					<div class="notice-con swiper-slide">
+						<a href="#!">레코그아이에서 공지사항을 알려드립니다.77</a>
+						<em class="date">2021-03-01</em>
+					</div>
+					<div class="notice-con swiper-slide">
+						<a href="#!">레코그아이에서 공지사항을 알려드립니다.88</a>
+						<em class="date">2021-03-01</em>
+					</div>
+					<div class="notice-con swiper-slide">
+						<a href="#!">레코그아이에서 공지사항을 알려드립니다.99</a>
+						<em class="date">2021-03-01</em>
+					</div>
+				</div>
+			</div>
+			<div class="notice-btn">
+				<button class="btn-notice-preview swiper-button-prev1"></button>
+				<button class="btn-notice-next swiper-button-next1"></button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- section start -->
+<div class="section1">
+	<div class="container">
+		<strong class="mobile">Technology</strong>
+		<!-- banner -->
+		<div class="banner2">
+			<!-- Swiper -->
+			<div class="swiper-container2">
+				<!--Add Arrows-->
+					<div class="swiper_wd">
+						<div class="swiper_wrap">
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="swiper-slide-cover" style="background-image: url(images/common/main_section1_banner.png);">
+									<div class="cover-img"></div>
+								</div>
+								<div class="text-box">
+									<div class="text" data-swiper-parallax="-100">
+									  <em>License Plate Recognition Engine</em>
+										<strong>자동차 번호판 인식 엔진</strong>
+										<p>실제 주차관제 시스템 운용현장에서 수집한 수백 만장의 사진과 
+											조명, 날씨, 거리, 각도, 카메라 상태의 다양성을 고려하여 학습시킨 
+											인공지능 기반으로 인식률 99.9% 까지 가능
+										</p>
+										<a href="#!">VIEW MORE</a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-slide-cover" style="background-image: url(images/common/main_section1_banner.png);">
+									<div class="cover-img"></div>
+								</div>
+								<div class="text-box">
+									<div class="text" data-swiper-parallax="-100">
+									  <em>License Plate Recognition Engine</em>
+										<strong>자동차 번호판 인식 엔진</strong>
+										<p>실제 주차관제 시스템 운용현장에서 수집한 수백 만장의 사진과 
+											조명, 날씨, 거리, 각도, 카메라 상태의 다양성을 고려하여 학습시킨 
+											인공지능 기반으로 인식률 99.9% 까지 가능
+										</p>
+										<a href="#!">VIEW MORE</a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-slide-cover" style="background-image: url(images/common/main_section1_banner.png);">
+									<div class="cover-img"></div>
+								</div>
+								<div class="text-box">
+									<div class="text" data-swiper-parallax="-100">
+									  <em>License Plate Recognition Engine</em>
+										<strong>자동차 번호판 인식 엔진</strong>
+										<p>실제 주차관제 시스템 운용현장에서 수집한 수백 만장의 사진과 
+											조명, 날씨, 거리, 각도, 카메라 상태의 다양성을 고려하여 학습시킨 
+											인공지능 기반으로 인식률 99.9% 까지 가능
+										</p>
+										<a href="#!">VIEW MORE</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- section start -->
+<div class="section2">
+    <div class="container">
+        <div class="top-con">
+            <div class="left-tit">
+                <strong>R&D</strong>
+                <p>레코그아이의 연구개발 성과를 확인하세요.</p>
+            </div>
+            <div class="right-tit">
+                <a href="#!" class="btn_rnd_more"></a>
+                <div class="right-tit_swiper">
+                    <div class="right-tit_swiper_wrap">
+                        <div class="swiper-button-prev2"></div>
+                        <div class="swiper-button-next2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="bottom-con">
+            <!-- Swiper -->
+            <div class="swiper-container swiper-container3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+						<div class="swiper-slide-cover1" style="background-image: url(images/common/rnd_swipe1.png);">
+							<div class="cover-img1"></div>
+						</div>
+						<div class="swiper-content">
+                            <strong>인공지능처리개발</strong>
+                            <p>레코그아이가 개발한 기술은 end-to-end 인공지능방식 으로 자동차 인식과 매칭과정 전체를 인공지능이 처리 레코그아이가 개발한 기술은 end-to-end 인공지능방식 으로 자동차 인식과 매칭과정 전체를 인공지능이 처리</p>
+                            <em>2021. 03. 10</em>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+						<div class="swiper-slide-cover1" style="background-image: url(images/common/rnd_swipe2.png);">
+							<div class="cover-img1"></div>
+						</div>
+                        <div class="swiper-content">
+                            <strong>자동차 번호판 인식</strong>
+                            <p>GPU와 같은 고가의 장비없이 일반 PC에서도 동작하기에 현재 주차관제 시스템에 그대로 적용이 가능하며 GPU와 같은 고가의 장비없이 일반 PC에서도 동작하기에 현재 주차관제 시스템에 그대로 적용이 가능하며 GPU와 같은 고가의 장비없이 일반 PC에서도 동작하기에 현재 주차관제 시스템에 그대로 적용이 가능하며</p>
+                            <em>2021. 03. 10</em>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+						<div class="swiper-slide-cover1" style="background-image: url(images/common/rnd_swipe3.png);">
+							<div class="cover-img1"></div>
+						</div>
+                        <div class="swiper-content">
+                            <strong>행동인식</strong>
+                            <p>병원 입원환자의 행동상태를 모니터링하는 것은 위험한 상황을 빠른 시간 내에 감지하여 조기 대응하기 위해서 병원 입원환자의 행동상태를 모니터링하는 것은 위험한 상황을 빠른 시간 내에 감지하여 조기 대응하기 위해서</p>
+                            <em>2021. 03. 10</em>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+						<div class="swiper-slide-cover1" style="background-image: url(images/common/rnd_swipe1.png);">
+							<div class="cover-img1"></div>
+						</div>
+                        <div class="swiper-content">
+                            <strong>인공지능처리개발</strong>
+                            <p>레코그아이가 개발한 기술은 end-to-end 인공지능방식 으로 자동차 인식과 매칭과정 전체를 인공지능이 처리 레코그아이가 개발한 기술은 end-to-end 인공지능방식 으로 자동차 인식과 매칭과정 전체를 인공지능이 처리</p>
+                            <em>2021. 03. 10</em>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+						<div class="swiper-slide-cover1" style="background-image: url(images/common/rnd_swipe2.png);">
+							<div class="cover-img1"></div>
+						</div>
+                        <div class="swiper-content">
+                            <strong>인공지능처리개발</strong>
+                            <p>레코그아이가 개발한 기술은 end-to-end 인공지능방식 으로 자동차 인식과 매칭과정 전체를 인공지능이 처리 레코그아이가 개발한 기술은 end-to-end 인공지능방식 으로 자동차 인식과 매칭과정 전체를 인공지능이 처리</p>
+                            <em>2021. 03. 10</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- footer start -->
+<footer id="footer">
+    <div class="footer-wrap">
+        <div class="footer-con">
+            <div class="top-con">
+                <a href="#!" class="logo"></a>
+                <ul>
+                    <li><a href="#!">개인정보처리방침</a></li>
+                    <li><a href="#!">이메일무단수집거부</a></li>
+                    <li><a href="#!">문의하기</a></li>
+                </ul>
+            </div>
+            <div class="bottom-con">
+                <div class="left-con">
+					<a href="#!" class="logo moblie"></a>
+                    <p> <span>레코그아이</span>인천광역시 연수구 갯벌로 12 인천대 미추홀캠퍼스 A동 511호</p>
+                    <ul>
+                        <li>TEL : 032.247.3377</li>
+                        <li>FAX : 032.247.3378</li>
+                        <li>대표자명 : 홍길동</li>
+                        <li>사업자번호 123-45-67890</li>
+                    </ul>
+                    <em>Copyright © 2021 recogAI. All Right Reserved.</em>
+                </div>
+                <div class="right-con">
+                    <div class="family-site">
+                        <div class="footer-site">
+							<button class="to-go btn-site-open" title="열기">Family Site</button>
+							<div class="site-content" style="display: none;">
+								<strong>Family Site</strong>
+								<div class="site-list">
+									<ul>
+										<li><a href="#!" target="_blank" title="창업지원포털 새창열림">창업지원포털</a></li>
+										<li><a href="#!" target="_blank" title="기업마당 새창열림">기업마당</a></li>
+										<li><a href="#!" title="인천시 새창열림">인천시</a></li>
+										<li><a href="#!" target="_blank" title="인천경제청 새창열림">인천경제청</a></li>
+										<li><a href="#!" target="_blank" title="인천테크노파크 새창열림">인천테크노파크</a></li>
+										<li><a href="#!" target="_blank" title="신한스퀘어 새창열림">신한스퀘어</a></li>
+									</ul>
+								</div>
+								<button class="btn-site-close">닫기</button>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<a href="javascript:;" class="btn-top">상단으로</a>
+
+</footer>
+
+
+</body>
+
+
+
+</html>

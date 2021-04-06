@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>recogAi</title>
+
+
+ <!-- CSS Files -->
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/fonts.css" />
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/swiper.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
+<!--JS Files -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+<!-- header start -->
+<header id="pub_header">
+	<div class="top_bar"><!--top_bar-->
+		<a href="#!" class="logo"></a>
+		<div class="main_header"><!--main_menu1-->
+			<ul class="depth_01">
+				<li>
+					<a href="#">About</a>
+					<div class="sub_menu_wrap">
+						<ul>
+							<li><a href="javascript:;">소개및 비전</a></li>
+							<li><a href="javascript:;">연혁</a></li>
+							<li><a href="javascript:;">cI</a></li>
+							<li><a href="javascript:;">오시는 길</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">Technology</a>
+					<div class="sub_menu_wrap">
+						<ul>
+							<li><a href="javascript:;">번호인식 엔진</a></li>
+							<li><a href="javascript:;">차량추적</a></li>
+							<li><a href="javascript:;">행동인식</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">Notice</a>
+					<div class="sub_menu_wrap">
+						<ul>
+							<li><a href="javascript:;">새소식</a></li>
+							<li><a href="javascript:;">연구개발성과</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">Content</a>
+					<div class="sub_menu_wrap">
+						<ul>
+							<li><a href="javascript:;">문의하기</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="flex-wrap">
+			<div class="incheon_uni">
+			</div>
+			<div class="main_header_btn">
+				<div class="gnb_btn">
+					<a class="main_nav" onclick="main_navToggle(this);"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="main_menu"><!-- main_menu2 -->
+		<div class="subl-menu-pc">		
+			<div class="flex-place">
+				<ul>
+					<li class="m-tit active">
+						<div>
+							01
+							<a href="javascript:;">About</a>
+						</div>
+						<ul class="subl-menu_sub">
+							<li><a href="javascript:;">소개및 비전</a></li>
+							<li><a href="javascript:;">연혁</a></li>
+							<li><a href="javascript:;">cI</a></li>
+							<li><a href="javascript:;">오시는 길</a></li>
+						</ul>
+					</li>
+					<li class="m-tit">
+						<div>
+							02
+							<a href="javascript:;">Technology</a>
+						</div>
+						<ul class="subl-menu_sub">
+							<li><a href="javascript:;">번호인식 엔진</a></li>
+							<li><a href="javascript:;">차량추적</a></li>
+							<li><a href="javascript:;">행동인식</a></li>
+						</ul>
+					</li>
+					<li class="m-tit">
+						<div>
+							03
+							<a href="javascript:;">Notice</a>
+						</div>
+						<ul class="subl-menu_sub">
+							<li><a href="javascript:;">새소식</a></li>
+							<li><a href="javascript:;">연구개발성과</a></li>
+						</ul>
+					</li>
+					<li class="m-tit">
+						<div>
+							04
+							<a href="javascript:;">Content</a>
+						</div>
+						<ul class="subl-menu_sub">
+							<li><a href="javascript:;">문의하기</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="moble-menu" style="display: block;"><!-- Mobile menu -->
+			<div class="subl-menu">
+				<ul>
+					<li class="active"><a href="javascript:;">About</a>
+						<ul class="subl-menu_sub">
+							<li><a href="javascript:;">소개및 비전</a></li>
+							<li><a href="javascript:;">연혁</a></li>
+							<li><a href="javascript:;">cI</a></li>
+							<li><a href="javascript:;">오시는 길</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">Technology</a>
+						<ul class="subl-menu_sub">
+							<li><a href="javascript:;">번호인식 엔진</a></li>
+							<li><a href="javascript:;">차량추적</a></li>
+							<li><a href="javascript:;">행동인식</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:;">Notice</a>                   
+						<ul class="subl-menu_sub">
+							<li><a href="javascript:;">새소식</a></li>
+							<li><a href="javascript:;">연구개발성과</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">Contact</a>
+						<ul class="subl-menu_sub">
+							<li><a href="javascript:;">문의하기</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="dim"></div>
+	</div>
+
+</header>
+
+
+<!--sub section start-->
+	<div class="sub-wrap">
+		<div class="sub">
+			<div class="visual-tit-flex">
+				<strong>About</strong>
+				<div class="location-btn">
+					<div class="select_place">
+						<select name="" class="btn_select" >
+							<option value="" selected>About</option>
+							<option value="">Technology</option>
+							<option value="">Notice</option>
+							<option value="">Content</option>
+						</select>
+					</div>
+					<div class="select_place">
+						<select name="" class="btn_select" >
+							<option value="">소개 및 비전</option>
+							<option value="">연혁</option>
+							<option value="">CI</option>
+							<option value="" selected>오시는 길</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="visual-bg bg1"></div>
+			<div class="sub-tit">오시는 길</div>
+		</div>
+		<div class="sub-content"><!--여기서부터 content-->
+				<div class="location-wrap">
+					<div class="location-box">
+						<!-- * 카카오맵 - 지도퍼가기 -->
+						<!-- 1. 지도 노드 -->
+						<div style="width: 100%;" id="daumRoughmapContainer1617006594394" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+						<!-- 2. 설치 스크립트 * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다. -->
+						<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+						<!-- 3. 실행 스크립트 -->
+						<script charset="UTF-8">
+							new daum.roughmap.Lander({
+								"timestamp" : "1617006594394",
+								"key" : "253kg",
+								"mapHeight" : "540"
+							}).render();
+						</script>
+					</div>
+					<div class="location-txtbox">
+						<div class="logo-box"></div>
+						<div class="txt-box">
+							<span>레코그아이</span>
+							<p>인천광역시 연수구 갯벌로 12 인천대 미추홀캠퍼스 A동 511호</p>
+							<ul>
+								<li>TEL : 032.247.3377</li>
+								<li>FAX : 032.247.3378</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<div class="location-info">
+					<strong class="car">자가용 안내</strong>
+					
+					<ul class="ul1 car">
+						<li>문학IC → 제2경인고속도로 (4.0km) → 경원대로 (4.8km) → 송도국제대로 (2.7km) / 총 14.42km</li>
+						<li>남동IC → 영동고속도로 (5.9km) → 제3경인고속화도로 (6.2km) → 송도국제대로 (3.0km) / 총 19.50km</li>
+						<li>서창분기점 → 제2경인고속도로 (5.3km) → 미추홀대로 (4.3km) → 컨벤시아대로 (2.7km) / 총 12.61km</li>
+						<li>월곶분기점 → 영동고속도로 (17.4km) → 제3경인고속화도로 (6.2km) → 송도국제대로 (3.0km) / 총 30.25km</li>
+						<li>자가용 이용시 본교 주차장은 30분 무료, 5시간내 1,000원, 24시간내 2,000원입니다.</li>
+					</ul>
+				</div>
+				<div class="location-info">
+					<strong class="subway">자가용 안내</strong>
+					
+					<ul class="ul1 subway">
+						<li>문학IC → 제2경인고속도로 (4.0km) → 경원대로 (4.8km) → 송도국제대로 (2.7km) / 총 14.42km</li>
+						<li>남동IC → 영동고속도로 (5.9km) → 제3경인고속화도로 (6.2km) → 송도국제대로 (3.0km) / 총 19.50km</li>
+						<li>서창분기점 → 제2경인고속도로 (5.3km) → 미추홀대로 (4.3km) → 컨벤시아대로 (2.7km) / 총 12.61km</li>
+						<li>월곶분기점 → 영동고속도로 (17.4km) → 제3경인고속화도로 (6.2km) → 송도국제대로 (3.0km) / 총 30.25km</li>
+						<li>자가용 이용시 본교 주차장은 30분 무료, 5시간내 1,000원, 24시간내 2,000원입니다.</li>
+					</ul>
+				</div>
+				
+			</div><!--//여기까지 content-->
+		
+	</div>
+<!--//sub section start-->
+
+<!-- footer start -->
+<footer id="footer">
+    <div class="footer-wrap">
+        <div class="footer-con">
+            <div class="top-con">
+                <a href="#!" class="logo"></a>
+                <ul>
+                    <li><a href="#!">개인정보처리방침</a></li>
+                    <li><a href="#!">이메일무단수집거부</a></li>
+                    <li><a href="#!">문의하기</a></li>
+                </ul>
+            </div>
+            <div class="bottom-con">
+                <div class="left-con">
+					<a href="#!" class="logo moblie"></a>
+                    <p> <span>레코그아이</span>인천광역시 연수구 갯벌로 12 인천대 미추홀캠퍼스 A동 511호</p>
+                    <ul>
+                        <li>TEL : 032.247.3377</li>
+                        <li>FAX : 032.247.3378</li>
+                        <li>대표자명 : 홍길동</li>
+                        <li>사업자번호 123-45-67890</li>
+                    </ul>
+                    <em>Copyright © 2021 recogAI. All Right Reserved.</em>
+                </div>
+                <div class="right-con">
+                    <div class="family-site">
+                        <div class="footer-site">
+							<button class="to-go btn-site-open" title="열기">Family Site</button>
+							<div class="site-content" style="display: none;">
+								<strong>Family Site</strong>
+								<div class="site-list">
+									<ul>
+										<li><a href="#!" target="_blank" title="창업지원포털 새창열림">창업지원포털</a></li>
+										<li><a href="#!" target="_blank" title="기업마당 새창열림">기업마당</a></li>
+										<li><a href="#!" title="인천시 새창열림">인천시</a></li>
+										<li><a href="#!" target="_blank" title="인천경제청 새창열림">인천경제청</a></li>
+										<li><a href="#!" target="_blank" title="인천테크노파크 새창열림">인천테크노파크</a></li>
+										<li><a href="#!" target="_blank" title="신한스퀘어 새창열림">신한스퀘어</a></li>
+									</ul>
+								</div>
+								<button class="btn-site-close">닫기</button>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- script -->
+
+
+</body>
+
+
+
+</html>

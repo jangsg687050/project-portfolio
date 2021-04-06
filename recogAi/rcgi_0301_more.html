@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>recogAi</title>
+
+
+ <!-- CSS Files -->
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/fonts.css" />
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/swiper.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
+<!--JS Files -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+<!-- header start -->
+<header id="pub_header">
+	<div class="top_bar"><!--top_bar-->
+		<a href="#!" class="logo"></a>
+		<div class="main_header"><!--main_menu1-->
+			<ul class="depth_01">
+				<li>
+					<a href="#">About</a>
+					<div class="sub_menu_wrap">
+						<ul>
+							<li><a href="javascript:;">소개및 비전</a></li>
+							<li><a href="javascript:;">연혁</a></li>
+							<li><a href="javascript:;">cI</a></li>
+							<li><a href="javascript:;">오시는 길</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">Technology</a>
+					<div class="sub_menu_wrap">
+						<ul>
+							<li><a href="javascript:;">번호인식 엔진</a></li>
+							<li><a href="javascript:;">차량추적</a></li>
+							<li><a href="javascript:;">행동인식</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">Notice</a>
+					<div class="sub_menu_wrap">
+						<ul>
+							<li><a href="javascript:;">새소식</a></li>
+							<li><a href="javascript:;">연구개발성과</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">Content</a>
+					<div class="sub_menu_wrap">
+						<ul>
+							<li><a href="javascript:;">문의하기</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="flex-wrap">
+			<div class="incheon_uni">
+			</div>
+			<div class="main_header_btn">
+				<div class="gnb_btn">
+					<a class="main_nav" onclick="main_navToggle(this);"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="main_menu"><!-- main_menu2 -->
+		<div class="subl-menu-pc">		
+			<div class="flex-place">
+				<ul>
+					<li class="m-tit active">
+						<div>
+							01
+							<a href="javascript:;">About</a>
+						</div>
+						<ul class="subl-menu_sub">
+							<li><a href="javascript:;">소개및 비전</a></li>
+							<li><a href="javascript:;">연혁</a></li>
+							<li><a href="javascript:;">cI</a></li>
+							<li><a href="javascript:;">오시는 길</a></li>
+						</ul>
+					</li>
+					<li class="m-tit">
+						<div>
+							02
+							<a href="javascript:;">Technology</a>
+						</div>
+						<ul class="subl-menu_sub">
+							<li><a href="javascript:;">번호인식 엔진</a></li>
+							<li><a href="javascript:;">차량추적</a></li>
+							<li><a href="javascript:;">행동인식</a></li>
+						</ul>
+					</li>
+					<li class="m-tit">
+						<div>
+							03
+							<a href="javascript:;">Notice</a>
+						</div>
+						<ul class="subl-menu_sub">
+							<li><a href="javascript:;">새소식</a></li>
+							<li><a href="javascript:;">연구개발성과</a></li>
+						</ul>
+					</li>
+					<li class="m-tit">
+						<div>
+							04
+							<a href="javascript:;">Content</a>
+						</div>
+						<ul class="subl-menu_sub">
+							<li><a href="javascript:;">문의하기</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="moble-menu" style="display: block;"><!-- Mobile menu -->
+			<div class="subl-menu">
+				<ul>
+					<li class="active"><a href="javascript:;">About</a>
+						<ul class="subl-menu_sub">
+							<li><a href="javascript:;">소개및 비전</a></li>
+							<li><a href="javascript:;">연혁</a></li>
+							<li><a href="javascript:;">cI</a></li>
+							<li><a href="javascript:;">오시는 길</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">Technology</a>
+						<ul class="subl-menu_sub">
+							<li><a href="javascript:;">번호인식 엔진</a></li>
+							<li><a href="javascript:;">차량추적</a></li>
+							<li><a href="javascript:;">행동인식</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:;">Notice</a>                   
+						<ul class="subl-menu_sub">
+							<li><a href="javascript:;">새소식</a></li>
+							<li><a href="javascript:;">연구개발성과</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">Contact</a>
+						<ul class="subl-menu_sub">
+							<li><a href="javascript:;">문의하기</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="dim"></div>
+	</div>
+
+</header>
+
+
+<!--sub section start-->
+	<div class="sub-wrap">
+		<div class="sub">
+			<div class="visual-tit-flex">
+				<strong>Notice</strong>
+				<div class="location-btn">
+					<div class="select_place">
+						<select name="" class="btn_select" >
+							<option value="">About</option>
+							<option value="">Technology</option>
+							<option value="" selected>Notice</option>
+							<option value="">Content</option>
+						</select>
+					</div>
+					<div class="select_place">
+						<select name="" class="btn_select" >
+							<option value="" selected>새소식</option>
+							<option value="">연구개발성과</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="visual-bg bg3"></div>
+
+			<div class="sub-tit">새소식</div>
+		</div>
+		<div class="sub-content"><!--여기서부터 content-->
+			<div class="sub-board">
+				<div class="more-toptit">
+					<dl>
+						<dt>2021-03-23</dt>
+						<dd>조회수 18</dd>
+					</dl>
+					<strong class="ico"><p>레코그아이에서 공지사항을 알려드립니다.</p></strong>
+				</div>
+				
+				<div class="more-content">
+					<p>
+						안녕하세요.<br>
+						레코그아이소식을 알려드립니다.<br><br>
+				
+						감사합니다.
+					</p>
+				</div>
+				
+				<ul class="file-wrap">
+					<li><a href="#!">레코그아이 번호인식엔진 보고서_1.pdf (320KBytes)</a></li>
+					<li><a href="#!">레코그아이 번호인식엔진 보고서_2.pdf (320KBytes)</a></li>
+				</ul>
+				
+				<div class="btn-place">
+					<a class="btn-line" href="#!">목록</a>
+				</div>
+			</div>
+			
+		</div><!--//여기까지 content-->
+	</div>
+<!--//sub section start-->
+
+<!-- footer start -->
+<footer id="footer">
+    <div class="footer-wrap">
+        <div class="footer-con">
+            <div class="top-con">
+                <a href="#!" class="logo"></a>
+                <ul>
+                    <li><a href="#!">개인정보처리방침</a></li>
+                    <li><a href="#!">이메일무단수집거부</a></li>
+                    <li><a href="#!">문의하기</a></li>
+                </ul>
+            </div>
+            <div class="bottom-con">
+                <div class="left-con">
+					<a href="#!" class="logo moblie"></a>
+                    <p> <span>레코그아이</span>인천광역시 연수구 갯벌로 12 인천대 미추홀캠퍼스 A동 511호</p>
+                    <ul>
+                        <li>TEL : 032.247.3377</li>
+                        <li>FAX : 032.247.3378</li>
+                        <li>대표자명 : 홍길동</li>
+                        <li>사업자번호 123-45-67890</li>
+                    </ul>
+                    <em>Copyright © 2021 recogAI. All Right Reserved.</em>
+                </div>
+                <div class="right-con">
+                    <div class="family-site">
+                        <div class="footer-site">
+							<button class="to-go btn-site-open" title="열기">Family Site</button>
+							<div class="site-content" style="display: none;">
+								<strong>Family Site</strong>
+								<div class="site-list">
+									<ul>
+										<li><a href="#!" target="_blank" title="창업지원포털 새창열림">창업지원포털</a></li>
+										<li><a href="#!" target="_blank" title="기업마당 새창열림">기업마당</a></li>
+										<li><a href="#!" title="인천시 새창열림">인천시</a></li>
+										<li><a href="#!" target="_blank" title="인천경제청 새창열림">인천경제청</a></li>
+										<li><a href="#!" target="_blank" title="인천테크노파크 새창열림">인천테크노파크</a></li>
+										<li><a href="#!" target="_blank" title="신한스퀘어 새창열림">신한스퀘어</a></li>
+									</ul>
+								</div>
+								<button class="btn-site-close">닫기</button>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- script -->
+<script>//푸터 패밀리사이트
+$('#footer .footer-site .btn-site-open').on('click',function(e){
+	var btn = $(this);
+	var lst = btn.next();
+	openDropDown(btn,lst);
+});
+
+$('#footer .footer-site .btn-site-close').on('click',function(e){
+	var btn = $(this);
+	var lst = btn.parent();
+	var open_btn = lst.prev();
+	closeDropDown(btn,lst,open_btn);
+});
+
+//DIV 드롭다운
+function openDropDown(btn,lst){
+	btn.attr('title', '열기');
+
+	if(!lst.is(':animated')) {
+		btn.attr('title', (lst.parent('div').hasClass('active')) ? '열기' : '닫기');
+		lst.slideToggle(250, 'easeInOutExpo').parent('div').toggleClass('active').siblings('div').removeClass('active').children('div').slideUp(250, 'easeInOutExpo').prev(btn).attr('title', '열기');
+	}
+}
+
+function closeDropDown(btn,lst,open_btn){
+	if(!lst.is(':animated')) {
+		lst.slideUp(250, 'easeInOutExpo').parent('div').removeClass('active');	
+		lst.siblings(open_btn).attr('title', '열기');
+	}
+}
+</script>
+
+
+</body>
+
+
+
+</html>
