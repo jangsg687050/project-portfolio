@@ -1,0 +1,66 @@
+
+
+/*sub-content*/
+.sub-content-wrap{ padding: 80px 0 100px; }
+.sub-content{ max-width: 1200px; margin: 0 auto;  text-align: center; }/*1200*/
+
+/*gallery 리스트*/
+.list-st1{ display: flex; margin: -22px; flex-wrap: wrap; }
+.list-st1 li{ width: 33.3333%; padding: 22px; }
+.list-st1 li a{ display: flex; flex-direction: column; height: 100%;}
+.list-st1 .con-box{ padding: 40px; background: #f6f7f7; text-align: left; flex: 1 1 auto; border: 3px solid transparent; }
+.list-st1 li a:hover .con-box{ border: 3px solid #1169a0; background: #fff; box-shadow: 6px 9px 9px 1px rgba(0, 0, 0, 0.1); }
+.list-st1 .con-box em{ display: block; font-size: 15px; font-weight: 500; color: #1169a0; margin-bottom: 40px; }
+.list-st1 .con-box span{ font-size: 22px; line-height: 1.5; display: inline-block; overflow: hidden; text-overflow: ellipsis; white-space: normal; height: auto; min-height: 2.9em; letter-spacing: -0.08rem; word-break: keep-all; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; margin-bottom: 40px; font-weight: 500;}
+.list-st1 .con-box dl{ font-weight: 300; font-size: 18px; display: flex; align-items: flex-end; justify-content: space-between;}
+.list-st1 .con-box dl dd{ position: relative;}
+.list-st1 .con-box dl dd:before{ content: ""; position: absolute; background: url(../images/sub/ico_listmore.png)no-repeat; width: 39px; height: 12px; right: 0; bottom: 0;}
+
+.list-st2{ display: flex; margin: -22px; flex-wrap: wrap; }
+.list-st2 li{ width: 33.3333%; padding: 22px; }
+.list-st2 li a{ display: flex; flex-direction: column; height: 100%;}
+.list-st2 .img{ position: relative; background-size: cover; background-repeat: no-repeat; background-position: center; overflow: hidden;}
+.list-st2 .img-thumb{ position: absolute; top: 0; left: 0; right: 0; bottom: 0;}
+.list-st2 .img:after{ content: ""; display: block; padding-top: 67.31%; }
+.list-st2 .con-box{ padding: 40px; background: #f6f7f7; text-align: left; flex: 1 1 auto; border: 3px solid transparent; }
+.list-st2 li a:hover .con-box{ border: 3px solid #1169a0; background: #fff; box-shadow: 6px 9px 9px 1px rgba(0, 0, 0, 0.1); }
+.list-st2 .con-box span{ font-size: 24px; line-height: 1.5; display: inline-block; overflow: hidden; text-overflow: ellipsis; white-space: normal; height: auto; min-height: 2.9em; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; margin-bottom: 40px; font-weight: 500;}
+.list-st2 .con-box dl{ font-weight: 300; font-size: 18px; display: flex; align-items: flex-end; justify-content: space-between;}
+.list-st2 .con-box dl dd{ position: relative;}
+.list-st2 .con-box dl dd:before{ content: ""; position: absolute; background: url(../images/sub/ico_listmore.png)no-repeat; width: 39px; height: 12px; right: 0; bottom: 0;}
+
+/*상세페이지*/
+.detail-page{ border-top: 2px solid #222; border-bottom: 1px solid #ddd; }
+.detail-page dl{ padding: 40px; text-align: center; border-bottom: 1px solid #ddd; display: flex;  align-items: center; justify-content: space-between;}
+.detail-page dl dt{ font-size: 24px;}
+.detail-page dl dd ul{ display: flex; align-items: center; justify-content: center; }
+.detail-page dl dd ul li{ position: relative; font-size: 18px; padding-right: 45px; }
+.detail-page dl dd ul li:after{ position: absolute; content: ""; height: 13px; width: 1px; right: 22px; top: 50%; transform: translateY(-50%); background: #ddd;}
+.detail-page dl dd ul li:last-child:after{ display: none;}
+.detail-page dl dd ul li:last-child{padding-right: 0; }
+.detail-page .txt-box{ padding: 50px 40px; text-align: left;}
+.detail-page .txt-box p{ font-size: 16px; color: #555; text-align: left; line-height: 1.8;}
+.detail-page .txt-box img{ max-width: 100% !important; height: auto !important; }
+
+.file{ display: flex; border-bottom: 1px solid #ddd; }
+.file{ flex-shrink: 0; background: #f6f7f7; display: flex; align-items: center; justify-content: center; }
+.file ul{ flex-grow: 1; text-align: left; }
+.file ul li{ display: flex; position: relative; border-bottom: 1px solid #ddd; align-items: center;}
+.file ul li a{ display: block; padding: 20px 0 20px 70px; font-size: 16px; }
+.file ul li span{ display: block; margin-left: 5px; }
+.file ul li:last-child{ border-bottom: none; }
+.file ul li a:before{ position: absolute; content: ""; background: url(../images/sub/ico_file.png)no-repeat; top: 50%; left: 40px; transform: translateY(-50%); width: 21px; height: 19px; background-size: contain;}
+
+/*FAQ*/
+.panel-group-wrap { border-top: 2px solid #222;}
+.panel-group-wrap .panel-group .panel-heading{ box-sizing: border-box; width: 100%; height: 70px; background-color: #fff; border-bottom:1px solid #ddd; line-height: 70px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; background-image: url(../images/sub/btn_dropdown.png); background-repeat: no-repeat; background-position: 97% center; }
+.panel-group-wrap .panel-group .panel-title{ display: flex;}
+.panel-group-wrap .panel-group .panel-title a{ position: relative; width: 175px; font-size: 18px; color: #1169a0; font-weight: 500;}
+.panel-group-wrap .panel-group .panel-title a:after{ content: ""; position: absolute; background : #ddd; width: 1px; height: 15px; right: 0; top: 50%; margin-top: -8px;  }
+.panel-group-wrap .panel-group .panel-title p{ margin-left: 30px; font-size: 18px; font-weight: 500; }
+.panel-group-wrap .panel-group.active .panel-heading{background-image: url(../images/sub/btn_dropup.png);}
+.panel-group-wrap .panel-group .panel-body{ height: 0; max-height: 0; overflow: hidden; background: #f6f7f7; }
+.panel-group-wrap .panel-group.active .panel-body{ height: auto; transition: max-height 0.3s ease-in; max-height: 500px; }
+.panel-group-wrap .panel-group .panel-body dl{ display: flex; padding: 25px 60px; border-bottom: 1px solid #ddd; }
+.panel-group-wrap .panel-group .panel-body dl dt{ color: #05447e; font-size: 30px; font-weight: 500; font-size: 30px; font-weight: 500; margin-right: 35px; }
+.panel-group-wrap .panel-group .panel-body dl dd{line-height: 1.8; text-align: left;;}
