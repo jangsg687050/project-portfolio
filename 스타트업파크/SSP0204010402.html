@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>스타트업파크</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="lib/css/common.css">
+	<link rel="stylesheet" href="lib/css/style.css">
+	<link rel="stylesheet" href="lib/css/responsive.css">
+
+	<!-- JS -->
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/jquery/jquery-ui.min.js"></script>
+	<script src="lib/js/script.js"></script>
+</head>
+<body>
+	<div class="wrap subwrap sp02">
+	    <div class="subcontent">
+	        <header class="top_head">
+	            <h1><a href="javascript:;"><img src="images/sub/logo.png" alt="START UP PARK INCHEON" /></a></h1>
+	            <button class="btn_gnb"><span class="blind">메뉴버튼</span></button>
+	            <ul class="btn_util">
+	                <li><a href="javascript:;"><img src="images/sub/btn_logout.png" alt="로그아웃" /></a></li>
+	                <li><a href="javascript:;"><img src="images/sub/btn_global.png" alt="language change" /></a></li>
+	            </ul>
+	        </header>
+	        <section class="sub_con">
+                <h2>START UP PARK</h2>
+	            <nav class="lnb">
+	                <div class="line"></div>
+	                <ul>
+                        <li><a href="javascript:;">공간</a></li>
+                        <li><a href="javascript:;">인프라/플랫폼</a></li>
+                        <li><a href="javascript:;">데이터</a></li>
+                        <li class="on" ><a href="javascript:;">전문가</a></li>
+                        <li><a href="javascript:;">실증신청</a></li>
+	                </ul>
+	            </nav>
+	            <div class="content">
+	                <h3>매칭 신청</h3>
+	                
+		           	<div class="complete_page mb40 pt70 pb70">
+						<div class="complete_wrap">
+							<img src="images/sub/complete_logo.png" alt="완료페이지 이미지">
+							<p>멘토링 매칭 신청이 <span>완료 되었습니다.</span></p>
+							<em>신청상세는 마이 페이지에서 확인 할 수 있습니다.</em>
+						</div>
+					</div>
+						
+	                <!-- mentor_info -->
+	                <div class="mentor_info mentor_apply_finish">
+	                	<div class="left">
+	                		<div class="info-box">
+	                			<span class="division">멘토</span>
+	                			<span class="name">강선</span>
+	                		</div>
+	                		<div class="company-box">
+	                			<span>(주)펜타코드</span><span>CEO</span>
+	                		</div>
+	                	</div>
+	                	<div class="right">
+	                		<ul class="field-ul">
+		                		<li class="mentor-date">2020년 6월 13일 12:00-14:00</li>
+		                		<li class="way">화상 멘토링</li>
+		                	</ul>
+	                	</div>
+	                </div>
+	                <!-- // mentor_info -->
+	                
+	                <div class="btn_area1 mt80">
+					    <a href="javascript:;" class="btn_move"><span>마이페이지</span></a>
+					</div>
+	            </div>
+	        </section>
+	        <footer>
+	            <div>
+                   <div>
+                       <ul class="footmenu">
+                           <li><a href="javascript:;">찾아오시는길</a></li>
+                           <li><a href="javascript:;">이용약관</a></li>
+                           <li class="privacy"><a href="javascript:;">개인정보처리방침</a></li>
+                       </ul>
+                       <span class="address">인천시 연수구 컨벤시아대로 204</span>
+	               </div>
+	               <div class="followsns">
+	                   <span>Follow us</span>
+	                   <ul>
+	                       <li><a href="javascript:;"><img src="images/sub/icon_facebook.png" alt="facebook" /></a></li>
+	                       <li><a href="javascript:;"><img src="images/sub/icon_instagram.png" alt="instagram" /></a></li>
+	                       <li><a href="javascript:;"><img src="images/sub/icon_youtube.png" alt="youtube" /></a></li>
+	                   </ul>
+	               </div>
+	            </div>
+	            <button class="btn-top"><span class="blind">상단으로</span></button>
+	        </footer>
+	    </div><!-- .subcontent end-->
+	    <div class="rightquick">
+	        <ul class="rquick">
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_project.png" alt="퀵버튼1" /></a></li>
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_event.png" alt="퀵버튼2" /></a></li>
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_reservation.png" alt="퀵버튼3" /></a></li>
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_partner.png" alt="퀵버튼4" /></a></li>
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_pic.png" alt="퀵버튼5" /></a></li>
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_vr.png" alt="퀵버튼6" /></a></li>
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_pr.png" alt="퀵버튼7" /></a></li>
+	        </ul>
+	    </div><!-- .rightquick end-->
+	</div>
+<script>
+var subn = 1; // 현재메뉴인덱스
+
+$(document).ready(function(){
+    $(".line").addClass("sub" + subn);
+    l = subn - 1;
+    setTimeout(function() {
+        $(".lnb ul li:eq("+l+")").addClass("on");
+    }, 500);
+});
+</script>
+</body>
+</html>
+<script>
+	function tab_active(v){
+		var idx = $(v).parent('li').index();
+		$(v).parent('li').addClass("active").siblings().removeClass("active");
+		//console.log(idx)
+	}
+</script>
+<script>
+	function list_select_box_active(v){
+		var idx = $(v).index();
+		$(v).addClass("active").siblings().removeClass("active");
+		//console.log(idx)
+	}
+</script>

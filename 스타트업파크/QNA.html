@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>스타트업파크</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="lib/css/common.css">
+	<link rel="stylesheet" href="lib/css/style.css">
+	<link rel="stylesheet" href="lib/css/responsive.css">
+
+	<!-- JS -->
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/jquery/jquery-ui.min.js"></script>
+	<script src="lib/js/script.js"></script>
+</head>
+<body>
+	<div class="wrap subwrap">
+	    <div class="subcontent">
+	        <header class="top_head">
+	            <h1><a href="javascript:;"><img src="images/sub/logo.png" alt="START UP PARK INCHEON" /></a></h1>
+	            <button class="btn_gnb"><span class="blind">메뉴버튼</span></button>
+	            <ul class="btn_util">
+	                <li><a href="javascript:;"><img src="images/sub/btn_logout.png" alt="로그아웃" /></a></li>
+	                <li><a href="javascript:;"><img src="images/sub/btn_global.png" alt="language change" /></a></li>
+	            </ul>
+	        </header>
+	        <section class="sub_con">
+                <h2>PUBLIC RELATION</h2>
+	            <nav class="lnb">
+	                <div class="line"></div>
+	                <ul>
+                        <li><a href="javascript:;">PR뉴스룸</a></li>
+                        <li><a href="javascript:;">공지사항</a></li>
+                        <li><a href="javascript:;">보도자료</a></li>
+                        <li><a href="javascript:;">로고소개</a></li>
+                        <li><a href="javascript:;">갤러리</a></li>
+                        <li><a href="javascript:;">카드뉴스</a></li>
+	                </ul>
+	            </nav>
+	            <div class="content">
+	                <h3>QNA</h3>
+	                
+                    <form id="formWrite" action="process.do" method="post" onsubmit="return" target="hidden_iframe" enctype="multipart/form-data">
+                    	<div class="detail1 st3">
+	                        <div class="row mt00">
+								<div class="col col1 moveinput on">
+									<label for="title">제목</label>
+									<input type="text" id="title" name="title" value="" onchange="">
+								</div>
+							</div>
+							
+							
+							<div class="row">
+							    <div class="col col1 moveinput">
+							        <label for="content" style="padding-bottom: 0; height: calc(100% - 29px);">내용</label>
+							        <textarea id="content" name="content" ></textarea>
+							    </div>
+							</div>
+							
+							<div class="col col2 movefakeinput">
+								<div class="mkwrap">
+									<label>노출여부</label>
+									<div class="radio-wrap">
+										<div class="ir_nw c-radio">
+											<input type="radio" id="Yes" name="Yes" value="Y" checked="checked">
+											<label for="Yes">Yes</label>
+										</div>
+										<div class="ir_nw c-radio">
+											<input type="radio" id="No" name="No" value="N" >
+											<label for="No">No</label>
+										</div>
+									</div>
+								</div>
+							</div>
+	                    </div>
+	                    
+	                    <div class="btn_area2 mt70">
+						    <a href="javascript:;" class="btn_move st2"><span>취소</span></a>
+						    <a href="javascript:;" class="btn_move"><span>저장</span></a>
+						</div>
+					</form>
+					
+	            </div>
+	        </section>
+	        <footer>
+	            <div>
+                   <div>
+                       <ul class="footmenu">
+                           <li><a href="javascript:;">찾아오시는길</a></li>
+                           <li><a href="javascript:;">이용약관</a></li>
+                           <li class="privacy"><a href="javascript:;">개인정보처리방침</a></li>
+                       </ul>
+                       <span class="address">인천시 연수구 컨벤시아대로 204</span>
+	               </div>
+	               <div class="followsns">
+	                   <span>Follow us</span>
+	                   <ul>
+	                       <li><a href="javascript:;"><img src="images/sub/icon_facebook.png" alt="facebook" /></a></li>
+	                       <li><a href="javascript:;"><img src="images/sub/icon_instagram.png" alt="instagram" /></a></li>
+	                       <li><a href="javascript:;"><img src="images/sub/icon_youtube.png" alt="youtube" /></a></li>
+	                   </ul>
+	               </div>
+	            </div>
+	            <button class="btn-top"><span class="blind">상단으로</span></button>
+	        </footer>
+	    </div><!-- .subcontent end-->
+	    <div class="rightquick">
+	        <ul class="rquick">
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_project.png" alt="퀵버튼1" /></a></li>
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_event.png" alt="퀵버튼2" /></a></li>
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_reservation.png" alt="퀵버튼3" /></a></li>
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_partner.png" alt="퀵버튼4" /></a></li>
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_pic.png" alt="퀵버튼5" /></a></li>
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_vr.png" alt="퀵버튼6" /></a></li>
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_pr.png" alt="퀵버튼7" /></a></li>
+	        </ul>
+	    </div><!-- .rightquick end-->
+	</div>
+<script>
+var subn = 2; // 현재메뉴인덱스
+
+$(document).ready(function(){
+    $(".line").addClass("sub" + subn);
+    l = subn - 1;
+    setTimeout(function() {
+        $(".lnb ul li:eq("+l+")").addClass("on");
+    }, 500);
+});
+</script>
+</body>
+</html>
