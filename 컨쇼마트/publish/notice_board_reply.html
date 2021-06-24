@@ -45,30 +45,38 @@
 					면 됩니다. 상담시간은 14시 - 19시까지 상담 가능하십니다.
 				</p>
 				<div class="bottom_flex">
-					<span><em class="date">2021.01.18</em><em class="time">12:00</em></span>
-					<div class="re_btn">
-						<button class="re_coment" type="button">
-							답글
-						</button>
+					<div class="btn-wrap">
+						<span><em class="date">2021.01.18</em><em class="time">12:00</em></span>
+						<!-- <div class="re_btn">
+							<button class="re_coment" type="button">
+								답글
+							</button>
+						</div> -->
 					</div>
 				</div>
 			</div>
 			<div class="board_reply_top">
 				<div class="tit_flex">
 					<strong>김학생</strong>
-					<button type="button" class="more_btn"><em></em><em></em><em></em></button>
+					<div class="btn-wrap">
+						<button type="button" class="more_btn"><em></em><em></em><em></em></button>
+						<ul class="btn-active">
+							<li><a href="#!">댓글 삭제</a></li>
+						</ul>
+					</div>
 				</div>
 				<p>도움이 되는 글입니다</p>
 				<div class="bottom_flex">
 					<span><em class="date">2021.01.18</em><em class="time">12:00</em></span>
-					<div class="re_btn">
+					<!-- <div class="re_btn">
 						<button class="re_coment" type="button">
 							답글
 						</button>
-					</div>
+					</div> -->
 				</div>
 			</div>
-			<div class="board_reply_bottom">
+			<!--기능 댓글까지만 지원으로 변경-->
+			<!-- <div class="board_reply_bottom">
 				<div class="re">
 					<div class="tit_flex">
 						<div class="re_icon"></div>
@@ -85,9 +93,21 @@
 					</div>
 				</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 		<!-- //서브 -->
+
+		<div class="alert_bg">
+			<div class="alert_wrap">
+				<div class="alert_content">
+					댓글을 삭제하시겠습니까?
+				</div>
+				<div class="alert_bottom">
+					<a href="javascript:;" >취소</a>
+					<a href="javascript:;" class="txt-color-orng">확인</a>
+				</div>
+			</div>
+		</div>
 	</section>
 	<!-- //contents -->
 
@@ -98,6 +118,7 @@
 			<div class="search-place">
 				<div class="search-group">
 					<input type="text" class="search-input reply" placeholder="댓글을 입력해보세요.">
+					<button type="button" class="btn-send"></button>
 				</div>
 			</div>
 			
