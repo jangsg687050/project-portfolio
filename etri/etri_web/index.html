@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>opendata</title>
+
+ <!-- CSS Files -->
+<link rel="stylesheet" type="text/css" href="/statics/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="/statics/css/fonts.css" />
+<link rel="stylesheet" type="text/css" href="/statics/css/common.css" />
+<link rel="stylesheet" type="text/css" href="/statics/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/statics/css/responsive.css" />
+
+<!--JS Files -->
+<script type="text/javascript" src="/statics/js/jquery.min.js"></script>
+<script type="text/javascript" src="/statics/js/swiper.min.js"></script>
+<!-- Swiper JS -->
+<script src="../package/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+<!-- header start -->
+<header id="pub_header">
+	<div class="top_bar"><!--top_bar-->
+		<div class="top_bar_wrap">
+			<div class="top_bar_con">
+				<h1><a href="index.html">오픈데이터 참조모델</a></h1>
+				<div class="gnb">
+					<a href="#" class="gnb_login"><img src="" alt="">Admin</a>
+					<a href="#" class="gnb_my"><img src="" alt="">로그아웃</a>
+				</div>
+				<div class="gnb_btn">
+					<a class="mobile_nav" onclick="mobile_navToggle(this);"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main_header"><!--main_menu-->
+		<ul class="depth_01">
+			<li>
+				<a href="#">프로파일</a>
+			</li>
+			<li>
+				<a href="#">사전</a>
+			</li>
+			<li>
+				<a href="#">식별체계 (TBD)</a>
+			</li>
+			<li>
+				<a href="#">유통정책</a>
+			</li>
+			<li>
+				<a href="#">보안정책 (TBD)</a>
+			</li>
+		</ul>
+	</div>
+	<div class="sub_menu"><!-- Dropdown menu -->
+		<div class="sub_menu_wrap">
+			<ul>
+				<li><a href="profile_taxonomyversion.html">분류체계 버전</a></li>
+				<li><a href="profile_taxonomy.html">분류체계</a></li>
+				<li><a href="profile_category.html">카테고리</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">어휘</a></li>
+				<li><a href="#">용어</a></li>
+				<li><a href="#">코드</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">식별체계 (TBD)</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">라이선스</a></li>
+				<li><a href="#">가격산청(TBD)</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">비식별화(TBD)</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="mobile_menu"><!-- Mobile menu -->
+		<div class="menu_top">
+			<div class="mb_login_util">
+				<a href="javascript:;">로그인</a>
+				<a href="javascript:;">회원가입</a>
+			</div>
+		</div>
+		<div class="subl-menu">		
+			<ul>
+				<li><a href="javascript:;">프로파일</a>
+					<ul class="subl-menu_sub">
+						<li><a href="profile_taxonomyversion.html">- 분류체계 버전</a></li>
+						<li><a href="profile_taxonomy.html">- 분류체계</a></li>
+						<li><a href="profile_category.html">- 카테고리</a></li>
+					</ul>
+				</li>
+				<li><a href="javascript:;">사전</a>
+					<ul class="subl-menu_sub">
+						<li><a href="javascript:;">- 어휘</a></li>
+						<li><a href="javascript:;">- 용어</a></li>
+						<li><a href="javascript:;">- 코드</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;">식별체계 (TBD)</a>                   
+				</li>
+				<li><a href="javascript:;">유통정책</a>
+					<ul class="subl-menu_sub">
+						<li><a href="javascript:;">- 라이선스</a></li>
+						<li><a href="javascript:;">- 가격산청(TBD)</a></li>
+					</ul>
+				</li>
+				<li><a href="javascript:;">보안정책(TBD)</a>
+					<ul class="subl-menu_sub">
+						<li><a href="javascript:;">- 비식별화(TBD)</a></li>
+					</ul>
+				</li>
+				<li><a href="javascript:;">시스템관리</a>
+					<ul class="subl-menu_sub">
+						<li><a href="javascript:;">- 사용자 활동로그</a></li>
+						<li><a href="javascript:;">- 시스템 활동로그</a></li>
+						<li><a href="javascript:;">- 슬레이브 관리</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="mobile_dim"></div>
+</header>
+
+<!-- banner -->
+<div class="banner">
+<!-- Swiper -->
+	<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="/statics/images/common/banner_1.jpg" alt=""></div>
+				<div class="swiper-slide"><img src="/statics/images/common/banner_2.jpg" alt=""></div>
+				<div class="swiper-slide"><img src="/statics/images/common/banner_3.jpg" alt=""></div>
+			</div>
+			
+			<!-- Add Arrows -->
+			<div class="swiper_wd">
+				<div class="swiper_wrap">
+					
+					<div class="swiper-button-prev"></div>
+				<div class="swiper-pagination-wrap">
+							<a href="javascript:;" class="control stop" onclick="playBtnControl(this, '.banner .swiper-container');">일시정지</a>
+					</div>
+					<div class="swiper-button-next"></div>
+				<div class="swiper-pagination">
+					<span class="swiper-pagination-bullet"></span>
+					<span class="swiper-pagination-bullet"></span>
+					<span class="swiper-pagination-bullet"></span>
+				</div>
+			</div>
+				
+		</div>
+			<!-- Add Pagination -->
+			
+	</div>
+</div>
+
+<!-- section start -->
+<div class="section">
+	<div class="container">
+		<div class="container_wrap">
+			<ul>
+				<li>
+					<img src="/statics/images/common/section_img1.png" alt="">
+					<div class="section_con">
+						<strong>버전</strong>
+						<p>7</p>
+						<a class="section_btn" href="#"></a>
+					</div>
+				</li>
+				<li>
+					<img src="/statics/images/common/section_img2.png" alt="">
+					<div class="section_con">
+						<strong>버전</strong>
+						<p>7</p>
+						<a class="section_btn" href="#"></a>
+					</div>
+				</li>
+				<li>
+					<img src="/statics/images/common/section_img3.png" alt="">
+					<div class="section_con">
+						<strong>버전</strong>
+						<p>7</p>
+						<a class="section_btn" href="#"></a>
+					</div>
+				</li>
+				<li>
+					<img src="/statics/images/common/section_img4.png" alt="">
+					<div class="section_con">
+						<strong>버전</strong>
+						<p>7</p>
+						<a class="section_btn" href="#"></a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+<!-- footer start -->
+<footer id="pub_footer">
+	<div class="footer">
+		<dl>
+			<dt>Version 1.0.0</dt>
+			<dd>2019 Electronics and Telecommunications Research Institute. All rights reserved.</dd>
+		</dl>
+	</div>
+</footer>
+</body>
+
+<script>//메인메뉴 dropdown
+	$(function(){
+
+		$('.depth_01 li').mouseenter(function(){
+			//.depth_01 li에 마우스 올렸을대 css 변경
+			$('.sub_menu').css('height','200px');
+			console.log("마우스올림");
+		});
+
+		$('.sub_menu').mouseleave(function(){
+			//.sub_menu를 벗어나면 css 변경
+			$('.sub_menu').css('height','0');
+			console.log("마우스올림");
+		});
+	});
+</script>
+
+<script>
+	$(function() {
+		$('.mobile_nav').click(function() {
+			if ($(".mobile_menu").css("display") == "none") {
+				jQuery('.mobile_menu').css("display", "block");
+				jQuery('.mobile_dim').css("display", "block");
+			} else {
+				jQuery('.mobile_menu').css("display", "none");
+				jQuery('.mobile_dim').css("display", "none");
+			}
+		});
+
+	});
+</script>
+
+
+<script>
+	//모바일메뉴 열고닫기 btn
+	function mobile_navToggle(btn){ //파라미터1 = btn인데 btn이 여기서는 <a>
+		$(btn).parents('.gnb_btn').siblings('.gnb_btn').removeClass('active');
+		$(btn).parents('.gnb_btn').toggleClass('active');
+	}
+
+</script>
+
+<script>//모바일 메뉴
+		$(function(){
+			$(".subl-menu > ul > li > a").click(function(){
+				if($(this).parent("li").attr("class") != "active"){
+					$(".subl-menu > ul > li").removeClass("active"); //<-이부분 없애면 다른 메뉴 누를시 자동 닫기는거 없어짐. 클릭으로 열리고 닫김.
+					$(this).parent("li").addClass("active");
+				}else{
+					$(this).parent("li").removeClass("active");
+				}
+			});
+		});
+</script>
+
+
+<script>//배너
+    var swiper = new Swiper('.banner .swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+		loop: true,
+      },
+	   autoplay: {
+	delay: 4000,
+	},
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+	//swiper 재생/정지 컨트롤
+	function playBtnControl(btn, slide){
+		var btn_el = $(btn);
+		var text = $(btn).text();
+		var slide_el = document.querySelector(slide).swiper;
+		if(text == '일시정지'){
+			slide_el.autoplay.stop();
+			btn_el.attr('class','control play');
+			$(btn).text('재생');
+		} else if(text == '재생') {
+			slide_el.autoplay.start();
+			btn_el.attr('class','control stop');
+			$(btn).text('일시정지');
+		}
+	}
+  </script>
+
+</html>

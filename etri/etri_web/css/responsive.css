@@ -1,0 +1,65 @@
+
+@media all and (max-width:1024px) {
+/*메인*/
+.main_header{ display: none; }
+.gnb_btn{ display: block;}
+.sub_menu{ display: none;}
+.container_wrap{ padding: 0 25px;}
+.container_wrap ul li{ width: 50%; border-right: none; border-bottom: 1px solid #d5deec; padding: 25px 0;}
+.container_wrap ul li:nth-of-type(3){ padding-left: 0; border-bottom: none;}
+.container_wrap ul li:nth-of-type(4){ padding-left: 0; border-bottom: none;}
+.top_bar{ position: fixed; top:0; left:0;}
+.main_header{ position: fixed; top:56px; left:0;}
+.top_bar_con .gnb{ display: none;}
+.banner{ margin-top: 56px;}
+.swiper_wrap{ bottom: 15px; left: 15px; justify-content: flex-start;}
+.slide-imgcover{ height: 300px; }
+
+/*서브 section*/
+.home{ margin-top: 56px;}
+
+}
+
+@media (max-width: 1200px) {
+	.table_st3 thead,
+	.table_st3 tbody,
+	.table_st3 tr,
+	.table_st3 th,
+	.table_st3 td { display: block; width: 100%; text-align: left; }
+	.table_st3 colgroup { display: none; }
+    .table_st3 th { padding-left: 0; line-height: 25px; }
+    
+    .sub_contents { padding:30px; }
+    .modal-new .modal-n-body { width: 90% !important; }
+    .select-s1 div { width: 100%; }
+    .select-s1 div.tits1 { margin: 0; padding: 10px 0 ; }
+
+	/*보기타입*/
+	.view-type{ margin-left: 0; display: flex; justify-content: flex-end; margin-top: 20px;}
+
+}
+
+@media all and (max-width:640px) {
+	/*메인*/
+	.container_wrap ul li{ width: 100%;}
+	.container_wrap ul li:nth-of-type(3){ border-bottom: 1px solid #d5deec;}
+
+	/*페이징*/
+	.paging .num .m_none{ display: none;}
+	.paging .num a{ width: 35px; height: 35px; line-height: 37px; }
+	.paging .num{ margin: -2px; padding: 0 8px;}
+	.paging .num li{ line-height: 28px; margin: 2px;}
+	.paging .prev_btn{ margin: -2px;}
+	.paging .prev_btn li{ margin: 2px; }
+	.paging .next_btn{ margin: -2px;}
+	.paging .next_btn li{ margin: 2px;}
+
+	/*테이블 가로스크롤*/
+	.responsive_table{overflow-x: auto;}
+		
+	/*팝업 반응형*/
+	.sub_contents { max-width: 1200px; margin: 0 auto; }    
+	.modal-new .modal-n-body { width: 100% !important; }
+	.modal-new .modal-n-cont{ max-height: 100%; height: calc(100vh - 137px); padding: 20px;}
+} 
+

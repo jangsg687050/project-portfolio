@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Category Chart</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/orgchart/2.2.0/css/jquery.orgchart.min.css">
+  <style>
+    #chart-container {
+      overflow: auto;
+      text-align: center;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      width: 200px;
+    }
+
+    .image {
+      vertical-align: middle;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .invalid {
+      background: rgb(231, 180, 180);
+      background-image: radial-gradient(#444cf7 1px, #e5e5f7 1px);
+      background-size: 20px 20px;
+    }
+
+    .deprecated {
+      background: rgba(134, 129, 129, 0.685);
+    }
+
+    .orgchart {
+      background: #fff;
+    }
+
+    .orgchart > table > tr:nth-child(-n+3) {
+        display: none;
+    }
+
+    .orgchart > table > tr.nodes > td > table > tr > td > div.node > i.topEdge {
+        display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="chart-container"></div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/orgchart/2.2.0/js/jquery.orgchart.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      //
+      // $.get( "http://sodas-ref-api-129-254-221-92.nip.io:20005/api/v1/reference-model/taxonomy/category/list?versionId=bdf015e0-726a-11eb-bc49-9bd5e827a320&taxonomyId=45373c41-7275-11eb-bc49-9bd5e827a320", function( { results } ) {
+      //   var datasource = {
+      //     id: 'df41e6c0-71a6-11eb-8a71-b79abe6dfdca',
+      //     root: true,
+      //     children: []
+      //   }
+      //   results.map((result) => {
+      //     const addToParent = (source, parentId) => {
+      //       if (parentId === source.id) {
+      //         source.children.push({
+      //           id: result.id,
+      //           name: result.name,
+      //           image: result.image ? `http://localhost:3000/${result.image}` : `https://images.unsplash.com/photo-1484665739383-a1069a82d4be?w=1080`,
+      //           isDeprecated: result.isDeprecated, // or isDeprecatedDraft (depend on version state)
+      //           valid: true, // check with list from version/validate
+      //           children: []
+      //         })
+      //       } else {
+      //         for (const child of source.children) {
+      //           addToParent(child, parentId)
+      //         }
+      //       }
+      //     }
+      //     addToParent(datasource, result.parentId)
+      //   })
+      //   var nodeTemplate = function(data) {
+      //     var invalid = data.invalid ? 'invalid' : 'valid'
+      //     var deprecated = data.isDeprecated ? 'deprecated' : 'notDeprecated'
+      //     var action = !data.root ? `
+      //           <button onclick="alert('API 대기')">프로파일</button>
+      //           <button onclick="alert('API 대기')">추가</button>
+      //           <button onclick="alert('API 대기')">수정</button>
+      //           <button onclick="alert('API 대기')">삭제</button>
+      //     ` : ''
+      //     return `
+      //       <div class="card ${invalid} ${deprecated}">.
+      //         <img class="image" src=${data.image} />
+      //         <div>
+      //           <h4><b>${data.name}</b></h4>
+      //           ${action}
+      //         </div>
+      //       </div>
+      //     `
+      //   }
+      //   var oc = $('#chart-container').orgchart({
+      //     'data' : datasource,
+      //     'nodeTemplate': nodeTemplate
+      //   })
+      // })
+
+      var datasource = {
+        'id': 'tax1',
+        'name': 'HEALTH',
+        'image': 'https://images.unsplash.com/photo-1484665739383-a1069a82d4be?w=1080',
+        'isDeprecated': false,
+        'invalid': false,
+        'root': true,
+        'children': [
+          {
+            'id': 'cat1',
+            'name': 'Category 1',
+            'image': 'https://images.unsplash.com/photo-1484665739383-a1069a82d4be?w=1080',
+            'isDeprecated': false,
+            'valid': false,
+            'children': [
+              { 'id': 'cat11', 'name': 'Category 11', 'isDeprecated': false, 'invalid': true, 'image': 'https://images.unsplash.com/photo-1484665739383-a1069a82d4be?w=1080' },
+              { 'id': 'cat12', 'name': 'Category 12', 'isDeprecated': false, 'invalid': false, 'image': 'https://images.unsplash.com/photo-1484665739383-a1069a82d4be?w=1080' },
+              {
+                'id': 'cat1',
+                'name': 'Category 13',
+                'image': 'https://images.unsplash.com/photo-1484665739383-a1069a82d4be?w=1080',
+                'isDeprecated': false,
+                'valid': false,
+                'children': [
+                  { 'id': 'cat11', 'name': 'Category 131', 'isDeprecated': false, 'invalid': false, 'image': 'https://images.unsplash.com/photo-1484665739383-a1069a82d4be?w=1080' },
+                  { 'id': 'cat12', 'name': 'Category 132', 'isDeprecated': false, 'invalid': false, 'image': 'https://images.unsplash.com/photo-1484665739383-a1069a82d4be?w=1080' }
+                ]
+              },
+            ]
+          },
+          { 'id': 'cat2', 'name': 'Old Category', 'isDeprecated': true, 'invalid': false, 'image': 'https://images.unsplash.com/photo-1484665739383-a1069a82d4be?w=1080', },
+        ]
+      }
+
+      var nodeTemplate = function(data) {
+        var invalid = data.invalid ? 'invalid' : 'valid'
+        var deprecated = data.isDeprecated ? 'deprecated' : 'notDeprecated'
+        var action = !data.root ? `
+              <button onclick="alert('API 대기')">프로파일</button>
+              <button onclick="alert('API 대기')">추가</button>
+              <button onclick="alert('API 대기')">수정</button>
+              <button onclick="alert('API 대기')">삭제</button>
+        ` : ''
+        return `
+          <div class="card ${invalid} ${deprecated}">.
+            <img class="image" src=${data.image} />
+            <div>
+              <h4><b>${data.name}</b></h4>
+              ${action}
+            </div>
+          </div>
+        `
+      }
+
+      var oc = $('#chart-container').orgchart({
+        'data' : datasource,
+        'nodeTemplate': nodeTemplate
+      });
+
+    });
+  </script>
+  </body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<title>CMS</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="/cms/statics/css/reset.css">
+<link rel="stylesheet" href="/cms/statics/css/common.css">
+<link rel="stylesheet" href="/cms/statics/css/bootstrap.css">
+<link rel="stylesheet" href="/cms/statics/css/fonts.css">
+<link rel="stylesheet" href="/cms/statics/css/jquery.scrollbar.css">
+<link rel="stylesheet" href="/cms/statics/css/style.css">
+
+<!-- JS -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+<script src="/cms/statics/js/jquery.scrollbar.min.js"></script>
+<!-- <script src="/cms/statics/js/common.js?version=002"></script> -->
+<script src="/cms/statics/js/script.js"></script>
+<script src="/cms/statics/js/bootstrap.min.js"></script>
+<script src="/cms/statics/js/jquery.ellipsisTooltip.js"></script>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" sizes="16x16"
+	href="/cms/statics/images/favicon.png">
+
+<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+	<div id="container">
+		<header id="header">
+			<h1 class="logo">
+				<a href="index.html"><img
+					src="/cms/statics/images/common/logo.png" alt="펜타코드"></a>
+			</h1>
+			<div class="header_scroll">
+				<nav class="snb">
+					<ul class="snb_list list-unstyled">
+						<li><a href="javascript:;">테넌트</a></li>
+						<li><a href="javascript:;">프로파일</a></li>
+						<li class="active"><a href="javascript:;">사전</a>
+							<ul class="depth2 list-unstyled">
+								<li class="active"><a href="javascript:;">어휘</a></li>
+								<li><a href="javascript:;">용어</a></li>
+								<li><a href="javascript:;">코드</a></li>
+							</ul></li>
+						<li><a href="javascript:;">식별체계</a></li>
+						<li><a href="javascript:;">유통정책</a></li>
+						<li><a href="javascript:;">보안정책</a></li>
+						<li><a href="javascript:;">시스템</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<aside id="sidebar"></aside>
+		<section id="sub_contents">
+			<div class="inner">
+				<div class="container-fluid">
+					<div class="s_t_area">
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item text-hide home">홈</li>
+								<li class="breadcrumb-item">사전</li>
+								<li class="breadcrumb-item active">어휘</li>
+							</ol>
+						</nav>
+						<h2 class="sub_title">어휘 추가</h2>
+					</div>
+					<div class="panel-collapse" style="background-color: #f1f6fb">
+						<div class="panel-body" style="padding: 30px">
+							<strong class="tit18">용어</strong>
+							<div class="radio_wrap">
+								<div class="radio_flex" id="input_type">
+									<label> <input type="radio" value="링크"
+										name="input_type_1"><span class="circle"></span><span
+										class="check"></span> <em>링크</em>
+									</label> <label> <input type="radio" value="파일"
+										name="input_type_1" checked><span class="circle"></span><span
+										class="check"></span> <em>파일</em>
+									</label>
+								</div>
+							</div>
+							<div class="category_wrap">
+								<p>파일</p>
+								<div class="filebox">
+									<input class="upload-name" value="파일선택" disabled="disabled">
+									<label for="ex_filename">업로드</label> <input type="file"
+										id="ex_filename" class="upload-hidden">
+								</div>
+							</div>
+							<div class="category_wrap">
+								<div class="input_wrap">
+									<p>이름*</p>
+									<div class="is-empty">
+										<input type="text" class="txt_form" placeholder="Dublin core">
+									</div>
+									<div class="select_place">
+										<select class="bt_select ml20" id="" style="width: 400%">
+											<option value="">-</option>
+											<option value="">-</option>
+											<option value="">-</option>
+										</select>
+									</div>
+									<div class="btn_place">
+										<button class="add" style="margin-left: 140px">&#43;</button>
+									</div>
+								</div>
+							</div>
+							<div class="category_wrap">
+								<div class="input_wrap">
+									<p>설명</p>
+									<div class="is-empty">
+										<input type="text" class="txt_form" placeholder="">
+									</div>
+									<div class="select_place">
+										<select class="bt_select ml20" id="" style="width: 400%">
+											<option value="">-</option>
+											<option value="">-</option>
+											<option value="">-</option>
+										</select>
+									</div>
+									<div class="btn_place">
+										<button class="add" style="margin-left: 140px">&#43;</button>
+									</div>
+								</div>
+							</div>
+							<div class="category_wrap">
+								<div class="input_wrap">
+									<p>축약어*</p>
+									<div class="is-empty">
+										<input type="text" class="txt_form" placeholder="dct">
+									</div>
+								</div>
+							</div>
+							<div class="category_wrap">
+								<div class="input_wrap">
+									<p>URI*</p>
+									<div class="is-empty">
+										<input type="text" class="txt_form" placeholder="">
+									</div>
+								</div>
+							</div>
+							<div class="category_wrap">
+								<div class="input_wrap">
+									<p>버전</p>
+									<div class="is-empty">
+										<input type="text" class="txt_form" placeholder="2.0">
+									</div>
+								</div>
+							</div>
+							<div class="category_wrap">
+								<div class="input_wrap">
+									<p>키워드</p>
+									<div class="is-empty">
+										<input type="text" class="txt_form" placeholder="">
+									</div>
+									<div class="select_place">
+										<select class="bt_select ml20" id="" style="width: 400%">
+											<option value="">-</option>
+											<option value="">-</option>
+											<option value="">-</option>
+										</select>
+									</div>
+									<div class="btn_place">
+										<button class="add" style="margin-left: 140px">&#43;</button>
+									</div>
+								</div>
+							</div>
+							<div class="category_wrap">
+								<div class="input_wrap">
+									<p>언어</p>
+									<div class="is-empty">
+										<input type="text" class="txt_form" placeholder="">
+									</div>
+
+								</div>
+							</div>
+							<strong class="tit18">표준 구분</strong>
+							<div class="radio_wrap">
+								<div class="radio_flex" id="input_type">
+									<label> <input type="radio" value="standard"
+										name="input_type_2"><span class="circle"></span><span
+										class="check"></span> <em>표준</em>
+									</label> <label> <input type="radio" value="n_standard"
+										name="input_type_2" checked><span class="circle"></span><span
+										class="check"></span> <em>비표준</em>
+									</label>
+								</div>
+							</div>
+
+
+							<div class="tit_flex">
+								<strong class="tit18">속성</strong> <a href="#" class="btn_bline"
+									onclick="layer_pop_control_2(this);" style="float: right;">추가</a>
+							</div>
+							<table class="table_st2">
+								<colgroup>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th class="">No.</th>
+										<th class="">이름</th>
+										<th class="">역할</th>
+										<th class="">메일</th>
+										<th class="">연락처</th>
+										<th class="">URI</th>
+										<th class="">액션</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th class="num">1</th>
+										<th class="">J1</th>
+										<th class=""></th>
+										<th class=""></th>
+										<th class=""></th>
+										<th class=""></th>
+										<th class="">
+											<button class="btn_bline">수정</button>
+											<button class="btn_bline">삭제</button>
+										</th>
+									</tr>
+									<tr>
+										<th class="num">2</th>
+										<th class="">J2</th>
+										<th class=""></th>
+										<th class=""></th>
+										<th class=""></th>
+										<th class=""></th>
+										<th class=""></th>
+									</tr>
+								</tbody>
+							</table>
+							<div class="category_wrap">
+								<div class="input_wrap">
+									<p>클래스</p>
+									<div class="is-empty">
+										<input type="text" class="txt_form" placeholder="합계:6"
+											disabled>
+									</div>
+									<p>속성</p>
+									<div class="is-empty">
+										<input type="text" class="txt_form" placeholder="합계:10"
+											disabled>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="txt_center pt35">
+					<a href="#!" class="btn_blue"> 목록 </a>
+				</div>
+
+				<!-- 페이징 -->
+				<div class="paging">
+					<a href="javascript:;" class="btn_prev_db text-hide">처음</a> <a
+						href="javascript:;" class="btn_prev text-hide">이전</a>
+					<div class="num_list">
+						<a href="javascript:;" class="num active">1</a> <a
+							href="javascript:;" class="num">2</a> <a href="javascript:;"
+							class="num">3</a> <a href="javascript:;" class="num">4</a> <a
+							href="javascript:;" class="num">5</a> <a href="javascript:;"
+							class="num">6</a>
+					</div>
+					<a href="javascript:;" class="btn_next text-hide">다음</a> <a
+						href="javascript:;" class="btn_next_db text-hide">마지막</a>
+				</div>
+
+			</div>
+			<footer id="footer"></footer>
+		</section>
+	</div>
+</body>
+</html>
+<script>
+	$(function() {
+    	$('#sidebar').load("/cms/publish/aside.html");
+   		$('#footer').load("/cms/publish/footer.html");
+	});
+</script>

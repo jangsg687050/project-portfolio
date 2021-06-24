@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <title>CMS</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/cms/statics/css/reset.css">
+    <link rel="stylesheet" href="/cms/statics/css/common.css">
+    <link rel="stylesheet" href="/cms/statics/css/bootstrap.css">
+    <link rel="stylesheet" href="/cms/statics/css/fonts.css">
+    <link rel="stylesheet" href="/cms/statics/css/jquery.scrollbar.css">
+    <link rel="stylesheet" href="/cms/statics/css/style.css">
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    
+    <script src="/cms/statics/js/jquery.scrollbar.min.js"></script>
+    <script src="/cms/statics/js/common.js?version=002"></script>
+    <script src="/cms/statics/js/script.js"></script>
+	<script src="/cms/statics/js/bootstrap.min.js"></script>
+	<script src="/cms/statics/js/jquery.ellipsisTooltip.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/cms/statics/images/favicon.png">
+
+    <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+
+        </header>
+
+        <aside id="sidebar">
+
+        </aside>
+
+        <section id="sub_contents">
+            <div class="inner">
+                <div class="container-fluid">
+                    <div class="s_t_area">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item text-hide home">홈</li>
+                                <li class="breadcrumb-item">프로파일</li>
+                                <li class="breadcrumb-item active">분류체계 버전</li>
+                            </ol>
+                        </nav>
+                        <h2 class="sub_title">분류체계 버전</h2>
+                    </div>
+
+                    <div class="s_u_area text-right">
+                        <ul class="btn_list list-unstyled mb20">
+                            <li><a href="javascript:;" class="btn btn_bg_indigo disabled">업그레이드</a></li>
+                        </ul>
+                    </div>
+
+                    <table class="table table_basic table-hover">
+                        <thead>
+                            <tr>
+                                <th>번호</th>
+                                <th>
+                                    이름 <span class="sort"><a href="javascript:;"><img src="/cms/statics/images/common/orderby_down.png"></a></span>
+                                </th>
+                                <th>
+                                    등록자 <span class="sort"><a href="javascript:;"><img src="/cms/statics/images/common/orderby_up.png"></a></span>
+                                </th>
+                                <th>
+                                    등록일자 <span class="sort"><a href="javascript:;"><img src="/cms/statics/images/common/orderby_down.png"></a></span>
+                                </th>
+                                <th>
+                                    수정일자 <span class="sort"><a href="javascript:;"><img src="/cms/statics/images/common/orderby_down.png"></a></span>
+                                </th>
+                                <th>
+                                    상태 <span class="sort"><a href="javascript:;"><img src="/cms/statics/images/common/orderby_down.png"></a></span>
+                                </th>
+                                <th>액션</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td class="txt-left">1.0.0</td>
+                                <td>A</td>
+                                <td>2020-11-01</td>
+                                <td>2020-11-01</td>
+                                <td>공개</td>
+                                <td>
+                                    <a href="javascript:;" class="btn btn_line_gray">수정</a>
+                                    <a href="javascript:;" class="btn btn_line_gray">상세보기</a>
+                                    <a href="javascript:;" class="btn btn_line_gray">삭제</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td class="txt-left">2.0.0</td>
+                                <td>C</td>
+                                <td>2020-11-01</td>
+                                <td>2020-11-01</td>
+                                <td>최신</td>
+                                <td>
+                                    <a href="javascript:;" class="btn btn_line_gray">수정</a>
+                                    <a href="javascript:;" class="btn btn_line_gray">상세보기</a>
+                                    <a href="javascript:;" class="btn btn_line_gray">삭제</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td class="txt-left">3.0.0</td>
+                                <td>C</td>
+                                <td>2020-11-01</td>
+                                <td>2020-11-01</td>
+                                <td>
+                                    초안 <a href="javascript:;" class="btn btn_line_gray">상태 변경</a>
+                                </td>
+                                <td>
+                                    <a href="javascript:;" class="btn btn_line_gray disabled">수정</a>
+                                    <a href="javascript:;" class="btn btn_line_gray">상세보기</a>
+                                    <a href="javascript:;" class="btn btn_line_gray">삭제</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+					<div id="chart-container">
+							<div class="orgchart">
+								<table>
+									
+									<tr class="nodes">
+										<td colspan="2">
+											<table>
+												<tr>
+													<td colspan="2">
+														<div id="56a11e10-7fe5-11eb-8685-199697692c24" data-parent="64ea1be0-7fe3-11eb-8685-199697692c24" class="node">
+															<div class="card valid ">
+																<img class="image" src="/cms/statics/images/sub/table_noimg.png" onerror="this.src='/cms/statics/images/sub/table_noimg.png'">
+																<div>
+																	<h4 class="chart_new_info">
+																		<b class="chart_name">test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test
+																			<span class="new"></span>
+																		</b>
+																		<div class="ico-box"><p>사용권장</p><div class="ico ico-true"></div></div>
+																	</h4>
+																	<div class="button-flex">
+																		<button onclick="alert('API 대기')">프로파일</button>
+																		<button onclick="fnCreate('C', '56a11e10-7fe5-11eb-8685-199697692c24', '56a11e10-7fe5-11eb-8685-199697692c24', 'test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test ')">추가</button>
+																		<button onclick="fnModify('56a11e10-7fe5-11eb-8685-199697692c24')">수정</button>
+																		<button onclick="onclick=" fndelete('56a11e10-7fe5-11eb-8685-199697692c24')"=" ">삭제</button>
+																	</div>
+																</div>
+															</div>
+															<i class="edge verticalEdge topEdge oci"></i>
+															<i class="edge verticalEdge bottomEdge oci"></i>
+														</div>
+													</td>
+												</tr>
+												<tr class="lines">
+													<td colspan="2">
+														<div class="downLine"></div>
+													</td>
+												</tr>
+												<tr class="lines">
+													<td class="rightLine"></td>
+													<td class="leftLine"></td>
+												</tr>
+												<tr class="nodes">
+													<td colspan="2">
+														<table>
+															<tr>
+																<td colspan="4">
+																	<div id="58f55f90-7feb-11eb-8685-199697692c24" data-parent="56a11e10-7fe5-11eb-8685-199697692c24" class="node">
+																		<div class="card valid deprecated">
+																			<img class="image" src="/cms/statics/images/sub/table_noimg.png" onerror="this.src='/cms/statics/images/sub/table_noimg.png'">
+																			<div>
+																				<h4 class="chart_new_info">
+																					<b class="chart_name">테스트<span class="new"></span>
+																					</b>
+																					<div class="ico-box">
+																						<p>사용권장</p><div class="ico ico-true disabled"></div>
+																					</div>
+																				</h4>
+																				<div class="button-flex">
+																					<button onclick="alert('API 대기')">프로파일</button>
+																					<button onclick="fnCreate('C', '58f55f90-7feb-11eb-8685-199697692c24', '58f55f90-7feb-11eb-8685-199697692c24', '테스트')">추가</button>
+																					<button onclick="fnModify('58f55f90-7feb-11eb-8685-199697692c24')">수정</button>
+																					<button onclick="onclick=" fndelete('58f55f90-7feb-11eb-8685-199697692c24')"=" ">삭제</button>
+																				</div>
+																			</div>
+																		</div>
+																		<i class="edge verticalEdge topEdge oci"></i>
+																		<i class="edge verticalEdge bottomEdge oci"></i>
+																	</div>
+																</td>
+															</tr>
+															<tr class="lines">
+																<td colspan="4">
+																	<div class="downLine"></div>
+																</td>
+															</tr>
+															<tr class="lines">
+																<td class="rightLine"></td>
+																<td class="leftLine topLine"></td>
+																<td class="rightLine topLine"></td>
+																<td class="leftLine"></td>
+															</tr>
+															<tr class="nodes">
+																<td colspan="2">
+																	<table>
+																		<tr>
+																			<td>
+																				<div id="e5975c40-7ff1-11eb-8685-199697692c24" data-parent="58f55f90-7feb-11eb-8685-199697692c24" class="node">
+																					<div class="card valid invalid">
+																						<img class="image" src="/cms/statics/images/sub/table_noimg.png" onerror="this.src='/cms/statics/images/sub/table_noimg.png'">
+																						<div>
+																							<h4 class="chart_new_info">
+																								<b class="chart_name">ㅅㄷㅅ<span class="new"></span>
+																								</b>
+																								<div class="ico-box">
+																									<p>사용권장</p><div class="ico ico-false"></div>
+																								</div>
+																							</h4>
+																							<div class="button-flex">
+																								<button onclick="alert('API 대기')">프로파일</button>
+																								<button onclick="fnCreate('C', 'e5975c40-7ff1-11eb-8685-199697692c24', 'e5975c40-7ff1-11eb-8685-199697692c24', 'ㅅㄷㅅ')">추가</button>
+																								<button onclick="fnModify('e5975c40-7ff1-11eb-8685-199697692c24')">수정</button>
+																								<button onclick="onclick=" fndelete('e5975c40-7ff1-11eb-8685-199697692c24')"=" ">삭제</button>
+																							</div>
+																						</div>
+																					</div>
+																					<i class="edge verticalEdge topEdge oci"></i>
+																					<i class="edge horizontalEdge rightEdge oci"></i>
+																					<i class="edge horizontalEdge leftEdge oci"></i>
+																				</div>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+																<td colspan="2">
+																	<table>
+																		<tr>
+																			<td>
+																				<div id="73299410-7ff2-11eb-8685-199697692c24" data-parent="58f55f90-7feb-11eb-8685-199697692c24" class="node">
+																					<div class="card valid ">
+																						<img class="image" src="/cms/statics/images/sub/table_noimg.png" onerror="this.src='/cms/statics/images/sub/table_noimg.png'">
+																						<div>
+																							<h4 class="chart_new_info">
+																								<b class="chart_name">test2<span class="new"></span>
+																								</b>
+																								<div class="ico-box">
+																									<p>사용권장</p><div class="ico ico-false disabled"></div>
+																								</div>
+																							</h4>
+																							<div class="button-flex">
+																								<button onclick="alert('API 대기')">프로파일</button>
+																								<button onclick="fnCreate('C', '73299410-7ff2-11eb-8685-199697692c24', '73299410-7ff2-11eb-8685-199697692c24', 'test2')">추가</button>
+																								<button onclick="fnModify('73299410-7ff2-11eb-8685-199697692c24')">수정</button>
+																								<button onclick="onclick=" fndelete('73299410-7ff2-11eb-8685-199697692c24')"=" ">삭제</button>
+																							</div>
+																						</div>
+																					</div>
+																					<i class="edge verticalEdge topEdge oci"></i>
+																					<i class="edge horizontalEdge rightEdge oci"></i>
+																					<i class="edge horizontalEdge leftEdge oci"></i>
+																				</div>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+
+                    <!-- 페이징 -->
+                    <div class="paging">
+                        <a href="javascript:;" class="btn_prev_db text-hide">처음</a>
+                        <a href="javascript:;" class="btn_prev text-hide">이전</a>
+                        <div class="num_list">
+                            <a href="javascript:;" class="num active">1</a>
+                            <a href="javascript:;" class="num">2</a>
+                            <a href="javascript:;" class="num">3</a>
+                            <a href="javascript:;" class="num">4</a>
+                            <a href="javascript:;" class="num">5</a>
+                            <a href="javascript:;" class="num">6</a>
+                        </div>
+                        <a href="javascript:;" class="btn_next text-hide">다음</a>
+                        <a href="javascript:;" class="btn_next_db text-hide">마지막</a>
+                    </div>
+                    <!-- //페이징 -->
+                </div>
+            </div>
+            <footer id="footer">
+
+            </footer>
+        </section>
+    </div>
+		
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+@media (max-width:1199.98px) {
+
+	/* 그리드 */
+	.container-fluid { padding-right: 5px; padding-left: 5px; }
+	.row { margin-right: -5px; margin-left: -5px; }
+	.col-1,
+	.col-2,
+	.col-3,
+	.col-4,
+	.col-5,
+	.col-6,
+	.col-7,
+	.col-8,
+	.col-9,
+	.col-10,
+	.col-11,
+	.col-12,
+	.col,
+	.col-auto,
+	.col-sm-1,
+	.col-sm-2,
+	.col-sm-3,
+	.col-sm-4,
+	.col-sm-5,
+	.col-sm-6,
+	.col-sm-7,
+	.col-sm-8,
+	.col-sm-9,
+	.col-sm-10,
+	.col-sm-11,
+	.col-sm-12,
+	.col-sm,
+	.col-sm-auto,
+	.col-md-1,
+	.col-md-2,
+	.col-md-3,
+	.col-md-4,
+	.col-md-5,
+	.col-md-6,
+	.col-md-7,
+	.col-md-8,
+	.col-md-9,
+	.col-md-10,
+	.col-md-11,
+	.col-md-12,
+	.col-md,
+	.col-md-auto,
+	.col-lg-1,
+	.col-lg-2,
+	.col-lg-3,
+	.col-lg-4,
+	.col-lg-5,
+	.col-lg-6,
+	.col-lg-7,
+	.col-lg-8,
+	.col-lg-9,
+	.col-lg-10,
+	.col-lg-11,
+	.col-lg-12,
+	.col-lg,
+	.col-lg-auto,
+	.col-xl-1,
+	.col-xl-2,
+	.col-xl-3,
+	.col-xl-4,
+	.col-xl-5,
+	.col-xl-6,
+	.col-xl-7,
+	.col-xl-8,
+	.col-xl-9,
+	.col-xl-10,
+	.col-xl-11,
+	.col-xl-12,
+	.col-xl,
+	.col-xl-auto { padding-right: 5px; padding-left: 5px; }
+}
+
+/* 모바일 */
+@media (max-width:991.98px) {
+	#sidebar .pc_area { display: none; }
+	#sidebar .mobile_area { display: block; }
+	#sidebar .mobile_area .logo { font-size: 16px; }
+	#sidebar .mobile_area .logo img { height: 2.188em; }
+	#container { min-width: 320px; }
+
+	/* 로그인 */
+	.login_wrap .logo_box { float: none; width: 100%; min-height: auto; }
+	.login_wrap .logo_box .content { padding: 20px 10px; }
+	.login_wrap .logo_box .content .txt { margin-top: 30px; }
+	.login_wrap .login_box { float: none; width: 100%; min-height: auto; }
+	.login_wrap .login_box .content { padding: 20px 10px; }
+	.login_wrap .login_box .content .login_form { width: 100%; }
+	.login_wrap .login_box .content .login_form li:last-child { margin-top: 25px; }
+	.login_wrap .login_box .content .sso_join_top { margin: 0 5px; margin-top: 0; }
+	.login_wrap .login_box .content .sso_join_top .sso_title { font-size: 22px; padding-bottom: 10px; }
+	.login_wrap .login_box .content .sso_join_top .sso_box { padding: 15px 20px; }
+	.login_wrap .login_box .content .sso_join_top .sso_box > li { font-size: 15px; padding: 4px 0; padding-left: 12px; }
+	.login_wrap .login_box .content .sso_join_top .sso_box > li:before { top: 11px; }
+	.login_wrap .login_box .content .sso_join_form { margin: 0 5px; }
+	.login_wrap .login_box .content .sso_join_form li { padding: 5px 0; }
+	.login_wrap .login_box .content .sso_join_form .form_style1 { padding: 0 10px; height: 40px; line-height: 38px; font-size: 15px; }
+	.login_wrap .login_box .content .sso_join_form .form_cell.title_cell { font-size: 15px; }
+	.login_wrap .login_box .content .sso_join_form .btn_chk { width: 90px; height: 40px; font-size: 15px; margin-left: 4px; }
+	.login_wrap .login_box .content .sso_btn_area { padding-top: 20px; margin-bottom: 0; }
+	.login_wrap .login_box .content .sso_btn_area .btn_submit { width: 100%; height: 55px; font-size: 16px; }
+	#header { left: -220px; }
+	#sidebar { margin-left: 0; padding: 0 20px; }
+	#contents { margin-left: 0; padding: 0 15px; padding-top: 20px; }
+
+	/* 메인 탭 */
+	#main-tab { font-size: 16px; }
+	#main-tab .list-tab > li > a { font-size: 1.125em; padding: 1em 1.563em; }
+
+	/* 바로가기 */
+	#bookmark { margin-bottom: 0.9375em; font-size: 16px; }
+	#bookmark .scroller { width: 1.875em; height: 1.875em; margin-top: 0.8em; background-size: 0.7em; }
+	#bookmark .bookmark_list_wrap { padding: 5px; height: 3.438em; }
+	#bookmark .bookmark_list > li { line-height: 3.438em; padding: 0 1em; font-size: 1em; }
+	#bookmark .bookmark_list > li.ico_bookmark { padding: 0 1.063em; }
+	#bookmark .bookmark_list > li.ico_bookmark img { width: 1em; }
+	#bookmark .bookmark_list .btn_del { width: 0; display: inline-block; transform: scale(0); margin-left: 10px; transition: all 0.2s ease; }
+
+	/* 통계 */
+	#preview_area { font-size: 16px; margin-bottom: 0.3125em; }
+	#preview_area .white_box { margin-bottom: 0.625em; }
+	#preview_area .white_box .title { margin-bottom: 0.1875em; font-size: 1em; }
+	#preview_area .white_box .title::before { width: 1.4375em; height: 1.4375em; margin-bottom: 11px; background-size: 1.4375em; }
+	#preview_area .white_box .cnt { font-size: 2.1875em; }
+	#preview_area .white_box .state { font-size: 1.0625em; padding-left: 1.0625em; }
+	#preview_area .white_box .state::before { width: 0.6875em; height: 0.5em; margin-top: -0.25em; background-size: 0.6875em; background-repeat: no-repeat; background-position: center; }
+
+	/* 통계 리포트 */
+	#report_area { font-size: 16px; margin-bottom: 0.9375em; }
+	#report_area .white_box { padding: 1.25em; }
+	#report_area .white_box .util_wrap { padding-bottom: 0.9375em; margin-bottom: 1.25em; }
+	#report_area .white_box .util_wrap .title { font-size: 1.5em; margin-top: 0.3529em; }
+	#report_area .white_box .util_wrap .title a { padding-right: 0.9166em; background-size: auto 0.6666em; }
+	#report_area .white_box .util_wrap .btns_wrap .btn { font-size: 1.0625em; padding: 0.4117em 0.9176em; }
+	#report_area .white_box .util_wrap .btns_wrap .btn + .btn { margin-left: 0; }
+	#report_area .white_box .util_wrap .btns_wrap .ico_refresh { display: none; }
+	#report_area .today_list_wrap { border-right: none; padding-right: 0; }
+	#report_area .today_list > li { padding: 1.25em 0; }
+	#report_area .today_list .now_list .title { font-size: 1.0625em; }
+	#report_area .today_list .now_list .cnt { font-size: 2.125em; }
+	#report_area .today_list .prev_list { bottom: 1.4375em; }
+	#report_area .today_list .prev_list .title { font-size: 1.0625em; margin-bottom: 0.1875em; }
+	#report_area .today_list .prev_list .state { font-size: 1.0625em; padding-left: 1em; }
+	#report_area .today_list .prev_list .state::before { width: 0.6875em; height: 0.5em; margin-top: -0.25em; background-size: 0.6875em; background-repeat: no-repeat; background-position: center; }
+
+	/* 메뉴별 PV 통계 */
+	#pv_report_area { font-size: 16px; margin-bottom: 0; }
+	#pv_report_area .white_box { padding: 1.25em; margin-bottom: 0.9375em; }
+	#pv_report_area .white_box .util_wrap { padding-bottom: 0.9375em; margin-bottom: 1.25em; }
+	#pv_report_area .white_box .util_wrap .title { font-size: 1.5em; margin-top: 0.3529em; }
+	#pv_report_area .white_box .util_wrap .title a { padding-right: 0.9166em; background-size: auto 0.6666em; }
+	#pv_report_area .white_box .util_wrap .btns_wrap .select_date { width: 7.105em; height: auto; font-size: 1.1875em; padding: 0.4117em 0.9176em; padding-right: 2.5em; }
+	#pv_report_area .white_box .util_wrap .btns_wrap .ico_refresh { display: none; }
+	#pv_report_area .pv_sttst_wrap .pv_sttst .pv_sttst_list .num_box { width: 1.875em; height: 1.875em; line-height: 1.875em; font-size: 1.125em; left: 0.625em; top: 0.4375em; }
+	#pv_report_area .pv_sttst_wrap .pv_sttst .pv_sttst_list .subject { padding-left: 3.4375em; }
+	#pv_report_area .pv_sttst_wrap .pv_sttst .pv_sttst_list .title { font-size: 1.0625em; padding: 0.375em 0.625em; }
+	#pv_report_area .pv_sttst_wrap .pv_sttst .pv_sttst_list th { text-align: center; }
+	#pv_report_area .pv_sttst_wrap .pv_sttst .pv_sttst_list td { padding: 12px 6px; font-size: 1.1875em; text-align: center; }
+
+	/* 팝업 관리 */
+	#pv_report_area .pop_zone { font-size: 0.875em; height: auto; }
+	#pv_report_area .pop_zone .white_box { height: auto; }
+	#pv_report_area .pop_zone .title_wrap .more_view { top: 1.8em; right: 1.5625em; width: 1.5625em; height: 1.5625em; font-size: 1em; text-indent: 100%; white-space: nowrap; overflow: hidden; background-size: 1em; }
+	#pv_report_area .pop_zone .title_wrap .title { font-size: 1.5625em; padding: 1em; }
+	#pv_report_area .pop_zone .pop_list .subject { font-size: 1.5625em; }
+	#pv_report_area .pop_zone .pop_list .date { font-size: 1.25em; }
+	#pv_report_area .pop_zone .pop_list > li { border-bottom: 2px solid #e4e5ea; }
+	#pv_report_area .pop_zone .pop_list > li > a { padding: 1.25em; }
+	#footer { font-size: 16px; padding: 30px 0 50px 0; }
+	#footer .copyright { font-size: 1em; }
+}
+@media (max-width: 767.98px) {
+	.login_wrap .login_box .content .sso_join_top { }
+	.login_wrap .login_box .content .sso_join_top .sso_title { }
+	.login_wrap .login_box .content .sso_join_top .sso_box { }
+	.login_wrap .login_box .content .sso_join_top .sso_box > li { }
+	.login_wrap .login_box .content .sso_join_top .sso_box > li:before { }
+	.login_wrap .login_box .content .sso_join_form { }
+	.login_wrap .login_box .content .sso_join_form li { }
+	.login_wrap .login_box .content .sso_join_form .form_style1 { width: calc(100% - 100px); }
+	.login_wrap .login_box .content .sso_join_form .form_style1.bg_style1 { }
+	.login_wrap .login_box .content .sso_join_form .form_cell { display: block; padding: 3px 0; }
+	.login_wrap .login_box .content .sso_join_form .form_cell.title_cell { }
+	.login_wrap .login_box .content .sso_join_form .btn_chk { }
+	.login_wrap .login_box .content .sso_btn_area { }
+	.login_wrap .login_box .content .sso_btn_area .btn_submit { }
+}
+@media (max-width:540px) {
+	#sidebar .mobile_area .logo { font-size: 13px; }
+	#main-tab { font-size: 12px; }
+	#bookmark { font-size: 12px; }
+	#preview_area { font-size: 13px; }
+	#report_area { font-size: 12px; }
+	#pv_report_area { font-size: 12px; }
+	#footer { font-size: 13px; }
+}
+@media (max-width:395px) {
+	#sidebar .mobile_area .logo { font-size: 12px; }
+	#contents { padding: 0 10px; padding-top: 15px; }
+	#main-tab { font-size: 11px; }
+	#bookmark { font-size: 11px; }
+	#preview_area { font-size: 12px; }
+	#report_area { font-size: 11px; }
+	#pv_report_area { font-size: 11px; }
+	#footer { font-size: 12px; }
+}
+@media (max-width:365px) {
+	#sidebar .mobile_area .logo { font-size: 11px; }
+	#contents { padding: 0 5px; padding-top: 10px; }
+	#main-tab { font-size: 10px; }
+	#bookmark { font-size: 10px; }
+	#preview_area { font-size: 11px; }
+	#report_area { font-size: 10px; }
+	#pv_report_area { font-size: 10px; }
+	#footer { font-size: 11px; }
+}
+@media (max-width:330px) {
+	#sidebar .mobile_area .logo { font-size: 10px; }
+	#main-tab { font-size: 9px; }
+	#bookmark { font-size: 9px; }
+	#preview_area { font-size: 10px; }
+	#report_area { font-size: 9px; }
+	#pv_report_area { font-size: 9px; }
+	#footer { font-size: 10px; }
+}
