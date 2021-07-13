@@ -31,27 +31,27 @@
 
 /*header - pc메뉴*/
 .subl-menu-pc{ position: absolute; left: 34.7292vw; bottom: 0; top: 0; right: 5.7292vw;}
-.subl-menu-pc .flex-place{ position: absolute; top: 25vh; left: 0; right: 0; }
+.subl-menu-pc .flex-place{ position: absolute; top: 50%; left: 0; right: 0; transform: translateY(-50%);}
 .subl-menu-pc .flex-place > ul { position: relative; width: 100%; }
-.subl-menu-pc .m-tit { color: #d5d5d5; display: flex; align-items: center; }
+.subl-menu-pc .m-tit { color: #d5d5d5; display: flex; align-items: center; line-height: 3;}
 .subl-menu-pc .m-tit:last-child{ margin-bottom: 0;}
-.subl-menu-pc .m-tit > div{ display: flex; align-items: center; flex-shrink: 0; justify-content: center; padding-bottom: 30px; border-bottom: 1px solid #ddd; min-width: 10.9375vw;}
-.subl-menu-pc .m-tit > div > a{ position: relative; font-size: 27px; font-weight: 400; }
+.subl-menu-pc .m-tit > div{ display: flex; align-items: center; min-width: 10.9375vw;}
+.subl-menu-pc .m-tit > div > a{ position: relative; font-size: 40px; font-weight: 500; }
 .subl-menu-pc .subl-menu_sub2 li{ display: none; }
-.flex-place > ul > li.active > div > a{ font-weight: 600; position: relative; }
-.flex-place > ul > li.active .subl-menu_sub li{ display: block;}
-.flex-place > ul > li:hover > div > a{ font-weight: 600; }
-.flex-place > ul > li.active > div > a:before{ content:""; position: absolute; top: -13px; right: -15px; width: 10px; height: 10px; background: #eb3f31; border-radius: 100%;  }
-.subl-menu-pc .m-tit:hover > div > a:before{ content:""; position: absolute; top: -13px; right: -15px; width: 10px; height: 10px; background: #eb3f31; border-radius: 100%;  }
-.subl-menu-pc .subl-menu_sub > li > a { font-size: 20px; font-weight: 400; }
-.subl-menu-pc .subl-menu_sub { display: flex; align-items: center; margin-top: 30px;}
-.subl-menu-pc .m-tit.active .subl-menu_sub li.active > a{ color: #eb3f31; border-bottom: 1px solid #eb3f31;}
+.flex-place > ul > li.active > div > a{ position: relative; color: #1169a0; position: relative; }
+.flex-place > ul > li.active > div > a:before{ position: absolute; content:""; height: 1px; width: 100%; bottom: 31px; background: #1169a0; }
+.flex-place > ul > li .subl-menu_sub li{ display: block; margin-right: 45px;}
+.flex-place > ul > li:hover > div > a:before{ position: absolute; content:""; height: 1px; width: 100%; bottom: 31px; background: #1169a0; }
+.flex-place > ul > li:hover > div > a{ color: #1169a0; }
+.subl-menu-pc .subl-menu_sub > li > a { font-size: 20px; font-weight: 400; color: #666666;}
+.subl-menu-pc .subl-menu_sub { display: flex; align-items: center; }
+.subl-menu-pc .m-tit.active .subl-menu_sub li.active > a{ color: #000;}
 .subl-menu-pc .m-tit.active .subl-menu_sub li > ul > li{ height: 0;  overflow: hidden;}
 .subl-menu-pc .m-tit.active .subl-menu_sub li.active > ul > li{ height: 40px; line-height: 2.4; transition-duration: 0.4s; }
 .subl-menu-pc .m-tit.active .subl-menu_sub li.active > ul > li a{font-size: 17px; color: #666; }
 .subl-menu-pc .m-tit.active .subl-menu_sub li.active > ul > li:hover a{ color: #222; position: relative; }
 .subl-menu-pc .m-tit.active .subl-menu_sub li.active > ul > li:hover a:before{content:""; position: absolute; bottom: 0; left: 0; background: #fee0dd; height: 10px; width: 100%; z-index: -1; }
-.subl-menu-pc .m-tit .subl-menu_sub > li:hover > a{ color: #eb3f31; border-bottom: 1px solid #eb3f31;}
+.subl-menu-pc .m-tit .subl-menu_sub > li:hover > a{ color: #000; }
 
 /*header - 모바일메뉴*/
 .moble-menu .subl-menu{ display:none; width:100%; line-height:1; text-align: center;  padding-top: 16.6667vw; }
@@ -273,8 +273,17 @@ input[id="menu"]:checked + label span:nth-child(3) { bottom: 50%; transform: tra
 .tab-info .tab{ display: none;  }
 .tab-info .tab:first-of-type { display: block; }
 
+.wrap-box { display: flex; justify-content: center; width: 100%; background-color: #fff; }
+.tab-st2 { display: flex; justify-content: center; align-items: center; margin-top: 40px; }
+.tab-st2 li { position: relative; padding: 10px 15px; color: #151b26; background-color: transparent; cursor: pointer; }
+.tab-st2 li::after { content: ""; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background-color: #1ede9e; transition: width 300ms ease-out; }
+.tab-st2 li:hover::after { width: 100%; }
+
 /*동별재명 유래*/
 .tabst1{ margin-top: 50px;}
 .tabst1 dl{ text-align: left;}
 .tabst1 dl dt{ font-size: 28px; font-weight: 500; display: block; padding: 30px 40px; border-bottom: 1px solid #444;}
 .tabst1 dl dd{ font-size: 18px; color: #444; font-weight: 400; line-height: 1.8; padding: 40px 25px; }
+
+/*스크롤탑 버튼*/
+#footer .btn-top { display: none; position: fixed; padding: 15px; width: 55px; height: 80px; background: url(../images/common/icon_top.png) no-repeat center center; background-color: #101010; font-size: 0; right: 25px; bottom: 25px; z-index: 1000000; }
