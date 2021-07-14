@@ -37,6 +37,19 @@ function menuToggle(btn){
 		$(btn).parents('.panel-group2').toggleClass('active');
 };
 
+//모달팝업
+function layer_pop_control(type, popup) { //첫번째 파라미터 -> 여는버튼인지 닫는버튼인지 판단, 두번째 파라미터는 팝업 이름
+		
+	if(type == "open"){
+		//팝업 열기
+		$('#'+popup).show();
+		console.log("열림");
+	}else if(type =="close"){
+		//팝업 닫기
+		$(popup).parents('.layer_pop_wrap').hide();
+	};
+}
+
 
 $(function(){
 
