@@ -40,22 +40,23 @@ function menuToggle(btn){
 
 $(function(){
 
-//햄버거버튼2
-document.querySelector('.btn-menu').addEventListener('click', function(){
-		this.classList.toggle('active');
-	});
+	//햄버거버튼2
+	//document.querySelector('.btn-menu').addEventListener('click', function(){
+		//this.classList.toggle('active');
+	//});
 
-//햄버거버튼3
-var wrapperMenu = document.querySelector('.wrapper-menu');
+	//햄버거버튼3
+	//var wrapperMenu = document.querySelector('.wrapper-menu');
+		//wrapperMenu.addEventListener('click', function(){
+			//wrapperMenu.classList.toggle('open');  
+	//});
+	//문법오류아니구 모든페이지에서 햄버거 버튼을 찾을수없어서 나오는 오류
 
-wrapperMenu.addEventListener('click', function(){
-  wrapperMenu.classList.toggle('open');  
-});
 
-//스크롤탑 버튼
+	//스크롤탑 버튼
 	moveTop();
 
-//메인메뉴 dropdown
+	//메인메뉴 dropdown
 	$('.main_header .depth_01 > li > a').mouseenter(function(){
 		console.log("마우스 올림");
 		$(this).parent().siblings().find('.sub_menu_wrap > ul').stop().slideUp();
@@ -126,6 +127,5 @@ wrapperMenu.addEventListener('click', function(){
 		var open_btn = lst.prev();
 		closeDropDown(btn,lst,open_btn);
 	});
-
 
 });
