@@ -41,6 +41,30 @@
 <!--여기서부터 content-->
 <div class="sub-content-wrap"><!--1300-->
 	<div class="sub-content">
+
+		<div class="search_wrap fl_wrap">
+			<div class="search_box">
+				<div class="select-wrap custom-select">
+					<select name="srchKey" id="srchKey" style="display: none;">
+						<option value="AB">전체</option>
+						<option value="A">제목</option>
+						<option value="B">내용</option>
+					</select>
+					<div class="select-control">
+						<div class="select-items">
+							<div data-value="AB">전체</div>
+							<div data-value="A">제목</div>
+							<div data-value="B">내용</div>
+						</div>
+					</div>
+				</div>
+				<div class="input-box">
+					<input type="text" name="srchValue" value="" placeholder="검색어를 입력해주세요" class="input-text">
+					<input type="submit" value="검색" class="btn_search">
+				</div>
+			</div>
+		</div>
+
 		<ul class="list-st2">
 			<li>
 				<a href="#!">
@@ -127,23 +151,6 @@
 				</a>
 			</li>
 		</ul>
-
-		<div class="pagination">
-			<a href="#!" class="prev_end">First page</a>
-			<a href="#!" class="prev_one">Prev page</a>
-			<a href="#!" class="active">1</a>
-			<a href="#!">2</a>
-			<a href="#!">3</a>
-			<a href="#!">4</a>
-			<a href="#!">5</a>
-			<a href="#!">6</a>
-			<a href="#!">7</a>
-			<a href="#!">8</a>
-			<a href="#!">9</a>
-			<a href="#!">10</a>
-			<a href="#!" class="next_one">Next page</a>
-			<a href="#!" class="next_end">Last page</a>
-		</div>
 		
 	</div>
 </div>
@@ -155,6 +162,101 @@
 <footer id="footer">
     
 </footer>
+
+<script>
+
+//검색바
+$(document).ready(function(){
+	customSelect();
+});
+
+//검색바 커스텀 셀렉트 박스
+function customSelect(){
+$(".custom-select select").each(function() {
+	var template = '<div class="select-control">';
+	var optionTemplate = "";
+	var selectedText = "";
+	
+	$(this)
+		.find("option")
+		.each(function() {
+			if($(this).attr("selected")) {
+				selectedText = $(this).text();
+			}
+			
+			optionTemplate +=
+				"<div " +
+				" data-value=" +
+				$(this).attr("value") +
+				">" +
+				$(this).html() +
+				"</div>";
+		});
+	optionTemplate += "</div></div>";
+	
+	template +=
+		'<div class="select-selected">' +
+		((selectedText != "") ? selectedText : $(this).find('option:eq(0)').text()) +
+		"</div>";
+	template += '<div class="select-items">';
+
+	$(this).hide();
+	$(this).after(template + optionTemplate);
+});
+$(".custom-select .select-selected").on("click", function() {
+	$("html").one("click", function() {
+		$(".custom-select .select-control").removeClass("opened");
+	});
+	$(this)
+		.parents(".select-control")
+		.toggleClass("opened");
+	event.stopPropagation();
+});
+$(".custom-select .select-items div").on("click", function() {
+	$(this)
+		.parents(".custom-select")
+		.find("select")
+		.val($(this).data("value"));
+	$(this)
+		.parents(".select-items")
+		.find("div")
+		.removeClass("selection");
+	$(this).addClass("selection");
+	$(this)
+		.parents(".select-control")
+		.removeClass("opened");
+	$(this)
+		.parents(".select-control")
+		.find(".select-selected")
+		.text($(this).text());
+});
+}
+
+	//서브페이지 검색 bar
+$('.select-wrap .btn_select').on('click', function(e) {
+		var btn = $(this);
+		var lst = btn.next();
+		openDropDown(btn, lst);
+	});
+	//DIV 드롭다운
+	function openDropDown(btn, lst) {
+		btn.attr('title', '열기');
+
+		if (!lst.is(':animated')) {
+			btn.attr('title', (lst.parent('div').hasClass('active')) ? '열기' : '닫기');
+			lst.slideToggle(250, 'easeInOutExpo').parent('div').toggleClass('active').siblings('div').removeClass('active').children('div').slideUp(250, 'easeInOutExpo').prev(btn).attr('title', '열기');
+		}
+	}
+
+	function closeDropDown(btn, lst, open_btn) {
+		if (!lst.is(':animated')) {
+			lst.slideUp(250, 'easeInOutExpo').parent('div').removeClass('active');
+			lst.siblings(open_btn).attr('title', '열기');
+		}
+	}
+
+
+</script>
 
 </body>
 
