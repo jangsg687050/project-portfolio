@@ -339,7 +339,7 @@ input[id="menu"]:checked + label span:nth-child(3) { bottom: 50%; transform: tra
 .search_wrap .search_box > * { display: inline-block; vertical-align: top; height: 45px; }
 .search_wrap .search_box .input-box input { height: 45px; }
 .search_wrap .search_box .select-wrap { position: relative; width: 170px; margin-right: 10px; background: #fff; border: 1px solid #ddd;  cursor: pointer;}
-.search_wrap .search_box .select-wrap:after { content: ""; position: absolute; top: 50%; transform: translateY(-50%); right: 18px; background: url(/user/images/sub/ico_select_default.png); width: 13px; height: 7px; }
+.search_wrap .search_box .select-wrap:after { content: ""; position: absolute; top: 50%; transform: translateY(-50%); right: 18px; background: url(../images/sub/ico_select_default.png); width: 13px; height: 7px; }
 .search_wrap .search_box .custom-select .select-items div, .custom-select .select-selected { display: block; line-height: 45px; cursor: pointer; user-select: none; position: relative; color: #444; background-color: transparent; width: 100%; font-size: 16px; font-weight: 400; text-align: left; flex-shrink: 0; height: 100%; padding-left: 20px; }
 .search_wrap .search_box .custom-select .select-items { position: absolute; z-index: 2; top: 100%; right: -1px; left: -1px; visibility: hidden; overflow-y: auto; max-height: 145px; pointer-events: none; opacity: 0; border: 1px solid #ddd; background-color: #fff; }
 .search_wrap .search_box .custom-select .select-control.opened .select-items { visibility: visible; pointer-events: all; opacity: 1; }
