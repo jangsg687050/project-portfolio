@@ -349,3 +349,16 @@ input[id="menu"]:checked + label span:nth-child(3) { bottom: 50%; transform: tra
 .search_wrap .search_box .input-text{ width: 660px; background: #fff; padding-left: 20px; border: 1px solid #ddd; }
 .search_wrap .search_box .input-text::placeholder{ color: #999;}
 .search_wrap .search_box .btn_search { width: 90px; margin-left: 10px; color: #fff; background: #444; flex-shrink: 0; font-weight: 400; text-align: center; }
+
+/*3depth tab*/
+.depth-tab { margin-bottom: 50px;}
+.depth-tab ul{ display: flex; align-items: center; justify-content: flex-start; flex-wrap: wrap; border-bottom: 1px solid #ddd;}
+.depth-tab ul li{ position: relative; padding-right: 0.9511vw; padding-left: 0.9511vw; display: inline-block; font-size: 18px;}
+.depth-tab ul li a{ color: #666; position: relative; padding: 23px 0;}
+.depth-tab ul li a:after{ content:""; position: absolute; width: 1px; height: 19px; top: 50%; right: -1.0417vw; transform: translate(-50%, -50%); background: #e0e0e0; }
+.depth-tab ul li:first-child{ padding-left: 0; }
+.depth-tab ul li:last-child{ padding-right: 0;  }
+.depth-tab ul li:last-child a:after{ display: none;}
+.depth-tab ul li.active a{ position: relative; color: #1169a0; }
+.depth-tab ul li.active a:before{ position: absolute; content: ""; border-bottom: 2px solid #1169a0; bottom: 0; right: 0; left: 0; }
+.depth-tab ul li a{ display: block;}

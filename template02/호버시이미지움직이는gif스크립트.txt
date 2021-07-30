@@ -1,0 +1,16 @@
+//메인 페이지 메뉴 애니메이션
+function mainAni() {
+	var menu = $('#contents.main .main-menu .main-menu-list > li > .item');
+    menu.on({
+		mouseenter: function () {
+			var idx = $(this).parents('li').index() + 1;
+			$(this).find('.item-img img').prop('src','/user/images/main/main_list'+idx+'_on.gif');
+			$(this).find('.item-btn img').prop('src','/user/images/main/main_list_btn'+idx+'_on.png');
+		},
+		mouseleave: function () {
+			var idx = $(this).parents('li').index() + 1;
+			$(this).find('.item-img img').prop('src','/user/images/main/main_list'+idx+'.png');
+			$(this).find('.item-btn img').prop('src','/user/images/main/main_list_btn'+idx+'.png');
+		}
+  });
+}
