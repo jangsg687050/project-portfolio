@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>opendata</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
+    <!--JS Files -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script src="/cmsjs/dragscroll.js"></script>
+
+</head>
+
+<body>
+    <header id="pub_header"> </header>
+
+    <div class="home profile">
+        <div class="banner_txt">
+            <h2 class="home_title">버전</h2>
+            <p class="banner_dep">
+                <span><img src="images/common/ic_dep01.png" class="ic_dep01"></span> <span><img src="images/common/ic_arrow01.png"></span> <span>프로파일</span>
+                <span><img src="images/common/ic_arrow01.png"></span>
+                <span>분류체계</span>
+            </p>
+        </div>
+    </div>
+    <div class="sub_section">
+        <div class="sub_contents">
+            <div class="inner">
+                <div class="container-fluid">
+                    <strong class="tit28 mb30">분류체계 목록</strong>
+                    <div class="flex_alignc flex_e flexwrap mt10 mb10 select-s1">
+                        <div class="tits1">도메인</div>
+                        <div>
+                            <select class="form-style">
+                                <option value="선택">선택</option>
+                                <option value="선택값2">선택값2</option>
+                                <option value="선택값3">선택값3</option>
+                            </select>
+                        </div>
+                        <div class="tits1">버전</div>
+                        <div>
+                            <select class="form-style">
+                                <option value="선택">선택</option>
+                                <option value="선택값2">선택값2</option>
+                                <option value="선택값3">선택값3</option>
+                            </select>
+                        </div>
+                        <div class="tits1">상태</div>
+                        <div>
+                            <input type="text" class="form-style input-disabled" disabled value="초안">
+                        </div>
+                    </div>
+                    <div class="responsive_table mt20">
+                        <table class="table_basic table-hover">
+                            <colgroup>
+                                <col style="width: 120px">
+                                <col style="width: 400px">
+                                <col style="width: 120px">
+                                <col style="width: 300px">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>이름
+                                        <span class="sort">
+                                            <a href="javascript:;" data-ordered="DESC"><img src="images/common/orderby_down.png"></a>
+                                        </span>
+                                    </th>
+                                    <th>사용 권장</th>
+                                    <th>액션</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class=" new_info">
+                                    <td>3</td>
+                                    <td class="name txt-left">
+                                        <img src="images/sub/table_noimg.png" class="name_img">
+                                        <span class="ml10 new">HEALTH</span>
+                                    </td>
+                                    <td class="ico">
+                                        <div class="ico ico-false"></div>
+                                    </td>
+                                    <td>
+                                        <a href="category_list.html" class="btn_bline">카테고리보기</a>
+                                        <a href="javascript:;" class="btn_bline" onclick="modalControl('o','#modal1','600')">상세보기</a>
+                                    </td>
+                                </tr>
+                                <tr class="back_on new_info">
+                                    <td>2</td>
+                                    <td class="name txt-left">
+                                        <img src="images/sub/table_noimg.png" class="name_img">
+                                        <span class="ml10 new">SMART CITY</span>
+                                    </td>
+                                    <td class="ico">
+                                        <div class="ico ico-true" onclick=""></div>
+                                    </td>
+                                    <td>
+                                        <a href="category_list.html" class="btn_bline">카테고리보기</a>
+                                        <a href="javascript:;" class="btn_bline" onclick="modalControl('o','#modal1','600')">상세보기</a>
+                                    </td>
+                                </tr>
+                                <tr class="back_Invalid new_info">
+                                    <td>1</td>
+                                    <td class="name txt-left">
+                                        <img src="images/sub/table_noimg.png" class="name_img">
+                                        <span class="ml10 new">OLD</span>
+                                    </td>
+                                    <td class="ico">
+                                        <div class="ico ico-true disabled" onclick=""></div>
+                                    </td>
+                                    <td>
+                                        <a href="category_list.html" class="btn_bline">카테고리보기</a>
+                                        <a href="javascript:;" class="btn_bline" onclick="modalControl('o','#modal1','600')">상세보기</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- 페이징 -->
+                <div class="paging">
+                    <ul class="prev_btn">
+                        <li><a href="" class="btn_prev_over"></a></li>
+                        <li><a href="" class="btn_prev"></a></li>
+                    </ul>
+                    <ul class="num">
+                        <li><a href="" class="active">1</a></li><!-- 활성화 -->
+                        <li><a href="">2</a></li>
+                        <li><a href="">3</a></li>
+                        <li><a href="">4</a></li>
+                        <li><a href="">5</a></li>
+                        <li><a href="" class="m_none">6</a></li>
+                        <li><a href="" class="m_none">7</a></li>
+                        <li><a href="" class="m_none">8</a></li>
+                        <li><a href="" class="m_none">9</a></li>
+                        <li><a href="" class="m_none">10</a></li>
+                    </ul>
+                    <ul class="next_btn">
+                        <li><a href="" class="btn_next"></a></li>
+                        <li><a href="" class="btn_next_over"></a></li>
+                    </ul>
+                </div>
+                <!--//페이징-->
+            </div>
+        </div>
+    </div>
+
+    <footer id="pub_footer"></footer>
+
+    <div class="modal-new modal-overlay" id="modal1">
+        <!-- 클래스에 modal-overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
+        <div class="modal-n-wrap">
+            <div class="modal-n-body">
+                <div class="modal-n-header">
+                    <strong class="header-title">분류체계 상세보기</strong>
+                    <a href="javascript:;" class="modal-close" onclick="modalControl('c')">닫기</a>
+                </div>
+                <div class="modal-n-cont">
+                    <table class="table_st3">
+                        <colgroup>
+                            <col style="width: 100px">
+                            <col>
+                        </colgroup>
+                        <tr>
+                            <th>이름</th>
+                            <td>
+                                <input type="text" class="form-style" placeholder="3.0.0" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>제공기관</th>
+                            <td>
+                                <input type="text" class="form-style" placeholder="설명" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>설명</th>
+                            <td>
+                                <input type="text" class="form-style" placeholder="2021-01-02" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>사용권장</th>
+                            <td class="flex-place">
+                                <div class="ico-false" style="display:none;"></div>
+                                <div class="ico-true"></div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //팝업 스크립트
+        function layer_pop_control(popup) {
+            $('#' + popup).toggle();
+        }
+
+    </script>
+</body>
+
+</html>

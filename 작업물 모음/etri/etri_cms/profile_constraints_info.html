@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <title>CMS</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/jquery.scrollbar.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    
+    <script src="js/jquery.scrollbar.min.js"></script>
+    <script src="js/common.js?version=002"></script>
+    <script src="js/script.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.ellipsisTooltip.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+
+    <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+
+        </header>
+
+        <aside id="sidebar">
+
+        </aside>
+
+        <section id="sub_contents">
+            <div class="inner">
+                <div class="container-fluid">
+                    <div class="s_t_area">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item text-hide home">홈</li>
+                                <li class="breadcrumb-item">카테고리</li>
+                                <li class="breadcrumb-item active">프로파일</li>
+                            </ol>
+                        </nav>
+                        <h2 class="sub_title">속성 정보</h2>
+                    </div>
+
+					<div class="profile_category_info">
+				
+				<!-- <strong class="tit24">카테고리 정보</strong> -->
+					
+					<div class="flex-place">
+						<p>어휘</p>
+						<div class="select_place">
+							<select class="bt_select" id="">
+									<option value="">sodas</option>
+									<option value="">-</option>
+									<option value="">-</option>
+							</select>
+						</div>
+					</div>
+					<div class="flex-place">
+						<p>속성</p>
+						<div class="select_place">
+							<select class="bt_select" id="">
+									<option value="">sodas</option>
+									<option value="">-</option>
+									<option value="">-</option>
+							</select>
+						</div>
+					</div>
+					<div class="flex-place">
+						<p>별칭</p>
+						<div class="is-empty">
+							<input type="text" class="txt_form" placeholder="">
+						</div>
+					</div>
+
+					<div class="flex-place">
+						<p>Cardinality</p>
+						<div class="flex_select2">
+							<div class="select_place">
+								<select class="bt_select" id="">
+										<option value="">-</option>
+										<option value="">-</option>
+										<option value="">-</option>
+								</select>
+							</div>
+							<div class="tilde">~</div>
+							<div class="select_place">
+								<select class="bt_select" id="">
+										<option value="">-</option>
+										<option value="">-</option>
+										<option value="">-</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="tit_flex">
+						<strong class="tit18">조건</strong>
+						<a href="#" class="btn_bline" onclick="layer_pop_control_1(this);">추가</a>
+					</div>
+					<div class="responsive_table">
+						<table class="table_st1">
+							<colgroup>
+								<col>
+								<col>
+								<col>
+								<col>
+								<col>
+								<col>
+							</colgroup>
+							<thead>
+								<tr>
+									<th class="">No.</th>
+									<th class="">이름</th>
+									<th class="">데이터타입</th>
+									<th class="">오퍼레이터</th>
+									<th class="">값</th>
+									<th class="">not</th>
+									<th class="">액션</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th class="num">1</th>
+									<th class="">sodas</th>
+									<th class="">Patient</th>
+									<th class="">desc</th>
+									<th class="">ex:Person</th>
+									<th class=""></th>
+									<th class="">
+										<button class="btn_bline">수정</button>
+										<button class="btn_bline">삭제</button>
+									</th>
+								</tr> 
+								<tr>
+									<th class="num">1</th>
+									<th class="">sodas</th>
+									<th class="">Patient</th>
+									<th class="">desc</th>
+									<th class="">ex:Person</th>
+									<th class=""></th>
+									<th class="">
+										<button class="btn_bline">수정</button>
+										<button class="btn_bline">삭제</button>
+									</th>
+								</tr>  
+							</tbody>
+						</table>
+					</div>
+					<div class="txt_center">
+						<a href="#!" class="btn_blue">
+							저장
+						</a>
+					</div>
+
+				</div>
+                </div>
+            </div>
+            <footer id="footer">
+
+            </footer>
+        </section>
+
+		
+		<div class="category_popup1"><!--팝업존-->
+		<div class="category_popup_wrap">
+			<div class="head">
+				<strong>조건 정보</strong>
+				<a class="close" href="javascript:;" onclick="layer_pop_control_1(this);"></a>
+			</div>
+			<div class="content">
+
+				<div class="popup_content">
+					<div class="popup_content_select">
+						<p>타입</p>
+						<div class="select_place">
+							<select class="bt_select" id="">
+									<option value="">기본</option>
+									<option value="">-</option>
+									<option value="">-</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="input_wrap">
+						<p>이름</p>
+						<div class="is-empty">
+							<input type="text" class="txt_form" placeholder="" >
+						</div>
+					</div>
+
+					<div class="popup_content_select">
+						<p>데이터 타입</p>
+						<div class="select_place">
+							<select class="bt_select" id="">
+									<option value="">기본</option>
+									<option value="">-</option>
+									<option value="">-</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="popup_content_select">
+						<p>오퍼레이터</p>
+						<div class="select_place">
+							<select class="bt_select" id="">
+									<option value="">기본</option>
+									<option value="">-</option>
+									<option value="">-</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="input_wrap">
+						<p>값</p>
+						<div class="is-empty">
+							<input type="text" class="txt_form" placeholder="" >
+						</div>
+					</div>
+					
+					<div class="input_wrap">
+						<p>NOT</p>
+						<div class="radio_wrap">
+							<div class="radio_flex" id="input_type">
+								<label>
+									<input type="radio" value="링크" name="input_type" checked=""><span class="circle"></span><span class="check"></span>
+									<em>yes</em>
+								</label>
+								<label>
+									<input type="radio" value="파일" name="input_type"><span class="circle"></span><span class="check"></span>
+									<em>no</em>
+								</label>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="txt_center">
+					<a href="#!" class="btn_blue">
+						저장
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+    </div>
+		<script>//팝업 스크립트
+		function layer_pop_control_1(v) {
+			console.log(v);
+			$('.category_popup1').toggle();
+		}
+	</script>
+	<script>//팝업 스크립트
+		function layer_pop_control_2(v) {
+			console.log(v);
+			$('.category_popup2').toggle();
+		}
+	</script>
+	<script>
+		//아코디언 메뉴
+		function menuToggle(btn){ //파라미터1 = btn인데 btn이 여기서는 <a>
+			//$(btn).parents('.panel-group').siblings('.panel-group').removeClass('active');
+			$(btn).parents('.panel-group').toggleClass('active');
+		}
+	</script>
+</body>
+
+</html>
