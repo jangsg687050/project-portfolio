@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>마음으로</title>
+
+	<!-- 파비콘 -->
+	<link rel="shortcut icon" href="/user/images/favicon.ico">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/user/lib/css/reset.css">
+	<link rel="stylesheet" href="/user/lib/css/fonts.css">
+	<link rel="stylesheet" href="/user/lib/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="/user/lib/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="/user/lib/css/jquery.scrollbar.css">
+	<link rel="stylesheet" href="/user/lib/css/common.css">
+	<link rel="stylesheet" href="/user/lib/css/style.css">
+	<link rel="stylesheet" href="/user/lib/css/responsive.css">
+
+	<!-- JS -->
+	<script src="/user/lib/js/jquery.min.js"></script>
+	<script src="/user/lib/js/jquery-ui.min.js"></script>
+	<script src="/user/lib/js/swiper-bundle.min.js"></script>
+	<script src="/user/lib/js/jquery.scrollbar.min.js"></script>
+	<script src="/user/lib/js/script.js"></script>
+</head>
+<body>
+	<!-- header -->
+	<div id="header">
+		<script>
+			headerLoad(); //헤더 인클루드
+		</script>
+	</div>
+	<!-- //header -->
+
+	<!-- contents -->
+	<div id="contents">
+		<!-- 서브페이지 상단 -->
+		<div class="sub-top sub1">
+			<div class="inner">
+				<h2 class="sub-top-title">마음건강검사</h2>
+			</div>
+		</div>
+		<div id="js-sub-top-navi" class="sub-top-navi">
+			<div class="inner">
+				<div class="navi-select-wrap">
+					<div class="navi-item navi-item1">
+						<a href="javascript:;" class="home">홈</a>
+					</div>
+					<div class="navi-item navi-item2">
+						<div class="custom-select2 navi-select">
+							<select>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+							</select>
+						</div>
+					</div>
+					<div class="navi-item navi-item2">
+						<div class="custom-select2 navi-select">
+							<select>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //서브페이지 상단 -->
+
+		<!-- cms 내용 -->
+		<div class="content">
+			<div class="inner">
+				<!-- 단계 탭 -->
+				<div class="step-s1 check">
+					<ul class="step-list">
+						<li class="list1">
+							<div class="item">
+								<span class="item-step">STEP 1</span>
+								<strong class="item-title">검사유형 선택</strong>
+							</div>
+						</li>
+						<li class="list2 active">
+							<div class="item">
+								<span class="item-step">STEP 2</span>
+								<strong class="item-title">검사지 작성</strong>
+							</div>
+						</li>
+						<li class="list3">
+							<div class="item">
+								<span class="item-step">STEP 3</span>
+								<strong class="item-title">진단결과</strong>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- //단계 탭 -->
+			</div>
+
+			<form action="">
+				<!-- 검사지 작성 -->
+				<div class="inner">
+					<div class="checkPoint-title">
+						<strong class="txt-s2 mb25">우울감 (PHQ_9)</strong>
+						<div class="box-s1 mb50">
+							지난 2주 동안 당신은 다음의 문제들로 인해서 얼마나 자주 방해를 받았습니까? 해당 란에 <span class="color-s1">체크</span>하여 주세요.
+						</div>
+						<div class="page-s1">
+							<div class="page-num">
+								<b class="page-active">1</b><span class="page-slash">/</span>4
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="checkPoint-area">
+					<div class="inner">
+						<ul class="checkPoint-list">
+							<li>
+								<div class="item">
+									<strong class="item-name">최근 1개월 동안, 예상치 못했던 일 때문에 당황했던 적이 얼마나 있었습니까?</strong>
+									
+									<!-- 선택지 리스트 -->
+									<ul class="item-list">
+										<li>
+											<label class="item-box">
+												<input type="radio" name="radio1" checked>
+												<div class="item-content">
+													<p class="item-desc">전혀 방해받지 않았다.</p>
+												</div>
+											</label>
+										</li>
+										<li>
+											<label class="item-box">
+												<input type="radio" name="radio1">
+												<div class="item-content">
+													<p class="item-desc">며칠동안 방해받았다.</p>
+												</div>
+											</label>
+										</li>
+										<li>
+											<label class="item-box">
+												<input type="radio" name="radio1">
+												<div class="item-content">
+													<p class="item-desc">7일 이상 방해받았다.</p>
+												</div>
+											</label>
+										</li>
+										<li>
+											<label class="item-box">
+												<input type="radio" name="radio1">
+												<div class="item-content">
+													<p class="item-desc">거의 매일 방해받았다.</p>
+												</div>
+											</label>
+										</li>
+										<li>
+											<label class="item-box">
+												<input type="radio" name="radio1">
+												<div class="item-content">
+													<p class="item-desc">매우 자주</p>
+												</div>
+											</label>
+										</li>
+									</ul>
+									<!-- //선택지 리스트 -->
+								</div>
+							</li>
+							<li>
+								<div class="item">
+									<strong class="item-name">내가 다른 사람을 쳐다보거나 거울 속의 내 자신을 볼 때, 내 눈 바로 앞에서 얼굴이 바뀌는 것을 본 적이 있다.</strong>
+									
+									<!-- 선택지 리스트 -->
+									<ul class="item-list">
+										<li>
+											<label class="item-box">
+												<input type="radio" name="radio2" checked>
+												<div class="item-content">
+													<p class="item-desc">예</p>
+												</div>
+											</label>
+										</li>
+										<li>
+											<label class="item-box">
+												<input type="radio" name="radio2">
+												<div class="item-content">
+													<p class="item-desc">아니오</p>
+												</div>
+											</label>
+										</li>
+									</ul>
+									<!-- //선택지 리스트 -->
+								</div>
+								<div class="item-detail">
+									<ul class="item-detail-list">
+										<li>
+											<strong class="item-name"><span class="color-s1">‘예’</span>라고 답한 경우 해당 경험이 얼마나 힘드셨는지 체크해주십시오.</strong>
+											<!-- 선택지 리스트 -->
+											<ul class="item-list">
+												<li>
+													<label class="item-box">
+														<input type="radio" name="radio2-1" checked>
+														<div class="item-content">
+															<p class="item-desc">없음</p>
+														</div>
+													</label>
+												</li>
+												<li>
+													<label class="item-box">
+														<input type="radio" name="radio2-1">
+														<div class="item-content">
+															<p class="item-desc">약간</p>
+														</div>
+													</label>
+												</li>
+												<li>
+													<label class="item-box">
+														<input type="radio" name="radio2-1">
+														<div class="item-content">
+															<p class="item-desc">보통</p>
+														</div>
+													</label>
+												</li>
+												<li>
+													<label class="item-box">
+														<input type="radio" name="radio2-1">
+														<div class="item-content">
+															<p class="item-desc">심함</p>
+														</div>
+													</label>
+												</li>
+											</ul>
+											<!-- //선택지 리스트 -->
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="item">
+									<strong class="item-name">최근 1개월 동안, 당신의 개인적 문제들을 다루는데 있어서 얼마나 자주 자신감을 느끼셨습니까?</strong>
+									
+									<!-- 선택지 리스트 -->
+									<ul class="item-list">
+										<li>
+											<label class="item-box">
+												<input type="radio" name="radio3" checked>
+												<div class="item-content">
+													<p class="item-desc">전혀 방해받지 않았다.</p>
+												</div>
+											</label>
+										</li>
+										<li>
+											<label class="item-box">
+												<input type="radio" name="radio3">
+												<div class="item-content">
+													<p class="item-desc">며칠동안 방해받았다.</p>
+												</div>
+											</label>
+										</li>
+										<li>
+											<label class="item-box">
+												<input type="radio" name="radio3">
+												<div class="item-content">
+													<p class="item-desc">7일 이상 방해받았다.</p>
+												</div>
+											</label>
+										</li>
+										<li>
+											<label class="item-box">
+												<input type="radio" name="radio3">
+												<div class="item-content">
+													<p class="item-desc">거의 매일 방해받았다.</p>
+												</div>
+											</label>
+										</li>
+										<li>
+											<label class="item-box">
+												<input type="radio" name="radio3">
+												<div class="item-content">
+													<p class="item-desc">매우 자주</p>
+												</div>
+											</label>
+										</li>
+									</ul>
+									<!-- //선택지 리스트 -->
+								</div>
+							</li>
+						</ul>
+
+						<!-- 출처 -->
+						<div class="box-s2 mt40 mb40">
+							<dl class="dl-s1">
+								<dt>출처</dt>
+								<dd>
+									박승진, 최혜라, 최지혜, 김건우, 홍진표(2010). 한글판 우울증선별도구 <br class="screen-only">
+									(Patient Health Questionnaire-9, PHQ-9)의 신뢰도와 타당도. 대한불안의 학회지 6, 119-24.0
+								</dd>
+							</dl>
+						</div>
+						<!-- //출처 -->
+
+						<!-- 개인정보 -->
+						<div class="box-s3">
+							<strong class="txt-s4 mb10">개인정보</strong>
+							<p class="txt-s3 mb40">자가검진 이용자 현황분석 및 검진 결과 문자발송을 위해 개인정보를 활용합니다.</p>
+
+							<div class="list-s1 mb20">
+								<div class="list-row">
+									<div class="item">
+										<div class="item-title">
+											<span class="color-s1">*</span> 성별
+										</div>
+										<div class="item-content">
+											<div class="label-s1-wrap">
+												<label class="label-s1">
+													<input type="radio" name="radio4" checked>
+													<div class="label-content">
+														<p class="label-desc">남자</p>
+													</div>
+												</label>
+												<label class="label-s1">
+													<input type="radio" name="radio4">
+													<div class="label-content">
+														<p class="label-desc">여자</p>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="item-title">
+											<span class="color-s1">*</span> 연령대
+										</div>
+										<div class="item-content">
+											<select class="form-basic" name="">
+												<option value="">10대</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="list-row">
+									<div class="item">
+										<div class="item-title">
+											<span class="color-s1">*</span> 거주지
+										</div>
+										<div class="item-content">
+											<div class="label-s1-wrap">
+												<label class="label-s1">
+													<input type="radio" name="radio5" checked>
+													<div class="label-content">
+														<p class="label-desc">인천</p>
+													</div>
+												</label>
+											</div>
+											<select class="form-basic" name="">
+												<option value="">구 선택</option>
+											</select>
+											<div class="label-s1-wrap">
+												<label class="label-s1">
+													<input type="radio" name="radio5">
+													<div class="label-content">
+														<p class="label-desc">인천 외</p>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="item-title">
+											<span class="color-s1">*</span> 연락처
+										</div>
+										<div class="item-content">
+											<input type="text" class="form-basic" placeholder="-없이 입력">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="label-s2-wrap mr30 va-t">
+								<label class="label-s2">
+									<input type="checkbox" name="">
+									<span class="label-desc">개인정보제공에 동의합니다.</span>
+								</label>
+							</div>
+
+							<a href="javascript:;" class="txt-s5 va-t">자세히 보기</a>
+						</div>
+						<!-- //개인정보 -->
+
+						<!-- 버튼 영역 -->
+						<div class="btn-area">
+							<a href="/user/publish/A010100.html" class="btn-back position-s1">이전</a>
+							<button type="submit" class="btn-basic btn-s1"><span>다음 검사</span></button>
+						</div>
+						<!-- //버튼 영역 -->
+					</div>
+				</div>
+				<!-- //검사지 작성 -->
+			</form>
+		</div>
+		<!-- //cms 내용 -->
+	</div>
+	<!-- //contents -->
+
+	<!-- footer -->
+	<div id="footer">
+		<script>
+			footerLoad(); //푸터 인클루드
+		</script>
+	</div>
+	<!-- //footer -->
+</body>
+</html>

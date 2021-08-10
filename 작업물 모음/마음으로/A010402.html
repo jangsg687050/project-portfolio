@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>마음으로</title>
+
+	<!-- 파비콘 -->
+	<link rel="shortcut icon" href="/user/images/favicon.ico">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/user/lib/css/reset.css">
+	<link rel="stylesheet" href="/user/lib/css/fonts.css">
+	<link rel="stylesheet" href="/user/lib/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="/user/lib/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="/user/lib/css/jquery.scrollbar.css">
+	<link rel="stylesheet" href="/user/lib/css/common.css">
+	<link rel="stylesheet" href="/user/lib/css/style.css">
+	<link rel="stylesheet" href="/user/lib/css/responsive.css">
+
+	<!-- JS -->
+	<script src="/user/lib/js/jquery.min.js"></script>
+	<script src="/user/lib/js/jquery-ui.min.js"></script>
+	<script src="/user/lib/js/swiper-bundle.min.js"></script>
+	<script src="/user/lib/js/jquery.scrollbar.min.js"></script>
+	<script src="/user/lib/js/script.js"></script>
+</head>
+<body>
+	<!-- header -->
+	<div id="header">
+		<script>
+			headerLoad(); //헤더 인클루드
+		</script>
+	</div>
+	<!-- //header -->
+
+	<!-- contents -->
+	<div id="contents">
+		<!-- 서브페이지 상단 -->
+		<div class="sub-top sub1">
+			<div class="inner">
+				<h2 class="sub-top-title">마음건강검사</h2>
+			</div>
+		</div>
+		<div id="js-sub-top-navi" class="sub-top-navi">
+			<div class="inner">
+				<div class="navi-select-wrap">
+					<div class="navi-item navi-item1">
+						<a href="javascript:;" class="home">홈</a>
+					</div>
+					<div class="navi-item navi-item2">
+						<div class="custom-select2 navi-select">
+							<select>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+							</select>
+						</div>
+					</div>
+					<div class="navi-item navi-item2">
+						<div class="custom-select2 navi-select">
+							<select>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //서브페이지 상단 -->
+
+		<!-- cms 내용 -->
+		<div class="content">
+			<div class="inner">
+				<!-- 단계 탭 -->
+				<div class="step-s1 check">
+					<ul class="step-list">
+						<li class="list1 active">
+							<div class="item">
+								<span class="item-step">STEP 1</span>
+								<strong class="item-title">검사유형 선택</strong>
+							</div>
+						</li>
+						<li class="list2">
+							<div class="item">
+								<span class="item-step">STEP 2</span>
+								<strong class="item-title">검사지 작성</strong>
+							</div>
+						</li>
+						<li class="list3">
+							<div class="item">
+								<span class="item-step">STEP 3</span>
+								<strong class="item-title">진단결과</strong>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- //단계 탭 -->
+
+				<form action="">
+					<!-- 검사 유형 상세 -->
+					<div class="checkType-detail">
+						<strong class="checkType-title text-center mb35"><span>ENGLISH</span></strong>
+						<div class="checkType-list-wrap">
+							<ul class="checkType-list col2 type2"> <!-- col2 클래스는 한줄에 리스트가 2개씩 출력 됩니다. type2 클래스는 디자인 파일에서 다국어 검사 상세 페이지에서만 검사명이 가운데정렬되어있어서 추가했어용 -->
+								<li>
+									<label class="item">
+										<input type="checkbox" checked>
+										<div class="item-content">
+											<strong class="item-name">Perceived Stress Scale (PSS)</strong>
+										</div>
+									</label>
+								</li>
+								<li>
+									<label class="item">
+										<input type="checkbox">
+										<div class="item-content">
+											<strong class="item-name">Center for Epidemiologic Studies-Depression Scale Assessment (CES-D)</strong>
+										</div>
+									</label>
+								</li>
+								<li>
+									<label class="item">
+										<input type="checkbox">
+										<div class="item-content">
+											<strong class="item-name">Alcohol Use Disorders Identification Test Alcohol Scale Assessment (AUDIT-K)</strong>
+										</div>
+									</label>
+								</li>
+								<li>
+									<label class="item">
+										<input type="checkbox">
+										<div class="item-content">
+											<strong class="item-name">Generalized Anxiety Disorder Assessment (GAD-7)</strong>
+										</div>
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- //검사 유형 상세 -->
+
+					<!-- 버튼 영역 -->
+					<div class="btn-area">
+						<a href="/user/publish/A010401.html" class="btn-back position-s1">이전</a>
+						<button type="submit" class="btn-basic btn-s1 btn-next-arrow"><span>다음</span></button>
+					</div>
+					<!-- //버튼 영역 -->
+				</form>
+			</div>
+		</div>
+		<!-- //cms 내용 -->
+	</div>
+	<!-- //contents -->
+
+	<!-- footer -->
+	<div id="footer">
+		<script>
+			footerLoad(); //푸터 인클루드
+		</script>
+	</div>
+	<!-- //footer -->
+</body>
+</html>

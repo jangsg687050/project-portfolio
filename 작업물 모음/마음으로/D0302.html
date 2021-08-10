@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>마음으로</title>
+
+	<!-- 파비콘 -->
+	<link rel="shortcut icon" href="/user/images/favicon.ico">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/user/lib/css/reset.css">
+	<link rel="stylesheet" href="/user/lib/css/fonts.css">
+	<link rel="stylesheet" href="/user/lib/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="/user/lib/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="/user/lib/css/jquery.scrollbar.css">
+	<link rel="stylesheet" href="/user/lib/css/common.css">
+	<link rel="stylesheet" href="/user/lib/css/style.css">
+	<link rel="stylesheet" href="/user/lib/css/responsive.css">
+
+	<!-- JS -->
+	<script src="/user/lib/js/jquery.min.js"></script>
+	<script src="/user/lib/js/jquery-ui.min.js"></script>
+	<script src="/user/lib/js/swiper-bundle.min.js"></script>
+	<script src="/user/lib/js/jquery.scrollbar.min.js"></script>
+	<script src="/user/lib/js/script.js"></script>
+</head>
+<body class="bg-gray"> <!-- ★ 이벤트 참여 페이지일 경우 body에 bg-gray 클래스명 추가 -->
+	<!-- header -->
+	<div id="header">
+		<script>
+			headerLoad(); //헤더 인클루드
+		</script>
+	</div>
+	<!-- //header -->
+
+	<!-- contents -->
+	<div id="contents">
+		<!-- 서브페이지 상단 -->
+		<div class="sub-top sub4">
+			<div class="inner">
+				<h2 class="sub-top-title">이벤트 참여</h2>
+			</div>
+		</div>
+		<div id="js-sub-top-navi" class="sub-top-navi">
+			<div class="inner">
+				<div class="navi-select-wrap">
+					<div class="navi-item navi-item1">
+						<a href="javascript:;" class="home">홈</a>
+					</div>
+					<div class="navi-item navi-item2">
+						<div class="custom-select2 navi-select">
+							<select>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+							</select>
+						</div>
+					</div>
+					<div class="navi-item navi-item2">
+						<div class="custom-select2 navi-select">
+							<select>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //서브페이지 상단 -->
+
+		<!-- cms 내용 -->
+		<div class="content">
+			<div class="inner">
+				<!-- 게시판 - 기본(apply) -->
+				<div id="board-basic">
+					<!-- 신청 -->
+					<div class="basic-apply">
+						<div class="item">
+							<div class="item-title-wrap">
+								<strong class="item-title"><b class="fw-medium">취업의지 고취를 위한 카드뉴스 "희망이가 알려드립니다!"</b></strong>
+								<div class="item-info">
+									<dl>
+										<dt>이벤트 기간</dt>
+										<dd>2021.03.01 ~ 2021.08.21</dd>
+									</dl>
+								</div>
+							</div>
+
+							<div class="item-form">
+								<form action="">
+									<ul class="membership-form">
+										<li class="validation validation-fail">
+											<div class="item">
+												<div class="item-head"><span class="color-s1">*</span> 이름</div>
+												<div class="item-data"><input type="text" class="form-basic" placeholder="이름 입력"></div>
+											</div>
+											<div class="validation-desc">이름을 입력해주세요.</div>
+										</li>
+										<li class="validation validation-fail">
+											<div class="item">
+												<div class="item-head"><span class="color-s1">*</span> 연락처</div>
+												<div class="item-data">
+													<input type="text" class="form-basic" placeholder="연락처 입력">
+													<ul class="mt5">
+														<li class="b-txt-s1">이벤트 당첨시 작성한 연락처로 문자안내드립니다.</li>
+														<li class="b-txt-s1">연락처를 정확하게 기입해주시기 바랍니다.</li>
+													</ul>
+												</div>
+											</div>
+											<div class="validation-desc">연락처를 입력해주세요.</div>
+											<!-- <div class="validation-desc">이미 해당 연락처로 이벤트에 참여하셨습니다.</div> -->
+										</li>
+										<li class="validation validation-fail">
+											<div class="item">
+												<div class="item-head"><span class="color-s1">*</span> 거주지</div>
+												<div class="item-data">
+													<div class="membership-residence">
+														<label class="label-s1">
+															<input type="radio" name="radio5" checked>
+															<div class="label-content">
+																<p class="label-desc">인천</p>
+															</div>
+														</label>
+														<select class="form-basic" name="">
+															<option value="">구 선택</option>
+														</select>
+														<label class="label-s1">
+															<input type="radio" name="radio5">
+															<div class="label-content">
+																<p class="label-desc">인천 외</p>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="validation-desc">거주지를 선택해주세요.</div>
+										</li>
+										
+										<li class="validation validation-fail">
+											<div class="item">
+												<div class="item-head"><span class="color-s1">*</span> 사진첨부</div>
+												<div class="item-data">
+													<div class="file-upload"> 
+														<input id="file" type="file">
+														<input type="text" class="upload-form" readonly="" value="">
+														<label for="file" class="upload-btn">파일첨부</label>
+													</div>
+												</div>
+											</div>
+											<div class="validation-desc">이벤트 참여를 위한 사진을 첨부해주세요.</div>
+										</li>
+
+										<li class="validation vertical validation-fail">
+											<div class="item">
+												<div class="item-head"><span class="color-s1">*</span> 이벤트 참여내용</div>
+												<div class="item-data">
+													<textarea name="" id="" class="form-basic"></textarea>
+												</div>
+											</div>
+											<div class="validation-desc">이벤트 참여를 위한 내용을 작성해주세요.</div>
+										</li>
+
+										<li class="validation vertical validation-fail">
+											<div class="item">
+												<div class="item-head"><span class="color-s1">*</span> 이벤트 참여내용</div>
+												<div class="item-data">
+													<input type="text" class="form-basic">
+												</div>
+											</div>
+											<div class="validation-desc">이벤트 참여를 위한 한마디를 작성해주세요.</div>
+										</li>
+
+										<li class="validation vertical validation-fail">
+											<div class="item">
+												<div class="item-head"><span class="color-s1">*</span> 개인정보 수집 및 이용동의</div>
+												<div class="item-data">
+													<div class="membership-terms">
+														이벤트 운영을 위하여 아래와 같이 개인정보(이름/연락처/거주지)를 수집‧이용(신청일로부터 1년간 보유)하고자 합니다. <br>
+														※ 위의 개인정보 수집 및 이용에 대한 동의를 거부할 수 있으나 거부할 경우 이벤트 참여에 제한을 받으실 수 있습니다.
+													</div>
+													<div class="label-s2-wrap">
+														<label class="label-s2">
+															<input type="checkbox" name="">
+															<span class="label-desc">위와 같이 개인정보를 수집 및 이용하는데 동의합니다.</span>
+														</label>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+									
+									<div class="btn-area">
+										<button type="submit" class="btn-basic btn-s1"><span>참여하기</span></button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<!-- //신청 -->
+				</div>
+				<!-- //게시판 - 기본(apply) -->
+			</div>
+		</div>
+		<!-- //cms 내용 -->
+	</div>
+	<!-- //contents -->
+
+	<!-- footer -->
+	<div id="footer">
+		<script>
+			footerLoad(); //푸터 인클루드
+		</script>
+	</div>
+	<!-- //footer -->
+</body>
+</html>

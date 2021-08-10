@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>마음으로</title>
+
+	<!-- 파비콘 -->
+	<link rel="shortcut icon" href="/user/images/favicon.ico">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/user/lib/css/reset.css">
+	<link rel="stylesheet" href="/user/lib/css/fonts.css">
+	<link rel="stylesheet" href="/user/lib/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="/user/lib/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="/user/lib/css/jquery.scrollbar.css">
+	<link rel="stylesheet" href="/user/lib/css/common.css">
+	<link rel="stylesheet" href="/user/lib/css/style.css">
+	<link rel="stylesheet" href="/user/lib/css/responsive.css">
+
+	<!-- JS -->
+	<script src="/user/lib/js/jquery.min.js"></script>
+	<script src="/user/lib/js/jquery-ui.min.js"></script>
+	<script src="/user/lib/js/swiper-bundle.min.js"></script>
+	<script src="/user/lib/js/jquery.scrollbar.min.js"></script>
+	<script src="/user/lib/js/script.js"></script>
+</head>
+<body>
+	<!-- header -->
+	<div id="header">
+		<script>
+			headerLoad(); //헤더 인클루드
+		</script>
+	</div>
+	<!-- //header -->
+
+	<!-- contents -->
+	<div id="contents">
+		<!-- 서브페이지 상단 -->
+		<div class="sub-top">
+			<div class="inner">
+				<h2 class="sub-top-title">진단기록</h2>
+			</div>
+		</div>
+		<div id="js-sub-top-navi" class="sub-top-navi">
+			<div class="inner">
+				<div class="navi-select-wrap">
+					<div class="navi-item navi-item1">
+						<a href="javascript:;" class="home">홈</a>
+					</div>
+					<div class="navi-item navi-item2">
+						<div class="custom-select2 navi-select">
+							<select>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+							</select>
+						</div>
+					</div>
+					<div class="navi-item navi-item2">
+						<div class="custom-select2 navi-select">
+							<select>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //서브페이지 상단 -->
+
+		<!-- cms 내용 -->
+		<div class="content">
+			<!-- 마이페이지 -->
+			<div id="membership">
+				<div class="inner">
+					<div class="mypage-area">
+						<!-- ★일반 회원 -->
+						<div class="mypage-info">
+							<div class="mypage-intro">
+								<p class="intro-desc">안녕하세요, <b class="bold">김정신님</b></p>
+								<span class="member-type">일반회원</span>
+							</div>
+							
+							<div class="info-list">
+								<ul>
+									<li><a href="/user/publish/F0600.html" class="txt-s9">회원정보 수정</a></li>
+								</ul>
+							</div>
+						</div>
+						
+						<!-- 탭 메뉴 -->
+						<div class="tab-s1">
+							<ul class="tab-list">
+								<li class="active">
+									<a href="/user/publish/F0100.html" class="item">
+										진단기록
+									</a>
+								</li>
+								<li>
+									<a href="/user/publish/F0200.html" class="item">
+										내 이벤트
+									</a>
+								</li>
+								<li>
+									<a href="/user/publish/F0300.html" class="item">
+										내 문의
+									</a>
+								</li>
+								<li>
+									<a href="/user/publish/F0400.html" class="item">
+										내 상담
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- //탭 메뉴 -->
+						<!-- //★일반 회원 -->
+
+						<strong class="txt-s6 mb40">진단기록</strong>
+
+						<!-- 진단기록 -->
+						<div class="table-s2-list mb50">
+							<table class="table">
+								<colgroup>
+									<col> <!-- 검사명 -->
+									<col style="width:150px;"> <!-- 진단일자 -->
+								</colgroup>
+								<thead>
+									<tr>
+										<th class="subject">검사명</th>
+										<th class="date">진단일자</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="subject"><a href="/user/publish/F0102.html">범불안장애 척도 (GAD-7)</a></td>
+										<td class="date" rowspan="3">2021.05.01</td>
+									</tr>
+									<tr>
+										<td class="subject"><a href="/user/publish/F0102.html">아동우울 [CDI]</a></td>
+									</tr>
+									<tr>
+										<td class="subject"><a href="/user/publish/F0102.html">로젠버그 자아존중감척도 (RSES)</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- //진단기록 -->
+
+						<!-- 검사 결과 -->
+						<div id="">
+							<strong class="txt-s2 mb45 text-center">마음 건강 자가검진 검사 결과</strong>
+							<div class="text-right mb25">
+								<span class="capture-txt">귀하의 검사결과는 화면 캡쳐가 가능합니다.</span>
+							</div>
+							<div class="checkPoint-result">
+								<ul class="checkPoint-result-list">
+									<!--
+										li class 스타일 정의
+										state1 = 정상, 매우낮음 등 (초록색)
+										state2 = 낮음 등 (연두색)
+										state3 = 보통, 약간의 우울 상태 등 (노랑색)
+										state4 = 상당한 우울상태, 높음 등 (주황색)
+										state5 = 고도, 매우 심한 우울 상태, 매우높음 등 (빨강색)
+							
+										point class 스타일 정의
+										point1 = 텍스트에 밑줄
+										point2 = 텍스트 굵게
+										point3 = 텍스트 굵게+색깔
+									-->
+									<li>
+										<div class="item">
+											<span class="item-cate">범불안장애 척도 (GAD-7)</span>									
+											<div class="item-content state1">
+												<strong class="item-name">나의 범불안장애 수치는 <b class="point">정상</b> 입니다.</strong>
+												<div class="state-bar">
+													<div class="bar-item bar-item1 active">정상</div>
+													<div class="bar-item bar-item3">경도-중증도</div>
+													<div class="bar-item bar-item5">고도</div>
+												</div>
+												<div class="item-desc">
+													<p class="result-desc">불안으로 인한 어려움이 우려됩니다. 과도한 걱정을 하며, 높은 긴장으로 인해 집중력이 떨어지고 피로하며 두통으로 느낄 수도 있습니다. 불안감으로 인해 대인관계나 직업 활동과 같은 일상생활에 영향을 미친다면 보다 상세하고 전문적인 평가 및 상담이 필요할 것으로 사료됩니다. 가까운 정신건강의학과 또는 정신건강복지센터에서 도움 받으실 수 있습니다.</p>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="item">
+											<span class="item-cate">아동우울 [CDI]</span>
+											<div class="item-content state3">
+												<strong class="item-name">나의 범불안장애 수치는 <b class="point">약간의 우울 상태</b> 입니다.</strong>
+												<div class="state-bar">
+													<div class="bar-item bar-item1">정상범위</div>
+													<div class="bar-item bar-item3 active">약간의 우울 상태</div>
+													<div class="bar-item bar-item4">상당한 우울상태</div>
+													<div class="bar-item bar-item5">매우 심한 우울 상태</div>
+												</div>
+												<div class="item-desc">
+													<p class="result-desc">다소 경미한 수준의 우울감이 있으나, 일상생활에 지장을 줄 정도는 아닙니다. 다만, 이러한 기분상태가 지속될 경우 개인의 신체적, 심리적 대처자원을 저하시킬 수 있습니다. 그러한 경우 가까운 지역센터나 전문기관을 방문하시기 바랍니다.</p>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="item">
+											<span class="item-cate">로젠버그 자아존중감척도 (RSES)</span>
+											<div class="item-content state5">
+												<strong class="item-name">나의 범불안장애 수치는 <b class="point">매우높음</b> 입니다.</strong>
+												<div class="state-bar">
+													<div class="bar-item bar-item1">매우낮음</div>
+													<div class="bar-item bar-item2">낮음</div>
+													<div class="bar-item bar-item3">보통</div>
+													<div class="bar-item bar-item4">높음</div>
+													<div class="bar-item bar-item5 active">매우 높음</div>
+												</div>
+												<div class="item-desc">
+													<p class="result-desc">스스로를 무가치하고 볼품없다고 여기며 자존감이 다소 낮은 수준으로 나타납니다. 대게 낮은 자존감이 우울이나 스트레스 사건 같은 정서적, 상황적 요인들과 관련이 높아, 이에 대한 탐색이 학생을 이해하는데 도움을 줄 수 있을 것으로 판단됩니다.</p>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							
+								<div class="checkPoint-guide">
+									<div class="checkPoint-guide-title-wrap">
+										<strong class="txt-s16 mb20">총평</strong>
+										<p class="checkPoint-guide-desc point"><span>당신의 마음건강 상태는 <b class="color-s1 bold">정상</b>입니다.</span></p>
+										<!-- <p class="checkPoint-guide-desc">당신의 마음건강 상태는 <b class="color-s1 bold">고위험</b>입니다.</p> -->
+									</div>
+									<div class="checkPoint-guide-bg">
+										<div class="end-txt-area">
+											<div class="end-txt">
+												<p class="txt2">
+													건강한 마음을 유지하기 위해서는 운동, 여가활동, 명상, 긍정적 사고 등이 도움이 될 수 있습니다. <br class='screen-only'/>
+													마음 건강 자가검진 결과는 아래 ‘문자 전송하기’를 클릭하여 문자로 받아 보실 수 있습니다. <br class='screen-only'/>
+													마음건강에 궁금한 점이나 마음이 힘들 경우, 홈페이지 ‘온라인 상담실’이나 ‘마음회복프로그램’을 이용해 도움 받으시길 바랍니다.
+												</p>
+												<p class="txt1">마음건강 자가검진에 참여해 주셔서 감사합니다.</p>
+												<p class="txt3">
+													귀하의 검사결과지는 화면캡처가 가능합니다. <br class='screen-only'/>
+													필요시 화면캡처를 해주시기 바라며, 결과에 대한 해석 및 이미지파일이  필요하실 경우 ☎032)468-9916로 연락바랍니다. <br class='screen-only'/>
+													※ 검사결과에 대한 파일 요청 시, 사전에 기입한 인적사항(연락처) 로 확인가능.
+												</p>
+											</div>
+										</div>
+										
+										<div class="end-select-list">
+											<ul class="list-s2">
+												<li>
+													<div class="item">
+														<strong class="item-title"><div class="item-icon"><img src="/user/images/icon/icon4-2.png" alt=""></div> 온라인 상담하기</strong>
+														<a href="javascript:;" class="item-btn btn-basic btn-s2"><span>상담하기</span></a>
+													</div>
+												</li>
+												<li>
+													<div class="item">
+														<strong class="item-title"><div class="item-icon"><img src="/user/images/icon/icon4-1.png" alt=""></div> 마음회복프로그램 참여하기</strong>
+														<a href="javascript:;" class="item-btn btn-basic btn-s2"><span>신청하기</span></a>
+													</div>
+												</li>
+												<li>
+													<div class="item">
+														<strong class="item-title"><div class="item-icon"><img src="/user/images/icon/icon4-3.png" alt=""></div> 검사결과 문자받기</strong>
+														<a href="javascript:;" class="item-btn btn-basic btn-s2"><span>전송하기</span></a>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							
+								<p class="b-txt-s1 mt20">
+									상기 검진은 자신의 상태를 스스로 점검해 볼 수 있도록 제공된 것이므로 정신과적인 진단을 대신할 수 없습니다. <br>
+									자세한 사항은 정신과 전문의나 정신보건요원과 상의하시기 바랍니다.
+								</p>
+							</div>
+						</div>
+						<!-- //검사 결과 -->
+
+						<!-- 버튼 영역 -->
+						<div class="btn-area">
+							<a href="/user/publish/C030000.html" class="btn-basic btn-s1"><span>목록</span></a>
+						</div>
+						<!-- //버튼 영역 -->
+					</div>
+				</div>
+			</div>
+			<!-- //마이페이지 -->
+		</div>
+		<!-- //cms 내용 -->
+	</div>
+	<!-- //contents -->
+
+	<!-- footer -->
+	<div id="footer">
+		<script>
+			footerLoad(); //푸터 인클루드
+		</script>
+	</div>
+	<!-- //footer -->
+</body>
+</html>

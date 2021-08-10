@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>마음으로</title>
+
+	<!-- 파비콘 -->
+	<link rel="shortcut icon" href="/user/images/favicon.ico">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/user/lib/css/reset.css">
+	<link rel="stylesheet" href="/user/lib/css/fonts.css">
+	<link rel="stylesheet" href="/user/lib/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="/user/lib/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="/user/lib/css/jquery.scrollbar.css">
+	<link rel="stylesheet" href="/user/lib/css/common.css">
+	<link rel="stylesheet" href="/user/lib/css/style.css">
+	<link rel="stylesheet" href="/user/lib/css/responsive.css">
+
+	<!-- JS -->
+	<script src="/user/lib/js/jquery.min.js"></script>
+	<script src="/user/lib/js/jquery-ui.min.js"></script>
+	<script src="/user/lib/js/swiper-bundle.min.js"></script>
+	<script src="/user/lib/js/jquery.scrollbar.min.js"></script>
+	<script src="/user/lib/js/script.js"></script>
+</head>
+<body class="bg-gray"> <!-- ★ 안심버스 신청 페이지일 경우 body에 bg-gray 클래스명 추가 -->
+	<!-- header -->
+	<div id="header">
+		<script>
+			headerLoad(); //헤더 인클루드
+		</script>
+	</div>
+	<!-- //header -->
+
+	<!-- contents -->
+	<div id="contents">
+		<!-- 서브페이지 상단 -->
+		<div class="sub-top sub3">
+			<div class="inner">
+				<h2 class="sub-top-title">안심버스 신청</h2>
+			</div>
+		</div>
+		<div id="js-sub-top-navi" class="sub-top-navi">
+			<div class="inner">
+				<div class="navi-select-wrap">
+					<div class="navi-item navi-item1">
+						<a href="javascript:;" class="home">홈</a>
+					</div>
+					<div class="navi-item navi-item2">
+						<div class="custom-select2 navi-select">
+							<select>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+							</select>
+						</div>
+					</div>
+					<div class="navi-item navi-item2">
+						<div class="custom-select2 navi-select">
+							<select>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //서브페이지 상단 -->
+
+		<!-- cms 내용 -->
+		<div class="content">
+			<div class="inner">
+				<!-- 안심버스 신청 -->
+				<div class="bus-application-wrap">
+					<!-- 단계 탭 -->
+					<div class="step-s1 bus">
+						<ul class="step-list">
+							<li class="list1 active">
+								<div class="item">
+									<span class="item-step">STEP 1</span>
+									<strong class="item-title">날짜 선택</strong>
+								</div>
+							</li>
+							<li class="list2">
+								<div class="item">
+									<span class="item-step">STEP 2</span>
+									<strong class="item-title">신청서 작성</strong>
+								</div>
+							</li>
+							<li class="list3">
+								<div class="item">
+									<span class="item-step">STEP 3</span>
+									<strong class="item-title">신청완료</strong>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- //단계 탭 -->
+					<div class="bus-application-contents">
+						<div class="bus-calendar-info">
+							<div class="bus-calendar-info-left">
+								<p><span class="color-s1">*</span> 안심버스는 하루 1건만 접수합니다.</p>
+							</div>
+							<div class="bus-calendar-info-right">
+								<ul class="calendar-state">
+									<li class="state state1">신청가능</li>
+									<li class="state state2">오늘</li>
+								</ul>
+							</div>
+						</div>
+						<!-- 달력 -->
+						<div class="bus-calendar">
+							<!-- container-header -->
+							<div class="bus-calendar-container-header">
+								<a href="javascript:;" class="arrow arrow-prev">이전달</a>
+								<strong class="bus-calendar-title">2021년 6월</strong>
+								<a href="javascript:;" class="arrow arrow-next">다음달</a>
+							</div>
+							<!-- //container-header -->
+					
+							<!-- container-body -->
+							<div class="bus-calendar-container-body">
+								<div class="calendar-table">
+									<!-- table-header -->
+									<div class="calendar-table-header">
+										<div class="calendar-table-row">
+											<div class="calendar-table-col">일</div>
+											<div class="calendar-table-col">월</div>
+											<div class="calendar-table-col">화</div>
+											<div class="calendar-table-col">수</div>
+											<div class="calendar-table-col">목</div>
+											<div class="calendar-table-col">금</div>
+											<div class="calendar-table-col">토</div>
+										</div>
+									</div>
+									<!-- //table-header -->
+					
+									<!-- table-body -->
+					
+									<!--
+										1. calendar-table-inactive : 지난달, 다음달 날짜
+										2. calendar-table-possible : 신청가능한 날짜
+										3. calendar-table-impossible : 신청불가능한 날짜
+										4. calendar-table-today : 오늘 날짜
+										5. calendar-table-selected : 선택된 날짜
+										6. calendar-table-received : 접수 완료 된 날짜
+										7. calendar-table-approved : 승인 완료 된 날짜
+										8. calendar-table-category.calendar-table-category1 : 카테고리1,카테고리2,카테고리3...
+									-->
+									<div class="calendar-table-body">
+										<div class="calendar-table-row">
+											<div class="calendar-table-col calendar-table-inactive calendar-table-impossible">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>30</span>
+												</a>
+											</div>
+											<div class="calendar-table-col calendar-table-inactive calendar-table-impossible">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>31</span>
+												</a>
+											</div>
+											<div class="calendar-table-col calendar-table-impossible">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>1</span>
+												</a>
+											</div>
+											<div class="calendar-table-col calendar-table-possible">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>2</span>
+												</a>
+											</div>
+											<div class="calendar-table-col calendar-table-possible">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>3</span>
+												</a>
+											</div>
+											<div class="calendar-table-col calendar-table-possible">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>4</span>
+												</a>
+											</div>
+											<div class="calendar-table-col calendar-table-impossible calendar-table-received calendar-table-category calendar-table-category3">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>5</span>
+												</a>
+												<span class="txt-s10">접수</span>
+											</div>
+										</div>
+										<div class="calendar-table-row">
+											<div class="calendar-table-col calendar-table-possible">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>6</span>
+												</a>
+											</div>
+											<div class="calendar-table-col calendar-table-possible">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>7</span>
+												</a>
+											</div>
+											<div class="calendar-table-col calendar-table-possible">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>8</span>
+												</a>
+											</div>
+											<div class="calendar-table-col calendar-table-impossible calendar-table-received calendar-table-category calendar-table-category2">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>9</span>
+												</a>
+												<span class="txt-s10">접수</span>
+											</div>
+											<div class="calendar-table-col calendar-table-possible">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>10</span>
+												</a>
+											</div>
+											<div class="calendar-table-col calendar-table-possible">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>11</span>
+												</a>
+											</div>
+											<div class="calendar-table-col calendar-table-possible calendar-table-today">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>12</span>
+												</a>
+											</div>
+										</div>
+										<div class="calendar-table-row">
+											<div class="calendar-table-col calendar-table-impossible calendar-table-received calendar-table-category calendar-table-category1">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>13</span>
+												</a>
+												<span class="txt-s10">접수</span>
+											</div>
+											<div class="calendar-table-col calendar-table-possible">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>14</span>
+												</a>
+											</div>
+											<div class="calendar-table-col calendar-table-possible">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>15</span>
+												</a>
+											</div>
+											<div class="calendar-table-col calendar-table-possible">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>16</span>
+												</a>
+											</div>
+											<div class="calendar-table-col calendar-table-possible">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>17</span>
+												</a>
+											</div>
+											<div class="calendar-table-col calendar-table-impossible calendar-table-approved calendar-table-category calendar-table-category1 calendar-table-selected">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>18</span>
+												</a>
+												<span class="txt-s10">승인</span>
+											</div>
+											<div class="calendar-table-col calendar-table-possible">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>19</span>
+												</a>
+											</div>
+										</div>
+										<div class="calendar-table-row">
+											<div class="calendar-table-col calendar-table-possible">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>20</span>
+												</a>
+											</div>
+											<div class="calendar-table-col calendar-table-possible">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>21</span>
+												</a>
+											</div>
+											<div class="calendar-table-col calendar-table-impossible calendar-table-approved calendar-table-category calendar-table-category3">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>22</span>
+												</a>
+												<span class="txt-s10">승인</span>
+											</div>
+											<div class="calendar-table-col calendar-table-possible">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>23</span>
+												</a>
+											</div>
+											<div class="calendar-table-col calendar-table-possible">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>24</span>
+												</a>
+											</div>
+											<div class="calendar-table-col calendar-table-possible">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>25</span>
+												</a>
+											</div>
+											<div class="calendar-table-col calendar-table-possible">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>26</span>
+												</a>
+											</div>
+										</div>
+										<div class="calendar-table-row">
+											<div class="calendar-table-col calendar-table-possible">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>27</span>
+												</a>
+											</div>
+											<div class="calendar-table-col calendar-table-impossible calendar-table-received calendar-table-category calendar-table-category5">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>28</span>
+												</a>
+												<span class="txt-s10">접수</span>
+											</div>
+											<div class="calendar-table-col calendar-table-possible">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>29</span>
+												</a>
+											</div>
+											<div class="calendar-table-col calendar-table-impossible calendar-table-received calendar-table-category calendar-table-category4">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>30</span>
+												</a>
+												<span class="txt-s10">접수</span>
+											</div>
+											<div class="calendar-table-col calendar-table-inactive calendar-table-impossible">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>1</span>
+												</a>
+											</div>
+											<div class="calendar-table-col calendar-table-inactive calendar-table-impossible">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>2</span>
+												</a>
+											</div>
+											<div class="calendar-table-col calendar-table-inactive calendar-table-impossible">
+												<a href="javascript:;" class="calendar-table-item">
+													<span>3</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<!-- //table-body -->
+								</div>
+							</div>
+							<!-- //container-body -->
+						</div>
+						<!-- //달력 -->
+						<div class="bus-calendar-category">
+							<ul class="calendar-category">
+								<li class="category category1">정신건강복지센터</li>
+								<li class="category category2">중독관리통합지원센터</li>
+								<li class="category category3">정신재활시설</li>
+								<li class="category category4">자살예방센터</li>
+								<li class="category category5">유관기관</li>
+							</ul>
+						</div>
+					
+						<!-- 행사정보 -->
+						<div class="bus-calendar-event">
+							<strong class="event-title">2021년 8월 18일 예약</strong>
+							<ul class="event-list">
+								<li class="category1">
+									<div class="item">
+										<strong class="item-title">[정신건강복지센터] 미추홀구 정신건강복지센터</strong>
+										<ul class="item-info">
+											<li>2021년 08월 18일 14:00 ~ 18:00</li>
+											<li>미추홀구 대운동장</li>
+										</ul>
+										<span class="item-state received">접수</span>
+									</div>
+								</li>
+								<li class="category2">
+									<div class="item">
+										<strong class="item-title">[정신건강복지센터] 미추홀구 정신건강복지센터</strong>
+										<ul class="item-info">
+											<li>2021년 08월 18일 14:00 ~ 18:00</li>
+											<li>미추홀구 대운동장</li>
+										</ul>
+										<span class="item-state approved">승인</span>
+									</div>
+								</li>
+								<li class="category3">
+									<div class="item">
+										<strong class="item-title">[정신건강복지센터] 미추홀구 정신건강복지센터</strong>
+										<ul class="item-info">
+											<li>2021년 08월 18일 14:00 ~ 18:00</li>
+											<li>미추홀구 대운동장</li>
+										</ul>
+										<span class="item-state possible">신청가능</span>
+									</div>
+								</li>
+								<li class="category4">
+									<div class="item">
+										<strong class="item-title">[정신건강복지센터] 미추홀구 정신건강복지센터</strong>
+										<ul class="item-info">
+											<li>2021년 08월 18일 14:00 ~ 18:00</li>
+											<li>미추홀구 대운동장</li>
+										</ul>
+										<span class="item-state received">접수</span>
+									</div>
+								</li>
+								<li class="category5">
+									<div class="item">
+										<strong class="item-title">[정신건강복지센터] 미추홀구 정신건강복지센터</strong>
+										<ul class="item-info">
+											<li>2021년 08월 18일 14:00 ~ 18:00</li>
+											<li>미추홀구 대운동장</li>
+										</ul>
+										<span class="item-state received">접수</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- //행사정보 -->
+					</div>
+
+					<!-- 버튼 영역 -->
+					<div class="btn-area">
+						<a href="javascript:;" class="btn-basic btn-s1 btn-next-arrow"><span>다음</span></a>
+					</div>
+					<!-- //버튼 영역 -->
+				</div>
+				<!-- //안심버스 신청 -->
+			</div>
+		</div>
+		<!-- //cms 내용 -->
+	</div>
+	<!-- //contents -->
+
+	<!-- footer -->
+	<div id="footer">
+		<script>
+			footerLoad(); //푸터 인클루드
+		</script>
+	</div>
+	<!-- //footer -->
+</body>
+</html>

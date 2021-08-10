@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>마음으로</title>
+
+	<!-- 파비콘 -->
+	<link rel="shortcut icon" href="/user/images/favicon.ico">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/user/lib/css/reset.css">
+	<link rel="stylesheet" href="/user/lib/css/fonts.css">
+	<link rel="stylesheet" href="/user/lib/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="/user/lib/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="/user/lib/css/jquery.scrollbar.css">
+	<link rel="stylesheet" href="/user/lib/css/common.css">
+	<link rel="stylesheet" href="/user/lib/css/style.css">
+	<link rel="stylesheet" href="/user/lib/css/responsive.css">
+
+	<!-- JS -->
+	<script src="/user/lib/js/jquery.min.js"></script>
+	<script src="/user/lib/js/jquery-ui.min.js"></script>
+	<script src="/user/lib/js/swiper-bundle.min.js"></script>
+	<script src="/user/lib/js/jquery.scrollbar.min.js"></script>
+	<script src="/user/lib/js/script.js"></script>
+</head>
+<body class="bg-gray"> <!-- ★ 이벤트 참여 페이지일 경우 body에 bg-gray 클래스명 추가 -->
+	<!-- header -->
+	<div id="header">
+		<script>
+			headerLoad(); //헤더 인클루드
+		</script>
+	</div>
+	<!-- //header -->
+
+	<!-- contents -->
+	<div id="contents">
+		<!-- 서브페이지 상단 -->
+		<div class="sub-top sub4">
+			<div class="inner">
+				<h2 class="sub-top-title">상담실</h2>
+			</div>
+		</div>
+		<div id="js-sub-top-navi" class="sub-top-navi">
+			<div class="inner">
+				<div class="navi-select-wrap">
+					<div class="navi-item navi-item1">
+						<a href="javascript:;" class="home">홈</a>
+					</div>
+					<div class="navi-item navi-item2">
+						<div class="custom-select2 navi-select">
+							<select>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+							</select>
+						</div>
+					</div>
+					<div class="navi-item navi-item2">
+						<div class="custom-select2 navi-select">
+							<select>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //서브페이지 상단 -->
+
+		<!-- cms 내용 -->
+		<div class="content">
+			<div class="inner">
+				<!-- 게시판 - 기본(apply) -->
+				<div id="board-basic">
+					<!-- 신청 -->
+					<div class="basic-apply">
+						<div class="item">
+							<div class="item-title-wrap">
+								<strong class="item-title mb0">내 마음속 고민들, <br><b class="fw-medium">마음으로에 털어놓아보세요.</b></strong>
+							</div>
+
+							<div class="item-form">
+								<form action="">
+									<ul class="membership-form">
+										<li class="validation validation-fail">
+											<div class="item">
+												<div class="item-head"><span class="color-s1">*</span> 상담제목</div>
+												<div class="item-data"><input type="text" class="form-basic" placeholder="상담제목 입력"></div>
+											</div>
+											<div class="validation-desc">상담제목을 입력해주세요.</div>
+										</li>
+										<li class="validation validation-fail">
+											<div class="item">
+												<div class="item-head"><span class="color-s1">*</span> 작성자</div>
+												<div class="item-data">
+													<input type="text" class="form-basic" placeholder="작성자 이름 입력">
+												</div>
+											</div>
+											<div class="validation-desc">작성자 이름을 입력해주세요.</div>
+										</li>
+										<li class="validation validation-fail">
+											<div class="item">
+												<div class="item-head"><span class="color-s1">*</span> 비밀번호</div>
+												<div class="item-data">
+													<input type="password" class="form-basic" placeholder="비밀번호 입력">
+												</div>
+											</div>
+											<div class="validation-desc">비밀번호를 입력해주세요.</div>
+										</li>
+										<li class="validation">
+											<div class="item">
+												<div class="item-head">이메일</div>
+												<div class="item-data">
+													<input type="text" class="form-basic" placeholder="이메일 입력">
+												</div>
+											</div>
+										</li>
+										<li class="validation">
+											<div class="item">
+												<div class="item-head">연락처</div>
+												<div class="item-data">
+													<input type="text" class="form-basic" placeholder="연락처 입력">
+												</div>
+											</div>
+										</li>
+										<li class="validation vertical validation-fail">
+											<div class="item">
+												<div class="item-head"><span class="color-s1">*</span> 상담내용</div>
+												<div class="item-data">
+													<textarea name="" id="" class="form-basic" placeholder="상담내용 입력"></textarea>
+												</div>
+											</div>
+											<div class="validation-desc">상담 요청하실 내용을 입력해주세요.</div>
+										</li>
+									</ul>
+									
+									<div class="btn-area">
+										<button type="submit" class="btn-basic btn-s1"><span>문의하기</span></button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<!-- //신청 -->
+				</div>
+				<!-- //게시판 - 기본(apply) -->
+			</div>
+		</div>
+		<!-- //cms 내용 -->
+	</div>
+	<!-- //contents -->
+
+	<!-- footer -->
+	<div id="footer">
+		<script>
+			footerLoad(); //푸터 인클루드
+		</script>
+	</div>
+	<!-- //footer -->
+</body>
+</html>

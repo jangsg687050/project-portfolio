@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>마음으로</title>
+
+	<!-- 파비콘 -->
+	<link rel="shortcut icon" href="/user/images/favicon.ico">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/user/lib/css/reset.css">
+	<link rel="stylesheet" href="/user/lib/css/fonts.css">
+	<link rel="stylesheet" href="/user/lib/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="/user/lib/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="/user/lib/css/jquery.scrollbar.css">
+	<link rel="stylesheet" href="/user/lib/css/common.css">
+	<link rel="stylesheet" href="/user/lib/css/style.css">
+	<link rel="stylesheet" href="/user/lib/css/responsive.css">
+
+	<!-- JS -->
+	<script src="/user/lib/js/jquery.min.js"></script>
+	<script src="/user/lib/js/jquery-ui.min.js"></script>
+	<script src="/user/lib/js/swiper-bundle.min.js"></script>
+	<script src="/user/lib/js/jquery.scrollbar.min.js"></script>
+	<script src="/user/lib/js/script.js"></script>
+</head>
+<body>
+	<!-- header -->
+	<div id="header">
+		<script>
+			headerLoad(); //헤더 인클루드
+		</script>
+	</div>
+	<!-- //header -->
+
+	<!-- contents -->
+	<div id="contents">
+		<!-- 서브페이지 상단 -->
+		<div class="sub-top">
+			<div class="inner">
+				<h2 class="sub-top-title">문의</h2>
+			</div>
+		</div>
+		<div id="js-sub-top-navi" class="sub-top-navi">
+			<div class="inner">
+				<div class="navi-select-wrap">
+					<div class="navi-item navi-item1">
+						<a href="javascript:;" class="home">홈</a>
+					</div>
+					<div class="navi-item navi-item2">
+						<div class="custom-select2 navi-select">
+							<select>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+							</select>
+						</div>
+					</div>
+					<div class="navi-item navi-item2">
+						<div class="custom-select2 navi-select">
+							<select>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //서브페이지 상단 -->
+
+		<!-- cms 내용 -->
+		<div class="content">
+			<div class="inner">
+				<!-- 게시판 - 문의(list) -->
+				<div id="board-basic" class="inquiry">
+					<!-- 검색 -->
+					<div class="search-s1">
+						<form action="">
+							<div class="search-box">
+								<div class="custom-select2 search-select">
+									<select>
+										<option value="">전체</option>
+										<option value="">제목</option>
+										<option value="">제목2</option>
+										<option value="">제목3</option>
+									</select>
+								</div>
+								<div class="search-form-wrap">
+									<input class="search-form" type="text" placeholder="검색어를 입력하세요">
+									<button type="submit" class="search-btn">검색</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<!-- //검색 -->
+
+					<!-- 리스트 -->
+					<div class="table-top-area">
+						<a href="javascript:;" class=" btn-basic btn-s6 btn-sm">내가 쓴 글</a>
+					</div>
+					<div class="basic-list-wrap">
+						<table class="basic-list">
+							<colgroup>
+								<col style="width:130px;"> <!-- 번호 -->
+								<col> <!-- 제목 -->
+								<col style="width:150px;"> <!-- 답변 상태 -->
+								<col style="width:150px;"> <!-- 작성자 -->
+								<col style="width:150px;"> <!-- 등록일 -->
+							</colgroup>
+							<thead>
+								<tr>
+									<th>번호</th>
+									<th>제목</th>
+									<th>답변 상태</th>
+									<th>작성자</th>
+									<th>등록일</th>
+								</tr>
+							</thead>
+							<tbody>
+								<!-- 공지사항 글일 경우 -->
+								<tr class="notice">
+									<td class="num"><span class="num-notice">공지</span></td>
+									<td class="subject">
+										<a href="/user/publish/D0502.html" class="subject-title">문의게시판 공지사항 입니다.</a>
+									</td>
+									<td class="answer">
+										
+									</td>
+									<td class="name">관리자</td>
+									<td class="date">2021.04.06</td>
+								</tr>
+								<!-- //공지사항 글일 경우 -->
+								<tr>
+									<td class="num">10</td>
+									<td class="subject">
+										<a href="javascript:;" class="subject-title" onclick="modalControl('o','#modal1')">문의합니다.</a>
+										<img class="icon-secret" src="/user/images/common/icon_secret.png" alt="비밀글">
+									</td>
+									<td class="answer">
+										<span class="answer-state wait">답변대기</span>
+									</td>
+									<td class="name">김정신</td>
+									<td class="date">2021.04.06</td>
+								</tr>
+								<tr>
+									<td class="num">10</td>
+									<td class="subject">
+										<a href="javascript:;" class="subject-title" onclick="modalControl('o','#modal1')">문의합니다.문의합니다.문의합니다.문의합니다.문의합니다.문의합니다.문의합니다.문의합니다.문의합니다.문의합니다.</a>
+										<img class="icon-secret" src="/user/images/common/icon_secret.png" alt="비밀글">
+									</td>
+									<td class="answer">
+										<span class="answer-state complete">답변완료</span>
+									</td>
+									<td class="name">김정신</td>
+									<td class="date">2021.04.06</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- //리스트 -->
+
+					<!-- 페이징 -->
+					<div class="paging">
+						<div class="paging-control">
+							<a href="javascript:;" class="page first">처음</a>
+							<a href="javascript:;" class="page prev">이전</a>
+						</div>
+						<a href="javascript:;" class="page active">1</a>
+						<a href="javascript:;" class="page">2</a>
+						<a href="javascript:;" class="page">3</a>
+						<a href="javascript:;" class="page">4</a>
+						<a href="javascript:;" class="page">5</a>
+						<div class="paging-control">
+							<a href="javascript:;" class="page next">다음</a>
+							<a href="javascript:;" class="page last">마지막</a>
+						</div>
+					</div>
+					<!-- //페이징 -->
+
+					<!-- 버튼 영역 -->
+					<div class="btn-area text-right">
+						<a href="/user/publish/D0503.html" class="btn-basic btn-s1"><span>문의하기</span></a>
+					</div>
+					<!-- //버튼 영역 -->
+				</div>
+				<!-- //게시판 - 문의(list) -->
+			</div>
+		</div>
+		<!-- //cms 내용 -->
+	</div>
+	<!-- //contents -->
+
+	<!-- footer -->
+	<div id="footer">
+		<script>
+			footerLoad(); //푸터 인클루드
+		</script>
+	</div>
+	<!-- //footer -->
+
+	<!-- 비밀번호확인 팝업 -->
+	<div class="modal-new" id="modal1">
+		<div class="modal-n-wrap">
+			<div class="modal-n-body">
+				<form action="">
+					<div class="modal-n-header">
+						<strong class="header-title">비밀번호확인</strong>
+					</div>
+					<div class="modal-n-cont">
+						<p class="txt-s8 mb20">문의 글 작성 시 설정했던 비밀번호를 입력해주세요.</p>
+						<ul class="membership-form">
+							<li class="head-hide validation validation-fail">
+								<div class="item">
+									<div class="item-head"><span class="color-s1">*</span> 비밀번호</div>
+									<div class="item-data"><input type="password" class="form-basic" placeholder="비밀번호 입력"></div>
+								</div>
+								<div class="validation-desc">비밀번호를 입력해주세요.</div>
+							</li>
+						</ul>
+					</div>
+					<div class="modal-n-footer">
+						<div class="modal-btn-area">
+							<button type="button" class="btn-modal btn-s1">확인</button>
+							<button type="button" onclick="modalControl('c')" class="btn-modal btn-s2">취소</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- //비밀번호확인 팝업 -->
+</body>
+</html>

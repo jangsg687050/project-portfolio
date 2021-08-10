@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>마음으로</title>
+
+	<!-- 파비콘 -->
+	<link rel="shortcut icon" href="/user/images/favicon.ico">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/user/lib/css/reset.css">
+	<link rel="stylesheet" href="/user/lib/css/fonts.css">
+	<link rel="stylesheet" href="/user/lib/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="/user/lib/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="/user/lib/css/jquery.scrollbar.css">
+	<link rel="stylesheet" href="/user/lib/css/common.css">
+	<link rel="stylesheet" href="/user/lib/css/style.css">
+	<link rel="stylesheet" href="/user/lib/css/responsive.css">
+
+	<!-- JS -->
+	<script src="/user/lib/js/jquery.min.js"></script>
+	<script src="/user/lib/js/jquery-ui.min.js"></script>
+	<script src="/user/lib/js/swiper-bundle.min.js"></script>
+	<script src="/user/lib/js/jquery.scrollbar.min.js"></script>
+	<script src="/user/lib/js/script.js"></script>
+</head>
+<body>
+	<!-- header -->
+	<div id="header">
+		<script>
+			headerLoad(); //헤더 인클루드
+		</script>
+	</div>
+	<!-- //header -->
+
+	<!-- contents -->
+	<div id="contents">
+		<!-- 서브페이지 상단 -->
+		<div class="sub-top">
+			<div class="inner">
+				<h2 class="sub-top-title">회원정보수정</h2>
+			</div>
+		</div>
+		<div id="js-sub-top-navi" class="sub-top-navi">
+			<div class="inner">
+				<div class="navi-select-wrap">
+					<div class="navi-item navi-item1">
+						<a href="javascript:;" class="home">홈</a>
+					</div>
+					<div class="navi-item navi-item2">
+						<div class="custom-select2 navi-select">
+							<select>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+							</select>
+						</div>
+					</div>
+					<div class="navi-item navi-item2">
+						<div class="custom-select2 navi-select">
+							<select>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //서브페이지 상단 -->
+
+		<!-- cms 내용 -->
+		<div class="content">
+			<!-- 마이페이지 -->
+			<div id="membership">
+				<div class="inner">
+					<div class="mypage-area">
+						<!-- ★일반 회원 -->
+						<div class="mypage-info">
+							<div class="mypage-intro">
+								<p class="intro-desc">안녕하세요, <b class="bold">김정신님</b></p>
+								<span class="member-type">일반회원</span>
+							</div>
+							
+							<div class="info-list">
+								<ul>
+									<li><a href="/user/publish/F0600.html" class="txt-s9">회원정보 수정</a></li>
+								</ul>
+							</div>
+						</div>
+						
+						<!-- 탭 메뉴 -->
+						<div class="tab-s1">
+							<ul class="tab-list">
+								<li>
+									<a href="/user/publish/F0100.html" class="item">
+										진단기록
+									</a>
+								</li>
+								<li>
+									<a href="/user/publish/F0200.html" class="item">
+										내 이벤트
+									</a>
+								</li>
+								<li>
+									<a href="/user/publish/F0300.html" class="item">
+										내 문의
+									</a>
+								</li>
+								<li>
+									<a href="/user/publish/F0400.html" class="item">
+										내 상담
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- //탭 메뉴 -->
+						<!-- //★일반 회원 -->
+						
+						<!-- 회원정보 수정 -->
+						<div id="membership">
+							<div class="inner">
+								<div class="membership-box mypage">
+									<form action="">
+										<strong class="txt-s6 mb40">회원정보 수정</strong>
+										<ul class="membership-form">
+											<li class="validation"> <!-- 폼 전송시 유효성 검사에 실패했을경우 validation-fail 클래스명 추가 --> 
+												<div class="item">
+													<div class="item-head"><span class="color-s1">*</span> 계정유형</div>
+													<div class="item-data">
+														일반회원
+														<!-- 센터회원 -->
+													</div>
+												</div>
+											</li>
+											<li class="validation">
+												<div class="item">
+													<div class="item-head"><span class="color-s1">*</span> 아이디</div>
+													<div class="item-data">thesaeloi</div>
+												</div>
+											</li>
+											<li class="validation validation-fail">
+												<div class="item">
+													<div class="item-head"><span class="color-s1">*</span> 비밀번호</div>
+													<div class="item-data"><input type="password" class="form-basic" placeholder="영문, 숫자 조합하여 최소 10자리 이상"></div>
+												</div>
+												<div class="validation-desc">비밀번호를 영문, 숫자 조합 10자리 이상으로 설정해 주세요.</div>
+											</li>
+											<li class="validation validation-fail">
+												<div class="item">
+													<div class="item-head"><span class="color-s1">*</span> 비밀번호 <br>확인</div>
+													<div class="item-data"><input type="password" class="form-basic" placeholder="비밀번호 재입력"></div>
+												</div>
+												<div class="validation-desc">비밀번호를 다시 입력해주세요.</div>
+											</li>
+											<li class="validation">
+												<div class="item">
+													<div class="item-head"><span class="color-s1">*</span> 이름</div>
+													<div class="item-data">김정신</div>
+												</div>
+											</li>
+											<li class="validation">
+												<div class="item">
+													<div class="item-head"><span class="color-s1">*</span> 연락처</div>
+													<div class="item-data">
+														<!-- 연락처 -->
+														<div class="contact-form-area">
+															<input type="text" class="form-basic contact-form" value="010-1234-5678" readonly>
+															<a href="javascript:;" class="contact-btn">변경</a>
+														</div>
+														<!-- //연락처 -->
+													</div>
+												</div>
+											</li>
+											<li class="validation validation-fail">
+												<div class="item">
+													<div class="item-head"><span class="color-s1">*</span> 연령대</div>
+													<div class="item-data">
+														<div class="membership-select">
+															<select class="form-basic" name="">
+																<option value="">10대</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												<div class="validation-desc">연령대를 선택해주세요.</div>
+											</li>
+											<li class="validation validation-fail">
+												<div class="item">
+													<div class="item-head"><span class="color-s1">*</span> 성별</div>
+													<div class="item-data">
+														<div class="label-s1-wrap">
+															<label class="label-s1">
+																<input type="radio" name="radio2-1" checked>
+																<div class="label-content width1">
+																	<p class="label-desc">남자</p>
+																</div>
+															</label>
+															<label class="label-s1">
+																<input type="radio" name="radio2-1">
+																<div class="label-content width1">
+																	<p class="label-desc">여자</p>
+																</div>
+															</label>
+														</div>
+													</div>
+												</div>
+												<div class="validation-desc">성별을 선택해주세요.</div>
+											</li>
+											<li class="validation validation-fail">
+												<div class="item">
+													<div class="item-head"><span class="color-s1">*</span> 거주지</div>
+													<div class="item-data">
+														<div class="membership-residence">
+															<label class="label-s1">
+																<input type="radio" name="radio5" checked>
+																<div class="label-content">
+																	<p class="label-desc">인천</p>
+																</div>
+															</label>
+															<select class="form-basic" name="">
+																<option value="">구 선택</option>
+															</select>
+															<label class="label-s1">
+																<input type="radio" name="radio5">
+																<div class="label-content">
+																	<p class="label-desc">인천 외</p>
+																</div>
+															</label>
+														</div>
+													</div>
+												</div>
+												<div class="validation-desc">거주지를 선택해주세요.</div>
+											</li>
+											<li class="validation validation-fail">
+												<a href="/user/publish/F0700.html" class="txt-s9">회원탈퇴</a>
+											</li>
+										</ul>
+										
+										<div class="membership-btns">
+											<button type="submit" class="btn-basic btn-s1"><span>회원정보 저장하기</span></button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<!-- //회원정보 수정 -->
+					</div>
+				</div>
+			</div>
+			<!-- //마이페이지 -->
+		</div>
+		<!-- //cms 내용 -->
+	</div>
+	<!-- //contents -->
+
+	<!-- footer -->
+	<div id="footer">
+		<script>
+			footerLoad(); //푸터 인클루드
+		</script>
+	</div>
+	<!-- //footer -->
+</body>
+</html>

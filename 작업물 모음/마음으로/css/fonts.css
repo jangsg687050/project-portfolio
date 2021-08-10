@@ -1,0 +1,69 @@
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 100;
+	src: url('/user/lib/fonts/NotoSansKR-Thin.woff2') format('woff2'), url('/user/lib/fonts/NotoSansKR-Thin.woff') format('woff'), url('/user/lib/fonts/NotoSansKR-Thin.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 200;
+	src: url('/user/lib/fonts/NotoSansKR-Light.woff2') format('woff2'), url('/user/lib/fonts/NotoSansKR-Light.woff') format('woff'), url('/user/lib/fonts/NotoSansKR-Light.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 300;
+	src: url('/user/lib/fonts/NotoSansKR-DemiLight.woff2') format('woff2'), url('/user/lib/fonts/NotoSansKR-DemiLight.woff') format('woff'), url('/user/lib/fonts/NotoSansKR-DemiLight.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/user/lib/fonts/NotoSansKR-Regular.woff2') format('woff2'), url('/user/lib/fonts/NotoSansKR-Regular.woff') format('woff'), url('/user/lib/fonts/NotoSansKR-Regular.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 500;
+	src: url('/user/lib/fonts/NotoSansKR-Medium.woff2') format('woff2'), url('/user/lib/fonts/NotoSansKR-Medium.woff') format('woff'), url('/user/lib/fonts/NotoSansKR-Medium.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 700;
+	src: url('/user/lib/fonts/NotoSansKR-Bold.woff2') format('woff2'), url('/user/lib/fonts/NotoSansKR-Bold.woff') format('woff'), url('/user/lib/fonts/NotoSansKR-Bold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 900;
+	src: url('/user/lib/fonts/NotoSansKR-Black.woff2') format('woff2'), url('/user/lib/fonts/NotoSansKR-Black.woff') format('woff'), url('/user/lib/fonts/NotoSansKR-Black.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Noto Serif KR';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/user/lib/fonts/NotoSerifKR-Regular.woff2') format('woff2'), url('/user/lib/fonts/NotoSerifKR-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Godo';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/user/lib/fonts/GodoM.woff2') format('woff2'), url('/user/lib/fonts/GodoM.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Orbitron';
+	font-style: normal;
+	font-weight: 600;
+	src: url('/user/lib/fonts/Orbitron-SemiBold.woff2') format('woff2'), url('/user/lib/fonts/Orbitron-SemiBold.woff') format('woff');
+}

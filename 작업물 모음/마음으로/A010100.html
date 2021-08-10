@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>마음으로</title>
+
+	<!-- 파비콘 -->
+	<link rel="shortcut icon" href="/user/images/favicon.ico">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/user/lib/css/reset.css">
+	<link rel="stylesheet" href="/user/lib/css/fonts.css">
+	<link rel="stylesheet" href="/user/lib/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="/user/lib/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="/user/lib/css/jquery.scrollbar.css">
+	<link rel="stylesheet" href="/user/lib/css/common.css">
+	<link rel="stylesheet" href="/user/lib/css/style.css">
+	<link rel="stylesheet" href="/user/lib/css/responsive.css">
+
+	<!-- JS -->
+	<script src="/user/lib/js/jquery.min.js"></script>
+	<script src="/user/lib/js/jquery-ui.min.js"></script>
+	<script src="/user/lib/js/swiper-bundle.min.js"></script>
+	<script src="/user/lib/js/jquery.scrollbar.min.js"></script>
+	<script src="/user/lib/js/script.js"></script>
+</head>
+<body>
+	<!-- header -->
+	<div id="header">
+		<script>
+			headerLoad(); //헤더 인클루드
+		</script>
+	</div>
+	<!-- //header -->
+
+	<!-- contents -->
+	<div id="contents">
+		<!-- 서브페이지 상단 -->
+		<div class="sub-top sub1">
+			<div class="inner">
+				<h2 class="sub-top-title">마음건강검사</h2>
+			</div>
+		</div>
+		<div id="js-sub-top-navi" class="sub-top-navi">
+			<div class="inner">
+				<div class="navi-select-wrap">
+					<div class="navi-item navi-item1">
+						<a href="javascript:;" class="home">홈</a>
+					</div>
+					<div class="navi-item navi-item2">
+						<div class="custom-select2 navi-select">
+							<select>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+							</select>
+						</div>
+					</div>
+					<div class="navi-item navi-item2">
+						<div class="custom-select2 navi-select">
+							<select>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //서브페이지 상단 -->
+
+		<!-- cms 내용 -->
+		<div class="content">
+			<div class="inner">
+				<!-- 단계 탭 -->
+				<div class="step-s1 check">
+					<ul class="step-list">
+						<li class="list1 active">
+							<div class="item">
+								<span class="item-step">STEP 1</span>
+								<strong class="item-title">검사유형 선택</strong>
+							</div>
+						</li>
+						<li class="list2">
+							<div class="item">
+								<span class="item-step">STEP 2</span>
+								<strong class="item-title">검사지 작성</strong>
+							</div>
+						</li>
+						<li class="list3">
+							<div class="item">
+								<span class="item-step">STEP 3</span>
+								<strong class="item-title">진단결과</strong>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- //단계 탭 -->
+
+				<form action="">
+					<p class="txt-s1 text-center mb10">진행할 검사를 선택해주세요.</p>
+					<p class="txt-s3 text-center mb40 color-s1">*복수선택 가능</p>
+
+					<!-- 검사 유형 리스트 -->
+					<div class="checkType-list-wrap">
+						<ul class="checkType-list">
+							<li>
+								<label class="item">
+									<input type="checkbox" checked>
+									<div class="item-content">
+										<strong class="item-name">우울감(PHQ-9)</strong>
+									</div>
+								</label>
+							</li>
+							<li>
+								<label class="item">
+									<input type="checkbox">
+									<div class="item-content">
+										<strong class="item-name">범불안장애 척도(GAD-7)</strong>
+									</div>
+								</label>
+							</li>
+							<li>
+								<label class="item">
+									<input type="checkbox">
+									<div class="item-content">
+										<strong class="item-name">알코올 선별검사(AUDIT-K)</strong>
+									</div>
+								</label>
+							</li>
+							<li>
+								<label class="item">
+									<input type="checkbox">
+									<div class="item-content">
+										<strong class="item-name">외상후스트레스(PC-PTSD)</strong>
+									</div>
+								</label>
+							</li>
+							<li>
+								<label class="item">
+									<input type="checkbox">
+									<div class="item-content">
+										<strong class="item-name">조기 정신증(K-ESI)</strong>
+									</div>
+								</label>
+							</li>
+							<li>
+								<label class="item">
+									<input type="checkbox">
+									<div class="item-content">
+										<strong class="item-name">니코틴 의존도(FTND)</strong>
+									</div>
+								</label>
+							</li>
+							<li>
+								<label class="item">
+									<input type="checkbox">
+									<div class="item-content">
+										<strong class="item-name">노인우울 단축형(GDS-SF)</strong>
+									</div>
+								</label>
+							</li>
+							<li>
+								<label class="item">
+									<input type="checkbox">
+									<div class="item-content">
+										<strong class="item-name">자살위험도(P4)</strong>
+									</div>
+								</label>
+							</li>
+							<li>
+								<label class="item">
+									<input type="checkbox">
+									<div class="item-content">
+										<strong class="item-name">한국판 불면증 심각도 척도(ISI-K)</strong>
+									</div>
+								</label>
+							</li>
+							<li>
+								<label class="item">
+									<input type="checkbox">
+									<div class="item-content">
+										<strong class="item-name">아동 우울(CDI)</strong>
+									</div>
+								</label>
+							</li>
+							<li>
+								<label class="item">
+									<input type="checkbox">
+									<div class="item-content">
+										<strong class="item-name">자아존중감(RSES)</strong>
+									</div>
+								</label>
+							</li>
+							<li>
+								<label class="item">
+									<input type="checkbox">
+									<div class="item-content">
+										<strong class="item-name">스마트폰 과의존 청소년 척도</strong>
+									</div>
+								</label>
+							</li>
+							<li>
+								<label class="item">
+									<input type="checkbox">
+									<div class="item-content">
+										<strong class="item-name">교정된 정신증 고위험군 선별도구(MKPQ-16)</strong>
+									</div>
+								</label>
+							</li>
+							<li>
+								<label class="item">
+									<input type="checkbox">
+									<div class="item-content">
+										<strong class="item-name">청년 정신건강 선별도구(CAPE-15)</strong>
+									</div>
+								</label>
+							</li>
+							<li>
+								<label class="item">
+									<input type="checkbox">
+									<div class="item-content">
+										<strong class="item-name">스트레스 지각척도(PSS)</strong>
+									</div>
+								</label>
+							</li>
+							<li>
+								<label class="item">
+									<input type="checkbox">
+									<div class="item-content">
+										<strong class="item-name">스트레스대처 반응척도(K-CSI)</strong>
+									</div>
+								</label>
+							</li>
+							<li>
+								<label class="item">
+									<input type="checkbox">
+									<div class="item-content">
+										<strong class="item-name">청소년 도박중독(CAGI)</strong>
+									</div>
+								</label>
+							</li>
+							<li>
+								<label class="item">
+									<input type="checkbox">
+									<div class="item-content">
+										<strong class="item-name">성인 도박중독(CPGI)</strong>
+									</div>
+								</label>
+							</li>
+							<li>
+								<label class="item">
+									<input type="checkbox">
+									<div class="item-content">
+										<strong class="item-name">일반인 종사자를 위한 직무소진 척도(MBI-GS)</strong>
+									</div>
+								</label>
+							</li>
+							<li>
+								<label class="item">
+									<input type="checkbox">
+									<div class="item-content">
+										<strong class="item-name">한국인 직무스트레스 측정도구(KOSS)</strong>
+									</div>
+								</label>
+							</li>
+							<li>
+								<label class="item">
+									<input type="checkbox">
+									<div class="item-content">
+										<strong class="item-name">우울증 척도(CES-D)</strong>
+									</div>
+								</label>
+							</li>
+							<li>
+								<label class="item">
+									<input type="checkbox">
+									<div class="item-content">
+										<strong class="item-name">피츠버그 수면의 질 지수 척도(PSQI)</strong>
+									</div>
+								</label>
+							</li>
+							<li>
+								<label class="item">
+									<input type="checkbox">
+									<div class="item-content">
+										<strong class="item-name">신체증상(PHQ-15)</strong>
+									</div>
+								</label>
+							</li>
+							<li>
+								<label class="item">
+									<input type="checkbox">
+									<div class="item-content">
+										<strong class="item-name">예일-브라운 강박척도(Y-BOCS)</strong>
+									</div>
+								</label>
+							</li>
+						</ul>
+					</div>
+					<!-- //검사 유형 리스트 -->
+
+					<!-- 버튼 영역 -->
+					<div class="btn-area">
+						<button type="submit" class="btn-basic btn-s1 btn-next-arrow"><span>다음</span></button>
+					</div>
+					<!-- //버튼 영역 -->
+				</form>
+			</div>
+		</div>
+		<!-- //cms 내용 -->
+	</div>
+	<!-- //contents -->
+
+	<!-- footer -->
+	<div id="footer">
+		<script>
+			footerLoad(); //푸터 인클루드
+		</script>
+	</div>
+	<!-- //footer -->
+</body>
+</html>

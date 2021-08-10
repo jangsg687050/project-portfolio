@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>마음으로</title>
+
+	<!-- 파비콘 -->
+	<link rel="shortcut icon" href="/user/images/favicon.ico">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/user/lib/css/reset.css">
+	<link rel="stylesheet" href="/user/lib/css/fonts.css">
+	<link rel="stylesheet" href="/user/lib/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="/user/lib/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="/user/lib/css/jquery.scrollbar.css">
+	<link rel="stylesheet" href="/user/lib/css/common.css">
+	<link rel="stylesheet" href="/user/lib/css/style.css">
+	<link rel="stylesheet" href="/user/lib/css/responsive.css">
+
+	<!-- JS -->
+	<script src="/user/lib/js/jquery.min.js"></script>
+	<script src="/user/lib/js/jquery-ui.min.js"></script>
+	<script src="/user/lib/js/swiper-bundle.min.js"></script>
+	<script src="/user/lib/js/jquery.scrollbar.min.js"></script>
+	<script src="/user/lib/js/script.js"></script>
+</head>
+<body>
+	<!-- header -->
+	<div id="header">
+		<script>
+			headerLoad(); //헤더 인클루드
+		</script>
+	</div>
+	<!-- //header -->
+
+	<!-- contents -->
+	<div id="contents">
+		<!-- 서브페이지 상단 -->
+		<div class="sub-top sub1">
+			<div class="inner">
+				<h2 class="sub-top-title">마음건강검사</h2>
+			</div>
+		</div>
+		<div id="js-sub-top-navi" class="sub-top-navi">
+			<div class="inner">
+				<div class="navi-select-wrap">
+					<div class="navi-item navi-item1">
+						<a href="javascript:;" class="home">홈</a>
+					</div>
+					<div class="navi-item navi-item2">
+						<div class="custom-select2 navi-select">
+							<select>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+							</select>
+						</div>
+					</div>
+					<div class="navi-item navi-item2">
+						<div class="custom-select2 navi-select">
+							<select>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //서브페이지 상단 -->
+
+		<!-- cms 내용 -->
+		<div class="content">
+			<div class="inner">
+				<strong class="txt-s2 text-center mb25">마음건강검사 안내</strong>
+				<p class="txt-s3 text-center mb45">총 24가지의 마음건강검사가 가능하며 원하시는 검사를 선택하여 이용하실 수 있습니다.</p>
+
+				<!-- 단계 탭 -->
+				<div class="step-s1 check">
+					<ul class="step-list">
+						<li class="list1 active">
+							<div class="item">
+								<span class="item-step">STEP 1</span>
+								<strong class="item-title">검사유형 선택</strong>
+							</div>
+						</li>
+						<li class="list2">
+							<div class="item">
+								<span class="item-step">STEP 2</span>
+								<strong class="item-title">검사지 작성</strong>
+							</div>
+						</li>
+						<li class="list3">
+							<div class="item">
+								<span class="item-step">STEP 3</span>
+								<strong class="item-title">진단결과</strong>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- //단계 탭 -->
+
+				<form action="">
+					<p class="txt-s1 text-center mb25">아래 검사유형을 선택해주세요.</p>
+
+					<!-- 검사 유형 리스트 -->
+					<div class="check-paper-type">
+						<ul>
+							<li class="list1">
+								<label class="item">
+									<input type="radio" name="cp-type">
+									<div class="label-content">
+										<p class="item-desc">나에게 필요한 검사만 선택할 수 있는</p>
+										<strong class="item-title">맞춤형 1:1 검사</strong>
+									</div>
+								</label>
+							</li>
+							<li class="list2">
+								<label class="item">
+									<input type="radio" name="cp-type">
+									<div class="label-content">
+										<p class="item-desc">연령에 따라 필요한 검사를 할 수 있는</p>
+										<strong class="item-title">연령별 검사</strong>
+									</div>
+								</label>
+							</li>
+							<li class="list3">
+								<label class="item">
+									<input type="radio" name="cp-type">
+									<div class="label-content">
+										<p class="item-desc">현재 나의 상황에 맞는 검사를 할 수 있는</p>
+										<strong class="item-title">상황별 검사</strong>
+									</div>
+								</label>
+							</li>
+							<li class="list4">
+								<label class="item">
+									<input type="radio" name="cp-type">
+									<div class="label-content">
+										<p class="item-desc">영어,중국어,따갈로그어, 필리핀어의 언어별</p>
+										<strong class="item-title">다국어 검사</strong>
+									</div>
+								</label>
+							</li>
+						</ul>
+					</div>
+					<!-- //검사 유형 리스트 -->
+
+					<!-- 버튼 영역 -->
+					<div class="btn-area">
+						<button type="submit" class="btn-basic btn-s1 btn-next-arrow"><span>다음</span></button>
+					</div>
+					<!-- //버튼 영역 -->
+				</form>
+			</div>
+		</div>
+		<!-- //cms 내용 -->
+	</div>
+	<!-- //contents -->
+
+	<!-- footer -->
+	<div id="footer">
+		<script>
+			footerLoad(); //푸터 인클루드
+		</script>
+	</div>
+	<!-- //footer -->
+</body>
+</html>

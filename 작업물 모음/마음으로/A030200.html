@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>마음으로</title>
+
+	<!-- 파비콘 -->
+	<link rel="shortcut icon" href="/user/images/favicon.ico">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/user/lib/css/reset.css">
+	<link rel="stylesheet" href="/user/lib/css/fonts.css">
+	<link rel="stylesheet" href="/user/lib/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="/user/lib/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="/user/lib/css/jquery.scrollbar.css">
+	<link rel="stylesheet" href="/user/lib/css/common.css">
+	<link rel="stylesheet" href="/user/lib/css/style.css">
+	<link rel="stylesheet" href="/user/lib/css/responsive.css">
+
+	<!-- JS -->
+	<script src="/user/lib/js/jquery.min.js"></script>
+	<script src="/user/lib/js/jquery-ui.min.js"></script>
+	<script src="/user/lib/js/swiper-bundle.min.js"></script>
+	<script src="/user/lib/js/jquery.scrollbar.min.js"></script>
+	<script src="/user/lib/js/script.js"></script>
+</head>
+<body>
+	<!-- header -->
+	<div id="header">
+		<script>
+			headerLoad(); //헤더 인클루드
+		</script>
+	</div>
+	<!-- //header -->
+
+	<!-- contents -->
+	<div id="contents">
+		<!-- 서브페이지 상단 -->
+		<div class="sub-top sub1">
+			<div class="inner">
+				<h2 class="sub-top-title">마음건강검사</h2>
+			</div>
+		</div>
+		<div id="js-sub-top-navi" class="sub-top-navi">
+			<div class="inner">
+				<div class="navi-select-wrap">
+					<div class="navi-item navi-item1">
+						<a href="javascript:;" class="home">홈</a>
+					</div>
+					<div class="navi-item navi-item2">
+						<div class="custom-select2 navi-select">
+							<select>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+							</select>
+						</div>
+					</div>
+					<div class="navi-item navi-item2">
+						<div class="custom-select2 navi-select">
+							<select>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+								<option value="">마음건강검사</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //서브페이지 상단 -->
+
+		<!-- cms 내용 -->
+		<div class="content">
+			<div class="inner">
+				<!-- 단계 탭 -->
+				<div class="step-s1 check">
+					<ul class="step-list">
+						<li class="list1">
+							<div class="item">
+								<span class="item-step">STEP 1</span>
+								<strong class="item-title">검사유형 선택</strong>
+							</div>
+						</li>
+						<li class="list2">
+							<div class="item">
+								<span class="item-step">STEP 2</span>
+								<strong class="item-title">검사지 작성</strong>
+							</div>
+						</li>
+						<li class="list3 active">
+							<div class="item">
+								<span class="item-step">STEP 3</span>
+								<strong class="item-title">진단결과</strong>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- //단계 탭 -->
+			</div>
+
+			<form action="">
+				<!-- 검사 결과 -->
+				<div class="inner">
+					<strong class="txt-s2 mb45 text-center">검사결과 그래프 유형</strong>
+
+					<div class="checkPoint-result">
+						<ul class="checkPoint-result-list">
+							<!--
+								li class 스타일 정의
+								state1 = 정상, 매우낮음 등 (초록색)
+								state2 = 낮음 등 (연두색)
+								state3 = 보통, 약간의 우울 상태 등 (노랑색)
+								state4 = 상당한 우울상태, 높음 등 (주황색)
+								state5 = 고도, 매우 심한 우울 상태, 매우높음 등 (빨강색)
+
+								point class 스타일 정의
+								point1 = 텍스트에 밑줄
+								point2 = 텍스트 굵게
+								point3 = 텍스트 굵게+색깔
+							-->
+							<li>
+								<div class="item">
+									<span class="item-cate">한국인 직무스트레스 측정도구 (KOSS)</span>
+									<div class="item-content state3">
+										<strong class="item-name">
+											당신의 직무스트레스 정도는 <b class="point">안정</b> 상태입니다. <br>
+											각 항목 중 <b class="point2">물리적 환경</b> 이(가) 높게 나타났으며 관리가 필요합니다.
+										</strong>
+										<div class="state-bar">
+											<div class="bar-item bar-item1">정상</div>
+											<div class="bar-item bar-item3 active">안정</div>
+											<div class="bar-item bar-item5">고도</div>
+										</div>
+										<div class="item-desc">
+											<p class="result-desc">불안으로 인한 어려움이 우려됩니다. 과도한 걱정을 하며, 높은 긴장으로 인해 집중력이 떨어지고 피로하며 두통으로 느낄 수도 있습니다. 불안감으로 인해 대인관계나 직업 활동과 같은 일상생활에 영향을 미친다면 보다 상세하고 전문적인 평가 및 상담이 필요할 것으로 사료됩니다. 가까운 정신건강의학과 또는 정신건강복지센터에서 도움 받으실 수 있습니다.</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="item">
+									<span class="item-cate">스트레스 대처반응척도 (K-CSI)</span>
+									<div class="item-content state3">
+										<strong class="item-name">당신이 주로 사용하는 스트레스 대처방법은 <b class="point3">사회적지지추구, 문제해결 중심</b> 입니다.</strong>
+										<div class="item-desc">
+											<p class="result-desc">사회적지지추구는 중요한 타인으로부터 받는 애정, 수용 및 관심 등으로 스트레스를 감소시키는 유형, 직접적으로 좋은 정보나 의견을 얻는 것과 공감이나 사랑과 같은 정서적 지지를 포함합니다. 문제해결중심은 문제되는 행동을 변화하거나 환경적 조건을 변화하는 노력으로 스트레스에 능동적으로 대처하려는 유형입니다.</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="item">
+									<span class="item-cate">일반인 종사자를 위한 직무소진척도 (MBI-GS)</span>
+									<div class="item-content state5">
+										<strong class="item-name">당신의 <b class="point2">정서적 소진</b> 수치는 <b class="point">매우 지친상태</b> 입니다.</strong>
+										<div class="state-bar">
+											<div class="bar-item bar-item1">양호</div>
+											<div class="bar-item bar-item3">약간 지친상태</div>
+											<div class="bar-item bar-item5 active">매우 지친상태</div>
+										</div>
+										<div class="item-desc">
+											<p class="result-desc">감정 소진이 매우 많이 되었습니다. 휴식이 필요합니다. 휴식 이후에도 감정소진이 지속되면 세부적인 상담이 필요합니다.</p>
+										</div>
+									</div>
+									<div class="item-content state5">
+										<strong class="item-name">당신의 <b class="point2">냉소</b> 수치는 <b class="point">매우 부정적 태도</b> 입니다.</strong>
+										<div class="state-bar">
+											<div class="bar-item bar-item1">긍정적 태도</div>
+											<div class="bar-item bar-item3">전반적 부정적 태도</div>
+											<div class="bar-item bar-item5 active">매우 부정적 태도</div>
+										</div>
+										<div class="item-desc">
+											<p class="result-desc">현재 직무에 대해 매우 부정적으로 생각하고 계시네요. 선임자, 동료, 상사 등과 같이 업무를 잘 아는 사람들과 업무 시 어려운 부분을 상의해보세요. 상의 후에도 직무에 대한 생각이 계속 부정적이라면 직무 변경이 필요할 수도 있습니다.</p>
+										</div>
+									</div>
+									<div class="item-content state5">
+										<strong class="item-name">당신의 <b class="point2">직업효능감</b> 수치는 <b class="point">매우 부정적 태도</b> 입니다.</strong>
+										<div class="state-bar">
+											<div class="bar-item bar-item1">긍정적 태도</div>
+											<div class="bar-item bar-item3">전반적 부정적 태도</div>
+											<div class="bar-item bar-item5 active">매우 부정적 태도</div>
+										</div>
+										<div class="item-desc">
+											<p class="result-desc">현재 직무에 대해 매우 부정적으로 생각하고 계시네요. 선임자, 동료, 상사 등과 같이 업무를 잘 아는 사람들과 업무 시 어려운 부분을 상의해보세요. 상의 후에도 직무에 대한 생각이 계속 부정적이라면 직무 변경이 필요할 수도 있습니다.</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="item">
+									<span class="item-cate">한국인 직무스트레스 측정도구 (KOSS)</span>
+									<div class="item-content state1">
+										<strong class="item-name">당신의 직무스트레스 정도는 <b class="point">안정</b> 상태입니다.</strong>
+										<div class="state-bar">
+											<div class="bar-item bar-item1 active">안정</div>
+											<div class="bar-item bar-item3">보통</div>
+											<div class="bar-item bar-item4">불안정</div>
+											<div class="bar-item bar-item5">위험</div>
+										</div>
+										<div class="item-desc">
+											<p class="result-desc">각 항목 중 <b class="point">직무요구</b> 이(가) 높게 나타났으나 종합적인 검사결과 현재 귀하의 직무스트레스는 매우 건강한 상태이며 지금처럼 잘 관리하시기 바랍니다.</p>
+										</div>
+
+										<div class="table-s1-list mt40">
+											<table class="table">
+												<tbody>
+													<tr>
+														<th>물리적환경</th>
+														<td>작업방식의 위험성, 공기의 오염, 신체부담 등</td>
+													</tr>
+													<tr>
+														<th>직무요구</th>
+														<td>시간적 압박, 업무량 증가, 업무 중 중단, 책임감, 과도한 직무부담 등</td>
+													</tr>
+													<tr>
+														<th>직무자율</th>
+														<td>기술적 재량 및 자율성, 업무예측가능성, 직무수행권한 등</td>
+													</tr>
+													<tr>
+														<th>관계갈등</th>
+														<td>동료의지지, 상사의지지, 전반적지지 등</td>
+													</tr>
+													<tr>
+														<th>직무불안정</th>
+														<td>구직기회, 고용불안정성 등</td>
+													</tr>
+													<tr>
+														<th>조직체계</th>
+														<td>조직의 정략 및 운영체계, 조직의 자원, 조직 내 갈등, 합리적 의사소통 등</td>
+													</tr>
+													<tr>
+														<th>보상부적절</th>
+														<td>존중, 내적동기, 기대 부적합 등</td>
+													</tr>
+													<tr>
+														<th>직장문화</th>
+														<td>한국적인 집단주의적 문화, 비합리적인 의사소통체계, 비공식적 직장문화 등</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="item">
+									<span class="item-cate">Alcohol Use Disorders Identification Test Alcohol Scale Assessment (AUDIT-K)</span>
+									<div class="item-content state5">
+										<div class="state-bar">
+											<div class="bar-item bar-item1">Normal Drinking Group</div>
+											<div class="bar-item bar-item3 active">Hazardous Drinking Group</div>
+											<div class="bar-item bar-item5">Alcohol Use Disorder Group</div>
+										</div>
+										<div class="item-desc">
+											<p class="result-desc">Your current drinking level is risk status. If you maintain your current drinking habits, you may develop mental or physical problems. Please improve your drinking habits and seek professional help if needed.</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="item">
+									<span class="item-cate">Thước đo sự trúng độc rượu(AUDIT-K)</span>
+									<div class="item-content state5">
+										<div class="state-bar">
+											<div class="bar-item bar-item1">Nhóm uống rượu bình thường</div>
+											<div class="bar-item bar-item3 active">Nhóm uống rượu nguy hiểm</div>
+											<div class="bar-item bar-item5">Nhóm được nhận định có khuyết tật trong việc sử dụng chất cồn</div>
+										</div>
+										<div class="item-desc">
+											<p class="result-desc">Your current drinking level is risk status. If you maintain your current drinking habits, you may develop mental or physical problems. Please improve your drinking habits and seek professional help if needed.</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //검사 결과 -->
+			</form>
+		</div>
+		<!-- //cms 내용 -->
+	</div>
+	<!-- //contents -->
+
+	<!-- footer -->
+	<div id="footer">
+		<script>
+			footerLoad(); //푸터 인클루드
+		</script>
+	</div>
+	<!-- //footer -->
+</body>
+</html>
