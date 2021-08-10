@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>펜타코드 퍼블리싱 라이브러리</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+
+	<!-- JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../../lib/js/script.js"></script>
+
+	<!-- highlight -->
+    <link rel="stylesheet" href="../../lib/jquery/vs2015.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script> -->
+    <script src="../../lib/jquery/highlight.pack.js"></script>
+    <script src="../../lib/jquery/highlightjs-badge.min.js"></script>
+
+	<!-- scrollbar -->
+    <link rel="stylesheet" href="../../lib/jquery/jquery.scrollbar.css">
+    <script src="../../lib/jquery/jquery.scrollbar.min.js"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../../lib/css/fonts.css">
+	<link rel="stylesheet" href="../../lib/css/common.css">
+	<link rel="stylesheet" href="../../lib/css/style.css">
+</head>
+ 
+<body>
+    <div id="skipNavi">
+        <a href="#container">본문 바로가기</a>
+    </div>
+ 
+    <div id="wrap">
+        <!-- container -->
+        <div id="container">
+            <div class="inner">
+                <!-- 미리보기 -->
+                <div class="preview_wrap">
+
+                    <h4 class="card_body_title">기본 체크박스</h4>
+                    <div class="preview_wrap">
+                        <div class="check_style mr10 mb10">
+                            <input type="checkbox" id="checkbox01" checked />
+                            <label for="checkbox01">checkbox</label>
+                        </div>
+                        <div class="check_style mr10 mb10">
+                            <input type="checkbox" id="checkbox02" />
+                            <label for="checkbox02">checkbox</label>
+                        </div>
+                        <div class="check_style mr10 mb10">
+                            <input type="checkbox" id="checkbox3" disabled />
+                            <label for="checkbox03">checkbox</label>
+                        </div>
+                    </div>
+                    
+                    <h4 class="card_body_title">버튼형 체크박스</h4>
+                    <div class="preview_wrap">
+                        <div class="check_btn_style mr10 mb10">
+                            <input type="checkbox" id="checkbox04" checked />
+                            <label for="checkbox04"><span>선택1</span></label>
+                        </div>
+                        <div class="check_btn_style mr10 mb10">
+                            <input type="checkbox" id="checkbox05" />
+                            <label for="checkbox05"><span>선택2</span></label>
+                        </div>
+                        <div class="check_btn_style mr10 mb10">
+                            <input type="checkbox" id="checkbox06" />
+                            <label for="checkbox06"><span>선택3을 선택합니다.</span></label>
+                        </div>
+                        <div class="check_btn_style mr10 mb10">
+                            <input type="checkbox" id="checkbox07" disabled />
+                            <label for="checkbox07"><span>선택4</span></label>
+                        </div>
+                    </div>
+                    
+                    <h4 class="card_body_title">토글형 체크박스</h4>
+                    <div class="preview_wrap">
+                        <div class="check_toggle_style mr10 mb10">
+                            <input type="checkbox" id="checkbox08" checked />
+                            <label for="checkbox08"></label>
+                        </div>
+                        <div class="check_toggle_style mr10 mb10">
+                            <input type="checkbox" id="checkbox09" />
+                            <label for="checkbox09"></label>
+                        </div>
+                        <div class="check_toggle_style mr10 mb10">
+                            <input type="checkbox" id="checkbox10" disabled />
+                            <label for="checkbox10"></label>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- // 미리보기 -->
+
+                <!-- 코드보기 -->
+                <a href="#코드보기" class="btn_code_view" onclick="layerOpen('.code_layer')">code view</a>
+                <div class="code_layer layer_wrap">
+                    <div class="layer_cont scrollbar-inner">
+                        <a href="#닫기" class="btn_code_close" onclick="layerClose(this)">닫기</a>
+                        <div class="code_wrap">
+                        
+                            <!-- html -->
+                            <p class="code_title">HTML</p>
+                            <pre><code class="language-xml">&lt;!-- 기본 체크박스 --&gt;
+    &lt;style&gt;
+    .check_style {display: inline-block; vertical-align: top;}
+    .check_style input[type='checkbox'] {display: none; width: 0; height: 0; font-size: 0; opacity: 0;}
+    .check_style input[type='checkbox'] + label {position: relative; padding-left: 23px; line-height: 1.2; cursor: pointer;}
+    .check_style input[type='checkbox'] + label::before {content: ''; position: absolute; top: 5px; left: 0; width: 15px; height: 15px; border: 1px solid #aaa;}
+    .check_style input[type='checkbox'] + label::after {display: none; content: ''; position: absolute; top: 8px; left: 3px; width: 11px; height: 11px; background: #4e73de;}
+    .check_style input[type='checkbox']:checked + label::after {display: block;}
+    .check_style input[type='checkbox']:disabled + label {cursor: default;}
+    .check_style input[type='checkbox']:disabled + label::before {border: 1px solid #ddd;}
+    .check_style input[type='checkbox']:disabled + label::after {display: block; background: #ddd;}
+    &lt;/style&gt;
+                                
+    &lt;div class=&quot;check_style&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;checkbox&quot; /&gt;
+        &lt;label for=&quot;checkbox&quot;&gt;checkbox&lt;/label&gt;
+    &lt;/div&gt;
+
+
+    &lt;!-- 버튼형 체크박스 --&gt;
+    &lt;style&gt;
+    .check_btn_style {display: inline-block; vertical-align: top;}
+    .check_btn_style input[type='checkbox'] {display: none; width: 0; height: 0; font-size: 0; opacity: 0;}
+    .check_btn_style input[type='checkbox'] + label {position: relative; display: table; height: 40px; max-width: 100px; padding: 0 15px; font-size: 14px; line-height: 1.2; text-align: center; font-weight: 350; word-break: keep-all; border: 1px solid #aaa; cursor: pointer;}
+    .check_btn_style input[type='checkbox'] + label span {display: table-cell; vertical-align: middle;}
+    .check_btn_style input[type='checkbox']:checked + label {color: #fff; background: #4e73de; border-color: #4e73de;}
+    .check_btn_style input[type='checkbox']:disabled + label {color: #fff; background: #ddd; border-color: #ddd; cursor: default;}
+    &lt;/style&gt;
+                                                        
+    &lt;div class=&quot;check_btn_style mr10&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;checkbox&quot; checked /&gt;
+        &lt;label for=&quot;checkbox&quot;&gt;&lt;span&gt;선택&lt;/span&gt;&lt;/label&gt;
+    &lt;/div&gt;
+
+
+    &lt;!-- 토글형 체크박스 --&gt;
+    &lt;style&gt;
+    .check_toggle_style {display: inline-block; vertical-align: top;}
+    .check_toggle_style input[type='checkbox'] {display: none; width: 0; height: 0; font-size: 0; opacity: 0;}
+    .check_toggle_style input[type='checkbox'] + label {position: relative; display: block; width: 60px; height: 30px; border-radius: 50px; cursor: pointer; background: #eee; -webkit-transition: background-color 0.2s; transition: background-color 0.2s;}
+    .check_toggle_style input[type='checkbox'] + label:after {content: ''; position: absolute; top: 4px; left: 4px; width: 22px; height: 22px; border-radius: 50%; background: #fff; -webkit-transition: -webkit-transform 0.2s; transition: -webkit-transform 0.2s; transition: transform 0.2s; transition: transform 0.2s, -webkit-transform 0.2s;}
+    .check_toggle_style input[type='checkbox']:checked + label {background: #4e73de;}
+    .check_toggle_style input[type='checkbox']:checked + label:after {-webkit-transform: translateX(30px); transform: translateX(30px); /* 60px(label) - 22px(toggle) - 8px(toggle 좌+우 위치) */}
+    .check_toggle_style input[type='checkbox']:disabled + label {background: #ddd; cursor: default;}
+    &lt;/style&gt;
+                                                        
+    &lt;div class=&quot;check_toggle_style mr10&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;checkbox&quot; /&gt;
+        &lt;label for=&quot;checkbox&quot;&gt;&lt;/label&gt;
+    &lt;/div&gt;
+                            </code></pre>
+                            <!-- // html -->
+
+                            <!-- css --
+                            <p class="code_title">CSS</p>
+                            <pre><code class="language-css">
+                                CSS 작성
+                            </code></pre>
+                            <!-- // css -->
+
+                            <!-- script --
+                            <p class="code_title">SCRIPT</p>
+                            <pre><code class="language-javascript">
+                                SCRIPT 작성
+                            </code></pre>
+                            <!-- // script -->
+
+                            <!-- 참고 -->
+                            <p class="code_title">참고</p>
+                            <pre><code class="language-xml">
+                                참고내용 작성
+                            </code></pre>
+                            <!-- // 참고 -->
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- // 코드보기 -->
+            </div>
+        </div>
+        <!-- // container -->
+    </div>
+    <!-- // wrap -->
+</body>
+</html>

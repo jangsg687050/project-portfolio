@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>펜타코드 퍼블리싱 라이브러리</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+
+	<!-- JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../../lib/js/script.js"></script>
+
+	<!-- highlight -->
+    <link rel="stylesheet" href="../../lib/jquery/vs2015.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script> -->
+    <script src="../../lib/jquery/highlight.pack.js"></script>
+    <script src="../../lib/jquery/highlightjs-badge.min.js"></script>
+
+	<!-- scrollbar -->
+    <link rel="stylesheet" href="../../lib/jquery/jquery.scrollbar.css">
+    <script src="../../lib/jquery/jquery.scrollbar.min.js"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../../lib/css/fonts.css">
+	<link rel="stylesheet" href="../../lib/css/common.css">
+	<link rel="stylesheet" href="../../lib/css/style.css">
+</head>
+ 
+<body>
+    <div id="skipNavi">
+        <a href="#container">본문 바로가기</a>
+    </div>
+ 
+    <div id="wrap">
+        <!-- container -->
+        <div id="container">
+            <div class="inner">
+                <!-- 미리보기 -->
+                <div class="preview_wrap">
+
+                    <h4 class="card_body_title">기본 라디오버튼</h4>
+                    <div class="radio_style mr10 mb10">
+                        <input type="radio" name="radio" id="radio01" checked />
+                        <label for="radio01">radio</label>
+                    </div>
+                    <div class="radio_style mr10 mb10">
+                        <input type="radio" name="radio" id="radio02" />
+                        <label for="radio02">radio</label>
+                    </div>
+                    <div class="radio_style mr10 mb10">
+                        <input type="radio" name="radio" id="radio03" disabled />
+                        <label for="radio03">radio</label>
+                    </div>
+
+                </div>
+                <!-- // 미리보기 -->
+
+                <!-- 코드보기 -->
+                <a href="#코드보기" class="btn_code_view" onclick="layerOpen('.code_layer')">code view</a>
+                <div class="code_layer layer_wrap">
+                    <div class="layer_cont scrollbar-inner">
+                        <a href="#닫기" class="btn_code_close" onclick="layerClose(this)">닫기</a>
+                        <div class="code_wrap">
+                        
+                            <!-- html -->
+                            <p class="code_title">HTML</p>
+                            <pre><code class="language-xml">&lt;!-- 기본 라디오버튼 --&gt;
+&lt;style&gt;
+.radio_style {display: inline-block; vertical-align: top; font-family: 'Noto Sans KR', 'Malgun Gothic', '맑은 고딕', sans-serif;}
+.radio_style input[type='radio'] {display: none; width: 0; height: 0; font-size: 0; opacity: 0;}
+.radio_style input[type='radio'] + label {position: relative; padding-left: 23px; line-height: 1.2; cursor: pointer;}
+.radio_style input[type='radio'] + label::before {content: ''; position: absolute; top: 5px; left: 0; width: 15px; height: 15px; border: 1px solid #aaa; border-radius: 50%;}
+.radio_style input[type='radio'] + label::after {display: none; content: ''; position: absolute; top: 8px; left: 3px; width: 11px; height: 11px; background: #4e73de; border-radius: 50%;}
+.radio_style input[type='radio']:checked + label::after {display: block;}
+.radio_style input[type='radio']:disabled + label {cursor: default;}
+.radio_style input[type='radio']:disabled + label::before {border: 1px solid #ddd;}
+.radio_style input[type='radio']:disabled + label::after {display: block; background: #ddd;}
+&lt;/style&gt;
+
+&lt;div class=&quot;radio_style mr10 mb10&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;radio&quot; id=&quot;radio01&quot; checked /&gt;
+    &lt;label for=&quot;radio01&quot;&gt;radio&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;radio_style mr10 mb10&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;radio&quot; id=&quot;radio02&quot; /&gt;
+    &lt;label for=&quot;radio02&quot;&gt;radio&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;radio_style mr10 mb10&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;radio&quot; id=&quot;radio03&quot; disabled /&gt;
+    &lt;label for=&quot;radio03&quot;&gt;radio&lt;/label&gt;
+&lt;/div&gt;
+                            </code></pre>
+                            <!-- // html -->
+
+                            <!-- css --
+                            <p class="code_title">CSS</p>
+                            <pre><code class="language-css">
+                                CSS 작성
+                            </code></pre>
+                            <!-- // css -->
+
+                            <!-- script --
+                            <p class="code_title">SCRIPT</p>
+                            <pre><code class="language-javascript">
+                                SCRIPT 작성
+                            </code></pre>
+                            <!-- // script -->
+
+                            <!-- 참고 -->
+                            <p class="code_title">참고</p>
+                            <pre><code class="language-xml">
+                                참고내용 작성
+                            </code></pre>
+                            <!-- // 참고 -->
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- // 코드보기 -->
+            </div>
+        </div>
+        <!-- // container -->
+    </div>
+    <!-- // wrap -->
+</body>
+</html>

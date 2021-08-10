@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>펜타코드 퍼블리싱 라이브러리</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+
+	<!-- JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../../lib/js/script.js"></script>
+
+	<!-- highlight -->
+    <link rel="stylesheet" href="../../lib/jquery/vs2015.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script> -->
+    <script src="../../lib/jquery/highlight.pack.js"></script>
+    <script src="../../lib/jquery/highlightjs-badge.min.js"></script>
+
+	<!-- scrollbar -->
+    <link rel="stylesheet" href="../../lib/jquery/jquery.scrollbar.css">
+    <script src="../../lib/jquery/jquery.scrollbar.min.js"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../../lib/css/fonts.css">
+	<link rel="stylesheet" href="../../lib/css/common.css">
+	<link rel="stylesheet" href="../../lib/css/style.css">
+</head>
+ 
+<body>
+    <div id="skipNavi">
+        <a href="#container">본문 바로가기</a>
+    </div>
+ 
+    <!-- <div class="loader" id="loading">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div> -->
+
+    <div id="wrap">
+        <!-- container -->
+        <div id="container">
+            <div class="inner">
+                <!-- 미리보기 -->
+                <div class="preview_wrap">
+
+                    <div class="login_type1">
+                        <div class="value_area">
+                            <div class="input_cutom">
+                                <input type="text" id="userId" required />
+                                <label for="userId">아이디를 입력하세요.</label>
+                                <span class="line_bottom"></span>
+                            </div>
+                            <div class="input_cutom">
+                                <input type="password" id="userPassword" required />
+                                <label for="userPassword">비밀번호를 입력하세요.</label>
+                                <span class="line_bottom"></span>
+                            </div>
+                        </div>
+                        <div class="btn_area">
+                            <input type="submit" value="로그인" class="btn_login" />
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- // 미리보기 -->
+                
+                <!-- 코드보기 -->
+                <a href="#코드보기" class="btn_code_view" onclick="layerOpen('.code_layer')">code view</a>
+                <div class="code_layer layer_wrap">
+                    <div class="layer_cont scrollbar-inner">
+                        <a href="#닫기" class="btn_code_close" onclick="layerClose(this)">닫기</a>
+                        <div class="code_wrap">
+                            
+                            <!-- html -->
+                            <p class="code_title">HTML</p>
+                            <pre><code class="language-xml">&lt;div class=&quot;login login_column&quot;&gt;
+        &lt;div class=&quot;value_area&quot;&gt;
+            &lt;div class=&quot;input_cutom01&quot;&gt;
+                &lt;input type=&quot;text&quot; id=&quot;userId&quot; required /&gt;
+                &lt;label for=&quot;userId&quot;&gt;아이디를 입력하세요.&lt;/label&gt;
+                &lt;span class=&quot;line_bottom&quot;&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;input_cutom01&quot;&gt;
+                &lt;input type=&quot;password&quot; id=&quot;userPassword&quot; required /&gt;
+                &lt;label for=&quot;userPassword&quot;&gt;비밀번호를 입력하세요.&lt;/label&gt;
+                &lt;span class=&quot;line_bottom&quot;&gt;&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;btn_area&quot;&gt;
+            &lt;input type=&quot;submit&quot; value=&quot;로그인&quot; /&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+                            </code></pre>
+                            <!-- // html -->
+
+                            <!-- css -->
+                            <p class="code_title">CSS</p>
+                            <pre><code class="language-css">.login_type1 {width: 400px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+    .login_type1 input {-webkit-appearance: none; -moz-appearance: none; appearance: none; border: 0; font-size: 18px; color: #222; font-family: 'Noto Sans KR', 'Malgun Gothic', '맑은 고딕', sans-serif;}
+    .login_type1 .value_area {width: 100%;}
+    .login_type1 .btn_area {width: 100%;}
+    .login_type1 .btn_area .btn_login {display: block; width: 100%; height: 60px; margin-top: 40px; font-size: 20px; color: #fff; background: #4e73de; border-radius: 5px; }
+    @media all and (max-width: 768px) {
+        .login_type1 {width: 100%; }
+    }
+
+    .input_cutom01 {position: relative; margin-top: 40px; z-index: 1;}
+    .input_cutom01:first-child {margin-top: 30px;}
+    .input_cutom01 input {position: relative; width: 100%; height: 50px; padding: 0 10px; border-bottom: 1px solid #ddd; background: transparent; z-index: 2; outline: none;}
+    .input_cutom01 input + label {position: absolute; top: 0; left: 0; padding: 0 10px; line-height: 45px; font-size: 20px; color: #aaa; cursor: auto; z-index: 1; -webkit-transition: 0.2s; transition: 0.2s;}
+    .input_cutom01 input ~ .line_bottom {content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: #4e73de; z-index: 2; -webkit-transition: width 0.3s; transition: width 0.3s;}
+    .input_cutom01 input:valid + label {top: -30px; padding: 0; line-height: 30px; font-size: 15px; color: #aaa;}
+    .input_cutom01 input:focus + label, .input_cutom01 input:valid:focus + label {top: -30px; padding: 0; line-height: 30px; font-size: 15px; color: #4e73de;}
+    .input_cutom01 input:focus ~ .line_bottom {width: 100%;}
+    .input_cutom01 input:not:valid + label {top: 0; padding: 0 10px; line-height: 45px; font-size: 20px; color: #aaa; }
+                            </code></pre>
+                            <!-- // css -->
+
+                            <!-- script --
+                            <p class="code_title">SCRIPT</p>
+                            <pre><code class="language-javascript">
+                                
+                            </code></pre>
+                            <!-- // script -->
+
+                            <!-- 참고 -->
+                            <p class="code_title">참고</p>
+                            <pre><code class="language-xml">
+
+                            </code></pre>
+                            <!-- // 참고 -->
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- // 코드보기 -->
+            </div>
+        </div>
+        <!-- // container -->
+    </div>
+    <!-- // wrap -->
+</body>
+</html>

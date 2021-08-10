@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>펜타코드 퍼블리싱 라이브러리</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+
+	<!-- JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../lib/js/script.js"></script>
+
+	<!-- highlight -->
+    <link rel="stylesheet" href="../lib/jquery/github.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script> -->
+    <script src="../lib/jquery/highlight.pack.js"></script>
+    <script src="../lib/jquery/highlightjs-badge.min.js"></script>
+
+	<!-- scrollbar -->
+    <link rel="stylesheet" href="../lib/jquery/jquery.scrollbar.css">
+    <script src="../lib/jquery/jquery.scrollbar.min.js"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../lib/css/fonts.css">
+	<link rel="stylesheet" href="../lib/css/common.css">
+	<link rel="stylesheet" href="../lib/css/style.css">
+</head>
+
+<body>
+<div id="wrap">
+    
+    <!-- header -->
+    <header>
+        <div class="inner">
+            <h1>
+                <a class="logo" href="index.html">PENTACHORD</a>
+            </h1>
+
+            <a href="#메뉴버튼" class="btn_nav"><span>메뉴버튼</span></a>
+            <ul class="nav_wrap">
+                <li class="nav_depth1">
+                    <a href="index.html">
+                        <span>기본환경</span>
+                    </a>
+                </li>
+                <!-- // 가이드 요약 -->
+
+                <li class="nav_depth1 on active">
+                    <a href="#표준규칙">
+                        <span>표준규칙</span>
+                        <span class="icon_arrow"></span>
+                    </a>
+                    <div class="nav_depth2">
+                        <div> 
+                            <a href="guide_naming.html" class="on">네임 규칙</a>
+                            <a href="guide_html_code.html">HTML 작성규칙</a>
+                            <a href="guide_css_code.html">CSS 작성규칙</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- // 파일 작성 규칙 -->
+
+                <li class="nav_depth1">
+                    <a href="#라이브러리">
+                        <span>라이브러리</span>
+                        <span class="icon_arrow"></span>
+                    </a>
+                    <div class="nav_depth2">
+                        <div> 
+                            <a href="library_member.html">Members</a>
+                            <a href="library_form.html">Forme</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- // 라이브러리 -->
+            </ul>
+            <div class="nav_bg"></div>
+
+            <div class="text_version">가이드 초안 수정중<br>v.0</div>
+        </div>
+    </header>
+    <!-- // header -->
+
+    <!-- container -->
+    <div id="container">
+        <!-- contents -->
+        <div class="contents">
+            <h2 class="page_title">네임 규칙</h2>
+
+            
+            <!-- 표기법 -->
+            <div class="card">
+                <div class="card_info">
+                    <h3>표기법</h3>
+                </div>
+                <div class="card_body">
+                    <h4 class="card_body_title">표기법</h4>
+                    <div class="guide_table_row">
+                        <table>
+                            <caption>표기법</caption>
+                            <colgroup>
+                                <col style="width: 15%;">
+                                <col style="width: 25%;">
+                                <col style="width: 25%;">
+                                <col style="">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>종류</th>
+                                    <th>구분</th>
+                                    <th>번호</th>
+                                    <th>예시</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ID Selector</td>
+                                    <td>카멜표기법 (camelCase)</td>
+                                    <td>한 자리수 (1은 생략가능, 2, 3)</td>
+                                    <td>popupFileAdd, errorMesage, errorMesage2</td>
+                                </tr>
+                                <tr>
+                                    <td>Class Selector</td>
+                                    <td>스네이크 표기법 (underbar_nate)</td>
+                                    <td>한 자리수 (1은 생략가능, 2, 3)</td>
+                                    <td>tab_wrap, tab_btn, table_type1, table_type2</td>
+                                </tr>
+                                <tr>
+                                    <td>Image</td>
+                                    <td>스네이크 표기법 (underbar_nate)</td>
+                                    <td>두 자리수 (01, 02, 03)</td>
+                                    <td>icon_check_on, img_banner01, img_banner02</td>
+                                </tr>
+                                <tr>
+                                    <td>파일 및 폴더</td>
+                                    <td>스네이크 표기법 (underbar_nate)</td>
+                                    <td>두 자리수 (01, 02, 03)</td>
+                                    <td>business_information, join_step01, join_step02</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- // 표기법 -->
+
+            <!-- 폴더/파일 규칙 -->
+            <div class="card">
+                <div class="card_info">
+                    <h3>폴더/파일 규칙</h3>
+                </div>
+                <div class="card_body">
+                    <ul class="text_list">
+                        <li>폴더/파일 명은 반드시 직관적으로 명시한다. (예: 사업안내 > business_information)</li>
+                    </ul>
+                    <div class="guide_table_row">
+                        <table>
+                            <caption>폴더/파일 규칙</caption>
+                            <colgroup>
+                                <col style="width: 20%;">
+                                <col style="width: 25%;">
+                                <col style="width: 25%;">
+                                <col style="">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>기본 폴더</th>
+                                    <th>하위 폴더</th>
+                                    <th>파일명</th>
+                                    <th>파일 설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- html -->
+                                <tr>
+                                    <td rowspan="3">html</td>
+                                    <td></td>
+                                    <td>index.html</td>
+                                    <td>메인페이지</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>guide.html</td>
+                                    <td>가이드페이지</td>
+                                </tr>
+                                <tr>
+                                    <td>메뉴순서 넘버링_[메뉴명] (예: 00_intro)</td>
+                                    <td></td>
+                                    <td>서브페이지</td>
+                                </tr>
+                                <!-- // html -->
+                                
+                                <!-- lib -->
+                                <tr>
+                                    <td rowspan="7">lib</td>
+                                    <td rowspan="4">css</td>
+                                    <td>common.css</td>
+                                    <td>리셋, 기본 스타일</td>
+                                </tr>
+                                <tr>
+                                    <td>fonts.css</td>
+                                    <td>웹폰트 정의</td>
+                                </tr>
+                                <tr>
+                                    <td>style.css</td>
+                                    <td>전체페이지 스타일</td>
+                                </tr>
+                                <tr>
+                                    <td>responsive.css</td>
+                                    <td>반응형</td>
+                                </tr>
+                                <tr>
+                                    <td>fonts</td>
+                                    <td></td>
+                                    <td>웹폰트 파일</td>
+                                </tr>
+                                <tr>
+                                    <td>jquery</td>
+                                    <td></td>
+                                    <td>제이쿼리 플러그인</td>
+                                </tr>
+                                <tr>
+                                    <td>js</td>
+                                    <td>script.js</td>
+                                    <td>퍼블리싱 작업용 파일</td>
+                                </tr>
+                                <!-- // lib -->
+                                
+                                <!-- images -->
+                                <tr>
+                                    <td rowspan="5">images</td>
+                                    <td></td>
+                                    <td>favicon.ico</td>
+                                    <td>파비콘</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>opengraph.png</td>
+                                    <td>오픈그래프</td>
+                                </tr>
+                                <tr>
+                                    <td>common</td>
+                                    <td></td>
+                                    <td>공통 이미지</td>
+                                </tr>
+                                <tr>
+                                    <td>main</td>
+                                    <td></td>
+                                    <td>메인페이지 이미지</td>
+                                </tr>
+                                <tr>
+                                    <td>[메뉴명]</td>
+                                    <td></td>
+                                    <td>서브페이지 이미지</td>
+                                </tr>
+                                <!-- // images -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- // 폴더/파일 규칙 -->
+
+            <!-- ID Selector -->
+            <div class="card">
+                <div class="card_info">
+                    <h3>ID Selector</h3>
+                </div>
+                <div class="card_body">
+                    <ul class="text_list">
+                        <li>최상위 레이아웃, 폼 요소, 를 제외하고 id를 사용하지 않는다.</li>
+                    </ul>
+                    <div class="guide_table_row">
+                        <table>
+                            <caption>ID Selector</caption>
+                            <colgroup>
+                                <col style="width: 25%;">
+                                <col style="width: 35%;">
+                                <col style="">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>구분</th>
+                                    <th>예시</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2">기본의미</td>
+                                    <td>wrap</td>
+                                    <td>페이지 전체</td>
+                                </tr>
+                                <tr>
+                                    <td>container</td>
+                                    <td>본문</td>
+                                </tr>
+                                <tr>
+                                    <td>다중의미</td>
+                                    <td>popupName</td>
+                                    <td>팝업</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- // ID Selector -->
+
+            <!-- Class Selector -->
+            <div class="card">
+                <div class="card_info">
+                    <h3>Class Selector</h3>
+                </div>
+                <div class="card_body">
+                    <ul class="text_list">
+                        <li>체인 선택자의 개수는 3개까지 권장한다.</li>
+                        <li>클래스 예약어는 상황에 맞게 선택적으로 참고한다.</li>
+                        <li>레이아웃에 한하여 정의된 예시이며, 자세한 내용은 설계가이드를 참고한다.</li>
+                    </ul>
+                    <div class="guide_table_row">
+                        <table>
+                            <caption>Class Selector</caption>
+                            <colgroup>
+                                <col style="width: 50%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>예약어</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>.inner</td>
+                                    <td>상위 레이아웃 내부 콘텐츠</td>
+                                </tr>
+                                <tr>
+                                    <td>.header</td>
+                                    <td>머리글</td>
+                                </tr>
+                                <tr>
+                                    <td>.content</td>
+                                    <td>본문 영역</td>
+                                </tr>
+                                <tr>
+                                    <td>.footer</td>
+                                    <td>바닥글 영역</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- // Class Selector -->
+
+            <!-- 이미지 네이밍 규칙 -->
+            <div class="card">
+                <div class="card_info">
+                    <h3>이미지 네이밍 규칙</h3>
+                </div>
+                <div class="card_body">
+                    <ul class="text_list">
+                        <li>종류별로 스프라이트 방식을 적용한다.</li>
+                        <li>이미지 네이밍의 조합은 '형태_의미_순서_상태'의 순서로 조합한다. (예: icon_check01_on)</li>
+                    </ul>
+                    <div class="guide_table_row">
+                        <table>
+                            <caption>Class Selector</caption>
+                            <colgroup>
+                                <col style="width: 30%;">
+                                <col style="width: 30%;">
+                                <col style="">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>분류</th>
+                                    <th>파일명</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>아이콘</td>
+                                    <td>icon_</td>
+                                    <td>아이콘 이미지</td>
+                                </tr>
+                                <tr>
+                                    <td>불릿</td>
+                                    <td>bul_</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>버튼</td>
+                                    <td>btn_</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>텍스트</td>
+                                    <td>text_</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>배경</td>
+                                    <td>bg_</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>비주얼</td>
+                                    <td>visual_</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>일반</td>
+                                    <td>img_</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- // 이미지 네이밍 규칙 -->
+        </div>
+        <!-- // Contents -->
+        <footer>
+            <p class="copyright">Copyright © Pentachord 2021</p>
+        </footer>
+        <!-- // footer -->
+    </div>
+    <!-- // container -->
+
+</div>
+
+<script>
+
+
+</script>
+</body>
+</html>
