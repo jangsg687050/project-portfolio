@@ -263,7 +263,7 @@ input[id="menu"]:checked + label span:nth-child(3) { bottom: 50%; transform: tra
 .tab-st1{ background: #f7f7f7; display: flex; align-items: center; justify-content: space-between; }
 .tab-st1 li { width: 16.6666%; height: 60px; line-height: 60px;}
 .tab-st1 li a{ font-size: 18px; font-weight: 400; color: #666; display: block}
-.tab-st1 li a.active{ color: #fff; position: relative; z-index: 1; background: #000;}
+.tab-st1 li a.active{ color: #fff; position: relative; z-index: 1; background: #1169a0;}
 .tab-st1 li a.active:before{ content:""; position: absolute; height: 6px; bottom: 1px; left: -2px; right: -2px; z-index: -1;}
 .tab-info .tab{ display: none;  }
 .tab-info .tab:first-of-type { display: block; }
@@ -344,8 +344,8 @@ input[id="menu"]:checked + label span:nth-child(3) { bottom: 50%; transform: tra
 .search_wrap .search_box .custom-select .select-items { position: absolute; z-index: 2; top: 100%; right: -1px; left: -1px; visibility: hidden; overflow-y: auto; max-height: 145px; pointer-events: none; opacity: 0; border: 1px solid #ddd; background-color: #fff; }
 .search_wrap .search_box .custom-select .select-control.opened .select-items { visibility: visible; pointer-events: all; opacity: 1; }
 .search_wrap .search_box .custom-select .select-hide { display: none; }
-.search_wrap .search_box .custom-select .select-items .selection { color: #eb3f31; background-color: #ffeeed;}
-.search_wrap .search_box .custom-select .select-items div:hover{ color: #eb3f31; background-color: #ffeeed; }
+.search_wrap .search_box .custom-select .select-items .selection { color: #1169a0; background-color: #eee;}
+.search_wrap .search_box .custom-select .select-items div:hover{ color: #1169a0; background-color: #eee; }
 .search_wrap .search_box .input-text{ width: 660px; background: #fff; padding-left: 20px; border: 1px solid #ddd; }
 .search_wrap .search_box .input-text::placeholder{ color: #999;}
 .search_wrap .search_box .btn_search { width: 90px; margin-left: 10px; color: #fff; background: #444; flex-shrink: 0; font-weight: 400; text-align: center; }
@@ -398,3 +398,54 @@ input[id="menu"]:checked + label span:nth-child(3) { bottom: 50%; transform: tra
 .footer-site .site-list ul > li > a { display: block; color: #333; font-size: 15px; line-height: 17px; padding: 5px 0; }
 .footer-site .btn-site-close { display: block; position: absolute; top: 0; right: 0; width: 40px; height: 40px; font-size: 0; background-color: transparent; border: 0; }
 .footer-site .btn-site-close:before { content: ""; display: block; position: absolute; top: 50%; left: 50%; margin-left: -7px; width: 13px; height: 9px; transform: rotate( 180deg ); background: url(../images/sub/btn_up.png) no-repeat right center;}
+
+/* Board */
+.board_list table { width: 100%; table-layout: fixed; }
+.board_list table th { height: 80px; text-align: center; font-size: 17px; font-weight: bold; color: #000; border-top: 2px solid #000; border-bottom: 1px solid #ddd; background: #fff; vertical-align: middle; }
+.board_list table td { height: 80px; font-size: 18px; text-align: center; vertical-align: middle; }
+.board_list table tbody tr { border: 1px solid transparent; border-bottom: 1px solid #eee; }
+.board_list table tbody tr:hover { border: 1px double #006aea; border-right: 1px solid #006aea; }
+.board_list table td.txt-left { text-align: left; }
+.board_list table td.table-notice { background: url(../images/sub/table_notice.png)no-repeat center center; width: 22px; height: 22px; }
+.board_list table td.txt-blue a { color: #006aea; }
+.board_list table td.num { color: #000; font-weight: bold; }
+.board_list table td.count,
+.board_list table td.date { color: #888; font-size: 17px; }
+.board_list table td a { display: inline-block; width: 100%; height: 50px; line-height: 50px; font-weight: 400; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal; overflow: hidden; vertical-align: middle; }
+
+/*리스트*/
+.ul-st1{ font-size: 17px; color: #444; line-height: 1.5; font-weight: 400; text-align: left; }
+.ul-st1 li{ position: relative; padding-left: 25px; padding-bottom: 23px;}
+.ul-st1 li:before{ content:""; position: absolute; left:0; top: 9px; background: url(../images/sub/ico_list.png)no-repeat; width: 12px; height: 9px; background-size: contain;}
+.ul-st1 li:last-child{ padding-bottom: 0;}
+.ul-st2{ font-size: 17px; color: #444; line-height: 1.5; font-weight: 400; text-align: left;}
+.ul-st2 li{ position: relative; padding-left: 10px; padding-bottom: 15px; }
+.ul-st2 li:before{ content:""; position: absolute; left:0; top: 11px; width: 3px; height: 3px; border-radius: 100%; background: #444; }
+.ul-st2 li:last-child{ padding-bottom: 0;}
+.ul-st3{ font-size: 17px; color: #444; line-height: 1.5; font-weight: 300; text-align: left; word-break: keep-all;}
+.ul-st3 li{ position: relative; padding-left: 10px; }
+.ul-st3 li:before{ content:""; position: absolute; left:0; top: 11px; width: 3px; height: 3px; border-radius: 100%; background: #444; }
+.ul-st3 li:last-child{ padding-bottom: 0;}
+
+/*절차도*/
+.step-wrap{ display: flex; align-items: center; justify-content: center; margin: 0 -10px; margin-bottom: 50px;}
+.step-wrap li{ position: relative; margin: 0 10px; }
+.step-wrap li.line{  height: 1px; width: 100px; background: #acacac; }
+.step-wrap li.line:last-child{ display: none; }
+.step-wrap li.step a{ width: 80px; height: 80px; border-radius: 100%; font-size: 15px; color: #666; background: #e0e0e0; display: flex; align-items: center; justify-content: center; line-height: 1.3;}
+.step-wrap li.step a.active{ color: #fff; background: #1169a0; }
+
+/*달력*/
+.cal_table { width: 100%; margin-top: 25px; }
+.cal_table thead th { height: 47px; text-align: center; color: #1169a0; font-size: 14px; font-weight: bold; border-bottom: #e5e5e5 solid 1px; }
+.cal_table tbody td { height: 48px; text-align: center; }
+.cal_table tbody td a { width: 38px; height: 38px; display: block; margin: 0 auto; border-radius: 38px; line-height: 38px; text-align: center; font-size: 14px; color: #333; }
+.cal_table tbody td a:hover { border: 2px solid #0075ff; line-height: 34px; }
+.cal_table tbody td a.weekend { color: #e72a40; }
+.cal_table tbody td a.no_select { color: #aaa; cursor: default; }
+.cal_table tbody td a.no_select:hover { border: none; }
+.cal_table tbody td a.on { background: #4499ff !important; font-weight: bold; color: #fff; }
+.cal_table tbody td a.today { border: 2px solid #4499ff; line-height: 34px; }
+.cal_table tbody td a.waiting { background: #b9d6f7 !important; }
+.cal_table tbody td a.waiting:hover { border: 2px solid #0075ff; line-height: 34px; }
+.cal_table tbody td a.waiting.on { background: #4499ff !important; font-weight: bold; color: #fff; }

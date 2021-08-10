@@ -51,6 +51,6 @@ font-family: 'Noto Sans KR';
 select::-ms-expand {
 display: none;/* 화살표 없애기 for IE10, 11*/
 }
-
+caption { position: absolute !important; overflow: hidden; clip: rect(1px, 1px, 1px, 1px); width: 1px; height: 1px; }
 select{ cursor:pointer;}
 input[type="submit"]{ cursor:pointer;}
