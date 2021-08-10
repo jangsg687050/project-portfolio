@@ -1,0 +1,495 @@
+<?
+/*---------------------------------------------------------
+* Program : 사용자(user) > 시설장비 > 베타테스터 체험예약
+* Author  : 유성재
+* Create  : 2019-12-17
+* Modify  : 2020-03-06
+* Etc     :
+---------------------------------------------------------*/
+
+//사용자 공통 Conf
+include "../lib/_conf.php";
+
+include $Contents_dir."/include/header.php";
+
+
+
+?>
+			<div id="sub_experience" class="sub_page">
+				<div class="inner">
+					<div class="application clear">
+						<div class="step1 step">
+							<p class="big_title">STEP.1 시설선택</p>
+							<div class="clear">
+								<div class="content">
+									<ul class="eq_list">
+							
+										<li  class="txt_ellipsis">
+											<a href="" onclick="" title="">실증지원랩</a>
+										</li>
+							
+									</ul>
+								</div>
+								<div class="content">
+									<!-- 선택된 시설이 없을때 -->
+									<div class="clear" id="step1_1_layer">
+										<p class="txt_guide">시설을 선택해주세요.</p>
+									</div>
+									<!-- //선택된 시설이 없을때 -->
+									<!-- 선택된 시설이 있을때 -->
+									<div class="clear" id="step1_2_layer">
+										<div class="eq_img"></div>
+										<ul class="info"></ul>
+									</div>
+									<!-- //선택된 시설이 있을때 -->
+								</div>
+							</div>
+						</div>
+						<div class="clear " id="step2_layer">
+							<div class="step2 step">
+								<p class="big_title">STEP.2 날짜 선택</p>
+								<div class="content" id="step2_calendar"></div>
+							</div>
+							<div class="step3 step">
+								<p class="big_title">STEP.3 시간 선택</p>
+								<div class="content">
+									<!-- 날짜 미 선택시 -->
+									<div class="clear" id="step3_1_layer">
+										<p class="txt_guide">날짜를 선택해주세요.</p>
+									</div>
+									<!-- 날짜 미 선택시 -->
+
+									<!-- 날짜 선택시 -->
+									<div class="clear blind" id="step3_2_layer">
+									</div>
+									<!-- //날짜 선택시 -->
+								</div>
+							</div>
+						</div>
+						<div class="clear " id="step4_layer">
+							<div class="step4 step">
+								<p class="big_title">STEP.4 인원선택</p>
+								<div class="content">
+									<!-- 시간 미 선택시 -->
+									<div class="clear" id="step4_1_layer">
+										<p class="txt_guide">시간을 선택해주세요.</p>
+									</div>
+									<!-- //시간 미 선택시 -->
+
+									<!-- 시간 선택시 -->
+									<div class="clear blind" id="step4_2_layer">
+									</div>
+									<!-- //시간 선택시 -->
+								</div>
+							</div>
+
+							<!-- 1215 노트북 대여 추가 -->
+							<div class="step5 step " id="step5_layer">
+								<p class="big_title">STEP.5 노트북 대여 선택</p>
+								<div class="content">
+									<!-- 인원 미 선택시 -->
+									<div class="clear blind" id="step5_1_layer">
+										<p class="txt_guide">인원을 선택해주세요.</p>
+									</div>
+									<!-- //인원 미 선택시 -->
+									<!-- 시간 선택시 -->
+									<div class="clear " id="step5_2_layer">
+										<span class="radio_style">
+											<input type="radio" id="laptop_select01" name="laptop_select" value="0" onclick="laptop_visible(this.value,'step5_select');" > 
+											<label for="laptop_select01" class="radio_img"></label>
+											<label for="laptop_select01">대여하지 않습니다.</label>
+										</span>
+										<span class="radio_style">
+											<input type="radio" id="laptop_select02" name="laptop_select" value="1" onclick="laptop_visible(this.value,'step5_select');" > 
+											<label for="laptop_select02" class="radio_img"></label>
+											<label for="laptop_select02">노트북을 함께 대여합니다.</label>
+										</span>
+										<div class="select_style" id="step5_select" style="display: none;">
+											<select name="" id="" class="">
+												<option value="">개수를 선택하세요</option>
+												<option value="">1</option>
+												<option value="">2</option>
+												<option value="">3</option>
+											</select>
+											<span class="cnt">2개</span>
+										</div>
+										<ul class="info">
+											<li>노트북 이용시간은 공간 대여시간과동일합니다.</li>
+											<li>노트북은 공간과 별도로 대여가 불가합니다</li>
+											<li>노트북은 한 팀당 최대 3개까지 대여 가능합니다.</li>
+										</ul>
+									</div>
+									<!-- //시간 선택시 -->
+									
+								</div>
+							</div>
+							<!-- //1215 노트북 대여 추가 -->
+
+							<div class="step6 step " id="step5_layer">
+								<p class="big_title">STEP.6 예약정보</p>
+								<div class="content">
+									<div class="clear">
+										<div>
+											<!-- 오픈 스튜디오 -->
+											<ul class="info">
+												<li>시설명 : <span id="select_space_name">실증지원랩</span></li>
+												<li>예약날짜 : <span id="select_rental_date">2020년 7월 10일</span></li>
+												<li>예약시간 : <span id="select_rental_time">16:00 ~ 18:00</span></li>
+												<li>예약인원 : <span id="select_use_cnt">2명</span></li>
+												<li>노트북 대여 여부 : <span id="select_use_laptop">2개 대여</span></li>
+											</ul>
+											<!-- //오픈 스튜디오 -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="detail blind" id="material_detail">
+						<p class="title">이용 안내 및 유의사항</p>
+						<ul class="info">
+							<li>
+								장비가 파손되지 않도록 반드시 안내 요원의 지시를 따라주시기 바랍니다.(실수로 장비가 파손될 경우, 손해배상 책임이 있을 수 있습니다.)
+							</li>
+							<li>
+								본 건물은 금연건물이며, 인화물질 등 위험물을 반입할 수 없습니다.
+							</li>
+							<li>쾌적한 환경을 위하여 스튜디오 내 음식물 반입을 제한하며, 커피를 포함한 음료 및 음식물 취식을 금지합니다. (생수는 가능)</li>
+							<li>시설·장비는 사용 후 원상복구를 원칙으로 하며, 도난·분실·파손 시에는 이용자에게 책임이 있음을 알려드립니다.</li>
+							<li>많은 사람이 함께 사용하는 공간이므로, 타 사용자 또는 방문객에게 소음 등 피해가 가지 않도록 유의하여 주시기 바랍니다.</li>
+							<li>기타 시설 사용에 문제가 있다고 판단되거나 상기 사항을 지키지 않은 경우에는 사용허가 이후 또는 시설이용 도중이더라도 즉시 사용 취소, 정지, 해당 이용자 퇴장 등의 조치를 취할 수 있습니다.</li>
+							<li>상기 사항 외에는 관리직원의 지시·안내에 따라야 합니다.</li>
+						</ul>
+
+	
+					</div>
+
+					<div class="btn_wrap clear">
+						<form id="apply_form" method="post" action="process.php" target="hidden_iframe" onsubmit="return chk_f(this);">
+							<input type="hidden" name="usr_sq" id="usr_sq" value="<?=$_SESSION[$sessKey_member]['sq']?>" />
+							<input type="hidden" name="usr_name" id="usr_name" value="<?=$_SESSION[$sessKey_member]['name']?>" />
+							<input type="hidden" name="space_no" id="space_no" value="" />
+							<input type="hidden" name="rental_date" id="rental_date" value="" />
+							<input type="hidden" name="rental_time" id="rental_time" value="" />
+							<input type="hidden" name="use_cnt" id="use_cnt" value="" />
+							<input type="hidden" name="use_goal" id="use_goal" value="" />
+							<input type="hidden" name="usr_dayCnt" id="usr_dayCnt" value="" />
+							<input type="hidden" name="usr_weekCnt" id="usr_weekCnt" value="" />
+							<input type="hidden" name="rental_option_mode" id="rental_option_mode" value="" />
+
+							<input type="submit" class="btn_submit btn_cerulean" value="예약" />
+						</form>
+					</div>
+				</div>
+			</div>
+
+
+			<script>
+				$(document).ready(function() {
+					// 시설선택에 따른 처리
+					$(".eq_list > li > a").on("click", function() {
+
+						// 각 영역 초기화
+						$("#step1_1_layer").show();
+						$("#step1_2_layer").hide();
+						$("#step2_layer").hide();
+						$("#step3_1_layer").show();
+						$("#step3_2_layer").hide();
+						$("#step4_layer").hide();
+						$("#step4_1_layer").show();
+						$("#step4_2_layer").hide();
+						$("#step5_layer").hide();
+						$("#material_detail").hide();
+
+						$("#select_rental_date").html('');								// 예약정보 대여일자 초기화
+						$("#select_rental_time").html('');								// 예약정보 대여시간 초기화
+						$("#select_use_cnt").html('');									// 예약정보 예약인원 초기화
+						$("#select_use_goal").html('');									// 예약정보 사용목적 초기화
+						$("#rental_date").val('');										// 예약신청 폼의 대여일자 초기화
+						$("#rental_time").val('');										// 예약신청 폼의 대여시간 초기화
+						$("#use_cnt").val('');											// 예약신청 폼의 예약인원 초기화
+						$("#use_goal").val('');											// 예약신청 폼의 사용목적 초기화
+
+						// 시설들의 선택되었다는 Class 제거
+						$(".eq_list > li").each(function() {
+							$(this).removeClass("active");
+						});
+
+						// 선택한 시설에 Class 추가
+						$(this).parent().addClass("active");
+						// 선택한 시설 시퀀스 추출
+						space_no = $(this).parent().data("sq");
+						// 선택한 시설의 시퀀스 대여폼에 할당하기
+						$("#space_no").val(space_no);
+
+						param = $("#apply_form").serialize();
+
+						$.ajax({
+							url: "rental_info_ajax.php",
+							type: "post",
+							data: param,
+							dataType: "json",
+							success: function(response) {
+								if(response.result) {
+									$("#select_space_name").html(response.data['space_name']);
+									$("#step1_2_layer > .eq_img").html(response.data['img']);
+									$("#step1_2_layer > .info").html(response.data['summary']);
+									$("#space_detail > div.content").html(response.data['contents']);
+									$("#step1_1_layer").hide();
+									$("#step1_2_layer").show();
+									$("#step2_layer").show();
+									$("#material_detail").show();
+
+									if(response.data['option'].indexOf("use_cnt") != -1) {
+										$("#step4_layer > .step4 > .big_title").html("STEP 4.인원선택");
+										$("#select_use_cnt").parent().show();
+										$("#select_use_goal").parent().hide();
+										$("#rental_option_mode").val("use_cnt");
+									} else {
+										$("#step4_layer > .step4 > .big_title").html("STEP 4.사용목적");
+										$("#select_use_cnt").parent().hide();
+										$("#select_use_goal").parent().show();
+										$("#rental_option_mode").val("use_goal");
+									}
+
+									$("#step4_2_layer").html(response.data['optionTag']);
+
+									get_reserve_calendar("<?=date('Y')?>", "<?=date('m')?>", space_no);
+								} else {
+									alert(response.msg);
+								}
+							}
+						});
+					});
+				});
+
+				// 대여일에 대한 대여달력 추출 함수
+				function get_reserve_calendar(yy, mm, space_no) {
+					$.ajax({
+						url: "rental_calendar_ajax.php",
+						type: "post",
+						data: { "yy" : yy, "mm" : mm, "space_no" : space_no },
+						dataType: "json",
+						success: function(response) {
+							if(response.result) {
+								$("#step2_calendar").html(response.calendar);
+							} else {
+								alert(response.msg);
+							}
+						}
+					});
+				}
+
+				// 캘린더에서 선택한 날짜 처리 함수
+				// 선택한 날짜 활성화 및 폼 데이터로 넣기
+				function set_daySelect(dd) {
+					$("div[id^='rental_selDay']").removeClass("select");
+					$("#rental_selDay_" + dd).addClass("select");
+
+					selectDay = $("#rental_selDay_" + dd).data("day");
+
+					$("#select_rental_date").html(selectDay);							// 예약정보 대여일자에 값 할당
+					$("#select_rental_time").html('');									// 예약정보 대여시간 초기화
+					$("#select_use_cnt").html('');										// 예약정보 예약인원 초기화
+					$("#select_use_goal").html('');										// 예약정보 사용목적 초기화
+					$("#rental_date").val(selectDay);									// 예약신청 폼의 대여일자에 값 할당
+					$("#rental_time").val('');											// 예약신청 폼의 대여시간 초기화
+					$("#use_cnt").val('');												// 예약신청 폼의 예약인원 초기화
+					$("#use_goal").val('');												// 예약신청 폼의 사용목적 초기화
+
+					$("#step4_layer").hide();
+					$("#step4_1_layer").show();
+					$("#step4_2_layer").hide();
+					$("#step5_layer").hide();
+
+					$.ajax({
+						url: "rental_time_ajax.php",
+						type: "post",
+						data: {
+							"usr_sq" : $("#usr_sq").val(),
+							"space_no" : $("#space_no").val(),
+							"rdate" : $("#rental_date").val(),
+						},
+						dataType: "json",
+						success: function(response) {
+							if(response.result) {
+								$("#step3_1_layer").hide();
+								$("#step3_2_layer").html(response.timer);
+								$("#step3_2_layer").show();
+								$("#step4_layer").show();
+								$("#step5_layer").show();
+								$("#usr_dayCnt").val(response.dayCnt);
+								$("#usr_weekCnt").val(response.weekCnt);
+							} else {
+								$("#step3_1_layer").show();
+								$("#step3_2_layer").html('');
+								$("#step3_2_layer").hide();
+								$("#step4_layer").hide();
+								$("#step5_layer").hide();
+								$("#usr_dayCnt").val('');
+								$("#usr_weekCnt").val('');
+
+								alert(response.msg);
+							}
+						}
+					});
+				}
+
+				// 대여시간 선택에 따른 1일 대여제한 / 1주 대여제한 time check 함수
+				function chk_rental_time(timeKey, timeVal, time_limit, limit_time_day, limit_time_week) {
+					time_validation = true;
+
+					if(time_limit == "Y") {
+						usr_dayCnt = $("#usr_dayCnt").val();
+						usr_weekCnt = $("#usr_weekCnt").val();
+
+						limit_time_day = parseInt(limit_time_day, 10);
+						limit_time_week = parseInt(limit_time_week, 10);
+
+						if($("#reserve_option_"+timeKey).is(":checked")) {
+							usr_dayCnt++;
+							usr_weekCnt++;
+							timeMode = "add";
+						} else {
+							usr_dayCnt--;
+							usr_weekCnt--;
+							timeMode = "sub";
+						}
+
+						if(usr_dayCnt > limit_time_day) {
+							alert("하루에 대여가능한 최대 시간은 " + limit_time_day + "시간입니다.");
+							$("#reserve_option_"+timeKey).prop("checked", false);
+							usr_dayCnt--;
+							usr_weekCnt--;
+
+							time_validation = false;
+						}
+
+						if(usr_weekCnt > limit_time_week) {
+							alert("1주일에 대여가능한 최대 시간은 " + limit_time_week + "시간입니다.");
+							$("#reserve_option_"+timeKey).prop("checked", false);
+							usr_dayCnt--;
+							usr_weekCnt--;
+
+							time_validation = false;
+						}
+
+						$("#usr_dayCnt").val(usr_dayCnt);
+						$("#usr_weekCnt").val(usr_weekCnt);
+					} else {
+						if($("#reserve_option_"+timeKey).is(":checked")) {
+							timeMode = "add";
+						} else {
+							timeMode = "sub";
+						}
+					}
+
+					if(time_validation) {
+						set_timeSelect(timeKey, timeVal, timeMode);
+					}
+				}
+
+				// 시간선택에 따른 처리 함수
+				function set_timeSelect(timeKey, timeVal, timeMode) {
+					rental_time_str = $("#select_rental_time").text();			// 예약정보에 노출할 예약시간 정보
+					rental_time_val = $("#rental_time").val();					// 예약신청폼에 등록된 예약시간 정보
+
+					// 시간 추가인 경우
+					if(timeMode == "add") {
+						if(rental_time_str) rental_time_str += ",";
+						rental_time_str += timeVal;
+
+						if(rental_time_val) rental_time_val += ",";
+						rental_time_val += timeKey;
+					// 시간 삭제인 경우
+					} else {
+						rental_time_str = rental_time_str.replace(timeVal, "");
+						rental_time_str = rental_time_str.replace(",,", ",");
+						if(rental_time_str.charAt(0) == ",") rental_time_str = rental_time_str.slice(1);
+						if(rental_time_str.charAt(rental_time_str.length-1) == ",") rental_time_str = rental_time_str.slice(0, -1);
+
+						rental_time_val = rental_time_val.replace(timeKey, "");
+						rental_time_val = rental_time_val.replace(",,", ",");
+						if(rental_time_val.charAt(0) == ",") rental_time_val = rental_time_val.slice(1);
+						if(rental_time_val.charAt(rental_time_val.length-1) == ",") rental_time_val = rental_time_val.slice(0, -1);
+					}
+
+					$("#select_rental_time").html(rental_time_str);				// 예약정보 대여시간에 값 할당
+					$("#rental_time").val(rental_time_val);						// 예약신청 폼의 대여시간에 값 할당
+
+					if(rental_time_str) {
+						$("#step4_1_layer").hide();
+						$("#step4_2_layer").show();
+					} else {
+						$("#step4_1_layer").show();
+						$("#step4_2_layer").hide();
+					}
+				}
+
+				// 예약인원 선택에 따른 처리
+				// 선택한 날짜 / 시간에 선택한 인원이 예약가능한지 체크하는 Ajax 기능 포함
+				function set_use_cnt() {
+					use_cnt = $("#rental_option").val();
+
+					if(use_cnt) {
+						$.ajax({
+							url: "rental_use_cnt_chk_ajax.php",
+							type: "post",
+							data: {
+								"space_no": $("#space_no").val(),
+								"rental_date": $("#rental_date").val(),
+								"rental_time": $("#rental_time").val(),
+								"use_cnt": use_cnt
+							},
+							dataType: "json",
+							success: function(response) {
+								if(response.result) {
+									$("#use_cnt").val(use_cnt);
+									$("#select_use_cnt").html(use_cnt+"명");
+								} else {
+									alert(response.msg);
+									$("#rental_option").val('');
+									$("#rental_option").focus();
+									$("#use_cnt").val('');
+									$("#select_use_cnt").html('');
+								}
+							}
+						});
+					} else {
+						$("#use_cnt").val('');
+						$("#select_use_cnt").html('');
+					}
+				}
+
+				function set_use_goal() {
+					use_goal = $("#rental_option").val();
+
+					if(use_goal) {
+						use_goal_val = use_goal.replace(/\n/gi, "<br/>");
+						$("#use_goal").val(use_goal_val);
+						$("#select_use_goal").html(use_goal);
+					} else {
+						$("#use_goal").val('');
+						$("#select_use_goal").html('');
+					}
+				}
+
+				function chk_f(f) {
+					form_strip(f);
+
+					rental_option = $("#rental_option_mode").val();
+					rental_option_str = (rental_option == "use_cnt") ? "예약인원" : "사용목적";
+
+					return (chk_field($("#space_no"),		"null",		"시설명.")
+						&&	chk_field($("#space_no"),		"number",	"시설명.")
+						&&	chk_field($("#rental_date"),	"null",		"대여일")
+						&&	chk_field($("#rental_time"),	"null",		"대여시간")
+						&&	chk_field($("#"+rental_option),	"null",		rental_option_str)
+					);
+				}
+			</script>
+
+<?
+include $Contents_dir."/include/footer.php";
+?>

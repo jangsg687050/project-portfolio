@@ -1,0 +1,34 @@
+<?
+/*-----------------------------------------------------------
+* Program : 사용자(user) > 공간 및 장비 예약 > CCTV사용신청
+* Author  : 유성재
+* Create  : 2020-12-15
+* Modify  : 2020-12-17
+* Etc     :
+-----------------------------------------------------------*/
+
+//사용자 공통 Conf
+include "../lib/_conf.php";
+include $Contents_dir."/include/header.php";
+
+$search_where_decode = " WHERE 1=1 AND delete_yn = 'N' AND use_yn = 'Y' AND rental_possible = 'Y' ";
+
+
+?>
+			<div id="sub_facilities_guide" class="sub_page">
+				<div class="inner">
+						<div class="temp_page">
+							<img src="../images/common/temp_icon.png" >
+							<h1>페이지 준비중입니다.</h1>
+							<p>이용에 불편을 드려서 죄송합니다.</p>
+							<p>빠른 시간내에 컨텐츠를 제공하겠습니다.</p>
+						</div>
+				</div>
+			</div>
+
+
+	
+
+<?
+include $Contents_dir."/include/footer.php";
+?>

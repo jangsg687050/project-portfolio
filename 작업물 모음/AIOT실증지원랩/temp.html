@@ -1,0 +1,333 @@
+<?
+/*-----------------------------------------------------------
+* Program : 사용자(user) > 공간 및 장비 예약 > CCTV사용신청
+* Author  : 유성재
+* Create  : 2020-12-15
+* Modify  : 2020-12-17
+* Etc     :
+-----------------------------------------------------------*/
+
+//사용자 공통 Conf
+include "../lib/_conf.php";
+include $Contents_dir."/include/header.php";
+
+$search_where_decode = " WHERE 1=1 AND delete_yn = 'N' AND use_yn = 'Y' AND rental_possible = 'Y' ";
+
+
+?>
+			<div class="sub_page">
+				<div class="inner">
+					<!-- start -->
+					
+						<div class="tab_wrap2">
+							<ul class="tabs2">
+								<li onclick="tab(this, 'intelligent');" class="active"><a href="#!">지능형 교통(C-ITS 및 자율협력주행)</a></li>
+								<li onclick="tab(this, 'infra-equipment');"><a href="#!">인프라 장비</a></li>
+							</ul>
+						</div>
+						
+						<div class="tab-conwrap">
+							<div class="tab-con  intelligent">
+								<div class="flex-titbox">
+									<h5>개요</h5>
+									<ul class="con_list2">
+										<li>인천경제자유구역(IFEZ) 지능형 교통 IoT 필드테스트 및 교통 데이터를 활용하여 새로운 지능형 IoT 제품‧서비스 개발을 위한 테스트베드<br><em>* 스마트시티 통합 플랫폼 기반의 스마트 환경, 시설물관리, 방재, 방범, 교통서비스 운영</em></li>
+										<li>V2X기반 자율협력주행, AI기반 협력 지능형 교통체계(C-ITS) 등 실증 및 개발을 위해 필드테스트 환경과 데이터 제공<br><p>* V2X(Vehicle to Everything communication) : 차량이 무선망을 통해 다른 차량 및 도로 등 인프라가 구축된 사물과 정보를 교환하는 기술</p><p>* C-ITS(Cooperative Intelligent Transport Systems) : 주행 중 운전자/차량에게 주변 교통상황과 급정거, 낙하물 등의 사고 위험 정보를 실시간으로 제공하는 시스템</p></li>
+									</ul>
+								</div>
+								<div class="flex-titbox">
+									<h5>구성 및 위치</h5>
+									<ul class="con_list2">
+										<li>(IoT 필드테스트 구성) 송도 국제대로, 센트럴로 일대(약 6km 구간)에 차량-인프라간 통신(WAVE* 기반)을 위한 V2X 통신망 노변 기지국(10개소) 구성<br><p>* IEEE 802.11a/g 무선랜 기술을 고속으로 주행하는 차량 환경에 맞도록 개량한 통신 기술</p></li>
+									</ul>
+								</div>
+
+								
+								<h5 class="con-tit">V2X 데이터 통신 구성도</h5>
+
+								<img src="images/sub/infra_img1.jpg" alt="v2x 데이터 통신 구성도">
+
+								
+								<h5 class="con-tit">지능형 교통 IoT 필드테스트 시스템 구성도</h5>
+
+								<img class="infra_img1" src="images/sub/infra_org.png" alt="지능형 교통 IOT 필드테스트 시스템 구성도">
+
+								
+								<h5 class="con-tit">도로/교통정보 수집환경 구축 규모 및 수집ㆍ제공 데이터</h5>
+								
+								<div class="infra-boxwrap">
+									<ul>
+										<li class="left">
+											<dl>
+												<dt>교통정보</dt>
+												<dd>
+													<div class="sub-tit"><em>규모</em><p>교차로 1개소</p></div>
+													<div class="sub-tit"><em>방식</em><p>AI+Edge 영상검지 4대</p></div>
+													<ul class="con_list">
+														<li>교차로 모든 방향의 실시간 교통량</li>
+														<li>신호 주기별, 차선별 교통 통계</li>
+														<li>이동류별, 차종별 교통 통계 등</li>
+													</ul>
+												</dd>
+											</dl>
+										</li>
+										<li class="center">
+											<dl>
+												<dt>보행자 검지</dt>
+												<dd>
+													<div class="sub-tit"><em>규모</em><p>횡단보도 1개소</p></div>
+													<div class="sub-tit"><em>방식</em><p>AI+Edge 영상검지 4대</p></div>
+													<ul class="con_list">
+														<li>보행구간, 대기구간 보행자 검지</li>
+														<li>보행자 카운팅, 트래킹 통계</li>
+														<li>보행자, 차량 진행방향 분석 등</li>
+													</ul>
+												</dd>
+											</dl>
+										</li>
+										<li class="right">
+											<dl>
+												<dt>교통신호 정보연계</dt>
+												<dd>
+													<div class="sub-tit"><em>규모</em><p>교차로 10개소</p></div>
+													<div class="sub-tit"><em>방식</em><p>신호 제어기 내에 CVIB 설치 10대</p></div>
+													<ul class="con_list">
+														<li>신호 상태 및 변경 잔여 시간 등 실시간 신호 운영 정보<br>
+															<em>* CVIB : CONNECTED VEHICICLES INTERFACE BOARD</em>
+														</li>
+													</ul>
+												</dd>
+											</dl>
+										</li>
+									</ul>
+								</div>
+
+								<h5 class="con-tit">지능형 교통 IoT 필드테스트 위치(장소)</h5>
+
+								<img class="infra_img2" src="images/sub/infra_img2.jpg" alt="지능형 교통 IOT 필드테스트 위치(장소)">
+								
+								<div class="flex-titbox">
+									<h5>제공내용</h5>
+									<ul class="con_list2">
+										<li> 필요시, 노번기지국과 연동할 수 있는 OBU 단말 제공</li>
+									</ul>
+								</div>
+
+								<div class="flex-titbox">
+									<h5>서비스 실증 활용(예)</h5>
+									<ul class="con_list2">
+										<li> 수집된 교통정보 데이터 등을 제공하여, 자율협력주행, AI기반 교통체계 솔루션 개발ㆍ실증에 활용<br>또한 돌발상황, 도로상태 검지 등을 위한 영상검지기‧레이더 등 각종 센서 제품‧솔루션의 데이터 연동 및 성능검증 지원에 활용</li>
+									</ul>
+								</div>
+
+								<div class="infra-imgbox">
+									<ul>
+										<li>
+											<dl>
+												<dt><img src="images/sub/infra_img3.jpg" alt="보행자/돌발상황 검지기"></dt>
+												<dd>보행자/돌발상황 검지기</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><img src="images/sub/infra_img4.jpg" alt="AI신호제어 솔루션"></dt>
+												<dd>AI신호제어 솔루션</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><img src="images/sub/infra_img5.jpg" alt="자율협력주행"></dt>
+												<dd>자율협력주행</dd>
+											</dl>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+
+							<div class="tab-con infra-equipment">
+								<div class="flex-titbox">
+									<h5>인프라 장비</h5>
+									<ul class="con_list2">
+										<li>인천경제자유구역의 SOC를 활용하여, 5G 기반 IoT 新기술·서비스를 실제 필드에서 실증할 수 있는 테스트필드 구축 영상 분석 인프라, 공공 Wi-Fi, 스마트 Pole, Wi-Fi 기반의 RTLS 서비스 인프라 조성</li>
+									</ul>
+								</div>
+								
+								<img src="images/sub/infra_equipment.jpg" alt="인프라 장비">
+
+
+								<div class="flex-titbox">
+									<h5>뷰렛 카메라</h5>
+								</div>
+								<div class="platform-table">
+									<dl>
+										<dt>촬상소자</dt>
+										<dd>1/2.8형 2메가픽셀 cmos 적용 / 총화소 1945x1109 / 유효화소1945x1097</dd>
+									</dl>
+									<dl>
+										<dt>S/N비</dt>
+										<dd>50dB / 최저조도 컬러 0.00025Lux(F1.4,2sec), 흑백 0Lux(IR LED on) / 야간가시거리 50m</dd>
+									</dl>
+									<dl>
+										<dt>렌즈</dt>
+										<dd>초점 2.8~12mm전동가변4.3배 / 최대구경비 F1.4~3.6/DC Auto iris,P-iris</dd>
+									</dl>
+									<dl>
+										<dt>화각</dt>
+										<dd>H: 119.5°, V: 62.8°, D: 142.1° / H: 27.9°, V: 15.7°, D: 32.0°</dd>
+									</dl>
+									<dl>
+										<dt>보정</dt>
+										<dd>역광BLC, HLC, WDR(150dB) / 노이즈제거SSNR,SSDR/Defog(자동,수동,off)</dd>
+									</dl>
+									<dl>
+										<dt>동작탐지</dt>
+										<dd>off,on / 프라이버시 기능 등 지원 / 픽셀카운터 지원 <br/>W/B,Contrast: 화이트발란스 조정 / 콘트라스트 레벨 조정 지원</dd>
+									</dl>
+									<dl>
+										<dt>W/B,Contrast</dt>
+										<dd>화이트발란스 조정 / 콘트라스트 레벨 조정 지원</dd>
+									</dl>
+									<dl>
+										<dt>비디오/오디오 분석</dt>
+										<dd>Tampering, Loitering, Directional Detection,Defocus Detection, <br/>Fog Detection, VirtualLine, Enter/Exit, Appear / Disappear, <br/>Audio Detection, Face Detection, Motion Detection, <br/>Digital Auto Tracking, Sound Classification</dd>
+									</dl>
+									<dl>
+										<dt>오디오</dt>
+										<dd>G.711 / G.726 / 양방향</dd>
+									</dl>
+									<dl>
+										<dt>프로토콜</dt>
+										<dd>TCP/IP, UDP/IP, RTP(UDP), RTP(TCP), RTCP, RTSP, NTP, HTTP, HTTPS, SSL/TLS,DHCP, PPPoE, FTP, SMTP, ICMP, IGMP, SNMPv1/v2c/v3 (MIB-2), ARP, DNS, DDNS,QoS, PIM-SM, UPnP, Bonjour</dd>
+									</dl>
+									<dl>
+										<dt>웹뷰어</dt>
+										<dd>+ 지원 OS: Windows 7 / 8.1 / 10, MAC OS X 10.10, 10.11, 10.12 <br/>+ 플러그인 프리 웹뷰어 지원 브라우저: Google Chrome 54, MS Edge 38, Mozilla Firefox 49(Window 64bit only), Apple Safari 9(Mac OS X only) <br/>+ 플러그인 웹뷰어 지원 브라우저: MS Explorer 11, Apple Safari 9(Mac OS X only) 15) </dd>
+									</dl>
+									<dl>
+										<dt>전원</dt>
+										<dd>24VAC ± 10%, 12VDC ± 10%, PoE(IEEE802.3af) / 최대 12W (12VDC), 최대 12.95W(PoE), 최대 15W (24VAC)</dd>
+									</dl>
+								</div>
+
+								<div class="flex-titbox">
+									<h5>스피트돔 카메라</h5>
+								</div>
+								<div class="platform-table">
+									<dl>
+										<dt>촬상소자</dt>
+										<dd>1/1.9형 2.42M CMOS/총화소 1952 x1241, 유효화소 1937 x1097/ SN비 50dB</dd>
+									</dl>
+									<dl>
+										<dt>최저조도</dt>
+										<dd>Color 0.01Lux (1/30Sec, F1.5)/OLux(IR LED ON) / 야간가시 350m</dd>
+									</dl>
+									<dl>
+										<dt>렌즈</dt>
+										<dd>초점 6~222mm(광학37배) / 구경비F1.5~F4.6 / DC Auto Iris 화각 H-59.4°(W)~1.9°(T) / V-35.8°(W)~1.1°(T) / 최소지근 1.5m</dd>
+									</dl>
+									<dl>
+										<dt>팬/틸트/회전</dt>
+										<dd>360°Endless / 수동(초당)0.024°~250°/ 팬(초당) 400°,틸트300°</dd>
+									</dl>
+									<dl>
+										<dt>비디오 압축방식</dt>
+										<dd>H.265,H.264, MJPEG</dd>
+									</dl>
+									<dl>
+										<dt>보정기능</dt>
+										<dd>Day&night/BLC/HLC/WDR(120dB)/SSDR/SSNR/Defog/화이트발란스/게인컨트롤</dd>
+									</dl>
+									<dl>
+										<dt>동작탐지</dt>
+										<dd>4개 사각형 영역설정/지능형(템퍼링,오디오감지,가상선 감지,소멸감지)</dd>
+									</dl>
+									<dl>
+										<dt>오디오</dt>
+										<dd>G.711/G.726(양방향),입력(마이크/라인),출력(라인 3.5mm mono jack)</dd>
+									</dl>
+									<dl>
+										<dt>네트워크</dt>
+										<dd>이더넷 RJ-45(10/100BASE-T),SFP / IPV4,IPV6 / 전송방식(유니/멀티)</dd>
+									</dl>
+									<dl>
+										<dt>프로토콜</dt>
+										<dd>TCP/IP, UDP/IP, RTP(UDP), RTP(TCP), RTCP, RTSP, NTP, HTTP, HTTPS, SSL/TLS, DHCP, PPPoE, FTP, SMTP, ICMP, IGMP, SNMPv1/v2c/v3(MIB-2), ARP, DNS, DDNS, QoS, PIM-SM, UPnP, Bonjour</dd>
+									</dl>
+									<dl>
+										<dt>해상도</dt>
+										<dd>최대 1920 x 1080 (60fps) 지원, 비디오압축(H.265/264,MJPEG) Wisestream 지원 / 스마트압축(수동모드 5개 영역)</dd>
+									</dl>
+									<dl>
+										<dt>동시전송</dt>
+										<dd>멀티스트리밍(3개프로파일) / 메모리슬롯 (sd/sdhc/sdxc) up to 128G</dd>
+									</dl>
+									<dl>
+										<dt>웹뷰어</dt>
+										<dd>+ 지원 OS:  Windows 7, 8.1, 10, Mac OS X 10.9, 10.10, 10.11</dd>
+										<dd>+ 플러그인 프리 웹뷰어 지원 브라우저 : Google Chrome, MS Edge / 지원 코덱 : H.264, MJPEG (Max. 1M 15fps)</dd>
+										<dd>+ 플러그인 웹뷰어 지원브라우저 : MS Explore 11, Mozilla Firefox, Apple Safari 9 * Mac OS X only</dd>
+										<dd>+ 기타: Onvif 지원, SUNAPI, SVNP, Wisenet Open Platform / 한국어 지원</dd>
+									</dl>
+									<dl>
+										<dt>전원</dt>
+										<dd>AC24V / 90W(Heater On, IR On), 60W(Heater Off, IR On)</dd>
+									</dl>
+								</div>
+
+								<div class="imfra_imgwrap">
+									<img src="images/sub/infra_equipment2.jpg" alt="인프라 장비">
+									<span>실시간 영상데이터 관제 플랫폼</span>
+								</div>
+							</div>
+						</div>
+						
+					<!-- //start -->
+				</div>
+				</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+<?
+include $Contents_dir."/include/footer.php";
+?>							

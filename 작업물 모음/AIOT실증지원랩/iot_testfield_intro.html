@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0" />
+
+	<!-- Meta Tag -->
+	<meta property="keywords" content="" />
+	<meta property="title" content="" />
+	<meta property="description" content="" />
+
+	<!-- Sns -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:url" content="" />
+
+	<title>인천VRAR정보포털구축운영</title>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="lib/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="lib/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="lib/css/jquery-ui.min.css" />
+	<link rel="stylesheet" type="text/css" href="lib/css/jquery.fullpage2.9.7.css" />
+	<link rel="stylesheet" type="text/css" href="lib/jquery/bxslider/jquery.bxslider.css" />
+	<link rel="stylesheet" type="text/css" href="lib/css/fonts.css" />
+	<link rel="stylesheet" type="text/css" href="lib/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="lib/css/media.css" />
+
+	<!-- Js -->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="lib/js/jquery-ui.min.js"></script>
+	<script src="lib/jquery/fullpage/jquery.fullpage2.9.7.min.js"></script>
+	<script src="lib/jquery/bxslider/jquery.bxslider.min.js"></script>
+	<script src="lib/js/jquery.rwdImageMaps.min.js"></script>
+	<script src="lib/js/ui.js"></script>
+	<script src="lib/js/script.js"></script>
+</head>
+
+<body>
+	<!-- shortcut -->
+	<div id="shortcut">
+		<ul>
+			<li><a href="#contents">본문 바로가기</a></li>
+		</ul>
+	</div>
+	<!-- //shortcut -->
+
+	<div id="wrapper">
+		<!-- header -->
+		<header>
+			<div id="header">
+				<!-- gnb_wrap -->
+				<div class="gnb_wrap clear">
+					<h1 class="logo"><a href="index.html" class="txt_hide">ITP 인천 VR·AR 정보포털</a></h1>
+					<div class="mobile_menu txt_hide">
+						<span class="m_btn">메뉴</span>
+					</div>
+					<div class="m_gnb_wrap">
+						<div class="m_con">
+							<div class="x_btn_wrap">
+								<ul class="clear">
+									<li class=""><a href="login.html">로그인</a></li>
+									<li class=""><a href="join_step1.html">회원가입</a></li>
+								</ul>
+								<span class="x_btn"></span>
+							</div>
+							<!-- gnb -->
+							<div class="gnb">
+								<ul class='depth1 clear'>
+									<li class="menu01">
+										<a href="about.html" target="_self" >센터소개</a>
+										<div class='depth2'>
+											<ul>
+												<li class=''>
+													<a href='about.html' target='_self' >
+														<span>센터소개</span>
+													</a>
+												</li>
+												<li class=''>
+													<a href='info_guide.html' target='_self' >
+														<span>이용안내</span>
+													</a>
+												</li>
+												<li class=''>
+													<a href='location.html' target='_self' >
+														<span>오시는 길</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="menu02">
+										<a href="vrar_platform.html" target="_self" >지원사업</a>
+										<div class='depth2'>
+											<ul>
+												<li class=''>
+													<a href='vrar_platform.html' target='_self' >
+														<span>인천 VR·AR 콘텐츠 개발지원</span>
+													</a>
+												</li>
+												<li class=''>
+													<a href='academy.html' target='_self' >
+														<span>전문인력양성 아카데미</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="menu03">
+										<a href="facilities_guide.html" target="_self" >시설장비</a>
+										<div class='depth2'>
+											<ul>
+												<li class=''>
+													<a href='facilities_guide.html' target='_self' >
+														<span>시설안내</span>
+													</a>
+												</li>
+												<li class=''>
+													<a href='equipment_guide.html' target='_self' >
+														<span>장비안내</span>
+													</a>
+												</li>
+												<li class=''>
+													<a href='experience.html' target='_self' >
+														<span>베타테스터 체험예약</span>
+													</a>
+												</li>
+												<li class=''>
+													<a href='equipment_rental.html' target='_self' >
+														<span>장비 대여</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="menu04   ">
+										<a href="announce_business.html" target="_self" >사업 및 교육</a>
+										<div class='depth2'>
+											<ul>
+												<li class=''>
+													<a href='announce_business.html' target='_self' >
+														<span>사업공고</span>
+													</a>
+												</li>
+												<li class=''>
+													<a href='announce_education.html' target='_self' >
+														<span>교육공고</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="menu05">
+										<a href="notice.html" target="_self" >알림마당</a>
+										<div class='depth2'>
+											<ul>
+												<li class=''>
+													<a href='notice.html' target='_self' >
+														<span>공지사항</span>
+													</a>
+												</li>
+												<li class=''>
+													<a href='press.html' target='_self' >
+														<span>언론보도</span>
+													</a>
+												</li>
+												<li class=''>
+													<a href='faq.html' target='_self' >
+														<span>자주하는 질문</span>
+													</a>
+												</li>
+												<li class=''>
+													<a href='library.html' target='_self' >
+														<span>자료실</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="menu06  blind ">
+										<a href="login.html" target="_self" >멤버쉽</a>
+										<div class='depth2'>
+											<ul>
+												<li class=''>
+													<a href='login.html' target='_self' >
+														<span>로그인</span>
+													</a>
+												</li>
+												<li class=''>
+													<a href='find_id.html' target='_self' >
+														<span>아이디 찾기</span>
+													</a>
+												</li>
+												<li class=''>
+													<a href='find_pw.html' target='_self' >
+														<span>비밀번호 찾기</span>
+													</a>
+												</li>
+												<li class=''>
+													<a href='join_step1.html' target='_self' >
+														<span>회원가입</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="menu07  blind mobile_menu">
+										<a href="/user/mypage/space_rental_list.php" target="_self" >마이페이지</a>
+										<div class='depth2'>
+											<ul>
+												<li class=''>
+													<a href='/user/mypage/space_rental_list.php' target='_self' >
+														<span>예약확인</span>
+													</a>
+												</li>
+												<li class=''>
+													<a href='/user/mypage/edit_info.php' target='_self' >
+														<span>개인정보수정</span>
+													</a>
+												</li>
+												<li class=''>
+													<a href='/user/mypage/leave.php' target='_self' >
+														<span>회원탈퇴</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="menu08  blind ">
+										<a href="/user/contents.php?sq=23" target="_self" >기타</a>
+										<div class='depth2'>
+											<ul>
+												<li class=''>
+													<a href='/user/contents.php?sq=23' target='_self' >
+														<span>개인정보처리방침</span>
+													</a>
+												</li>
+												<li class=''>
+													<a href='/user/contents.php?sq=57' target='_self' >
+														<span>이용약관</span>
+													</a>
+												</li>
+												<li class=''>
+													<a href='/user/contents.php?sq=58' target='_self' >
+														<span>시설이용·장비대여 규정안내</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- //gnb -->
+							<div class="menu_util_wrap">
+								<ul class="menu_util clear">
+									<li><a href="login.html">로그인</a></li>
+									<li><a href="join_step1.html">회원가입</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //gnb_wrap -->
+				<div class="bg"></div>
+			</div>
+		</header>
+		<!-- //header -->
+
+		<!-- contents -->
+		<div id="contents" class="contents">
+			<div class="top_sub_wrap">
+				<div class="top_sub_visual">
+					<div class="inner">
+						<h2 class="title">시설장비</h2>
+					</div>
+				</div>
+				<div class="inner">
+					<div class="top_sub_nav_wrap">
+						<div class="top_sub_nav clear">
+							<a href="" class="home txt_hide">홈</a>
+							<!--!) 1depth 메뉴 리스트 출력 부탁드립니다.-->
+							<select name="" id="" class="menu_list menu_list1">
+								<option value="">시설장비</option>
+							</select>
+							<!--!) 2depth 메뉴 리스트 출력 부탁드립니다.-->
+							<select name="" id="" class="menu_list menu_list2">
+								<option value="">장비안내</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="top_sub_title">
+				<div class="inner">
+					<h3 class="title">IoT테스트필드 소개</h3>
+				</div>
+			</div>
+
+			<div class="sub_page">
+			<div id="sub_about" class="sub_page">
+				<div class="inner">
+					<!-- start -->
+						<div class="box-gray">
+							<ul class="con_list2">
+								<li><span class="txt-color-green">인천경제자유구역의 SOC(도시기반, 항만, 공항, 산단 등)를 활용</span> 하여, 5G 기반 IoT 新기술·서비스를 <span class="txt-color-green">실제 필드에서 실증할 수 있 는 테스트필드입니다.</span></li>
+								<li><span class="txt-color-green">IoT 제품 ‧ 서비스가 실제 환경에서 사용될 때 발생할 수 있는 다양한 문제를 개선‧피드백</span> 할 수 있도록 <span class="txt-color-green">물리적 장소, 실증자원 및 실증비용 등을 지원 합니다.</span></li>
+							</ul>
+						</div>
+
+						<div class="img-box">
+							<img src="images/sub/Test_Field2.jpg" alt="인천전역실증자유구역조성">
+						</div>
+
+						<div class="tab_wrap2">
+							<ul class="tabs2">
+								<li onclick="tab(this, 'tabsct-iotinfra');" class="active"><a href="#!">IoT 실증 인프라 구축 지원사업</a></li>
+								<li onclick="tab(this, 'tabsct-iot');"><a href="#!">IoT 실증 지원사업</a></li>
+							</ul>
+						</div>
+						
+						<div class="tab-conwrap">
+							<div class="tab-con tabsct-iotinfra">
+								<div class="flex-titbox">
+									<h5>사업목적</h5>
+									<ul class="con_list2">
+										<li>수요기관의 현안해결 및 서비스 실증을 지원하기 위한 IoT 테스트필드 인프라 구축(신규 1개소) 및 실증자원* 확보<br>(구축 인프라를 실증기업에게 제공 예정)<br><em>* 인천경제자유구역 일원의 공간(시설·장비), 플랫폼, 데이터, 인프라 등</em></li>
+									</ul>
+								</div>
+								<div class="flex-titbox">
+									<h5>추진체계 및 역할</h5>
+									<ul class="con_list2">
+										<li>실증 수요기관 : 중소 · 벤처 · 스타트업이 직접 확보하기 어려운 다양한 실증자원을 제공</li>
+										<li>실증인프라 구축기업 : 수요기관 요구 및 제안요청서(RFP)에 따른 실증 인프라&서비스 구축</li>
+										<li>실증 수요기업 : 구축 인프라를 활용한 IoT 新기술ㆍ서비스에 대한 실증 진행</li>
+									</ul>
+								</div>
+								<img src="images/sub/iotinfra.jpg" alt="인천전역실증자유구역조성">
+								
+								<div class="agency-wrap">
+									<div class="agency">
+										실증 수요기관
+									</div>
+									<ul class="agency-conwrap">
+										<li>
+											<dl>
+												<dt>사업기획</dt>
+												<dd>
+													수요기관의 현안해소를 위한 IoT 인프라 구축 및 실증서비스 기획<br>
+													<span>* 수요기관 사업기획(요구사항)을 반영하여 실증 인프라 구축기업(용역사) 선정·추진</span>
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl class="center">
+												<dt>실증자원 제공</dt>
+												<dd>
+													구축된 IoT 인프라 및 실증자원을 실증수요기업에게 제공<br>
+													<span>* 수요기관 선정 후 인프라 구축 설계 단계 시협의하여 실증자원 도출 예정</span>
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt>운영 및 개방</dt>
+												<dd>구축완료일로부터 3년 간 IoT 실증인프라 운영* 및 개방<br>
+													<span>* IoT 실증자원 운영 관리를 위한 담당인력 지정하여 운영(탄력적 운영 가능)</span>
+												</dd>
+											</dl>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="tab-con tabsct-iot">
+								<div class="flex-titbox">
+									<h5>사업목적</h5>
+									<ul class="con_list2">
+										<li>중소·벤처·스타트업이 직접 확보하기 어려운 다양한 실증자원 및 실증 비용을 제공하여 IoT기술 기반 제품&서비스의 조기 상용화지원</li>
+									</ul>
+								</div>
+								<div class="flex-titbox">
+									<h5>추진기간</h5>
+									<ul class="con_list2">
+										<li>2021년 04월 ~ 계속/실증자원 매칭형(계속), 실증비용 지원형(~12월)</li>
+									</ul>
+								</div>
+
+								<div class="table-wrap">
+									<div class="table-responsive">
+										<table class="table_st1">
+											<caption>실증자원 매칭형, 실증비용 지원형</caption>
+											<colgroup>
+												<col style="width: 15%;">
+												<col style="width: auto;">
+												<col style="width: auto;">
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">구분</th>
+													<th scope="col">실증자원 매칭형</th>
+													<th scope="col">실증비용 지원형</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th>지원대상</th>
+													<td>인천경제자유구역 IoT 테스트필드 기반 실증수요 국내기업(TRL 6단계 이상)</td>
+													<td>2020년 기구축 IoT 테스트필드 인프라에 대한 실증수요 국내기업(TRL 6단계 이상)</td>
+												</tr>
+												<tr>
+													<th>지원내용</th>
+													<td>인천경제자유구역의 SOC (도시기반, 항만, 공항, 산단 등) 실증   자원을 활용하여, IoT 新기술·서비스의 대한 실증기회 제공</td>
+													<td>공간, 인프라 등 실증자원 뿐만 아니라 제품 및 서비스 실증에 필요한 장비(제품) 설치비, 철거비, 통신비 등 실증비용 제공</td>
+												</tr>
+												<tr>
+													<th>지원예산 및 기준</th>
+													<td>실증비용(추가 구축 등)은 100% 자부담<br><span class="txt-color-green">* 별도 예산지원 없음</span></td>
+													<td>기업당 5천만원 내외(총 2억원 이내)<br><span class="txt-color-green">* 민간부담금은 총사업비의 20% 이상</span><br> &nbsp;&nbsp;(민간부담금의 10% 이상 현금부담)</td>
+												</tr>
+												<tr>
+													<th>모집기간</th>
+													<td>공고일(4월말)로부터 계속(상시 접수)<br><span class="txt-color-green">* 분기별(6/9/12월) 평가를 통해 기업 선정</span></td>
+													<td>공고일(4월말)로부터 약 3주일(5월 중순)</td>
+												</tr>
+												<tr>
+													<th>지원기간</th>
+													<td>선정일로부터 1년 이내<br><span class="txt-color-green">* 완료일로부터 1개월 이내 결과보고 제출</span></td>
+													<td>선정일 ~ 11월까지<br><span class="txt-color-green">* 완료일로부터 1개월 이내 결과보고(정산포함) 제출</span></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="flex-titbox">
+									<h5>실증자원 지원</h5>
+									<ul class="con_list2">
+										<li>인천경제자유구역 일원의 실증자원(공간, 시설, 데이터, 플랫폼 등) 매칭 및 제공</li>
+									</ul>
+								</div>
+
+								<div class="table-wrap">
+									<div class="table-responsive">
+										<table class="table_st1">
+											<caption>실증자원 지원내용, 세부내용, 실증자원 매칭형 실증비용 지원형</caption>
+											<colgroup>
+												<col style="width: 8%;">
+												<col style="width: 8%;">
+												<col style="width: auto;">
+												<col style="width: 10%;">
+												<col style="width: 10%;">
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col" colspan="2">지원내용</th>
+													<th scope="col">세부내용</th>
+													<th scope="col">실증자원 매칭형</th>
+													<th scope="col">실증비용 지원형</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th rowspan="10">실증<br>자원</th>
+													<th rowspan="3">공간</th>
+													<td>인천 경제자유구역 일원에 있는 공간 및 시설</td>
+													<td class="txt-center">○</td>
+													<td></td>
+												</tr>
+										
+												<tr>
+													<td>IoT 기술지원센터(인천송도) 공간 및 시설</td>
+													<td class="txt-center">○</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>인천 스타트업파크 공간 및 시설(IoT 실증지원랩 등)</td>
+													<td class="txt-center">○</td>
+													<td></td>
+												</tr>
+												<tr>
+													<th rowspan="3">플랫폼</th>
+													<td>IFEZ 스마트시티 트윈 플랫폼(스마트시티 공공데이터 연계)</td>
+													<td class="txt-center">○</td>
+													<td class="txt-center">○</td>
+												<tr>
+													<td>IoT 실증지원랩 플랫폼(시각화, 데이터 분석 등)</td>
+													<td class="txt-center">○</td>
+													<td class="txt-center">○</td>
+												</tr>
+												<tr>
+													<td>인천 스타트업파크 빅데이터·AI플랫폼 (데이터 분석 등)</td>
+													<td class="txt-center">○</td>
+													<td></td>
+												</tr>
+												<tr>
+													<th>데이터</th>
+													<td>스마트시티 데이터<span class="txt-color-green">*</span> : 대기 환경 정보 연계, 차량 압출 이력, 방범 및 교통 CCTV, 송도 / 청라 / 영종 스마트시티 데이터 등<br><span class="txt-color-green">*스마트시티 데이터는 개인정보보호법 등 관련법령 가능범위 내 제공 예정</span></td>
+													<td class="txt-center">○</td>
+													<td></td>
+												</tr>
+												<tr>
+													<th rowspan="3">인프라</th>
+													<td>인천 스타트업파크 버스정류장 인프라</td>
+													<td class="txt-center">○</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>송도 국제대로, 센트럴로 일대에 차량, 인프라간 통신 노변기지국(10개소)</td>
+													<td class="txt-center">○</td>
+													<td class="txt-center">○</td>
+												</tr>
+												<tr>
+													<td>인천 스타트업파크 內 스마트 Pole 4개, CCTV 16개, 무선 WiFi 17대</td>
+													<td class="txt-center">○</td>
+													<td class="txt-center">○</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="list-wrap">
+									<ul class="con_list3">
+										<li>실증자원 관리주체(지자체, 기관 등) 의견, 인허가 등에 따라서 실증자원 매칭 수용여부 결정</li>
+										<li>실증비용 지원형의 실증자원은 2020년 구축한 실증자원으로 한정</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+					<!-- //start -->
+				</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- //contents -->
+
+		<!-- footer -->
+		<footer>
+			<div id="footer" class="footer">
+				<div class="inner">
+					<div class="foot_menu">
+						<ul class="clear">
+							<li><a href="#">찾아오시는길</a></li>
+							<li><a href="#" class="txt_point_color">개인정보처리방침</a></li>
+							<li><a href="#">이용약관</a></li>
+							<li><a href="#">시설이용·장비대여 규정안내</a></li>
+						</ul>
+					</div>
+					<div class="foot_info">
+						<address>
+							<p>주소 : 인천광역시 연수구 갯벌로 36, 인하대학교 산학협력관 2층 인천VR·AR제작거점센터 / TEL : <a href="tel:032-260-0679">032-260-0679</a> / FAX : <a href="tel:032-260-0689">032-260-0689</a></p>
+						</address>
+						<p class="txt_copyright">COPYRIGHT (C) 2019 INCHEON TECHNOPARK. ALL RIGHTS RESERVED.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- //footer -->
+	</div>
+</body>
+
+</html>
