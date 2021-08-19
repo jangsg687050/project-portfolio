@@ -1,0 +1,35 @@
+WebPublisher
+
+PORTFOLIO
+
+Someone's portfolio
+
+html · css · javascript
+JangSeulGi
+
+WEB Publisher
+WEB Acceccibility
+WEB Standards
+
+I.Main
+II.Read me (skill 관련해서)
+III.The work (혼자 작업햇던 포트폴리오 정리)
+IV.Contact
+
+Project
+
+웹디자인 근무
+이젠아카데미 수료
+펜타코드
+
+who am I
+
+성실하고 
+
+MORE TO READ
+
+Fix your course on a star and you'll navigate any storm.
+
+background: #FC5C7D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
