@@ -1,0 +1,30 @@
+/* master_mobile.css */
+@import url(header_style_mobile.css);
+@import url(main_contents_style_mobile.css);
+@import url(footer_style_mobile.css);
+
+/*************** RESET *****************/
+input#toggle_menu, input#toggle_search_m, input#toggle_search{
+	display: none;
+}
+
+div#search_wrap > form > fieldset > input.pc{
+	display: none;
+}
+
+#wrap{
+	width: 100%;
+}
+
+
+img.pc{
+	display: none;
+}
+
+div.service > div.pc{
+	display: none;
+}
+
+div.f_left > address.pc{
+	display:none;
+}

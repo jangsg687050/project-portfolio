@@ -1,0 +1,282 @@
+/*main_contents_style_mobile.css*/
+
+#main_bannar{
+	width: 100%;
+	height: 581px;
+	padding-top: 55px;
+
+}
+	#main_bannar > a > img{
+		width: 100%;
+	}
+	#main_bannar > div{
+	}
+		#main_bannar > div > a > img{
+			float: left;
+			width: 50%;
+			margin-bottom: 20px;
+			}
+
+
+#con{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 5.55%;
+}
+
+	#con > article.con1{
+		width: 100%; 
+	}
+		#con > article.con1 > ul{
+			width: 100%; 
+			overflow: hidden;
+			}
+			#con > article.con1 > ul > li > a{
+				width: 50%; ;
+				float: right;
+				padding-right: 10px;
+				padding-left: 10px;
+				box-sizing: border-box;
+				}
+			#con > article.con1 > ul > li:last-child > a{
+				padding-left: 0;
+				}
+			#con > article.con1 > ul > li:first-child > a{
+				padding-right: 0;
+				}
+				#con > article.con1 > ul > li > a > div > img{
+					width: 100%;
+					margin-bottom: 20px;
+					margin-top: 20px;
+					}
+				#con > article.con1 > ul > li > a > h3{
+					font-weight: bold;
+					font-family: Dotum;
+					}
+				#con > article.con1 > ul > li > a > p{
+					width: 100%;
+					color: #777;
+					font-family: Dotum;
+					margin-top: 13px;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					overflow: hidden;
+					
+					font-weight: bold;
+					line-height: 15px;
+				}
+
+
+
+	#con > article.con2{
+		width: 100%;
+	}
+		#con > article.con2 > ul{
+			width: 100%;
+			overflow: hidden;
+		}
+			#con > article.con2 > ul > li{
+			}
+				#con > article.con2 > ul > li > a > img{
+					width: 49%;
+					float: left;
+					margin-left: 1%;
+					margin-bottom: 1%;
+				}
+				#con > article.con2 > ul > li:nth-of-type(1) > a > img{
+					margin-left: 0;
+				}
+				#con > article.con2 > ul > li:nth-of-type(3) > a > img{
+					margin-left: 0;
+				}
+
+				
+
+	#con > article.con3{
+		width: 100%;
+	}
+		#con > article.con3  > img{
+		width: 100%;
+		margin-bottom: 20px;
+		}
+	#con > article.con4{
+		width: 100%;
+	}
+		#con > article.con4 > a > img{
+		width: 100%;
+	}
+
+	#con > article.con5 img,#con > article.con6 img{
+		width: 100%;
+		
+	}
+
+	#con > article.con5{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	#con > article.con6 > ul > li{
+		margin-bottom: 10px;
+	}
+
+/********탭바***********/
+
+#mac_menu{
+	width: 100%; 
+	padding: 5.55%;
+	box-sizing: border-box;
+	
+	overflow: hidden;
+}
+	#mac_menu > input[type=radio]{ display: none;}
+
+#mac_menu > input:nth-of-type(1) ~ div:nth-of-type(1),
+#mac_menu > input:nth-of-type(2) ~ div:nth-of-type(2),
+#mac_menu > input:nth-of-type(3) ~ div:nth-of-type(3),
+#mac_menu > input:nth-of-type(4) ~ div:nth-of-type(4){
+	display: none;
+}
+
+#mac_menu > input:nth-of-type(1):checked ~ div:nth-of-type(1),
+#mac_menu > input:nth-of-type(2):checked ~ div:nth-of-type(2),
+#mac_menu > input:nth-of-type(3):checked ~ div:nth-of-type(3),
+#mac_menu > input:nth-of-type(4):checked ~ div:nth-of-type(4){
+	display: block;
+}
+
+/*****탭바 디자인*******/
+
+
+	#mac_menu > section{
+		overflow: hidden;
+		margin: 0 auto;
+		max-width: 320px;
+
+	}
+		#mac_menu > section > div{
+			float: left;
+			padding-right: 3.1255%;
+		}
+		#mac_menu > section > div:last-child{
+			padding-right:  0;
+		}
+			#mac_menu > section > div > label{
+				line-height: 15px;
+				font-size: 14px;
+			}
+			
+
+
+
+/*****탭 내용 디자인*******/
+	#mac_menu > div > ul > li{
+		width: 50%;
+		
+		float: left;
+		margin-top: 18px;
+		}
+			#mac_menu > div > ul > li > a{
+				margin-right: 2.77%;
+				margin-left: 2.77%;
+			}
+			#mac_menu > div > ul > li:nth-of-type(1) > a,
+			#mac_menu > div > ul > li:nth-of-type(3) > a,
+			#mac_menu > div > ul > li:nth-of-type(5) > a,
+			#mac_menu > div > ul > li:nth-of-type(7) > a,
+			#mac_menu > div > ul > li:nth-of-type(9) > a{
+				margin-left: 0;
+			}
+			#mac_menu > div > ul > li:nth-of-type(2) > a,
+			#mac_menu > div > ul > li:nth-of-type(4) > a,
+			#mac_menu > div > ul > li:nth-of-type(6) > a,
+			#mac_menu > div > ul > li:nth-of-type(8) > a,
+			#mac_menu > div > ul > li:nth-of-type(10) > a{
+				margin-right: 0;
+			}
+				#mac_menu > div > ul > li > a > img{
+					width: 100%;
+					margin-bottom: 20px;
+					
+				}
+			#mac_menu > div > ul > li > a > div{
+				margin-bottom: 30px;
+			}
+				#mac_menu > div > ul > li > a > div > b{
+					font-size: 5px;
+					border: 1px solid #ccc;
+					padding: 4px 8px;
+					color: #777;
+				}
+				#mac_menu > div > ul > li > a > div > p{
+					margin-top: 17px;
+					font-size: 14px;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					overflow: hidden;
+					height: 69px;
+					width: 100%;
+					display: block;
+
+					line-height: 14px;
+					color: #777;
+				}
+					#mac_menu > div > ul > li > a > div > p > span{
+						margin-top: 12px;
+						display: block;
+
+						font-size: 18px;
+						color: #000;
+					}
+			
+	
+	
+
+
+
+
+#main_footer{
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+	#main_footer > div.notice{
+		width: 100%;
+		border-bottom: 1px solid #ccc;
+		border-top: 1px solid #ccc;
+	}
+		#main_footer > div.notice > h4{
+			display: none;
+		}
+		#main_footer > div.notice > p{
+			margin-top: 25px;
+			margin-bottom: 25px;
+			margin-left: 13px;
+
+			color: #777;
+			font-weight: bold;
+		}
+	#main_footer >  div.service > div.smart > ul{
+		width: 100%;
+		overflow: hidden;
+		margin-top: 67px;
+	}
+		#main_footer > div.service > div.smart > ul > li{
+			width: 50%;
+			float: left;
+		}
+			#main_footer > div.service > div.smart > ul > li > a{
+				padding: 13px 48px;
+				border:1px solid #777;
+				white-space: nowrap;
+				text-align: center;
+			}
+	#main_footer > div.f_left{
+		width: 100%;
+		margin-top: 30px;
+	}
+			#main_footer > div.f_left > address.smart{
+				width: 100%;
+				text-align: center;
+				color: #777;
+			}

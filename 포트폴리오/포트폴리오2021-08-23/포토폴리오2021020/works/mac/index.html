@@ -1,0 +1,865 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<title>Document</title>
+<link rel="stylesheet" href="CSS/common.css" />
+<link rel="stylesheet" href="CSS/master.css" media="screen and (min-width: 1367px)" />
+<link rel="stylesheet" href="CSS/master_mobile.css" media="screen and (max-width: 1366px)" />
+
+<script src="js/jquery-3.4.1.min.js"></script>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/modernizr.js"></script>
+</head>
+<body>
+<input id="toggle_menu" type="checkbox" />
+<div id="wrap">
+	<div class="skip">
+		<a href="#product">본문 바로가기</a>
+		<a href="#toggle_nav">메인메뉴 바로가기</a>
+		<a href="#main_footer">푸터 바로가기</a>
+	</div>
+
+	<script>
+	$(function(){
+			setInterval(function(){
+				if($(window).scrollTop()>=218){
+					$("#main_top_nav").css({top:0});
+					$("#toggle_nav").css({position:"fixed", top:89});
+				}else{
+					$("#main_top_nav").css({top:-89});
+					$("#toggle_nav").css({position:"absolute", top:218});
+				}
+			},50);
+		});
+	</script>
+	
+	
+
+		<nav id="main_top_nav">
+			<h1 id="logo">
+				<a href="#"><img src="images/logo.png" alt="MAC로고"></a>
+			</h1><!--//로고-->
+			<ul class="top_nav1">
+				<li><a href="#">CURATION</a></li>
+				<li><a href="#">BRANDS</a></li>
+				<li><a href="#">EVENT</a></li>
+				<li><a href="#">MACLOVER</a></li>
+			</ul>
+			<label class="top_toggle_menu" for="toggle_menu"></label>
+			<ul class="top_nav2">
+				<li><a href="#">NEW</a></li>
+				<li><a href="#">PRODUCT</a></li>
+				<li><a href="#">TRENDING NOW</a></li>
+				<li><a href="#">LINE UP</a></li>
+			</ul>
+			<ul class="top_nav3">
+				<li><a href="#"><img src="images/icon_1.png" alt="서치"></a></li>
+				<li><a href="#"><img src="images/icon_3.png" alt="로그인"></a></li>
+				<li><a href="#"><img src="images/icon_2.png" alt="회원가입"></a></li>
+				
+			</ul>
+
+		</nav><!--//스크롤시 상단에서 떨어지는 메인메뉴-->
+
+
+	<header id="main_header"><!--메인헤더시작-->
+		<div>
+			<h1 id="logo">
+				<a href="#">
+					<img class="pc" src="images/logo.png" alt="MAC로고">
+					<img class="smart" src="images/logo_m.png" alt="MAC로고">
+				</a>
+			</h1><!--//로고-->
+			<nav id="logo_nav">
+				<ul>
+					<li><a href="#">CURATION</a></li>
+					<li><a href="#">BRANDS</a></li>
+					<li><a href="#">EVENT</a></li>
+					<li><a href="#">MACLOVER</a></li>
+				</ul>
+			</nav> 
+			<script>
+			$(function(){
+				$("#main_nav > div > ul > li > a").click(function(){
+				if($(this).parent("li").attr("class") !="active"){
+					$("#main_nav > div > ul > li").removeClass("active"); //<-이부분 없애면 다른 메뉴 누를시 자동 닫기는거 없어짐. 클릭으로 열리고 닫김.
+					$(this).parent("li").addClass("active");
+				}else{
+					$(this).parent("li").removeClass("active");
+					}
+				});
+				$("label.toggle_menu").click(function(){
+					$("#main_nav > div > ul > li").removeClass("active");
+				});
+			});
+		</script>
+			<nav id="main_nav">
+				<label class="toggle_menu" for="toggle_menu">메인메뉴</label><!--토글메뉴버튼-->
+				<div>
+					<ul>
+						<li><a href="#">NEW</a></li>
+						<li>
+							<a href="#">PRODUCT</a>
+							<ul class="smart">
+								<li><a href="#">EYES</a></li>
+								<li><a href="#">LIPS</a></li>
+								<li><a href="#">FACE</a></li>
+								<li><a href="#">SKIN</a></li>
+								<li><a href="#">CARE</a></li>
+								<li><a href="#">BRUSHE</a></li>
+							</ul>
+						</li>
+						<li><a href="#">TRENDING NOW</a></li>
+						<li><a href="#">LINE UP</a></li>
+						<li class="img">
+								<a class="a" href="#"><img class="smart" src="images/toggle_menu_curation.png" alt=""></a>
+								<a class="a" href="#"><img class="smart" src="images/toggle_menu_brand.png" alt=""></a>
+								<a class="a" href="#"><img class="smart" src="images/toggle_menu_event.png" alt=""></a>
+						</li>
+						<li class="menu3">
+							<a href="#">#BEST</a><a href="#">#NEW</a><a href="#">#LIKE IT</a>
+						</li>
+						<li class="search_m">
+							<input id="toggle_search_m" type="checkbox" />
+							<label class="search" for="toggle_search_m"></label>
+							<div id="search_wrap_m">
+								<form>
+									<fieldset>
+										<legend>검색</legend>
+										<input class="mobile" id="search_txt" type="text" placeholder="상품명을 입력하세요" />
+										<input id="search_btn" type="image" src="images/m_search_btn.png" alt="검색하기" />
+									</fieldset>
+								</form>
+							</div>
+						</li>
+						
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<nav id="toggle_nav">
+				<h2 class="blind"></h2>
+				<input id="toggle_menu" type="checkbox" />
+				<label class="menu_close" for="toggle_menu">메뉴닫기</label>
+				<ul>
+					<div>
+						<li id="eyes">
+							<span class="img1 icon">
+								<a href="#">
+									<img src="images/side_menu_eye.png" alt="눈아이콘">
+								</a>
+							</span>
+							<ul class="sub_nav">
+								<h3><a href="#">EYES</a></h3>
+								<li><a href="#">섀도우</a></li>
+								<li><a href="#">아이 팔레트 + 키트</a></li>
+								<li><a href="#">라이너</a></li>
+								<li><a href="#">마스카라</a></li>
+								<li><a href="#">브로우</a></li>
+								<li><a href="#">아이 프라이머</a></li>
+							</ul>
+						</li>
+						<li id="lips">
+							<span class="img2 icon">
+							<a href="#">
+								<img src="images/side_menu_lip.png" alt="입술아이콘">
+								</a>
+							</span>
+							<ul class="sub_nav">
+								<h3><a href="#">LIPS</a></h3>
+								<li><a href="#">립스틱</a></li>
+								<li><a href="#">립 글라스</a></li>
+								<li><a href="#">립 펜슬</a></li>
+								<li><a href="#">립 케어 + 프라이머</a></li>
+								<li><a href="#">립 팔레트 + 키트</a></li>
+							</ul>
+						</li>
+						<li id="face">
+							<span class="img3 icon">
+							<a href="#">
+								<img src="images/side_menu_face.png" alt="얼굴아이콘">
+								</a>
+							</span>
+							<ul class="sub_nav">
+								<h3><a href="#">FACE</a></h3>
+								<li><a href="#">파운데이션</a></li>
+								<li><a href="#">파우더</a></li>
+								<li><a href="#">블러쉬</a></li>
+								<li><a href="#">컨실러</a></li>
+								<li><a href="#">페이스 프라이머</a></li>
+								<li><a href="#">하이라이터 + 컨투어링</a></li>
+								<li><a href="#">멀티-유즈</a></li>
+							</ul>
+						</li>
+						<li id="skin">
+							<span class="img4 icon">
+							<a href="#">
+								<img src="images/side_menu_skin.png" alt="스킨아이콘">
+								</a>
+							</span>
+							<ul class="sub_nav">
+								<h3><a href="#">SKINCARE</a></h3>
+								<li><a href="#">섀프라이머도우</a></li>
+								<li><a href="#">리무버</a></li>
+								<li><a href="#">모이스처라이저</a></li>
+								<li><a href="#">BB + CC</a></li>
+								<li><a href="#">여행용 사이즈</a></li>
+							</ul>
+						</li>
+						<li id="brush">
+							<span class="img5 icon">
+							<a href="#">
+								<img src="images/side_menu_brush.png" alt="브러쉬아이콘">
+								</a>
+							</span>
+							<ul class="sub_nav">
+								<h3><a href="#">BRUSHES</a></h3>
+								<li><a href="#">아이 브러시</a></li>
+								<li><a href="#">립 브러시</a></li>
+								<li><a href="#">페이스 브러시</a></li>
+								<li><a href="#">모든 브러시</a></li>
+							</ul>
+						</li>
+						<li id="lipstick">
+							<img src="images/sidemenu_pro.jpg" alt="비바글램25립스틱">
+							<p>
+								<strong>LIPSTICK</strong><br/>
+								<b>LIPSTICK / VIVA GLAM 25</b><br/>
+								<span> 31,000</span>
+							</p>
+						</li>
+					</div>
+				</ul>
+			<label class="menu_bg_close" for="toggle_menu"></label>
+		</nav>
+
+		<nav id="top_nav">
+			<ul>
+				<li>
+					<label class="search" for="toggle_search">검색</label>
+				</li>
+				<li><a href="#"><img src="images/icon_3.png" alt="로그인"></a></li>
+				<li><a href="#"><img src="images/icon_2.png" alt="회원가입"></a></li>
+				
+			</ul>
+		</nav>
+
+		<input id="toggle_search" type="checkbox" />
+		<label class="search" for="toggle_search"></label>
+		<div id="search_wrap">
+			<form>
+				<fieldset>
+					<legend>검색</legend>
+					<input class="pc" id="search_txt" type="text" />
+				</fieldset>
+			</form>
+		</div><!--//검색영역-->
+
+		<nav id="r_nav">
+			<ul>
+				<li><a href="#">BEST</a></li>
+				<li><a href="#">NEW</a></li>
+				<li><a href="#">LIKE IT</a></li>
+			</ul>
+		</nav>
+	</header><!--//헤더영역-->
+
+	<div id="main_bannar">
+		<a href="#">
+			<img class="pc" src="images/main_banner_1.jpg" alt="ITZY">
+			<img class="smart" src="images/banner_m_1.jpg" alt="ITZY">
+		</a>
+		<div>
+			<a href="#">
+				<img class="pc" src="images/main_banner_2.jpg" alt="LOVE ME">
+				<img class="smart" src="images/banner_m_2.jpg" alt="LOVE ME">
+			</a>
+			<a href="#">
+				<img class="pc" src="images/main_banner_3.jpg" alt="일렉트릭상품">
+				<img class="smart" src="images/banner_m_3.jpg" alt="일렉트릭상품">
+			</a>
+		</div>
+	</div><!--//메인배너영역-->
+
+	<section id="con">
+		<article class="con3">
+			<img class="pc" src="img/SET_1.jpg" alt="세트1">
+			<img class="smart" src="img/SET_m_1.jpg" alt="세트1"><!--임시 슬라이더-->
+		</article>
+
+
+		<article class="con4">
+			<a href="#">
+				<img class="pc" src="images/r_section_1.jpg" alt="STUDIO_FIX">
+				<img class="smart" src="images/banner_m_stu.jpg" alt="STUDIO_FIX">
+			</a>
+		</article>
+
+
+		<article class="con2">
+			<ul>
+				<li class="mac1 section">
+					<a href="#">
+						<img class="pc" src="images/mac_menu_1.png" alt="mac메뉴1">
+						<img class="smart" src="images/mac_menu_m_1.png" alt="mac메뉴1">
+					</a>
+				</li>
+				<li class="mac2 section">
+					<a href="#">
+						<img class="pc" src="images/mac_menu_2.png" alt="mac메뉴2">
+						<img class="smart" src="images/mac_menu_m_2.png" alt="mac메뉴2">
+					</a>
+				</li>
+				<li class="mac3 section">
+					<a href="#">
+						<img class="pc" src="images/mac_menu_3.png" alt="mac메뉴3">
+						<img class="smart" src="images/mac_menu_m_3.png" alt="mac메뉴3">
+					</a>
+				</li>
+				<li class="mac4 section">
+					<a href="#">
+						<img class="pc" src="images/mac_menu_4.png" alt="mac메뉴4">
+						<img class="smart" src="images/mac_menu_m_4.png" alt="mac메뉴4">
+					</a>
+				</li>
+			</ul>
+		</article>
+
+		<article class="con1">
+			<ul>
+				<li class="sc1 scale">
+					<a href="#">
+					<div>
+						<img class=" pc lip1" src="images/f_section_1.jpg" alt="샷 오브 컬러 립오일">
+						<img class=" smart lip1" src="images/banner_m_lip.jpg" alt="샷 오브 컬러 립오일">
+					</div>
+						<h3>샷 오브 컬러 립 오일</h3>
+						<p>맥 베스트 14가지 립 컬러로 탄생한 NEW 오일 틴트!<br />
+							샐먼 핑크, 로즈핑크부터 클래식 레드, 딥 레드까지<br />
+							총 14가지의 맥 베스트 립 컬러를 강력한 발색과<br />
+							반짝이는 오일 광택으로 만나보세요. <br />
+							드라이 오일이 함유돼 입술에 가볍게 스며들면서<br />
+							촉촉하고 끈적이지 않는 오일 보습으로 비비드 한 립을 완성해보세요!
+						</p>
+					</a>
+				</li>
+				<li class="sc2 scale">
+					<a href="#">
+					<div>
+						<img class="pc lip2" src="images/f_section_2.jpg" alt="알라딘 X 맥 컬렉션">
+						<img class="smart lip2" src="images/banner_m_ala.jpg" alt="알라딘 X 맥 컬렉션">
+					</div>
+						<h3>알라딘 X 맥 컬렉션</h3>
+						<p>총 7가지 컬러로 누드 핑크부터 블루 핑크까지<br />
+							매혹적인 입술을 연출해 줄 립스틱 & 립글라스와<br />
+							베이지 브라운의 차분한 음영톤부터 버건디 펄, 골드펄 포인트 컬러가<br />
+							담긴 '알라딘' 아이 섀도우 9구 팔레트, 지니의 요술램프가<br />
+							음각되어 있는 골드 쉬머 톤의 파우더 블러쉬까지!<br />
+							아라비안 문양의 화려함과 정교함이 담긴 알라딘 컬렉션으로<br />
+							프린세스 자스민의 딥하고 매혹적인 메이크업 룩을 연출해보세요!
+						</p>
+					</a>
+				</li>
+			</ul>
+		</article>
+
+		<article class="con5">
+			<img class="pc" src="img/menu2_3.jpg" alt="굿바이3"><!--임시 슬라이더-->
+			<img class="smart" src="img/menu2_m_3.jpg" alt="굿바이3"><!--임시 슬라이더-->
+		</article>
+
+		<article class="con6">
+			<ul>
+				<li class="op1">
+					<a href="#">
+						<img class="pc" src="images/r_section_2.jpg" alt=" 픽스스튜디오파운데이션">
+						<img class="smart" src="images/r_section_m_2.jpg" alt=" 픽스스튜디오파운데이션">
+					</a>
+				</li>
+				<li  class="op2">
+					<a href="#">
+						<img class="pc" src="images/r_section_3.jpg" alt="맥립스틱">
+						<img class="smart" src="images/r_section_m_3.jpg" alt="맥립스틱">
+					</a>
+				</li>
+			</ul>
+		</article>
+	</section><!--//섹션con끝-->
+	
+	<section id="mac_menu">
+		<input type="radio" name="tab" id="tab1" checked />
+		<input type="radio" name="tab" id="tab2" />
+		<input type="radio" name="tab" id="tab3" />
+		<input type="radio" name="tab" id="tab4" />
+
+		<!--탭디자인-->
+		<section>
+			<div><label for="tab1">NEW</label></div>
+			<div><label for="tab2">PRODUCT</label></div>
+			<div><label for="tab3">TRENDING NOW</label></div>
+			<div><label for="tab4">LINE UP</label></div>
+		</section>
+		
+		<!--내용-->
+		<div>
+			<ul>
+				<li>
+					<a href="#">
+					<img class="pc" src="images/menu_1.png" alt="메뉴1">
+					<img class="smart" src="images/menu_m_1.png" alt="메뉴1">
+						<div>
+							<b>LIPSTICK</b>
+							<p>POWDER KISS LIPSTICK<br /><span>31,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img class="pc" src="images/menu_2.png" alt="메뉴2">
+						<img class="smart" src="images/menu_m_2.png" alt="메뉴2">
+						<div>
+							<b>LIPGLASS</b>
+							<p>VERSICOLOUR STAIN<br /><span>34,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img class="pc" src="images/menu_3.png" alt="메뉴3">
+						<img class="smart" src="images/menu_m_3.png" alt="메뉴3">
+						<div>
+							<b>LIPSTICK</b>
+							<p>HUGGABLE LIPCOLOUR<br /><span>34,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img class="pc" src="images/menu_4.png" alt="메뉴4">
+						<img class="smart" src="images/menu_m_4.png" alt="메뉴4">
+						<div>
+							<b>PIGMENTS</b>
+							<p>PRO PIGMENTS<br /><span>32,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<img class="pc" src="images/menu_5.png" alt="메뉴5">
+					<img class="smart" src="images/menu_m_5.png" alt="메뉴5">
+						<div>
+							<b>BLUSH</b>
+							<p>POWDER BLUSH /<br />THE DISNEY ALADDIN COLLECTION<br /> BY M·A·C<br /><span>40,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<img class="pc" src="images/menu_6.png" alt="메뉴6">
+					<img class="smart" src="images/menu_m_6.png" alt="메뉴6">
+						<div>
+							<b>POWDER</b>
+							<p>ELECTRIC WONDER IRIDESCENT<br /> POWDER<br /><span>49,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<img class="pc" src="images/menu_7.png" alt="메뉴7">
+					<img class="smart" src="images/menu_m_7.png" alt="메뉴7">
+						<div>
+							<b>FOUNDATION</b>
+							<p>PREP + PRIME SKIN<br /><span>49,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img class="pc" src="images/menu_8.png" alt="메뉴8">
+						<img class="smart" src="images/menu_m_8.png" alt="메뉴8">
+						<div>
+							<b>FOUNDATION</b>
+							<p>PRO LONGWEAR SPF 10 FOUNDATION<br /><span>53,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<img class="pc" src="images/menu_9.png" alt="메뉴9">
+					<img class="smart" src="images/menu_m_9.png" alt="메뉴9">
+						<div>
+							<b>PRIME</b>
+							<p>PREP + PRIME NATURAL RADIANCE<br /><span>58,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img class="pc" src="images/menu_10.png" alt="메뉴10">
+						<img class="smart" src="images/menu_m_10.png" alt="메뉴10">
+						<div>
+							<b>EYE SHADOW</b>
+							<p>EYE SHADOW X 6: OH, HOLY EYES /<br />PATRICK STAR<br /><span>59,000</span></p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<ul>
+				<li>
+					<a href="#">
+					<img class="pc" src="images/menu_2.png" alt="메뉴1">
+					<img class="smart" src="images/menu_m_2.png" alt="메뉴1">
+						<div>
+							<b>LIPSTICK</b>
+							<p>POWDER KISS LIPSTICK<br /><span>31,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img class="pc" src="images/menu_2.png" alt="메뉴2">
+						<img class="smart" src="images/menu_m_2.png" alt="메뉴2">
+						<div>
+							<b>LIPGLASS</b>
+							<p>VERSICOLOUR STAIN<br /><span>34,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img class="pc" src="images/menu_3.png" alt="메뉴3">
+						<img class="smart" src="images/menu_m_3.png" alt="메뉴3">
+						<div>
+							<b>LIPSTICK</b>
+							<p>HUGGABLE LIPCOLOUR<br /><span>34,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img class="pc" src="images/menu_4.png" alt="메뉴4">
+						<img class="smart" src="images/menu_m_4.png" alt="메뉴4">
+						<div>
+							<b>PIGMENTS</b>
+							<p>PRO PIGMENTS<br /><span>32,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<img class="pc" src="images/menu_5.png" alt="메뉴5">
+					<img class="smart" src="images/menu_m_5.png" alt="메뉴5">
+						<div>
+							<b>BLUSH</b>
+							<p>POWDER BLUSH /<br />THE DISNEY ALADDIN COLLECTION<br /> BY M·A·C<br /><span>40,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<img class="pc" src="images/menu_6.png" alt="메뉴6">
+					<img class="smart" src="images/menu_m_6.png" alt="메뉴6">
+						<div>
+							<b>POWDER</b>
+							<p>ELECTRIC WONDER IRIDESCENT<br /> POWDER<br /><span>49,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<img class="pc" src="images/menu_7.png" alt="메뉴7">
+					<img class="smart" src="images/menu_m_7.png" alt="메뉴7">
+						<div>
+							<b>FOUNDATION</b>
+							<p>PREP + PRIME SKIN<br /><span>49,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img class="pc" src="images/menu_8.png" alt="메뉴8">
+						<img class="smart" src="images/menu_m_8.png" alt="메뉴8">
+						<div>
+							<b>FOUNDATION</b>
+							<p>PRO LONGWEAR SPF 10 FOUNDATION<br /><span>53,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<img class="pc" src="images/menu_9.png" alt="메뉴9">
+					<img class="smart" src="images/menu_m_9.png" alt="메뉴9">
+						<div>
+							<b>PRIME</b>
+							<p>PREP + PRIME NATURAL RADIANCE<br /><span>58,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img class="pc" src="images/menu_10.png" alt="메뉴10">
+						<img class="smart" src="images/menu_m_10.png" alt="메뉴10">
+						<div>
+							<b>EYE SHADOW</b>
+							<p>EYE SHADOW X 6: OH, HOLY EYES /<br />PATRICK STAR<br /><span>59,000</span></p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<ul>
+				<li>
+					<a href="#">
+					<img class="pc" src="images/menu_3.png" alt="메뉴1">
+					<img class="smart" src="images/menu_m_3.png" alt="메뉴1">
+						<div>
+							<b>LIPSTICK</b>
+							<p>POWDER KISS LIPSTICK<br /><span>31,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img class="pc" src="images/menu_2.png" alt="메뉴2">
+						<img class="smart" src="images/menu_m_2.png" alt="메뉴2">
+						<div>
+							<b>LIPGLASS</b>
+							<p>VERSICOLOUR STAIN<br /><span>34,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img class="pc" src="images/menu_3.png" alt="메뉴3">
+						<img class="smart" src="images/menu_m_3.png" alt="메뉴3">
+						<div>
+							<b>LIPSTICK</b>
+							<p>HUGGABLE LIPCOLOUR<br /><span>34,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img class="pc" src="images/menu_4.png" alt="메뉴4">
+						<img class="smart" src="images/menu_m_4.png" alt="메뉴4">
+						<div>
+							<b>PIGMENTS</b>
+							<p>PRO PIGMENTS<br /><span>32,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<img class="pc" src="images/menu_5.png" alt="메뉴5">
+					<img class="smart" src="images/menu_m_5.png" alt="메뉴5">
+						<div>
+							<b>BLUSH</b>
+							<p>POWDER BLUSH /<br />THE DISNEY ALADDIN COLLECTION<br /> BY M·A·C<br /><span>40,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<img class="pc" src="images/menu_6.png" alt="메뉴6">
+					<img class="smart" src="images/menu_m_6.png" alt="메뉴6">
+						<div>
+							<b>POWDER</b>
+							<p>ELECTRIC WONDER IRIDESCENT<br /> POWDER<br /><span>49,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<img class="pc" src="images/menu_7.png" alt="메뉴7">
+					<img class="smart" src="images/menu_m_7.png" alt="메뉴7">
+						<div>
+							<b>FOUNDATION</b>
+							<p>PREP + PRIME SKIN<br /><span>49,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img class="pc" src="images/menu_8.png" alt="메뉴8">
+						<img class="smart" src="images/menu_m_8.png" alt="메뉴8">
+						<div>
+							<b>FOUNDATION</b>
+							<p>PRO LONGWEAR SPF 10 FOUNDATION<br /><span>53,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<img class="pc" src="images/menu_9.png" alt="메뉴9">
+					<img class="smart" src="images/menu_m_9.png" alt="메뉴9">
+						<div>
+							<b>PRIME</b>
+							<p>PREP + PRIME NATURAL RADIANCE<br /><span>58,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img class="pc" src="images/menu_10.png" alt="메뉴10">
+						<img class="smart" src="images/menu_m_10.png" alt="메뉴10">
+						<div>
+							<b>EYE SHADOW</b>
+							<p>EYE SHADOW X 6: OH, HOLY EYES /<br />PATRICK STAR<br /><span>59,000</span></p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<ul>
+				<li>
+					<a href="#">
+					<img class="pc" src="images/menu_4.png" alt="메뉴1">
+					<img class="smart" src="images/menu_m_4.png" alt="메뉴1">
+						<div>
+							<b>LIPSTICK</b>
+							<p>POWDER KISS LIPSTICK<br /><span>31,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img class="pc" src="images/menu_2.png" alt="메뉴2">
+						<img class="smart" src="images/menu_m_2.png" alt="메뉴2">
+						<div>
+							<b>LIPGLASS</b>
+							<p>VERSICOLOUR STAIN<br /><span>34,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img class="pc" src="images/menu_3.png" alt="메뉴3">
+						<img class="smart" src="images/menu_m_3.png" alt="메뉴3">
+						<div>
+							<b>LIPSTICK</b>
+							<p>HUGGABLE LIPCOLOUR<br /><span>34,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img class="pc" src="images/menu_4.png" alt="메뉴4">
+						<img class="smart" src="images/menu_m_4.png" alt="메뉴4">
+						<div>
+							<b>PIGMENTS</b>
+							<p>PRO PIGMENTS<br /><span>32,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<img class="pc" src="images/menu_5.png" alt="메뉴5">
+					<img class="smart" src="images/menu_m_5.png" alt="메뉴5">
+						<div>
+							<b>BLUSH</b>
+							<p>POWDER BLUSH /<br />THE DISNEY ALADDIN COLLECTION<br /> BY M·A·C<br /><span>40,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<img class="pc" src="images/menu_6.png" alt="메뉴6">
+					<img class="smart" src="images/menu_m_6.png" alt="메뉴6">
+						<div>
+							<b>POWDER</b>
+							<p>ELECTRIC WONDER IRIDESCENT<br /> POWDER<br /><span>49,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<img class="pc" src="images/menu_7.png" alt="메뉴7">
+					<img class="smart" src="images/menu_m_7.png" alt="메뉴7">
+						<div>
+							<b>FOUNDATION</b>
+							<p>PREP + PRIME SKIN<br /><span>49,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img class="pc" src="images/menu_8.png" alt="메뉴8">
+						<img class="smart" src="images/menu_m_8.png" alt="메뉴8">
+						<div>
+							<b>FOUNDATION</b>
+							<p>PRO LONGWEAR SPF 10 FOUNDATION<br /><span>53,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<img class="pc" src="images/menu_9.png" alt="메뉴9">
+					<img class="smart" src="images/menu_m_9.png" alt="메뉴9">
+						<div>
+							<b>PRIME</b>
+							<p>PREP + PRIME NATURAL RADIANCE<br /><span>58,000</span></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img class="pc" src="images/menu_10.png" alt="메뉴10">
+						<img class="smart" src="images/menu_m_10.png" alt="메뉴10">
+						<div>
+							<b>EYE SHADOW</b>
+							<p>EYE SHADOW X 6: OH, HOLY EYES /<br />PATRICK STAR<br /><span>59,000</span></p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+	
+	<footer id="main_footer"><!--푸터-->
+		<div class="notice">
+			<h4>NOTICE</h4>
+			<p>오픈 베타 서비스를 시작합니다.</p>
+		</div>
+		<div class="service">
+			<div class="pc">
+				<h3>CS CENTER</h3>
+				<h1>02-3440-2707</h1>
+				<p>
+					09:00 ~ 18:00 <span>MON-FRI</span><br />
+					12:00 ~ 13:00 <span>LUNCH TIME</span><br />
+					WEEKEND/HOLIDAY <span>OFF</span>
+				</p>
+			</div>
+			<div class="smart">
+				<ul>
+					<li><a href="#">MAC 소개</a></li>
+					<li><a href="#">개인정보취급방침</a></li>
+					<li><a href="#">이용약관</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="f_left">
+			<address class="pc">
+				이용약관개인정보 처리방침 ⓒ MAKE-UP ART COSMETICS. ALL WORLDWIDE RIGHTS RESERVED.<br />
+				이엘씨에이한국(유) 대표 SLAVIN PAUL 서울시 강남구 강남대로 382 (역삼동) 메리츠타워, 06232 사업자등록번호: 211-81-71889｜<br />
+				통신판매업신고번호: 강남-15737호｜사업자정보조회｜고객관리지원팀: 02-3440-2782 USER_SUPPORT@KR.MACCOSMETICS.COM｜<br />
+				호스팅서비스 사업자: ㈜엘지유플러스
+			</address>
+			<address class="smart">
+				이엘씨에이한국(유) 대표 SLAVIN PAUL<br /> 서울시 강남구 강남대로 382 (역삼동) 메리츠타워<br /> 06232<br /> 사업자등록번호: 211-81-71889<br />
+				통신판매업신고번호: 강남-15737호<br />고객관리지원팀: 02-3440-2782<br />USER_SUPPORT@KR.MACCOSMETICS.COM
+			</address>
+		</div>
+	</footer><!--//푸터-->
+</div>
+
+</body>
+</html>

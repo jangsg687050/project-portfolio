@@ -1,0 +1,85 @@
+/* master.css */
+@import url(header_style.css);
+@import url(main_contents_style.css);
+@import url(footer_style.css);
+
+/**** RESET *******************/
+input#toggle_menu, input#search{
+	display: none;
+}
+
+#wrap{
+	width: 100%;
+}
+
+
+
+
+/******* PC***************************************************/
+@media screen and ( min-width: 1025px){
+	img.smart,
+	#top_nav > ul.smart,
+	#top_nav > ul.table{
+		display: none;
+	}
+}
+/******* //PC***************************************************/
+
+
+
+
+
+
+
+
+
+
+
+/**** table, smart phone ***************************************************/
+@media screen and ( max-width: 1024px){
+	#top_nav > ul.pc{
+		display: none;
+	}
+}
+/**** //table, smart phone ***************************************************/
+
+
+
+
+
+
+
+
+/************ table, pc ***************************************************/
+@media screen and ( min-width: 768px) and ( max-width: 1024px){
+	img.smart,
+	li.main_link04{
+		display: none;
+	}
+}
+/************ //table, pc ***************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************* smart phone ***************************************************/
+@media screen and ( max-width: 767px){
+	img.pc,
+	img.table,
+	#top_nav div.pc,
+	#languge > ul > li.pc,
+	.section3_con_left > div.pc,
+	.section3_con_left > div.table{
+		display: none;
+	}
+}
+/************* //smart phone ***************************************************/

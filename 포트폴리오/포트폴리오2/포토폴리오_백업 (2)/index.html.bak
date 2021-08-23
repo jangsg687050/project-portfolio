@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>JSG_webportfolio</title>
+    <link rel="stylesheet" href="css/vertical_carousal.min.css">
+	<link rel="stylesheet" href="css/common.css" />
+    <style>
+        html, body, #myVerticalCarousel {
+            height: 100%;
+            margin: 0;
+        }
+
+        .item {
+            text-align: center;
+        }
+
+        #a {
+            background: url(images/bg_0.gif) no-repeat 50%;
+			background-size: cover;
+        }
+
+        #b,#c,#e{
+			background: url(images/wave_sub.gif) no-repeat 50%;
+			background-size: cover;
+        }
+
+       p, span {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        span {
+            height: 100%;
+        }
+
+        p, h3, ul, li {
+			color: #e3f5ff;
+        }
+		ul, li{
+			 list-style: none;
+		}
+	</style>
+
+</head>
+<body>
+<div id="myVerticalCarousel" class="vertical-carousel" data-urlLock="false" data-rests-indicators="#navbar-collapse li">
+    <ol class="vertical-carousel-indicators hidden-xs">
+		<img src="images/compass.png" alt="나침반이미지" style="    margin-top: -55px;
+    float: right;
+    margin-right: -36px;
+    width: 50px;">
+        <li data-target="#myVerticalCarousel" data-slide-to="0" class="active">
+			<p>MAIN</p>
+        </li>
+        <li data-target="#myVerticalCarousel" data-slide-to="1">
+			<p class="ABOUT"><img src="images/ship.png" alt="선박이미지" style=" margin-top: -18px; float: left; margin-left: -37px; width: 30px;"> ABOUT ME</p>
+        </li>
+        <li data-target="#myVerticalCarousel" data-slide-to="2">
+			<p>PORTFOLIO<img src="images/gallery.png" alt="지도이미지" style=" 
+    float: left;
+    margin-left: -38px; width: 30px;"></p>
+        </li>
+		<li data-target="#myVerticalCarousel" data-slide-to="3">
+			<p>CONTACT<img src="images/contact.png" alt="보물이미지" style="margin-top: -5px;
+    float: left; margin-left: -40px; width: 35px;"></p>
+        </li>
+    </ol>
+    <div class="vertical-carousel-box">
+        <div id="a" class="item active">
+		 <div class="star star-1"></div>
+		 <div class="star star-2"></div>
+		 <div class="star star-3"></div>
+		 <div class="star star-4"></div>
+		 <div class="star star-5"></div>
+		<div class="sg_img">
+		 <img src="images/main_text.png" alt="메인텍스트">
+		</div>
+		</div>
+    </div>
+        <div id="b" class="item">
+            <div class="pro1">
+				<div class="text">
+					<h3>PROFILE</h3>
+					<ul>
+						<li>NAME</li>
+						<li>장슬기</li>
+					</ul>
+				
+					<ul>
+						<li>MOBILE</li>
+						<li>+82 10 3199 6870</li>
+					</ul>
+					<ul>
+						<li>ADDRESS</li>
+						<li>인천시 연수구 랜드마크로113</li>
+					</ul>
+				</div>
+				<div class="text">
+					<h3>EDUCATION</h3>
+					<ul>
+						<li>2019.09</li>
+						<li>이젠 UX/UI 웹디자이너 웹퍼블리셔 과정 수료</li>
+					</ul>
+					<ul>
+						<li>2015.10 - 2018.11</li>
+						<li>(주) 리네아 3년 재직</li>
+					</ul>
+					<ul>
+						<li>2015.09</li>
+						<li>의상디자이너학과 졸업</li>
+					</ul>
+				</div>
+				
+				<!--
+				<div class="text">
+					<h3>REWARD</h3>
+					<ul>
+						<li>------------</li>
+					</ul>
+				</div>
+				<div class="text">
+					<h3>CRETIFICATE</h3>
+					<ul>
+						<li>--------</li>
+					</ul>
+				</div>
+				-->
+			</div>
+			<div class="pro2">
+				<div class="text">
+					<div class="skill">
+						<h3>SKILLS</h3>
+						<div class="progress">
+							<span>Photoshop</span>
+							<div class="circle">
+								<div class="left-half-clipper"></div>
+								<div class="value-bar"></div>
+							</div>
+						</div>
+						<div class="progress">
+							<span>Illustrator</span>
+							<div class="circle">
+								<div class="left-half-clipper"></div>
+								<div class="value-bar"></div>
+							</div>
+						</div>
+						<div class="progress">
+							<span>HTML5</span>
+							<div class="circle">
+								<div class="left-half-clipper"></div>
+								<div class="value-bar"></div>
+							</div>
+						</div>
+						<div class="progress">
+							<span>CSS</span>
+							<div class="circle">
+								<div class="left-half-clipper"></div>
+								<div class="value-bar"></div>
+							</div>
+						</div>
+						<div class="progress">
+							<span>Javascript</span>
+							<div class="circle">
+								<div class="left-half-clipper_1"></div>
+								<div class="value-bar_1"></div>
+							</div>
+						</div>
+						<div class="progress">
+							<span>jQuary</span>
+							<div class="circle">
+								<div class="left-half-clipper_1"></div>
+								<div class="value-bar_1"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+        <div id="c" class="item">
+			<div class="box-wrap">
+				<div class="box_1">
+					<div class="box">
+						<div class="img">
+							<a href="dongkuk/index.html" target="_blank"><img src="images/main_dongkuk.png" alt="Hover Effect"></a>
+						</div>
+						<div class="info">
+							<h3>동국제강</h3>
+							<p>동국제강 기업을 벤치마킹하여 반응형으로 리디자인한 프로젝트입니다</p>
+						</div>
+					</div>
+				</div>
+				<div class="box_1">
+					<div class="box">
+						<div class="img">
+							<a href="kakao/index.html" target="_blank"><img src="images/main_kakao.png" alt="Hover Effect"></a>
+						</div>
+						<div class="info">
+							<h3>카카오</h3>
+							<p>카카오기업을 벤치마킹하여 반응형으로 리디자인한 프로젝트입니다</p>
+						</div>
+					</div>
+				</div>
+				<div class="box_1">
+					<div class="box">
+						<div class="img">
+							<a href="mac/index.html" target="_blank"><img src="images/main_mac.png" alt="Hover Effect"></a>
+						</div>
+						<div class="info">
+							<h3>MAC</h3>
+							<p>화장품 브랜드 mac을 반응형으로 리디자인한 프로젝트입니다</p>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+        
+		<div id="e" class="item">
+			<ul>
+				<li><span>TEL</span> 010 3199 6870</li>
+				<li><span>E-MAIL</span> jangsg687040@gmail.com</li>
+            </ul>
+			<div>
+				<form method="POST" action="https://formspree.io/jangsg687040@gmail.com">
+						<input type="text" name="name" placeholder="Name">
+						<input type="email" name="_replyto" placeholder="Email">
+						<textarea name="message" placeholder="Message"></textarea>
+					 <button type="submit">SEND</button>
+				</form>
+			</div>
+        </div>
+    </div>
+
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="js/vertical_carousal.min.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>

@@ -1,0 +1,94 @@
+/* common.css */
+/* Nanum Gothic (Korean) http://www.google.com/fonts/earlyaccess */
+
+@font-face {
+	font-family: 'Nanum Gothic';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot);
+	src: url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+		url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff2) format('woff2'),
+		url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff) format('woff'),
+		url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'Nanum Gothic';
+	font-style: normal;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.eot);
+	src: url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
+		url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff2) format('woff2'),
+		url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff) format('woff'),
+		url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'Nanum Gothic';
+	font-style: normal;
+	font-weight: 800;
+	src: url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.eot);
+	src: url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.eot?#iefix) format('embedded-opentype'),
+		url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.woff2) format('woff2'),
+		url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.woff) format('woff'),
+		url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.ttf) format('truetype');
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+html, body{
+	font: 18px / 170% verdana, 'Nanum Gothic';
+	color: #000;
+}
+table, tr, th, td{
+	font: 18px / 170% verdana, 'Nanum Gothic';
+	color: #000;
+	border-collapse: collapse;
+}
+input, select, option, textarea, button{
+	font: 18px / 170% verdana, 'Nanum Gothic';
+	color: #000;
+	border: 0 none;
+	border-radius: 0;
+	box-shadow: 0;
+	background: #fff;
+	outline: none;
+}
+h1, h2, h3, h4, h5, h6{
+	font-size: 1.0rem;
+	font-weight: normal;
+}
+strong, b{
+	font-weight: normal;
+}
+em, i, address{
+	font-style: normal;
+	font-weight: normal;
+}
+img, iframe, frameset, fieldset{
+	border: 0 none;
+}
+ul, ol, li{
+	list-style: none;
+}
+img, a, iframe{
+	display: block;
+}
+hr, legend, caption{
+	display: none;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+/**** CLASS ***********************/
+.blind, .skip{
+	display: block;
+	height: 0;
+	overflow: hidden;
+
+	position: absolute;
+	top: -6000px;
+}
+

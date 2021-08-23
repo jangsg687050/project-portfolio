@@ -1,0 +1,229 @@
+/*main_contents_style.css*/
+
+#main_bannar{
+	width: 1580px; 
+	margin: 0 auto;
+	height: 681px;
+	overflow: hidden;
+}
+
+	#main_bannar > a > img{
+		float: left;
+	}
+	#main_bannar > div{
+		float: right;
+	}
+		#main_bannar > div > a > img{
+			margin-bottom: 20px;
+		}
+
+#con{
+	
+	width: 1600px; 
+	position: relative;
+	height: 2271px;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-top: 148px;
+	box-sizing: border-box;
+	margin-bottom: 157px;
+}
+	#con > article.con1{
+		position: absolute;
+		left: 0; top: 0;
+		display: inline-block;
+	}
+	
+		#con > article.con1 > ul > li > a > div{
+			margin-bottom: 33px;
+		}
+			#con > article.con1 > ul > li > a > h3{
+				font-family: Dotum;
+				font-size: 20px;
+				font-weight: bold;
+				display: block;
+				margin-bottom: 17px;
+				color: #777;
+			}
+			#con > article.con1 > ul > li > a > p{
+				color: #777;
+				font-family: Dotum;
+				font-weight: 600;
+				line-height: 20px;
+				margin-bottom: 33px;
+			}
+			
+				article.con1 > ul > li > a > div{
+				background-size: 100%;
+				overflow: hidden;
+			}
+				article.con1 > ul > li.scale > a > div > img{
+					transform: scale(1.0);
+					transition-duration: 0.8s;
+					
+					}
+						article.con1 > ul > li.scale:hover > a > div > img{
+						transform: scale(1.1);
+						}
+
+				
+	#con > article.con2{
+		position: absolute;
+		top: 0;
+		right: 709px;
+	}
+	#con > article.con2 > ul > li{
+		padding-bottom: 1px;
+		
+	}	
+			article.con2 > ul > li.mac1 > a{
+			background-image: url(../images/mac_menu_1_1.png);
+			}
+			article.con2 > ul > li.mac2 > a{
+			background-image: url(../images/mac_menu_2_1.png);
+			}
+			article.con2 > ul > li.mac3 > a{
+			background-image: url(../images/mac_menu_3_1.png);
+			}
+			article.con2 > ul > li.mac4 > a{
+			background-image: url(../images/mac_menu_4_1.png);
+			}
+			
+			
+				article.con2 > ul > li.section > a > img{
+					opacity: 1;
+					transition-duration: 0.3s;
+				}
+					article.con2 > ul > li.section:hover > a > img{
+						opacity: 0;
+					}
+				
+
+
+	#con > article.con3{
+		position: absolute;
+		right: 0;
+		top: 53px;
+	}
+	#con > article.con4{
+		position: absolute;
+		right: 0;
+		top: 686px;
+	}
+	#con > article.con5{
+		position: absolute;
+		top: 1470px;
+		left: 0;
+	}
+	#con > article.con6{
+		position: absolute;
+		top: 1470px; right: 0;
+		}
+			#con > article.con6 > ul > li{
+				padding-bottom: 20px;
+			}
+
+#mac_menu{
+	width: 100%; height: 988px;
+	overflow: hidden;
+}
+	#mac_menu > input[type=radio]{ display: none;}
+
+#mac_menu > input:nth-of-type(1) ~ div:nth-of-type(1),
+#mac_menu > input:nth-of-type(2) ~ div:nth-of-type(2),
+#mac_menu > input:nth-of-type(3) ~ div:nth-of-type(3),
+#mac_menu > input:nth-of-type(4) ~ div:nth-of-type(4){
+	display: none;
+}
+
+#mac_menu > input:nth-of-type(1):checked ~ div:nth-of-type(1),
+#mac_menu > input:nth-of-type(2):checked ~ div:nth-of-type(2),
+#mac_menu > input:nth-of-type(3):checked ~ div:nth-of-type(3),
+#mac_menu > input:nth-of-type(4):checked ~ div:nth-of-type(4){
+	display: block;
+}
+
+/*****탭바 디자인*******/
+#mac_menu{
+	width: 100%;
+	height: 1300px;
+	margin: 0 auto;
+}
+	#mac_menu > section{
+		overflow: hidden;
+		height: 35px;
+		margin-left: 744px;
+	}
+		#mac_menu > section > div{
+			float: left;
+			margin-left: 25px; 
+			margin-right: 25px;
+			height: 30px;
+	}
+		#mac_menu > section > div > label{
+			display: block;
+			line-height: 30px;
+		}
+	/**** MAIN NAVIGAITON ****************/
+
+			#mac_menu > section > div::after{
+				content: "";
+				display: block;
+				width: 100%; height: 3px;
+				background: #000;
+				transform: scaleX(0);
+				transition-duration: 0.3s;
+				margin-top: -27px;
+			}
+			#mac_menu > section > div:hover::after{
+				transform: scaleX(1);
+			}
+
+/**내용**/
+	#mac_menu > div{
+	}
+		#mac_menu > div > ul{
+			width: 1600px;
+			margin: 0 auto;
+			overflow: hidden;
+			padding-top: 53px;
+		}
+
+		#mac_menu > div > ul > li{
+				float: left;
+				padding-left: 15px;
+			}
+			#mac_menu > div > ul > li:first-child,
+			#mac_menu > div > ul > li:nth-of-type(6){
+				padding-left: 0;
+			}
+			#mac_menu > div > ul > li > a{
+				color: #777;
+			}
+				#mac_menu > div > ul > li > a > div{
+					padding-top: 20px;
+					padding-bottom: 60px;
+				}
+				#mac_menu > div > ul > li > a > div > b{
+					font-size: 11px;
+					border: 1px solid #ccc;
+					padding: 6px 10px;
+				}
+			#mac_menu > div > ul > li:nth-of-type(n+1){
+				margin-left: 0;
+			}
+
+			#mac_menu > div > ul > li > a > div > p{
+					font-size: 14px;
+					display: block;
+					padding-top: 20px;
+				}
+				#mac_menu > div > ul > li > a > div > p > span{
+					margin-top: 26px;
+					padding-bottom: 60px;
+					font-size: 17px;
+					font-weight: bolder;
+					font-family: Dotum;
+					display: block;
+					color: #000;
+				}

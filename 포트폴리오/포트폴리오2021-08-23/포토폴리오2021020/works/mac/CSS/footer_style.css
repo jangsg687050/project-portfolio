@@ -1,0 +1,54 @@
+/*footer_style.css*/
+
+#main_footer{
+	width: 1570px;
+	height: 300px;
+	margin: 0 auto;
+	position: relative;
+}
+	#main_footer > div.notice{
+		float: left;
+	}
+		#main_footer > div.notice > h4{
+			font-weight: bold;
+			margin-bottom: 19px;
+		}
+		#main_footer > div.notice > p{
+			color: #777;
+			font-weight: bold;
+		}
+	#main_footer > div.service{
+		float: right;
+	}
+		#main_footer > div.service > div{
+			text-align: right;
+		}
+			#main_footer > div.service > div > h3{
+				font-weight: bolder;
+				margin-bottom: 18px;
+			}
+			#main_footer > div.service > div > h1{
+				margin-bottom: 35px;
+				font-weight: bold;
+			}
+			#main_footer > div.service > div > p{
+				line-height: 25px;
+				font-family: Dotum;
+				font-weight: bold;
+				color: #3f3f3f;
+
+			}
+				#main_footer > div.service > div > p > span{
+					font-weight: bold;
+					font-family: verdana;
+					color: #000;
+				}
+	#main_footer > div.f_left{
+		clear: both;
+		width: 1358px;
+		border-top: 2px solid #000;
+	}
+		#main_footer > div.f_left > address{
+			color: #acabab;
+			margin-top: 35px;
+		}

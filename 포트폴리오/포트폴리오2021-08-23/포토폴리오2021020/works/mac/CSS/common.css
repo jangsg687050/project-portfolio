@@ -1,0 +1,60 @@
+/* common.css */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+html, body{
+	font: 15px / 150% Verdana, 'Dotum';
+	color: #000;
+}
+table, tr, th, td{
+	font: 15px / 150% Verdana, 'Dotum';
+	color: #000;
+	border-collapse: collapse;
+}
+input, select, option, textarea, button{
+	font: 15px / 150% Verdana, 'Dotum';
+	color: #000;
+	border: 0 none;
+	border-radius: 0;
+	box-shadow: 0;
+	background: #fff;
+	outline: none;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight: normal;
+}
+strong, b{
+	font-weight: normal;
+}
+em, i, address{
+	font-style: normal;
+	font-weight: normal;
+}
+img, iframe, frameset, fieldset{
+	border: 0 none;
+}
+ul, ol, li{
+	list-style: none;
+}
+img, a, label, iframe{
+	display: block;
+}
+hr, legend, caption{
+	display: none;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+/**** CLASS ***********************/
+.blind, .skip{
+	display: block;
+	height: 0;
+	overflow: hidden;
+
+	position: absolute;
+	top: -6000px;
+}

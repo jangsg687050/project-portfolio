@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/****************************************/
+/*  Name : 프로젝트 명
+/*  PART : style
+/*  Author : 최초 작성자
+/*  MODIFY : 작업 참여자
+/*
+/*  Summary: /* 파일 내용 */
+/*  01) Main
+/*  02) 메뉴1
+/*  03) 메뉴2
+/*  04) 메뉴3
+/*  05) 메뉴4
+/****************************************/
+
+/* ********************************************************************************* *
+* 01) Main
+* ********************************************************************************* */
+
+/* header */
+#header{ position: fixed; top: 0; right: 0; left: 0; height: 100px; background: #fff; z-index: 52; border-bottom: 1px solid rgba( 255, 255, 255, 10% );}
+#header .inner{ padding: 0 50px; margin: 0 auto;}
+.main_gnb_wrap{ display: flex; align-items: center; justify-content: space-between; flex-grow: 1;}
+.main_gnb_wrap .logo a{ background: url(/user/images/common/logo_b.png)no-repeat; width: 165px; height: 50px; display: block;}
+.main_gnb{flex-grow: 1;}
+.main_gnb .depth_01{ display: flex; align-items: center; justify-content: flex-end;}
+.main_gnb .depth_01 > li{ position: relative; height: 80px; line-height: 80px; }
+.main_gnb .depth_01 > li a{ padding: 0 45px; color: #222; display: block; font-size: 20px; font-weight: 500;}
+.right_menu{ margin-left: 85px; background: #eeeeee; border-radius: 50px;}
+.right_menu a{text-align: center; display: block; padding-left: 25px; background: url(/user/images/common/icon_home.png)no-repeat left 25px center; width: 178px; height: 56px; line-height: 56px;}
+
+/* section */
+#container{ padding-top: 100px; display: block;}
+#container .inner{ position: relative; max-width: 1200px; margin: 80px auto 100px; }
+
+/* section1 */
+.section1 dl{ display: flex; justify-content: space-between; align-items: flex-start;}
+.section1 dl dt .img_storyon{ background: url(/user/images/common/img_storyon.png)no-repeat; width: 652px; height: 208px;}
+.section1 dl dt p{ font-size: 24px; line-height: 1.5;  }
+.section1 dl dt p em{ font-weight: 500;}
+.section1 dl dd{ border-top: 2px solid #000; border-bottom: 1px solid #ddd; padding: 40px 30px; width: 420px; }
+.section1 dl dd span{ font-size: 30px; }
+.section1 dl dd span b{ font-weight: 500; }
+.section1 dl dd p{ font-size: 20px;}
+.section1 dl dd .count{  font-size: 50px; font-weight: bold; font-family: 'GongGothicMedium'; }
+
+/* section1 */
+.section2{ margin-top: 100px; height: 370px;
+background: -webkit-linear-gradient(to right, #0276db, #4e52eb);
+background: linear-gradient(to right, #0276db, #4e52eb); 
+}
+
+/* footer */
+#footer{ background: #171717; }
+#footer .inner{ margin: 60px auto; padding: 0 50px; }
+
+/* ********************************************************************************* *
+* 02) 메뉴1
+* ********************************************************************************* */
+
+
+
+/* ********************************************************************************* *
+* 03) 메뉴2
+* ********************************************************************************* */
+
+
+
+/* ********************************************************************************* *
+* 04) 메뉴3
+* ********************************************************************************* */
+
+
+
+/* ********************************************************************************* *
+* 05) 메뉴4
+* ********************************************************************************* */

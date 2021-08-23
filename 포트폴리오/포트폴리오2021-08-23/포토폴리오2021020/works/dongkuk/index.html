@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>dongkuk</title>
+	<link rel="stylesheet" href="CSS/common.css" />
+	<link rel="stylesheet" href="CSS/master.css" />
+	<link rel="stylesheet" href="CSS/flexslider.css" />
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery-2.1.4.js"></script>
+	<script src="js/modernizr.js"></script>
+	<script defer src="js/jquery.flexslider-min.js"></script>
+	<script src="js/poster_slider.js"></script>
+ </head>
+ <body>
+ <input id="toggle_menu" type="checkbox" />
+<div id="wrap">
+	<div class="skip">
+		<a href="#">본문 바로가기</a>
+		<a href="#">메인메뉴 바로가기</a>
+		<a href="#footer">푸터 바로가기</a>
+	</div>
+	
+	<script>
+	$(document).ready(function(){
+      $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > 939) {
+          $("#top_nav > ul").css("background", "#212121");
+        }
+        else{
+          $("#top_nav > ul").css("background", "rgba(255,255,255,.04)");
+        }
+      });
+    });
+	</script>
+	<script>
+	$(document).ready(function(){
+      $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > 939) {
+          $("#main_header").css("background", "#212121");
+        }
+        else{
+          $("#main_header").css("background", "rgba(255,255,255,.04)");
+        }
+      });
+    });
+	</script>
+
+	<div id="main_header">
+		<div class="h_box">
+			<h1 class="logo">
+				<a href="#">
+					<img class="pc table" src="images/logo_white.png" alt="동국제강"/>
+					<img class="smart" src="images/logo_white_m.png" alt="동국제강"/>
+				</a>
+			</h1>
+
+			<div id="languge">
+				<ul>
+					<li class="pc"><a href="#">KOR</a></li>
+					<li><a href="#">ENG</a></li>
+				</ul>
+			</div>
+			<div id="top_nav">
+				<ul class="pc">
+					<li><a href="#">구매포털</a></li>
+					<li><a href="#">고객포털</a></li>
+					<li><a href="#">경매포털</a></li>
+					<li><a href="#">파트너포털</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<label class="toggle_menu" for="toggle_menu">메인메뉴</label><!--토글메뉴버튼-->
+
+	<div  id="top_nav">
+		<ul class="table smart">
+			<li><a href="#">구매포털</a></li>
+			<li><a href="#">고객포털</a></li>
+			<li><a href="#">경매포털</a></li>
+			<li><a href="#">파트너포털</a></li>
+		</ul>
+	</div>
+	
+		<script>
+			$(function(){
+				$("#main_nav > div > ul > li > a").click(function(){
+					if($(this).parent("li").attr("class") != "active"){
+						$("#main_nav > div > ul > li").removeClass("active"); //<-이부분 없애면 다른 메뉴 누를시 자동 닫기는거 없어짐. 클릭으로 열리고 닫김.
+						$(this).parent("li").addClass("active");
+					}else{
+						$(this).parent("li").removeClass("active");
+					}
+				});
+				$("label.btn_close").click(function(){
+					$("ul.m_sub > li").removeClass("active");
+				});
+			});
+		</script>
+
+	<nav id="main_nav"><!--메인메뉴시작-->
+		<div>
+			<ul>
+				<li>
+					<a href="#">회사소개</a>
+					<ul class="sub">
+						<li><a href="#">회사소개</a></li>
+						<li><a href="#">기업소개</a></li>
+						<li><a href="#">CEO</a></li>
+						<li><a href="#">연혁</a></li>
+						<li><a href="#">네트워크</a></li>
+						<li><a href="#">CI</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">제품</a>
+					<ul class="sub">
+						<li><a href="#">전체보기</a></li>
+						<li><a href="#">컬러강판</a></li>
+						<li><a href="#">냉연도금강판</a></li>
+						<li><a href="#">후판</a></li>
+						<li><a href="#">봉강</a></li>
+						<li><a href="#">형강</a></li>
+						<li><a href="#">인증현황</a></li>
+						<li><a href="#">문의하기</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">투자정보</a>
+					<ul class="sub">
+						<li><a href="#">재무정보</a></li>
+						<li><a href="#">실적보고서</a></li>
+						<li><a href="#">공시</a></li>
+						<li><a href="#">주가정보</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">지속가능경영</a>
+					<ul class="sub">
+						<li><a href="#">사회공헌</a></li>
+						<li><a href="#">준법경영</a></li>
+						<li><a href="#">윤리경영</a></li>
+						<li><a href="#">환경경영</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">인재경영</a>
+					<ul class="sub">
+						<li><a href="#">인재채용</a></li>
+						<li><a href="#">인재상</a></li>
+						<li><a href="#">인사제도</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">흥보센터</a>
+					<ul class="sub">
+						<li><a href="#">뉴스룸</a></li>
+						<li><a href="#">광고</a></li>
+						<li><a href="#">브로슈어</a></li>
+					</ul>
+				</li>
+			</ul>
+			<label class="btn_close" for="toggle_menu"></label>
+		</div>
+	</nav>
+
+	<div class="main_text">
+		<h1>Still with Steel</h1>
+		<p>한결 같은 뚝심으로 대한민국 철강산업을 움직인다.</p>
+	</div>
+	
+
+	<!-- flex slider start -->
+	<script type="text/javascript">
+	$(function(){
+		SyntaxHighlighter.all();
+	});
+	$(window).load(function(){
+		$('.flexslider').flexslider({
+			animation: "slide",
+			start: function(slider){
+				$('body').removeClass('loading');
+			}
+		});
+	});
+	</script>
+	<section class="slider">
+		<div class="flexslider">
+			<ul class="slides">
+				<li>
+					<video loop="loop" autoplay="autoplay" >
+						<source src="images/MAIN_01.mp4" type="video/mp4" />
+					</video>
+				</li>
+				<li>
+					<video loop="loop" autoplay="autoplay">
+						<source src="images/MAIN_02.mp4" type="video/mp4" />
+					</video>
+				</li>
+				<li>
+					<video loop="loop" autoplay="autoplay">
+						<source src="images/MAIN_03.mp4" type="video/mp4" />
+					</video>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!-- Syntax Highlighter -->
+	<script src="js/shCore.js"></script>
+	<script src="js/shBrushXml.js"></script>
+	<script src="js/shBrushJScript.js"></script>
+	<!-- flex slider end -->
+	
+	<div class="scroll">
+		<a href="#"><span></span><span></span><span></span>Scroll</a>
+		<p>Scroll Down</p>
+	</div>
+
+	<section id="main_contents">
+		<div class="main_contents_box_1">
+			<article class="pro">
+				<h1>Dongkuk product</h1>
+				<p>동국제강의 제품을 소개합니다.</p>
+					<div>
+						<ul>
+							<li><a href="#">
+								<img class="pc table" src="images/item1.png" alt="상품1">
+								<img class="smart" src="images/item1_m.png" alt="상품1">
+							</a></li>
+							<li class="down"><a href="#">
+								<img class="pc table" src="images/item2.png" alt="상품2">
+								<img class="smart" src="images/item2_m.png" alt="상품2">
+							</a></li>
+							<li><a href="#">
+								<img class="pc table" src="images/item3.png" alt="상품3">
+								<img class="smart" src="images/item3_m.png" alt="상품3">
+							</a></li>
+							<li class="down"><a href="#">
+								<img class="pc table" src="images/item4.png" alt="상품4">
+								<img class="smart" src="images/item4_m.png" alt="상품4">
+							</a></li>
+							<li><a href="#">
+								<img class="pc table" src="images/item5.png" alt="상품5">
+								<img class="smart" src="images/item5_m.png" alt="상품5">
+							</a></li>
+						</ul>
+					</div>
+			</article>
+		</div>
+	</section>
+	<section id="main_contents2">
+		<div class="main_contents_box_2">
+			<article class="con">
+				<h1>Social Value</h1>
+				<p>동국제강은 지역사회와 함께합니다.</p>
+				<div>
+					<ul>
+						<li><a href="#"><img src="images/con2_1.png" alt="콘텐츠1"></a>
+							<h3>사회공헌</h3>
+							<p>따뜻한 세상을 만드는 기업</p>
+						</li>
+					</ul>
+					<ul>
+						<li><a href="#"><img src="images/con2_2.png" alt="콘텐츠2"></a>
+							<h3>환경경영</h3>
+							<p>사람과 함께하는 기업</p>
+						</li>
+					</ul>
+					<ul>
+						<li><a href="#"><img src="images/con2_3.png" alt="콘텐츠3"></a>
+							<h3>윤리경영</h3>
+							<p>철의 순환을 업으로 삼는 기업</p>
+						</li>
+					</ul>
+				</div>
+			</article>
+		</div>
+	</section>
+	<section id="main_contents3">
+		<div class="main_contents_box_3">
+			<article class="new">
+				<h1>News Room</h1>
+				<p>동국제강의 다양한 소식을 전해드립니다.</p>
+				<ul>
+					<li class="section3_con_left">
+						<div class="pc table video">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ipR0PSE0-ag" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<div class="brochure">
+							<div class="brochure_title">
+								<p ><span>브로슈어<a href="#"><img src="images/icon_next.png" alt="자세히보기"></a></span></p>
+							</div>
+						</div>
+					</li>
+					<li class="section3_con_right">
+						<form name="frm_dae" method="post">
+							<input type="hidden" name="searchColumn" value="b_title">
+							<input type="hidden" name="gubun" value="main">
+							<div class="main_partner">
+								<p>NETWORK</p>
+								<div class="select_box1">
+									<label>시/도</label>
+									<select name="r_b_ex1" id="r_b_ex1">
+										<option value="시/도">시/도</option>
+										<option value="강원도">강원도</option>
+										<option value="경기도">경기도</option>
+										<option value="경상남도">경상남도</option>
+										<option value="경상북도">경상북도</option>
+										<option value="광주광역시">광주광역시</option>
+										<option value="대구광역시">대구광역시</option>
+										<option value="대전광역시">대전광역시</option>
+										<option value="부산광역시">부산광역시</option>
+										<option value="서울특별시">서울특별시</option>
+										<option value="세종특별자치시">세종특별자치시</option>
+										<option value="울산광역시">울산광역시</option>
+										<option value="인천광역시">인천광역시</option>
+										<option value="전라남도">전라남도</option>
+										<option value="전라북도">전라북도</option>
+										<option value="충청남도">충청남도</option>
+										<option value="충청북도">충청북도</option>
+									</select>
+								</div>
+								<div class="select_box2">
+									<input type="type" name="searchKeyword" maxlength="15" >
+									<a href="#">검색</a>
+								</div>
+							</div>
+						</form>
+						<ul class="main_link">
+							<li class="main_link01">
+								<a href="#"><img class="pc table" src="images/btn_sns1_pc.png" alt="sns링크">
+								<img class="smart" src="images/btn_sns1.png" alt="sns링크"></a>
+							</li>
+							<li class="main_link02">
+								<a href="#"><img class="pc table" src="images/btn_sns3_pc.png" alt="sns링크">
+								<img class="smart" src="images/btn_sns3.png" alt="sns링크"></a>
+							</li>
+							<li class="main_link03">
+								<a href="#"><img class="pc table" src="images/btn_sns4_pc.png" alt="sns링크">
+								<img class="smart" src="images/btn_sns4.png" alt="sns링크"></a>
+							</li>
+							<li class="main_link04">
+								<a href="#"><img class="smart" src="images/btn_sns2.png" alt="sns링크"></a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</article>
+		</div>
+	</section>
+	<footer id="main_footer">
+		<div>
+			<h1><img class="pc table" src="images/logo2.png" alt="동국제강로고2"></h1>
+			<div class="f_left">
+				<p>COPYRIGHT© 2019 DONGKUKSTEEL MILL CO., LTD. ALL RIGHTS RESERVED.</p>
+			</div>
+			<div class="f_right">
+					<a href="#"><img class="pc table" src="images/icon_facebook.png" alt="동국제강인스타계정"></a>
+					<a href="#"><img class="pc table" src="images/icon_twitter.png" alt="동국제강페이스북계정"></a>
+					<a href="#"><img class="pc table" src="images/icon_youtube.png" alt="동국제강유튜브계정"></a>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</div>
+</body>
+</html>

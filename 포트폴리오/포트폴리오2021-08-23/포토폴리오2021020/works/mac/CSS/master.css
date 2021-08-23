@@ -1,0 +1,39 @@
+/*master.css*/
+@import url(header_style.css);
+@import url(main_contents_style.css);
+@import url(footer_style.css);
+
+
+/*************** RESET *****************/
+input#toggle_menu, input#toggle_search{
+	display: none;
+}
+
+#wrap{
+	width: 100%;
+}
+img.smart{
+	display: none;
+}
+li.img,
+li.menu3,
+li.search_m,
+li.search_m1{
+	display: none;
+}
+
+#main_nav > div > ul > li > ul.smart{
+	display: none;
+}
+
+div#search_wrap > form > fieldset > input.mobile{
+	display: none;
+}
+
+div.service > div.smart{
+	display: none;
+}
+
+div.f_left > address.smart{
+	display:none;
+}

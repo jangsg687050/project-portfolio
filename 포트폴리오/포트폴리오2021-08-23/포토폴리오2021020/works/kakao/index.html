@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<title>KAKAO</title>
+<link rel="stylesheet" href="CSS/common.css" />
+<link rel="stylesheet" href="CSS/master.css" />
+<link rel="stylesheet" href="CSS/flexslider.css" />
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/modernizr.js"></script>
+<script defer src="js/jquery.flexslider-min.js"></script>
+<script src="js/poster_slider.js"></script>
+</head>
+<body>
+<input id="toggle_menu" type="checkbox" />
+<div id="wrap">
+	<div class="skip">
+		<a href="#product">본문 바로가기</a>
+		<a href="#toggle_nav">메인메뉴 바로가기</a>
+		<a href="#main_footer">푸터 바로가기</a>
+	</div>
+
+	<header id="main_header"><!--메인헤더시작-->
+		<div class ="top">
+			<div class="header">
+				<div id="top_nav">
+					<ul>
+						<li><a href="#">카카오</a></li>
+						<li><a href="#">투자정보</a></li>
+						<li><a href="#">고객지원</a></li>
+						<li><a href="#">인재영입</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="main_header_nav">
+			<h1 id="logo">
+				<a href="#"><img src="images/logo_kakao.png" alt="카카오로고"></a>
+			</h1>
+			<div id="languge">
+				<ul>
+					<li class="pc"><a href="#">KOR</a></li>
+					<li><a href="#">ENG</a></li>
+				</ul>
+			</div>
+
+			<script>
+			$(function(){
+				$("#main_nav > div > ul > li > a").click(function(){
+					if($(this).parent("li").attr("class") != "active"){
+						$("#main_nav > div > ul > li").removeClass("active"); //<-이부분 없애면 다른 메뉴 누를시 자동 닫기는거 없어짐. 클릭으로 열리고 닫김.
+						$(this).parent("li").addClass("active");
+					}else{
+						$(this).parent("li").removeClass("active");
+					}
+				});
+				$("label.btn_close").click(function(){
+					$("ul.m_sub > li").removeClass("active");
+				});
+			});
+			</script>
+
+			<nav id="main_nav"><!--메인메뉴시작-->
+				<label class="toggle_menu" for="toggle_menu">메인메뉴</label><!--토글메뉴버튼-->
+				<div>
+					<ul>
+						<li>
+							<a href="#">카카오</a>
+							<ul class="m_sub">
+								<li><a href="#">카카오소개</a></li>
+								<li><a href="#">카카오AI</a></li>
+								<li><a href="#">자회사</a></li>
+								<li><a href="#">비즈니스</a></li>
+								<li><a href="#">흥보채널</a></li>
+								<li><a href="#">오시는 길</a></li>
+								<li><a href="#">서비스</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">투자정보</a>
+							<ul class="m_sub">
+								<li><a href="#">투자정보</a></li>
+								<li><a href="#">경영정보</a></li>
+								<li><a href="#">주가정보</a></li>
+								<li><a href="#">재무정보</a></li>
+								<li><a href="#">IR일정</a></li>
+								<li><a href="#">IR자료실</a></li>
+								<li><a href="#">증권사커버리지</a></li>
+								<li><a href="#">공고 </a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">고객지원</a>
+							<ul class="m_sub">
+								<li><a href="#">서비스</a></li>
+								<li><a href="#">도움말</a></li>
+								<li><a href="#">Q&A</a></li>
+								<li><a href="#">카카오계정</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">인재영입</a>
+							<ul class="m_sub">
+								<li><a href="#">카카오크루</a></li>
+								<li><a href="#">크루인터뷰</a></li>
+								<li><a href="#">지원하기</a></li>
+								<li><a href="#">나의지원서</a></li>
+							</ul>
+						</li>
+							<div class="pc_sub">
+								<div class="box">
+									<div class="box_1">
+										<ul class="sub1">
+											<li><a href="#">카카오소개</a></li>
+											<li><a href="#">카카오AI</a></li>
+											<li><a href="#">자회사</a></li>
+											<li><a href="#">비즈니스</a></li>
+											<li><a href="#">흥보채널</a></li>
+											<li><a href="#">오시는 길</a></li>
+											<li><a href="#">서비스</a></li>
+										</ul>
+										<ul class="sub2">
+											<li><a href="#">투자정보</a></li>
+											<li><a href="#">경영정보</a></li>
+											<li><a href="#">주가정보</a></li>
+											<li><a href="#">재무정보</a></li>
+											<li><a href="#">IR일정</a></li>
+											<li><a href="#">IR자료실</a></li>
+											<li><a href="#">증권사커버리지</a></li>
+											<li><a href="#">공고 </a></li>
+										</ul>
+										<ul class="sub3">
+											<li><a href="#">서비스</a></li>
+											<li><a href="#">도움말</a></li>
+											<li><a href="#">Q&A</a></li>
+											<li><a href="#">카카오계정</a></li>
+										</ul>
+										<ul class="sub4">
+											<li><a href="#">카카오크루</a></li>
+											<li><a href="#">크루인터뷰</a></li>
+											<li><a href="#">지원하기</a></li>
+											<li><a href="#">나의지원서</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+					</ul>
+				</div>
+				<label class="btn_close" for="toggle_menu"></label>
+			</nav><!--메인메뉴끝-->
+		</div>
+	</header><!--메인헤더 끝-->
+	
+	<!-- flex slider start -->
+	<script type="text/javascript">
+	$(function(){
+		SyntaxHighlighter.all();
+	});
+	$(window).load(function(){
+		$('.flexslider').flexslider({
+			animation: "slide",
+			start: function(slider){
+				$('body').removeClass('loading');
+			}
+		});
+	});
+	</script>
+	<section class="slider">
+		<div class="flexslider">
+			<ul class="slides">
+				<li>
+					<img class="pc" src="img/img1.jpg" />
+					<img class="tablet" src="img/img1.jpg" />
+					<img class="smart" src="img/m_img1.jpg" />
+				</li>
+				<li>
+					<img class="pc" src="img/img2.jpg" />
+					<img class="tablet" src="img/img2.jpg" />
+					<img class="smart" src="img/m_img2.jpg" />
+				</li>
+				<li>
+					<img class="pc" src="img/img3.jpg" />
+					<img class="tablet" src="img/img3.jpg" />
+					<img class="smart" src="img/m_img3.jpg" />
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!-- Syntax Highlighter -->
+	<script src="js/shCore.js"></script>
+	<script src="js/shBrushXml.js"></script>
+	<script src="js/shBrushJScript.js"></script>
+	<!-- flex slider end -->
+
+
+
+<div id="search_bar">
+		<div class="search_bar_box">
+			<ul>
+				<li class="pc"><a href="#">#카카오톡</a></li>
+				<li class="pc"><a href="#">#플러스친구</a></li>
+				<li class="pc"><a href="#">#카카오스토리</a></li>
+			</ul>
+			<input id="search" type="checkbox" />
+			<label class="search"for="toggle_search"></label>
+			<div id="search_wrap">
+				<form>
+					<fieldset>
+						<input id="search_txt" type="text" placeholder="무엇을 찾아드릴까요?" />
+						<input id="search_btn" type="image" src="images/btn_search.png" alt="검색하기" />
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div><!--검색영역-->
+
+	<script>
+	$(function(){
+			setInterval(function(){
+				if($(window).scrollTop()>=450){
+					$("#search_bar_top").css({top:103});
+				}else{
+					$("#search_bar_top").css({top:-73});
+				}
+			},50);
+		});
+	</script>
+
+	<div id="search_bar_top">
+		<div class="search_bar_box_top">
+			<ul>
+				<li class="pc"><a href="#">#카카오톡</a></li>
+				<li class="pc"><a href="#">#플러스친구</a></li>
+				<li class="pc"><a href="#">#카카오스토리</a></li>
+			</ul>
+			<input id="search" type="checkbox" />
+			<label class="search"for="toggle_search"></label>
+			<div id="search_wrap">
+				<form>
+					<fieldset>
+						<input id="search_txt" type="text" placeholder="무엇을 찾아드릴까요?" />
+						<input id="search_btn" type="image" src="images/btn_search.png" alt="검색하기" />
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div><!--//스크롤시 상단에서 떨어지는 검색바-->
+	
+	<section id="main_contents"><!--컨텐츠시작-->
+		<div class="main_contents_box_1">
+			<article class="news">
+				<h1><span>NEWS</span>ROOM</h1>
+				<div class="n1">
+					<a href="#">
+						<img class="pc table" src="images/ico_tit_more.png" alt="더보기">
+					</a>
+					<a href="#">
+						<img src="images/ico_tit_more.png" alt="더보기">
+					</a>
+				</div>
+				<div class="n2">
+					<div>
+						<h6>카카오</h6>
+						<p class="con">카카오톡에서 장보면 이마트가 쓱~배송해준다!</p>
+						<p class="date">2019.08.13</p>
+						<a href="#">자세히보기</a>
+					</div>
+					<div>
+						<h6>투자정보</h6>
+						<p class="con">카카오, 2019 2분기 실적발표 연결매출 7,330억원, 영업이익 405억원기록</p>
+						<p class="date">2019.08.12</p>
+						<a href="#">자세히보기</a>
+					</div>
+					<div>
+						<h6>고객지원</h6>
+						<p class="con">카카오는 데이터의 연결과 보호의 균형을 위해 언제나 최선을 다 하겠습니다.</p>
+						<p class="date">2018.08.09</p>
+						<a href="#">자세히보기</a>
+					</div>
+					<div>
+						<h6>인재영입</h6>
+						<p class="con">문제를 새롭게 정의하고, 고민할 줄 아는 능력이 중요합니다.</p>
+						<p class="date">2019.08.12</p>
+						<a href="#">자세히보기</a>
+					</div>
+				</div>
+			</article>
+		</div>
+		<div class="main_contents_box_2">
+			<article class="our">
+				<h1><span>OUR</span>BUSINESSES</h1>
+				<div>
+					<a href="#"><img src="images/ico_tit_more.png" alt="더보기"></a>
+				</div>
+
+				<ul class="our_text">
+					<li class="text">
+						<div class="m m1"></div>
+						<div class="desc">
+							<h3>카카오</h3>
+							<p>새로운 연결, 더 나은 세상</p>
+							<ul class="btn2">
+								<li><a href="#">사업소개</a></li>
+								<li><a href="#">바로가기</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="text">
+						<div class="m m2"></div>
+						<div class="desc">
+							<h3>투자정보</h3>
+							<p>더 많은 가능성</p>
+							<ul class="btn2">
+								<li><a href="#">사업소개</a></li>
+								<li><a href="#">바로가기</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="text">
+						<div class="m m3"></div>
+						<div class="desc">
+							<h3>고객지원</h3>
+							<p>무엇을 도와드릴까요?</p>
+							<ul class="btn2">
+								<li><a href="#">사업소개</a></li>
+								<li><a href="#">바로가기</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="text">
+						<div class="m m4"></div>
+						<div class="desc">
+							<h3>인재영입</h3>
+							<p>카카오크루 지원</p>
+							<ul class="btn2">
+								<li><a href="#">사업소개</a></li>
+								<li><a href="#">바로가기</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+
+
+
+				<ul class="our2">
+					<li>
+						<a href="#"><img src="images/bs_1.png" alt="총 자산 이미지"></a>
+						<dl>
+							<dt>총 자산</dt>
+							<dd><em>7,959,542</em><span>백만원</span></dd>
+							<dd>(2018년 말 기준)</dd>
+						</dl>
+					</li>
+					<li>
+						<a href="#"><img src="images/bs_2.png" alt="총 매출 이미지"></a>
+						<dl>
+							<dt>총 매출</dt>
+							<dd><em>555,421</em><span>백만원</span></dd>
+							<dd>(2018년 말 기준)</dd>
+						</dl>
+					</li>
+					<li>
+						<a href="#"><img src="images/bs_3.png" alt="영업이익 이미지"></a>
+						<dl>
+							<dt>영업이익</dt>
+							<dd><em>72,954</em><span>백만원</span></dd>
+							<dd>(2018년 말 기준)</dd>
+						</dl>
+					</li>
+					<li>
+						<a href="#"><img src="images/bs_4.png" alt="임직원수 이미지"></a>
+						<dl>
+							<dt>임직원수</dt>
+							<dd><em>2764</em><span>백만원</span></dd>
+							<dd>(2019년 3월 기준)</dd>
+						</dl>
+					</li>
+				</ul>
+			</article>
+		</div>
+		<div class="main_contents_box_3">
+			<article class="investor">
+			<h1><span>INVESTOR</span>RELATIONS</h1>
+				<div>
+					<a href="#"><img src="images/ico_tit_more.png" alt="더보기"></a>
+				</div>
+				<div class="table1">
+					<h4>IR주요일정</h4>
+					<ul>
+						<li>2019년 2분기 실적발표 <span>2019.07.24</span></li>
+						<li>2019 1분기 실적 <span>2019.16.13</span></li>
+					</ul>
+				</div>
+				<div class="table2">
+					<ul>
+						<li>
+							<a href="#">공시정보<img src="images/ico_arr_r.png" alt="바로가기"></a>
+							<img src="images/ir_1.png" alt="공시정보이미지">
+						</li>
+						<li>
+							<a href="#">보고서<img src="images/ico_arr_r.png" alt="바로가기"></a>
+							<img src="images/ir_2.png" alt="보고서이미지">
+						</li>
+						<li>
+							<a href="#">주주환원<img src="images/ico_arr_r.png" alt="바로가기"></a>
+							<img src="images/ir_3.png" alt="주주환원이미지">
+						</li>
+					</ul>
+				</div>
+				<div class="table3">
+					<ul class="tbody">
+						<li class="t_top">
+							<ul>
+								<li class="left" >주가정보</li>
+								<li class="right">(주)카카오(035720)</li>
+							</ul>
+						</li>
+						<li class="t_bottom">
+							<ul class="t1">
+								<li>
+									<ul>
+										<li class="c1">(현재가, KRW)</li>
+										<li class="c2">130,500</li>
+										<li class="c3">전일대비 <span>+1,000원(+0.77%)</span></li>
+									</ul>
+								</li>
+							</ul>
+							<ul class="t2">
+								<li>
+									<ul>
+										<li class="left">거래량(주)</li>
+										<li class="right">222,183</li>
+									</ul>
+									<ul>
+										<li class="left">시가총액(원)</li>
+										<li class="right">130,500</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</article>
+		</div>
+		<div class="main_contents_box_4">
+			<article class="corporate">
+				<h1><span>CORPORATE</span>GOVERNANCE</h1>
+				<div>
+					<a href="#"><img src="images/ico_tit_more.png" alt="더보기"></a>
+				</div>
+				<ul>
+					<li><img src="images/ico_coppor01.png" alt="기업지배구조이미지"></li>
+					<li><img src="images/ico_coppor02.png" alt="이사회이미지"></li>
+					<li><img src="images/ico_coppor03.png" alt="위원회이미지"></li>
+				</ul>
+				<ul class="text">
+					<li><a href="#">기업지배구조</a></li>
+					<li><a href="#">이사회</a></li>
+					<li><a href="#">위원회</a></li>
+				</ul>
+			</article>
+		</div>
+	</section><!--컨텐츠끝-->
+
+	<div class="smart" id="go_top">
+		<ul>
+			<li><a href="#">BACK TO TOP</a></li>
+		</ul>
+	</div>
+	<footer id="main_footer">
+		<div class="mf_box">
+			<div class="policy">
+				<ul class="pc table">
+					<li><a href="#">보안신고</a></li>
+					<li><a href="#">이메일주소무단수집거부</a></li>
+					<li><a href="#">Legal Notice</a></li>
+					<li><a href="#">개인정보 처리방침</a></li>
+					<li><a href="#">윤리경영</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Sitemap</a></li>
+				</ul>
+				<ul class="smart">
+					<li><a href="#">오시는길</a></li>
+					<li><a href="#">고객문의</a></li>
+				</ul>
+			</div>
+			<div class="family">
+				<form>
+					<fieldset>
+						<legend>FAMILY MAP</legend>
+						<select>
+							<option>FAMILY MAP</option>
+							<option>카카오 AI</option>
+							<option>카카오 프라이버시</option>
+							<option>카카오 디벨로퍼스</option>
+							<option>다음 포털 사이트</option>
+							<option>동반성장 사이트</option>
+							<option>제주 with kakao</option>
+						</select>
+					</fieldset>
+				</form>
+			</div>
+			<div class="copy">
+				Copyright (C) 2018 Samsung C&T Corporation. All rights reserved
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

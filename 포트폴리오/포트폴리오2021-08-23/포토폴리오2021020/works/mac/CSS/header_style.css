@@ -1,0 +1,374 @@
+/*header_style.css*/
+/**상단에서 내려오는 영역**/
+
+#main_top_nav{
+	width: 1920px; height: 89px;
+	background-color: #fff;
+	position: fixed;
+	left: 0; top: -89px;
+	z-index: 50;
+	border-bottom: solid 1px #ccc;
+
+}
+
+	#main_top_nav > #logo{
+		left: 152px;
+		top: 32px;
+	}
+	#main_top_nav > ul.top_nav1{
+		float: left;
+		margin-left: 317px;
+	}
+		#main_top_nav > ul.top_nav1 > li{
+			float: left;
+			margin-top: 39px;
+			padding-right: 29px;
+			font-weight: bold;
+		}
+			#main_top_nav > ul.top_nav1 > li > a{
+				font-size: 21px;
+			}
+	#main_top_nav > label{
+		margin-left: 24px;
+		margin-top: 22px;
+		margin-right: 18px;
+		width: 48px; height: 49px;
+		background: url(../images/menu_logo.png) no-repeat;
+		text-indent: -6000px; overflow: hidden;
+	}
+	input#toggle_menu:checked + #wrap #main_top_nav > label{
+		background: url(../images/menu_logo_close.png);
+	}
+	#main_top_nav > ul.top_nav2{
+		position: absolute;
+		right: 530px;
+		top: 38px;
+	}
+		#main_top_nav > ul.top_nav2 > li{
+		float: left;
+		padding-right: 16px;
+		padding-left: 18px;
+		background: url(../images/menu_dot.png) no-repeat left center; 
+	}
+		#main_top_nav > ul.top_nav2 > li:first-child{
+			background: none;
+		}
+			#main_top_nav > ul.top_nav2 > li > a{
+				font-size: 17px;
+			}
+	#main_top_nav > ul.top_nav3{
+		position: absolute;
+		right: 168px;
+		top: 34px;
+	}
+		#main_top_nav > ul.top_nav3 > li{
+			float: left;
+			padding-left: 30px;
+		}
+/******헤더영역**********/
+
+#main_header{
+	width: 100%; height: 218px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 140;
+}
+
+	#logo{
+		position: absolute;
+		top: 64px; left: 152px;
+	}
+
+		#logo_nav > ul{
+			margin-top: 76px; margin-left: 290px;
+			float: left;
+		}
+			#logo_nav > ul > li{
+				float: left;
+				padding-left: 29px;
+				}
+				#logo_nav > ul > li > a{
+					display: block;
+					font-size: 24px;
+					font-weight: bold;
+					line-height: 30px;
+
+
+				}
+			#logo_nav > ul > li::after{
+				content: "";
+				display: block;
+				width: 100%; height: 4px;
+				background: #000;
+				transform: scaleX(0);
+				transition-duration: 0.3s;
+				margin-top: -31px;
+			}
+			#logo_nav > ul > li:hover::after{
+				transform: scaleX(1);
+			}
+
+
+	#main_nav{
+		position: absolute;
+		left: 151px; top: 141px;
+		z-index: 100;
+	}
+		#main_nav > label.toggle_menu{
+			width: 48px; height: 49px;
+			background: url(../images/menu_logo.png) no-repeat;
+			text-indent: -6000px; overflow: hidden;
+			
+		}
+		#main_nav > div > ul{
+			margin-top: 12px;
+			margin-left: 49px;
+		}
+			#main_nav > div > ul > li{
+				float: left;
+				padding-right: 17px;
+				padding-left:  15px;
+				background: url(../images/menu_dot.png) no-repeat right center;
+			}
+				#main_nav > div > ul > li:nth-of-type(4){
+					background: none;
+					}
+					#main_nav > div > ul > li > a{
+					display: block;
+					line-height: 28px;
+					} 
+					
+				#main_nav > div > ul > li::after{
+				content: "";
+				display: block;
+				width: 100%; height: 2px;
+				background: #000;
+				transform: scaleX(0);
+				transition-duration: 0.3s;
+			}
+			#main_nav > div > ul > li:hover::after{
+				transform: scaleX(1);
+			}
+
+/***************세부메뉴************************************/
+	label.toggle_menu, label.menu_close{
+		width: 49px; height: 48px;
+		position: absolute;
+		
+		text-indent: -6000px; overflow: hidden;
+	}
+
+
+	
+	input#toggle_menu:checked + #wrap #main_nav > label.toggle_menu{
+		background: url(../images/menu_logo_close.png);
+	}
+	
+	#toggle_nav{
+		position: absolute;
+		top: 218px;
+		width: 100%; height: 0;
+		z-index: 110;
+		overflow: hidden;
+	}
+	input#toggle_menu:checked + #wrap #toggle_nav{
+		height: 600px;
+		}
+	
+	#toggle_nav > ul{
+		position: absolute;
+		height: 600px;
+		top: 0;
+		width: 100%;
+		background: #fff;
+		border-top: 2px solid #000;
+		z-index: 130;
+	}
+		#toggle_nav > ul > div{
+			margin: 0 auto;
+			width: 1580px;
+			margin-top: 41px;
+		}
+			#toggle_nav > ul > div > li{
+			font-family: Dotum;
+			float: left;
+		}
+			#toggle_nav > ul > div > li > span.icon{
+				float: left;
+			}
+			#toggle_nav > ul > div > li > ul.sub_nav{
+				padding-left: 64px;
+			} 
+			#toggle_nav > ul > div > li#lips{
+				margin-left: 30px;
+			}
+			#toggle_nav > ul > div > li#face{
+				margin-left: 30px;
+			}
+			#toggle_nav > ul > div > li#skin{
+				margin-left: 8px;
+			}
+			#toggle_nav > ul > div > li#brush{
+				margin-left: 30px;
+			}
+				#toggle_nav > ul > div > li > ul.sub_nav > h3{
+					font-family: verdana;
+					font-weight: 600;
+					font-size: 23px;
+					letter-spacing: 1px;
+					line-height: 50px;
+					margin-bottom: 10px;
+				}
+					#toggle_nav > ul > div > li > ul.sub_nav > li > a{
+						line-height: 38px;
+						font-weight: 600;
+						color: #777;
+					}
+			#toggle_nav > ul > div > li#lipstick{
+				float: right;
+			} 
+				#toggle_nav > ul > div > li#lipstick > p{
+					margin-top: 20px;
+					color: #777;
+				}
+					#toggle_nav > ul > div > li#lipstick > p > strong{
+						font-size: 11px;
+						line-height: 30px;
+						padding: 5px 10px;
+						border: 1px solid #ccc; 
+					}
+						#toggle_nav > ul > div > li#lipstick > p > b{
+							line-height: 40px;
+							font-size: 14px;
+							font-weight: bold;
+						}
+							#toggle_nav > ul > div > li#lipstick > p > span{
+								color: #000;
+								font-weight: bold;
+								margin-top: -10px;
+								display: block;
+								font-family: Dotum;
+								font-size: 16px;
+							}
+							#toggle_nav > ul > div > li > span.img1 > a{
+			background-image: url(../images/side_menu_eye_1.png);
+			}
+			#toggle_nav > ul > div > li > span.img2 > a{
+			background-image: url(../images/side_menu_lip_1.png);
+			}
+			#toggle_nav > ul > div > li > span.img3 > a{
+			background-image: url(../images/side_menu_face_1.png);
+			}
+			#toggle_nav > ul > div > li > span.img4 > a{
+			background-image: url(../images/side_menu_skin_1.png);
+			}
+			#toggle_nav > ul > div > li > span.img5 > a{
+			background-image: url(../images/side_menu_brush_1.png);
+			}
+			
+			
+			
+				#toggle_nav > ul > div > li > span.icon > a > img{
+					opacity: 1;
+					transition-duration: 0.1s;
+				}
+					#toggle_nav > ul > div > li > span.icon:hover > a > img{
+						opacity: 0;
+					}
+				
+
+	input#toggle_menu + #wrap #toggle_nav > label.menu_bg_close{
+		width: 100%; height: 100%;
+		background-color: rgba(0,0,0,0.5);
+		position: fixed;
+		top: 218px;  bottom: 0; left: -100%; 
+		z-index: 50;
+		opacity: 0;
+		
+	}
+	input#toggle_menu:checked + #wrap #toggle_nav > label.menu_bg_close{
+		left: 0; 
+		opacity: 1;
+		transition: opacity 0.5s ease-in-out 0s;
+	}
+
+
+	
+/***************세부메뉴 끝************************************/
+	#top_nav{
+		position: absolute;
+		top: 64px;
+		right: 168px;
+	}
+		#top_nav > ul > li{
+			float: right;
+			padding-left: 31px;
+		}
+
+		#top_nav > ul > li > label.search{
+			display: none;
+		}
+		/**검색토글 버튼**/
+		label.search{
+		width: 24px; height: 25px;
+		position: absolute; 
+		top: 64px;
+		text-indent: -6000px; overflow: hidden;
+	}
+
+			label.search{
+				right: 272px;
+				background: url(../images/icon_1.png);
+			}
+			input#toggle_search:checked + label.search{
+				background: url(../images/icon_1_close.png);
+			}
+			
+			#search_wrap{
+				width: 260px;
+				height: 0;
+				
+				position: absolute;
+				top: 64px; right: 305px;
+				overflow: hidden;
+
+				box-sizing: border-box;
+				padding: 0 10px;
+				transition-duration: 0.3s;
+			}
+			input#toggle_search:checked + label.search + #search_wrap{
+				height: 600px;
+			}
+				#search_wrap > form{}
+					#search_wrap fieldset{
+						width: 100%;
+						position: relative;
+					}
+						input#search_txt{
+							width: 100%; 
+							background: #fff;
+							box-sizing: border-box;
+							border: solid 1px #000;
+						}
+						input#search_btn{
+							position: absolute;
+							right: 0; top: 0;
+						}
+
+	#r_nav{
+		position: absolute;
+		right: 168px; top: 157px;
+	}
+		#r_nav > ul > li{
+			float: left;
+			padding-left: 18px;
+			padding-right: 16px;
+			background: url(../images/menu_dot.png) no-repeat left center;
+		}
+		#r_nav > ul > li:last-child{
+			padding-right: 0;
+		}
+		#r_nav > ul > li:first-child{
+			background: none;
+		}
+

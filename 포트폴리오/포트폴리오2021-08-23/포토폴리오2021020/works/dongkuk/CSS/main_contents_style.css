@@ -1,0 +1,500 @@
+/*main_contents_style.css*/
+
+/*******************************페이지1***************************************/
+#main_contents{
+	width: 100%;
+	height: 939px;
+	background: rgba(25,25,25,0.7);
+
+	position: relative;
+	z-index: 40;
+	top: 950px;
+
+	overflow: hidden;
+}
+	#main_contents > div.main_contents_box_1{
+		padding-left: 19.6875%;
+		padding-right: 19.6875%;
+	}
+
+	@media screen and ( max-width: 1024px){
+	#main_contents > div.main_contents_box_1{
+		padding-left: 44px;
+		padding-right: 44px;
+	}
+	}
+	@media screen and ( max-width: 767px){
+	#main_contents > div.main_contents_box_1{
+		padding-left: 26px;
+		padding-right: 26px;
+	}
+	}
+
+		.pro{
+			width: 100%;
+		}
+			.pro > h1{
+				color: #fff;
+				text-align: center;
+				width: 100%;
+				font-size: 45px;
+				font-weight: bold;
+				padding-top: 182px;
+			}
+			.pro > p{
+				color: #fff;
+				text-align: center;
+				width: 100%;
+				margin-top: 13px;
+			}
+
+			.pro > div{
+				margin: 90px auto;
+			}
+
+			@media screen and ( max-width: 1024px){
+				.pro > div{
+				max-width: 100%;
+				margin: 90px auto;
+			}
+			}
+			@media screen and ( min-width: 768px){
+				.pro > div > ul{
+					width:100%;
+				}
+					.pro > div > ul > li{
+						float: left;
+						width: 18.4%;
+						margin-left: 2%;
+						
+					}
+						.pro > div > ul > li:first-child{
+							margin-left: 0;
+							}
+						
+				.pro > div >  ul > li.down{
+					margin-top: 77px;
+				}
+					.pro > div > ul > li > a{
+						width: 100%;
+						background-size: 100%;
+						overflow: hidden;
+					}
+					.pro > div >  ul > li > a > img{
+						transition-duration: 0.3s;
+						opacity: 1;
+						width: 100%;
+					}
+					.pro > div > ul > li:nth-of-type(1) > a{
+						background-image: url(../images/item1_on.png);
+						
+					}
+					.pro > div > ul > li:nth-of-type(2) > a{
+						background-image: url(../images/item2_on.png);
+					}
+					.pro > div > ul > li:nth-of-type(3) > a{
+						background-image: url(../images/item3_on.png);
+					}
+					.pro > div > ul > li:nth-of-type(4) > a{
+						background-image: url(../images/item4_on.png);
+					}
+					.pro > div > ul > li:nth-of-type(5) > a{
+						background-image: url(../images/item5_on.png);
+					}
+					.pro > div > ul > li:hover > a > img{
+						opacity: 0;
+					}
+					}
+
+@media screen and ( max-width: 767px){
+	#main_contents{
+		top: 650px;
+		width: 100%;
+		height: 100%;
+	}
+			.pro > h1{
+				font-size: 33px;
+				font-weight: bold;
+				padding-top: 70px;
+			}
+			.pro > p{
+				margin-top: 5px;
+				font-size: 15px;
+			}
+				.pro > div > ul{
+					width:100%;
+				}
+					.pro > div > ul > li{
+						width: 100%;
+						padding-bottom: 2%;
+					}
+						.pro > div > ul > li > a > img{
+							width: 100%;
+						}
+						}
+/*******************************페이지2***************************************/
+#main_contents2{
+	width: 100%; 
+	position: relative;
+	z-index: 40;
+	top: 950px;
+	overflow: hidden;
+}
+@media screen and ( max-width: 767px){
+#main_contents2{
+	top: 650px;
+	}
+	}
+@media screen and ( min-width: 768px){
+	#main_contents2 > .main_contents_box_2{
+		width: 100%;
+		height: 939px;
+		
+	}
+		#main_contents2 > .main_contents_box_2 > .con >  h1{
+			position: absolute;
+			color: #fff;
+			text-align: center;
+			width: 100%;
+			font-size: 45px;
+			font-weight: bold;
+			top: 182px;
+			z-index: 37;
+		}
+		#main_contents2 > .main_contents_box_2 > .con > p{
+			position: absolute;
+			color: #fff;
+			text-align: center;
+			width: 100%;
+			top: 220px;
+			height: 15px;
+			z-index: 37;
+		}
+		.con > div{
+			position: absolute;
+			width: 100%;
+			height: 939px;
+			top: 0;
+			z-index: 35;
+		}
+			.con > div > ul{
+				float: left;
+				width: 33.3%;
+			}
+			.con > div > ul > li{
+				background: rgba(25,25,25,0.7);
+				height: 939px;
+				padding-top: 400px;
+				width: 100%;
+			}
+			.con > div > ul:hover > li{
+				background: 0;
+			}
+			.con > div > ul > li > a{
+			}
+			.con > div > ul > li > h3{
+				width: 100%;
+				float: left;
+				text-align: center;
+				color: #fff;
+				margin-top: 20px;
+				font-size: 30px;
+				font-weight: bold;
+			}
+				.con > div > ul > li > p{
+					width: 100%;
+					float: left;
+					text-align: center;
+					color: #fff;
+					margin-top: 10px;
+				}
+					.con > div > ul > li > a > img{
+						margin: 0 auto;
+					}
+					}
+
+			@media screen and ( max-width: 767px){
+			#main_contents2 > .main_contents_box_2 > .con >  h1{
+			color: #fff;
+			text-align: center;
+			width: 100%;
+			font-size: 33px;
+			font-weight: bold;
+			padding-top: 70px;
+			background: rgba(25,25,25,0.7);
+			}
+		#main_contents2 > .main_contents_box_2 > .con > p{
+			color: #fff;
+			text-align: center;
+			width: 100%;
+			padding-top: 5px;
+			font-size: 15px;
+			background: rgba(25,25,25,0.7);
+			padding-bottom: 70px;
+			}
+			.con > div{
+				width: 100%;
+			}
+				.con > div > ul{
+					text-align: center;
+					width: 100%;border-bottom: 1px solid rgba(255,255,255,0.3);
+				}
+				.con > div > ul > li{
+						background: rgba(25,25,25,0.7);
+						width: 100%;
+						height: 33.3%;
+						
+					}
+				.con > div > ul > li:hover{
+					background: 0;
+				}
+					.con > div > ul > li > h3{
+								color: #fff;
+								font-size: 20px;
+									font-weight: bold;
+									margin-top: 10px;
+							}
+								.con > div > ul > li > p{
+									color: #fff;
+									padding-bottom: 10%;
+								}
+					.con > div > ul > li > a > img{
+						padding-top: 10%;
+						width: 25%;
+						margin: 0 auto;
+						}
+						}
+
+/*******************************페이지3***************************************/
+
+#main_contents3{
+	position: relative;
+	top: 950px;
+	width: 100%;
+	height: 939px;
+	background: rgba(25,25,25,0.7);
+	z-index: 40;
+	overflow: hidden;
+
+	overflow: hidden;
+}
+@media screen and ( max-width: 767px){
+	#main_contents3{
+	top: 650px;
+	height: 1200px;
+}
+}
+	#main_contents3 > .main_contents_box_3{
+		margin: 75px auto 0;
+		width: 70%;
+	}
+	@media screen and ( max-width: 1024px){
+	#main_contents3 > .main_contents_box_3{
+		width: 90%;
+	}
+	}
+	@media screen and ( max-width: 767px){
+	#main_contents3 > .main_contents_box_3{
+		width: 80%;
+	}
+	}
+
+#main_contents3 > .main_contents_box_3 > article.new{
+}
+	.new > h1{
+		text-align: center;
+		color: #fff;
+		font-weight: bold;
+		font-size: 45px;
+		margin-top: 182px;
+	}
+	.new > p{
+		text-align: center;
+		color: #fff;
+		margin-top: 13px;
+		margin-bottom: 90px;
+	}
+	@media screen and ( max-width: 767px){
+		.new > h1{
+		font-size: 33px;
+    font-weight: bold;
+    padding-top: 70px;
+	}
+	.new > p{
+		margin-top: 5px;
+    font-size: 15px;
+	}
+	}
+		.section3_con_left{
+			width: 36%;
+			float: left;
+			margin-right: 2%;
+		}
+		@media screen and ( max-width: 767px){
+			.section3_con_left{
+			width: 100%;
+			float: left;
+			margin-right: 0;
+		}
+		}
+			.video{
+				height: 194px;
+			}
+			.brochure{
+				margin-top: 3%;
+			}
+			@media screen and ( max-width: 767px){
+				.brochure{
+				margin-top: 0;
+			}
+			}
+			.brochure_title{
+				height: 196px;
+				width: 100%;
+				background: url(../images/brochure_main.png) no-repeat right;
+				
+			}
+			@media screen and ( max-width: 767px){
+				.brochure_title{
+				height: 82px;
+				background-size: 100%;
+			}
+			}
+				.brochure_title > p{
+					margin-left: 50%;
+					width: 100%;
+					margin-top: 70px;
+					color: #fff;
+					font-weight: bold;
+					font-size: 20px;
+					display: inline-flex;
+					box-sizing: border-box;
+				}
+				@media screen and ( max-width: 767px){
+					.brochure_title > p{
+					margin-top: 29px;
+					font-size: 27px;
+				}
+				}
+				.brochure_title > p > span{
+					margin-left: -70px;
+					display: flex;
+				}
+					.brochure_title > p > span > a{
+						margin-left: 5px;
+					}
+				
+				.section3_con_right{
+					width: 62%;
+					float: left;
+
+					overflow: hidden;
+				}
+				@media screen and ( max-width: 767px){
+					.section3_con_right{
+					width: 100%;
+					margin-top: 2%;
+				}
+				}
+
+				.section3_con_right .main_partner{
+					float: left;
+					background: rgba(139,20,19,0.6);
+					padding: 19px 20px;
+					box-sizing: border-box;
+					width: 100%;
+					height: 194px;
+				}
+					.section3_con_right .main_partner > p{
+						font-size: 20px;
+						padding: 0 30px 5px 0;
+						color: #fff;
+						border-bottom: 2px solid #fff;
+					}
+						.select_box1{
+							position: relative;
+							width: 47.9%;
+							height: 35px;
+							background: #fff url(../images/sel_bg3.png) 95% center no-repeat;
+							margin-top: 20px;
+							display: inline-block;
+							box-sizing: border-box;
+							top: -1px;
+							border: 2px solid #d8d8d8;
+						}
+							.select_box1 > label{
+								font-size: 14px;
+								color: #000;
+								top: 0px;
+								margin-left: 15px;
+							}
+							.select_box1 > select{
+								position: absolute;
+								height: 35px;
+								left: -3px;
+								opacity: 0;
+								line-height: 35px;
+								padding: 0 10px;
+								width: 100%;
+								-webkit-appearance: none;
+								vertical-align: middle;
+								top: -2px;
+							}
+								.select_box1 > select > option{
+									font-size: 14px;
+									line-height: 35px;
+								}
+			.select_box2{
+				display: flex;
+			}
+				.select_box2 > input{
+					width: 72.4%;
+					height: 35px;
+					line-height: 35px;
+					margin: 8px 0 5px 0;
+					padding: 0 10px;
+					border: 2px solid #d8d8d8;
+				}
+					.select_box2 > a{
+						text-align: center;
+						margin-left: 10px;
+						width: 85px;
+						color: #fff;
+						border: 2px solid #d8d8d8;
+						height: 35px;
+						margin-top: 9px;
+					}
+
+				.section3_con_right > ul{
+					width: 100%;
+				}
+				.section3_con_right > ul > li{
+					width: 32%;
+					box-sizing: border-box;
+					margin-top: 2%;
+					margin-right: 2%;
+					float: left;height: 194px
+				}
+				.section3_con_right > ul > li:nth-of-type(3){
+					margin-right: 0;
+				}
+				@media screen and ( max-width: 767px){
+					.section3_con_right > ul > li{
+					width: 100%;
+					margin-right: 0;
+					height: 82px;
+				}
+				}
+				
+					.section3_con_right > ul > li > a > img{
+						width: 100%;
+						height: 194px
+					}
+					@media screen and ( max-width: 767px){
+						.section3_con_right > ul > li > a > img{
+						height: 82px;
+					}
+					}
+	
+				
+				
