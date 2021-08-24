@@ -18,7 +18,18 @@
 * 01) max-wdith: 1440px
 * ********************************************************************************* */
 @media all and (max-width: 1440px){
+	
+	/* header */
+	#header .inner{ padding: 0 30px;}
+	.main_gnb .depth_01 > li a{ padding: 0 20px;}
+	.right_menu{ margin-left: 20px;}
 
+	/* section */
+	#container .inner{ padding: 0 30px;}
+
+	/* footer */
+	#footer .footer_con{ flex-direction: column; align-items: flex-start; }
+	.address{ padding-bottom: 15px;}
 }
 
 
@@ -26,7 +37,15 @@
 * 02) max-wdith: 1280px
 * ********************************************************************************* */
 @media all and (max-width: 1280px){
+	
+	/* section1 */
+	.section1 dl dt .img_storyon{ width: 500px; height: 160px; background-size: contain;}
+	.section1 dl dd{ padding: 30px; }
+	.section1 dl dd p{ margin-top: 20px; }
+	
 
+	/* section3 */
+	.section3 .announce_table dl dd ul li a.txt{ max-width: 450px;}
 }
 
 
@@ -34,7 +53,21 @@
 * 03) max-wdith: 1023px
 * ********************************************************************************* */
 @media all and (max-width: 1023px){
-
+	
+	/* section1 */
+	.section1 dl dt .img_storyon{ width: 400px; height: 128px;}
+	.section1 dl dt p{ font-size: 20px;}
+	.section1 dl dd{ padding: 20px 30px; }
+	.section1 dl dd span{ font-size: 25px; }
+	.section1 dl dd .count{ font-size: 43px;}
+	
+	/* section3 */
+	.section3 .announce_table dl dt{ width: 100px;}
+	.section3 .announce_table dl dd{ padding: 0 20px 0 30px;}
+	.section3 .announce_table dl dd ul li .btn_application{ padding-left: 45px; width: 125px; height: 50px; line-height: 50px; font-size: 16px;}
+	.section3 .announce_table dl dd ul li .btn_application:before{ background-size: contain; left: 19px; width: 19px; height: 19px; margin-top: -9px;}
+	.section3 .announce_table dl dd ul li a.txt{ font-size: 20px; margin-bottom: 10px; padding-right: 20px; }
+	.section3 .announce_table dl dt ul li{ width: 60px; height: 60px; line-height: 60px; font-size: 15px; }
 }
 
 
@@ -42,7 +75,12 @@
 * 04) max-wdith: 768px
 * ********************************************************************************* */
 @media all and (max-width: 768px){
-
+	
+	/* header */
+	#header{ height: 80px;}
+	.main_gnb_wrap .logo a{ width: 130px; height: 40px; display: block; background-size: contain;}
+	.main_gnb .depth_01 > li a{ font-size: 17px; padding: 0 12px;}
+	.right_menu a{ padding-left: 15px; width: 145px;height: 45px; line-height: 45px; background: url(/user/images/common/icon_home.png)no-repeat left 15px center;}
 }
 
 
