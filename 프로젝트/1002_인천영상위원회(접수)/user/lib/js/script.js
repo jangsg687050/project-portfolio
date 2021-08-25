@@ -31,6 +31,22 @@ scroll();
 
 })
 
+//탑버튼
+function moveTop(){
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 200) {
+			$('#footer .btn-top').fadeIn();
+		} else {
+			$('#footer .btn-top').fadeOut();
+		}
+	});
+	$('#footer .btn-top').click(function() {
+		$('body,html').animate({
+			scrollTop: 0
+		}, 500);
+	});
+};
+
 $(function(){
 
 
@@ -51,4 +67,6 @@ $(function(){
 		$(this).parents('.depth_02 > li').addClass('active');
 	});
 
+	//탑버튼
+	moveTop();
 });

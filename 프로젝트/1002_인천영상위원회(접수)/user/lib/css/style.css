@@ -97,7 +97,7 @@
 #footer .footmenu ul li:first-child { padding-left: 0; color: #fff; }
 #footer .footmenu ul li:after { position: absolute; content: ""; height: 14px; width: 1px; background: #3b3b3b; top: 50%; left: 15px; margin-top: -7px; }
 #footer .footmenu ul li:first-child:after { display: none; }
-
+#footer .btn-top{ display: none; position: fixed; line-height: 60px; width: 60px; height: 60px; background-color: #0971ce; color: #fff; font-weight: 600; right: 25px; bottom: 25px; z-index: 1000000; text-align: center;}
 
 /* ********************************************************************************* *
 * 02) 메뉴1

@@ -478,7 +478,3 @@ input[id="menu"]:checked + label span:nth-child(3) { bottom: 50%; transform: tra
 .learn-more:hover .circle { width: 100%; }
 .learn-more:hover .circle .icon.arrow { background: #fff; transform: translate(1rem, 0); }
 .learn-more:hover .button-text { color: #fff; }
-@supports (display:grid) {
-  body { display: grid; grid-template-columns: repeat(4, 1fr); grid-gap: 0.625rem; grid-template-areas: ". main main ." ". main main ."; }
-  #container { grid-area: main; align-self: center; justify-self: center; }
-}
