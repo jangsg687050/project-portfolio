@@ -72,7 +72,7 @@
 .section3 .announce_table dl dt ul li { margin: 0 auto; width: 70px; height: 70px; border-radius: 50%; border: 1px solid #222; text-align: center; line-height: 70px; font-size: 16px; }
 .section3 .announce_table dl dt ul li.accept { background: #222; font-weight: 500; color: #fff; }
 .section3 .announce_table dl dt ul li.day { background: #fff; font-family: 'GongGothicMedium'; font-weight: bold;margin-top: -10px; }
-.section3 .announce_table dl dd { flex-grow: 1; padding: 0 50px 0 40px; }
+.section3 .announce_table dl dd { flex-grow: 1; padding: 0 50px 0 40px; width: 100%; }
 .section3 .announce_table dl dd ul { display: flex; align-items: center; justify-content: space-between; }
 .section3 .announce_table dl dd ul li span { display: block; font-size: 17px; color: #0972ce; margin-bottom: 14px; font-weight: 500; }
 .section3 .announce_table dl dd ul li a.txt { border-bottom: 1px solid transparent; font-size: 22px; margin-bottom: 25px; display: inline-block; max-width: 600px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }

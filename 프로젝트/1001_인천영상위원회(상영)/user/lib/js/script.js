@@ -101,7 +101,17 @@ $(function(){
 		slideChangeTransitionEnd: function () {
 		$(".swiper-progress-bar-wrap").eq(0).addClass("animate");
 		}
+	},
+	breakpoints: {
+		1080: {
+			slidesPerView: 3,
+			slidesPerGroup: 3,
+		},
+		330: {
+			slidesPerView: 2,
+			slidesPerGroup: 2,
+			spaceBetween: 20,
+		}
 	}
-	  
 	});
 });
