@@ -1,0 +1,300 @@
+.sp03 .detailroll { width: 770px; height: 515px; margin-top: 100px; }
+.sp03 .detail-visual-area { width: 100%; height: 515px; overflow: visible !important; }
+.sp03 .detail-visual-area .swiper-slide { width: 770px; }
+.sp03 .detailroll .detail-visual-arrow { position: absolute; right: -200px; bottom: 0; background: #4c22b5; font-size: 0; z-index: 1; }
+.sp03 .detailroll .detail-visual-arrow button { display: inline-block; vertical-align: middle; width: 70px; height: 80px; border: 0; font-size: 0; background-repeat: no-repeat; background-position: center; cursor: pointer; }
+.sp03 .detailroll .detail-visual-arrow button.detail-visual-prev { background-image: url(../../images/sub/icon_a_left.png); }
+.sp03 .detailroll .detail-visual-arrow button.detail-visual-pause { background-image: url(../../images/sub/icon_pause.png); }
+.sp03 .detailroll .detail-visual-arrow button.detail-visual-play { background-image: url(../../images/sub/icon_play.png); display: none; }
+.sp03 .detailroll .detail-visual-arrow button.detail-visual-next { background-image: url(../../images/sub/icon_a_right.png); }
+.sp03 .detailroll .detail-visual-number { width: 110px; position: absolute; display: flex; justify-content: center; padding-right: 6px; right: 10px; bottom: 0; background: #4c22b5; z-index: 2; }
+.sp03 .detailroll .detail-visual-number > span { height: 80px; display: block; line-height: 80px; font-size: 18px; color: #fff; }
+.sp03 .detailroll .detail-visual-number #page_number { color: #66ff00; font-weight: bold; }
+.sp03 .detailroll .detail-visual-number > span:not(:first-child) { margin-left: 4px; color: #fff; }
+.sp03 .company_detail_tit { display: flex; justify-content: space-between; margin-bottom: 35px; border-top: 1px solid #ddd; }
+.sp03 .company_detail_tit h4 { font-size: 36px; font-weight: 500; color: #000; border-top: 1px solid #000; padding-top: 30px; margin-top: -1px; }
+.sp03 .company_detail_tit .tit_right { padding-top: 20px; display: flex; align-items: center; }
+.sp03 .company_detail_tit .tit_right a { display: inline-block; border: 1px solid #ddd; padding: 18px; margin-right: 20px; }
+.sp03 .company_detail_tit .tit_right a:last-child { margin-right: 0; }
+.sp03 .company_detail_tit .tit_right p { display: inline-block; width: auto; height: 60px; padding: 0 20px; border: 2px solid #66ff00; font-size: 16px; line-height: 56px; text-align: center; color: #000; margin-right: 20px; }
+.sp03 .company_detail_tit .tit_right a.icon-question { padding: 0; }
+.icon-question { width: 58px; height: 61px; display: flex !important; justify-content: center; align-items: center; transition: all .3s ease-out; padding: 0; }
+.icon-question:before { width: 23px; height: 23px; display: block; background: url(../../images/sub/icon_question.png); content: ""; }
+.icon-question:hover { width: 140px; }
+.icon-question:hover:before { margin-right: 13px; background: url(../../images/sub/icon_question_on.png) center 0 no-repeat; }
+.icon-question:hover:after { font-size: 16px; color: #444; content: "1:1문의"; }
+.sp03 .company_detail_tit .tit_right .favor >* { display: none; }
+.sp03 .company_detail_tit .tit_right .favor.on .favor-on { display: block; }
+.sp03 .company_detail_tit .tit_right .favor.off .favor-off { display: block; }
+.sp03 .company_detail { display: flex; flex-wrap: wrap; }
+.sp03 .company_detail_left { width: 37%; color: #000; }
+.sp03 .company_detail_left div p { width: fit-content; margin-bottom: 20px; height: 19px; line-height: 19px; display: flex; padding-left: 30px; background: url( ../../images/sub/icon_homepage.png)no-repeat; }
+.sp03 .company_detail_left div span { width: fit-content; height: 19px; line-height: 19px; display: flex; padding-left: 30px; background: url( ../../images/sub/icon_ir.png)no-repeat; }
+.sp03 .company_detail_left div p img { display: none; margin-left: 10px; margin-top: 5px; height: fit-content; }
+.sp03 .company_detail_left div p:hover img { display: block; }
+.sp03 .company_detail_left div span img { display: none; margin-left: 10px; margin-top: 3px; height: fit-content; }
+.sp03 .company_detail_left div span:hover img { display: block; }
+.sp03 .company_detail_left { width: 30%; }
+.sp03 .company_detail .sns_logo { margin-top: 35px; }
+.sp03 .company_detail .sns_logo a { display: inline-block; }
+.sp03 .company_detail .sns_logo a img { margin-right: 10px; }
+.sp03 .company_detail_right { display: flex; align-items: center; width: 70%; background: #f6f6f6; }
+.sp03 .company_detail_con { padding: 55px 0; }
+.sp03 .company_detail_right .logo_box { box-shadow: 5px 5px 6px #ddd; width: 250px; height: 250px; margin-left: -77px; background: #fff; border: 1px solid #ddd; text-align: center; line-height: 250px; flex-shrink: 0; }
+.sp03 .company_detail_right .logo_box img { max-width: 200px; max-height: 65px; vertical-align: middle; }
+.sp03 .company_detail_con { margin-left: 85px; }
+.sp03 .company_detail_con p { margin-bottom: 30px; font-size: 18px; }
+.sp03 .company_detail_con p img { padding: 0 10px; vertical-align: bottom; }
+.sp03 .company_detail_con dl { display: flex; line-height: 30px; color: #000; font-size: 17px; }
+.sp03 .company_detail_con dl dt { width: 135px; font-weight: 200; flex-shrink: 0; }
+.sp03 .company_detail_con dl dd { font-weight: 400; font-size: 18px; }
+.sp03 .tag ul { display: inline-block; margin-top: 40px; }
+.sp03 .tag ul li { margin-bottom: 10px; padding: 0 20px; font-size: 17px; display: inline-block; height: 45px; border: 1px solid #653ec7; color: #653ec7; text-align: center; line-height: 43px; margin-right: 10px; background: #fff; border-radius: 22px; }
+.sp03 .line_txt { display: flex; margin: 75px -80px; justify-content: center; flex-wrap: wrap; }
+.sp03 .line_txt p { margin: 15px 80px; border-bottom: 10px solid #66ff00; font-size: 24px; font-weight: 500; color: #000; line-height: 12px; white-space: nowrap; }
+.sp03 .company_intro { display: flex; color: #000; flex-wrap: wrap; }
+.sp03 .company_intro h5 { font-size: 28px; font-weight: bold; padding-right: 50px; flex-shrink: 1; }
+.sp03 .company_intro_con { width: 80%; font-size: 16px; line-height: 30px; margin-bottom: 50px; border-top: 1px solid #ddd; padding-top: 30px; overflow: hidden; }
+.sp03 .conpany_bottom { display: flex; color: #000; flex-wrap: wrap; }
+.sp03 .conpany_bottom div { width: 80%; font-size: 16px; line-height: 30px; margin-bottom: 50px; border-top: 1px solid #ddd; padding-top: 30px; }
+.sp03 .conpany_bottom h5 { font-size: 28px; font-weight: bold; padding-right: 50px; flex-shrink: 1; }
+.sp03 .conpany_bottom div dl { display: flex; color: #000; line-height: 30px; font-size: 16px; }
+.sp03 .conpany_bottom div dl dt { width: 50px; }
+.sp03 .search_wrap .selectinput_wrap input { width: 100%; }
+.sp03 .tit_txt { text-align: center; font-size: 26px; color: #000; padding: 50px 0; }
+.sp03 .tit_txt p { font-weight: 400; padding-bottom: 10px; }
+.sp03 .tit_txt span { font-weight: 200; }
+.sp03 .ir_info { position: relative; padding: 20px 0 50px 0; margin-top: 50px; }
+.sp03 .ir_info .ir_info_bg { position: absolute; background: #f6f6f6; width: 93.1%; height: 95%; z-index: -5; right: 0; }
+.sp03 .ir_info h4 { font-size: 34px; font-weight: 200; color: #333; margin-bottom: 30px; margin-top: 30px; }
+.sp03 .ir_info h4 em { font-weight: 500; }
+.sp03 .ir_info .ir_info_wrap { display: flex; flex-wrap: wrap; }
+.sp03 .ir_info .ir_info_wrap .ir_info_con { padding: 0 40px; width: 38%; }
+.sp03 .ir_info .ir_info_wrap .ir_info_con p { font-size: 18px; border-bottom: 1px solid #000; color: #000; width: fit-content; padding-bottom: 5px; margin-bottom: 30px; }
+.sp03 .ir_info .ir_info_wrap .ir_info_con span em { margin-right: 10px; display: block; padding: 0 10px; height: 40px; background: #66ff00; text-align: center; }
+.sp03 .ir_info .ir_info_wrap .ir_info_con span { font-size: 17px; display: flex; color: #000; line-height: 40px; margin-bottom: 20px; }
+.sp03 .ir_info .ir_info_wrap .ir_info_con dl dt { font-size: 28px; font-weight: 400; margin-bottom: 10px; }
+.sp03 .ir_info .ir_info_wrap .ir_info_con dl { color: #000; line-height: 25px; }
+.sp03 .ir_info .ir_info_wrap .ir_info_con dl dd { font-size: 17px; }
+.sp03 .ir_info .ir_info_right { width: 26%; }
+.sp03 .ir_info .ir_right_wrap { background: #fff; width: 310px; height: 100%; padding: 30px; }
+.sp03 .ir_info .ir_right_wrap dl { margin: 20px 0; line-height: 30px; }
+.sp03 .ir_info .ir_right_wrap dl dt { color: #000; font-size: 22px; font-weight: 500; }
+.sp03 .ir_info .ir_right_wrap dl dd { font-size: 17px; }
+.sp03 .ir_info .ir_right_wrap ul li { font-size: 17px; color: #000; line-height: 25px; }
+.sp03 .ir_info .ir_right_wrap p { display: block; font-size: 17px; font-weight: 300; color: #000; margin-top: 20px; }
+.sp03 .ir_info .ir_right_wrap p em { font-size: 28px; font-weight: bold; }
+.sp03 .ir_detail { position: relative; margin-bottom: 65px; }
+.sp03 .ir_img { position: absolute; left: 40px; top: 40px; background: #fff; width: 250px; height: 250px; border: 1px solid #ddd; box-shadow: 5px 5px 5px rgba(0, 0, 0, .2); display: flex; justify-content: center; -webkit-box-pack: center; align-items: center; -webkit-box-align: center; }
+.sp03 .ir_img img { max-width: 200px; max-height: 200px; }
+.sp03 .ir_detail_con { width: 100%; }
+.sp03 .con_top { background: #333333; padding: 30px; min-height: 150px; }
+.sp03 .con_top span { font-weight: 200; display: flex; color: #fff; line-height: 40px; }
+.sp03 .con_top span em { font-weight: 300; font-size: 17px; margin-right: 10px; color: #000; background: #66ff00; height: 40px; width: 75px; display: block; text-align: center; line-height: 40px; }
+.sp03 .con_top .dl_flex { display: flex; margin-bottom: 30px; }
+.sp03 .con_top .dl_flex dl { width: 33.3%; margin-top: 20px; color: #fff; }
+.sp03 .con_top .dl_flex dl dd { font-size: 24px; padding-top: 10px; }
+.sp03 .con_top .dl_flex dl dd em { font-size: 40px; font-weight: bold; }
+.sp03 .ir_detail.test .con_top, .sp03 .ir_detail.test .con_bottom { padding-left: 400px; }
+.sp03 .con_bottom { background: #f6f6f6; padding: 30px; min-height: 150px; }
+.sp03 .con_bottom p { margin-bottom: 35px; width: fit-content; display: flex; height: 19px; line-height: 19px; display: flex; padding-left: 30px; background: url( ../../images/sub/icon_homepage.png)no-repeat; }
+.sp03 .con_bottom p a { color: #000; }
+.sp03 .con_bottom p img { display: none; }
+.sp03 .con_bottom p:hover img { display: block; height: fit-content; margin-top: 4px; margin-left: 10px; }
+.sp03 .con_bottom ul { color: #000; font-size: 16px; }
+.sp03 .con_bottom ul li { height: 26px; width: fit-content; padding-right: 35px; margin-bottom: 15px; background: url(../../images/common/btn_download.png)no-repeat right top; }
+.sp03 .con_bottom ul li:nth-of-type(2) { }
+.sp03 .con_bottom ul li:hover { border-bottom: 1px solid #000; padding-bottom: 7px; }
+.sp03 .g_wrapbox { background: #f6f6f6; width: 100%; overflow: hidden; display: flex; justify-content: space-between; align-items: flex-start; }
+.sp03 .g_wrapbox .g_wrapbox_img { position: relative; overflow: hidden; max-width: 370px; width: 100%; background-repeat: no-repeat; }
+.sp03 .g_wrapbox .g_wrapbox_img:before { display: block; padding: 50%; content: ""; }
+.sp03 .g_wrapbox .g_wrapbox_img .g_wrapbox_img_bg { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-repeat: no-repeat; background-position: center; background-size: cover; }
+.sp03 .g_wrap { padding: 60px; width: 65%; }
+.sp03 .g_wrap h4 { font-size: 38px; font-weight: 500; color: #000; }
+.sp03 .g_wrap p { line-height: 30px; color: #333; margin-top: 20px; margin-bottom: 40px; width: 100%; }
+.sp03 .g_wrap ul { display: flex; }
+.sp03 .g_wrap ul li { color: #000; margin-right: 10%; padding-left: 30px; height: 19px; line-height: 19px; white-space: nowrap; }
+.sp03 .g_wrap ul li:nth-of-type(1) { background: url(../../images/sub/sp13/camera.png)no-repeat left center; }
+.sp03 .g_wrap ul li:nth-of-type(2) { background: url(../../images/sub/sp13/icon_go.png)no-repeat left center; }
+.sp03 .g_wrap ul li:nth-of-type(3) { background: url(../../images/sub/sp13/icon_down.png)no-repeat left center; }
+.sp03 .irimg_con { border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; padding: 0 30px; margin-top: 60px; }
+.sp03 .irimg_con .irimg_wrap { display: flex; padding: 30px 0; border-top: 1px solid #ddd; align-items: flex-start; }
+.sp03 .irimg_con .irimg_wrap:first-child { border-top: none; }
+.sp03 .irimg_con .irimg_wrap .irimg_wrap_img { position: relative; overflow: hidden; max-width: 220px; width: 100%; background-repeat: no-repeat; }
+.sp03 .irimg_con .irimg_wrap .irimg_wrap_img:before { display: block; padding: 50%; content: ""; }
+.sp03 .irimg_con .irimg_wrap .irimg_wrap_img .irimg_wrap_img_bg { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-repeat: no-repeat; background-position: center; background-size: cover; }
+.sp03 .irimg_txt { margin-left: 80px; color: #000; width: 80%; }
+.sp03 .irimg_txt h5 { font-size: 32px; font-weight: 500; }
+.sp03 .irimg_txt ul { display: flex; margin-top: 30px; }
+.sp03 .irimg_txt ul li { padding-right: 15px; padding-left: 16px; border-left: 1px solid #ddd; }
+.sp03 .irimg_txt ul li:first-child { padding-left: 0; border-left: none; }
+.sp03 .irimg_txt ul li em { font-weight: 500; margin-right: 10px; }
+.sp03 .irimg_txt p { margin-top: 50px; line-height: 30px; }
+.sp03 .articles_box { width: 100%; margin: -10px; display: flex; flex-wrap: wrap; }
+.sp03 .articles_box .articles_wrap { padding: 10px; width: 50%; display: flex; flex-direction: column; }
+.sp03 .articles_box .articles_bord { flex: 1 1 auto; background: #f6f6f6; padding: 30px; border: 2px solid transparent; }
+.sp03 .articles_box .articles_bord:hover { border: 2px solid #66ff00; background: #fff; }
+.sp03 .articles_box .article_movie { width: 100%; text-align: center; }
+.sp03 .articles_box .article_movie iframe { width: 75%; height: 500px; }
+.sp03 .articles_box .articles_tit { display: flex; justify-content: space-between; margin-bottom: 40px; align-items: flex-end; }
+.sp03 .articles_box .articles_tit h5 { color: #000; font-size: 24px; font-weight: bold; }
+.sp03 .articles_box .articles_tit em { color: #999; }
+.sp03 .articles_box .articles_bord p { color: #000; font-size: 24px; color: #000; line-height: 35px; }
+
+/*IR 정보 추가 2021-01-18*/
+.sp03 .ir_box { width: 100%; }
+.sp03 .ir_box_flex { display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 85px; }
+.sp03 .ir_box_flex h5 { font-size: 28px; font-weight: 600; flex-shrink: 1; }
+.sp03 .ir_box_flex > div { width: 85%; margin: -15px; display: flex; flex-wrap: wrap; }
+.sp03 .ir_box_wrap { padding: 15px; width: 50%; }
+.sp03 .ir_box_bord { border: 1px solid #ddd; }
+.sp03 .ir_box_bord dl { padding: 40px; text-align: left; }
+.sp03 .ir_box_bord dl dt { font-size: 24px; font-weight: 500; margin-bottom: 30px; }
+.sp03 .ir_box_bord dl dd { font-size: 17px; font-weight: 300; margin-bottom: 22px; }
+.sp03 .ir_box_bord dl dd:last-child { margin-bottom: 0; }
+.sp03 .ir_box_bord dl dd em { font-weight: 500; }
+
+/* 태블릿 */
+@media all and (max-width:1200px) {
+
+	/** 기업정보상세 **/
+	.sp03 .line_txt { display: inherit; }
+	.sp03 .line_txt p { text-align: center; display: table; margin: 30px auto; }
+	.sp03 .detailroll { width: 100%; }
+	.sp03 .detail-visual-area { overflow: hidden !important; width: 100%; text-align: center; }
+	.sp03 .detailroll .detail-visual-arrow { right: 0; z-index: 3; }
+	.sp03 .detailroll .detail-visual-number { width: 100%; justify-content: end; padding-left: 20px; left: 0; }
+	.sp03 .detail-visual-area .swiper-slide img { width: inherit; height: inherit; }
+	.sp03 .company_detail { display: inherit; }
+	.sp03 .company_detail_left { width: 100%; margin-bottom: 50px; }
+	.sp03 .company_detail_left div { display: flex; }
+	.sp03 .company_detail_left div p { width: 32%; }
+	.sp03 .company_detail .sns_logo { margin-top: 0; }
+	.sp03 .company_detail .sns_logo > img { margin-right: 10px; }
+	.sp03 .company_detail_right { width: 100%; }
+	.sp03 .company_detail_right img.penta_logo { margin-left: 20px; }
+	.sp03 .company_detail_con { margin-right: 20px; }
+	.sp03 .company_detail_right .logo_box { margin-left: 20px; }
+
+	/** AC/VC 목록 **/
+	.sp03 .tit_txt p { padding: 20px 140px; line-height: 40px; }
+	.sp03 .tit_txt span { padding: 20px 140px; line-height: 40px; text-align: center; display: block; }
+
+	/** IR정보 목록 **/
+	.sp03 .ir_info .ir_info_wrap { justify-content: center; }
+	.sp03 .ir_info .ir_info_bg { width: 100%; }
+	.sp03 .ir_info h4 { text-align: center; padding-top: 20px; }
+	.sp03 .ir_info .ir_info_wrap .ir_info_con { width: 100%; margin-top: 40px; text-align: center; }
+	.sp03 .ir_info .ir_info_wrap .ir_info_con p { margin: 20px auto; }
+	.sp03 .ir_info .ir_info_wrap .ir_info_con span { justify-content: center; }
+	.sp03 .ir_info .ir_info_right { width: 100%; padding: 20px; }
+	.sp03 .ir_info .ir_right_wrap { width: 100%; }
+	.sp03 .ir_info .ir_right_wrap { text-align: center; }
+	.sp03 .con_bottom p { margin-bottom: 20px; }
+
+	/*IR 정보*/
+	.ir_detail.test .ir_img { position: static; margin: auto; margin-bottom: 40px; }
+	.sp03 .ir_detail.test .con_top, .sp03 .ir_detail.test .con_bottom { padding: 30px; }
+	.sp03 .g_wrapbox .g_wrapbox_img { max-width: 270px; }
+	.sp03 .irimg_con .irimg_wrap .irimg_wrap_img { margin: 0 auto 20px; }
+	.sp03 .g_wrap { padding: 30px; }
+
+	/*IR 정보 추가 2021-01-18*/
+	.sp03 .ir_box_flex > div { width: 80%; }
+	.sp03 .ir_box_bord dl { padding: 30px; }
+}
+@media all and (max-width:704px) {
+
+	/*IR 정보 추가 2021-01-18*/
+	.sp03 .ir_box_flex { margin-bottom: 40px; }
+	.sp03 .ir_box_flex > div { width: 100%; margin: 0; }
+	.sp03 .ir_box_wrap { width: 100%; padding: 15px 0; }
+	.sp03 .ir_box_flex h5 { font-size: 21px; }
+	.sp03 .ir_box_bord dl dt { font-size: 17px; margin-bottom: 15px; }
+	.sp03 .ir_box_bord dl dd { font-size: 14px; margin-bottom: 10px; }
+}
+
+/* 모바일 */
+@media all and (max-width:640px) {
+
+	/** 기업정보상세 **/
+	.sp03 .company_detail_tit { position: relative; display: inherit; margin-bottom: 30px; }
+	.sp03 .company_detail_tit h4 { padding-top: 100px; border-top: none; font-size: 24px; }
+	.sp03 .company_detail { display: inherit; }
+	.sp03 .company_detail_left { width: 100%; margin-bottom: 50px; }
+	.sp03 .company_detail_left div { display: flex; }
+	.sp03 .company_detail_left div p { width: 50%; }
+	.sp03 .company_detail .sns_logo { margin-top: 0; }
+	.sp03 .company_detail .sns_logo > img { margin-right: 10px; }
+	.sp03 .company_detail_right { display: inherit; width: 100%; position: relative; padding-top: 20px; }
+	.sp03 .company_detail_right .logo_box { margin-left: 0; margin: auto; }
+	.sp03 .company_detail_tit .tit_right { position: absolute; top: 0; right: 0; }
+	.sp03 .company_detail_tit .tit_right p { width: 113px; height: 40px; border: 3px solid #66ff00; line-height: 34px; font-size: 14px; }
+	.sp03 .company_detail_con { margin-left: 20px; padding: 20px 0; }
+	.sp03 .company_detail_con dl dd { font-size: 16px; }
+	.sp03 .line_txt { display: inherit; }
+	.sp03 .line_txt p { margin: 30px auto; }
+	.sp03 .detailroll { width: 100%; }
+	.sp03 .detail-visual-area { overflow: hidden !important; width: 100%; }
+	.sp03 .detailroll .detail-visual-arrow { right: 0; z-index: 3; }
+	.sp03 .detailroll .detail-visual-number { width: 100%; justify-content: end; padding-left: 20px; left: 0; }
+	.sp03 .company_intro { display: inherit; }
+	.sp03 .company_intro h5 { margin-bottom: 15px; font-size: 21px; width: 100%; }
+	.sp03 .company_intro_con { width: 100%; }
+	.sp03 .conpany_bottom { display: inherit; }
+	.sp03 .conpany_bottom h5 { margin-bottom: 15px; font-size: 21px; width: 100%; }
+	.sp03 .conpany_bottom div { width: 100%; }
+	.sp03 .ir_info_wrap .ir_info_img { width: 100%; }
+	.sp03 .ir_info_wrap .ir_info_img img { width: 100%; padding: 20px; margin: 0 auto; display: block; }
+	.sp03 .ir_info .ir_info_wrap .ir_info_con { padding: 0 20px; margin-top: 0; }
+	.sp03 .ir_info .ir_info_wrap .ir_info_con dl dd { margin-left: -10px; }
+	.sp03 .company_detail_con p { font-size: 15px; }
+	.sp03 .company_detail_con dl dt { width: 80px; }
+	.sp03 .tag ul li { white-space: nowrap; }
+
+	/** IR정보 상세 **/
+	.sp03 .ir_img { width: 200px; height: 200px; }
+	.sp03 .ir_img img { max-width: 150px; max-height: 150px; }
+	.sp03 .con_top { padding: 20px; }
+	.sp03 .con_top span { font-size: 14px; }
+	.sp03 .con_top .dl_flex { margin-bottom: 15px; }
+	.sp03 .con_top .dl_flex dl { margin-top: 15px; }
+	.sp03 .con_bottom { padding: 20px; }
+	.sp03 .con_top .dl_flex dl dd { font-size: 21px; }
+	.sp03 .con_top .dl_flex dl dd em { font-size: 21px; }
+	.sp03 .g_wrapbox { flex-wrap: wrap; padding: 20px; text-align: center; }
+	.sp03 .g_wrapbox img { float: none; margin-top: 15px; width: 100%; padding-left: 0; max-width: 100% !important; }
+	.sp03 .g_wrap ul { display: inherit; }
+	.sp03 .g_wrap ul li { display: table; margin: 20px auto; }
+	.sp03 .g_wrap { padding: 15px 0; width: 100%; }
+	.sp03 .g_wrap p { width: 100%; margin-top: 15px; margin-bottom: 10px; line-height: 20px; }
+	.sp03 .irimg_con { margin-top: 15px; padding: 0px 15px; }
+	.sp03 .irimg_con .irimg_wrap { display: inherit; padding: 20px 0; }
+	.sp03 .irimg_con .irimg_wrap img + .irimg_txt { margin-top: 15px; }
+	.sp03 .irimg_txt { margin-top: 0; margin-left: 0; width: 100%; }
+	.sp03 .irimg_txt p { margin-top: 15px; line-height: 24px; }
+	.sp03 .g_wrapbox .g_wrapbox_img { margin: 0 auto; }
+	.sp03 .company_detail_tit .tit_right a { padding: 8px; }
+	.sp03 .irimg_txt h5 { font-size: 17px; }
+	.sp03 .articles_box .articles_wrap { width: 100%; }
+	.sp03 .tag ul li { font-size: 14px; padding: 0 15px; height: 40px; line-height: 40px; }
+	.sp03 .tag ul { margin-top: 15px; }
+	.sp03 .irimg_txt ul li { padding-left: 0; border-left: none; margin-bottom: 5px; }
+	.sp03 .irimg_txt ul { display: block; }
+	.sp03 .g_wrap h4 { font-size: 17px; }
+	.sp03 .articles_box .articles_bord { padding: 20px; }
+	.sp03 .articles_box .articles_tit { margin-bottom: 20px; }
+	.sp03 .articles_box .articles_tit h5 { font-size: 18px; }
+	.sp03 .articles_box .articles_bord p { font-size: 18px; line-height: 130%; }
+	.sp03 .ir_detail { margin-bottom: 40px; }
+
+	/** AC/VC 목록 **/
+	.sp03 .tit_txt p { padding: 30px; }
+	.sp03 .tit_txt span { padding: 30px; }
+	.sp03 .con_bottom ul li { margin-bottom: 10px; }
+	.sp03 .con_bottom ul li a { word-break: break-all; }
+	.sp03 .company_intro_con { padding-top: 15px; max-width: 100%; }
+	.sp03 .company_intro_con p { font-size: 14px; line-height: 22px; }
+	.sp03 .conpany_bottom div { padding-top: 15px; margin-bottom: 25px; }
+	.sp03 .conpany_bottom div p { font-size: 14px; line-height: 22px; }
+}

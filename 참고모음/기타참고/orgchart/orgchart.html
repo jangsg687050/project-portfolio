@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/jquery.scrollbar.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<!-- JS -->
+	<script src="js/jquery.scrollbar.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.ellipsisTooltip.js"></script>
+	<style>
+		/*orgchart*/
+		.orgchart{ padding: 50px 10px; overflow: auto; display: flex; }
+		.orgchart ul{ padding-left: 0; text-align: center; display: flex; margin: 0; transition: transform 0.3s, opacity 0.3s; justify-content: center;}
+		.orgchart ul li{ display: inline-block; position: relative;}
+		.orgchart ul li .oc-node{box-sizing: border-box; display: inline-block; position: relative; padding: 0 10px;  margin-bottom: 60px; }
+		.orgchart ul li .oc-node:not(:only-child)::after{ content: ""; position: absolute; bottom: -30px; left: calc(50% - 1px); width: 1px; height: 29px; background-color: #ddd;}
+		.orgchart ul li .oc-node .oc-node-wrap{ border: 1px solid #ddd; padding: 20px 15px; width: 280px; height: auto;}
+		.orgchart ul li .oc-node .oc-node-wrap.invalid{ border: 2px solid #3963d3; background: #edf1fd; width: 279px; height: auto;}
+		.orgchart ul li .oc-node .oc-node-wrap.deprecated{ background: #ebebeb; }
+		.orgchart ul li .oc-node .oc-node-wrap.deprecated:hover{ border: 1px solid #ddd; background: #ebebeb; box-shadow: none; }
+		.orgchart ul li .oc-node .oc-node-wrap.deprecated .oc-content button{ background: #d1d1d1; color: #777;}
+		.orgchart ul li .oc-node .oc-heading{ box-sizing: border-box;  margin: 0; text-align: center; }
+		.orgchart ul li .oc-node .oc-heading .oc-heading-txt{ font-size: 18px; font-weight: bold; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #222;}
+		.orgchart ul li .oc-node .oc-heading .oc-icon{ border: 1px solid #ddd; overflow: hidden; border-radius: 50%; width: 40px; height: 40px; margin: 0 auto 15px; background: url(/cms/statics/images/common/ico_oc.png) no-repeat center center; }
+		.oci{ display: inline-block; position: relative;}
+		.orgchart > ul > li > ul li:first-child::before{ left: calc(50% - 1px); width: calc(50% + 1px);}
+		.orgchart > ul > li > ul li::before{ content: ""; position: absolute; top: -30px; left: 0; width: 100%; border-top: 1px solid #ddd; box-sizing: border-box; }
+		.orgchart > ul > li > ul li > .oc-node::before{ content: ""; position: absolute; top: -30px; left: calc(50% - 1px); width: 1px; height: 29px; background-color: #ddd;}
+		.orgchart ul li .oc-node .oc-content{ box-sizing: border-box; margin-top: 20px; font-size: 15px; text-align: center; color: #333; text-overflow: ellipsis; white-space: nowrap; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; }
+		.orgchart ul li .oc-node .oc-content button{ background: #fff;  border: 1px solid #ddd; padding: 5px 10px; }
+		.orgchart > ul > li > ul li:last-child::before{width: calc(50% + 1px);}
+		.orgchart::-webkit-scrollbar { height: 4px; width: 100%;}
+		.orgchart::-webkit-scrollbar-thumb { background-color: #7b8eff; opacity: 1;border-radius: 4px;}
+		.orgchart::-webkit-scrollbar-track { background-color: #e0e0e0;}
+	
+	</style>
+ </head>
+ <body>
+  
+	<div class="orgchart">
+		<ul>
+			<li class="oc-hierarchy">
+				<div class="oc-node">
+					<div class="oc-node-wrap">
+						<div class="oc-heading">
+							<div class="oc-icon"></div>
+							<p class="oc-heading-txt">cate_test1</p>
+						</div>
+						<div class="oc-content">
+							<button class="btn-profile">프로파일</button>
+							<button class="btn-add">추가</button>
+							<button class="btn-modify">수정</button>
+							<button class="btn-delete">삭제</button>
+						</div>
+					</div>
+				</div>
+				<ul>
+					<li class="oc-hierarchy">
+						<div class="oc-node">
+							<div class="oc-node-wrap deprecated">
+								<div class="oc-heading">
+									<div class="oc-icon"></div>
+									<p class="oc-heading-txt" >cate_test1cate_test1cate_test1cate_test1cate_test1cate_test1cate_test1cate_test1cate_test1cate_test1cate_test1</p>
+								
+								</div>
+								<div class="oc-content">
+									<button class="btn-profile" disabled>프로파일</button>
+									<button class="btn-add" disabled>추가</button>
+									<button class="btn-modify" disabled>수정</button>
+									<button class="btn-delete" disabled>삭제</button>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="oc-hierarchy">
+						<div class="oc-node">
+							<div class="oc-node-wrap invalid">
+								<div class="oc-heading">
+								<div class="oc-icon"></div>
+								<p class="oc-heading-txt">cate_test1</p>
+							</div>
+							<div class="oc-content">
+								<button class="btn-profile">프로파일</button>
+								<button class="btn-add">추가</button>
+								<button class="btn-modify">수정</button>
+								<button class="btn-delete">삭제</button>
+							</div>
+							</div>
+						</div>
+					</li>
+					<li class="oc-hierarchy">
+						<div class="oc-node">
+							<div class="oc-node-wrap">
+								<div class="oc-heading">
+								<div class="oc-icon"></div>
+								<p class="oc-heading-txt">cate_test1</p>
+							</div>
+							<div class="oc-content">
+								<button class="btn-profile">프로파일</button>
+								<button class="btn-add">추가</button>
+								<button class="btn-modify">수정</button>
+								<button class="btn-delete">삭제</button>
+							</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="oc-hierarchy">
+						<div class="oc-node">
+							<div class="oc-node-wrap">
+								<div class="oc-heading">
+									<div class="oc-icon"></div>
+									<p class="oc-heading-txt">cate_test1</p>
+								</div>
+								<div class="oc-content">
+									<button class="btn-profile">프로파일</button>
+									<button class="btn-add">추가</button>
+									<button class="btn-modify">수정</button>
+									<button class="btn-delete">삭제</button>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="oc-hierarchy">
+						<div class="oc-node">
+							<div class="oc-node-wrap">
+								<div class="oc-heading">
+									<div class="oc-icon"></div>
+									<p class="oc-heading-txt">cate_test1</p>
+								</div>
+								<div class="oc-content">
+									<button class="btn-profile">프로파일</button>
+									<button class="btn-add">추가</button>
+									<button class="btn-modify">수정</button>
+									<button class="btn-delete">삭제</button>
+								</div>
+							</div>
+						</div>
+						<ul>
+							<li class="oc-hierarchy">
+								<div class="oc-node">
+									<div class="oc-node-wrap">
+										<div class="oc-heading">
+											<div class="oc-icon"></div>
+											<p class="oc-heading-txt"
+											>cate_test1cate_test1cate_test1cate_test1cate_test1cate_test1cate_test1cate_test1cate_test1</p>
+										</div>
+										<div class="oc-content">
+											<button class="btn-profile">프로파일</button>
+											<button class="btn-add">추가</button>
+											<button class="btn-modify">수정</button>
+											<button class="btn-delete">삭제</button>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="oc-hierarchy">
+								<div class="oc-node">
+									<div class="oc-node-wrap">
+										<div class="oc-heading">
+											<div class="oc-icon"></div>
+											<p class="oc-heading-txt">cate_test1</p>
+										</div>
+										<div class="oc-content">
+											<button class="btn-profile">프로파일</button>
+											<button class="btn-add">추가</button>
+											<button class="btn-modify">수정</button>
+											<button class="btn-delete">삭제</button>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+	
+ </body>
+</html>

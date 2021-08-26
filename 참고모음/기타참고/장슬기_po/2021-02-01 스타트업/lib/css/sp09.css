@@ -1,0 +1,205 @@
+.sp09 .oper_organization { position: relative; display: flex; width: 100%; text-align: center; flex-wrap: wrap; justify-content: center; margin-top: 50px; }
+.sp09 .op_left { position: relative; width: 30%; }
+.sp09 .op_left:before { position: absolute; z-index: -2; top: 50px; right: -80px; display: block; width: 150px; height: 1px; content: ''; background: #ddd; }
+.sp09 .op_left:after { position: absolute; z-index: -2; top: 0; left: 50%; display: block; width: 1px; height: 151px; content: ''; background: #ddd; }
+.sp09 .op_left ul { line-height: 100px; z-index: 1; min-height: 100px; margin-bottom: 40px; text-align: center; border: 1px solid #ddd; background: #fff; }
+.sp09 .op_right { position: relative; width: 33.3%; text-align: center; }
+.sp09 .op_right:after { position: absolute; z-index: -2; top: 0; left: 50%; display: block; width: 1px; height: 310px; content: ''; background: #ddd; }
+.sp09 .op_right ul { line-height: 100px; position: relative; z-index: 1; width: 260px; min-height: 100px; margin: auto; margin-bottom: 40px; text-align: center; border: 1px solid #ddd; background: #fff; }
+.sp09 .op_right ul.on { width: 260px; height: 90px; margin: auto; margin-bottom: 40px; background: #5c5f68; }
+.sp09 .op_right ul.on li { font-size: 21px; font-weight: 500; color: #fff; }
+.sp09 .op_right_r { position: absolute; top: 140px; right: 20px; width: 28.3%; }
+.sp09 .op_right_r dt { height: 119px; padding-top: 22px; padding-left: 25px; text-align: left; border-bottom: 5px solid #6f0; background: #333; }
+.sp09 .op_right_r dt h4 { margin-bottom: 25px; color: #fff; }
+.sp09 .op_right_r dt h4 span { font-size: 17px; font-weight: 200; display: inline-block; margin-top: 6px; margin-right: 25px; padding-bottom: 5px; vertical-align: top; border-bottom: 1px solid #fff; }
+.sp09 .op_right_r dt h4 div { font-size: 32px; font-weight: 500; display: inline-block; color: #6f0; }
+.sp09 .op_right_r dt p { font-size: 18px; font-weight: 300; display: flex; color: #fff; }
+.sp09 .op_right_r dt p em { display: inline-block; width: 22px; height: 22px; margin-right: 10px; vertical-align: middle; background: url(../../images/common/call.png); }
+.sp09 .op_right_r dd { position: relative; padding: 23px; background: #f3f3f3; }
+.sp09 .op_right_r dd .tri { position: absolute; top: 60px; left: -35px; width: 36px; height: 42px; background: url(../../images/sub/sp09/tri.png); }
+.sp09 .op_right_r dd .op_wrapbox.ul1 { text-align: left; }
+.sp09 .op_bottom_left { position: relative; float: left; width: 50%; margin-left: -20px; }
+.sp09 .op_bottom_left .op_bottom_tit { width: 273px; height: 90px; margin: 25px auto; margin-bottom: 0; text-align: center; border: 1px solid #000; background: #fff; }
+.sp09 .op_bottom_left .op_bottom_tit li { font-size: 21px; line-height: 90px; }
+.sp09 .op_bottom_left dt.b_line { border-bottom: 5px solid #cc83ff; }
+.sp09 .op_bottom_left dt { position: relative; z-index: 1; min-height: 144px; padding: 35px 30px 24px; text-align: left; background: #333; }
+.sp09 .op_bottom_left dt h4 { font-size: 32px; font-weight: 500; margin-bottom: 25px; color: #cc83ff; }
+.sp09 .op_bottom_left dt h4 > em { padding-top: 31px; padding-right: 10px; padding-bottom: 3px; padding-left: 10px; color: #000; border-bottom: 1px solid #000; background: #cc83ff; }
+.sp09 .op_bottom_left dt h4 em span { font-size: 17px; font-weight: 200; display: inline-block; margin-top: 6px; padding-bottom: 5px; vertical-align: top; color: #000; border-bottom: 1px solid #000; }
+.sp09 .op_bottom_left dt h4 span { font-size: 17px; font-weight: 200; display: inline-block; margin-top: 6px; padding-bottom: 5px; vertical-align: top; color: #fff; border-bottom: 1px solid #fff; }
+.sp09 .op_bottom_left dt h4 > div { font-size: 32px; font-weight: 500; display: inline-block; margin-left: 15px; color: #cc83ff; }
+.sp09 .op_bottom_left dl:first-child:before { position: absolute; z-index: 1; top: 10px; left: 36px; display: block; width: 40px; height: 75px; content: ''; background: #cc83ff; }
+.sp09 .op_bottom_left dt p { font-size: 18px; font-weight: 300; display: flex; color: #fff; }
+.sp09 .op_bottom_left dt p em { display: inline-block; width: 22px; height: 22px; margin-right: 10px; vertical-align: middle; background: url(../../images/common/call.png); }
+.sp09 .op_bottom_left dd { position: relative; padding: 30px; background: #f3f3f3; }
+.sp09 .op_bottom_left dd .op_wrapbox.ul1 { text-align: left; }
+.sp09 .op_bottom_left:before { position: absolute; content: ""; background: #000; width: 1px; height: 81.7%; display: block; top: 114px; left: 50%; }
+.sp09 .organ_middle { position: absolute; z-index: -5; top: 0; left: 282px; }
+.sp09 .t_operation { display: flex; width: 100%; background: url(../../images/sub/sp09/line2.png) no-repeat center top; padding: 20px; overflow: hidden; }
+.sp09 .t_operation.op_box_r { width: 100%; background: url(../../images/sub/sp09/line3.png) no-repeat center top; overflow: hidden; }
+.sp09 .organ_left { position: relative; display: flex; margin: -20px; margin-top: 5px; flex-wrap: wrap; }
+.sp09 .organ_left dl { position: relative; width: 50%; padding: 10px 20px; }
+.sp09 .organ_left dl:nth-of-type(even) { margin-top: 30px; }
+.sp09 .organ_left dl:nth-of-type(odd):after { position: absolute; z-index: -1; top: 45px; right: 0; display: block; width: 40px; height: 1px; content: ''; background: #000; }
+.sp09 .organ_left dl:nth-of-type(even):after { position: absolute; z-index: -1; top: 45px; left: 0; display: block; width: 40px; height: 1px; content: ''; background: #000; }
+.sp09 .bottom_wrap { position: relative; display: flex; margin-top: -20px; flex-wrap: wrap; justify-content: center; }
+.sp09 .bottom_wrap:before { position: absolute; z-index: -1; top: -20PX; bottom: -60px; left: 50%; width: 312px; height: 99px; content: ''; transform: translateX(-50%); background: url(../../images/sub/sp09/line1.png) no-repeat center; }
+.sp09 .op_bottom_right .op_bottom_tit { width: 273px; height: 90px; margin: 25px auto; margin-bottom: 0; text-align: center; border: 1px solid #000; background: #fff; }
+.sp09 .op_bottom_right .op_bottom_tit li { font-size: 21px; line-height: 90px; color: #000; }
+.sp09 .op_bottom_right dt.b_line { border-bottom: 5px solid #1fbef9; }
+.sp09 .op_bottom_right dt { z-index: 1; min-height: 144px; padding: 35px 30px 24px; text-align: left; background: #333; }
+.sp09 .op_bottom_right dt h4 { margin-bottom: 25px; color: #fff; }
+.sp09 .op_bottom_right dt h4 em span { font-size: 17px; font-weight: 200; display: inline-block; margin-top: 6px; padding-bottom: 5px; vertical-align: top; color: #000; border-bottom: 1px solid #000; }
+.sp09 .op_bottom_right dt h4 span { font-size: 17px; font-weight: 200; display: inline-block; margin-top: 6px; padding-bottom: 5px; vertical-align: top; border-bottom: 1px solid #fff; }
+.sp09 .op_bottom_right dt h4 > em { padding-top: 49px; padding-right: 10px; padding-bottom: 6px; padding-left: 10px; color: #000; border-bottom: 1px solid #000; background: #1fbef9; }
+.sp09 .op_bottom_right dt h4 > div { font-size: 32px; font-weight: 500; display: inline-block; margin-left: 15px; color: #1fbef9; }
+.sp09 .op_bottom_right dt p { font-size: 18px; font-weight: 300; display: flex; color: #fff; }
+.sp09 .op_bottom_right dt p em { display: inline-block; width: 22px; height: 22px; margin-right: 10px; vertical-align: middle; background: url(../../images/common/call.png); }
+.sp09 .op_bottom_right dd { position: relative; padding: 30px; background: #f3f3f3; }
+.sp09 .op_bottom_right dd .op_wrapbox.ul1 { line-height: 20px; text-align: left; }
+.sp09 .organ_middle.or_r { position: absolute; z-index: -5; top: 0; left: 282px; }
+.sp09 .op_bottom_right { position: relative; float: left; width: 50%; margin-right: -20px; }
+.sp09 .op_bottom_right dl { position: relative; display: flex; flex-direction: column; width: 50%; padding: 10px 20px; }
+.sp09 .op_bottom_right dl:nth-of-type(even):after { position: absolute; z-index: -1; top: 45px; left: 0; display: block; width: 40px; height: 1px; content: ''; background: #000; }
+.sp09 .op_bottom_right dl:nth-of-type(odd):after { position: absolute; z-index: -1; top: 45px; right: 0; display: block; width: 40px; height: 1px; content: ''; background: #000; }
+
+/* 조직도 */
+.orgChart { font-size: 0; width: 100%; text-align: center; letter-spacing: -.025em; }
+.orgChart .orgChart-list.item2 > li { width: 50%; }
+.orgChart .orgChart-list-sub2 { position: relative; }
+.orgChart .orgChart-list-sub2:before { position: absolute; z-index: 1; top: 0; right: 25%; left: 25%; display: block; height: 1px; content: ''; background-color: #ddd; }
+.orgChart .orgChart-list-sub2 > li { display: inline-block; vertical-align: top; }
+.orgChart .orgChart-list-sub2 > li:nth-child(1) { width: 50%; }
+.orgChart .orgChart-list-sub2 > li:nth-child(2) { width: 50%; }
+.orgChart .orgChart-list-sub3 { position: relative; }
+.orgChart .orgChart-list-sub3:before { position: absolute; z-index: 1; top: 0; right: 25%; left: 25%; display: block; height: 1px; content: ''; background-color: #ddd; }
+.orgChart .orgChart-list-sub3:after { position: absolute; z-index: -2; top: 0; right: 0; bottom: 0; left: 0; display: block; content: ''; background-color: #fff; }
+.orgChart .orgChart-list-sub3 > li { position: relative; display: inline-block; padding: 0 5px; vertical-align: top; }
+.orgChart .orgChart-list-sub3 > li:before { position: absolute; z-index: -1; top: 0; bottom: 10px; left: 50%; display: block; width: 1px; content: ''; background-color: #ddd; }
+.orgChart .orgChart-list-sub3-1 { margin-top: 83px; }
+.orgChart .orgChart-list-sub3-1 > li { width: 50%; }
+.orgChart .orgChart-list-sub3-2 { margin-left: 1px; }
+.orgChart .orgChart-list-sub3-2 > li { width: 33.33333%; }
+.orgChart .orgChart-list-sub3-2:before { right: 16.67%; left: 16.67%; }
+.orgChart .orgChart-item { position: relative; }
+.orgChart .orgChart-item:before { position: absolute; z-index: -2; top: 0; bottom: 0; left: 50%; display: block; width: 1px; content: ''; background-color: #ddd; }
+.orgChart .box_type { line-height: 1.2; display: inline-flex; align-items: center; justify-content: center; }
+.orgChart .box_type br { display: none; }
+.orgChart .box_type1 { min-width: 300px; min-height: 100px; margin: 30px auto 10px auto; padding: 20px; text-align: center; border: 3px solid #6f0; border-radius: 100px; background-color: #fff; }
+.orgChart .box_type2 { min-width: 200px; margin: 10px auto; padding: 20px; text-align: center; border: 1px solid #ddd; background-color: #fff; }
+.orgChart .box_type3 { font-size: 18px; min-width: 200px; margin: 10px auto 20px auto; padding: 25px 20px; text-align: center; vertical-align: top; color: #fff; background-color: #37465e; }
+.orgChart .box_type4 { font-size: 18px; min-width: 200px; margin: 10px auto 20px auto; padding: 25px 20px; text-align: center; vertical-align: top; color: #fff; background-color: #5c5e68; }
+.orgChart .box_type5 { font-size: 17px; min-width: 160px; margin: 30px auto 10px auto; padding: 20px; text-align: center; vertical-align: top; color: #444; border: 1px solid #ddd; background-color: #f3f3f3; }
+.orgChart .position1 { position: absolute; left: 412px; }
+.orgChart .position1-prev { position: relative; }
+.orgChart .position1-prev:after { content: ""; display: block; right: -40px; left: 0; height: 1px; background-color: #ddd; position: absolute; z-index: -1; }
+#log{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100px;
+	height:50px;
+	background-color:rgba(0,0,0,0.7);
+	color:white;
+	text-align:center;
+	line-height:50px;
+}
+
+
+
+@media all and (max-width:1700px) {
+
+	/* 조직도 */
+	.orgChart .orgChart-list-sub3-1 { margin-top: 79px; }
+	.orgChart .position1 { left: 71%; }
+	.orgChart .box_type2 img, .orgChart .box_type3 img, .orgChart .box_type4 img, .orgChart .box_type5 img { height: 18px; }
+}
+@media all and (max-width:1570px) {
+
+	/* 조직도 */
+	.orgChart .orgChart-list-sub3-1 { margin-top: 69px; }
+	.orgChart .box_type1 { min-width: 280px; min-height: 90px; padding: 15px; }
+	.orgChart .box_type2 { min-width: 180px; padding: 15px; }
+	.orgChart .box_type3 { font-size: 16px; min-width: 180px; padding: 20px 15px; }
+	.orgChart .box_type4 { font-size: 16px; min-width: 180px; padding: 20px 15px; }
+	.orgChart .box_type5 { font-size: 15px; min-width: 140px; padding: 15px; }
+}
+@media all and (max-width:1400px) {
+
+	/* 조직도 */
+	.orgChart .orgChart-list-sub3-1 { margin-top: 59px; }
+	.orgChart .box_type br { display: block; }
+	.orgChart .box_type1 { min-width: 260px; min-height: 70px; padding: 10px; }
+	.orgChart .box_type2 { min-width: 160px; padding: 10px; }
+	.orgChart .box_type3 { font-size: 15px; min-width: 160px; padding: 10px; }
+	.orgChart .box_type4 { font-size: 15px; min-width: 160px; padding: 10px; }
+	.orgChart .box_type5 { font-size: 14px; min-width: 120px; padding: 10px; }
+}
+@media all and (max-width:1200px) {
+
+	/* 조직도 */
+	.orgChart .orgChart-list-sub3-1 { margin-top: 57px; }
+	.orgChart .box_type1 { min-width: 220px; min-height: 50px; padding: 10px; }
+	.orgChart .box_type1 img { height: 30px; }
+	.orgChart .box_type2 { min-width: 120px; padding: 10px 5px; }
+	.orgChart .box_type3 { font-size: 15px; min-width: 120px; padding: 10px 5px; }
+	.orgChart .box_type4 { font-size: 15px; min-width: 120px; padding: 10px 5px; }
+	.orgChart .box_type5 { font-size: 14px; min-width: auto; width: 100%; padding: 10px 5px; }
+	.orgChart .box_type2 img, .orgChart .box_type3 img, .orgChart .box_type4 img, .orgChart .box_type5 img { height: 15px; }
+
+	/* 조직도 */
+	.orgChart { padding-right: 0; }
+	.orgChart .box_type3 { font-size: 14px; }
+	.orgChart .box_type4 { font-size: 14px; }
+	.orgChart .box_type5 { font-size: 13px; }
+	.orgChart .position1 { left: auto; right: 0; }
+	.sp09 .op_left { width: 50%; padding: 0 10px; }
+	.sp09 .op_right { width: 100%; margin-left: 0; padding: 0 10px; }
+	.sp09 .op_right_r { width: 100%; margin-top: 0; margin-right: 0; margin-bottom: 40px; margin-left: 0; padding-left: 0; }
+	.sp09 .op_right_r dd .tri { background: none; }
+	.sp09 .bottom_wrap:before { display: none; }
+	.sp09 .op_bottom_left { width: 100%; margin-left: 0; }
+	.sp09 .op_bottom_right { width: 100%; margin-right: 0; margin-left: 0; }
+	.sp09 .t_operation { padding: 20px 0; }
+	.sp09 .op_bottom_left .op_bottom_tit { width: 100%; }
+	.sp09 .op_bottom_right .op_bottom_tit { width: 100%; }
+	.sp09 .op_right_r { position: inherit; right: 0; top: 0; }
+}
+@media all and (max-width:768px) {
+
+	/* 조직도 */
+	.orgChart .orgChart-list-sub2 > li { padding: 0 5px; }
+	.orgChart .orgChart-list-sub3 { margin: 0 -2.5px; }
+	.orgChart .orgChart-list-sub3 > li { padding: 0 2.5px; }
+	.orgChart .orgChart-list-sub3-1 { margin-top: 42px; }
+	.orgChart .box_type1 { min-width: auto; width: 100%; margin: 20px auto 5px auto; }
+	.orgChart .box_type2 { min-width: auto; width: 100%; margin: 5px auto; }
+	.orgChart .box_type3 { min-width: auto; width: 100%; margin: 5px auto 15px auto; }
+	.orgChart .box_type4 { min-width: auto; width: 100%; margin: 5px auto 15px auto; }
+	.orgChart .box_type5 { min-width: auto; width: 100%; font-size: 12px; word-break: keep-all; }
+	.orgChart .box_type2 img, .orgChart .box_type3 img, .orgChart .box_type4 img, .orgChart .box_type5 img { height: 10px; }
+	.orgChart .position1-prev { width: calc(70% - 10px); margin-right: calc(30% + 10px); }
+	.orgChart .position1 { width: 30%; }
+}
+@media all and (max-width:640px) {
+
+	/* 조직도 */
+	.orgChart .position1-prev { width: calc(60% - 10px); margin-right: calc(40% + 10px); }
+	.orgChart .position1 { width: 40%; }
+	.sp09 .op_bottom_left:before { display: none; }
+	.sp09 .t_operation { background: none; }
+	.sp09 .organ_left dl { width: 100%; }
+	.sp09 .t_operation.op_box_r { background: none; }
+	.sp09 .op_left ul { min-height: 100px; }
+	.sp09 .oper_organization .op_left ul li img { width: 100%; padding: 10px; }
+	.sp09 .oper_organization .op_right ul li img { padding: 10px; }
+	.sp09 .oper_organization .op_right ul.business li img { width: auto; }
+	.sp09 .organ_left dl:nth-of-type(even) { margin-top: 0; }
+	.sp09 .organ_left dl:nth-of-type(even):after { display: none; }
+	.sp09 .organ_left dl:nth-of-type(odd):after { display: none; }
+	.sp09 .op_right_r dt h4 { margin-bottom: 15px; }
+	.sp09 .op_right_r dt { padding: 20px; }
+	.sp09 .op_right_r dt h4 div { font-size: 29px; }
+	.sp09 .op_bottom_left dt h4 > div { font-size: 29px; }
+	.sp09 .op_bottom_right dt h4 > div { font-size: 29px; }
+}

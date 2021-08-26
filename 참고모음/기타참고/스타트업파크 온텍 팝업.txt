@@ -1,0 +1,29 @@
+<script>
+	function layer_pop_control(v) {
+		console.log(v);
+		$('.layer_pop_wrap').toggle();
+	}
+</script>
+
+
+<div class="layer_pop_wrap">
+	<div class="layer_pop_contain">
+		<div class="layer_pop_header">
+			<h3 class="title">썸네일 이미지</h3>
+			<a class="close" href="javascript:;" onclick="layer_pop_control(this);"></a>
+		</div>
+		<div class="layer_pop_content">
+			<p class="info"><em class="txt_bd">전시관 목록</em>에 노출되는 썸네일 이미지입니다. <em class="txt_color01">(권장사이즈 370*177px)</em></p>
+			<div class="img_box">
+				<img src="/user/images/common/layer_dumy.png" alt="" />
+			</div>
+		</div>
+		<div class="layer_pop_footer">
+		
+		</div>
+	</div>
+</div>
+
+helper-popup-wrap
+
+<a href="javascript:;" class="helper-popup" onclick="layer_pop_control(this);"></a>/

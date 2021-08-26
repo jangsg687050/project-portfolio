@@ -1,0 +1,48 @@
+/* 유관기관 리스트 */
+.sp08 .partner { display: flex; text-align: center; flex-wrap: wrap; }
+.sp08 .partner .partner_brand { display: flex; flex-direction: column; width: 25%; padding: 10px 0; position: relative; }
+.sp08 .partner .partner_brand:hover:before { width: 100%; height: 100%; position: absolute; top: 0; left: 0; border: 2px solid #6f0; content: ""; z-index: -1; }
+.sp08 .partner .partner_brand div { width: 100%; display: table; height: 150px; }
+.sp08 .partner .partner_brand div a { width: 100%; display: table-cell; }
+.sp08 .partner .partner_brand div a img { max-width: 97%; }
+
+/* 유관기관 상세 */
+.sp08 .pt_con { position: relative; line-height: 1.3; }
+.sp08 .pt_con .home_page { position: absolute; right: 0; top: 0; z-index: 1; }
+.sp08 .pt_con .pt_img_wrap { position: relative; }
+.sp08 .pt_con .pt_img { position: absolute; left: 4.27%; top: 0; width: 27.35%; border: 1px solid #ddd; z-index: 1; background-color: #fff; }
+.sp08 .pt_con .pt_img:before { content: ""; display: block; padding-top: 93.75%; }
+.sp08 .pt_con .pt_img .pt_img_thumb { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
+.sp08 .pt_con .pt_img .pt_img_thumb img { vertical-align: middle; max-width: 75%; position: relative; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+.sp08 .pt_con .con_right { position: relative; }
+.sp08 .pt_con .con_right .con_tit { padding: 4.27% 5.98% 3.42% 35.47%; }
+.sp08 .pt_con .con_right .con_tit h4 { font-weight: 500; font-size: 36px; color: #222; }
+.sp08 .pt_con .con_right .pt_txt { background-color: #f6f6f6; padding: 5% 7.69% 7% 35.47%; }
+.sp08 .pt_con .con_right .pt_txt > li { font-size: 18px; color: #222; }
+@media all and (max-width:1499px) {
+
+	/* 유관기관 상세 */
+	.sp08 .pt_con .con_right .con_tit h4 { font-size: calc(18px + (36 - 18) * ((100vw - 360px) / 1139)); }
+	.sp08 .pt_con .con_right .pt_txt > li { font-size: calc(14px + (18 - 14) * ((100vw - 360px) / 1139)); }
+}
+
+/* 태블릿 */
+@media all and (max-width:1200px) {
+
+	/* 유관기관 리스트 */
+	.sp08 .partner .partner_brand { width: 33.3%; }
+}
+
+/* 모바일 */
+@media all and (max-width:640px) {
+
+	/* 유관기관 리스트 */
+	.sp08 .partner .partner_brand { width: 50%; }
+	.sp08 .partner .partner_brand div { height: 100px; }
+
+	/* 유관기관 상세 */
+	.sp08 .pt_con .home_page img { width: 40px; height: auto; }
+	.sp08 .pt_con .pt_img .pt_img_thumb img { max-width: 90%; }
+	.sp08 .pt_con .con_right { padding-top: 7%; }
+	.sp08 .pt_con .con_right .pt_txt { padding: 8% 7.69% 6% 7.69%; }
+}

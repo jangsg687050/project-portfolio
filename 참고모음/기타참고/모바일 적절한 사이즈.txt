@@ -1,0 +1,5 @@
+타이틀 21PX
+서브 타이틀 17PX
+본문 14PX
+
+모바일 padding-margin: 10~15px

@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>스타트업파크</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="lib/css/common.css">
+	<link rel="stylesheet" href="lib/css/style.css">
+	<link rel="stylesheet" href="lib/css/sp02.css">
+	<link rel="stylesheet" href="lib/css/responsive.css">
+
+	<!-- JS -->
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/jquery/jquery-ui.min.js"></script>
+	<script src="lib/js/script.js"></script>
+</head>
+<body>
+	<div class="wrap subwrap sp02">
+	    <div class="subcontent">
+	        <header class="top_head">
+	            <h1><a href="javascript:;"><img src="images/sub/logo.png" alt="START UP PARK INCHEON" /></a></h1>
+	            <button class="btn_gnb"><span class="blind">메뉴버튼</span></button>
+	            <ul class="btn_util">
+	                <li><a href="javascript:;"><img src="images/sub/btn_logout.png" alt="로그아웃" /></a></li>
+	                <li><a href="javascript:;"><img src="images/sub/btn_global.png" alt="language change" /></a></li>
+	            </ul>
+	        </header>
+	        <section class="sub_con">
+                <h2>START UP PARK</h2>
+	            <nav class="lnb">
+	                <div class="line"></div>
+	                <ul>
+                        <li><a href="javascript:;">공간</a></li>
+                        <li><a href="javascript:;">인프라/플랫폼</a></li>
+                        <li><a href="javascript:;">데이터</a></li>
+                        <li><a href="javascript:;">전문가</a></li>
+                        <li><a href="javascript:;">실증신청</a></li>
+	                </ul>
+	            </nav>
+	            <div class="content">
+	                <h3>멘토링</h3>
+	                <div class="tab2">
+	                	<ul>
+	                		<li><a href="javascript:;" onclick="tab_active(this);">소개</a></li>
+	                		<li class="active"><a href="javascript:;" onclick="tab_active(this);">멘토검색</a></li>
+	                		<li><a href="javascript:;" onclick="tab_active(this);">멘토링참가신청</a></li>
+	                		<li><a href="javascript:;" onclick="tab_active(this);">멘토신청</a></li>
+	                	</ul>
+	                </div>
+		            <div class="mentor-box">
+		            	<img src="images/sub/ic_mentor_box01.png"/>
+		            	<p class="mentor-txt">
+		            		사업의 첫 발을 내딛는 스타트업에게 길잡이가 되어줄<br/>
+							<b>좋은 멘토를 연결해드립니다.</b>
+		            	</p>
+		            	<a href="javascript:;">자세히 알아보기</a>
+		            </div>
+		            
+		            <div class="search_wrap st2 mb30">
+                        <div class="selectinput_wrap st0">
+                        	<input type="text" placeholder="검색어를 입력하세요">
+                        </div>
+                    </div>
+                    
+                    <div class="tab3">
+						<ul class="list-menu">
+							<li class="active" onclick="list_select_box_active(this);">산업기술분야
+							<li onclick="list_select_box_active(this);">4차산업혁명분야
+							<li onclick="list_select_box_active(this);">창업경영분야
+						</ul>
+						
+						<div class="list-box-01">
+							<ul class="list-box-ul-01">
+								<li><a href="javascript:;">광학<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">금속<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">기계·로봇<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">도시<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">광학<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">금속<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">기계·로봇<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">도시<span class="list-box-cnt">(1,655)</span></a></li>
+							</ul>
+						</div>
+						
+						<!-- 창업경영분야 리스트 폼 -->
+						<!-- <div class="list-box-02">
+							<ul class="list-box-ul-01">
+								<li class="active"><a href="javascript:;">광학<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">금속<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">기계·로봇<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">도시<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">광학<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">금속<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">기계·로봇<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">도시<span class="list-box-cnt">(1,655)</span></a></li>
+							</ul>
+							<ul class="list-box-ul-02">
+								<li><a href="javascript:;">광학<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">금속<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">기계·로봇<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">도시<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">광학<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">금속<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">기계·로봇<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">도시<span class="list-box-cnt">(1,655)</span></a></li>
+							</ul>
+						</div> -->
+						
+						<div class="mentor-box02">
+							<div class="choice-box">
+								<ul>
+									<li><a>정보/통신</a></li>
+									<li><a>화공/섬유</a></li>
+									<li><a>인공지능</a></li>
+								</ul>
+							</div>
+							
+
+							<button class="btn_search single">검색</button>
+						</div>
+	           		 </div>
+	           		 <div class="menotr_card_list">
+	           		 	<p class="find-mentor"><span class="cnt">10</span> 명의 멘토를 찾았습니다.</p>
+                    	<ul class="mentor_card_ul_01">
+                    		<!-- comment :
+                    		정렬기준을 우수멘토, new멘토, 일반으로 출력해 주세요. -->
+                    		<li onclick="modalControl('1');">
+                    			<div class="item-box">
+                    				<div class="img-box">
+                    					
+	                    				<figure class="thumb">
+	                    					<div class="division-box excellent">
+		                    					우수<br/>멘토
+		                    				</div>
+											<div class="thumb_img" style="background-image: url(images/sub/sp02/img_mentor_01.png);"></div>
+										</figure>
+                    				</div>
+                    				<div class="content-box">
+                    					<p class="txt">경영은 전문가에게 맡기세용.</p>
+                    					<p class="name">강선</p>
+                    				</div>
+                    				<div class="bottom-box">
+                    					<dl>
+                    						<dt>To. 멘티</dt>
+                    						<dd>나만 잘 따라왕</dd>
+                    					</dl>
+                    				</div>
+                    			</div>
+                    		</li>
+                    		
+                    		<li>
+                    			<div class="item-box">
+                    				<div class="img-box">
+	                    				<figure class="thumb">
+	                    					<div class="division-box new">
+		                    					<p>NEW<br/><span>멘토</span></p>
+		                    				</div>
+											<div class="thumb_img" style="background-image: url(images/sub/sp02/img_mentor_02.png);"></div>
+										</figure>
+                    				</div>
+                    				<div class="content-box">
+                    					<p class="txt">경영은 전문가에게 맡기세용.</p>
+                    					<p class="name">강선</p>
+                    				</div>
+                    				<div class="bottom-box">
+                    					<dl>
+                    						<dt>To. 멘티</dt>
+                    						<dd>나만 잘 따라왕</dd>
+                    					</dl>
+                    				</div>
+                    			</div>
+                    		</li>
+                    		
+                    		<li>
+                    			<div class="item-box">
+                    				<div class="img-box">
+	                    				<figure class="thumb">
+	                    					<div class="division-box new">
+		                    					<p>NEW<br/><span>멘토</span></p>
+		                    				</div>
+											<div class="thumb_img" style="background-image: url(images/sub/sp02/img_mentor_03.png);"></div>
+										</figure>
+                    				</div>
+                    				<div class="content-box">
+                    					<p class="txt">경영은 전문가에게 맡기세용.</p>
+                    					<p class="name">강선</p>
+                    				</div>
+                    				<div class="bottom-box">
+                    					<dl>
+                    						<dt>To. 멘티</dt>
+                    						<dd>나만 잘 따라왕</dd>
+                    					</dl>
+                    				</div>
+                    			</div>
+                    		</li>
+                    		
+                    		<li>
+                    			<div class="item-box">
+                    				<div class="img-box">
+	                    				<figure class="thumb">
+	                    					<div class="division-box new">
+		                    					<p>NEW<br/><span>멘토</span></p>
+		                    				</div>
+											<div class="thumb_img" style="background-image: url(images/sub/sp02/img_mentor_02.png);"></div>
+										</figure>
+                    				</div>
+                    				<div class="content-box">
+                    					<p class="txt">경영은 전문가에게 맡기세용.</p>
+                    					<p class="name">강선</p>
+                    				</div>
+                    				<div class="bottom-box">
+                    					<dl>
+                    						<dt>To. 멘티</dt>
+                    						<dd>나만 잘 따라왕</dd>
+                    					</dl>
+                    				</div>
+                    			</div>
+                    		</li>
+                    		
+                    		<li>
+                    			<div class="item-box">
+                    				<div class="img-box">
+	                    				<figure class="thumb">
+	                    					<div class="division-box new">
+			                    				<p>NEW<br/><span>멘토</span></p>
+			                    			</div>
+											<div class="thumb_img" style="background-image: url(images/sub/sp02/img_mentor_03.png);"></div>
+										</figure>
+                    				</div>
+                    				<div class="content-box">
+                    					<p class="txt">경영은 전문가에게 맡기세용.</p>
+                    					<p class="name">강선</p>
+                    				</div>
+                    				<div class="bottom-box">
+                    					<dl>
+                    						<dt>To. 멘티</dt>
+                    						<dd>나만 잘 따라왕</dd>
+                    					</dl>
+                    				</div>
+                    			</div>
+                    		</li>
+                    		
+                    		<li>
+                    			<div class="item-box">
+                    				<div class="img-box">
+	                    				<figure class="thumb">
+	                    					<div class="division-box new">
+		                    					<p>NEW<br/><span>멘토</span></p>
+		                    				</div>
+											<div class="thumb_img" style="background-image: url(images/sub/sp02/img_mentor_02.png);"></div>
+										</figure>
+                    				</div>
+                    				<div class="content-box">
+                    					<p class="txt">경영은 전문가에게 맡기세용.</p>
+                    					<p class="name">강선</p>
+                    				</div>
+                    				<div class="bottom-box">
+                    					<dl>
+                    						<dt>To. 멘티</dt>
+                    						<dd>나만 잘 따라왕</dd>
+                    					</dl>
+                    				</div>
+                    			</div>
+                    		</li>
+                    		
+                    		<li>
+                    			<div class="item-box">
+                    				<div class="img-box">
+	                    				<figure class="thumb">
+	                    					<div class="division-box new">
+		                    					<p>NEW<br/><span>멘토</span></p>
+		                    				</div>
+											<div class="thumb_img" style="background-image: url(images/sub/sp02/img_mentor_03.png);"></div>
+										</figure>
+                    				</div>
+                    				<div class="content-box">
+                    					<p class="txt">경영은 전문가에게 맡기세용.</p>
+                    					<p class="name">강선</p>
+                    				</div>
+                    				<div class="bottom-box">
+                    					<dl>
+                    						<dt>To. 멘티</dt>
+                    						<dd>나만 잘 따라왕</dd>
+                    					</dl>
+                    				</div>
+                    			</div>
+                    		</li>
+                    		
+                    		<li>
+                    			<div class="item-box">
+                    				<div class="img-box">
+	                    				<figure class="thumb">
+											<div class="thumb_img" style="background-image: url(images/sub/sp02/img_mentor_03.png);"></div>
+										</figure>
+                    				</div>
+                    				<div class="content-box">
+                    					<p class="txt">경영은 전문가에게 맡기세용.</p>
+                    					<p class="name">강선</p>
+                    				</div>
+                    				<div class="bottom-box">
+                    					<dl>
+                    						<dt>To. 멘티</dt>
+                    						<dd>나만 잘 따라왕</dd>
+                    					</dl>
+                    				</div>
+                    			</div>
+                    		</li>
+                    		
+                    		<li>
+                    			<div class="item-box">
+                    				<div class="img-box">
+	                    				<figure class="thumb">
+											<div class="thumb_img" style="background-image: url(images/sub/sp02/img_mentor_03.png);"></div>
+										</figure>
+                    				</div>
+                    				<div class="content-box">
+                    					<p class="txt">경영은 전문가에게 맡기세용.</p>
+                    					<p class="name">강선</p>
+                    				</div>
+                    				<div class="bottom-box">
+                    					<dl>
+                    						<dt>To. 멘티</dt>
+                    						<dd>나만 잘 따라왕</dd>
+                    					</dl>
+                    				</div>
+                    			</div>
+                    		</li>
+                    	</ul>
+                        <div class="paging mt60">
+                            <div class="prev-btn-area">
+                                <a href="" class="prev-end"><span class="blind">처음으로</span></a>
+                                <a href="" class="prev"><span class="blind">이전</span></a>
+                            </div>
+                            <div class="paging-num">
+                                <a href="" class="active">1</a><!-- 활성화 -->
+                                <a href="">2</a>
+                                <a href="">3</a>
+                                <a href="">4</a>
+                                <a href="">5</a>
+                                <a href="">6</a>
+                                <a href="">7</a>
+                                <a href="">8</a>
+                                <a href="">9</a>
+                                <a href="">10</a>
+                            </div>
+                            <div class="next-btn-area">
+                                <a href="" class="next"><span class="blind">다음</span></a>
+                                <a href="" class="next-end"><span class="blind">끝으로</span></a>
+                            </div>
+                        </div>
+                    </div>
+	           	</div>
+	           	<div class="modal-dim">	
+		           	<div class="modal-box-wrap modal-open">
+	                    <div class="top-con">
+	                    	<div class="util-con">
+		                   		<h4>멘토정보</h4>
+		                   		<span onclick="modalControl();"></span>
+		                   	</div>
+	                    </div>
+						<div class="modal-main-wrap">
+		                	<div class="info-con">
+			            		<div class="left">
+			            			<div class="img-box">
+			            				<figure class="thumb">
+			            					<div class="division-box excellent">
+				        						우수<br/>멘토
+				        					</div>
+											<div class="thumb_img" style="background-image: url('/user/images/sub/sp02/img_mentor_01.png');"></div>
+										</figure>
+		                    		</div>
+			                    </div>
+			                    		
+			                    <div class="right">
+			                    	<div class="right-info-box">
+				                		<p class="txt">경영은 전문가에게 맡기세용.</p>
+			                    		<p class="name">강선</p>
+			                    		<p class="company"><span>(주) 펜타코드</span><span>CEO</span></p>
+			                    			
+			                    		<dl class="basic">
+			                    			<dt>E-mail</dt>
+			                    			<dd>ks111@pentachord.com</dd>
+			                    		</dl>
+			                    	</div>
+			                    	<div class="menotr-comment">
+						        		<dl>
+						            		<dt>To. 멘티</dt>
+						            		<dd>나만 잘 따라와용</dd>
+						            	</dl>
+						            </div>
+			                    </div>
+			                </div>
+			                <div class="main-con">
+		                    	<dl class="bottom-dl-s1">
+		                    		<dt>산업기술분야</dt>
+		                    		<dd>
+		                    			<ul class="bottom-ul-s1">
+		                    				<li>응용소프트웨어</li>
+		                    				<li>화공/섬유</li>
+		                    				<li>인공지능</li>
+		                    				<li>응용소프트웨어</li>
+		                    				<li>화공/섬유</li>
+		                    				<li>인공지능</li>
+		                    				<li>응용소프트웨어</li>
+		                    				<li>화공/섬유</li>
+		                    				<li>인공지능</li>
+		                    				<li>응용소프트웨어</li>
+		                    				<li>화공/섬유</li>
+		                    				<li>인공지능</li>
+		                    				<li>응용소프트웨어</li>
+		                    				<li>화공/섬유</li>
+		                    				<li>인공지능</li>
+		                    			</ul>
+		                    		</dd>
+		                    	</dl>
+		                    	<dl class="bottom-dl-s1">
+		                    		<dt>4차산업혁명분야</dt>
+		                    		<dd>
+		                    			<ul class="bottom-ul-s1">
+		                    				<li>응용소프트웨어</li>
+		                    				<li>화공/섬유</li>
+		                    				<li>인공지능</li>
+		                    			</ul>
+		                    		</dd>
+		                    	</dl>
+		                    	
+		                    	<dl class="bottom-dl-s1">
+		                    		<dt>창업경영분야</dt>
+		                    		<dd>
+		                    			<ul class="bottom-ul-s1">
+		                    				<li>응용소프트웨어 > 인공지능</li>
+		                    				<li>응용소프트웨어 > 인공지능</li>
+		                    				<li>응용소프트웨어 > 인공지능</li>
+		                    				<li>화공/섬유 > 인공지능</li>
+		                    				<li>화공/섬유 > 인공지능</li>
+		                    			</ul>
+		                    		</dd>
+		                    	</dl>
+		                    </div>
+		                   	<div class="main-con2">
+	                    		<dl class="bottom-dl-s1">
+	                    			<dt>산업기술분야</dt>
+	                    			<dd>
+	                    				<ul class="bottom-ul-s2">
+	                    					<li class="year">29년 2020.01.01 ~ 재직중</li>
+	                    					<li>전) 펜타코드 CMO팀 (B2B영업)</li>
+	                    					<li>전) 펜타코드 전략기획본부 마케팅</li>
+	                    					<li>현) 펜타코드 생산관리/기획/계획</li>
+	                    				</ul>
+	                    			</dd>
+	                    		</dl>
+	                    		
+	                    		<dl class="bottom-dl-s1">
+	                    			<dt>자격증</dt>
+	                    			<dd>
+	                    				<ul class="bottom-ul-s2">
+	                    					<li>정보처리 기사</li>
+	                    					<li>GTQ포토샵</li>
+	                    					<li>OCJP'(ORACLE Certified java Programmer)</li>
+	                    					<li>Kauffman Fasttrac TechVenture Facilitator</li>
+	                    				</ul>
+	                    			</dd>
+	                    		</dl>
+	                    		
+	                    		<dl class="bottom-dl-s1">
+	                    			<dt>기타내용</dt>
+	                    			<dd>
+	                    				Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore 
+	                    				et dolore magna aliquyam erat, sed diam voluptua.
+	                    			</dd>
+	                    		</dl>
+	                    		
+	                    		<dl class="bottom-dl-s1">
+	                    			<dt>관련키워드</dt>
+	                    			<dd>
+	                    				<ul class="bottom-ul-s3">
+	                    					<li><span>전략</span></li>
+	                    					<li><span>전략</span></li>
+	                    					<li><span>전략</span></li>
+	                    					<li><span>전략</span></li>
+	                    				</ul>
+	                    			</dd>
+	                    		</dl>
+	                    	</div>
+	                    </div>
+	                    <div class="foot-con">
+	                    	<p>현재 보고계신 멘토와 매칭을 원하시나요?</p>
+	                    	<div class="btn_area1">
+							    <a href="javascript:;" class="btn_move"><span>매칭신청</span></a>
+							</div>
+	                    </div>
+	               	</div>        
+				</div>                    
+	        </section>
+	        <script>
+	        function modalControl(sq){
+	        	$('html').toggleClass("active");
+				$('.modal-dim').toggle();
+	        }
+	        </script>
+	        <footer>
+	            <div>
+                   <div>
+                       <ul class="footmenu">
+                           <li><a href="javascript:;">찾아오시는길</a></li>
+                           <li><a href="javascript:;">이용약관</a></li>
+                           <li class="privacy"><a href="javascript:;">개인정보처리방침</a></li>
+                       </ul>
+                       <span class="address">인천시 연수구 컨벤시아대로 204</span>
+	               </div>
+	               <div class="followsns">
+	                   <span>Follow us</span>
+	                   <ul>
+	                       <li><a href="javascript:;"><img src="images/sub/icon_facebook.png" alt="facebook" /></a></li>
+	                       <li><a href="javascript:;"><img src="images/sub/icon_instagram.png" alt="instagram" /></a></li>
+	                       <li><a href="javascript:;"><img src="images/sub/icon_youtube.png" alt="youtube" /></a></li>
+	                   </ul>
+	               </div>
+	            </div>
+	            <button class="btn-top"><span class="blind">상단으로</span></button>
+	        </footer>
+	    </div><!-- .subcontent end-->
+	    <div class="rightquick">
+	        <ul class="rquick">
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_project.png" alt="퀵버튼1" /></a></li>
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_event.png" alt="퀵버튼2" /></a></li>
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_reservation.png" alt="퀵버튼3" /></a></li>
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_partner.png" alt="퀵버튼4" /></a></li>
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_pic.png" alt="퀵버튼5" /></a></li>
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_vr.png" alt="퀵버튼6" /></a></li>
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_pr.png" alt="퀵버튼7" /></a></li>
+	        </ul>
+	    </div><!-- .rightquick end-->
+	</div>
+<script>
+var subn = 1; // 현재메뉴인덱스
+
+$(document).ready(function(){
+    $(".line").addClass("sub" + subn);
+    l = subn - 1;
+    setTimeout(function() {
+        $(".lnb ul li:eq("+l+")").addClass("on");
+    }, 500);
+});
+</script>
+</body>
+</html>
+<script>
+	function tab_active(v){
+		var idx = $(v).parent('li').index();
+		$(v).parent('li').addClass("active").siblings().removeClass("active");
+		//console.log(idx)
+	}
+</script>
+<script>
+	function list_select_box_active(v){
+		var idx = $(v).index();
+		$(v).addClass("active").siblings().removeClass("active");
+		//console.log(idx)
+	}
+</script>
+<script>
+	function modal() {
+		
+	}
+</script>
+

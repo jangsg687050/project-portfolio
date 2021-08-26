@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>스타트업파크</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="lib/css/common.css">
+	<link rel="stylesheet" href="lib/css/style.css">
+	<link rel="stylesheet" href="lib/css/responsive.css">
+
+	<!-- JS -->
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/jquery/jquery-ui.min.js"></script>
+	<script src="lib/js/script.js"></script>
+</head>
+<body>
+	<div class="wrap subwrap sp02">
+	    <div class="subcontent">
+	        <header class="top_head">
+	            <h1><a href="javascript:;"><img src="images/sub/logo.png" alt="START UP PARK INCHEON" /></a></h1>
+	            <button class="btn_gnb"><span class="blind">메뉴버튼</span></button>
+	            <ul class="btn_util">
+	                <li><a href="javascript:;"><img src="images/sub/btn_logout.png" alt="로그아웃" /></a></li>
+	                <li><a href="javascript:;"><img src="images/sub/btn_global.png" alt="language change" /></a></li>
+	            </ul>
+	        </header>
+	        <section class="sub_con">
+                <h2>START UP PARK</h2>
+	            <nav class="lnb">
+	                <div class="line"></div>
+	                <ul>
+                        <li><a href="javascript:;">공간</a></li>
+                        <li><a href="javascript:;">인프라/플랫폼</a></li>
+                        <li><a href="javascript:;">데이터</a></li>
+                        <li><a href="javascript:;">전문가</a></li>
+                        <li><a href="javascript:;">실증신청</a></li>
+	                </ul>
+	            </nav>
+	            <div class="content">
+	                <h3>인프라/플랫폼</h3>
+	                <div class="tab2 mb80">
+	                	<ul>
+	                		<li class="active"><a href="javascript:;" onclick="tab_active(this);">IOT실증지원랩</a></li>
+	                		<li><a href="javascript:;" onclick="tab_active(this);">클라우드/AI</a></li>
+	                	</ul>
+	                </div>
+	                <div class="infra_m">
+		            	<img class="infra_mapimg" src="images/sub/sp02/infra_map.png" alt="">
+		            <div class="infra_map">
+		            		<h5>IoT 실증지원랩 구축‧운영</h5>
+		            		<p>실증 공간/장소 매칭, 테스트 인프라 활용, 플랫폼/망연동 기술지원 및 테스트필드 통합 관제 등 IoT 테스트필드 운영</p>
+		            	</div>
+		            </div>
+
+					<div class="infra_con">
+						<h1>01</h1>
+						<div class="infracon_box">
+							<h5>공간 구성</h5>
+							<p> IoT 테스트필드 전체를 모니터링하는 통합 관제실과 서비스 실증지원 및 플랫폼/망연동 기술지원 공간으로 구성<br>※ 실시간 모니터링 시스템 및 기술지원실(6인실)로 구축</p>
+						</div>
+					</div>
+					<div class="infra_con">
+						<h1>02</h1>
+						<div class="infracon_box">
+							<h5>실증 지원</h5>
+							<p> 실증 장소/자원 제공기관의 현안 해결을 위한 신기술 및 IoT 기업의 혁신 제품‧솔루션에 장소‧비용 등 실증기회 제공</p>
+						</div>
+					</div>
+						<div class="infra_txt">
+							<div class="con_wrap">
+								<h5>수요 연계형</h5>
+								<p>IoT 수요기관(실증 장소/자원 제공기관)의 현안 해결 또는 미래 기술 발굴을 위한 테스트기반 마련 후, 다수의 IoT 기업에 개방하여 현안 해소 및 新솔루션‧서비스 발굴</p>
+							</div>
+
+							<div class="con_wrap">
+								<h5>기회 제공형</h5>
+								<p>수요조사‧공모 등을 통해 IoT 기업의 유망 솔루션을 선정‧발굴하고, 수요기관 매칭, 적합한 실증자원 제공 및 실증 비용 등을 지원</p>
+							</div>
+						</div>
+					<div class="infra_con">
+						<h1>03</h1>
+						<div class="infracon_box">
+							<h5>기술 지원</h5>
+							<p>플랫폼/망연동 기술지원, 현장적용 기술지원, 문제점 피드백‧개선지원 및 실증 효과 검증 등 전문 인력/컨설팅 지원</p>
+						</div>
+					</div>
+
+				</div>                    
+	        </section>
+	        <script>
+	        function modalControl(sq){
+	        	$('html').toggleClass("active");
+				$('.modal-dim').toggle();
+	        }
+	        </script>
+	        <footer>
+	            <div>
+                   <div>
+                       <ul class="footmenu">
+                           <li><a href="javascript:;">찾아오시는길</a></li>
+                           <li><a href="javascript:;">이용약관</a></li>
+                           <li class="privacy"><a href="javascript:;">개인정보처리방침</a></li>
+                       </ul>
+                       <span class="address">인천시 연수구 컨벤시아대로 204</span>
+	               </div>
+	               <div class="followsns">
+	                   <span>Follow us</span>
+	                   <ul>
+	                       <li><a href="javascript:;"><img src="images/sub/icon_facebook.png" alt="facebook" /></a></li>
+	                       <li><a href="javascript:;"><img src="images/sub/icon_instagram.png" alt="instagram" /></a></li>
+	                       <li><a href="javascript:;"><img src="images/sub/icon_youtube.png" alt="youtube" /></a></li>
+	                   </ul>
+	               </div>
+	            </div>
+	            <button class="btn-top"><span class="blind">상단으로</span></button>
+	        </footer>
+	    </div><!-- .subcontent end-->
+	    <div class="rightquick">
+	        <ul class="rquick">
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_project.png" alt="퀵버튼1" /></a></li>
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_event.png" alt="퀵버튼2" /></a></li>
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_reservation.png" alt="퀵버튼3" /></a></li>
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_partner.png" alt="퀵버튼4" /></a></li>
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_pic.png" alt="퀵버튼5" /></a></li>
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_vr.png" alt="퀵버튼6" /></a></li>
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_pr.png" alt="퀵버튼7" /></a></li>
+	        </ul>
+	    </div><!-- .rightquick end-->
+	</div>
+<script>
+var subn = 1; // 현재메뉴인덱스
+
+$(document).ready(function(){
+    $(".line").addClass("sub" + subn);
+    l = subn - 1;
+    setTimeout(function() {
+        $(".lnb ul li:eq("+l+")").addClass("on");
+    }, 500);
+});
+</script>
+</body>
+</html>
+<script>
+	function tab_active(v){
+		var idx = $(v).parent('li').index();
+		$(v).parent('li').addClass("active").siblings().removeClass("active");
+		//console.log(idx)
+	}
+</script>
+<script>
+	function list_select_box_active(v){
+		var idx = $(v).index();
+		$(v).addClass("active").siblings().removeClass("active");
+		//console.log(idx)
+	}
+</script>
+<script>
+	function modal() {
+		
+	}
+</script>
+

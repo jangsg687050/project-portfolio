@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>컨쇼마트</title>
+
+	<!-- 파비콘 -->
+	<link rel="shortcut icon" href="/assets/icons/favicon.ico">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/user/lib/css/reset.min.css">
+	<link rel="stylesheet" href="/user/lib/css/fonts.css">
+	<link rel="stylesheet" href="/user/lib/css/common.css">
+    <link rel="stylesheet" href="/user/lib/css/style_sg.css">
+    <link rel="stylesheet" href="/user/lib/css/style_sb.css">
+	<style>
+		html { max-width: none; background-color: #eff1f5; min-width:1200px; }
+		#style-header { background: linear-gradient(to left, #7347c1, #0674ec); opacity: 0.91; padding: 20px; }
+		#style-header .style-title { color: #fff; font-weight: 500; font-size: 24px; }
+		#style-contents { padding: 30px; }
+
+		#style-contents .shortcode_modules { box-shadow: 0 2px 4px rgba(108,111,115,0.1); border-radius: 4px; background: #fff; margin-bottom: 30px; }
+		#style-contents .shortcode_modules .modules__title { border-bottom: 1px solid #ececec; padding: 20px 25px; }
+		#style-contents .shortcode_modules .modules__title h2 { font-size: 19px; }
+		#style-contents .shortcode_modules .modules__content { padding: 20px 25px; }
+	</style>
+
+	<!-- JS -->
+	<script src="/user/lib/js/jquery-3.2.1.min.js"></script>
+	<script src="/user/lib/js/script.js"></script>
+</head>
+<body>
+	<!-- header -->
+	<header id="style-header">
+		<h1 class="style-title">스타일가이드</h1>
+	</header>
+	<!-- //header -->
+
+	<!-- contents -->
+	<section id="style-contents">
+		<!-- 버튼 -->
+		<div class="shortcode_modules">
+			<div class="modules__title">
+				<h2>버튼</h2>
+			</div>
+			<div class="modules__content">
+				<h2>1버튼</h2>
+				<a class="btn-or" href="javascript:;">로그인</a>
+				<a class="btn-or-line" href="">회원가입</a>
+				<a class="btn-gry" href="javascript:;">메인으로</a>
+				<h2>2버튼</h2>
+				<div class="btn_flex2">
+					<a class="btn-gry" href="javascript:;">메인으로</a>
+					<a class="btn-or" href="javascript:;">로그인</a>
+				</div>
+
+			</div>
+		</div>
+		<!-- //버튼 -->
+
+		<!-- 폼 -->
+		<div class="shortcode_modules">
+			<div class="modules__title">
+				<h2>폼</h2>
+			</div>
+			<div class="modules__content">
+				
+
+				<!-- 움직이는 폼 -->
+				<form class="validate-form">
+					<div class="validate-input-wrap" data-validate="올바른 이메일 형식을 입력해주세요.">
+						<input class="validate-input" type="email" name="email">
+						<span class="validate-input-focus" data-placeholder="아이디(이메일 주소)"></span>
+					</div>
+					<!-- <div class="validate-input-wrap 성공클래스" data-validate="올바른 이메일 형식을 입력해주세요."> -->
+					<!-- <div class="validate-input-wrap 실패클래스" data-validate="올바른 이메일 형식을 입력해주세요."> -->
+					<div class="validate-input-wrap" data-validate="올바른 이메일 형식을 입력해주세요.">
+						<input class="validate-input" type="text" name="">
+						<span class="validate-input-focus" data-placeholder="아이디(이메일 주소)"></span>
+					</div>
+					<div class="validate-input-wrap" data-validate="8~16자 영문 대/소문자, 숫자, 특수문자를 조합하여 입력해주세요.">
+						<input class="validate-input" type="password" name="">
+						<span class="validate-input-focus" data-placeholder="비밀번호 입력"></span>
+					</div>
+
+					<input type="submit" value="가입">
+				</form>
+				<!-- //움직이는 폼 -->
+			</div>
+		</div>
+		<!-- //폼 -->
+	</section>
+	<!-- //contents -->
+</body>
+</html>

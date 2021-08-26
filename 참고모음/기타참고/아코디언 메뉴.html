@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script>
+		function menuToggle(btn){ //파라미터1 = btn인데 btn이 여기서는 <a>
+			$(btn).parent('li').siblings('li').removeClass('active');
+			$(btn).parent('li').toggleClass('active');
+		}
+	</script>
+ </head>
+ <body>
+	<style>
+		body { line-height: 1.5; padding: 20px; }
+		a { text-decoration: none; color: #fff; }
+		ul li { position: relative; margin-bottom: 10px; }
+		ul li .contents { display: none; border:1px solid #ddd; padding: 10px; background-color: #ddd; }
+		ul li.active .contents { display: block; }
+		ul li .bar { border:1px solid #ddd; padding: 10px; cursor:pointer; }
+		ul li .btn { position: absolute; right: 0; top: 0; display: inline-block; vertical-align: top; background-color: #000; padding: 10px; background: url(이미지.아래로향해있는이미지); }
+		ul li.active .btn { background-image: url(); }
+	</style>
+	<ul class="ul">
+		<li>
+			<div class="bar" onclick="menuToggle(this);">바</div>
+			<div class="contents">컨텐츠 내용</div>
+			<a href="javascript:;" class="btn">버튼</a>
+		</li>
+		<li>
+			<div class="bar">바</div>
+			<div class="contents">컨텐츠 내용</div>
+			<a href="javascript:;" class="btn" onclick="menuToggle(this);">버튼</a>
+		</li>
+		<li>
+			<div class="bar">바</div>
+			<div class="contents">컨텐츠 내용</div>
+			<a href="javascript:;" class="btn" onclick="menuToggle(this);">버튼</a>
+		</li>
+	</ul>
+ </body>
+</html>

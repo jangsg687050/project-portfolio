@@ -1,0 +1,12 @@
+::before { clear:both; display:block; content:"" }
+
+inline-block { 바깥은 block속성 안쪽은 inline속성 }
+block { 바깥은 block속성 }
+
+> > 
+<dl>
+	<dt>타이틀</dt>
+	<dd>
+               <ul><li></li></ul>
+           </dd>
+</dl>

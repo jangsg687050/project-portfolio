@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>스타트업파크</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="lib/css/common.css">
+	<link rel="stylesheet" href="lib/css/style.css">
+	<link rel="stylesheet" href="lib/css/responsive.css">
+
+	<!-- JS -->
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/jquery/jquery-ui.min.js"></script>
+	<script src="lib/js/script.js"></script>
+</head>
+<body>
+	<div class="wrap subwrap sp02">
+	    <div class="subcontent">
+	        <header class="top_head">
+	            <h1><a href="javascript:;"><img src="images/sub/logo.png" alt="START UP PARK INCHEON" /></a></h1>
+	            <button class="btn_gnb"><span class="blind">메뉴버튼</span></button>
+	            <ul class="btn_util">
+	                <li><a href="javascript:;"><img src="images/sub/btn_logout.png" alt="로그아웃" /></a></li>
+	                <li><a href="javascript:;"><img src="images/sub/btn_global.png" alt="language change" /></a></li>
+	            </ul>
+	        </header>
+	        <section class="sub_con">
+                <h2>START UP PARK</h2>
+	            <nav class="lnb">
+	                <div class="line"></div>
+	                <ul>
+                        <li><a href="javascript:;">공간</a></li>
+                        <li><a href="javascript:;">인프라/플랫폼</a></li>
+                        <li><a href="javascript:;">데이터</a></li>
+                        <li class="on"><a href="javascript:;">전문가</a></li>
+                        <li><a href="javascript:;">실증신청</a></li>
+	                </ul>
+	            </nav>
+	            <div class="content">
+	                <h3>멘토 신청</h3>
+	                <div class="tab2 mb25">
+						<ul>
+							<li><a href="javascript:;" onclick="tab_active(this);">소개</a></li>
+							<li><a href="javascript:;" onclick="tab_active(this);">멘토검색</a></li>
+							<li><a href="javascript:;" onclick="tab_active(this);">멘토링참가신청</a></li>
+							<li class="active"><a href="javascript:;" onclick="tab_active(this);">멘토신청</a></li>
+						</ul>
+					</div>
+	                
+                    <div class="row mt15">
+					    <div class="col col2 moveinput">
+					        <label>이름</label>
+					        <input type="text" />
+					    </div>
+					    <div class="col col2 moveinput">
+					        <label>이메일</label>
+					        <input type="text" placeholder="플레이스홀더값 있을경우" />
+					    </div>
+					</div>
+					
+					<div class="row mt15">
+					    <div class="col col2 moveinput">
+					        <label>휴대폰</label>
+					        <input type="text" />
+					    </div>
+					    <div class="col col2 movefakeinput">
+							<div class="mkwrap">
+                            	<label class="mr100">성별</label>
+                            	<div class="radio-wrap">
+								    <div class="c-radio mr90">
+								        <input type="radio" id="radio1_1" name="radio1" />
+								        <label for="radio1_1">남자</label>
+								    </div>
+								    <div class="c-radio ml10" >
+								        <input type="radio" id="radio1_2" name="radio1" />
+								        <label for="radio1_2">여자</label>
+								    </div>
+								</div>
+                            </div>   
+						</div>
+					</div>	
+					
+					<div class="col col2 movefakeinput mt15">
+						<div class="mkwrap">
+                           <label class="mr100">생년월일</label>
+                           <div class="dropdown">
+								<button class="dropbtn row3">년도</button>
+                                <div class="dropdown-content">
+                                	<a href="javascript:;">2000</a>
+                                	<a href="javascript:;">1999</a>
+                                    <a href="javascript:;">1998</a>
+                                </div>
+                           </div>
+                           
+                           <div class="dropdown">
+								<button class="dropbtn">월</button>
+                                <div class="dropdown-content">
+                                	<a href="javascript:;">12</a>
+                                	<a href="javascript:;">11</a>
+                                    <a href="javascript:;">10</a>
+                                    <a href="javascript:;">9</a>
+                                    <a href="javascript:;">8</a>
+                                    <a href="javascript:;">7</a>
+                                    <a href="javascript:;">6</a>
+                                    <a href="javascript:;">5</a>
+                                    <a href="javascript:;">4</a>
+                                    <a href="javascript:;">3</a>
+                                    <a href="javascript:;">2</a>
+                                    <a href="javascript:;">1</a>
+                                </div>
+                           </div>
+                           
+                           <div class="dropdown">
+								<button class="dropbtn">일</button>
+                                <div class="dropdown-content">
+                                	<a href="javascript:;">31</a>
+                                	<a href="javascript:;">30</a>
+                                    <a href="javascript:;">29</a>
+                                </div>
+                           </div>
+ 						</div>
+					</div>
+					
+					<div class="row mt15">
+					    <div class="col col2 moveinput">
+					        <label>소속</label>
+					        <input type="text" />
+					    </div>
+					    <div class="col col2 moveinput">
+					        <label>직위</label>
+					        <input type="text" placeholder="플레이스홀더값 있을경우" />
+					    </div>
+					</div>
+					
+					<div class="tab3 mt35">
+						<ul class="list-menu">
+							<li onclick="list_select_box_active(this);">산업기술분야
+							<li onclick="list_select_box_active(this);">4차산업혁명분야
+							<li class="active" onclick="list_select_box_active(this);">창업경영분야
+						</ul>
+						<!-- <div class="list-box-01">
+							<ul class="list-box-ul-01">
+								<li><a href="javascript:;">광학<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">금속<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">기계·로봇<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">도시<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">광학<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">금속<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">기계·로봇<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">도시<span class="list-box-cnt">(1,655)</span></a></li>
+							</ul>
+						</div> -->
+						
+						<div class="list-box-02">
+							<ul class="list-box-ul-01">
+								<li class="active"><a href="javascript:;">광학<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">금속<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">기계·로봇<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">도시<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">광학<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">금속<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">기계·로봇<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">도시<span class="list-box-cnt">(1,655)</span></a></li>
+							</ul>
+							<ul class="list-box-ul-02">
+								<li><a href="javascript:;">광학<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">금속<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">기계·로봇<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">도시<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">광학<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">금속<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">기계·로봇<span class="list-box-cnt">(1,655)</span></a></li>
+								<li><a href="javascript:;">도시<span class="list-box-cnt">(1,655)</span></a></li>
+							</ul>
+						</div>
+						
+						<div class="choice-box">
+							<ul>
+								<li><a>정보/통신</a></li>
+								<li><a>화공/섬유</a></li>
+								<li><a>인공지능</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="row mt15">
+					    <div class="col col1 moveinput">
+					       	<label>태그</label>
+					        <input type="text" placeholder=" 입력예시) 게임, 앱개발, 조명, 화장품, 의료기기 등 (키워드 예시표 참조)" />
+					        <p class="ext">※ 선택한 전문분야에 해당되는 세부 분야를 키워드로 등록할 수 있으며, 복수일 경우 콤마(,)로 구분해 주세요.</p>
+					    </div>
+					</div>
+					
+                    <p class="ssp4010602-small-title">사진등록</p>
+                    
+					<div class="flex_alignc mt20">
+                        <button class="file_add">이미지등록</button>
+                    	<span class="file_add_text">사진을 업로드 하여 주세요. </span>
+                    </div>
+                    
+                    <div class="file_add_div">
+                            <div class="file_add_wrap">
+                                <label class="icon_file">
+                                    <span>(주)펜타코드_2020회사소개서.pdf</span>
+									<input type="file">
+                                </label>
+                                <button><img src="images/common/icon_del.png" alt="삭제하기"></button>
+                            </div>
+                            <div class="file_add_wrap">
+                                <label class="icon_file">
+                                    <span>2020사업계획서.pptx</span>
+									<input type="file">
+                                </label>
+                                <button><img src="images/common/icon_del.png" alt="삭제하기"></button>
+                            </div>
+                        </div>
+                        
+                     <h4 class="con-title mb20">계좌정보</h4>
+						<div class="row mt15">
+                            <div class="col col3 moveinput">
+                                <label>은행명<span class="txt-color1">*</span></label>
+                                <input type="text">
+                            </div>
+                            <div class="col col3 moveinput">
+                                <label>계좌번호<span class="txt-color1">*</span></label>
+                                <input type="text">
+                            </div>
+                            <div class="col col3 moveinput">
+                                <label>예금주<span class="txt-color1">*</span></label>
+                                <input type="text">
+                            </div>
+                        </div>
+                        
+                     <h4 class="con-title mb20">상세정보</h4>
+                     <div class="row mt15">
+					    <div class="col col1 moveinput">
+					        <label>간단소개</label>
+					        <textarea rows="5" style="height: auto;"></textarea>
+					    </div>
+					</div>
+					<div class="row mt15">
+					    <div class="col col1 moveinput">
+					        <label>주요경력</label>
+					        <textarea rows="5" style="height: auto;"></textarea>
+					    </div>
+					</div>
+					<div class="row mt15">
+					    <div class="col col1 moveinput">
+					        <label>자격증</label>
+					        <textarea rows="5" style="height: auto;"></textarea>
+					    </div>
+					</div>
+					<div class="row mt15">
+					    <div class="col col1 moveinput">
+					        <label>기타</label>
+					        <textarea rows="5" style="height: auto;"></textarea>
+					    </div>
+					</div>
+					
+                    
+                     <div class="btn_area1">
+                        <a href="SSP0204010603.html" class="btn_move"><span>다음</span></a>
+                    </div>
+	            </div>
+	        </section>
+	        <footer>
+	            <div>
+                   <div>
+                       <ul class="footmenu">
+                           <li><a href="javascript:;">찾아오시는길</a></li>
+                           <li><a href="javascript:;">이용약관</a></li>
+                           <li class="privacy"><a href="javascript:;">개인정보처리방침</a></li>
+                       </ul>
+                       <span class="address">인천시 연수구 컨벤시아대로 204</span>
+	               </div>
+	               <div class="followsns">
+	                   <span>Follow us</span>
+	                   <ul>
+	                       <li><a href="javascript:;"><img src="images/sub/icon_facebook.png" alt="facebook" /></a></li>
+	                       <li><a href="javascript:;"><img src="images/sub/icon_instagram.png" alt="instagram" /></a></li>
+	                       <li><a href="javascript:;"><img src="images/sub/icon_youtube.png" alt="youtube" /></a></li>
+	                   </ul>
+	               </div>
+	            </div>
+	            <button class="btn-top"><span class="blind">상단으로</span></button>
+	        </footer>
+	    </div><!-- .subcontent end-->
+	    <div class="rightquick">
+	        <ul class="rquick">
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_project.png" alt="퀵버튼1" /></a></li>
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_event.png" alt="퀵버튼2" /></a></li>
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_reservation.png" alt="퀵버튼3" /></a></li>
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_partner.png" alt="퀵버튼4" /></a></li>
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_pic.png" alt="퀵버튼5" /></a></li>
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_vr.png" alt="퀵버튼6" /></a></li>
+                <li><a href="javascript:;" ><img src="images/sub/qbtn_pr.png" alt="퀵버튼7" /></a></li>
+	        </ul>
+	    </div><!-- .rightquick end-->
+	</div>
+<script>
+var subn = 1; // 현재메뉴인덱스
+
+$(document).ready(function(){
+    $(".line").addClass("sub" + subn);
+    l = subn - 1;
+    setTimeout(function() {
+        $(".lnb ul li:eq("+l+")").addClass("on");
+    }, 500);
+});
+</script>
+</body>
+</html>
+<script>
+	function tab_active(v){
+		var idx = $(v).parent('li').index();
+		$(v).parent('li').addClass("active").siblings().removeClass("active");
+		//console.log(idx)
+	}
+</script>
+<script>
+	function list_select_box_active(v){
+		var idx = $(v).index();
+		$(v).addClass("active").siblings().removeClass("active");
+		//console.log(idx)
+	}
+</script>

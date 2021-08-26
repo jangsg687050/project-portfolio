@@ -1,0 +1,16 @@
+<script>
+var subn = 1; // 현재메뉴인덱스
+
+$(document).ready(function(){
+    $(".line").addClass("sub" + subn);
+    l = subn - 1;
+    setTimeout(function() {
+        $(".lnb ul li:eq("+l+")").addClass("on");
+    }, 500);
+});
+</script>
+<script>
+$(function(){
+$("html, body").animate({ scrollTop: 550 }, "slow"); 
+});
+</script>

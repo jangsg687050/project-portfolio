@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <style>
+	*,
+	*:before,
+	*:after { box-sizing:border-box; }
+
+	ul { list-style:none; padding: 0; margin: 0; }
+	.organizational { text-align: center; overflow: hidden; }
+	.ceo_li { position: relative; padding-bottom: 80px; }
+	.ceo_li:before { content:""; display: block; position: absolute; bottom: 0; top: 0; width: 1px; left: 50%; background: #ddd; z-index: -1; }
+	.ceo_li:after { content:""; display: block; position: absolute; top: calc(50% + 20px); background: #ddd; right: 30%; left: 50%; height: 1px; }
+	.ceo2_li { position: relative; padding-bottom: 40px; }
+	.ceo2_li:before { content:""; display: block; position: absolute; bottom: 0; top: 0; width: 1px; left: 50%; background: #ddd; z-index: -1; }
+	.ceo3_li { position: relative; display: flex; flex-wrap:wrap; margin: 0 -20px; padding-top: 40px; }
+	.ceo3_li:before { content: ""; display: block; position: absolute; left: 12.5%; right: 12.5%; height: 1px; top:0; background: #ddd; }
+	.ceo3_li > li { position: relative; width: 25%; padding: 0 20px; }
+	.ceo3_li > li:before { content:""; display: block; position: absolute; left: 50%; top:-40px; bottom: 0; width: 1px; z-index: -1; background: #ddd; }
+	.ceo3_li .item { height: 100%; }
+	.ceo3_li .item .title { border: 2px solid #00909e; color: #00909e; padding: 0 10px; height: 40px; line-height: 36px; background: #fff; }
+	.ceo3_li .item .list { border:1px solid #ddd; background: #fff; padding: 10px; text-align: left; }
+	.ceo3_li .item .list.list1 { margin-top: 40px; }
+	.ceo { background: orange; color: #fff; padding: 10px; }
+	.ceo2 { background: green; color: #fff; padding: 10px; }
+	.ceo3 { position: absolute; top: -59px; right: 20%; background: #fff; text-align: center; color: #006670; font-weight: bold; border: 2px solid #006670; padding: 0 10px; height: 40px; line-height: 36px; left: 60%; }
+	
+	.dot_list > li { position: relative; padding-left: 15px; }
+	.dot_list > li:before { position: absolute; left: 0; top: 0; content:"-"; }
+  </style>
+ </head>
+ <body>
+  <ul class="organizational">
+	<li class="ceo_li">
+		<div class="ceo">구청장</div>
+	</li>           
+	<li>
+		<ul class="ceo2_li">
+			<li>
+				<div class="ceo2">부구청장</div>
+			</li>
+			<li class="ceo3">비서실</li>
+		</ul>
+	</li>
+	<li>
+		<ul class="ceo3_li">
+			<li>
+				<div class="item">
+					<div class="list list1">
+						기획예산실
+						<ul class="dot_list">
+							<li>기획</li>
+							<li>예산</li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="item">
+					<div class="title">자치안전행정국</div>
+					<div class="list">
+						기획예산실
+						<ul>
+							<li>기획</li>
+							<li>예산</li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="item">
+					<div class="title">자치안전행정국</div>
+					<div class="list">
+						기획예산실
+						<ul>
+							<li>기획</li>
+							<li>예산</li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="item">
+					<div class="title">자치안전행정국</div>
+					<div class="list">
+						기획예산실
+						<ul>
+							<li>기획</li>
+							<li>예산</li>
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</li>
+  </ul>
+ </body>
+</html>

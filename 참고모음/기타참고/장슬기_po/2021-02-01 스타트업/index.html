@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>스타트업파크</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="lib/css/common.css">
+	<link rel="stylesheet" href="lib/css/main.css">
+	<link rel="stylesheet" href="lib/css/responsive.css">
+	<link rel="stylesheet" href="lib/css/responsive_index.css">
+
+	<!-- JS -->
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/jquery/jquery-ui.min.js"></script>
+	<script src="lib/js/script.js"></script>
+	<script src="lib/js/sly.min.js"></script>
+</head>
+<body>
+	<div class="wrap mainwrap">
+	    <div class="maincontent">
+	        <header class="top_head">
+	            <h1><a href="javascript:;"><img src="images/sub/logo.png" alt="START UP PARK INCHEON" /></a></h1>
+	            <button class="btn_gnb"><span class="blind">메뉴버튼</span></button>
+	            <ul class="btn_util">
+					<li><button class="btn_search"><img src="/user/images/sub/btn_search_w.png" alt="검색"></button></li>
+					 <li class="search_head_wrap_li">
+						<form action="/user/search.do" method="get">
+							<input type="text" name="srchValue" value="" title="통합검색어 입력" autocomplete="off">
+							<button type="submit" value="" class="search_head_btn"></button>
+							<button type="button" class="search_head_close"></button>
+						</form>
+					</li>
+					<li>
+						<a href="/user/member/login.do?redirect=L3VzZXIvbWFpbi5kbz8=">
+							<img src="/user/images/sub/btn_login.png" alt="로그인">
+						</a>
+					</li>
+					<li>
+						<a href="/user/member/join_step1.do">
+							<img src="/user/images/sub/btn_join.png" alt="회원가입">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;"><img src="/user/images/sub/btn_global.png" alt="language change"></a>
+					</li>
+				</ul><!--- 여기까지요 -->
+	            <div class="search_head_wrap"><!-- 11/16 추가된 검색영역--> <!-- 나올때는 addClass .active 레이어 끌때는 removeClass .active -->
+	                <input type="text" />
+	                <a href="" class="search_head_btn"></a>
+	                <button class="search_head_close"></button>
+	            </div><!--- 추가된 검색영역 마지막 -->
+	        </header>
+	        <section class="main">
+                <div class="mainvisual">
+                    <div class="main_slide1">
+                        <div class="bg"><div class="text"></div></div>
+                    </div>
+                    <div class="main_slide2">
+                        <div class="bg"><div class="text"></div></div>
+                    </div>
+                    <div class="main_slide3">
+                        <div class="bg">
+                            <div class="text"></div>
+                            <div class="numbering numbering1">
+                                <div>
+                                    <span class="nb_text">펀드 조성현황</span>
+                                    <span class="number flex_alignb">
+                                        <span id="nb1">3,964.75</span><span>억원</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="numbering numbering2">
+                                <div>
+                                    <span class="nb_text">파트너 기업/기관</span>
+                                    <span class="number flex_alignb">
+                                        <span id="nb2">27</span><span>개사</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="numbering numbering3">
+                                <div>
+                                    <span class="nb_text">인천 스타트업파크펀드</span>
+                                    <span class="number flex_alignb">
+                                        <span id="nb3">500</span><span>기업</span>
+                                    </span>
+                                    <span class="number flex_alignb">
+                                        <span>신한금융</span><span id="nb4">500</span><span>억</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_slide4">
+                        <div class="bg">
+                            <div class="text1"></div>
+                            <div class="text2"></div>
+                            <div class="flag1"></div>
+                            <div class="flag2"></div>
+                            <div class="flag3"></div>
+                            <div class="flag4"></div>
+                            <div class="flag5"></div>
+                        </div>
+                    </div>
+	            </div>
+	            <div class="frame">
+	            <div class="mainarea slidee">
+	                <div class="mainarea1">
+                        <a href="" class="tit">
+                            스타트업 파크<em></em>
+                        </a>
+                        <ul class="link_ul">
+                            <li><a href="">투어신청</a></li>
+                            <li><a href="">시설예약</a></li>
+                        </ul>
+	                </div>
+	                <div class="mainarea2">
+                        <a href="" class="tit">
+                            실증<em></em>
+                        </a>
+                        <ul class="link_ul">
+                            <li><a href="">실증자유특구</a></li>
+                            <li><a href="">5G/Iot/앱 실증센터 예약</a></li>
+                            <li><a href="">멘토링</a></li>
+                        </ul>
+	                </div>
+	                <div class="mainarea3">
+                        <a href="" class="tit">
+                            투자<em></em>
+                        </a>
+                        <ul class="link_ul">
+                            <li><a href="">AC/VC</a></li>
+                            <li><a href="">Ontack 전시관</a></li>
+                        </ul>
+	                </div>
+	                <div class="mainarea4">
+                        <a href="" class="tit">
+                            글로벌<em></em>
+                        </a>
+                        <ul class="link_ul">
+                            <li><a href="">글로벌 파트너소개</a></li>
+                            <li><a href="">글로벌 진출 프로그램</a></li>
+                        </ul>
+	                </div>
+	            </div>
+	            <div class="scrollbar">
+                    <div class="handle"><div class="mousearea"></div></div>
+                </div>
+	            </div>
+	        </section>
+	        <footer>
+	            <div>
+                   <div>
+                       <ul class="footmenu">
+                           <li><a href="javascript:;">찾아오시는길</a></li>
+                           <li><a href="javascript:;">이용약관</a></li>
+                           <li class="privacy"><a href="javascript:;">개인정보처리방침</a></li>
+                       </ul>
+                       <ul class="address">
+							<li>인천광역시 연수구 컨벤시아대로 204 인천스타트업파크</li>
+								<ul class="address_sub">
+									<li>Tel 032-228-1203 |</li>
+									<li>E-mail sb8766@itp.or.kr |</li>
+									<li>대표 서병조 |</li>
+									<li>사업자번호 139-82-02466</li>
+								</ul>
+							
+						</ul>
+	               </div>
+	               <div class="followsns">
+	                   <span>Follow us</span>
+	                   <ul>
+	                       <li><a href="javascript:;"><img src="images/sub/icon_facebook.png" alt="facebook" /></a></li>
+	                       <li><a href="javascript:;"><img src="images/sub/icon_instagram.png" alt="instagram" /></a></li>
+	                       <li><a href="javascript:;"><img src="images/sub/icon_youtube.png" alt="youtube" /></a></li>
+	                   </ul>
+	               </div>
+	            </div>
+	            <button class="btn-top"><span class="blind">상단으로</span></button>
+	        </footer>
+	    </div><!-- .subcontent end-->
+	    <div class="rightquick"><!-- 11/16 퀵메뉴 교체 -->
+            <div class="head">
+                <button class="mmenu_close"></button>
+                <ul class="btn_util">
+	                <li><a href="javascript:;"><img src="images/sub/btn_login.png" alt="로그인" /></a></li>
+	                <li><a href="javascript:;"><img src="images/sub/btn_mypage.png" alt="마이페이지" /></a></li>
+	                <li><a href="javascript:;"><img src="images/sub/btn_global.png" alt="language change" /></a></li>
+	            </ul>
+            </div>
+            <div class="mqmenu">
+                <div class="mmenu_wrap">
+                    <ul class="mmenu">
+                        <li><button>스타트업파크</button>
+                            <ul>
+                                <li><a href="">소개</a></li>
+                                <li><a href="">시설</a></li>
+                                <li><a href="">혜택</a></li>
+                                <li><a href="">입주</a></li>
+                                <li><a href="">주변</a></li>
+                                <li><a href="">오시는길</a></li>
+                            </ul>
+                        </li>
+                        <li><button>실증</button>
+                            <ul>
+                                <li><a href="">공간</a></li>
+                                <li><a href="">인프라/플랫폼</a></li>
+                                <li><a href="">데이터</a></li>
+                                <li><a href="">전문가</a></li>
+                                <li><a href="">실증신청</a></li>
+                            </ul>
+                        </li>
+                        <li><button>투자</button>
+                            <ul>
+                                <li><a href="">기업정보</a></li>
+                                <li><a href="">AC/VC</a></li>
+                                <li><a href="">IR정보</a></li>
+                                <li><a href="">Ontact 전시관</a></li>
+                            </ul>
+                        </li>
+                        <li><button>글로벌</button>
+                            <ul>
+                                <li><a href="">글로벌파트너</a></li>
+                                <li><a href="">글로벌프로그램</a></li>
+                                <li><a href="">붐업페스티벌</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="rquick">
+                    <li class="rq1"><a href="javascript:;" ><div class="text"><span>지원사업</span></div></a></li>
+                    <li class="rq2"><a href="javascript:;" ><div class="text"><span>행사/교육</span></div></a></li>
+                    <li class="rq3"><a href="javascript:;" ><div class="text"><span>통합예약</span></div></a></li>
+                    <li class="rq4"><a href="javascript:;" ><div class="text"><span>협력파트너</span></div></a></li>
+                    <li class="rq5"><a href="javascript:;" ><div class="text"><span>담당자안내</span></div></a></li>
+                    <li class="rq6"><a href="javascript:;" ><div class="text"><span>VR</span></div></a></li>
+                    <li class="rq7"><a href="javascript:;" ><div class="text"><span>PR뉴스룸</span></div></a></li>
+                </ul>
+	        </div>
+	    </div><!-- .rightquick end--><!-- 퀵메뉴 교체 끝 -->
+	</div>
+	 <div class="menuwrap">
+	    <div class="menu">
+            <dl>
+                <dt>스타트업파크</dt>
+                <dd><a href="/user/content.do?sq=6"  >소개</a></dd>
+                <dd><a href="/user/content.do?sq=92"  >시설</a></dd>
+                <dd><a href="/user/content.do?sq=8"  >혜택</a></dd>
+                <dd><a href="/user/content.do?sq=9"  >입주</a></dd>
+                <dd><a href="/user/startup/around/list.do"  >주변</a></dd>
+                <dd><a href="/user/content.do?sq=22"  >오시는 길</a></dd>
+            </dl>
+            <dl>
+                <dt>실증</dt>
+                <dd><a href="/user/content.do?sq=11"  >공간</a></dd>
+                <dd><a href="/user/content.do?sq=138"  >인프라/플랫폼</a></dd>
+                <dd><a href="/user/proof/data/list.do"  >데이터</a></dd>
+                <dd><a href="/user/content.do?sq=34"  >전문가</a></dd>
+                <dd><a href="/user/content.do?sq=15"  >실증신청</a></dd>
+            </dl>
+            <dl>
+                <dt>투자</dt>
+                <dd><a href="/user/content.do?sq=16"  >기업정보</a></dd>
+                <dd><a href="/user/content.do?sq=17"  >AC/VC</a></dd>
+                <dd><a href="/user/content.do?sq=18"  >IR 정보</a></dd>
+                <dd><a href="/ontact/main.do" target="_blank" >Ontact 전시관</a></dd>
+            </dl>
+            <dl>
+                <dt>글로벌</dt>
+                <dd><a href="/user/content.do?sq=20"  >글로벌 파트너</a></dd>
+                <dd><a href="/user/content.do?sq=21"  >글로벌 프로그램</a></dd>
+            </dl>
+		</div>
+        <ul class="all_qmenu">
+                <li class="a_qmenu1">
+                        <a href="/user/business/list.do"  title="지원사업"  >
+                            <span>지원사업</span>
+                        </a>
+                    </li>
+                <li class="a_qmenu2">
+                        <a href="/user/content.do?sq=86"  title="행사/교육"  >
+                            <span>행사/교육</span>
+                        </a>
+                    </li>
+                <li class="a_qmenu3">
+                        <a href="/user/content.do?sq=152"  title="통합예약"  >
+                            <span>통합예약</span>
+                        </a>
+                    </li>
+                <li class="a_qmenu4">
+                        <a href="/user/partner/list.do"  title="협력파트너"  >
+                            <span>협력파트너</span>
+                        </a>
+                    </li>
+                <li class="a_qmenu5">
+                        <a href="/user/content.do?sq=89"  title="담당자안내"  >
+                            <span>담당자안내</span>
+                        </a>
+                    </li>
+                <li class="a_qmenu6">
+                        <a href="/user/content.do?sq=90"  title="VR"  >
+                            <span>VR</span>
+                        </a>
+                    </li>
+                <li class="a_qmenu7">
+                        <a href="/user/board/list.do?bbs_id=notice"  title="PR뉴스룸"  >
+                            <span>PR뉴스룸</span>
+                        </a>
+                    </li>
+                </ul>
+        <button class="btn_close"><span class="blind">닫기</span></button>
+    </div>
+    
+    <div class="tutorial">
+		<a href="javascript:void(0);" onclick="tuto_close(this);" class="tuto_close">
+			<img src="/user/images/main/ic_tutorial_close.png" alt="튜토리얼 닫기 아이콘"/>
+		</a>
+	</div>
+<script>
+
+//숫자 카운터
+var co1 = 3964.75; //펀드조성현황
+var co2 = 27; //파트너 기업/기관
+var co3 = 500; //억 조성예정
+var co4 = 500; //신한금융
+function numberCounter(target_frame, target_number) {
+    this.count = 0; this.diff = 0;
+    this.target_count = parseInt(target_number);
+    this.target_frame = document.getElementById(target_frame);
+    this.timer = null;
+    this.counter();
+};
+numberCounter.prototype.counter = function() {
+    var self = this;
+    this.diff = this.target_count - this.count;
+
+    if(this.diff > 0) {
+        self.count += Math.ceil(this.diff / 5);
+    }
+
+    this.target_frame.innerHTML = this.count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+
+    if(this.count < this.target_count) {
+        this.timer = setTimeout(function() { self.counter(); }, 50);
+    } else {
+        clearTimeout(this.timer);
+    }
+};
+
+$(document).ready(function(){
+    $(".mainarea > div").on("mouseover",function(){
+        w = $("html").width();
+        if (w>999) {
+            $(".mainarea > div").removeClass("active");
+            $(".mainarea > div").removeClass("active_not");
+            $(this).addClass("active");
+            l = $(".mainarea > div").index(this)
+            $(".mainvisual > div").removeClass("active");
+            $(".mainvisual > div:eq("+l+")").addClass("active");
+            $(".mainarea").addClass("on");
+            $(".mainarea > div").not(".active").addClass("active_not");
+
+            if (l === 2) {
+                setTimeout(function(){
+                    //new numberCounter("nb1", co1);
+                    //new numberCounter("nb2", co2);
+                    //new numberCounter("nb3", co3);
+                    //new numberCounter("nb4", co4);
+                },500);
+            }
+        }
+    })
+    $(".mainwrap").on("mouseleave",function(){
+        $(".mainarea > div").removeClass("active");
+        $(".mainvisual > div").removeClass("active");
+        $(".mainarea").removeClass("on");
+        $(".mainarea > div").removeClass("active_not");
+    })
+    var w= $("html").width();
+
+    if ( w < 1000) {
+        var options = {
+           horizontal: 1,
+           itemNav: 'centered', //basic , centered,
+           speed: 300,
+           smart: 1,
+           activateOn: 'click',
+           mouseDragging: 1,
+           touchDragging: 1,
+           activateMiddle: 1,
+           releaseSwing: 1,
+           scrollBar: '.scrollbar',
+           // itemSelector:1
+        };
+        var frame = new Sly('.frame', options).init();
+    }
+    
+    if(w < 999){
+		$('.tutorial').css('display', 'none');
+	}else{
+		$('.tutorial').css('display', 'block');
+	}
+});
+</script>
+</body>
+
+<script>
+	function tuto_close() {
+		
+		$('.tutorial').css('display', 'none');
+	}
+</script>
+
+</html>

@@ -103,14 +103,14 @@ $(function(){
 		}
 	},
 	breakpoints: {
+		1400: {
+			slidesPerView: 4
+		},
 		1080: {
-			slidesPerView: 3,
-			slidesPerGroup: 3,
+			slidesPerView: 3
 		},
 		330: {
-			slidesPerView: 2,
-			slidesPerGroup: 2,
-			spaceBetween: 20,
+			slidesPerView: 2
 		}
 	}
 	});

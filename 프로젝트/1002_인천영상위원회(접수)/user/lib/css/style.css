@@ -42,8 +42,10 @@
 .section1 dl dd span { font-size: 30px; display: block; position: relative; }
 .section1 dl dd span:after { content: ""; position: absolute; background: url(/user/images/common/icon_announce.png)no-repeat; right: 0; top: 50%; width: 35px; height: 40px; display: inline-block; margin-top: -20px; }
 .section1 dl dd span b { font-weight: 500; }
-.section1 dl dd p { font-size: 20px; text-align: right; margin-top: 60px; }
+.section1 dl dd p { text-align: right; }
 .section1 dl dd .count { font-size: 50px; font-weight: bold; font-family: 'GongGothicMedium'; }
+.section1 dl dd .heve{ font-size: 20px; margin-top: 60px;}
+.section1 dl dd .none{ display: none; font-size: 18px; color: #666; margin-top: 80px;}
 
 /* section2 */
 .section2 { margin-top: 100px; height: 370px; border-radius: 0 0 100px 0; background: -webkit-linear-gradient(to right, #0276db, #4e52eb); background: linear-gradient(to right, #0276db, #4e52eb); }

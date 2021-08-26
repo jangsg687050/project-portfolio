@@ -450,7 +450,6 @@ input[id="menu"]:checked + label span:nth-child(3) { bottom: 50%; transform: tra
 .cal_table tbody td a.waiting:hover { border: 2px solid #0075ff; line-height: 34px; }
 .cal_table tbody td a.waiting.on { background: #4499ff !important; font-weight: bold; color: #fff; }
 
-
 /* scroll down animation */
 .scroll_wrap{ position: absolute; bottom: 30px; left: 50%;}
 .scroll { position: relative; display: block; font-size: 0.933rem; color: white; text-decoration: none; padding: 10px 10px 10px 40px; z-index: 1; }
@@ -466,7 +465,6 @@ input[id="menu"]:checked + label span:nth-child(3) { bottom: 50%; transform: tra
   100% { opacity: 1; height: 8px;}
 }
 
-
 /* 버튼 스타일 1*/
 .learn-more { position: relative; display: inline-block; cursor: pointer; outline: none; border: 0; vertical-align: middle; text-decoration: none; background: transparent; padding: 0; font-size: inherit; font-family: inherit; }
 .learn-more { width: 12rem; height: auto; }
@@ -478,3 +476,7 @@ input[id="menu"]:checked + label span:nth-child(3) { bottom: 50%; transform: tra
 .learn-more:hover .circle { width: 100%; }
 .learn-more:hover .circle .icon.arrow { background: #fff; transform: translate(1rem, 0); }
 .learn-more:hover .button-text { color: #fff; }
+
+/* 스크롤감지헤더 */
+.scrolldown_header{ background-color: rgba(0,0,0,0.7); border-bottom: 1px solid #eee; -webkit-transition-duration:0.3s; -webkit-transition-timing-function:ease; transition-duration:0.4s; transition-timing-function:ease; }
+.scrolldown_header .main_header .depth_01 > li > a{ color: #fff; }

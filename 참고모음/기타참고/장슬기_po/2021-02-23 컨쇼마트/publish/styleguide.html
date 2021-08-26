@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>컨쇼마트</title>
+
+	<!-- 파비콘 -->
+	<link rel="shortcut icon" href="/assets/icons/favicon.ico">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/user/lib/css/reset.min.css">
+	<link rel="stylesheet" href="/user/lib/css/fonts.css">
+	<link rel="stylesheet" href="/user/lib/css/common.css">
+    <link rel="stylesheet" href="/user/lib/css/style_sg.css">
+    <link rel="stylesheet" href="/user/lib/css/style_sb.css">
+	<style>
+		html { max-width: none; background-color: #eff1f5; min-width:1200px; }
+		#style-header { background: linear-gradient(to left, #7347c1, #0674ec); opacity: 0.91; padding: 20px; }
+		#style-header .style-title { color: #fff; font-weight: 500; font-size: 24px; }
+		#style-contents { padding: 30px; }
+
+		#style-contents .shortcode_modules { box-shadow: 0 2px 4px rgba(108,111,115,0.1); border-radius: 4px; background: #fff; margin-bottom: 30px; }
+		#style-contents .shortcode_modules .modules__title { border-bottom: 1px solid #ececec; padding: 20px 25px; }
+		#style-contents .shortcode_modules .modules__title h2 { font-size: 19px; }
+		#style-contents .shortcode_modules .modules__content { padding: 20px 25px; }
+	</style>
+
+	<!-- JS -->
+	<script src="/user/lib/js/jquery-3.2.1.min.js"></script>
+	<script src="/user/lib/js/script.js"></script>
+</head>
+<body>
+	<!-- header -->
+	<header id="style-header">
+		<h1 class="style-title">스타일가이드</h1>
+	</header>
+	<!-- //header -->
+
+	<!-- contents -->
+	<section id="style-contents">
+		<!-- 버튼 -->
+		<div class="shortcode_modules">
+			<div class="modules__title">
+				<h2>버튼</h2>
+			</div>
+			<div class="modules__content">
+				<h2>1버튼</h2>
+				<div class="btn_wrap">
+					<a class="btn-or" href="javascript:;">로그인</a>
+				</div>
+				<div class="btn_wrap">
+					<a class="btn-or-line" href="">회원가입</a>
+				</div>
+				<a class="btn-gry" href="javascript:;">메인으로</a>
+				<h2>2버튼</h2>
+				<div class="btn_wrap">
+					<div class="btn_flex2">
+						<a class="btn-gry" href="javascript:;">메인으로</a>
+						<a class="btn-or" href="javascript:;">로그인</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- //버튼 -->
+
+		<!-- 폼 -->
+		<div class="shortcode_modules">
+			<div class="modules__title">
+				<h2>폼</h2>
+			</div>
+			<div class="modules__content">
+				
+
+				<!-- 움직이는 폼 -->
+				<form class="validate-form">
+					<!-- 
+						기본
+						data-validate: "유효성 검사 실패시 표출되는 메시지"
+					-->
+					<div class="form-group">
+						<div class="validate-input-wrap" data-validate="올바른 이메일 형식을 입력해주세요.">
+							<input class="validate-input" type="text" name="">
+							<span class="validate-input-focus" data-placeholder="아이디(이메일 주소)"></span>
+						</div>
+					</div>
+					<!-- //기본 -->
+
+					<!-- 유효성 검사 통과 : alert-success 클래스명 추가 -->
+					<div class="form-group">
+						<div class="validate-input-wrap alert-success" data-validate="8~16자 영문 대/소문자, 숫자, 특수문자를 조합하여 입력해주세요.">
+							<input class="validate-input" type="password" name="">
+							<span class="validate-input-focus" data-placeholder="비밀번호 입력"></span>
+						</div>
+					</div>
+					<!-- //유효성 검사 통과 -->
+
+					<!-- 유효성 검사 실패 alert-fail 클래스명 추가 -->
+					<div class="form-group">
+						<div class="validate-input-wrap alert-fail" data-validate="8~16자 영문 대/소문자, 숫자, 특수문자를 조합하여 입력해주세요.">
+							<input class="validate-input" type="password" name="">
+							<span class="validate-input-focus" data-placeholder="비밀번호 입력"></span>
+						</div>
+					</div>
+					<!-- //유효성 검사 실패 -->
+				</form>
+				<!-- //움직이는 폼 -->
+				
+				<!-- 버튼과 인풋 같이 잇는 폼 -->
+				<div class="form-group form-flex2">
+					<div class="validate-input-wrap" data-validate="휴대폰 번호 (- 제외)">
+						<input class="validate-input" type="text" name="">
+						<span class="validate-input-focus" data-placeholder="휴대폰 번호 입력"></span>
+					</div>
+					<input class="input-btn-gry" type="submit" value="인증번호 전송" disabled>
+				</div>
+				<!-- //버튼과 인풋 같이 잇는 폼 -->
+				<!-- 인증번호 카운트 폼 -->
+				<div class="form-group form-flex2">
+					<div class="validate-input-wrap" data-validate="인증번호 입력">
+						<input class="validate-input" type="text" name="">
+						<span class="validate-input-focus" data-placeholder="인증번호 입력"></span>
+						<div class="count">03:51</div>
+					</div>
+					<input class="input-btn-gry" type="submit" value="확인" disabled>
+				</div>
+				<!--//인증번호 카운트 폼 -->
+			</div>
+		</div>
+		<!-- //폼 -->
+		<!---라디오-->
+		<div class="shortcode_modules">
+			<div class="modules__title">
+					<h2>라디오</h2>
+			</div>
+			<div class="modules__content">
+				<!-- <div class="c-radio">
+					<input type="radio" id="q1_1" name="q1">
+					<label for="q1_1">자동 로그인</label>
+				</div> -->
+				<h2>라디오 스타일1</h2>
+				<div class="radio_wrap">
+				<div class="radio_tit">성별</div>
+				<div class="radio_flex" id="gender-type">
+					<label>
+						<input type="radio" value="all" name="gender-type" checked=""><span class="circle"></span><span class="check"></span>
+						<em>남자</em>
+					</label>
+					<label>
+						<input type="radio" value="pay" name="gender-type"><span class="circle"></span><span class="check"></span>
+						<em>여자</em>
+					</label>
+					<label>
+						<input type="radio" value="free" name="gender-type"><span class="circle"></span><span class="check"></span>
+						<em>선택안함</em>
+					</label>
+				</div>
+			</div>
+
+			</div>
+		</div>
+		<!---//라디오-->
+
+		<!---체크박스-->
+		<div class="shortcode_modules">
+			<div class="modules__title">
+					<h2>체크박스</h2>
+			</div>
+			<div class="modules__content">
+				<h2>체크박스 스타일1</h2>
+				<div class="c-chk">
+					<input type="checkbox" id="q2_2">
+					<label for="q2_2">만 14세 이상입니다.<em class="txt-color-orng">(필수)</em></label>
+				</div>
+				<h2>체크박스 스타일2</h2>
+				<div class="c-chk2">
+					<input type="checkbox" id="q2_3">
+					<label for="q2_3">만 14세 이상입니다.<em class="txt-color-orng">(필수)</em></label>
+				</div>
+
+			</div>
+		</div>
+		<!---//체크박스-->
+		<!---게시판-->
+		<div class="shortcode_modules">
+			<div class="modules__title">
+				<h2>게시판</h2>
+			</div>
+			<div class="modules__content">
+				<div class="board-st1"><!--게시판스타일1-->
+					<div class="board-st1-list">
+						<a href="javascript:;">
+							<dl>
+								<dt>공지</dt>
+								<dd><span class="txt-tit">컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지</span></dd>
+							</dl>
+							<em class="list-date">2021.01.18</em>
+						</a>
+					</div>
+					<div class="board-st1-list">
+						<a href="javascript:;">
+							<dl>
+								<!-- <dt>공지</dt> --><!--공지가 없는 경우-->
+								<dd><span class="txt-tit">컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지컨쇼마트 예비고 설명회 2부 공지</span><span class="reply">[1]</span></dd><!--댓글 수 있는경우-->
+							</dl>
+							<em class="list-date"><span class="nm">김학생</span>2021.01.18<span class="counnt">120</span></em><!--추가 작성자 / 카운트가 있는경우-->
+						</a>
+					</div>
+					<div class="board-st1-list">
+						<a href="javascript:;">
+							<dl>
+								<dt>공지</dt>
+								<dd><span class="txt-tit">컨쇼마트 예비고 설명회 2부 공지</span></dd>
+							</dl>
+							<em class="list-date">2021.01.18</em>
+						</a>
+					</div>
+					<div class="board-st1-list">
+						<a href="javascript:;">
+							<dl>
+								<dd><span class="txt-tit">컨쇼마트 예비고 설명회 2부 공지</span></dd>
+							</dl>
+							<em class="list-date">2021.01.18</em>
+						</a>
+					</div>
+					<div class="board-st1-list">
+						<a href="javascript:;">
+							<dl>
+								<dt>공지</dt>
+								<dd><span class="txt-tit">컨쇼마트 예비고 설명회 2부 공지</span></dd>
+							</dl>
+							<em class="list-date">2021.01.18</em>
+						</a>
+					</div>
+				</div><!--게시판스타일1 끝-->
+
+				<div class="board-st2"><!--게시판스타일2-->
+					<div class="board-st2-box">
+						<div class="board-st2-flex">
+							<div class="board-st2-tit">
+								<dl>
+									<dt><a href="javascript:;">컨쇼마트 회원 주목!</a></dt>
+									<dd><span>공지</span><em>2021.01.18 ~ 2021.01.31</em></dd>
+								</dl>
+							</div>
+							<div class="prog-ing">
+								진행중
+							</div>
+						</div>
+						<div class="board-thumb">
+							<a href="javascript:;" class="board-thumb-bg" style="background-image:url(/user/images/common/noimg_event.png); ">
+								<span>노이미지</span>
+							</a>
+						</div>
+					</div>
+					<div class="board-st2-box">
+						<div class="board-st2-flex">
+							<div class="board-st2-tit">
+								<dl>
+									<dt><a href="javascript:;">컨쇼마트 앱 오픈기념 이벤트</a></dt>
+									<dd><em>2021.01.18 ~ 2021.01.31</em></dd>
+								</dl>
+							</div>
+							<div class="prog-end">
+								마감
+							</div>
+						</div>
+						<div class="board-thumb">
+							<a href="javascript:;"  class="board-thumb-bg" style="background-image:url(/user/images/common/open_event.png); ">
+								<span>컨쇼마트 오픈 이벤트</span>
+							</a>
+						</div>
+					</div>
+					<div class="board-st2-box">
+						<div class="board-st2-flex">
+							<div class="board-st2-tit">
+								<dl>
+									<dt><a href="javascript:;">컨쇼마트 앱 오픈기념 이벤트</a></dt>
+									<dd><em>2021.01.18 ~ 2021.01.31</em></dd>
+								</dl>
+							</div>
+							<div class="prog-end">
+								마감
+							</div>
+						</div>
+						<div class="board-thumb">
+							<a href="javascript:;"  class="board-thumb-bg" style="background-image:url(/user/images/common/open_event.png); ">
+								<span>컨쇼마트 오픈 이벤트</span>
+							</a>
+						</div>
+					</div>
+					<div class="board-st2-box">
+						<div class="board-st2-flex">
+							<div class="board-st2-tit">
+								<dl>
+									<dt><a href="javascript:;">컨쇼마트 회원 주목!</a></dt>
+									<dd><span>공지</span><em>2021.01.18 ~ 2021.01.31</em></dd>
+								</dl>
+							</div>
+							<div class="prog-end">
+								마감
+							</div>
+						</div>
+						<div class="board-thumb">
+							<a href="javascript:;"  class="board-thumb-bg" style="background-image:url(/user/images/common/noimg_event.png); ">
+								<span>노이미지</span>
+							</a>
+						</div>
+					</div>
+					<div class="board-st2-box">
+						<div class="board-st2-flex">
+							<div class="board-st2-tit">
+								<dl>
+									<dt><a href="javascript:;">컨쇼마트 회원 주목!</a></dt>
+									<dd><span>공지</span><em>2021.01.18 ~ 2021.01.31</em></dd>
+								</dl>
+							</div>
+							<div class="prog-end">
+								마감
+							</div>
+						</div>
+						<div class="board-thumb">
+							<a href="javascript:;" class="board-thumb-bg" style="background-image:url(/user/images/common/open_event.png);">
+								<span>컨쇼마트 오픈 이벤트</span>
+							</a>
+						</div>
+					</div>
+				</div><!--게시판스타일2 끝-->
+
+				<div class="notice_board_pass_con"><!--게시판스타일3-->
+					<div class="pass_wrap">
+						<div>
+							<div class="board-thumb pass">
+								<a href="javascript:;" class="board-thumb-bg" style="background-image: url(/user/images/common/noimg_passbook.png); ">
+									<span>노이미지</span>
+								</a>
+							</div>
+							<a href="javascript:;" class="pass_tit">
+								2020년 홍익대
+							</a>
+						</div>
+						<div>
+							<div class="board-thumb pass">
+								<a href="javascript:;" class="board-thumb-bg" style="background-image: url(/user/images/common/noimg_passbook.png); ">
+									<span>노이미지</span>
+								</a>
+							</div>
+							<a href="javascript:;" class="pass_tit">
+								2020년 연세대
+							</a>
+						</div>
+						<div>
+							<div class="board-thumb pass">
+								<a href="javascript:;" class="board-thumb-bg" style="background-image: url(/user/images/common/noimg_passbook.png); ">
+									<span>노이미지</span>
+								</a>
+							</div>
+							<a href="javascript:;" class="pass_tit">
+								2020년 홍익대
+							</a>
+						</div>
+						<div>
+							<div class="board-thumb pass">
+								<a href="javascript:;" class="board-thumb-bg" style="background-image: url(/user/images/common/noimg_passbook.png); ">
+									<span>노이미지</span>
+								</a>
+							</div>
+							<a href="javascript:;" class="pass_tit">
+								2020년 홍익대
+							</a>
+						</div>
+						<div>
+							<div class="board-thumb pass">
+								<a href="javascript:;" class="board-thumb-bg" style="background-image: url(/user/images/common/noimg_passbook.png); ">
+									<span>노이미지</span>
+								</a>
+							</div>
+							<a href="javascript:;" class="pass_tit">
+								2020년 홍익대
+							</a>
+						</div>
+						<div>
+							<div class="board-thumb pass">
+								<a href="javascript:;" class="board-thumb-bg" style="background-image: url(/user/images/common/noimg_passbook.png); ">
+									<span>노이미지</span>
+								</a>
+							</div>
+							<a href="javascript:;" class="pass_tit">
+								2020년 홍익대
+							</a>
+						</div>
+						<div>
+							<div class="board-thumb pass">
+								<a href="javascript:;" class="board-thumb-bg" style="background-image: url(/user/images/common/noimg_passbook.png); ">
+									<span>노이미지</span>
+								</a>
+							</div>
+							<a href="javascript:;" class="pass_tit">
+								2020년 홍익대
+							</a>
+						</div>
+						<div>
+							<div class="board-thumb pass">
+								<a href="javascript:;" class="board-thumb-bg" style="background-image: url(/user/images/common/noimg_passbook.png); ">
+									<span>노이미지</span>
+								</a>
+							</div>
+							<a href="javascript:;" class="pass_tit">
+								2020년 홍익대
+							</a>
+						</div>
+					</div>
+				</div><!--게시판스타일3 끝-->
+
+				<div class="notice-board-more"><!--게시판 상세-->
+					<div class="notice-board-tit">
+						<dl>
+							<dt>공지</dt>
+							<dd>컨쇼마트 예비고 설명회 2부 공지</dd>
+						</dl>
+						<em class="list-date">2021.01.18</em>
+					</div>
+					<div class="notice-board-content">
+						<div class="txt-place">
+							<p>
+								안녕하세요.<br>
+								컨쇼에서 진로진학 스토리 보드를 제작하여 배포합니다.<br> 
+								첨부파일에 다운로드 받으실 수 있도록 올려드렸습니다.<br> 
+								비공개 부분의 경우 상담신청 및 오프라인 강연회 참석하시는 회원님<br>
+								들에게 공개 제공해드리고 있으며 사용 방법에 대해서 자세하게<br>
+								강연회를 통해 설명해 드리고 있습니다.<br>
+								이점 양해 바라며 감사합니다.
+							</p>
+						</div>
+						<div class="img-place">
+							<img src="/user/images/common/notice_img1.png" alt="컨쇼 진로 진학 스토리보드">
+						</div>
+					</div>
+				</div><!--게시판 상세 끝-->
+
+				
+				<div class="board_video_list"><!--게시판특강-->
+					<div class="board_video_list_wrap">
+						<a href="" class="video_box">
+							<div class="video_thumb">
+								<div class="video_thumb_bg" style="background-image: url(/user/images/common/video_thumb.png); ">
+									<span>특강 썸네일</span>
+								</div>
+								<div class="video_thumb_layer"></div>
+								<div class="video_thumb_playbtn"></div>
+							</div>
+							<div class="video_tit">
+								<dl>
+									<dt>2021학년 정시 합격 시작 경쟁율 체크가 중요하다</dt>
+									<dd>2020.11.27</dd>
+								</dl>
+							</div>
+						</a>
+
+						<a href="" class="video_box">
+							<div class="video_thumb">
+								<div class="video_thumb_bg" style="background-image: url(/user/images/common/video_thumb.png); ">
+									<span>특강 썸네일</span>
+								</div>
+								<div class="video_thumb_layer"></div>
+								<div class="video_thumb_playbtn"></div>
+							</div>
+							<div class="video_tit">
+								<dl>
+									<dt>2021학년 정시 합격 시작 경쟁율 체크가 중요하다</dt>
+									<dd>2020.11.27</dd>
+								</dl>
+							</div>
+						</a>
+
+						<a href="" class="video_box">
+							<div class="video_thumb">
+								<div class="video_thumb_bg" style="background-image: url(/user/images/common/video_thumb.png); ">
+									<span>특강 썸네일</span>
+								</div>
+								<div class="video_thumb_layer"></div>
+								<div class="video_thumb_playbtn"></div>
+							</div>
+							<div class="video_tit">
+								<dl>
+									<dt>2021학년 정시 합격 시작 경쟁율 체크가 중요하다</dt>
+									<dd>2020.11.27</dd>
+								</dl>
+							</div>
+						</a>
+					</div>
+				</div><!--게시판특강끝-->
+
+
+			</div>
+		</div>
+		<!---//게시판-->
+
+		<!---리스트-->
+		<div class="shortcode_modules">
+			<div class="modules__title">
+				<h2>리스트</h2>
+			</div>
+			<div class="modules__content">
+				<h2>리스트 스타일1</h2>
+				<ul class="similarity_reference_list"> 참고하세요!
+					<li>컨쇼마트 신규 회원에게 자율활동 1회 무료 체험 서비스를 제공합니다.</li>
+					<li>파일, 사진 첨부의 경우 OCR 판독 시 해상도, 밝기, 각도 등의 문제로 인식률이 저하 될 수 있습니다. 검사 시작 전에 변환된 텍스트를 확인해주세요.</li>
+				</ul>
+			</div>
+		</div>
+		<!---//리스트--->
+
+		<!---헤더-->
+		<div class="shortcode_modules">
+			<div class="modules__title">
+				<h2>헤더</h2>
+			</div>
+			<div class="modules__content">
+				<h2>헤더 스타일1</h2>
+				<div class="header-st1">
+					<strong>공지사항</strong>
+				</div>
+			</div>
+			<div class="modules__content">
+				<h2>헤더 스타일2</h2>
+				<div class="header-st1 gry">
+					<a class="back" href="javascript:;"><img src="/user/images/common/ic_back.png" alt=""></a>
+					<strong>공지사항</strong>
+				</div>
+			</div>
+			<div class="modules__content">
+				<h2>헤더 스타일3</h2>
+				<div class="header-st1 gry">
+					<strong>이벤트</strong>
+					<a class="write-btn" href="javascript:;">글쓰기</a>
+				</div>
+			</div>
+			<div class="modules__content">
+				<h2>헤더 스타일4</h2>
+				<div class="header-st1">
+					<a class="back" href="javascript:;"><img src="/user/images/common/ic_back.png" alt=""></a>
+					<strong>커뮤니티</strong>
+					<a class="comment new" href="javascript:;"></a>
+				</div>
+			</div>
+			<div class="modules__content">
+				<h2>헤더 스타일5</h2>
+				<div class="header-st1">
+					<a class="back" href="javascript:;"><img src="/user/images/common/ic_back.png" alt=""></a>
+					<strong>댓글<em class="re-count">3</em></strong>
+				</div>
+			</div>
+			<div class="modules__content">
+				<h2>헤더 스타일6</h2>
+				<div class="header-st1">
+					<a class="close" href="javascript:;"><img src="/user/images/common/ic_close.png" alt=""></a>
+					<a class="write-btn" href="javascript:;">완료</a>
+				</div>
+			</div>
+			<div class="modules__content">
+				<h2>헤더 스타일7</h2>
+				<div class="header-st1 line">
+					<a class="back" href="javascript:;"><img src="/user/images/common/ic_back.png" alt=""></a>
+					<strong>회사소개</strong>
+				</div>
+			</div>
+			<div class="modules__content">
+				<h2>헤더 스타일8</h2>
+				<div class="header-st1">
+					<a class="back" href="javascript:;"><img src="/user/images/common/ic_back.png" alt=""></a>
+					<a class="setting" href="javascript:;"></a>
+				</div>
+			</div>
+		</div>
+		<!---//헤더--->
+	</section>
+	<!-- //contents -->
+</body>
+</html>

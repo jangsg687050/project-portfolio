@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/* 셀렉트박스 커스텀 */
+		.custom-select { position: relative; display: inline-block; min-width: 200px; text-align: left; vertical-align: top; }
+		.custom-select select { display: none; }
+		.custom-select .select-selected { border: 1px solid #ddd; background-color: #fff; }
+		.custom-select .select-selected:after { position: absolute; top: 50%; right: 20px; width: 15px; height: 8px; margin-top: -4px; content: ''; background: url(/images/common/sel_down.png) no-repeat center; }
+		.custom-select .select-selected.select-arrow-active:after { background-image: url(/images/common/sel_up.png); }
+		.custom-select .select-items div, .custom-select .select-selected { font-size: 16px; padding: 12px 20px; padding-right: 40px; cursor: pointer; user-select: none; color: #222; }
+		.custom-select .select-items { position: absolute; z-index: 1; top: 100%; right: 0; left: 0; visibility: hidden; overflow-y: auto; max-height: 145px; /* transition: all 0.2s ease-in-out; */ pointer-events: none; opacity: 0; border: 1px solid #ddd; border-top: 0; background-color: #fff; }
+		.custom-select .select-control.opened .select-items { visibility: visible; pointer-events: all; opacity: 1; }
+		.custom-select .select-hide { display: none; }
+		.custom-select .select-items .selection { color: #ec422e; }
+		.custom-select .select-items div:hover { background-color: #f8f8f8; }
+
+		/* 검색 */
+		.search-s1 { margin-bottom: 60px; padding: 30px; background-color: #eee; }
+		.search-s1 .search-box { display: flex; align-items: center; justify-content: center; }
+		.search-s1 .search-box > * { margin: 0 5px; flex-shrink: 0; }
+		.search-s1 .search-box .search-set { display: flex; align-items: center; }
+		.search-s1 .search-box .search-set > * { margin: 0 5px; }
+		.search-s1 .search-box .search-select .select-selected { padding: 17px 20px; }
+		.search-s1 .search-box .search-form { font-size: 16px; display: inline-block; width: 100%; max-width: 500px; height: 60px; padding: 0 20px; vertical-align: middle; color: #222; border: 1px solid #ddd; background-color: #fff; }
+		.search-s1 .search-box .search-form.width1 { max-width: 400px; margin-right: 10px; }
+		.search-s1 .search-box .search-btn { font-size: 17px; min-width: 150px; height: 60px; color: #fff; border: 0; background-color: #e4402d; }
+		.search-s1 .search-box .search-btn:hover, .search-s1 .search-box .search-btn:focus { background-color: #e71a0f; }
+		.search-s1 .search-box .search-btn span { display: inline-block; min-height: 19px; padding-right: 30px; background: url(/images/common/icon_search.png) no-repeat right center; }
+		.search-s1 .search-box .search-txt { font-size: 17px; margin: 0 10px; color: #444; }
+		.search-s1 .search-box input.form-style.date { height: 60px; }
+	</style>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			customSelect();
+		});
+
+		//커스텀 셀렉트 박스
+		function customSelect(){
+			$(".custom-select select").each(function() {
+				var template = '<div class="select-control">';
+				var optionTemplate = "";
+				var selectedText = "";
+				
+				$(this)
+					.find("option")
+					.each(function() {
+						if($(this).attr("selected")) {
+							selectedText = $(this).text();
+						}
+						
+						optionTemplate +=
+							"<div " +
+							" data-value=" +
+							$(this).attr("value") +
+							">" +
+							$(this).html() +
+							"</div>";
+					});
+				optionTemplate += "</div></div>";
+				
+				template +=
+					'<div class="select-selected">' +
+					((selectedText != "") ? selectedText : $(this).find('option:eq(0)').text()) +
+					"</div>";
+				template += '<div class="select-items">';
+
+				$(this).hide();
+				$(this).after(template + optionTemplate);
+			});
+			$(".custom-select .select-selected").on("click", function() {
+				$("html").one("click", function() {
+					$(".custom-select .select-control").removeClass("opened");
+				});
+				$(this)
+					.parents(".select-control")
+					.toggleClass("opened");
+				event.stopPropagation();
+			});
+			$(".custom-select .select-items div").on("click", function() {
+				$(this)
+					.parents(".custom-select")
+					.find("select")
+					.val($(this).data("value"));
+				$(this)
+					.parents(".select-items")
+					.find("div")
+					.removeClass("selection");
+				$(this).addClass("selection");
+				$(this)
+					.parents(".select-control")
+					.removeClass("opened");
+				$(this)
+					.parents(".select-control")
+					.find(".select-selected")
+					.text($(this).text());
+			});
+		}
+	</script>
+</head>
+<body>
+	<!-- 검색 -->
+	<div class="search-s1">
+		<form action="">
+			<div class="search-box">
+				<div class="custom-select search-select">
+					<select>
+						<option value="">선택하세요.</option>
+						<option value="">제목</option>
+						<option value="">제목2</option>
+						<option value="">제목3</option>
+					</select>
+				</div>
+				<input class="search-form" type="text" placeholder="검색어입력">
+				<button class="search-btn">
+					<span>검색</span>
+				</button>
+			</div>
+		</form>
+	</div>
+	<!-- //검색 -->
+</body>
+</html>
