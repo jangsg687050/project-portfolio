@@ -285,7 +285,9 @@
 	<div class="sub-content">
 		<div class="section1" style="height: 700px; width: 100%; background: #ddd;" ></div>
 		<div class="section2" style="height: 1600px; width: 100%; background: #eee;" ></div>
+		<div class="section3" style="height: 1600px; width: 100%; background: #444;" ></div>
 	</div>
+	<div class="scroll-position" id="demo" >0</div>
 </div>
 
 <!--//sub start -->
@@ -296,6 +298,17 @@
 
 </footer>
 	<script>
+		var testDiv = document.getElementById("demo");
+
+		function myFunction() {
+		  testDiv.innerHTML = Math.ceil(window.scrollY + testDiv.offsetTop);
+		}
+		testDiv.innerHTML = window.scrollY + testDiv.offsetTop;
+		window.onscroll = (event) => {
+			myFunction();
+		};
+	</script>
+	<script>
 			$(document).ready(function(){       
 
 			var scroll_pos = 0;
@@ -304,13 +317,14 @@
 
 				scroll_pos = $(this).scrollTop();
 
-				if(scroll_pos > 500) {
+				if(scroll_pos > 820) {
 
-					//$(".section1").css('background-color', 'blue');
+					$(".section2").css('background-color', 'blue');
 
-				} else {
+				}; 
+				if(scroll_pos > 2463) {
 
-					$(".section2").css('background-color', 'red');
+					$(".section3").css('background-color', 'red');
 
 				}
 
