@@ -26,7 +26,14 @@
 * 02) max-wdith: 1280px
 * ********************************************************************************* */
 @media all and (max-width: 1280px){
-
+	
+	/*galley list*/
+	.list-st1 li{ width: 50%; }
+	
+	/*인스파이어링 로케이션 인천*/
+	.inspiring_locaion .ins_inner{ padding: 0 30px;}
+	.inspiring_locaion .ins_topbox{ flex-direction: column; margin-top: 50px;}
+	.inspiring_locaion .ins_topbox .main_thumb_info{ margin-left: 0; margin-top: 30px;}
 }
 
 
@@ -42,6 +49,36 @@
 * 04) max-wdith: 768px
 * ********************************************************************************* */
 @media all and (max-width: 768px){
+	
+	/* pagination */
+	.pagination a{ width: 25px; height: 25px; line-height: 25px; font-size: 12px; margin: 0 2px;}
+	.pagination .prev_end, 
+	.pagination .prev_one, 
+	.pagination .next_one, 
+	.pagination .next_end{ height: 14px;}
+	.pagination .prev_end{ margin-right: 2px;}
+	.pagination .prev_one{ margin-right: 2px;}
+	.pagination .next_one{ margin-left: 2px;}
+	.pagination .next_end{ margin-left: 2px;} 
+
+	
+	/* galley list */
+	.list-st1{ margin-top: 0;}
+	.list-st1 li{ width: 100%; }
+	.list-st1 .con-box{ padding: 10px 0 30px;}
+	.list-st1 .con-box span{ margin-bottom: 15px;}
+	.list-st1 .con-box dl{ font-size: 14px;}
+	.filter{ font-size: 16px;}
+
+	/*인스파이어링 로케이션 인천*/
+	.inspiring_locaion .ins_list{ margin-top: 50px;}
+	.inspiring_locaion .ins_top strong{ font-size: 24px; word-break: keep-all;}
+	.inspiring_locaion .ins_top p{ font-size: 16px; margin-top: 30px;}
+	.inspiring_locaion .ins_topbox{ margin-top: 15px; }
+	.inspiring_locaion .ins_topbox .main_thumb_info{ margin-top: 15px; }
+	.inspiring_locaion .ins_topbox .main_thumb_info span{ font-size: 20px;}
+	.inspiring_locaion .ins_topbox .main_thumb_info dl{ font-size: 14px; margin-top: 10px; }
+	.inspiring_locaion .ins_topbox .main_thumb_info .btn_more{ margin-top: 15px; font-size: 16px; width: 130px; height: 26px; padding-top: 6px;}
 
 }
 

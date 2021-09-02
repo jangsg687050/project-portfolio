@@ -40,7 +40,7 @@ body{ color: #222; font-weight: 400; font-size: 14px; font-family: 'Noto Sans KR
 * 04) sub layout
 * ********************************************************************************* */
 
-
+#sub-container{ margin: 100px 0 80px 0; }
 
 /* ********************************************************************************* *
 * 05) table list
@@ -52,6 +52,29 @@ body{ color: #222; font-weight: 400; font-size: 14px; font-family: 'Noto Sans KR
 * 06) galley list
 * ********************************************************************************* */
 
+/*galley list 01*/
+.filter{ display: flex; font-size: 20px; }
+.filter dt{ padding-right: 15px;  }
+.filter dd{ padding-left: 16px; position: relative; }
+.filter dd:after{ content:""; position: absolute; left: 0; top: 50%; margin-top: -7px; height: 15px; width: 1px; background: #afafaf;}
+.filter dd.active{font-weight: 600;}
+.filter dt.active{font-weight: 600;}
+.list-st1{ display: flex; margin: -15px; flex-wrap: wrap; margin-top: 30px; }
+.list-st1 li{ width: 33.3333%; padding: 15px; }
+.list-st1 li a{display: flex;flex-direction: column;height: 100%;}
+.list-st1 .img-wrap{ position: relative; }
+.list-st1 .img-wrap:after{ content:""; position: absolute; top: 0; right: 0; left: 0; bottom: 0; border: 5px solid transparent; }
+.list-st1 .img-wrap .btn_play{ background: url(/user/images/sub/btn_play.png)no-repeat center center; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 1; }
+.list-st1 .img{ position: relative; }
+.list-st1 .img-thumb{ position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-size: cover; background-repeat: no-repeat; background-position: center; overflow: hidden;}
+.list-st1 .img:after{ content: ""; display: block; padding-top: 56.05%; }
+.list-st1 .con-box{padding: 30px 0;}
+.list-st1 .con-box span{ font-size: 18px; font-weight: 500; line-height: 1.5; display: inline-block; overflow: hidden; text-overflow: ellipsis; white-space: normal; height: auto; min-height: 2.9em; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; margin-bottom: 30px; }
+.list-st1 .con-box dl{ display: flex; font-size: 16px; color: #444; font-weight: 500; }
+.list-st1 .con-box dl dt{ padding-right: 15px; }
+.list-st1 .con-box dl dd{ padding-left: 16px; position: relative;  }
+.list-st1 .con-box dl dd:after{ content:""; position: absolute; left: 0; top: 50%; margin-top: -7px; height: 15px; width: 1px; background: #afafaf;  }
+.list-st1 li a:hover .img-wrap:after{ border: 5px solid #0971ce; box-shadow: 14px 14px 14px 0 rgb(0 0 0 / 20%); }
 
 
 /* ********************************************************************************* *
@@ -63,3 +86,25 @@ body{ color: #222; font-weight: 400; font-size: 14px; font-family: 'Noto Sans KR
 /* ********************************************************************************* *
 * 08) board Write
 * ********************************************************************************* */
+
+
+/* ********************************************************************************* *
+* 09) pagination
+* ********************************************************************************* */
+
+.pagination{ position: relative; margin-top: 30px; text-align: center; display: flex; align-items: center; justify-content: center;}
+.pagination a{ position: relative; font-size: 16px; box-sizing: border-box; width: 45px; height: 45px; line-height: 45px; font-weight: 500; margin: 0 5px;}
+.pagination a:hover,
+.pagination a.active{ background-color: #222; color: #fff; border-radius: 50%;}
+.pagination .prev_end,
+.pagination .prev_one,
+.pagination .next_one,
+.pagination .next_end{width:20px; height: 25px; font-size:0; line-height:0; background-position:center center; background-repeat:no-repeat; background-size: contain; }
+.pagination .prev_end:hover,
+.pagination .prev_one:hover,
+.pagination .next_one:hover,
+.pagination .next_end:hover{ background-color: transparent; border-radius: 0; }
+.pagination .prev_end{ margin-right: 35px; background-image:url(/user/images/sub/bbs_prev_end.png);}
+.pagination .prev_one{ margin-right: 30px; background-image:url(/user/images/sub/bbs_prev_one.png);}
+.pagination .next_one{ margin-left: 30px; background-image:url(/user/images/sub/bbs_next_one.png);}
+.pagination .next_end{ margin-left: 35px; background-image:url(/user/images/sub/bbs_next_end.png);} 

@@ -18,34 +18,33 @@
 * ********************************************************************************* */
 
 /* header */
-#header{ position: fixed; top: 0; right: 0; left: 0; height: 100px; background: #fff; z-index: 52; border-bottom: 1px solid rgba( 255, 255, 255, 10% );}
-#header .inner{  position: relative;  padding: 0 50px; margin: 0 auto;}
-.main_gnb_wrap{ position: relative; display: flex; align-items: center; justify-content: space-between;}
-.main_gnb_wrap .logo a{ background: url(/user/images/common/logo_b.png)no-repeat; width: 165px; height: 50px; display: block;}
-.main_gnb .depth_01{ display: flex; align-items: center; justify-content: space-between;}
-.main_gnb .depth_01 > li{height: 100px; line-height: 100px; }
-.main_gnb .depth_01 > li > a{ margin: 0 45px; padding: 0 10px; display: block; font-size: 20px; font-weight: 500;}
-.main_gnb .depth_01 > li:hover > a{position: relative; }
-.main_gnb .depth_01 > li:hover > a:after{ content:""; position: absolute; bottom:0; left: 0; right: 0; height: 4px; background: #222; }
-#header .depth_wrap{ display: none; position: absolute; left: 0; right: 0; height: 80px; width: 100%; top: 100px; background: #222;}
-.main_gnb .depth_02_wrap { position: absolute; display: none;  top: 100px; margin-left: 50px; }
-.main_gnb .depth_02 { display: flex; height: 80px; line-height: 80px;}
-.main_gnb .depth_02 > li { width: auto; white-space: nowrap;  }
-.main_gnb .depth_02 > li > a{ font-size: 20px;  display: block;  color: #979797; margin-right: 50px;  }
-.main_gnb .depth_02 > li:hover > a{ color: #fff; font-weight: 500;} 
-.right_menu{ display: flex; align-items: center; justify-content: space-between;  }
-.mian_login{ padding: 13px 20px; background: #eee; border-radius: 25px;}
-.mian_login ul{ display: flex; align-items: center;}
-.mian_login ul li:first-child{ position: relative; padding-right: 11px; }
-.mian_login ul li:first-child:after{ content:""; position: absolute; right: 0; top: 50%; margin-top: -4px; height: 11px; width: 1px; background: rgba( 255, 255, 255, 40% );   }
-.mian_login ul li:last-child{  padding-left: 10px; }
-.mian_login ul li a{ color: #333; font-size: 14px; display: inline-block; font-weight: 500;}
-.language{ margin-left: 20px; padding: 13px 20px; background: #eee; border-radius: 25px; width: 88px; text-align: center; }
-.language a{ background: url(/user/images/common/language_b.png)no-repeat left center; color: #333; font-size: 14px; display: inline-block; padding-left: 20px; font-weight: 500; }
-
+#header { position: fixed; top: 0; right: 0; left: 0; height: 100px; background: #fff; z-index: 52; border-bottom: 1px solid rgba(255, 255, 255, 10%); }
+#header .inner { position: relative; padding: 0 50px; margin: 0 auto; }
+.main_gnb_wrap { position: relative; display: flex; align-items: center; justify-content: space-between; }
+.main_gnb_wrap .logo a { background: url(/user/images/common/logo_b.png)no-repeat; width: 165px; height: 50px; display: block; }
+.main_gnb .depth_01 { display: flex; align-items: center; justify-content: space-between; }
+.main_gnb .depth_01 > li { height: 100px; line-height: 100px; }
+.main_gnb .depth_01 > li > a { margin: 0 45px; padding: 0 10px; display: block; font-size: 20px; font-weight: 500; }
+.main_gnb .depth_01 > li:hover > a { position: relative; }
+.main_gnb .depth_01 > li:hover > a:after { content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 4px; background: #222; }
+#header .depth_wrap { display: none; position: absolute; left: 0; right: 0; height: 80px; width: 100%; top: 100px; background: #222; }
+.main_gnb .depth_02_wrap { position: absolute; display: none; top: 100px; margin-left: 50px; }
+.main_gnb .depth_02 { display: flex; height: 80px; line-height: 80px; }
+.main_gnb .depth_02 > li { width: auto; white-space: nowrap; }
+.main_gnb .depth_02 > li > a { font-size: 20px; display: block; color: #979797; margin-right: 50px; }
+.main_gnb .depth_02 > li:hover > a { color: #fff; font-weight: 500; }
+.right_menu { display: flex; align-items: center; justify-content: space-between; }
+.mian_login { padding: 13px 20px; background: #eee; border-radius: 25px; }
+.mian_login ul { display: flex; align-items: center; }
+.mian_login ul li:first-child { position: relative; padding-right: 11px; }
+.mian_login ul li:first-child:after { content: ""; position: absolute; right: 0; top: 50%; margin-top: -4px; height: 11px; width: 1px; background: rgba(255, 255, 255, 40%); }
+.mian_login ul li:last-child { padding-left: 10px; }
+.mian_login ul li a { color: #333; font-size: 14px; display: inline-block; font-weight: 500; }
+.language { margin-left: 20px; padding: 13px 20px; background: #eee; border-radius: 25px; width: 88px; text-align: center; }
+.language a { background: url(/user/images/common/language_b.png)no-repeat left center; color: #333; font-size: 14px; display: inline-block; padding-left: 20px; font-weight: 500; }
 
 /* footer */
-#footer { background: #171717;}
+#footer { background: #171717; }
 #footer .inner { padding: 60px 50px; }
 #footer .footer_con { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
 #footer .footer_con .address ul { display: flex; font-size: 16px; color: #aaa; }
@@ -56,62 +55,62 @@
 #footer .footmenu ul li:first-child { padding-left: 0; color: #fff; }
 #footer .footmenu ul li:after { position: absolute; content: ""; height: 14px; width: 1px; background: #3b3b3b; top: 50%; left: 15px; margin-top: -7px; }
 #footer .footmenu ul li:first-child:after { display: none; }
-#footer .btn-top{ display: none; position: fixed; line-height: 60px; width: 60px; height: 60px; background-color: #0971ce; color: #fff; font-weight: 600; right: 25px; bottom: 25px; z-index: 1000000; text-align: center;}
-
+#footer .btn-top { display: none; position: fixed; line-height: 60px; width: 60px; height: 60px; background-color: #0971ce; color: #fff; font-weight: 600; right: 25px; bottom: 25px; z-index: 1000000; text-align: center; }
 
 /* ********************************************************************************* *
 * 02) 인천영상위원회
 * ********************************************************************************* */
 
-/*소개*/
-.introduce{ margin-top: 100px; }
-.introduce .section1_wrap{  background: url(/user/images/sub/intro_bg01.png)no-repeat left bottom; }
-.introduce .section1{ display: flex; max-width: 1400px; margin: 0 auto; align-items: flex-start; justify-content: space-between; }
-.introduce .section1 dl{ width: 50%; }
-.introduce .section1 dl dt{ font-size: 70px; font-weight: bold; margin-top: -10px;}
-.introduce .section1 dl dd{ font-size: 40px;  font-weight: 200; margin-top: 30px;}
-.introduce .section1 .intro_info{width: 50%;}
-.introduce .section1 .intro_info p{ font-size: 18px; line-height: 1.7; color: #444; word-break: keep-all; }
-.introduce .section1 .intro_info p em{ font-size: 20px; font-weight: 600; letter-spacing: -0.09rem;}
-.introduce .section1 .intro_info span{ font-size: 18px; color: #444; margin-top: 50px; }
-.introduce .section1 .intro_info span em{ color: #222; font-weight: 500;}
-.introduce .section1 .intro_info span img{ vertical-align: middle; margin-left: 20px;}
-.introduce .section2{ margin-top: 90px; background: url(/user/images/sub/intro_bg02.png)no-repeat; background-size: cover;}
-.introduce .section2_con{  max-width: 1400px;  padding: 90px 0;  margin: 0 auto; } 
-.introduce .section2 dl{ display: flex; color: #fff; margin-bottom: 100px;}
-.introduce .section2 dl:last-child{ margin-bottom: 0;}
-.introduce .section2 dl dt{ font-size: 30px; font-weight: bold; width: 100%; max-width: 230px;}
-.introduce .section2 dl dd{ font-size: 50px; margin-top: -5px;}
-.introduce .section2 dl dd .conbox_wrap{ display: flex; margin: -25px; color: #222;}
-.introduce .section2 dl dd .conbox{ padding: 12.5px; width: 33.3333%; }
-.introduce .section2 dl dd .conbox .con{ background: #fff; padding: 45px 40px 50px; border-radius: 0 100px 0 0; height: 100%;}
-.introduce .section2 dl dd .conbox .con span{ font-size: 30px; font-weight: 600; display: block; margin-bottom: 100px; }
-.introduce .section3{ max-width: 1400px; margin: 0 auto; padding-top: 100px;}
-.introduce .section3 .flex_title{ display: flex; justify-content: space-between; align-items: center; padding-bottom: 30px;}
-.introduce .section3 strong{ font-size: 40px; font-weight: bold;}
-.introduce .section3 .btn_wrap{ display: flex; align-items: center;}
-.introduce .section3 .btn_wrap a:first-child{ margin-right: 20px;}
-.introduce .section3 .signature_wrap{ display: flex; margin: 0 -20px; margin-bottom: 50px;}
-.introduce .section3 .signature_wrap:last-of-type{ margin-bottom: 0;}
-.introduce .section3 .signature_wrap dl{ padding: 0 20px; width: 50%; }
-.introduce .section3 .signature_wrap .signature_box{ height: 250px; background: url(/user/images/sub/intro_bg03.png)no-repeat; background-size: contain; }
-.introduce .section3 .signature_wrap dl dd{ font-size: 22px; font-weight: 500; margin-top: 20px;}
-.introduce .section3 .signature_wrap .ci_img{ display: flex; align-items: center; justify-content: center; height: 100%;}
-.introduce .section3 .signature_wrap .ci_img.col li{ padding: 0 50px; }
-.introduce .section3 .signature_wrap .ci_img.row li{ padding: 0 25px; }
-.introduce .section3 .colorchip{ padding: 0 20px; width: 50%; }
-.introduce .section3 .colorchip ul{ display: flex; align-items: center; margin: 0 -15px; height: 250px;}
-.introduce .section3 .colorchip ul li{ padding: 0 15px; width: 33.3333%; height: 100%; color: #fff; }
-.introduce .section3 .colorchip ul li.gry em{  background: #737b81; }
-.introduce .section3 .colorchip ul li.blue em{  background: #0f436e; }
-.introduce .section3 .colorchip ul li.black em{background: #231f20; }
-.introduce .section3 .colorchip ul li em{ height: 100%; display: flex; align-items: center; padding: 25px; line-height: 1.5; font-weight: 500;}
-.introduce .section3 .colorchip span{ font-size: 22px; font-weight: 500; margin-top: 20px; display: block;}
-.introduce .section4{ max-width: 1400px; margin: 0 auto;  background: url(/user/images/sub/intro_bg04.png)no-repeat left 320px bottom; margin-top: 100px; height: 400px; display: flex; align-items: flex-end;}
-.introduce .section4 .brochure{ width: 600px; height: 230px; background: #fff; padding-top: 60px; }
-.introduce .section4 strong{ font-size: 30px; margin-bottom: 30px; display: block; font-weight: 600;}
-.introduce .section4 .btn_wrap{ display: flex; align-items: center;}
-.introduce .section4 .btn_wrap a:first-child{ margin-right: 20px;}
+/* 소개 */
+.introduce { margin-top: 100px; }
+.introduce .section1_wrap { background: url(/user/images/sub/intro_bg01.png)no-repeat left bottom; }
+.introduce .section1 { display: flex; max-width: 1400px; margin: 0 auto; align-items: flex-start; justify-content: space-between; }
+.introduce .section1 dl { width: 50%; }
+.introduce .section1 dl dt { font-size: 70px; font-weight: bold; margin-top: -10px; }
+.introduce .section1 dl dd { font-size: 40px; font-weight: 200; margin-top: 30px; }
+.introduce .section1 .intro_info { width: 50%; }
+.introduce .section1 .intro_info p { font-size: 18px; line-height: 1.7; color: #444; word-break: keep-all; }
+.introduce .section1 .intro_info p em { font-size: 20px; font-weight: 600; letter-spacing: -0.09rem; }
+.introduce .section1 .intro_info span { font-size: 18px; color: #444; margin-top: 50px; }
+.introduce .section1 .intro_info span em { color: #222; font-weight: 500; }
+.introduce .section1 .intro_info span img { vertical-align: middle; margin-left: 20px; }
+.introduce .section2 { margin-top: 90px; background: url(/user/images/sub/intro_bg02.png)no-repeat; background-size: cover; }
+.introduce .section2_con { max-width: 1400px; padding: 90px 0; margin: 0 auto; }
+.introduce .section2 dl { display: flex; color: #fff; margin-bottom: 100px; }
+.introduce .section2 dl:last-child { margin-bottom: 0; }
+.introduce .section2 dl dt { font-size: 30px; font-weight: bold; width: 100%; max-width: 230px; }
+.introduce .section2 dl dd { font-size: 50px; margin-top: -5px; }
+.introduce .section2 dl dd .conbox_wrap { display: flex; margin: 0 -12.5px; color: #222; }
+.introduce .section2 dl dd .conbox { padding: 0 12.5px; width: 33.3333%; }
+.introduce .section2 dl dd .conbox .con { background: #fff; padding: 45px 40px 50px; border-radius: 0 100px 0 0; height: 100%; }
+.introduce .section2 dl dd .conbox .con span { font-size: 30px; font-weight: 600; display: block; margin-bottom: 100px; }
+.introduce .section3 { max-width: 1400px; margin: 0 auto; padding-top: 100px; }
+.introduce .section3 .flex_title { display: flex; justify-content: space-between; align-items: center; padding-bottom: 30px; }
+.introduce .section3 strong { font-size: 40px; font-weight: bold; }
+.introduce .section3 .btn_wrap { display: flex; align-items: center; }
+.introduce .section3 .btn_wrap a:first-child { margin-right: 20px; }
+.introduce .section3 .signature_wrap { display: flex; margin: 0 -20px; margin-bottom: 50px; }
+.introduce .section3 .signature_wrap:last-of-type { margin-bottom: 0; }
+.introduce .section3 .signature_wrap dl { padding: 0 20px; width: 50%; }
+.introduce .section3 .signature_wrap .signature_box { height: 250px; background: url(/user/images/sub/intro_bg03.png)no-repeat; background-size: contain; }
+.introduce .section3 .signature_wrap dl dd { font-size: 22px; font-weight: 500; margin-top: 20px; }
+.introduce .section3 .signature_wrap .ci_img { display: flex; align-items: center; justify-content: center; height: 100%; }
+.introduce .section3 .signature_wrap .ci_img.col li { padding: 0 50px; }
+.introduce .section3 .signature_wrap .ci_img.row li { padding: 0 25px; }
+.introduce .section3 .colorchip { padding: 0 20px; width: 50%; }
+.introduce .section3 .colorchip ul { display: flex; align-items: center; margin: 0 -15px; height: 250px; }
+.introduce .section3 .colorchip ul li { padding: 0 15px; width: 33.3333%; height: 100%; color: #fff; }
+.introduce .section3 .colorchip ul li.gry em { background: #737b81; }
+.introduce .section3 .colorchip ul li.blue em { background: #0f436e; }
+.introduce .section3 .colorchip ul li.black em { background: #231f20; }
+.introduce .section3 .colorchip ul li em { height: 100%; display: flex; align-items: center; padding: 25px; line-height: 1.5; font-weight: 500; }
+.introduce .section3 .colorchip span { font-size: 22px; font-weight: 500; margin-top: 20px; display: block; }
+.introduce .section4 { max-width: 1400px; margin: 0 auto; background: url(/user/images/sub/intro_bg04.png)no-repeat left 320px bottom; margin-top: 100px; height: 400px; display: flex; align-items: flex-end; }
+.introduce .section4 .brochure { width: 600px; height: 230px; background: #fff; padding-top: 60px; }
+.introduce .section4 strong { font-size: 30px; margin-bottom: 30px; display: block; font-weight: 600; }
+.introduce .section4 .btn_wrap { display: flex; align-items: center; }
+.introduce .section4 .btn_wrap a:first-child { margin-right: 20px; }
+
 
 /* ********************************************************************************* *
 * 03) 메뉴2

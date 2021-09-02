@@ -1,4 +1,4 @@
-@charset "UTF-8";
+    `@charset "UTF-8";
 /****************************************/
 /*  Name : 프로젝트 명
 /*  PART : responsive style
@@ -18,7 +18,7 @@
 * 01) max-wdith: 1440px
 * ********************************************************************************* */
 @media all and (max-width: 1440px){
-
+	
 }
 
 
@@ -26,8 +26,33 @@
 * 02) max-wdith: 1280px
 * ********************************************************************************* */
 @media all and (max-width: 1280px){
-
-}
+	
+	/* 서브 타이틀 */
+	.sub_title{ padding: 0 30px;}
+	
+	
+	/* 소개 */
+	.introduce .section1{ flex-direction: column; align-items: center; padding: 0 30px;}
+	.introduce .section1 dl{ width: 100%; margin-bottom: 30px;}
+	.introduce .section1 .intro_info{ width: 100%;}
+	.introduce .section2_con{ padding: 30px;}
+	.introduce .section2 dl{ flex-direction: column; }
+	.introduce .section2 dl dt{ margin-bottom: 30px;}
+	.introduce .section2 dl:last-child dd{ margin-top: 0;}
+	.introduce .section2 dl dd .conbox_wrap{ flex-direction: column; margin: 0; }
+	.introduce .section2 dl dd .conbox{ width: 100%; padding: 0;}
+	.introduce .section2 dl dd .conbox .con{ padding: 30px; margin-bottom: 30px;}
+	.introduce .section2 dl dd .conbox .con span{ margin-bottom: 30px;}
+	.introduce .section2 dl dd .conbox .con .ul_st1 li{ margin-bottom: 15px;}
+	.introduce .section3{ padding: 100px 30px 0; }
+	.introduce .section3 .signature_wrap{ flex-direction: column; margin: 0;}
+	.introduce .section3 .signature_wrap dl{ width: 100%; padding: 0;}
+	.introduce .section3 .colorchip{ width: 100%;}
+	.introduce .section3 .signature_wrap .signature_box{ background-size: cover;}
+	.introduce .section3 .signature_wrap dl dd{ margin: 10px 0 30px;}
+	.introduce .section4{ background: url(/user/images/sub/intro_bg04.png)no-repeat left 11vw bottom; }   
+	.introduce .section4 .brochure{ padding-left: 30px;}
+} 
 
 
 /* ********************************************************************************* *
@@ -42,8 +67,58 @@
 * 04) max-wdith: 768px
 * ********************************************************************************* */
 @media all and (max-width: 768px){
+	
+	/* Button */
+	.btn_download_b{ width: 150px; height: 50px; line-height: 50px; padding-left: 15px; font-size: 15px;}
+	.btn_download_w{ width: 150px; height: 50px; line-height: 50px; padding-left: 15px; font-size: 15px;}
+	.btn_download_b:before{ background-size: contain; width: 20px; height: 18px; margin-top: -9px; right: 15px;}
+	.btn_download_w:before{ background-size: contain; width: 20px; height: 18px; margin-top: -9px; right: 15px;}
+	
+	/* 서브 타이틀 */
+	.sub_title{ flex-direction: column; align-items: flex-start; }
+	.sub_title dl dt{ font-size: 30px; }
+	.sub_title dl dd{ font-size: 16px; margin-top: 10px; padding-bottom: 15px;}
+	.sub_title .sub_lacation{ margin-bottom: 15px; margin-top: 20px;}
+	.sub_title .sub_lacation li a{ font-size: 14px; }
+	
+	/* 소개 */
+	.introduce{ margin-top: 50px;}
+	.introduce .section1 dl{ margin-bottom: 20px; }
+	.introduce .section1 dl dt{ font-size: 24px; margin: 0; }
+	.introduce .section1 dl dd{ font-size: 20px; margin-top: 10px;}
+	.introduce .section1 .intro_info p{ font-size: 14px;}
+	.introduce .section1 .intro_info p em{ font-size: 14px;}
+	.introduce .section1 .intro_info span{ font-size: 16px;}
+	.introduce .section1 .intro_info span img{ height: 40px;}
+	.introduce .section2{ margin-top: 50px;}
+	.introduce .section2 dl{margin-bottom: 30px; }
+	.introduce .section2 dl dt{ font-size: 24px; margin-bottom: 10px;}
+	.introduce .section2 dl dd{ font-size: 24px;}
+	.introduce .section2 dl dd .conbox .con{ border-radius: 0; padding: 20px 30px;}
+	.introduce .section2 dl dd .conbox .con span{ margin-top: 10px; font-size: 20px; margin-bottom: 10px;}
+	.introduce .section2 dl dd .conbox .con .ul_st1 li{ margin-bottom: 5px; font-size: 14px; }
+	.introduce .section3{ padding: 50px 30px 0; }
+	.introduce .section3 .flex_title{ flex-direction: column; }
+	.introduce .section3 strong{ font-size: 24px; margin-bottom: 20px; }
+	.introduce .section3 .btn_wrap{ flex-direction: column; }
+	.introduce .section3 .btn_wrap a:first-child{ margin-right: 0; margin-bottom: 10px; }
+	.introduce .section3 .signature_wrap .signature_box{ height: auto; padding: 30px; background: #fff; border: 1px solid #ddd;}
+	.introduce .section3 .signature_wrap .ci_img{ flex-direction: column;}
+	.introduce .section3 .signature_wrap .ci_img.col li{ padding: 20px 0;}
+	.introduce .section3 .signature_wrap dl dd{ font-size: 20px; }
+	.introduce .section3 .signature_wrap .ci_img.row li{ padding: 20px 0;}
+	.introduce .section3 .colorchip{ padding: 0;}
+	.introduce .section3 .colorchip ul{ flex-direction: column; margin: 0; height: auto; }
+	.introduce .section3 .colorchip ul li{ width: 100%; padding: 0; }
+	.introduce .section3 .colorchip span{ margin-top: 10px; font-size: 20px;}
+	.introduce .section3 .colorchip ul li em{ height: 100px;}
+	.introduce .section4{ margin-top: 50px; background-size: cover; background: url(/user/images/sub/intro_bg04.png)no-repeat center center;  }
+	.introduce .section4 .brochure{ background: radial-gradient(black, transparent); padding: 30px 20px;}
+	.introduce .section4 strong{ color: #fff; font-size: 24px; margin-bottom: 15px; text-align:center;}
+	.introduce .section4 .btn_wrap{ flex-direction: column;}
+	.introduce .section4 .btn_wrap a:first-child{ margin-right: 0; margin-bottom: 10px; }
+}	
 
-}
 
 
 /* ********************************************************************************* *
