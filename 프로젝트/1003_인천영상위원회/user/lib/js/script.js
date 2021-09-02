@@ -31,55 +31,39 @@ scroll();
 
 })
 
-$(function(){
-	//fullpage
-	$(document).ready(function() {
-		$('#main').fullpage({
-		//options here
-		autoScrolling:true,
-		scrollHorizontally: true,
-		navigation: true,
-		showActiveTooltip: true,
-		slidesNavigation: true,
-		controlArrows:false,
-		keyboardScrolling: true,
-		responsiveWidth: 1200,
-		responsiveHeight: 800,
-		//bigSectionsDestination: 'top',
-		onLeave: function(index, i, direction) {
-			//console.log(index);
-			if(index == 5 && direction =='down') {
-				$('#footer').addClass('on');
-			}else if(index == 6 && direction == 'up') {
-				$('#footer').removeClass('on');
-			}else if(index == 1 && direction == 'down') {
-				
-			}else{
-				$('#footer').removeClass('on');
-			}
-		},
-		afterLoad: function(a, index) {
-			//console.log(index);
-			if(index == 6) {
-				$('#footer').addClass('on');
-			}
+//탑버튼
+function moveTop(){
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 200) {
+			$('#footer .btn-top').fadeIn();
+		} else {
+			$('#footer .btn-top').fadeOut();
 		}
 	});
-
-		//methods
-		//$.fn.fullpage.setAllowScrolling(false);
+	$('#footer .btn-top').click(function() {
+		$('body,html').animate({
+			scrollTop: 0
+		}, 500);
 	});
+};
+
+$(function(){
+	//탑버튼
+	moveTop();
 
 	//메인gnb
 	$('.main_gnb .depth_01 > li > a').mouseenter(function(){
 		console.log("마우스 올림");
-		$(this).parent().siblings().find('.depth_02').stop().slideUp();
-		$(this).parent().find('.depth_02').stop().slideDown();
+		$(this).parent().siblings().find('.depth_02_wrap').stop().slideUp();
+		$(this).parent().find('.depth_02_wrap').stop().slideDown();
+		$("#header > .inner").parent().find('.depth_wrap').stop().slideDown();
+		$("#header > .inner").parent().find('.depth_wrap').stop().slideDown();
 	});
 
-	$('.main_gnb_wrap').mouseleave(function(){
+	$(' #header > .inner').mouseleave(function(){
 		//.sub_menu를 벗어나면 css 변경
-		$(this).parent().find('.depth_02').stop().slideUp();
+		$(this).parent().find('.depth_02_wrap').stop().slideUp();
+		$("#header > .inner").parent().find('.depth_wrap').stop().slideUp();
 	});
 
 	$('.depth_02 > li > a').click(function(){

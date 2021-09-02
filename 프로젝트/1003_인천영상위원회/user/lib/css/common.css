@@ -25,6 +25,11 @@
 /* ********************************************************************************* *
 * 02) Button
 * ********************************************************************************* */
+/*btn-style*/
+.btn_download_b{ position: relative; display: block; width: 230px; height: 60px; padding-left: 30px; line-height: 60px; background: #222; font-size: 18px; font-weight: 500; color: #fff; }
+.btn_download_b:before{ position: absolute; content:""; right: 25px; top: 50%; background: url(/user/images/sub/btn_down_w.png)no-repeat; width: 26px; height: 25px; margin-top: -13px; }
+.btn_download_w{ position: relative; display: block; width: 230px; height: 60px; padding-left: 30px; line-height: 60px; border: 2px solid #222; background: #fff; font-size: 18px; font-weight: 500; }
+.btn_download_w:before{ position: absolute; content:""; right: 25px; top: 50%; background: url(/user/images/sub/btn_down_b.png)no-repeat; width: 26px; height: 25px; margin-top: -13px;}
 
 
 
@@ -38,6 +43,22 @@
 * 04) sub layout
 * ********************************************************************************* */
 
+/*container*/
+#container{ margin: 100px auto 135px;}
+
+/*서브 타이틀*/
+.sub_title{ max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: flex-end;}
+.sub_title dl{ }
+.sub_title dl dt{ font-size: 50px; font-weight:bold;}
+.sub_title dl dd{ position: relative; font-size: 18px; color: #444; margin-top: 30px; padding-bottom: 30px; }
+.sub_title dl dd:after{ content:""; position: absolute; bottom: 0; left: 0; width: 60px; height: 2px; background: #222; }
+.sub_title .sub_lacation{ position: relative; display: flex; margin-bottom: 30px; padding-left: 30px; }
+.sub_title .sub_lacation:before{ content:""; position: absolute; left: 0; top: 50%; background: url(/user/images/sub/icon_location.png)no-repeat; width: 17px; height: 15px; margin-top: -7px;}
+.sub_title .sub_lacation li{ position: relative; padding-right: 40px; }
+.sub_title .sub_lacation li:last-child{ padding-right: 0; }
+.sub_title .sub_lacation li:after{ content:""; position: absolute; background: url(/user/images/sub/icon_location_arrow.png)no-repeat; right: 18px; top: 50%; width: 5px; height: 11px; margin-top: -6px;}
+.sub_title .sub_lacation li:last-child:after{display: none;}
+.sub_title .sub_lacation li a{ color: #343434; font-size: 17px; }
 
 
 /* ********************************************************************************* *
@@ -61,3 +82,14 @@
 /* ********************************************************************************* *
 * 08) board Write
 * ********************************************************************************* */
+
+
+/* ********************************************************************************* *
+* 08) ul style
+* ********************************************************************************* */
+
+/*ul-style*/
+.ul_st1{ font-size: 17px; color: #444; }
+.ul_st1 li{ position: relative; padding-left: 15px; line-height: 1.5;  margin-bottom: 25px; word-break: keep-all; }
+.ul_st1 li:last-child{ margin-bottom: 0;}
+.ul_st1 li:before{ content:""; position: absolute; left: 0; top: 11px; width: 4px; height: 4px; border-radius: 50%; background: #444;}

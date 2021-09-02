@@ -82,7 +82,7 @@
 .section3 .announce_table dl dd ul li em { position: relative; display: block; font-size: 16px; padding-left: 30px; font-weight: 600; }
 .section3 .announce_table dl dd ul li em:before { position: absolute; content: ""; left: 0; top: 50%; margin-top: -9px; background: url( /user/images/common/icon_calendar.png)no-repeat; width: 18px; height: 18px; }
 .section3 .announce_table dl dd ul li em b { color: #555; font-weight: 500; padding-left: 25px; }
-.section3 .announce_table dl dd ul li .btn_application { font-size: 18px; display: block; width: 150px; height: 55px; line-height: 55px; position: relative; background: #fff; border: 1px solid #222; padding-left: 55px; }
+.section3 .announce_table dl dd ul li .btn_application { font-size: 18px; display: block; width: 150px; height: 55px; line-height: 55px; position: relative; background: #fff; border: 1px solid #222; border-radius: 0 0 23px 0; padding-left: 55px; }
 .section3 .announce_table dl dd ul li .btn_application:before { position: absolute; content: ""; background: url( /user/images/common/btn_applic_b.png)no-repeat; width: 22px; height: 22px; left: 25px; top: 50%; margin-top: -11px; }
 .section3 .announce_table dl dd ul li .btn_application:hover { color: #fff; background: #0972ce; border: none; box-shadow: 10px 10px 16px 0 rgba(0, 0, 0, 20%); }
 .section3 .announce_table dl dd ul li .btn_application:hover:before { background: url( /user/images/common/btn_applic_w.png)no-repeat; }
@@ -101,9 +101,67 @@
 #footer .footmenu ul li:first-child:after { display: none; }
 #footer .btn-top{ display: none; position: fixed; line-height: 60px; width: 60px; height: 60px; background-color: #0971ce; color: #fff; font-weight: 600; right: 25px; bottom: 25px; z-index: 1000000; text-align: center;}
 
+
+/*페이징*/
+.pagination{ position: relative; margin-top: 40px; text-align: center; display: flex; align-items: center; justify-content: center;}
+.pagination a{ position: relative; font-size: 16px; box-sizing: border-box; width: 45px; height: 45px; line-height: 45px; font-weight: 500; margin: 0 5px;}
+.pagination a:hover,
+.pagination a.active{ background-color: #222; color: #fff; border-radius: 50%;}
+.pagination .prev_end,
+.pagination .prev_one,
+.pagination .next_one,
+.pagination .next_end{width:20px; height: 25px; font-size:0; line-height:0; background-position:center center; background-repeat:no-repeat; background-size: contain; }
+.pagination .prev_end:hover,
+.pagination .prev_one:hover,
+.pagination .next_one:hover,
+.pagination .next_end:hover{ background-color: transparent; border-radius: 0; }
+.pagination .prev_end{ margin-right: 35px; background-image:url(/user/images/sub/bbs_prev_end.png);}
+.pagination .prev_one{ margin-right: 30px; background-image:url(/user/images/sub/bbs_prev_one.png);}
+.pagination .next_one{ margin-left: 30px; background-image:url(/user/images/sub/bbs_next_one.png);}
+.pagination .next_end{ margin-left: 35px; background-image:url(/user/images/sub/bbs_next_end.png);} 
+
 /* ********************************************************************************* *
-* 02) 메뉴1
+* 02) 사업공고
 * ********************************************************************************* */
+
+#sub_container{ margin: 100px 0;}
+.bussiness_announce{ padding: 50px 360px 0;}
+.bussiness_announce strong{ font-size: 50px; font-weight: bold; display: block; margin-bottom: 30px; }
+.bussiness_announce .announce_table_head{ margin-bottom: 30px; display: flex; justify-content: space-between; align-items: flex-end;}
+.bussiness_announce .announce_table_head .total{ font-size: 18px; font-weight: 500;}
+.bussiness_announce .announce_table_head .total em{ font-weight: 600;}
+
+.bussiness_announce .sub_search_wrap{ display: flex; justify-content: flex-end; }
+.bussiness_announce .sub_search{  width: 500px; height: 60px; background: #fff; border: 2px solid #222; border-radius: 0 0 23px 0; align-items: center; display: flex; }
+.bussiness_announce .sub_search input[type='text']{flex-grow: 1; height: 60px; border: none; padding-left: 30px; font-size: 20px;  }
+.bussiness_announce .sub_search input[type='text']::placeholder{ font-size: 20px;}
+.bussiness_announce .sub_search button[type='submit']{ border: none;  width: 60px; height: 60px; flex-shrink: 0; background: url(/user/images/sub/btn_search.png)no-repeat center center;}
+
+.bussiness_announce .announce_table { width: 100%; border-top: 2px solid #000; border-bottom: 1px solid #ddd; }
+.bussiness_announce .announce_table dl { background: #fff; border-bottom: 1px solid #ddd; display: flex; align-items: center; padding: 30px 0; }
+.bussiness_announce .announce_table dl:last-child { border-bottom: none; }
+.bussiness_announce .announce_table dl:hover { background: #ecf4fb; }
+.bussiness_announce .announce_table dl dt { position: relative; width: 160px; flex-shrink: 0; }
+.bussiness_announce .announce_table dl dt:after { content: ""; position: absolute; height: 90px; width: 1px; background: #ddd; top: 50%; right: 0; margin-top: -45px; }
+.bussiness_announce .announce_table dl dt ul li { margin: 0 auto; width: 70px; height: 70px; border-radius: 50%; border: 1px solid #222; text-align: center; line-height: 70px; font-size: 16px; }
+.bussiness_announce .announce_table dl dt ul li.accept { background: #222; font-weight: 500; color: #fff; }
+.bussiness_announce .announce_table dl dt ul li.day { background: #fff; font-family: 'GongGothicMedium'; font-weight: bold;margin-top: -10px; }
+.bussiness_announce .announce_table dl dt ul li.process { background: #0972ce;  font-weight: 500; color: #fff; border: none;}
+.bussiness_announce .announce_table dl dt ul li.end { background: #aaa; font-weight: 500;  color: #fff; border: none;}
+
+.bussiness_announce .announce_table dl dd { flex-grow: 1; padding: 0 50px 0 40px; width: 100%; }
+.bussiness_announce .announce_table dl dd ul { display: flex; align-items: center; justify-content: space-between; }
+.bussiness_announce .announce_table dl dd ul li span { display: block; font-size: 17px; color: #0972ce; margin-bottom: 14px; font-weight: 500; }
+.bussiness_announce .announce_table dl dd ul li a.txt { border-bottom: 1px solid transparent; font-size: 22px; margin-bottom: 25px; display: inline-block; max-width: 600px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bussiness_announce .announce_table dl dd ul li a.txt:hover { border-bottom: 1px solid #222; }
+.bussiness_announce .announce_table dl dd ul li em { position: relative; display: block; font-size: 16px; padding-left: 30px; font-weight: 600; }
+.bussiness_announce .announce_table dl dd ul li em:before { position: absolute; content: ""; left: 0; top: 50%; margin-top: -9px; background: url( /user/images/common/icon_calendar.png)no-repeat; width: 18px; height: 18px; }
+.bussiness_announce .announce_table dl dd ul li em b { color: #555; font-weight: 500; padding-left: 25px; }
+.bussiness_announce .announce_table dl dd ul li .btn_application { font-size: 18px; display: block; width: 150px; height: 55px; line-height: 55px; position: relative; background: #fff; border: 1px solid #222; border-radius: 0 0 23px 0; padding-left: 55px; }
+.bussiness_announce .announce_table dl dd ul li .btn_application:before { position: absolute; content: ""; background: url( /user/images/common/btn_applic_b.png)no-repeat; width: 22px; height: 22px; left: 25px; top: 50%; margin-top: -11px; }
+.bussiness_announce .announce_table dl dd ul li .btn_application:hover { color: #fff; background: #0972ce; border: none; box-shadow: 10px 10px 16px 0 rgba(0, 0, 0, 20%); }
+.bussiness_announce .announce_table dl dd ul li .btn_application:hover:before { background: url( /user/images/common/btn_applic_w.png)no-repeat; }
+
 
 
 
