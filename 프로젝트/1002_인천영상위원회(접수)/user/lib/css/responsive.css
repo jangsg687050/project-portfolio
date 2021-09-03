@@ -19,6 +19,7 @@
 * ********************************************************************************* */
 @media all and (max-width: 1440px){
 	
+	/***************** common ******************/
 	/* header */
 	#header .inner{ padding: 0 30px;}
 	.main_gnb .depth_01 > li a{ padding: 0 20px;}
@@ -30,6 +31,11 @@
 	/* footer */
 	#footer .footer_con{ flex-direction: column; align-items: flex-start; }
 	.address{ padding-bottom: 15px;}
+	
+	/* sub layout */
+	#sub_container .inner{ padding: 0 30px;}
+
+	/***************** //common ******************/
 }
 
 
@@ -95,9 +101,13 @@
 	#footer .footer_con .address ul{ flex-direction: column; }
 	#footer .footer_con .address ul li b{ padding-left: 0;}
 	#footer .copyright{ font-size: 12px;}
+	
+
+	/* sub layout */
+	#sub_container .sub_title strong{ font-size: 26px; padding-top: 30px; }
 
 	/* table list */
-	.announce_table dl{ position: relative; flex-direction: column; align-items: flex-start; padding: 20px; }
+	.announce_table dl{ position: relative; flex-direction: column; align-items: flex-start; padding: 20px; }  
 	.announce_table dl dt:after{ display: none;}
 	.announce_table dl dt{ width: auto; margin-bottom: 10px;}
 	.announce_table dl dt ul{ display: flex; align-items: center;}
@@ -109,6 +119,12 @@
 	.announce_table dl dd ul li a.txt{ width: 100%; max-width: auto;}
 	.announce_table dl dd ul li span{ margin-bottom: 10px;}
 	.announce_table dl dd ul li .btn_application{  margin-top: 20px; }
+
+	/*input*/
+	.sub_search{ width: 300px; height: 50px;}
+	.sub_search input[type='text']{ height: 50px; padding-left: 20px; font-size: 16px; }
+	.sub_search input[type='text']::placeholder{ font-size: 16px;}
+	.sub_search button[type='submit']{width: 50px; height: 50px;}
 
 	/* pagination */
 	.pagination a{ width: 25px; height: 25px; line-height: 25px; font-size: 12px; margin: 0 2px;}
@@ -141,6 +157,10 @@
 	.section2 ul li:first-child{ padding-top: 0;}
 	.section2 ul li:before{ display: none;}
 
+	/* 사업공고 */
+	.bussiness_announce .announce_table_head{ flex-direction: column-reverse; margin-bottom: 15px; align-items: flex-start;}
+	.bussiness_announce .announce_table_head .total{ margin-top: 20px;}
+
 }
 
 
@@ -148,6 +168,9 @@
 * 05) max-wdith: 480px
 * ********************************************************************************* */
 @media all and (max-width: 480px){
+
+	/*input*/
+	.sub_search{ width: 100%; height: 50px;}
 
 }
 
