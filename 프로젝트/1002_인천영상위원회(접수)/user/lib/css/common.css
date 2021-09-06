@@ -89,7 +89,7 @@
 .announce_table dl dd ul li em:before { position: absolute; content: ""; left: 0; top: 50%; margin-top: -9px; background: url( /user/images/common/icon_calendar.png)no-repeat; width: 18px; height: 18px; }
 .announce_table dl dd ul li em b { color: #555; font-weight: 500; padding-left: 25px; }
 .announce_table dl dd ul li .btn_application { font-size: 18px; display: block; width: 150px; height: 55px; line-height: 55px; position: relative; background: #fff; border: 1px solid #222; border-radius: 0 0 23px 0; padding-left: 55px; }
-.announce_table dl dd ul li .btn_application:before { position: absolute; content: ""; background: url( /user/images/common/btn_applic_b.png)no-repeat; width: 22px; height: 22px; left: 25px; top: 50%; margin-top: -11px; }
+.announce_table dl dd ul li .btn_application:before { position: absolute; content: ""; background: url( /user/images/common/btn_applic_b.png)no-repeat; width: 18px; height: 18px; left: 25px; top: 50%; margin-top: -8px; }
 .announce_table dl dd ul li .btn_application:hover { color: #fff; background: #0972ce; border: none; box-shadow: 10px 10px 16px 0 rgba(0, 0, 0, 20%); }
 .announce_table dl dd ul li .btn_application:hover:before { background: url( /user/images/common/btn_applic_w.png)no-repeat; }
 

@@ -1,3 +1,12 @@
-$('html, body').removeClass('popup_hidden'); 닫혔을때
+/* CSS */
+.hidden {height:100%; min-height:100%; overflow:hidden !important; touch-action:none;}
 
-$('html, body').addClass('popup_hidden'); 열렸을때
+//script
+function scrollDisable(){
+    $('body').addClass('scrollDisable').on('scroll touchmove mousewheel', function(e){
+        e.preventDefault();
+    });
+}
+function scrollAble(){
+    $('body').removeClass('scrollDisable').off('scroll touchmove mousewheel');
+}

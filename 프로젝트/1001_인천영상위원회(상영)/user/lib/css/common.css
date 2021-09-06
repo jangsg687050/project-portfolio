@@ -5,7 +5,7 @@
 /*  Author : 최초 작성자
 /*  MODIFY : 작업 참여자
 /*
-/*  Summary: /* 파일 내용 */
+/*  Summary: /* common file */
 /*  01) Icon
 /*  02) Button
 /*  03) gnb
@@ -32,7 +32,33 @@
 * 03) gnb
 * ********************************************************************************* */
 
+/* header */
+#header { position: fixed; top: 0; right: 0; left: 0; height: 100px; z-index: 52; }
+#header.sub{ background: #fff;}
+#header .inner { padding: 0 50px; margin: 0 auto; height: 100%; }
+.main_gnb_wrap { display: flex; align-items: center; justify-content: space-between; flex-grow: 1; height: 100%; }
+.main_gnb_wrap .logo a { background: url(/user/images/common/logo_b.png)no-repeat; width: 165px; height: 50px; display: block; }
+.main_gnb { flex-grow: 1; }
+.main_gnb .depth_01 { display: flex; align-items: center; justify-content: center; }
+.main_gnb .depth_01 > li { position: relative; height: 80px; line-height: 80px; }
+.main_gnb .depth_01 > li a { padding: 0 45px; display: block; font-size: 20px; font-weight: 500; }
+.right_menu { margin-left: 85px; background: #eeeeee; border-radius: 50px; }
+.right_menu a { text-align: center; display: block; padding-left: 25px; background: url(/user/images/common/icon_home.png)no-repeat left 25px center; width: 178px; height: 56px; line-height: 56px; }
+.scrolldown_header { background-color: #fff; border-bottom: 1px solid #eee; -webkit-transition-duration:0.3s; -webkit-transition-timing-function:ease; transition-duration:0.4s; transition-timing-function:ease; }
 
+/* footer */
+#footer { background: #171717; }
+#footer .inner { padding: 60px 50px; }
+#footer .footer_con { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+#footer .footer_con .address ul { display: flex; font-size: 16px; color: #aaa; }
+#footer .footer_con .address ul li b { color: #eee; padding-left: 25px; }
+#footer .copyright { font-size: 16px; color: #535353; font-weight: 500; }
+#footer .footmenu ul { display: flex; align-items: center; color: #d6d6d6; }
+#footer .footmenu ul li { position: relative; padding-left: 30px; }
+#footer .footmenu ul li:first-child { padding-left: 0; color: #fff; }
+#footer .footmenu ul li:after { position: absolute; content: ""; height: 14px; width: 1px; background: #3b3b3b; top: 50%; left: 15px; margin-top: -7px; }
+#footer .footmenu ul li:first-child:after { display: none; }
+#footer .btn-top{ display: none; position: fixed; line-height: 60px; width: 60px; height: 60px; background-color: #0971ce; color: #fff; font-weight: 600; right: 25px; bottom: 25px; z-index: 1000000; text-align: center;}
 
 /* ********************************************************************************* *
 * 04) sub layout
@@ -106,3 +132,12 @@
 .pagination .prev_one{ margin-right: 30px; background-image:url(/user/images/sub/bbs_prev_one.png);}
 .pagination .next_one{ margin-left: 30px; background-image:url(/user/images/sub/bbs_next_one.png);}
 .pagination .next_end{ margin-left: 35px; background-image:url(/user/images/sub/bbs_next_end.png);} 
+
+/* ********************************************************************************* *
+* 09) input
+* ********************************************************************************* */
+/*main-search*/
+.search_main_head{ position: absolute; z-index: 2; top: 180px; left: 50%; transform: translateX(-50%); width: 700px; height: 75px; background: #fff; border: 2px solid #222; align-items: center; display: flex; }
+.search_main_head input[type='text']{ height: 75px; flex-grow: 1; height: 75px; border: none; padding-left: 30px; font-size: 20px;  }
+.search_main_head input[type='text']::placeholder{ font-size: 20px;}
+.search_main_head button[type='submit']{ border: none;  width: 75px; height: 75px; flex-shrink: 0; background: url(/user/images/common/btn_search_main.png)no-repeat center center;}

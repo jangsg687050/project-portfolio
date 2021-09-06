@@ -428,12 +428,18 @@ input[id="menu"]:checked + label span:nth-child(3) { bottom: 50%; transform: tra
 .ul-st3 li:last-child{ padding-bottom: 0;}
 
 /*절차도*/
-.step-wrap{ display: flex; align-items: center; justify-content: center; margin: 0 -10px; margin-bottom: 50px;}
-.step-wrap li{ position: relative; margin: 0 10px; }
-.step-wrap li.line{  height: 1px; width: 100px; background: #acacac; }
-.step-wrap li.line:last-child{ display: none; }
-.step-wrap li.step a{ width: 80px; height: 80px; border-radius: 100%; font-size: 15px; color: #666; background: #e0e0e0; display: flex; align-items: center; justify-content: center; line-height: 1.3;}
-.step-wrap li.step a.active{ color: #fff; background: #1169a0; }
+.step-st1{ display: flex; align-items: center; justify-content: center; margin: 0 -10px; margin-bottom: 50px;}
+.step-st1 li{ position: relative; margin: 0 10px; }
+.step-st1 li.line{  height: 1px; width: 100px; background: #acacac; }
+.step-st1 li.line:last-child{ display: none; }
+.step-st1 li.step a{ width: 80px; height: 80px; border-radius: 100%; font-size: 15px; color: #666; background: #e0e0e0; display: flex; align-items: center; justify-content: center; line-height: 1.3;}
+.step-st1 li.step a.active{ color: #fff; background: #1169a0; }
+
+.step-st2{ position: relative; display: flex; align-items: center; justify-content: center; }
+.step-st2 .line{ position: absolute; top: 0; left: 0; width: 140px; height: 2px; background: #eaeaea; }
+.step-st2 .step{ position: relative; width: 33px; height: 33px; background: #eaeaea; border-radius: 50%;}
+.step-st2 .step:after{  }
+.step-st2 dl{ font-size: 18px;}
 
 /*달력*/
 .cal_table { width: 100%; margin-top: 25px; }
