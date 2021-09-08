@@ -48,7 +48,6 @@
 	.introduce .section3 .signature_wrap{ flex-direction: column; margin: 0;}
 	.introduce .section3 .signature_wrap dl{ width: 100%; padding: 0;}
 	.introduce .section3 .colorchip{ width: 100%;}
-	.introduce .section3 .signature_wrap .signature_box{ background-size: cover;}
 	.introduce .section3 .signature_wrap dl dd{ margin: 10px 0 30px;}
 	.introduce .section4{ background: url(/user/images/sub/intro_bg04.png)no-repeat left 11vw bottom; }   
 	.introduce .section4 .brochure{ padding-left: 30px;}
@@ -102,7 +101,7 @@
 	.introduce .section3 strong{ font-size: 24px; margin-bottom: 20px; }
 	.introduce .section3 .btn_wrap{ flex-direction: column; }
 	.introduce .section3 .btn_wrap a:first-child{ margin-right: 0; margin-bottom: 10px; }
-	.introduce .section3 .signature_wrap .signature_box{ height: auto; padding: 30px; background: #fff; border: 1px solid #ddd;}
+	.introduce .section3 .signature_wrap .signature_box{ height: auto; padding: 30px; }
 	.introduce .section3 .signature_wrap .ci_img{ flex-direction: column;}
 	.introduce .section3 .signature_wrap .ci_img.col li{ padding: 20px 0;}
 	.introduce .section3 .signature_wrap dl dd{ font-size: 20px; }
@@ -113,7 +112,7 @@
 	.introduce .section3 .colorchip span{ margin-top: 10px; font-size: 20px;}
 	.introduce .section3 .colorchip ul li em{ height: 100px;}
 	.introduce .section4{ margin-top: 50px; background-size: cover; background: url(/user/images/sub/intro_bg04.png)no-repeat center center;  }
-	.introduce .section4 .brochure{ background: radial-gradient(black, transparent); padding: 30px 20px;}
+	.introduce .section4 .brochure{ background: radial-gradient(black, transparent); padding: 30px 20px; width: 100%;}
 	.introduce .section4 strong{ color: #fff; font-size: 24px; margin-bottom: 15px; text-align:center;}
 	.introduce .section4 .btn_wrap{ flex-direction: column;}
 	.introduce .section4 .btn_wrap a:first-child{ margin-right: 0; margin-bottom: 10px; }

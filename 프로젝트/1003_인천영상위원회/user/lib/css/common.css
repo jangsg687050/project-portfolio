@@ -86,7 +86,7 @@
 #container{ margin: 100px auto 135px;}
 
 /* 서브 타이틀 */
-.sub_title{ max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: flex-end;}
+.sub_title{ max-width: 1400px; padding-top: 50px; margin: 0 auto; display: flex; justify-content: space-between; align-items: flex-end;}
 .sub_title dl{ }
 .sub_title dl dt{ font-size: 50px; font-weight:bold;}
 .sub_title dl dd{ position: relative; font-size: 18px; color: #444; margin-top: 30px; padding-bottom: 30px; }

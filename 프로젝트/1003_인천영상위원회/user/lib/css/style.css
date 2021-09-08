@@ -52,7 +52,7 @@
 .introduce .section3 .signature_wrap { display: flex; margin: 0 -20px; margin-bottom: 50px; }
 .introduce .section3 .signature_wrap:last-of-type { margin-bottom: 0; }
 .introduce .section3 .signature_wrap dl { padding: 0 20px; width: 50%; }
-.introduce .section3 .signature_wrap .signature_box { height: 250px; background: url(/user/images/sub/intro_bg03.png)no-repeat; background-size: contain; }
+.introduce .section3 .signature_wrap .signature_box { height: 250px; background: url(/user/images/sub/intro_bg03.png)repeat; background-size: auto; border: 1px solid #ddd;}
 .introduce .section3 .signature_wrap dl dd { font-size: 22px; font-weight: 500; margin-top: 20px; }
 .introduce .section3 .signature_wrap .ci_img { display: flex; align-items: center; justify-content: center; height: 100%; }
 .introduce .section3 .signature_wrap .ci_img.col li { padding: 0 50px; }
