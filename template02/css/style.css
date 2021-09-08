@@ -436,10 +436,15 @@ input[id="menu"]:checked + label span:nth-child(3) { bottom: 50%; transform: tra
 .step-st1 li.step a.active{ color: #fff; background: #1169a0; }
 
 .step-st2{ position: relative; display: flex; align-items: center; justify-content: center; }
-.step-st2 .line{ position: absolute; top: 0; left: 0; width: 140px; height: 2px; background: #eaeaea; }
-.step-st2 .step{ position: relative; width: 33px; height: 33px; background: #eaeaea; border-radius: 50%;}
-.step-st2 .step:after{  }
-.step-st2 dl{ font-size: 18px;}
+.step-st2 .step-wrap{ position: relative; padding-right: 140px;}
+.step-st2  li:last-child .step-wrap{ padding-right: 0;}
+.step-st2 .step{ width: 33px; height: 33px; background: #eaeaea; border-radius: 50%; display: block; z-index: 1;}
+.step-st2 .step.active{ border: 5px solid #1169a0; background: #fff; }
+.step-st2 .step-wrap:after{ content:""; position: absolute; left: 0; right: 0; top: 17px; height: 2px; background: #eaeaea; z-index: -1; }
+.step-st2 li:last-child .step-wrap:after{ display: none; }
+.step-st2 dl{ font-size: 18px; margin-left: -13px; font-weight: 500;}
+.step-st2 dl dt{ padding-top: 20px; }
+.step-st2 dl dd{ padding-top: 10px;}
 
 /*달력*/
 .cal_table { width: 100%; margin-top: 25px; }
