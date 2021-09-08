@@ -25,10 +25,10 @@
 /* ********************************************************************************* *
 * 02) Button
 * ********************************************************************************* */
-.btn_download_b{ position: relative; display: block; width: 230px; height: 60px; padding-left: 30px; line-height: 60px; background: #222; font-size: 18px; font-weight: 500; color: #fff; }
-.btn_download_b:before{ position: absolute; content:""; right: 25px; top: 50%; background: url(/user/images/sub/btn_down_w.png)no-repeat; width: 26px; height: 25px; margin-top: -13px; }
-.btn_download_w{ position: relative; display: block; width: 230px; height: 60px; padding-left: 30px; line-height: 60px; border: 2px solid #222; background: #fff; font-size: 18px; font-weight: 500; }
-.btn_download_w:before{ position: absolute; content:""; right: 25px; top: 50%; background: url(/user/images/sub/btn_down_b.png)no-repeat; width: 26px; height: 25px; margin-top: -13px;}
+.btn_download{ position: relative; display: block; width: 230px; height: 60px; padding-left: 30px; line-height: 60px; border: 2px solid #222; background: #fff; font-size: 18px; font-weight: 500; }
+.btn_download:before{ position: absolute; content:""; right: 25px; top: 50%; background: url(/user/images/sub/btn_down_b.png)no-repeat; width: 26px; height: 25px; margin-top: -13px;}
+.btn_download:hover{ background: #222; color: #fff; }
+.btn_download:hover:before{ background: url(/user/images/sub/btn_down_w.png)no-repeat; }
 
 
 

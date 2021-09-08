@@ -115,7 +115,7 @@
 * ********************************************************************************* */
 .pagination { position: relative; margin-top: 40px; text-align: center; display: flex; align-items: center; justify-content: center; }
 .pagination a { position: relative; font-size: 16px; box-sizing: border-box; width: 45px; height: 45px; line-height: 45px; font-weight: 500; margin: 0 5px; }
-.pagination a:hover,
+.pagination a:hover{ background-color: #ececec; border-radius: 50%; }
 .pagination a.active { background-color: #222; color: #fff; border-radius: 50%; }
 .pagination .prev_end,
 .pagination .prev_one,
