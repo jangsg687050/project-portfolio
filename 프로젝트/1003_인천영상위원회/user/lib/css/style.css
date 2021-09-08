@@ -71,6 +71,10 @@
 .introduce .section4 .btn_wrap { display: flex; align-items: center; }
 .introduce .section4 .btn_wrap a:first-child { margin-right: 20px; }
 
+/*공지사항*/
+.notice .search_position{ display: flex; align-items: center; justify-content: flex-end;}
+
+
 /* ********************************************************************************* *
 * 03) 메뉴2
 * ********************************************************************************* */

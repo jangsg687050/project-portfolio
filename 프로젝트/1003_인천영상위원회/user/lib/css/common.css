@@ -84,10 +84,10 @@
 
 /* container */
 #container{ margin: 100px auto 135px;}
+.sub_inner_st1{ max-width: 1400px; margin: 0 auto; padding-top: 100px;}
 
 /* 서브 타이틀 */
 .sub_title{ max-width: 1400px; padding-top: 50px; margin: 0 auto; display: flex; justify-content: space-between; align-items: flex-end;}
-.sub_title dl{ }
 .sub_title dl dt{ font-size: 50px; font-weight:bold;}
 .sub_title dl dd{ position: relative; font-size: 18px; color: #444; margin-top: 30px; padding-bottom: 30px; }
 .sub_title dl dd:after{ content:""; position: absolute; bottom: 0; left: 0; width: 60px; height: 2px; background: #222; }
@@ -103,7 +103,16 @@
 /* ********************************************************************************* *
 * 05) table list
 * ********************************************************************************* */
-
+.table_list_st1 table { width: 100%; table-layout: fixed; }
+.table_list_st1 table th { height: 70px; text-align: center; font-size: 18px; font-weight: 400;  border-top: 2px solid #222; border-bottom: 1px solid #ddd; background: #fff; vertical-align: middle; }
+.table_list_st1 table td { height: 70px; font-size: 17px; text-align: center; vertical-align: middle; font-weight: 400;}
+.table_list_st1 table tbody tr { border-bottom: 1px solid #eee; }
+.table_list_st1 table tbody tr:hover { background: #f2f8fd; }
+.table_list_st1 table td.txt-left { text-align: left; font-weight: 400; }
+.table_list_st1 table tr.table-notice { background: #f2f8fd;}
+.table_list_st1 table tr.table-notice td.notice{ background: url(/user/images/sub/icon_notice.png)no-repeat center center; width: 20px; height: 20px;  }
+.table_list_st1 table tr.table-notice td.file{ background: url(/user/images/sub/icon_file.png)no-repeat center center; width: 22px; height: 20px;  }
+.table_list_st1 table td a { display: inline-block; width: 100%; height: 50px; line-height: 50px; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal; overflow: hidden; vertical-align: middle; }
 
 
 /* ********************************************************************************* *
@@ -126,9 +135,39 @@
 /* ********************************************************************************* *
 * 08) ul style
 * ********************************************************************************* */
-
-/* ul-style */
 .ul_st1{ font-size: 17px; color: #444; }
 .ul_st1 li{ position: relative; padding-left: 15px; line-height: 1.5;  margin-bottom: 25px; word-break: keep-all; }
 .ul_st1 li:last-child{ margin-bottom: 0;}
 .ul_st1 li:before{ content:""; position: absolute; left: 0; top: 11px; width: 4px; height: 4px; border-radius: 50%; background: #444;}
+
+/* ********************************************************************************* *
+* 09) Input
+* ********************************************************************************* */
+.sub_search{ display: flex; align-items: center; margin-bottom: 40px; }
+.sub_search .select_wrap{ position: relative; width: 150px; height: 50px; border-bottom: 2px solid #222; font-size: 18px; margin-right: 20px;}
+.sub_search .select_wrap select{ text-align: left; border: none; padding-left: 15px; padding-right: 0; width: 100%; height: 50px; display: block; background:none; padding-bottom: 20px;}
+.sub_search .select_wrap:after{ content: ""; position: absolute; top: 50%; margin-top: -9px; transform: translateY(-50%); right: 10px; background: url(/user/images/sub/icon_select.png); width: 15px; height: 7px;}
+.sub_search .search_wrap{ width: 400px; height: 50px; background: #fff; border-bottom: 2px solid #222; padding-bottom: 20px; align-items: center; display: flex; }
+.sub_search .search_wrap input[type='text']{flex-grow: 1; height: 50px; border: none; padding-left: 10px; font-size: 20px;  }
+.sub_search .search_wrap input[type='text']::placeholder{ font-size: 18px; color: #666;}
+.sub_search .search_wrap button[type='submit']{ border: none;  width: 50px; height: 50px; flex-shrink: 0; background: url(/user/images/sub/btn_search.png)no-repeat center center;}
+
+/* ********************************************************************************* *
+* 10) pagination
+* ********************************************************************************* */
+.pagination { position: relative; margin-top: 40px; text-align: center; display: flex; align-items: center; justify-content: center; }
+.pagination a { position: relative; font-size: 16px; box-sizing: border-box; width: 45px; height: 45px; line-height: 45px; font-weight: 500; margin: 0 5px; }
+.pagination a:hover{ background-color: #ececec; border-radius: 50%; }
+.pagination a.active { background-color: #222; color: #fff; border-radius: 50%; }
+.pagination .prev_end,
+.pagination .prev_one,
+.pagination .next_one,
+.pagination .next_end { width: 20px; height: 25px; font-size: 0; line-height: 0; background-position: center center; background-repeat: no-repeat; background-size: contain; }
+.pagination .prev_end:hover,
+.pagination .prev_one:hover,
+.pagination .next_one:hover,
+.pagination .next_end:hover { background-color: transparent; border-radius: 0; }
+.pagination .prev_end { margin-right: 35px; background-image: url(/user/images/sub/bbs_prev_end.png); }
+.pagination .prev_one { margin-right: 30px; background-image: url(/user/images/sub/bbs_prev_one.png); }
+.pagination .next_one { margin-left: 30px; background-image: url(/user/images/sub/bbs_next_one.png); }
+.pagination .next_end { margin-left: 35px; background-image: url(/user/images/sub/bbs_next_end.png); }
