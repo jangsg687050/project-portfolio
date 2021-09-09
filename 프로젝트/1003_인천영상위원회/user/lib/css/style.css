@@ -73,6 +73,7 @@
 
 /*공지사항*/
 .notice .search_position{ display: flex; align-items: center; justify-content: flex-end;}
+.notice .nodata{ border-top: 2px solid #222; border-bottom: 1px solid #ddd; font-size: 18px; text-align: center; padding: 90px 0; width: 100%;}
 
 
 /* ********************************************************************************* *
@@ -88,5 +89,60 @@
 
 
 /* ********************************************************************************* *
-* 05) 메뉴4
+* 05) 흥보
 * ********************************************************************************* */
+
+/*인천영상아카이브*/
+.archive .introduce .title{background: #f8f8f8; height: 150px; line-height: 150px;}
+.archive .introduce .title dl{ display: flex; padding-left: 50px;  }
+.archive .introduce .title dl dt{ position: relative; font-size: 26px; padding-left: 100px; font-weight: bold;}
+.archive .introduce .title dl dt:before{ content:""; position: absolute; left: 0; top: 50%; margin-top: -35px; background: url(/user/images/sub/icon_archive_title.png)no-repeat; height: 70px; width: 70px; }
+.archive .introduce .title dl dd{ font-size: 18px; padding-left: 75px;}
+.archive .sub_info > dl{ display: flex; padding-top: 70px; padding-bottom: 75px; border-bottom: 1px solid #ddd;}
+.archive .sub_info > dl:last-child{ border-bottom: none;}
+.archive .sub_info > dl > dt{ max-width: 250px; width: 100%; font-size: 26px; font-weight: bold;}
+.archive .sub_info > dl > dd{ flex-grow: 1; width: 100%;}
+.archive .sub_info .ul_st1{ color: #222;}
+.archive .sub_info .ul_st1 li b{ font-weight: 600;}
+.archive .sub_info .ul_st1 li:before{ background: #222;}
+.archive .sub_section1{ margin-bottom: 50px; }
+.archive .table_list_st2{ padding-top: 25px;}
+.archive .step_st1{ margin: 50px 0;}
+.archive .step_st1 ul{ display: flex; align-items: flex-start; justify-content: space-between;}
+.archive .step_st1 li{ position: relative; width: 100%; display: flex; justify-content: center; }
+.archive .step_st1 li:before{ position: absolute; content:""; left: 0; right: 0; top: 22.5px; height: 1px; background: #222; z-index: -1;}
+.archive .step_st1 li:after{ position: absolute; content:""; right: -12.5px; top: 22.5px; margin-top: -7px; background: url(/user/images/sub/icon_step_arrow.png)no-repeat center #fff; height: 14px; width: 25px; }
+.archive .step_st1 li:last-child:after{ display: none;}
+.archive .step_st1 li dl dt{ width: 120px; height: 45px; background: #222; font-size: 17px; color: #fff; font-weight: 500; line-height: 45px; border-radius: 25px; text-align: center;}
+.archive .step_st1 li dl dd{ padding-top: 40px; text-align: center;}
+.archive .step_st1 li dl dd .icon{ width: 50px; height: 53px; margin: 0 auto; margin-bottom: 30px;}
+.archive .step_st1 li dl dd .icon.step1{ background: url(/user/images/sub/icon_step01.png)no-repeat center;}
+.archive .step_st1 li dl dd .icon.step2{ background: url(/user/images/sub/icon_step02.png)no-repeat center;}
+.archive .step_st1 li dl dd .icon.step3{ background: url(/user/images/sub/icon_step03.png)no-repeat center;}
+.archive .step_st1 li dl dd .icon.step4{ background: url(/user/images/sub/icon_step04.png)no-repeat center;}
+.archive .step_st1 li dl dd .icon.step5{ background: url(/user/images/sub/icon_step05.png)no-repeat center;}
+.archive .step_st1 li dl dd p{ font-size: 20px; line-height: 1.5; font-weight: 500; }
+.archive .caution{ height: 80px; display: flex; align-items: center; width: 100%; background: #f8f8f8; padding: 0 30px;}
+.archive .caution p{ position: relative; font-size: 17px; line-height: 1.5; padding-left: 30px; }
+.archive .caution p:before{ content:""; position: absolute; left: 0; top: 50%; margin-top: -7px; background: url(/user/images/sub/icon_caution.png)no-repeat; width: 17px; height: 17px; }
+.archive .sub_section2 .ul_st1{ margin-bottom: 25px; }
+.archive .sub_section2 .caution{ margin-bottom: 30px;}
+.archive .btn_wrap{ text-align: center; margin-top: 50px; }
+.archive .application .caution{ margin-bottom: 50px;}
+.archive .dd_title{ margin-top: 50px; font-size: 20px; font-weight: bold; display: block; margin-bottom: 30px;}
+.archive .form_table{ margin-bottom: 50px;}
+.archive .form_subtitle{ position: relative; text-align: left; padding-left: 15px; font-size: 18px; vertical-align: middle; min-width: 135px; word-break: keep-all; font-size: 17px; font-weight: 600; margin-bottom: 25px;}
+.archive .form_subtitle:before{ content:""; position: absolute; left: 0; top: 11px; width: 4px; height: 4px; border-radius: 50%; background: #222;}
+.archive .form_subtitle em{ position: relative; padding-right: 10px;}
+.archive .form_subtitle em:after{ content:"*"; position: absolute; font-size:17px; color: #0971ce; top: 0;  right: 0;}
+.archive .coronation_table{ display: flex; align-items: center; border: 1px solid #c9c9c9; border-top: 2px solid #222; margin-bottom: 50px; }
+.archive .coronation_table .calendar_st2{ max-width: 420px; width: 100%; }
+.archive .coronation_table .date_chk{ flex-grow: 1; width: 100%;}
+.archive .coronation_table .date_chk_wrap{ padding: 25px 50px;}
+.archive .coronation_table .date_chk_wrap dl{ display: flex; align-items: center; height: 60px; line-height: 60px; border-bottom: 1px solid #c9c9c9; }
+.archive .coronation_table .date_chk_wrap dl:last-child{ border-bottom: none; }
+.archive .coronation_table .date_chk_wrap dl dt{ font-size: 16px; font-weight: 600; max-width: 135px; width: 100%;}
+.archive .coronation_table .date_chk_wrap dl dd{ display: flex; align-items: center; }
+.archive .chk_box{ background: #f8f8f8; padding: 25px 30px; width: 100%;}
+.archive .coronation_table .caution{ margin-bottom: 0;}
+.archive .dd_title:first-of-type{ margin-top: 0; }

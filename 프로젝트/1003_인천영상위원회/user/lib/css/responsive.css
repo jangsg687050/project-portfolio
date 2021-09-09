@@ -32,9 +32,19 @@
 	/* 서브 타이틀 */
 	.sub_title{ padding: 0 30px;}
 
-	/*table scroll*/
+	/* table */
 	.responsive-table{ overflow: auto; }
-	.responsive-table .table_list_st1{ width: 100%; min-width: 1200px; }
+	.responsive-table .table_list_st1{ width: 100%; min-width: 1000px; }
+
+	/* Input, Select */
+	.select_wrap{ width: 120px;}
+	.search_wrap{ width: 300px;}
+	.select_wrap select{ padding-left: 5px; }
+	.search_wrap input[type='text']{ padding-left: 5px;  }
+	
+	/* sub layout */
+	.sub_inner_st1{ padding: 0 30px; }
+
 	
 	/***************** //common ******************/
 	
@@ -58,6 +68,9 @@
 	.introduce .section3 .signature_wrap dl dd{ margin: 10px 0 30px;}
 	.introduce .section4{ background: url(/user/images/sub/intro_bg04.png)no-repeat left 11vw bottom; }   
 	.introduce .section4 .brochure{ padding-left: 30px;}
+
+	/*공지사항*/
+	.notice .search_position{ justify-content: center; }
 } 
 
 
@@ -99,7 +112,25 @@
 	.sub_title dl dd{ font-size: 16px; margin-top: 10px; padding-bottom: 15px;}
 	.sub_title .sub_lacation{ margin-bottom: 15px; margin-top: 20px;}
 	.sub_title .sub_lacation li a{ font-size: 14px; }
-	
+
+	/*table*/
+	.responsive-table .table_list_st1{ min-width: 700px; }
+	.table_list_st1 table th{ height: 50px; font-size: 14px;}
+	.table_list_st1 table td{ height: 50px; font-size: 14px;}
+
+	/*Input, Select*/
+	.select_wrap{ font-size: 14px; height: 40px; }
+	.select_wrap select{ padding-bottom: 10px; height: 40px; }
+	.select_wrap:after{ margin-top: -3px;}
+	.search_wrap{ padding-bottom: 10px; height: 40px;}
+	.search_wrap input[type='text']{ font-size: 14px; height: 40px;}
+	.search_wrap input[type='text']::placeholder{ font-size: 14px;}
+	.search_wrap button[type='submit']{ width: 40px; height: 20px; background-size: contain; }
+	.sub_search{ flex-direction: column; max-width: 300px; }
+	.sub_search .select_wrap{ width: 100%; margin-right: 0; margin-bottom: 15px;}
+ 
+
+
 	/***************** //common ******************/
 
 	/* 소개 */

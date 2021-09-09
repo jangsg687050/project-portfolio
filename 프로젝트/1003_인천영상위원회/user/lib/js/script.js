@@ -47,6 +47,14 @@ function moveTop(){
 	});
 };
 
+//탭
+function tab(el, tabName){
+	$('.tab-title > li > a').removeClass('active');
+	$(el).addClass('active');
+	$('.tab_info .tab').hide();
+	$('.tab_info .'+tabName).show();
+};
+
 $(function(){
 	//탑버튼
 	moveTop();
@@ -71,43 +79,4 @@ $(function(){
 		$(this).parents('.depth_02 > li').addClass('active');
 	});
 
-	//메인슬라이드
-	var swiper1 = new Swiper('.section1 .swiper-container', {
-		slidesPerView: 1,
-		observer:true,
-		observeParents:true,
-		parallax: true,
-		loop: true,
-		autoplay: true,
-		speed: 500,
-		effect: 'fade',
-		fadeEffect: {
-		crossFade: true
-		},
-		pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-		type: 'fraction',
-		},
-	  navigation: {
-		nextEl: '.swiper-button-next1',
-		prevEl: '.swiper-button-prev1',
-	  },
-		on: {
-		init: function () {
-		$(".swiper-progress-bar-wrap").removeClass("animate");
-		$(".swiper-progress-bar-wrap").removeClass("active");
-		$(".swiper-progress-bar-wrap").eq(0).addClass("animate");
-		$(".swiper-progress-bar-wrap").eq(0).addClass("active");
-		},
-		slideChangeTransitionStart: function () {
-		$(".swiper-progress-bar-wrap").removeClass("animate");
-		$(".swiper-progress-bar-wrap").removeClass("active");
-		$(".swiper-progress-bar-wrap").eq(0).addClass("active");
-		},
-		slideChangeTransitionEnd: function () {
-		$(".swiper-progress-bar-wrap").eq(0).addClass("animate");
-		}
-		}
-	});
 });
