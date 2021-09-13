@@ -100,8 +100,8 @@
 .archive .introduce .title dl dd{ font-size: 18px; padding-left: 75px;}
 .archive .sub_info > dl{ display: flex; padding-top: 70px; padding-bottom: 75px; border-bottom: 1px solid #ddd;}
 .archive .sub_info > dl:last-child{ border-bottom: none;}
-.archive .sub_info > dl > dt{ max-width: 250px; width: 100%; font-size: 26px; font-weight: bold;}
-.archive .sub_info > dl > dd{ flex-grow: 1; width: 100%;}
+.archive .sub_info > dl > dt{ width: 250px; flex-shrink: 0; font-size: 26px; font-weight: bold;}
+.archive .sub_info > dl > dd{ flex-grow: 1; }
 .archive .sub_info .ul_st1{ color: #222;}
 .archive .sub_info .ul_st1 li b{ font-weight: 600;}
 .archive .sub_info .ul_st1 li:before{ background: #222;}
@@ -136,13 +136,14 @@
 .archive .form_subtitle em{ position: relative; padding-right: 10px;}
 .archive .form_subtitle em:after{ content:"*"; position: absolute; font-size:17px; color: #0971ce; top: 0;  right: 0;}
 .archive .coronation_table{ display: flex; align-items: center; border: 1px solid #c9c9c9; border-top: 2px solid #222; margin-bottom: 50px; }
-.archive .coronation_table .calendar_st2{ max-width: 420px; width: 100%; }
 .archive .coronation_table .date_chk{ flex-grow: 1; width: 100%;}
-.archive .coronation_table .date_chk_wrap{ padding: 25px 50px;}
+.archive .coronation_table .date_chk_wrap{ margin: 25px 50px;}
 .archive .coronation_table .date_chk_wrap dl{ display: flex; align-items: center; height: 60px; line-height: 60px; border-bottom: 1px solid #c9c9c9; }
 .archive .coronation_table .date_chk_wrap dl:last-child{ border-bottom: none; }
-.archive .coronation_table .date_chk_wrap dl dt{ font-size: 16px; font-weight: 600; max-width: 135px; width: 100%;}
+.archive .coronation_table .date_chk_wrap dl dt{ font-size: 16px; white-space: nowrap; font-weight: 600; min-width: 135px; width: 100%;}
 .archive .coronation_table .date_chk_wrap dl dd{ display: flex; align-items: center; }
+.archive .cal_box{ max-width: 470px; width: 100%; }
+.archive .cal_st2_wrap{ width: 360px; margin: 0 auto;}
 .archive .chk_box{ background: #f8f8f8; padding: 25px 30px; width: 100%;}
 .archive .chk_box .chk_st1{ margin-bottom: 20px; }
 .archive .chk_box .chk_st1:last-child{margin-bottom: 0; }

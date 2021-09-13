@@ -30,11 +30,12 @@
 	/***************** common ******************/
 	
 	/* 서브 타이틀 */
-	.sub_title{ padding: 0 30px;}
+	.sub_title{ padding: 50px 30px;}
 
 	/* table */
 	.responsive-table{ overflow: auto; }
 	.responsive-table .table_list_st1{ width: 100%; min-width: 1000px; }
+	.form_table tbody td{ padding: 10px 20px;}
 
 	/* Input, Select */
 	.select_wrap{ width: 120px;}
@@ -44,7 +45,24 @@
 	
 	/* sub layout */
 	.sub_inner_st1{ padding: 0 30px; }
+	
+	/* calendar */
+	.cal_table_title{ flex-direction: column; align-items: flex-start; margin-bottom: 20px;}
+	.cal_table_title .cal_month{ margin-bottom: 30px; }
+	.calendar_st1_wrap{ overflow: auto; }
+	.calendar_st1{ min-width: 1000px; }
+	.cal_table_title ul li{ flex-shrink: 0;}
+	.form_table tbody th p{ padding-left: 10px;}
+	.cal_st2_wrap{ padding: 30px;}
 
+	/* radio */
+	.radio_st1{ flex-wrap: wrap;}
+	.radio_st1 label{ width: 50%; margin-bottom: 15px; }
+	.radio_st1 label + label{ margin-left: 0;}
+
+	/* checkbox */
+	.chk_flexwrap {flex-wrap: wrap;}
+	.chk_flexwrap .chk_st1{ width: 50%; margin-right: 0; margin-bottom: 20px;}
 	
 	/***************** //common ******************/
 	
@@ -71,6 +89,26 @@
 
 	/*공지사항*/
 	.notice .search_position{ justify-content: center; }
+
+	/*인천영상아카이브*/
+	.archive .introduce .title{ height: auto;}
+	.archive .introduce .title dl{ flex-direction: column; line-height: 2.0; padding: 20px 50px; }
+	.archive .introduce .title dl dt:before{ margin-top: -17px; }
+	.archive .introduce .title dl dd{ padding-left: 100px;}
+	.archive .sub_info > dl{ flex-direction: column; }
+	.archive .sub_info > dl > dt{ width: 100%; margin-bottom: 30px; }
+	.archive .step_st1 li dl dt{ width: 100px; height: 40px; font-size: 15px; line-height: 40px;}
+	.archive .step_st1 li dl dd p{ font-size: 14px; }
+	.archive .step_st1 li dl dd .icon{ margin-bottom: 15px;}
+	.archive .step_st1 li:after{ right: -9.5px; width: 20px; }
+	.archive .cal_st2_wrap{ width: auto;}
+	.archive .coronation_table{ flex-direction: column; }
+	.archive .coronation_table .date_chk{ overflow: auto }
+	.archive .coronation_table .date_chk_wrap{overflow: auto; margin: 0 25px;}
+	.archive .coronation_table .date_chk_wrap dl{ flex-direction: column; height: auto; line-height: 1.5; border-bottom: none;}
+	.archive .coronation_table .date_chk_wrap dl dt{ flex-shrink: 0; max-width: 100%; padding: 10px 20px; background: #f9f9f9;}
+	.archive .coronation_table .date_chk_wrap dl dd{ padding: 10px 20px; width: 100%; }
+
 } 
 
 
@@ -101,22 +139,41 @@
 	.pagination .next_end{ margin-left: 2px;} 
 	
 	/* Button */
-	.btn_download_b{ width: 150px; height: 50px; line-height: 50px; padding-left: 15px; font-size: 15px;}
-	.btn_download_w{ width: 150px; height: 50px; line-height: 50px; padding-left: 15px; font-size: 15px;}
-	.btn_download_b:before{ background-size: contain; width: 20px; height: 18px; margin-top: -9px; right: 15px;}
-	.btn_download_w:before{ background-size: contain; width: 20px; height: 18px; margin-top: -9px; right: 15px;}
+	.btn_download{ width: 150px; height: 50px; line-height: 50px; padding-left: 15px; font-size: 15px;}
+	.btn_download:before{ background-size: contain; width: 20px; height: 18px; margin-top: -9px; right: 15px;}
+	.btn_blue{ padding: 0px 20px; height: 50px; line-height: 50px;}
+	.btn_blue p{ font-size: 16px; padding-right: 30px;}
+	.btn_blue p:before{ height: 16px; width: 16px; margin-top: -8px;}
 	
 	/* 서브 타이틀 */
 	.sub_title{ flex-direction: column; align-items: flex-start; }
 	.sub_title dl dt{ font-size: 30px; }
 	.sub_title dl dd{ font-size: 16px; margin-top: 10px; padding-bottom: 15px;}
+	.sub_title dl dd:after{ width: 20px;}
 	.sub_title .sub_lacation{ margin-bottom: 15px; margin-top: 20px;}
+	.table_list_st2 table tbody th{ font-size: 16px; }
 	.sub_title .sub_lacation li a{ font-size: 14px; }
 
 	/*table*/
 	.responsive-table .table_list_st1{ min-width: 700px; }
 	.table_list_st1 table th{ height: 50px; font-size: 14px;}
 	.table_list_st1 table td{ height: 50px; font-size: 14px;}
+	.table_list_st2 table tbody tr{ height: 125px;}
+	.table_list_st2 table tbody th{ font-size: 14px; padding: 15px; word-break: keep-all;}
+	.table_list_st2 table tbody td{ font-size: 14px; padding: 15px;}
+
+	.form_table tbody,
+	.form_table tbody tr,
+	.form_table tbody th,
+	.form_table tbody td {display: block; width: 100%; text-align: left; height: auto; font-size: 14px; border-bottom: none;}
+	.form_table tbody th{ background: #fff; }
+	.form_table tbody th P{ font-size: 16px; }
+	.form_table colgroup { display: none;}
+	.form_table th { background: none; padding: 5px;}
+	.form_table td{padding: 5px;}
+	.form_table tbody td{ padding: 10px;}
+	.form_table .content-txt{ width: 100%;}
+	.form_table .form_select{ max-width: 110px; }
 
 	/*Input, Select*/
 	.select_wrap{ font-size: 14px; height: 40px; }
@@ -128,7 +185,52 @@
 	.search_wrap button[type='submit']{ width: 40px; height: 20px; background-size: contain; }
 	.sub_search{ flex-direction: column; max-width: 300px; }
 	.sub_search .select_wrap{ width: 100%; margin-right: 0; margin-bottom: 15px;}
- 
+	.form-style{ height: 40px; line-height: 40px;}
+	input.form-style{ font-size: 14px;}
+
+	/* tab */
+	.tabwrap-box{ margin-bottom: 30px;}
+	.tab_st1{ overflow: auto; justify-content: flex-start;}
+	.tab_st1 li{ height: 50px; line-height: 50px; padding: 0 10px; flex-shrink: 0;}
+	.tab_st1 li a{ font-size: 14px; }
+	.tab_st1 li a.active:before{ height: 3px;}
+
+	/* ul style */
+	.ul_st1{ font-size: 14px; }
+	.ul_st1 li{ margin-bottom: 5px;}
+	
+	/* calendar */
+	.cal_table_title{ padding-top: 20px; border-top: 1px solid #222;}
+	.cal_table_title .cal_month{ margin-bottom: 15px;  max-width: 160px;} 
+	.cal_table_title ul{  flex-direction: column; align-items: flex-start; }
+	.cal_table_title ul li{ margin-right: 0; font-size: 14px; margin-bottom: 5px; }
+	.cal_table_title .cal_month strong{ font-size: 20px; }
+	.calendar_st1 tbody td{ height: 120px;}
+	.calendar_st1{ min-width: 900px; }
+	.calendar_st1 thead th{ height: 30px; font-size: 14px;}
+	.calendar_st1 tbody td .schedule{ margin-top: 10px;}
+	.calendar_st1 tbody td .date{ font-size: 14px; }
+	.calendar_st1 tbody td.today .date{ width: 27px; height: 27px; line-height: 27px; }
+	.cal_st2_title{ margin-bottom: 20px;}
+	.cal_st2_title strong{ font-size: 18px;}
+	.cal_st2_wrap{ padding: 30px 15px;}
+	.calendar_st2 tbody td{height: auto; padding: 5px;}
+	.calendar_st2 tbody td .date{ font-size: 14px; width: 25px; height: 25px; line-height: 25px; }
+
+	/* checkbox */
+	.chk_flexwrap .chk_st1{ width: 100%; margin-bottom: 15px;}
+	.chk_st1 input[type="checkbox"] + label{ line-height: 20px; padding-left: 30px; font-size: 14px;}
+	.chk_st1 input[type="checkbox"] + label:before{ height: 20px; width: 20px;}
+	.chk_st1 input[type="checkbox"] + label::after{ top: 6px; left: 6px;height: 8px; width: 8px; }
+	
+	/* radio */
+	.radio_st1 label{ width: 100%; }
+	.radio_st1 label em{ font-size: 14px;}
+	.radio_st1 label span{ margin-top: -10px;}
+	.radio_st1 label .box{ height: 20px; width: 20px;}
+	.radio_st1 input[type=radio]:checked ~ .box{height: 20px; width: 20px;}
+	.radio_st1 input[type=radio]:checked ~ .check{ height: 8px; width: 8px;}
+	.radio_st1 .check{ margin-left: 6px;}
 
 
 	/***************** //common ******************/
@@ -169,7 +271,33 @@
 	.introduce .section4 strong{ color: #fff; font-size: 24px; margin-bottom: 15px; text-align:center;}
 	.introduce .section4 .btn_wrap{ flex-direction: column;}
 	.introduce .section4 .btn_wrap a:first-child{ margin-right: 0; margin-bottom: 10px; }
-}	
+
+	/*인천영상아카이브*/
+	.archive .introduce .title dl{ line-height: 1.5; padding: 20px 30px;}
+	.archive .introduce .title dl dt{ font-size: 20px; padding-left: 0;}
+	.archive .introduce .title dl dd{ font-size: 16px; padding-left: 0;}
+	.archive .introduce .title dl dt:before{ display: none;}
+	.archive .sub_info > dl{ padding-top: 30px; padding-bottom: 50px; }
+	.archive .sub_info > dl > dt{ font-size: 20px; margin-bottom: 10px; }
+	.archive .step_st1{ margin: 20px 0;}
+	.archive .step_st1 ul{ flex-direction: column; }
+	.archive .step_st1 li:before{ display: none;}
+	.archive .step_st1 li:after{ display: none;}
+	.archive .step_st1 li dl{ width: 100%;}
+	.archive .step_st1 li dl dt{ border-radius: 0; width: 100%; }
+	.archive .step_st1 li dl dd{ padding: 15px 0 30px; }
+	.archive .step_st1 li dl dd .icon{ margin-bottom: 7px;} 
+	.archive .caution{ padding: 0 15px; }
+	.archive .caution p{ padding-left: 25px; font-size: 14px; line-height: 1.3;}
+	.archive .btn_wrap{ margin-top: 30px; }
+	.archive .dd_title{ font-size: 16px; margin-bottom: 15px;}
+	.archive .coronation_table .date_chk_wrap dl dt{ font-size: 14px; }
+	.archive .chk_box{ padding: 20px 15px;}
+	.archive .sub_section1{ margin-bottom: 15px;}
+	.archive .sub_section2 .ul_st1{ margin-bottom: 15px;}
+	.archive .application .caution{ margin-bottom: 15px;}
+	.archive .coronation_table .caution{ margin-bottom: 0; }
+
 
 
 

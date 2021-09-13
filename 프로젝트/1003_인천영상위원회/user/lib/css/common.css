@@ -135,7 +135,7 @@
 .form_table tbody th p em{ position: relative; padding-right: 10px;}
 .form_table tbody th p em:after{ content:"*"; position: absolute; font-size:17px; color: #0971ce; top: 0;  right: 0;}
 .form_table tbody td{ text-align: left; padding: 10px 50px 10px 0; vertical-align: middle;  }
-.form_table .content-txt{ min-width: 400px; display: inline-block;}
+.form_table .content-txt{ max-width: 400px; width: 100%; display: inline-block;}
 .form_table .form_select{ max-width: 170px; width: 100%; }
 .form_table .from_txt{ display: flex; align-items: center;}
 .form_table .from_txt em{ padding-left: 10px; font-size: 17px; color: #444; }
@@ -208,10 +208,10 @@ input.form-style::placeholder{ color: #444; }
 /* ********************************************************************************* *
 * 11) tab
 * ********************************************************************************* */
+.tabwrap-box{margin-bottom: 70px;}
 .tab_info .tab{ display: none; }
 .tab_info .tab:first-of-type { display: block; }
-
-.tab_st1{ border-bottom: 1px solid #ddd; border-top: 1px solid #ddd; display: flex; align-items: center; justify-content: center; margin-bottom: 70px; }
+.tab_st1{ border-bottom: 1px solid #ddd; border-top: 1px solid #ddd; display: flex; align-items: center; justify-content: center; }
 .tab_st1 li { position: relative; padding: 0 40px; height: 70px; line-height: 70px;}
 .tab_st1 li:after{ position: absolute; content:""; height: 12px; width: 1px; background: #222; right: 0; top: 50%; transform: translateY(-50%); }
 .tab_st1 li:last-child:after{ display: none;}
@@ -262,7 +262,6 @@ input.form-style::placeholder{ color: #444; }
 .calendar_st1 tbody td .schedule ul li.complet em{ background: #aaa; }
 .calendar_st1 tbody td .schedule ul li.possible em{background: #222; }
 .calendar_st1 tbody td .schedule ul li.waiting em{ border: 1px solid #222; color: #222;}
-.cal_st2_wrap{ padding: 0 55px;}
 .cal_st2_title{ width: 100%; padding: 0 18px; margin-bottom: 40px; display: flex; align-items: center; justify-content: space-between;}
 .cal_st2_title strong{ font-size: 30px; font-weight: bold; line-height: 1; padding-bottom: 2px;}
 .cal_st2_title button{ width: 11px; height: 20px; background-color: transparent; border: none;}
@@ -284,25 +283,26 @@ input.form-style::placeholder{ color: #444; }
 * 12) radio
 * ********************************************************************************* */
 .radio_st1 { display: flex; justify-content: flex-start; align-items: center; }
-.radio_st1 label { display: flex; align-items: center; justify-content: center; position: relative; color: #444; font-size: 17px; cursor: pointer; padding-left: 35px; flex-shrink: 0; }
+.radio_st1 label { display: flex; align-items: center; justify-content: flex-start; position: relative; color: #444; cursor: pointer; padding-left: 35px; flex-shrink: 0; }
 .radio_st1 label + label{ margin-left: 40px;}
 .radio_st1 label .box { height: 26px; width: 26px; border: 2px solid #222; background-color: #fff; /* background-color: #ebebeb;  */overflow: hidden; }
 .radio_st1 label span { display: block; position: absolute; left: 0; top: 50%; margin-top: -12px; transition-duration: 0.2s; }
-.radio_st1 label em { font-size: 16px; color: #666; font-weight: 500;}
+.radio_st1 label em { font-size: 16px; color: #222; font-weight: 500;}
 .radio_st1 input[type=radio] { opacity: 0; height: 0; width: 0; margin: 0; padding: 0; overflow: hidden; }
 .radio_st1 .check { display: block; margin-top: -4px; margin-left: 8px;}
 .radio_st1 input[type=radio]:checked ~ .check { height: 10px; width: 10px; background-color: #fff; }
 .radio_st1 input[type=radio]:checked ~ .box { background-color: #222; border: none; }
 .radio_st1 input[type=radio]:disabled ~ .box { background-color: #ebebeb; border: none; }
+.radio_st1 input[type=radio]:disabled ~ em{ color: #666; }
 
 /* ********************************************************************************* *
 * 12) checkbox
 * ********************************************************************************* */
 .chk_flexwrap{ display: flex;}
 .chk_flexwrap .chk_st1{ margin-right: 40px;}
-.chk_st1 { position: relative; height: 26px; display: block; vertical-align: middle; }
+.chk_st1 { position: relative; display: block; vertical-align: middle; }
 .chk_st1 input[type="checkbox"] { position: absolute; width: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0 }
-.chk_st1 input[type="checkbox"] + label { display: inline-block; height: 26px; line-height: 26px; position: relative; font-weight: 500; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; color: #222; padding-left: 35px; }
+.chk_st1 input[type="checkbox"] + label { display: inline-block; line-height: 26px; position: relative; font-weight: 500; cursor: pointer;  -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; color: #222; padding-left: 35px; }
 .chk_st1 input[type="checkbox"] + label:before { content: ""; display: inline-block; width: 26px; height: 26px; vertical-align: middle; background: #fff; border: 2px solid #222; font-size: 16px; position: absolute; left: 0; top: 0; }
 .chk_st1 input[type="checkbox"]:checked + label:before { background: #222; border:none; }
 .chk_st1 input[type="checkbox"] + label::after { content: ""; position: absolute; top: 8px; left: 8px; height: 10px; width: 10px;  }
