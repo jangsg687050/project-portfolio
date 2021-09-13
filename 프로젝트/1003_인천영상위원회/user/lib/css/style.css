@@ -144,5 +144,7 @@
 .archive .coronation_table .date_chk_wrap dl dt{ font-size: 16px; font-weight: 600; max-width: 135px; width: 100%;}
 .archive .coronation_table .date_chk_wrap dl dd{ display: flex; align-items: center; }
 .archive .chk_box{ background: #f8f8f8; padding: 25px 30px; width: 100%;}
+.archive .chk_box .chk_st1{ margin-bottom: 20px; }
+.archive .chk_box .chk_st1:last-child{margin-bottom: 0; }
 .archive .coronation_table .caution{ margin-bottom: 0;}
 .archive .dd_title:first-of-type{ margin-top: 0; }

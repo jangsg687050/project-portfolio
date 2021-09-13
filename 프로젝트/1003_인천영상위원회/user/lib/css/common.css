@@ -258,7 +258,7 @@ input.form-style::placeholder{ color: #444; }
 .calendar_st1 tbody td .schedule ul li.complet{ color: #666;}/*예약완료*/
 .calendar_st1 tbody td .schedule ul li.possible{ color: #222;}/*예약가능*/
 .calendar_st1 tbody td .schedule ul li.waiting{ color: #666;}/*승인대기*/
-.calendar_st1 tbody td .schedule ul li em{ display: inline-block; margin-right: 7px; font-size: 12px; height: 20px; width: 20px; padding-right: 2px; line-height: 18px; text-align: center; border-radius: 100%; color: #fff; }
+.calendar_st1 tbody td .schedule ul li em{ display: inline-block; margin-right: 7px; font-size: 12px; height: 20px; width: 20px; padding-right: 2px; line-height: 18px; text-align: center; border-radius: 100%; color: #fff; padding-left: 1px; }
 .calendar_st1 tbody td .schedule ul li.complet em{ background: #aaa; }
 .calendar_st1 tbody td .schedule ul li.possible em{background: #222; }
 .calendar_st1 tbody td .schedule ul li.waiting em{ border: 1px solid #222; color: #222;}
@@ -298,8 +298,9 @@ input.form-style::placeholder{ color: #444; }
 /* ********************************************************************************* *
 * 12) checkbox
 * ********************************************************************************* */
-.chk_st1 { position: relative; height: 26px; display: block; vertical-align: middle; margin-bottom: 20px; }
-.chk_st1:last-child{margin-bottom: 0; }
+.chk_flexwrap{ display: flex;}
+.chk_flexwrap .chk_st1{ margin-right: 40px;}
+.chk_st1 { position: relative; height: 26px; display: block; vertical-align: middle; }
 .chk_st1 input[type="checkbox"] { position: absolute; width: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0 }
 .chk_st1 input[type="checkbox"] + label { display: inline-block; height: 26px; line-height: 26px; position: relative; font-weight: 500; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; color: #222; padding-left: 35px; }
 .chk_st1 input[type="checkbox"] + label:before { content: ""; display: inline-block; width: 26px; height: 26px; vertical-align: middle; background: #fff; border: 2px solid #222; font-size: 16px; position: absolute; left: 0; top: 0; }
