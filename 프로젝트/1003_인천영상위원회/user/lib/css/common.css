@@ -36,11 +36,13 @@
 .btn_download:before{ position: absolute; content:""; right: 25px; top: 50%; background: url(/user/images/sub/btn_down_b.png)no-repeat; width: 26px; height: 25px; margin-top: -13px;}
 .btn_download:hover{ background: #222; color: #fff; }
 .btn_download:hover:before{ background: url(/user/images/sub/btn_down_w.png)no-repeat; }
-
 .btn_blue{ background: #0971ce; padding: 0 50px; height: 70px; line-height: 70px; display: inline-block; transition: ease-in-out 0.5s; }
 .btn_blue p{ position: relative; font-size: 20px; color: #fff; padding-right: 40px;}
 .btn_blue p:before{ content:""; position: absolute; top: 50%; margin-top: -9px; right: 0; background: url(/user/images/sub/btn_blue.png)no-repeat; width: 19px; height: 19px; background-size: contain; }
 .btn_blue:hover{ background: #222;}
+.btn_black{display: inline-block; background: #222; height: 60px; line-height: 60px; min-width: 150px; padding: 0 30px; color: #fff; font-size: 18px; font-weight: 500; text-align: center; }
+.btn_gray{display: inline-block; background: #787878; height: 60px; line-height: 60px; min-width: 150px; padding: 0 30px; color: #fff; font-size: 18px; font-weight: 500; text-align: center; }
+.btn_login{ width: 100%; height: 70px; background: #222; text-align: center; line-height: 70px; color: #fff; font-size: 20px; font-weight: 500; display: block;  }
 
 /* ********************************************************************************* *
 * 03) gnb
@@ -63,24 +65,25 @@
 .main_gnb .depth_02 > li > a { font-size: 20px; display: block; color: #979797; margin-right: 50px; }
 .main_gnb .depth_02 > li:hover > a { color: #fff; font-weight: 500; }
 .right_menu { display: flex; align-items: center; justify-content: space-between; }
-.mian_login { padding: 13px 20px; background: #eee; border-radius: 25px; }
-.mian_login ul { display: flex; align-items: center; }
+.mian_login { height: 40px; line-height: 40px; width: 160px; background: #eee; border-radius: 25px; }
+.mian_login ul { display: flex; align-items: center; justify-content: center;}
 .mian_login ul li:first-child { position: relative; padding-right: 11px; }
-.mian_login ul li:first-child:after { content: ""; position: absolute; right: 0; top: 50%; margin-top: -4px; height: 11px; width: 1px; background: rgba(255, 255, 255, 40%); }
+.mian_login ul li:first-child:after { content: ""; position: absolute; right: 0; top: 50%; margin-top: -4px; height: 11px; width: 1px; background: #c6c6c6; }
 .mian_login ul li:last-child { padding-left: 10px; }
-.mian_login ul li a { color: #333; font-size: 14px; display: inline-block; font-weight: 500; }
-.language { margin-left: 20px; padding: 13px 20px; background: #eee; border-radius: 25px; width: 88px; text-align: center; }
-.language a { background: url(/user/images/common/language_b.png)no-repeat left center; color: #333; font-size: 14px; display: inline-block; padding-left: 20px; font-weight: 500; }
+.mian_login ul li a { color: #333; font-size: 14px; display: inline-block; font-weight: 600; }
+.language { margin-left: 20px; height: 40px; line-height: 40px; background: #eee; border-radius: 25px; width: 88px; text-align: center; }
+.language a { background: url(/user/images/common/language_b.png)no-repeat left center; color: #333; font-size: 14px; display: inline-block; padding-left: 20px; font-weight: 600; padding-bottom: 2px;}
 
 /* footer */
 #footer { background: #171717; }
 #footer .inner { padding: 60px 50px; }
 #footer .footer_con { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
-#footer .footer_con .address ul { display: flex; font-size: 16px; color: #aaa; }
+#footer .footer_con .address ul { display: flex;}
+#footer .footer_con .address ul li{  font-size: 16px; color: #aaa; }
 #footer .footer_con .address ul li b { color: #eee; padding-left: 25px; }
 #footer .copyright { font-size: 16px; color: #535353; font-weight: 500; }
-#footer .footmenu ul { display: flex; align-items: center; color: #d6d6d6; }
-#footer .footmenu ul li { position: relative; padding-left: 30px; }
+#footer .footmenu ul { display: flex; align-items: center; }
+#footer .footmenu ul li { position: relative; padding-left: 30px; color: #d6d6d6;}
 #footer .footmenu ul li:first-child { padding-left: 0; color: #fff; }
 #footer .footmenu ul li:after { position: absolute; content: ""; height: 14px; width: 1px; background: #3b3b3b; top: 50%; left: 15px; margin-top: -7px; }
 #footer .footmenu ul li:first-child:after { display: none; }
@@ -102,7 +105,7 @@
 .sub_title .sub_lacation{ position: relative; display: flex; margin-bottom: 30px; padding-left: 30px; }
 .sub_title .sub_lacation:before{ content:""; position: absolute; left: 0; top: 50%; background: url(/user/images/sub/icon_location.png)no-repeat; width: 17px; height: 15px; margin-top: -7px;}
 .sub_title .sub_lacation li{ position: relative; padding-right: 40px; }
-.sub_title .sub_lacation li:last-child{ padding-right: 0; }
+.sub_title .sub_lacation li:last-child{ padding-right: 0; font-weight: 600;}
 .sub_title .sub_lacation li:after{ content:""; position: absolute; background: url(/user/images/sub/icon_location_arrow.png)no-repeat; right: 18px; top: 50%; width: 5px; height: 11px; margin-top: -6px;}
 .sub_title .sub_lacation li:last-child:after{display: none;}
 .sub_title .sub_lacation li a{ color: #343434; font-size: 17px; }
@@ -111,11 +114,11 @@
 * 05) table list
 * ********************************************************************************* */
 .table_list_st1 table { width: 100%; table-layout: fixed; }
-.table_list_st1 table th { height: 70px; text-align: center; font-size: 18px; font-weight: 400;  border-top: 2px solid #222; border-bottom: 1px solid #ddd; background: #fff; vertical-align: middle; }
-.table_list_st1 table td { height: 70px; font-size: 17px; text-align: center; vertical-align: middle; font-weight: 400;}
+.table_list_st1 table th { height: 70px; text-align: center; font-size: 18px;   border-top: 2px solid #222; border-bottom: 1px solid #ddd; background: #fff; vertical-align: middle; }
+.table_list_st1 table td { height: 70px; font-size: 17px; text-align: center; vertical-align: middle; }
 .table_list_st1 table tbody tr { border-bottom: 1px solid #eee; }
 .table_list_st1 table tbody tr:hover { background: #f2f8fd; }
-.table_list_st1 table td.txt-left { text-align: left; font-weight: 400; }
+.table_list_st1 table td.txt-left { text-align: left;  }
 .table_list_st1 table tr.table-notice { background: #f2f8fd;}
 .table_list_st1 table tr.table-notice td.notice{ background: url(/user/images/sub/icon_notice.png)no-repeat center center; width: 20px; height: 20px;  }
 .table_list_st1 table tr.table-notice td.file{ background: url(/user/images/sub/icon_file.png)no-repeat center center; width: 22px; height: 20px;  }
@@ -126,7 +129,7 @@
 .table_list_st2 table tbody tr{ border-bottom: 1px solid #ddd; height: 160px; }
 .table_list_st2 table tbody th{ background: #f9f9f9; border-right: 1px solid #ddd; font-size: 17px; font-weight: 500;}
 .table_list_st2 table tbody td{ font-size: 16px; color: #444; padding: 0 25px; line-height: 1.6; }
-.table_list_st2 table tbody td b{ color: #222; font-weight: 500;}
+.table_list_st2 table tbody td b{  font-weight: 500;}
 
 .form_table{ width: 100%; table-layout: fixed;}
 .form_table tbody tr{ height: 60px; line-height: 1.3;}
@@ -139,6 +142,29 @@
 .form_table .form_select{ max-width: 170px; width: 100%; }
 .form_table .from_txt{ display: flex; align-items: center;}
 .form_table .from_txt em{ padding-left: 10px; font-size: 17px; color: #444; }
+
+.table_list_st3{ width: 100%; table-layout: fixed; border-top: 1px solid #222;}
+.table_list_st3 tbody tr{ height: 100px; line-height: 1.3; border-bottom: 1px solid #c9c9c9;}
+.table_list_st3 tbody th{ font-size: 17px; font-weight: 600; background: #f9f9f9; border-right: 1px solid #c9c9c9; text-align: center; vertical-align: middle; min-width: 80px; padding: 20px; word-break: keep-all}
+.table_list_st3 tbody td{ text-align: left; padding: 20px; vertical-align: middle; }
+.table_list_st3 .content-txt{ width: 400px; display: inline-block; }
+.table_list_st3 .content-txt.textarea{ width: 100%; }
+.table_list_st3 .content-txtwrap{ display: inline-flex; align-items: center;  justify-content: flex-start; width: 100%;}
+.table_list_st3 .content-txtwrap .form-style{width: 400px; }
+.table_list_st3 .content-txtwrap.bottom{ justify-content: flex-start; }
+.table_list_st3 .content-txtwrap.bottom .form-style{ width: 400px; margin-top: 10px; margin-right: 10px;}
+.table_list_st3 .content-txtwrap .form-style.select{ width: 170px; margin-left: 10px;}
+.table_list_st3 .content-txtwrap .form-style.select select{ width: 100%;}
+.table_list_st3 .content-txtwrap.bottom .form-style:last-child{ margin-right: 0;}
+.table_list_st3 .btn_confirm{ padding: 0 30px; height: 60px; line-height: 60px; display: inline-block; color: #fff; background: #222; margin-left: 7px; text-align: center; font-size: 18px; font-weight: 400;}
+.table_list_st3 .additional{ padding-left: 20px; position: relative; font-size: 17px; margin-top: 10px;}
+.table_list_st3 .additional:before{ content:""; position: absolute; left: 0; margin-top: 3px; background: url(/user/images/sub/icon_caution.png)no-repeat; width: 17px; height: 17px;}
+.table_list_st3 .e-mail{ margin: 0 10px;}
+.table_list_st3 .anti-spam{ width: 130px; height: 60px; background: #e8e8e8; margin-right: 10px;}
+.table_list_st3 .refresh{ margin-left: 10px; display: flex; align-items: center; white-space: nowrap;}
+.table_list_st3 .refresh button{ background: url(/user/images/sub/btn_refresh.png)no-repeat; width: 21px; height: 25px; border: none;}
+.table_list_st3 .refresh p{ font-size: 18px; margin-left: 10px; }
+.table_list_st3 .content-inputwrap{ display: inline-flex; align-items: center;  justify-content: flex-start;}
 
 /* ********************************************************************************* *
 * 06) galley list
@@ -182,8 +208,11 @@
 .form-style{border: 1px solid #999; height: 60px; line-height: 60px; width: 100%; background-color: #fff;}
 input.form-style{ padding-left: 20px; font-size: 17px; font-weight: 500; border: 1px solid #999;}
 input.form-style::placeholder{ color: #444; }
-.form-style select{ padding-left: 20px; background: url(/user/images/sub/icon_select.png)no-repeat center right 15px; border: none; width: 100%;}
-.form-textarea { display: block; width: 100%; padding: 20px; border: 1px solid #999; background-color: #fff; cursor: default; height: 120px; resize: none; }
+.form-style select{ padding-left: 20px; color: #444; background: url(/user/images/sub/icon_select.png)no-repeat center right 15px; border: none; width: 100%;}
+input.form-textarea { display: block; width: 100%; padding: 20px; border: 1px solid #999; background-color: #fff; cursor: default; height: 120px; resize: none; }
+input.login-style{ border: 1px solid #999; height: 60px;  font-size: 18px; font-weight: 500; line-height: 60px; width: 100%; padding-left: 20px; background: #fff;}
+input.login-style::placeholder{ color: #444; }
+input.login-style:disabled{ background: #f7f7f7; cursor: default; }
 
 /* ********************************************************************************* *
 * 10) pagination
@@ -235,7 +264,7 @@ input.form-style::placeholder{ color: #444; }
 .cal_table_title ul li em{ display: inline-block; margin-right: 10px; font-size: 12px; width: 20px; height: 20px; border-radius: 100%; line-height: 20px; text-align: center; color: #fff;}
 .cal_table_title ul li em.complet{ background: #aaa;}
 .cal_table_title ul li em.possible{background: #222;}
-.cal_table_title ul li em.waiting{border: 1px solid #222; color: #222; line-height: 18px;}
+.cal_table_title ul li em.waiting{ color: #222; border: 1px solid #222;  line-height: 18px;}
 .cal_table_title ul li b{ font-weight: 600;}
 .calendar_st1_wrap{ border-top: 1px solid #222;}
 .calendar_st1 { width: 100%; border: 1px solid #c9c9c9; border-top: none; }
@@ -248,20 +277,17 @@ input.form-style::placeholder{ color: #444; }
 .calendar_st1 tbody td.use{ background: #fff;}/*활성화*/
 .calendar_st1 tbody td.no_date { background: #fff;}/*이전달력날짜*/
 .calendar_st1 tbody td .date{ font-size: 16px; font-weight: bold; color: #888; display: block; line-height: 1; }
-.calendar_st1 tbody td.use .date{ color: #222; }
 .calendar_st1 tbody td.today .date{ position: relative; margin-left: -7px; margin-top: -7px; width: 33px; height: 33px; line-height: 32px; text-align: center; }/*오늘날짜*/
 .calendar_st1 tbody td.today .date:before{ content:""; position: absolute; border: 2px solid #222; top:0; left: 0; right: 0; bottom: 0; border-radius: 100%; }
 .calendar_st1 tbody td .schedule{ margin-top: 20px;}
 .calendar_st1 tbody td.today .schedule{ margin-top: 10px; }
-.calendar_st1 tbody td .schedule ul li{ font-size: 13px; padding-bottom: 5px; font-weight: 500;}
+.calendar_st1 tbody td .schedule ul li{ font-size: 13px; padding-bottom: 5px; font-weight: 500; color: #787878;}
 .calendar_st1 tbody td .schedule ul li:last-child{ padding-bottom: 0;}
-.calendar_st1 tbody td .schedule ul li.complet{ color: #666;}/*예약완료*/
-.calendar_st1 tbody td .schedule ul li.possible{ color: #222;}/*예약가능*/
-.calendar_st1 tbody td .schedule ul li.waiting{ color: #666;}/*승인대기*/
 .calendar_st1 tbody td .schedule ul li em{ display: inline-block; margin-right: 7px; font-size: 12px; height: 20px; width: 20px; padding-right: 2px; line-height: 18px; text-align: center; border-radius: 100%; color: #fff; padding-left: 1px; }
-.calendar_st1 tbody td .schedule ul li.complet em{ background: #aaa; }
-.calendar_st1 tbody td .schedule ul li.possible em{background: #222; }
-.calendar_st1 tbody td .schedule ul li.waiting em{ border: 1px solid #222; color: #222;}
+.calendar_st1 tbody td .schedule ul li.possible{ color: #222;}
+.calendar_st1 tbody td .schedule ul li.complet em{ background: #aaa; }/*예약완료*/
+.calendar_st1 tbody td .schedule ul li.possible em{background: #222; }/*예약가능*/
+.calendar_st1 tbody td .schedule ul li.waiting em{ color: #222; border: 1px solid #222; }/*승인대기*/
 .cal_st2_title{ width: 100%; padding: 0 18px; margin-bottom: 40px; display: flex; align-items: center; justify-content: space-between;}
 .cal_st2_title strong{ font-size: 30px; font-weight: bold; line-height: 1; padding-bottom: 2px;}
 .cal_st2_title button{ width: 11px; height: 20px; background-color: transparent; border: none;}
@@ -273,11 +299,10 @@ input.form-style::placeholder{ color: #444; }
 .calendar_st2 tbody tr:lst-child{ border-bottom: none; }
 .calendar_st2 tbody td { height: 48px; padding: 10px; text-align: left; vertical-align: middle;}
 .calendar_st2 tbody td .date{ background: #ebebeb; margin: 0 auto; font-size: 16px; font-weight: 600; color: #888; display: block; width: 30px; height: 30px; line-height: 30px; border-radius: 100%; text-align: center;}
-.calendar_st2 tbody td.use .date{ color: #222; background: #fff;  }
+.calendar_st2 tbody td.use .date{  background: #fff;  }
 .calendar_st2 tbody td.use .date.select{ background: #222; color: #fff; }
 .calendar_st2 tbody td.today .date{ position: relative; text-align: center; }/*오늘날짜*/
 .calendar_st2 tbody td.today .date:before{ content:""; position: absolute; border: 2px solid #222; top:0; left: 0; right: 0; bottom: 0; border-radius: 100%; }
-
 
 /* ********************************************************************************* *
 * 12) radio
@@ -285,15 +310,26 @@ input.form-style::placeholder{ color: #444; }
 .radio_st1 { display: flex; justify-content: flex-start; align-items: center; }
 .radio_st1 label { display: flex; align-items: center; justify-content: flex-start; position: relative; color: #444; cursor: pointer; padding-left: 35px; flex-shrink: 0; }
 .radio_st1 label + label{ margin-left: 40px;}
-.radio_st1 label .box { height: 26px; width: 26px; border: 2px solid #222; background-color: #fff; /* background-color: #ebebeb;  */overflow: hidden; }
+.radio_st1 label .box { height: 26px; width: 26px; border: 2px solid #222; background-color: #fff; overflow: hidden; }
 .radio_st1 label span { display: block; position: absolute; left: 0; top: 50%; margin-top: -12px; transition-duration: 0.2s; }
-.radio_st1 label em { font-size: 16px; color: #222; font-weight: 500;}
+.radio_st1 label em { font-size: 16px;  font-weight: 500;}
 .radio_st1 input[type=radio] { opacity: 0; height: 0; width: 0; margin: 0; padding: 0; overflow: hidden; }
 .radio_st1 .check { display: block; margin-top: -4px; margin-left: 8px;}
 .radio_st1 input[type=radio]:checked ~ .check { height: 10px; width: 10px; background-color: #fff; }
 .radio_st1 input[type=radio]:checked ~ .box { background-color: #222; border: none; }
 .radio_st1 input[type=radio]:disabled ~ .box { background-color: #ebebeb; border: none; }
 .radio_st1 input[type=radio]:disabled ~ em{ color: #666; }
+
+.radio_st2 { display: flex; justify-content: flex-start; align-items: center; }
+.radio_st2 label { display: flex; align-items: center; justify-content: flex-start; position: relative; color: #444; cursor: pointer; padding-left: 35px; flex-shrink: 0; }
+.radio_st2 label + label{ margin-left: 40px;}
+.radio_st2 label .box { border-radius: 100%; height: 26px; width: 26px; border: 2px solid #222; background-color: #fff; overflow: hidden; }
+.radio_st2 label span { display: block; position: absolute; left: 0; top: 50%; margin-top: -12px; transition-duration: 0.2s; }
+.radio_st2 label em { font-size: 18px;  font-weight: 500;}
+.radio_st2 input[type=radio] { opacity: 0; height: 0; width: 0; margin: 0; padding: 0; overflow: hidden; }
+.radio_st2 .check { display: block; margin-top: -4px; margin-left: 8px; z-index: 1;}
+.radio_st2 input[type=radio]:checked ~ .check { height: 10px; width: 10px; background-color: #fff; border-radius: 100%; }
+.radio_st2 input[type=radio]:checked ~ .box { background-color: #222; border: none; }
 
 /* ********************************************************************************* *
 * 12) checkbox
@@ -302,9 +338,47 @@ input.form-style::placeholder{ color: #444; }
 .chk_flexwrap .chk_st1{ margin-right: 40px;}
 .chk_st1 { position: relative; display: block; vertical-align: middle; }
 .chk_st1 input[type="checkbox"] { position: absolute; width: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0 }
-.chk_st1 input[type="checkbox"] + label { display: inline-block; line-height: 26px; position: relative; font-weight: 500; cursor: pointer;  -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; color: #222; padding-left: 35px; }
+.chk_st1 input[type="checkbox"] + label { display: inline-block; line-height: 26px; position: relative; font-weight: 500; cursor: pointer;  -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;  padding-left: 35px; }
 .chk_st1 input[type="checkbox"] + label:before { content: ""; display: inline-block; width: 26px; height: 26px; vertical-align: middle; background: #fff; border: 2px solid #222; font-size: 16px; position: absolute; left: 0; top: 0; }
 .chk_st1 input[type="checkbox"]:checked + label:before { background: #222; border:none; }
 .chk_st1 input[type="checkbox"] + label::after { content: ""; position: absolute; top: 8px; left: 8px; height: 10px; width: 10px;  }
 .chk_st1 input[type="checkbox"]:checked + label::after { background: #fff; }
 .chk_st1 label em{ color: #0971ce; }
+
+
+/* ********************************************************************************* *
+* 13) Datepicker
+* ********************************************************************************* */
+.ui-widget.ui-widget-content { border: 1px solid #ddd; width: 100%; max-width: 450px; height: auto; border-top: 1px solid #222; padding: 40px 50px 30px; font-family: 'Montserrat'; }
+.ui-widget-header { background: #fff; border: none; margin-bottom: 24px; }
+.ui-datepicker .ui-datepicker-header { padding: 0; height: 20px; }
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next { width: 11px; height: 20px; top: 0; cursor: pointer; }
+.ui-datepicker .ui-datepicker-prev { left: 0; }
+.ui-datepicker .ui-datepicker-next { right: 0; }
+.ui-widget-header .ui-icon.ui-icon-circle-triangle-w { width: 11px; height: 20px; background: url(/user/images/sub/datepicker_prev.png)no-repeat; }
+.ui-widget-header .ui-icon.ui-icon-circle-triangle-e { width: 11px; height: 20px; background: url(/user/images/sub/datepicker_next.png)no-repeat; }
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-button:hover,
+.ui-button:focus { border: none; background: none; font-weight: normal; }
+.ui-datepicker .ui-datepicker-prev-hover { left: 0; }
+.ui-datepicker .ui-datepicker-next-hover { right: 0; }
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker 
+.ui-datepicker-next-hover { top: 0; }
+.ui-datepicker .ui-datepicker-title { font-size: 30px; font-weight: 600; color: #222; height: 23px; line-height: 23px; margin: 0; }
+.ui-datepicker-calendar thead tr { font-family: 'Noto Sans KR'; font-size: 16px; color: #222; }
+.ui-datepicker td { padding: 7px; }
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active { width: 30px; height: 30px; line-height: 26px; border-radius: 100%; background: #fff; font-weight: 600; color: #888; font-size: 16px; text-align: center; border: none; }
+.ui-state-active,
+.ui-widget-content .ui-state-active { background: #222; color: #fff; margin: 0 auto; }

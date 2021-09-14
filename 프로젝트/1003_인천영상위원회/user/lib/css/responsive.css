@@ -36,6 +36,7 @@
 	.responsive-table{ overflow: auto; }
 	.responsive-table .table_list_st1{ width: 100%; min-width: 1000px; }
 	.form_table tbody td{ padding: 10px 20px;}
+	.table_list_st3 .content-txtwrap .form-style{width: 100%; }
 
 	/* Input, Select */
 	.select_wrap{ width: 120px;}
@@ -60,11 +61,21 @@
 	.radio_st1 label{ width: 50%; margin-bottom: 15px; }
 	.radio_st1 label + label{ margin-left: 0;}
 
+	.radio_st2{ flex-wrap: wrap;}
+	.radio_st2 label{ width: 50%; margin-bottom: 15px; }
+	.radio_st2 label + label{ margin-left: 0;}
+
 	/* checkbox */
 	.chk_flexwrap {flex-wrap: wrap;}
 	.chk_flexwrap .chk_st1{ width: 50%; margin-right: 0; margin-bottom: 20px;}
 	
 	/***************** //common ******************/
+
+	/*로그인*/
+	.login .login_title b{ display: block;}
+
+	/*회원가입*/
+	.membership strong{ font-size: 20px; margin-bottom: 15px; }
 	
 	/* 소개 */
 	.introduce .section1{ flex-direction: column; align-items: center; padding: 0 30px;}
@@ -144,6 +155,9 @@
 	.btn_blue{ padding: 0px 20px; height: 50px; line-height: 50px;}
 	.btn_blue p{ font-size: 16px; padding-right: 30px;}
 	.btn_blue p:before{ height: 16px; width: 16px; margin-top: -8px;}
+	.btn_login{ height: 50px; line-height: 50px; font-size: 16px;}
+	.btn_black{ height: 50px; line-height: 50px; font-size: 16px; }
+	.btn_gray{ height: 50px; line-height: 50px; font-size: 16px; }
 	
 	/* 서브 타이틀 */
 	.sub_title{ flex-direction: column; align-items: flex-start; }
@@ -175,6 +189,33 @@
 	.form_table .content-txt{ width: 100%;}
 	.form_table .form_select{ max-width: 110px; }
 
+	.table_list_st3 tbody,
+	.table_list_st3 tbody tr,
+	.table_list_st3 tbody th,
+	.table_list_st3 tbody td {display: block; width: 100%; text-align: left; height: auto; font-size: 14px; border-bottom: none;}
+	.table_list_st3 tbody th{ background: #fff; border-right: none; padding: 10px;}
+	.table_list_st3 tbody th P{ font-size: 16px; }
+	.table_list_st3 colgroup { display: none;}
+	.table_list_st3 th { background: none; padding: 5px;}
+	.table_list_st3 td{padding: 5px;}
+	.table_list_st3 tbody td{ padding: 0 10px 10px;}
+	.table_list_st3 .btn_confirm{ display: inline-block; padding: 0 10px; width: 95px; height: 40px; line-height: 40px; font-size: 14px;}
+	.table_list_st3 .content-txt{ width: 100%;}
+	.table_list_st3 .content-txtwrap.input{ display: block;}
+	.table_list_st3 .content-txtwrap.input .content-inputwrap{ width: 100%; margin-bottom: 10px;}
+	.table_list_st3 .content-txtwrap.input .form-style.select{ margin-left: 0; }
+	.table_list_st3 .content-txt.btn{ width: calc(100% - 105px); }
+	.table_list_st3 .additional{ font-size: 14px;}
+	.table_list_st3 .content-txtwrap .form-style.select{ width: 100%;}
+	.table_list_st3 .anti-spam{ height: 40px; width: 100px; flex-shrink: 0;}
+	.table_list_st3 .content-txtwrap.spam{ flex-wrap: wrap; }
+	.table_list_st3 .content-txtwrap.spam .anti-spam{width: 33%;}
+	.table_list_st3 .content-txtwrap.spam .content-txt{width: 63%;}
+	.table_list_st3 .content-txtwrap.spam .refresh{ width: 100%; margin-top: 10px; margin-left: 0;}
+	.table_list_st3 .content-txtwrap.spam .form-style{ width: 100%; }
+	.table_list_st3 .refresh p{font-size: 14px; }
+	.table_list_st3 .content-txtwrap.bottom .form-style{ width: 100%;}
+
 	/*Input, Select*/
 	.select_wrap{ font-size: 14px; height: 40px; }
 	.select_wrap select{ padding-bottom: 10px; height: 40px; }
@@ -187,6 +228,7 @@
 	.sub_search .select_wrap{ width: 100%; margin-right: 0; margin-bottom: 15px;}
 	.form-style{ height: 40px; line-height: 40px;}
 	input.form-style{ font-size: 14px;}
+	input.login-style{ font-size: 14px; height: 40px; line-height: 40px; }
 
 	/* tab */
 	.tabwrap-box{ margin-bottom: 30px;}
@@ -232,8 +274,36 @@
 	.radio_st1 input[type=radio]:checked ~ .check{ height: 8px; width: 8px;}
 	.radio_st1 .check{ margin-left: 6px;}
 
+	.radio_st2 label{ width: 100%; }
+	.radio_st2 label em{ font-size: 14px;}
+	.radio_st2 label span{ margin-top: -10px;}
+	.radio_st2 label .box{ height: 20px; width: 20px;}
+	.radio_st2 input[type=radio]:checked ~ .box{height: 20px; width: 20px;}
+	.radio_st2 input[type=radio]:checked ~ .check{ height: 8px; width: 8px;}
+	.radio_st2 .check{ margin-left: 6px;}
+
 
 	/***************** //common ******************/
+
+	/* 로그인 */
+	.login .login_title{ margin-bottom: 30px; font-size: 20px; word-break: keep-all;}
+	.login .login_form{ padding: 30px 20px;}
+	.login .login_con{ flex-direction: column; align-items: flex-end; margin: 10px 0 30px;}
+	.login .login-find{ margin-bottom: 10px; width: 100%;}
+	.login .login-find li{ font-size: 14px; }
+	.login .login_tab{ font-size: 16px;}
+	.login .login_find_result{ padding: 50px 20px;}
+
+	/*회원가입*/
+	.membership .step{ margin-bottom: 30px;}
+	.membership .step dl dt{ width: 65px; height: 65px;}
+	.membership .step dl dt:after{ width: 65px; height: 65px;}
+	.membership .step dl dd{ font-size: 16px; }
+	.membership .agreement{ padding: 30px 15px;}
+	.membership .agreement p{ font-size: 14px;}
+	.membership .agreement_wrap{ margin-bottom: 30px;}
+	.membership .complete .btn_wrap02 a{ min-width: 130px;}
+	.membership .complete p{ font-size: 16px; margin-top: 10px; }
 
 	/* 소개 */
 	.introduce{ margin-top: 50px;}

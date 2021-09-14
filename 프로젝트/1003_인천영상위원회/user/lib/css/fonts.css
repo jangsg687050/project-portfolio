@@ -61,6 +61,15 @@
 @font-face {
 	font-family: 'Noto Sans KR';
 	font-style: normal;
+	font-weight: 600;
+	src: url('/user/lib/fonts/NotoSansKR-Bold.woff2') format('woff2'),
+		url('/user/lib/fonts/NotoSansKR-Bold.woff') format('woff'),
+		url('/user/lib/fonts/NotoSansKR-Bold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
 	font-weight: 700;
 	src: url('/user/lib/fonts/NotoSansKR-Bold.woff2') format('woff2'),
 		url('/user/lib/fonts/NotoSansKR-Bold.woff') format('woff'),
@@ -92,7 +101,7 @@
        url('/user/lib/fonts/montserrat-v18-latin-100.woff') format('woff'), /* Modern Browsers */
        url('/user/lib/fonts/montserrat-v18-latin-100.ttf') format('truetype'), /* Safari, Android, iOS */
        url('/user/lib/fonts/montserrat-v18-latin-100.svg#Montserrat') format('svg'); /* Legacy iOS */
-	   unicode-range: U+0030-0039;
+	   unicode-range: U+0030-0039, U+0041-005A;
 }
 /* montserrat-100italic - latin */
 @font-face {
@@ -106,7 +115,7 @@
        url('/user/lib/fonts/montserrat-v18-latin-100italic.woff') format('woff'), /* Modern Browsers */
        url('/user/lib/fonts/montserrat-v18-latin-100italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('/user/lib/fonts/montserrat-v18-latin-100italic.svg#Montserrat') format('svg'); /* Legacy iOS */
-	   unicode-range: U+0030-0039;
+	   unicode-range: U+0030-0039, U+0041-005A;
 }
 /* montserrat-200 - latin */
 @font-face {
@@ -120,7 +129,7 @@
        url('/user/lib/fonts/montserrat-v18-latin-200.woff') format('woff'), /* Modern Browsers */
        url('/user/lib/fonts/montserrat-v18-latin-200.ttf') format('truetype'), /* Safari, Android, iOS */
        url('/user/lib/fonts/montserrat-v18-latin-200.svg#Montserrat') format('svg'); /* Legacy iOS */
-	   unicode-range: U+0030-0039;
+	   unicode-range: U+0030-0039, U+0041-005A;
 }
 /* montserrat-300 - latin */
 @font-face {
@@ -134,7 +143,7 @@
        url('/user/lib/fonts/montserrat-v18-latin-300.woff') format('woff'), /* Modern Browsers */
        url('/user/lib/fonts/montserrat-v18-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
        url('/user/lib/fonts/montserrat-v18-latin-300.svg#Montserrat') format('svg'); /* Legacy iOS */
-	   unicode-range: U+0030-0039;
+	   unicode-range: U+0030-0039, U+0041-005A;
 }
 /* montserrat-200italic - latin */
 @font-face {
@@ -148,7 +157,7 @@
        url('/user/lib/fonts/montserrat-v18-latin-200italic.woff') format('woff'), /* Modern Browsers */
        url('/user/lib/fonts/montserrat-v18-latin-200italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('/user/lib/fonts/montserrat-v18-latin-200italic.svg#Montserrat') format('svg'); /* Legacy iOS */
-	   unicode-range: U+0030-0039;
+	   unicode-range: U+0030-0039, U+0041-005A;
 }
 /* montserrat-300italic - latin */
 @font-face {
@@ -162,7 +171,7 @@
        url('/user/lib/fonts/montserrat-v18-latin-300italic.woff') format('woff'), /* Modern Browsers */
        url('/user/lib/fonts/montserrat-v18-latin-300italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('/user/lib/fonts/montserrat-v18-latin-300italic.svg#Montserrat') format('svg'); /* Legacy iOS */
-	   unicode-range: U+0030-0039;
+	   unicode-range: U+0030-0039, U+0041-005A;
 }
 /* montserrat-regular - latin */
 @font-face {
@@ -176,7 +185,7 @@
        url('/user/lib/fonts/montserrat-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
        url('/user/lib/fonts/montserrat-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('/user/lib/fonts/montserrat-v18-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
-	   unicode-range: U+0030-0039;
+	   unicode-range: U+0030-0039, U+0041-005A;
 }
 /* montserrat-italic - latin */
 @font-face {
@@ -190,7 +199,7 @@
        url('/user/lib/fonts/montserrat-v18-latin-italic.woff') format('woff'), /* Modern Browsers */
        url('/user/lib/fonts/montserrat-v18-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('/user/lib/fonts/montserrat-v18-latin-italic.svg#Montserrat') format('svg'); /* Legacy iOS */
-	   unicode-range: U+0030-0039;
+	   unicode-range: U+0030-0039, U+0041-005A;
 }
 /* montserrat-500 - latin */
 @font-face {
@@ -204,7 +213,7 @@
        url('/user/lib/fonts/montserrat-v18-latin-500.woff') format('woff'), /* Modern Browsers */
        url('/user/lib/fonts/montserrat-v18-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
        url('/user/lib/fonts/montserrat-v18-latin-500.svg#Montserrat') format('svg'); /* Legacy iOS */
-	   unicode-range: U+0030-0039;
+	   unicode-range: U+0030-0039, U+0041-005A;
 }
 /* montserrat-500italic - latin */
 @font-face {
@@ -218,7 +227,7 @@
        url('/user/lib/fonts/montserrat-v18-latin-500italic.woff') format('woff'), /* Modern Browsers */
        url('/user/lib/fonts/montserrat-v18-latin-500italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('/user/lib/fonts/montserrat-v18-latin-500italic.svg#Montserrat') format('svg'); /* Legacy iOS */
-	   unicode-range: U+0030-0039;
+	   unicode-range: U+0030-0039, U+0041-005A;
 }
 /* montserrat-600 - latin */
 @font-face {
@@ -232,7 +241,7 @@
        url('/user/lib/fonts/montserrat-v18-latin-600.woff') format('woff'), /* Modern Browsers */
        url('/user/lib/fonts/montserrat-v18-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
        url('/user/lib/fonts/montserrat-v18-latin-600.svg#Montserrat') format('svg'); /* Legacy iOS */
-	   unicode-range: U+0030-0039;
+	   unicode-range: U+0030-0039, U+0041-005A;
 }
 /* montserrat-600italic - latin */
 @font-face {
@@ -246,7 +255,7 @@
        url('/user/lib/fonts/montserrat-v18-latin-600italic.woff') format('woff'), /* Modern Browsers */
        url('/user/lib/fonts/montserrat-v18-latin-600italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('/user/lib/fonts/montserrat-v18-latin-600italic.svg#Montserrat') format('svg'); /* Legacy iOS */
-	   unicode-range: U+0030-0039;
+	   unicode-range: U+0030-0039, U+0041-005A;
 }
 /* montserrat-700 - latin */
 @font-face {
@@ -260,7 +269,7 @@
        url('/user/lib/fonts/montserrat-v18-latin-700.woff') format('woff'), /* Modern Browsers */
        url('/user/lib/fonts/montserrat-v18-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
        url('/user/lib/fonts/montserrat-v18-latin-700.svg#Montserrat') format('svg'); /* Legacy iOS */
-	   unicode-range: U+0030-0039;
+	   unicode-range: U+0030-0039, U+0041-005A;
 }
 /* montserrat-700italic - latin */
 @font-face {
@@ -274,7 +283,7 @@
        url('/user/lib/fonts/montserrat-v18-latin-700italic.woff') format('woff'), /* Modern Browsers */
        url('/user/lib/fonts/montserrat-v18-latin-700italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('/user/lib/fonts/montserrat-v18-latin-700italic.svg#Montserrat') format('svg'); /* Legacy iOS */
-	   unicode-range: U+0030-0039;
+	   unicode-range: U+0030-0039, U+0041-005A;
 }
 /* montserrat-800 - latin */
 @font-face {
@@ -288,7 +297,7 @@
        url('/user/lib/fonts/montserrat-v18-latin-800.woff') format('woff'), /* Modern Browsers */
        url('/user/lib/fonts/montserrat-v18-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
        url('/user/lib/fonts/montserrat-v18-latin-800.svg#Montserrat') format('svg'); /* Legacy iOS */
-	   unicode-range: U+0030-0039;
+	   unicode-range: U+0030-0039, U+0041-005A;
 }
 /* montserrat-800italic - latin */
 @font-face {
@@ -302,7 +311,7 @@
        url('/user/lib/fonts/montserrat-v18-latin-800italic.woff') format('woff'), /* Modern Browsers */
        url('/user/lib/fonts/montserrat-v18-latin-800italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('/user/lib/fonts/montserrat-v18-latin-800italic.svg#Montserrat') format('svg'); /* Legacy iOS */
-	   unicode-range: U+0030-0039;
+	   unicode-range: U+0030-0039, U+0041-005A;
 }
 /* montserrat-900 - latin */
 @font-face {
@@ -316,7 +325,7 @@
        url('/user/lib/fonts/montserrat-v18-latin-900.woff') format('woff'), /* Modern Browsers */
        url('/user/lib/fonts/montserrat-v18-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
        url('/user/lib/fonts/montserrat-v18-latin-900.svg#Montserrat') format('svg'); /* Legacy iOS */
-	   unicode-range: U+0030-0039;
+	   unicode-range: U+0030-0039, U+0041-005A;
 }
 /* montserrat-900italic - latin */
 @font-face {
@@ -330,5 +339,5 @@
        url('/user/lib/fonts/montserrat-v18-latin-900italic.woff') format('woff'), /* Modern Browsers */
        url('/user/lib/fonts/montserrat-v18-latin-900italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('/user/lib/fonts/montserrat-v18-latin-900italic.svg#Montserrat') format('svg'); /* Legacy iOS */
-	   unicode-range: U+0030-0039;
+	   unicode-range: U+0030-0039, U+0041-005A;
 }
