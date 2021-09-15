@@ -72,6 +72,25 @@
 .membership .profile .table_list_st3{ margin-bottom: 70px;}
 .membership .profile .table_list_st3:type-of-last{ margin-bottom: 0;}
 
+/* 즐겨찾기 */
+.favorite .chk_st1 input[type="checkbox"] + label{ margin-bottom: -3px;}
+.favorite .btn_wrap{ text-align: right; margin-top: 30px;}
+
+/* 접수신청내역 */
+.history_subtitle{ display: block; margin-bottom: 30px; font-size: 18px;}
+.history_subtitle em{ color: #0971ce; }
+
+/*개인정보수정*/
+.privacy_title{ display: block; text-align: center; font-size: 30px;  margin-bottom: 30px;}
+.privacy_sub{ display: block; text-align: center; font-size: 18px; line-height: 1.5;  margin-bottom: 50px; color: #444; word-break: keep-all; font-weight: 400;}
+.privacy_id{ display: block; font-size: 18px; color: #444; padding-bottom: 30px; padding-left: 20px;}
+
+/* 회원탈퇴 */
+.secede_complet{ padding: 30px; text-align: center;}
+.secede_complet img{ display: block;  margin: 0 auto; }
+.secede_complet strong{display: block; font-size: 30px; font-weight: bold; margin-top: 50px;}
+.secede_complet p{ display: block; font-size: 22px; margin-top: 30px;}
+.secede_complet .btn_wrap{ margin-top: 70px; text-align:center; }
 
 /* ********************************************************************************* *
 * 01) Main
@@ -166,7 +185,7 @@
 .detail-page .file{ flex-shrink: 0; background: #f8f8f8; display: flex; align-items: center; justify-content: center; }
 .detail-page .file ul{ flex-grow: 1; text-align: left; }
 .detail-page .file ul li{ display: flex; position: relative; border-bottom: 1px solid #bfbfbf; align-items: center;}
-.detail-page .file ul li a{ display: block; padding: 30px 0 30px 80px; font-size: 17px; }
+.detail-page .file ul li a{ display: block; margin: 30px 0 30px 80px; font-size: 17px; }
 .detail-page .file ul li span{ display: block; margin-left: 5px; }
 .detail-page .file ul li:last-child{ border-bottom: none; }
 .detail-page .file ul li a:before{ position: absolute; content: ""; background: url(/user/images/sub/icon_file.png)no-repeat; top: 50%; left: 50px; transform: translateY(-50%); margin-top: 2px; width: 21px; height: 19px; background-size: contain;}
@@ -175,10 +194,12 @@
 .detail-page-chapter li.prev a{ position: relative;}
 .detail-page-chapter li.prev a:before{ position: absolute; content: ""; background: url(/user/images/sub/detail_page_prev.png)no-repeat; width: 16px; height: 30px; left: 0; top: 50%; margin-top: -15px;}
 .detail-page-chapter li.prev span{ padding-left: 40px; font-weight: 600;}
-.detail-page-chapter li em{ margin-left: 20px; display: inline-block; max-width: 400px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; white-space: normal; text-align: left; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical;}
+.detail-page-chapter li.prev em{  margin-left: 20px;}
+.detail-page-chapter li em{ display: inline-block; max-width: 400px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; white-space: normal; text-align: left; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical;}
 .detail-page-chapter li.next a{position: relative;}
 .detail-page-chapter li.next a:before{ position: absolute; content: ""; background: url(/user/images/sub/detail_page_next.png)no-repeat; width: 16px; height: 30px; right: 0; top: 50%; margin-top: -15px;}
 .detail-page-chapter li.next span{ padding-right: 40px; font-weight: 600;}
+.detail-page-chapter li.next em{ margin-right: 20px; }
 .detail-page-chapter li.page-back a{ display: block; position: relative; width: 85px; height: 85px; background: #222;}
 .detail-page-chapter li.page-back a:before{ position: absolute; content:""; background: url(/user/images/sub/icon_pageback.png)no-repeat center center;  width: 85px; height: 85px;}
 
@@ -229,7 +250,7 @@
 .archive .step_st1 li dl dd .icon.step4{ background: url(/user/images/sub/icon_step04.png)no-repeat center;}
 .archive .step_st1 li dl dd .icon.step5{ background: url(/user/images/sub/icon_step05.png)no-repeat center;}
 .archive .step_st1 li dl dd p{ font-size: 20px; line-height: 1.5; font-weight: 500; }
-.archive .caution{ height: 80px; display: flex; align-items: center; width: 100%; background: #f8f8f8; padding: 0 30px;}
+.archive .caution{ height: 80px; display: flex; align-items: center; width: 100%; background: #f8f8f8; padding: 0 30px;} 
 .archive .caution p{ position: relative; font-size: 17px; line-height: 1.5; padding-left: 30px; }
 .archive .caution p:before{ content:""; position: absolute; left: 0; top: 50%; margin-top: -7px; background: url(/user/images/sub/icon_caution.png)no-repeat; width: 17px; height: 17px; }
 .archive .sub_section2 .ul_st1{ margin-bottom: 25px; }
@@ -243,7 +264,8 @@
 .archive .form_subtitle em{ position: relative; padding-right: 10px;}
 .archive .form_subtitle em:after{ content:"*"; position: absolute; font-size:17px; color: #0971ce; top: 0;  right: 0;}
 .archive .coronation_table{ display: flex; align-items: center; border: 1px solid #c9c9c9; border-top: 2px solid #222; margin-bottom: 50px; }
-.archive .coronation_table .date_chk{ flex-grow: 1; width: 100%;}
+.archive .coronation_table .date_chk{ position: relative; flex-grow: 1; width: 100%; min-height: 450px;     border-left: 1px solid #c9c9c9;}
+.archive .coronation_table .date_chk .caution{ position: absolute; bottom: 0; left: 0; }
 .archive .coronation_table .date_chk_wrap{ margin: 25px 50px;}
 .archive .coronation_table .date_chk_wrap dl{ display: flex; align-items: center; height: 60px; line-height: 60px; border-bottom: 1px solid #c9c9c9; }
 .archive .coronation_table .date_chk_wrap dl:last-child{ border-bottom: none; }
@@ -256,3 +278,7 @@
 .archive .chk_box .chk_st1:last-child{margin-bottom: 0; }
 .archive .coronation_table .caution{ margin-bottom: 0;}
 .archive .dd_title:first-of-type{ margin-top: 0; }
+.archive .coronation_table .no_chk{text-align: center; margin: 0 auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; padding: 20px;}
+.archive .coronation_table .no_chk img{display: block; text-align: center; margin: 0 auto; }
+.archive .coronation_table .no_chk span{ display: block; font-size: 20px; font-weight: 600; margin-top: 30px;}
+.archive .coronation_table .no_chk p{ font-size: 16px; color: #444; margin-top: 20px;}

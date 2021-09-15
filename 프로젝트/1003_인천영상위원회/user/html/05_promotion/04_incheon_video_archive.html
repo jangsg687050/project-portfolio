@@ -194,7 +194,7 @@
 										<dd>
 											<div class="sub_section1">
 												<ul class="ul_st1">
-													<li><b>이용시간 :</b> 9:00~12:00 / 12:00~15:00 / 15:00~18:00</li>
+													<li><b>이용시간 :</b> 9:00~12:00 / 12:00~15:00 / <span>15:00~18:00</span></li>
 													<li><b>이용기간 :</b> 공휴일 제외 최대 5일까지 연속 대관 가능</li>
 													<li><b>신청절차</b></li>
 												</ul>
@@ -371,7 +371,7 @@
 																			<ul>
 																				<li class="complet"><em>완</em>09:00~12:00</li>
 																				<li class="possible"><em>예</em>12:00~15:00</li>
-																				<li class="waiting"><em>대</em>15:00~18:00</li>
+																				<li class="waiting"><em>대</em><span>15:00~18:00</span></li>
 																			</ul>
 																		</div>
 																	</a>
@@ -391,7 +391,7 @@
 																			<ul>
 																				<li class="complet"><em>완</em>09:00~12:00</li>
 																				<li class="possible"><em>예</em>12:00~15:00</li>
-																				<li class="waiting"><em>대</em>15:00~18:00</li>
+																				<li class="waiting"><em>대</em><span>15:00~18:00</span></li>
 																			</ul>
 																		</div>
 																	</a>
@@ -403,7 +403,7 @@
 																			<ul>
 																				<li class="complet"><em>완</em>09:00~12:00</li>
 																				<li class="possible"><em>예</em>12:00~15:00</li>
-																				<li class="waiting"><em>대</em>15:00~18:00</li>
+																				<li class="waiting"><em>대</em><span>15:00~18:00</span></li>
 																			</ul>
 																		</div>
 																	</a>
@@ -415,7 +415,7 @@
 																			<ul>
 																				<li class="complet"><em>완</em>09:00~12:00</li>
 																				<li class="possible"><em>예</em>12:00~15:00</li>
-																				<li class="waiting"><em>대</em>15:00~18:00</li>
+																				<li class="waiting"><em>대</em><span>15:00~18:00</span></li>
 																			</ul>
 																		</div>
 																	</a>
@@ -427,7 +427,7 @@
 																			<ul>
 																				<li class="complet"><em>완</em>09:00~12:00</li>
 																				<li class="possible"><em>예</em>12:00~15:00</li>
-																				<li class="waiting"><em>대</em>15:00~18:00</li>
+																				<li class="waiting"><em>대</em><span>15:00~18:00</span></li>
 																			</ul>
 																		</div>
 																	</a>
@@ -439,7 +439,7 @@
 																			<ul>
 																				<li class="complet"><em>완</em>09:00~12:00</li>
 																				<li class="possible"><em>예</em>12:00~15:00</li>
-																				<li class="waiting"><em>대</em>15:00~18:00</li>
+																				<li class="waiting"><em>대</em><span>15:00~18:00</span></li>
 																			</ul>
 																		</div>
 																	</a>
@@ -461,7 +461,7 @@
 																			<ul>
 																				<li class="complet"><em>완</em>09:00~12:00</li>
 																				<li class="possible"><em>예</em>12:00~15:00</li>
-																				<li class="waiting"><em>대</em>15:00~18:00</li>
+																				<li class="waiting"><em>대</em><span>15:00~18:00</span></li>
 																			</ul>
 																		</div>
 																	</a>
@@ -475,7 +475,7 @@
 																			<ul>
 																				<li class="complet"><em>완</em>09:00~12:00</li>
 																				<li class="possible"><em>예</em>12:00~15:00</li>
-																				<li class="waiting"><em>대</em>15:00~18:00</li>
+																				<li class="waiting"><em>대</em><span>15:00~18:00</span></li>
 																			</ul>
 																		</div>
 																	</a>
@@ -489,7 +489,7 @@
 																			<ul>
 																				<li class="complet"><em>완</em>09:00~12:00</li>
 																				<li class="possible"><em>예</em>12:00~15:00</li>
-																				<li class="waiting"><em>대</em>15:00~18:00</li>
+																				<li class="waiting"><em>대</em><span>15:00~18:00</span></li>
 																			</ul>
 																		</div>
 																	</a>
@@ -503,7 +503,7 @@
 																			<ul>
 																				<li class="complet"><em>완</em>09:00~12:00</li>
 																				<li class="possible"><em>예</em>12:00~15:00</li>
-																				<li class="waiting"><em>대</em>15:00~18:00</li>
+																				<li class="waiting"><em>대</em><span>15:00~18:00</span></li>
 																			</ul>
 																		</div>
 																	</a>
@@ -517,7 +517,7 @@
 																			<ul>
 																				<li class="complet"><em>완</em>09:00~12:00</li>
 																				<li class="possible"><em>예</em>12:00~15:00</li>
-																				<li class="waiting"><em>대</em>15:00~18:00</li>
+																				<li class="waiting"><em>대</em><span>15:00~18:00</span></li>
 																			</ul>
 																		</div>
 																	</a>
@@ -826,98 +826,105 @@
 												</div>
 												<div class="date_chk">
 													<div class="date_chk_wrap">
+														<!-- 선택안한경우 -->
+														<div class="no_chk blind">
+															<img src="/user/images/sub/icon_caution02.png" alt="">
+															<span>신청 희망일자를 선택하세요.</span>
+															<p>날짜 선택 시, 예약 가능한 시간을 확인할 수 있습니다.</p>
+														</div>
+														<!-- //선택안한경우 -->
 														<dl>
 															<dt>2021-07-19</dt>
 															<dd>
-																<div class="radio_st1" id="input_type1">
-																	<label>
-																		<input type="radio"  name="input_type1" checked=""><span class="box"></span><span class="check"></span>
-																		<em>09:00~12:00</em>
-																	</label>
-																	<label>
-																		<input type="radio"  name="input_type1" disabled><span class="box"></span><span class="check"></span>
-																		<em>12:00~15:00</em>
-																	</label>
-																	<label>
-																		<input type="radio"  name="input_type1"><span class="box"></span><span class="check"></span>
-																		<em>15:00~18:00</em>
-																	</label>
-																</div>
+																<div class="chk_flexwrap">
+																	<div class="chk_st1">
+																		<input type="checkbox" id="chkbox_01" name="chkbox_01" disabled> 
+																		<label for="chkbox_01"><span>09:00~12:00</span></label> 
+																	</div>
+																	<div class="chk_st1">
+																		<input type="checkbox" id="chkbox_02" name="chkbox_02"> 
+																		<label for="chkbox_02"><span>12:00~15:00</span></label> 
+																	</div>
+																	<div class="chk_st1">
+																		<input type="checkbox" id="chkbox_03" name="chkbox_03"> 
+																		<label for="chkbox_03"><span>15:00~18:00</span></label> 
+																	</div>
+																</div>    
 															</dd>
 														</dl>
 														<dl>
 															<dt>2021-07-20</dt>
 															<dd>
-																<div class="radio_st1" id="input_type2">
-																	<label>
-																		<input type="radio"  name="input_type2" checked=""><span class="box"></span><span class="check"></span>
-																		<em>09:00~12:00</em>
-																	</label>
-																	<label>
-																		<input type="radio"  name="input_type2" disabled><span class="box"></span><span class="check"></span>
-																		<em>12:00~15:00</em>
-																	</label>
-																	<label>
-																		<input type="radio"  name="input_type2"><span class="box"></span><span class="check"></span>
-																		<em>15:00~18:00</em>
-																	</label>
+																<div class="chk_flexwrap">
+																	<div class="chk_st1">
+																		<input type="checkbox" id="chkbox_13" name="chkbox_13" disabled> 
+																		<label for="chkbox_13"><span>09:00~12:00</span></label> 
+																	</div>
+																	<div class="chk_st1">
+																		<input type="checkbox" id="chkbox_14" name="chkbox_14"> 
+																		<label for="chkbox_14"><span>12:00~15:00</span></label> 
+																	</div>
+																	<div class="chk_st1">
+																		<input type="checkbox" id="chkbox_15" name="chkbox_15"> 
+																		<label for="chkbox_15"><span>15:00~18:00</span></label> 
+																	</div>
 																</div>
 															</dd>
 														</dl>
 														<dl>
 															<dt>2021-07-21</dt>
 															<dd>
-																<div class="radio_st1" id="input_type3">
-																	<label>
-																		<input type="radio"  name="input_type3" checked=""><span class="box"></span><span class="check"></span>
-																		<em>09:00~12:00</em>
-																	</label>
-																	<label>
-																		<input type="radio"  name="input_type3" disabled><span class="box"></span><span class="check"></span>
-																		<em>12:00~15:00</em>
-																	</label>
-																	<label>
-																		<input type="radio"  name="input_type3"><span class="box"></span><span class="check"></span>
-																		<em>15:00~18:00</em>
-																	</label>
+																<div class="chk_flexwrap">
+																	<div class="chk_st1">
+																		<input type="checkbox" id="chkbox_04" name="chkbox_04"> 
+																		<label for="chkbox_04"><span>09:00~12:00</span></label> 
+																	</div>
+																	<div class="chk_st1">
+																		<input type="checkbox" id="chkbox_05" name="chkbox_05" disabled> 
+																		<label for="chkbox_05"><span>12:00~15:00</span></label> 
+																	</div>
+																	<div class="chk_st1">
+																		<input type="checkbox" id="chkbox_06" name="chkbox_06"> 
+																		<label for="chkbox_06"><span>15:00~18:00</span></label> 
+																	</div>
 																</div>
 															</dd>
 														</dl>
 														<dl>
 															<dt>2021-07-22</dt>
 															<dd>
-																<div class="radio_st1" id="input_type4">
-																	<label>
-																		<input type="radio"  name="input_type4" checked=""><span class="box"></span><span class="check"></span>
-																		<em>09:00~12:00</em>
-																	</label>
-																	<label>
-																		<input type="radio"  name="input_type4" disabled><span class="box"></span><span class="check"></span>
-																		<em>12:00~15:00</em>
-																	</label>
-																	<label>
-																		<input type="radio"  name="input_type4"><span class="box"></span><span class="check"></span>
-																		<em>15:00~18:00</em>
-																	</label>
+																<div class="chk_flexwrap">
+																	<div class="chk_st1">
+																		<input type="checkbox" id="chkbox_07" name="chkbox_07"> 
+																		<label for="chkbox_07"><span>09:00~12:00</span></label> 
+																	</div>
+																	<div class="chk_st1">
+																		<input type="checkbox" id="chkbox_08" name="chkbox_08" disabled> 
+																		<label for="chkbox_08"><span>12:00~15:00</span></label> 
+																	</div>
+																	<div class="chk_st1">
+																		<input type="checkbox" id="chkbox_09" name="chkbox_09" disabled> 
+																		<label for="chkbox_09"><span>15:00~18:00</span></label> 
+																	</div>
 																</div>
 															</dd>
 														</dl>
 														<dl>
 															<dt>2021-07-23</dt>
 															<dd>
-																<div class="radio_st1" id="input_type5">
-																	<label>
-																		<input type="radio"  name="input_type5" checked=""><span class="box"></span><span class="check"></span>
-																		<em>09:00~12:00</em>
-																	</label>
-																	<label>
-																		<input type="radio"  name="input_type5" disabled><span class="box"></span><span class="check"></span>
-																		<em>12:00~15:00</em>
-																	</label>
-																	<label>
-																		<input type="radio"  name="input_type5"><span class="box"></span><span class="check"></span>
-																		<em>15:00~18:00</em>
-																	</label>
+																<div class="chk_flexwrap">
+																	<div class="chk_st1">
+																		<input type="checkbox" id="chkbox_10" name="chkbox_10" disabled> 
+																		<label for="chkbox_10"><span>09:00~12:00</span></label> 
+																	</div>
+																	<div class="chk_st1">
+																		<input type="checkbox" id="chkbox_11" name="chkbox_11" disabled> 
+																		<label for="chkbox_11"><span>12:00~15:00</span></label> 
+																	</div>
+																	<div class="chk_st1">
+																		<input type="checkbox" id="chkbox_12" name="chkbox_12"> 
+																		<label for="chkbox_12"><span>15:00~18:00</span></label> 
+																	</div>
 																</div>
 															</dd>
 														</dl>
@@ -966,23 +973,23 @@
 															<div class="chk_flexwrap">
 																<div class="chk_st1">
 																	<input type="checkbox" id="chk_01" name="chk_01"> 
-																	<label for="chk_01">빔 프로젝터</label> 
+																	<label for="chk_01"><span>빔 프로젝터</span></label> 
 																</div>
 																<div class="chk_st1">
 																	<input type="checkbox" id="chk_02" name="chk_02"> 
-																	<label for="chk_02">스크린</label> 
+																	<label for="chk_02"><span>스크린</span></label> 
 																</div>
 																<div class="chk_st1">
 																	<input type="checkbox" id="chk_03" name="chk_03"> 
-																	<label for="chk_03">스피커</label> 
+																	<label for="chk_03"><span>스피커</span></label> 
 																</div>
 																<div class="chk_st1">
 																	<input type="checkbox" id="chk_04" name="chk_04"> 
-																	<label for="chk_04">1인용 DVD 플레이어</label> 
+																	<label for="chk_04"><span>1인용 DVD 플레이어</span></label> 
 																</div>
 																<div class="chk_st1">
 																	<input type="checkbox" id="chk_05" name="chk_05"> 
-																	<label for="chk_05">화이트보드</label> 
+																	<label for="chk_05"><span>화이트보드</span></label> 
 																</div>
 															</div>
 														</td>
@@ -1000,11 +1007,11 @@
 													<li>
 														<div class="chk_st1">
 															<input type="checkbox" id="chk_1" name="chk_1"> 
-															<label for="chk_1">아카이브 내 보유자료 및 장비의 훼손 시 배상책임을 물을 수 있습니다.<em>(필수)</em></label> 
+															<label for="chk_1"><span>아카이브 내 보유자료 및 장비의 훼손 시 배상책임을 물을 수 있습니다.<em>(필수)</em></span></label> 
 														</div>
 														<div class="chk_st1">
 															<input type="checkbox" id="chk_2" name="chk_2"> 
-															<label for="chk_2">[개인정보보호법] 제 15조 법규에 의거하여 상기 본인은 위와 같이 개인정보 수집 및 활용에 동의합니다. <em>(필수)</em></label> 
+															<label for="chk_2"><span>[개인정보보호법] 제 15조 법규에 의거하여 상기 본인은 위와 같이 개인정보 수집 및 활용에 동의합니다. <em>(필수)</em></span></label> 
 														</div>
 													</li>
 													<li></li>

@@ -35,8 +35,18 @@
 	/* table */
 	.responsive-table{ overflow: auto; }
 	.responsive-table .table_list_st1{ width: 100%; min-width: 1000px; }
+	.responsive-table .favorites_table{ width: 100%; min-width: 1000px; }
+	.responsive-table .table_basic{ width: 100%; min-width: 1000px; }
 	.form_table tbody td{ padding: 10px 20px;}
 	.table_list_st3 .content-txtwrap .form-style{width: 100%; }
+	.favorites_table tbody th{ padding: 10px 5px; }
+	.favorites_table tbody td{ padding: 10px; font-size: 16px;}
+	.favorites_table tbody tr{ height: 180px;}
+	.favorites_table thead{ height: 40px; font-size: 16px;}
+
+	/*tab*/
+	.tab_st1{ overflow: auto;}
+	.tab_st1 li a{ font-size: 16px;}
 
 	/* Input, Select */
 	.select_wrap{ width: 120px;}
@@ -76,6 +86,9 @@
 
 	/*회원가입*/
 	.membership strong{ font-size: 20px; margin-bottom: 15px; }
+
+	/*즐겨찾기*/
+	.favorites_table .img_title{ margin-top: 10px;}
 	
 	/* 소개 */
 	.introduce .section1{ flex-direction: column; align-items: center; padding: 0 30px;}
@@ -101,6 +114,14 @@
 	/*공지사항*/
 	.notice .search_position{ justify-content: center; }
 
+	/*공지사항(상세)*/
+	.detail-page-header{ flex-direction: column;}
+	.detail-page dl{ text-align:center;}
+	.detail-page dl dd ul{ justify-content: center;}
+	.detail-page-chapter li em{ max-width: 200px;}
+	.detail-page .detail-page-header .sns{ margin-top: 30px;}
+
+
 	/*인천영상아카이브*/
 	.archive .introduce .title{ height: auto;}
 	.archive .introduce .title dl{ flex-direction: column; line-height: 2.0; padding: 20px 50px; }
@@ -114,11 +135,13 @@
 	.archive .step_st1 li:after{ right: -9.5px; width: 20px; }
 	.archive .cal_st2_wrap{ width: auto;}
 	.archive .coronation_table{ flex-direction: column; }
-	.archive .coronation_table .date_chk{ overflow: auto }
-	.archive .coronation_table .date_chk_wrap{overflow: auto; margin: 0 25px;}
+	.archive .coronation_table .date_chk{ overflow: auto;  border-left: none; border-top: 1px solid #c9c9c9; }
+	.archive .coronation_table .date_chk_wrap{overflow: auto; margin: 0 25px; margin-bottom: 80px;}
 	.archive .coronation_table .date_chk_wrap dl{ flex-direction: column; height: auto; line-height: 1.5; border-bottom: none;}
 	.archive .coronation_table .date_chk_wrap dl dt{ flex-shrink: 0; max-width: 100%; padding: 10px 20px; background: #f9f9f9;}
 	.archive .coronation_table .date_chk_wrap dl dd{ padding: 10px 20px; width: 100%; }
+	.archive .coronation_table .no_chk span{ font-size: 16px; margin-top: 15px;}
+	.archive .coronation_table .no_chk p{font-size: 14px; margin-top: 10px; }
 
 } 
 
@@ -158,6 +181,7 @@
 	.btn_login{ height: 50px; line-height: 50px; font-size: 16px;}
 	.btn_black{ height: 50px; line-height: 50px; font-size: 16px; }
 	.btn_gray{ height: 50px; line-height: 50px; font-size: 16px; }
+	.btn_table{height: 30px; line-height: 30px; font-size: 14px; padding: 0 15px;}
 	
 	/* 서브 타이틀 */
 	.sub_title{ flex-direction: column; align-items: flex-start; }
@@ -169,6 +193,11 @@
 	.sub_title .sub_lacation li a{ font-size: 14px; }
 
 	/*table*/
+	.responsive-table .table_basic{ min-width: 700px; }
+	.table_basic table thead th{font-size: 14px; height: 40px;}
+	.table_basic table tbody td{font-size: 14px; height: 50px; }
+	.table_basic.st1 tbody td{ padding: 15px;}
+	.table_basic.st1 table tbody th{ font-size: 14px;}
 	.responsive-table .table_list_st1{ min-width: 700px; }
 	.table_list_st1 table th{ height: 50px; font-size: 14px;}
 	.table_list_st1 table td{ height: 50px; font-size: 14px;}
@@ -215,6 +244,10 @@
 	.table_list_st3 .content-txtwrap.spam .form-style{ width: 100%; }
 	.table_list_st3 .refresh p{font-size: 14px; }
 	.table_list_st3 .content-txtwrap.bottom .form-style{ width: 100%;}
+	
+	.responsive-table .favorites_table{ min-width: 900px;}
+	.favorites_table tbody td{ font-size: 14px;}
+	.favorites_table thead{ font-size: 14px;}
 
 	/*Input, Select*/
 	.select_wrap{ font-size: 14px; height: 40px; }
@@ -261,9 +294,11 @@
 
 	/* checkbox */
 	.chk_flexwrap .chk_st1{ width: 100%; margin-bottom: 15px;}
-	.chk_st1 input[type="checkbox"] + label{ line-height: 20px; padding-left: 30px; font-size: 14px;}
+	.chk_flexwrap .chk_st1:last-child{ margin-bottom: 0;}
+	.chk_st1 input[type="checkbox"] + label{ line-height: 20px; font-size: 14px; height: 20px;}
 	.chk_st1 input[type="checkbox"] + label:before{ height: 20px; width: 20px;}
 	.chk_st1 input[type="checkbox"] + label::after{ top: 6px; left: 6px;height: 8px; width: 8px; }
+	.chk_st1 label span{ padding-left: 30px; }
 	
 	/* radio */
 	.radio_st1 label{ width: 100%; }
@@ -304,6 +339,21 @@
 	.membership .agreement_wrap{ margin-bottom: 30px;}
 	.membership .complete .btn_wrap02 a{ min-width: 130px;}
 	.membership .complete p{ font-size: 16px; margin-top: 10px; }
+
+	/*대관신청내역*/
+	.history_subtitle{ margin-bottom: 15px; font-size: 16px;}
+
+	/*개인정보수정*/
+	.privacy_title{font-size: 20px; margin-bottom: 10px;}
+	.privacy_sub{font-size: 14px; margin-bottom: 30px;}
+	.privacy_id{ font-size: 16px; padding-bottom: 15px; padding-left: 20px; }
+
+	/* 회원탈퇴 */
+	.secede_complet{ padding: 20px 10px;}
+	.secede_complet strong{ font-size: 20px; margin-top: 20px;}
+	.secede_complet p{ font-size: 16px; margin-top: 10px;}
+	.secede_complet .btn_wrap{ margin-top: 30px; }
+	
 
 	/* 소개 */
 	.introduce{ margin-top: 50px;}
@@ -367,6 +417,27 @@
 	.archive .sub_section2 .ul_st1{ margin-bottom: 15px;}
 	.archive .application .caution{ margin-bottom: 15px;}
 	.archive .coronation_table .caution{ margin-bottom: 0; }
+
+	/*공지사항(상세)*/
+	.detail-page .file ul li a{ display: inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; white-space: normal; text-align: left; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical;}
+	.detail-page .detail-page-header{ padding: 30px 15px;}
+	.detail-page dl dt{ font-size: 18px;}
+	.detail-page dl dd ul{ margin-top: 10px;}
+	.detail-page dl dd ul li{ font-size: 14px;}
+	.detail-page .detail-page-header .sns li a{ width: 35px; height: 35px; border-radius: 10px;}
+	.detail-page .detail-page-header .sns li a:after{width: 35px; height: 35px;}
+	.detail-page .file ul li a{ font-size: 14px; margin: 15px 0 15px 50px;}
+	.detail-page .file ul li a:before{ width: 16px; left: 25px; }
+	.detail-page .txt-box{ padding: 30px 15px; }
+	.detail-page dl dd ul li{ padding-right: 15px;}
+	.detail-page dl dd ul li:after{ right: 6px;}
+	.detail-page-chapter li.page-back a{ width: 45px; height: 45px;}
+	.detail-page-chapter li.page-back a:before{ width: 45px; height: 45px; }
+	.detail-page-chapter li span{display: none;}
+	.detail-page-chapter li.prev span{ padding-left: 0;}
+	.detail-page-chapter li em{ display: none;}
+	.detail-page-chapter li.next span{ padding-right: 0;}
+
 
 
 
