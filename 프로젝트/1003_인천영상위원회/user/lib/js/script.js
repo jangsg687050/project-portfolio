@@ -1,6 +1,4 @@
 (function(){
-
-
 // popup
 function layerOpen (popup) {
     var popup = $(popup);
@@ -55,8 +53,48 @@ function tab(el, tabName){
 	$('.tab_info .'+tabName).show();
 };
 
+//모달팝업
+function layer_pop_control(type, popup) { 
+		
+	if(type == "open"){
+		//팝업 열기
+		$('#'+popup).show();
+		console.log("열림");
+	}else if(type =="close"){
+		//팝업 닫기
+		$(popup).parents('.layer_pop_wrap').hide();
+	};
+};
+
+
+//모달팝업 swiper
+function layer_pop_control(type, popup) { 
+		
+	if(type == "open"){
+		//팝업 열기
+		$('#'+popup).show();
+		console.log("열림");
+	}else if(type =="close"){
+		//팝업 닫기
+		$(popup).parents('.layer_pop_wrap').hide();
+	};
+
+	//DB검색상세페이지3
+	var swipe3 = new Swiper('.db_slide_st3 .swiper-container', {
+		slidesPerView: 1,
+		parallax: true,
+		loop: true,
+		speed: 300,
+		navigation: {
+		nextEl: '.swiper-button-next_st3',
+		prevEl: '.swiper-button-prev_st3',
+	  }
+	});
+};
+
 
 $(function(){
+	
 	//탑버튼
 	moveTop();
 
@@ -95,6 +133,51 @@ $(function(){
 	dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
 	showMonthAfterYear: true,
 	yearSuffix: '.'
+	});
+
+	//swiper
+	//DB검색상세페이지1
+	var swiper1 = new Swiper('.db_slide_st1 .swiper-container', {
+		slidesPerView: 1,
+		parallax: true,
+		loop: true,
+		speed: 300,
+		navigation: {
+		nextEl: '.swiper-button-next_st1',
+		prevEl: '.swiper-button-prev_st1',
+	  }
+	});
+
+	//DB검색상세페이지2
+	var swiper2 = new Swiper('.db_slide_st2 .swiper-container', {
+		slidesPerView: 4,
+		spaceBetween: 20,
+		parallax: true,
+		loop: true,
+		speed: 300,
+		pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+		type: 'fraction',
+		},
+		navigation: {
+		nextEl: '.swiper-button-next_st2',
+		prevEl: '.swiper-button-prev_st2',
+		},
+		breakpoints: {
+			1300: {
+				slidesPerView: 4,
+				slidesPerGroup: 4,
+			},
+			730: {
+				slidesPerView: 3,
+				slidesPerGroup: 3,
+			},
+			300: {
+				slidesPerView: 2,
+				slidesPerGroup: 2,
+			}
+		}
 	});
 
 });
