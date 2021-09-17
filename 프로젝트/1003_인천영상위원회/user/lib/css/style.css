@@ -152,7 +152,6 @@
 
 /*공지사항*/
 .notice .search_position{ display: flex; align-items: center; justify-content: flex-end;}
-.notice .nodata{ border-top: 2px solid #222; border-bottom: 1px solid #ddd; font-size: 18px; text-align: center; padding: 90px 0; width: 100%;}
 
 /*공지사항(상세)*/
 .detail-page{ border-top: 2px solid #222; border-bottom: 1px solid #bfbfbf;}
@@ -272,13 +271,27 @@
 .db_datail_middle .keyword li:hover{ color: #111; background: #fff; border: 1px solid transparent;}
 .db_datail_bottom .api{ height: 400px; border: 1px solid #ebebeb; }
 .db_datail_bottom .sub_info > dl:last-child{ border-bottom: 1px solid #ddd;}
-
 .db_slide_st3{ position: relative; max-width: 1000px; margin: 0 auto; }
 .db_slide_st3 .swiper-slide{ position: relative;  }
 .db_slide_st3 .swiper-slide:after{ content: ""; display: block; padding-top: 67.6%; }
 .db_slide_st3 .swiper-thumb{ position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-size: cover; background-repeat: no-repeat; background-position: center; overflow: hidden;}
 .db_slide_st3 .swiper-button-prev_st3{ position: absolute; left: -80px; top: 50%; margin-top: -30px; background: url(/user/images/sub/swiper_st1_prev.png)no-repeat; width: 22px; height: 59px; cursor: pointer;}
 .db_slide_st3 .swiper-button-next_st3{ position: absolute; right: -80px; top: 50%; margin-top: -30px; background: url(/user/images/sub/swiper_st1_next.png)no-repeat; width: 22px; height: 59px; cursor: pointer;}
+
+/*로케파일*/
+.rocafile .introduce{ margin-bottom: 50px; margin-top: 0;}
+.rocafile .introduce .title dl dd{ padding-left: 0;}
+.rocafile .search_place{ display: flex; align-items: center; justify-content: right; }
+.rocafile .search_place .sub_search{ margin-bottom: 0; }
+
+/*로케파일(상세)*/
+.rocafile_detail .detail-page-chapter{ border-top: 1px solid #ddd; margin-top: 70px;}
+.rocafile_detail .detail-page{ margin-bottom: 30px; border-bottom: 0;}
+
+/* 촬영지원 가이드 */
+.film_guide .title{ margin-bottom: 50px; }
+.film_guide .caution{ margin-top: 30px; }
+.film_guide .introduce{ margin-top: 0;}
 
 /* ********************************************************************************* *
 * 04) 메뉴3
@@ -291,11 +304,12 @@
 * ********************************************************************************* */
 
 /*인천영상아카이브*/
-.archive .introduce .title{background: #f8f8f8; height: 150px; line-height: 150px;}
-.archive .introduce .title dl{ display: flex; padding-left: 50px;  }
-.archive .introduce .title dl dt{ position: relative; font-size: 26px; padding-left: 100px; font-weight: bold;}
-.archive .introduce .title dl dt:before{ content:""; position: absolute; left: 0; top: 50%; margin-top: -35px; background: url(/user/images/sub/icon_archive_title.png)no-repeat; height: 70px; width: 70px; }
-.archive .introduce .title dl dd{ font-size: 18px; padding-left: 75px;}
+.introduce .title{background: #f8f8f8; padding: 50px 0; min-height: 150px; display: flex; align-items: center;}
+.introduce .title dl{ display: flex; padding-left: 50px; align-items: center;}
+.introduce .title dl dt{ position: relative; font-size: 26px; padding-left: 100px; font-weight: bold;}
+.introduce .title dl dt:before{ content:""; position: absolute; left: 0; top: 50%; margin-top: -35px; background: url(/user/images/sub/icon_archive_title.png)no-repeat; height: 70px; width: 70px; }
+.introduce .title dl dd{ font-size: 18px; padding-left: 75px; padding-right: 70px; word-break: keep-all; line-height: 1.5;}
+.introduce .title dl.no_dt dd{padding-left: 0;}
 .archive .sub_section1{ margin-bottom: 50px; }
 .archive .table_list_st2{ padding-top: 25px;}
 .archive .step_st1{ margin: 50px 0;}
@@ -313,14 +327,15 @@
 .archive .step_st1 li dl dd .icon.step4{ background: url(/user/images/sub/icon_step04.png)no-repeat center;}
 .archive .step_st1 li dl dd .icon.step5{ background: url(/user/images/sub/icon_step05.png)no-repeat center;}
 .archive .step_st1 li dl dd p{ font-size: 20px; line-height: 1.5; font-weight: 500; }
-.archive .caution{ height: 80px; display: flex; align-items: center; width: 100%; background: #f8f8f8; padding: 0 30px;} 
-.archive .caution p{ position: relative; font-size: 17px; line-height: 1.5; padding-left: 30px; }
-.archive .caution p:before{ content:""; position: absolute; left: 0; top: 50%; margin-top: -7px; background: url(/user/images/sub/icon_caution.png)no-repeat; width: 17px; height: 17px; }
+.caution{ min-height: 80px; display: flex; align-items: flex-start; width: 100%; background: #f8f8f8; padding: 30px; flex-direction: column; justify-content: center;} 
+.caution p{ position: relative; font-size: 17px; line-height: 1.5; padding-left: 30px; }
+.caution p + p{ margin-top: 20px;}
+.caution p:before{ content:""; position: absolute; left: 0; top: 13px; margin-top: -7px; background: url(/user/images/sub/icon_caution.png)no-repeat; width: 17px; height: 17px; }
 .archive .sub_section2 .ul_st1{ margin-bottom: 25px; }
 .archive .sub_section2 .caution{ margin-bottom: 30px;}
 .archive .btn_wrap{ text-align: center; margin-top: 50px; }
 .archive .application .caution{ margin-bottom: 50px;}
-.archive .dd_title{ margin-top: 50px; font-size: 20px; font-weight: bold; display: block; margin-bottom: 30px;}
+.dd_title{ margin-top: 50px; font-size: 20px; font-weight: bold; display: block; margin-bottom: 30px;}
 .archive .form_table{ margin-bottom: 50px;}
 .archive .form_subtitle{ position: relative; text-align: left; padding-left: 15px; font-size: 18px; vertical-align: middle; min-width: 135px; word-break: keep-all; font-size: 17px; font-weight: 600; margin-bottom: 25px;}
 .archive .form_subtitle:before{ content:""; position: absolute; left: 0; top: 11px; width: 4px; height: 4px; border-radius: 50%; background: #222;}

@@ -133,10 +133,12 @@
 	.detail-page .detail-page-header .sns{ margin-top: 30px;}
 
 	/*인천영상아카이브*/
-	.archive .introduce .title{ height: auto;}
-	.archive .introduce .title dl{ flex-direction: column; line-height: 2.0; padding: 20px 50px; }
-	.archive .introduce .title dl dt:before{ margin-top: -17px; }
-	.archive .introduce .title dl dd{ padding-left: 100px;}
+	.introduce .title{ height: auto; padding: 0; min-height: auto;}
+	.introduce .title dl{ flex-direction: column; line-height: 2.0; padding: 20px 50px; align-items: flex-start;}
+	.introduce .title dl dt:before{ margin-top: -17px; }
+	.introduce .title dl dd{ padding-left: 100px;}
+	.introduce .title dl.no_dt dd{padding-left: 100px;}
+	.introduce .title dl.no_dt dt:before{ margin-top: 0;}
 	.archive .step_st1 li dl dt{ width: 100px; height: 40px; font-size: 15px; line-height: 40px;}
 	.archive .step_st1 li dl dd p{ font-size: 14px; }
 	.archive .step_st1 li dl dd .icon{ margin-bottom: 15px;}
@@ -164,6 +166,12 @@
 	.db_datail_middle{ padding: 30px;}
 	.db_slide_st3 .swiper-button-prev_st3{ left: 15px; z-index: 1;}
 	.db_slide_st3 .swiper-button-next_st3{ right: 15px; z-index: 1;}
+
+	/*로케파일*/
+	.rocafile .introduce .title dl dd{ padding-left: 100px; }
+	.rocafile .introduce .title dl dt:before{ margin-top: 0;}
+	
+	
 } 
 
 
@@ -438,10 +446,11 @@
 	.introduce .section4 .btn_wrap a:first-child{ margin-right: 0; margin-bottom: 10px; }
 
 	/*인천영상아카이브*/
-	.archive .introduce .title dl{ line-height: 1.5; padding: 20px 30px;}
-	.archive .introduce .title dl dt{ font-size: 20px; padding-left: 0;}
-	.archive .introduce .title dl dd{ font-size: 16px; padding-left: 0;}
-	.archive .introduce .title dl dt:before{ display: none;}
+	.introduce .title dl{ line-height: 1.5; padding: 20px 30px;}
+	.introduce .title dl dt{ font-size: 20px; padding-left: 0;}
+	.introduce .title dl dd{ font-size: 16px; padding-left: 0;}
+	.introduce .title dl dt:before{ display: none;}
+	.introduce .title dl.no_dt dd{padding-left: 0; padding-right: 0;}
 	.archive .step_st1{ margin: 20px 0;}
 	.archive .step_st1 ul{ flex-direction: column; }
 	.archive .step_st1 li:before{ display: none;}
@@ -450,10 +459,12 @@
 	.archive .step_st1 li dl dt{ border-radius: 0; width: 100%; }
 	.archive .step_st1 li dl dd{ padding: 15px 0 30px; }
 	.archive .step_st1 li dl dd .icon{ margin-bottom: 7px;} 
-	.archive .caution{ padding: 0 15px; }
-	.archive .caution p{ padding-left: 25px; font-size: 14px; line-height: 1.3;}
+	.caution{ padding: 10px 15px; }
+	.caution p{ padding-left: 25px; font-size: 14px; line-height: 1.3;}
+	.caution p:before{ top: 10px;}
+	.caution p + p{ margin-top: 5px;}
 	.archive .btn_wrap{ margin-top: 30px; }
-	.archive .dd_title{ font-size: 16px; margin-bottom: 15px;}
+	.dd_title{ font-size: 16px; margin-bottom: 15px;}
 	.archive .coronation_table .date_chk_wrap dl dt{ font-size: 14px; }
 	.archive .chk_box{ padding: 20px 15px;}
 	.archive .sub_section1{ margin-bottom: 15px;}
@@ -513,6 +524,15 @@
 	.db_datail_middle .db_slide_st2 .swiper-pagination{ height: 35px; line-height: 35px; font-size: 14px; }
 	.db_slide_st3 .swiper-button-prev_st3{ width: 13px; height: 35px; background-size: contain; margin-top: 0; transform: translateY(-50%);}
 	.db_slide_st3 .swiper-button-next_st3{ width: 13px; height: 35px; background-size: contain; margin-top: 0; transform: translateY(-50%);}
+	
+	/* 로케파일 */
+	.rocafile .introduce .title dl dd{ padding-left: 0;}
+	.rocafile .search_place{ justify-content: center;  margin-bottom: 30px;}
+	.rocafile_detail .detail-page{ margin-bottom: 0;}
+	.rocafile_detail .detail-page-chapter{ margin-top: 30px;}
+	.rocafile_detail .detail-page-chapter ul{  margin-top: 20px;}
+	
+}
 
 
 

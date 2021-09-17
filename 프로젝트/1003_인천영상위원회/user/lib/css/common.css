@@ -212,6 +212,9 @@
 .sub_info .ul_st1 li b{ font-weight: 600;}
 .sub_info .ul_st1 li:before{ background: #222;}
 
+/*게시글 없는 경우*/
+.nodata{ border-top: 2px solid #222; border-bottom: 1px solid #ddd; font-size: 18px; text-align: center; padding: 90px 0; width: 100%;}
+
 /* ********************************************************************************* *
 * 06) galley list
 * ********************************************************************************* */
@@ -470,7 +473,6 @@ html .ui-button.ui-state-disabled:active { width: 30px; height: 30px; line-heigh
 /* ********************************************************************************* *
 * 13) popup
 * ********************************************************************************* */
-
 .layer_pop_wrap { display: none; position: fixed; width: 100%; height: 100vh; top: 0; right: 0; bottom: 0; left: 0; background: rgba(0, 0, 0, 0.5); z-index: 100; }
 .layer_pop_wrap .layer_pop_contain { position: absolute; max-width: 1400px; width: 100%; background: #fff; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 .layer_pop_wrap .layer_pop_contain .layer_pop_header { display: flex; align-items: center; padding: 30px 50px; background: #131313; }
