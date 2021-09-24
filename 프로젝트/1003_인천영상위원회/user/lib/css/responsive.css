@@ -46,7 +46,7 @@
 	.sub_info > dl { flex-direction: column; }
 	.sub_info > dl > dt { width: 100%; margin-bottom: 30px; margin-top: 0; }
 	.title_gry { height: auto; padding: 0; min-height: auto; }
-	.title_gry > dl { flex-direction: column; line-height: 2.0; padding: 40px 50px; align-items: flex-start; justify-content: center; }
+	.title_gry > dl { display: block; line-height: 2.0; padding: 40px 50px; }
 	.title_gry > dl > dt:before { margin-top: -17px; }
 	.title_gry > dl > dd { padding-left: 100px; }
 	.title_gry > dl.no_dt > dd { padding-left: 100px; }
@@ -133,11 +133,11 @@
 	.notice .search_position { justify-content: center; }
 
 	/*공지사항(상세)*/
-	.detail-page-header { flex-direction: column; }
+	.detail-page .detail-page-header { display: block;}
 	.detail-page dl { text-align: center; }
 	.detail-page dl dd ul { justify-content: center; }
 	.detail-page-chapter li em { max-width: 200px; }
-	.detail-page .detail-page-header .sns { margin-top: 30px; }
+	.detail-page .detail-page-header .sns { margin-top: 30px; justify-content: center;}
 
 	/*인천영상아카이브*/
 	.archive .step_st1 li dl dt { width: 100px; height: 40px; font-size: 15px; line-height: 40px; }
@@ -186,7 +186,7 @@
 @media all and (max-width:1023px) {
 
 	/* 인천촬영작(상세) */
-	.filme_info { padding: 0 0 100px; }
+	.filme_info { padding: 0 0 100px; background: url(/user/images/sub/flimework_bg.jpg)no-repeat bottom right 0; background-color: #222; }
 	.filme_info .info_wrap { flex-direction: column; align-items: center; }
 	.filme_info .filme_txtinfo { padding-left: 0; margin-top: 50px; }
 	.filme_info .img-wrap { width: 350px; margin-top: -40px; }
@@ -224,7 +224,7 @@
 	.btn_table { height: 30px; line-height: 30px; font-size: 14px; padding: 0 15px; }
 
 	/* 서브 타이틀 */
-	.sub_title { flex-direction: column; align-items: flex-start; }
+	.sub_title { display: block; }
 	.sub_title dl dt { font-size: 30px; }
 	.sub_title dl dd { font-size: 16px; margin-top: 10px; padding-bottom: 15px; }
 	.sub_title dl dd:after { width: 20px; }
@@ -294,14 +294,15 @@
 	.title_gry > dl.no_dt > dd { padding-left: 0; padding-right: 0; }
 
 	/*Input, Select*/
+	.search_place{ display: block;}
 	.select_wrap { font-size: 14px; height: 40px; }
 	.select_wrap select { padding-bottom: 10px; height: 40px; }
 	.select_wrap:after { margin-top: -3px; }
-	.search_wrap { padding-bottom: 10px; height: 40px; }
+	.search_wrap { padding-bottom: 10px; height: 40px; width: 100%; }
 	.search_wrap input[type='text'] { font-size: 14px; height: 40px; }
 	.search_wrap input[type='text']::placeholder { font-size: 14px; }
 	.search_wrap button[type='submit'] { width: 40px; height: 20px; background-size: contain; }
-	.sub_search { flex-direction: column; max-width: 300px; }
+	.sub_search { flex-direction: column; width: 100%; }
 	.sub_search .select_wrap { width: 100%; margin-right: 0; margin-bottom: 15px; }
 	.form-style { height: 40px; line-height: 40px; }
 	input.form-style { font-size: 14px; }
@@ -430,7 +431,7 @@
 	.secede_complet .btn_wrap { margin-top: 30px; }
 
 	/* 소개 */
-	.introduce { margin-top: 50px; }
+	.introduce { margin-top: 0; }
 	.introduce .section1 dl { margin-bottom: 20px; }
 	.introduce .section1 dl dt { font-size: 24px; margin: 0; }
 	.introduce .section1 dl dd { font-size: 20px; margin-top: 10px; }
@@ -475,12 +476,12 @@
 	.archive .step_st1 li dl dt { border-radius: 0; width: 100%; }
 	.archive .step_st1 li dl dd { padding: 15px 0 30px; }
 	.archive .step_st1 li dl dd .icon { margin-bottom: 7px; }
-	.caution { padding: 10px 15px; }
+	.caution { padding: 10px 15px; min-height: auto; }
 	.caution p { padding-left: 25px; font-size: 14px; line-height: 1.3; }
 	.caution p:before { top: 10px; }
 	.caution p + p { margin-top: 5px; }
 	.archive .btn_wrap { margin-top: 30px; }
-	.dd_title { font-size: 16px; margin-bottom: 15px; }
+	.dd_title { font-size: 16px; margin-bottom: 15px; margin-top: 30px; }
 	.archive .coronation_table .date_chk_wrap dl dt { font-size: 14px; }
 	.archive .chk_box { padding: 20px 15px; }
 	.archive .sub_section1 { margin-bottom: 15px; }
@@ -488,8 +489,12 @@
 	.archive .application .caution { margin-bottom: 15px; }
 	.archive .coronation_table .caution { margin-bottom: 0; }
 
+	/*공지사항*/
+	.notice .search_position { display: block; }
+
 	/*공지사항(상세)*/
-	.detail-page .file ul li a { display: inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; white-space: normal; text-align: left; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; }
+	.detail-page .file{ display: block; }
+	.detail-page .file ul li a { font-size: 14px; margin: 15px 15px 15px 50px; display: inline-block; width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 1.2; height: 1.2em; text-align: left; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; }
 	.detail-page .site_link ul li a
 	.detail-page .detail-page-header { padding: 30px 15px; }
 	.detail-page dl dt { font-size: 18px; }
@@ -497,12 +502,11 @@
 	.detail-page dl dd ul li { font-size: 14px; }
 	.detail-page .detail-page-header .sns li a { width: 35px; height: 35px; border-radius: 10px; }
 	.detail-page .detail-page-header .sns li a:after { width: 35px; height: 35px; }
-	.detail-page .file ul li a { font-size: 14px; margin: 15px 0 15px 50px; }
 	.detail-page .file ul li a:before { width: 16px; left: 25px; }
 	.detail-page .site_link ul li a { font-size: 14px; margin: 15px 0 15px 50px; }
 	.detail-page .site_link ul li a:before { width: 16px; left: 25px; }
 	.detail-page .txt-box { padding: 30px 15px; }
-	.detail-page dl dd ul li { padding-right: 15px; }
+	.detail-page dl dd ul li { padding-right: 15px; white-space: nowrap; }
 	.detail-page dl dd ul li:after { right: 6px; }
 	.detail-page-chapter li.page-back a { width: 45px; height: 45px; }
 	.detail-page-chapter li.page-back a:before { width: 45px; height: 45px; }
@@ -563,6 +567,9 @@
 	.db_slide_st4 .swiper_btn_wrap { bottom: 13px; }
 	.db_slide_st4 .swiper-button-prev_st4 { width: 35px; height: 35px; }
 	.db_slide_st4 .swiper-button-next_st4 { width: 35px; height: 35px; }
+
+	/* 뉴스레터 */
+	.newsletter_info01 .search_place { display: block; }
 }
 
 /* ********************************************************************************* *

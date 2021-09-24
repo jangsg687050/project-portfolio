@@ -36,11 +36,11 @@
 .btn_download { position: relative; display: block; width: 230px; height: 60px; padding-left: 30px; line-height: 60px; border: 2px solid #222; background: #fff; font-size: 18px; font-weight: 500; }
 .btn_download:before { position: absolute; content: ""; right: 25px; top: 50%; background: url(/user/images/sub/btn_down_b.png)no-repeat; width: 26px; height: 25px; margin-top: -13px; }
 .btn_download:hover { background: #222; color: #fff; }
-.btn_download:hover:before { background: url(/user/images/sub/btn_down_w.png)no-repeat; }
+.btn_download:hover:before { background: url(/user/images/sub/btn_down_w.png)no-repeat; background-size: contain; }
 .btn_imgover { position: relative; display: block; width: 230px; height: 60px; text-align: center; line-height: 60px; border: 2px solid #222; background: #fff; font-size: 18px; font-weight: 500; padding-right: 20px; }
 .btn_imgover:before { position: absolute; content: ""; right: 45px; top: 50%; background: url(/user/images/sub/btn_imgover_b.png)no-repeat; width: 20px; height: 20px; margin-top: -8px; }
 .btn_imgover:hover { background: #222; color: #fff; }
-.btn_imgover:hover:before { background: url(/user/images/sub/btn_imgover_w.png)no-repeat; }
+.btn_imgover:hover:before { background: url(/user/images/sub/btn_imgover_w.png)no-repeat; background-size: contain; }
 .btn_blue { background: #0971ce; padding: 0 50px; height: 70px; line-height: 70px; display: inline-block; transition: ease-in-out 0.5s; border: none; }
 .btn_blue p { position: relative; font-size: 20px; color: #fff; padding-right: 40px; }
 .btn_blue p:before { content: ""; position: absolute; top: 50%; margin-top: -9px; right: 0; background: url(/user/images/sub/btn_blue.png)no-repeat; width: 19px; height: 19px; background-size: contain; }
@@ -227,7 +227,7 @@
 .list-st1 .img-thumb { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-size: cover; background-repeat: no-repeat; background-position: center; overflow: hidden; }
 .list-st1 .img:after { content: ""; display: block; padding-top: 67.58%; }
 .list-st1 .con-box { padding-top: 30px; }
-.list-st1 .con-box span { font-size: 20px; font-weight: 500; line-height: 1.5; display: inline-block; overflow: hidden; text-overflow: ellipsis; white-space: normal; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; margin-bottom: 20px; }
+.list-st1 .con-box span { font-size: 20px; font-weight: 500; display: inline-block; width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 1.2; height: 1.2em; text-align: left; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; }
 .list-st1 .con-box > ul { font-size: 16px; font-weight: 400; }
 .list-st1 .con-box > ul > li { margin-bottom: 15px; color: #444; font-weight: 500; }
 .list-st1 .con-box > ul > li:last-child { margin-bottom: 0; }
@@ -278,7 +278,7 @@
 .select_wrap select { text-align: left; border: none; padding-left: 15px; padding-right: 0; width: 100%; height: 50px; display: block; background: none; padding-bottom: 20px; }
 .select_wrap:after { content: ""; position: absolute; top: 50%; margin-top: -9px; transform: translateY(-50%); right: 10px; background: url(/user/images/sub/icon_select.png)no-repeat; width: 15px; height: 7px; }
 .search_wrap { width: 400px; height: 50px; background: #fff; border-bottom: 2px solid #222; padding-bottom: 20px; align-items: center; display: flex; }
-.search_wrap input[type='text'] { flex-grow: 1; height: 50px; border: none; padding-left: 10px; font-size: 18px; }
+.search_wrap input[type='text'] { width: 100%; height: 50px; border: none; padding-left: 10px; font-size: 18px; }
 .search_wrap input[type='text']::placeholder { font-size: 18px; color: #666; }
 .search_wrap button[type='submit'] { border: none; width: 50px; height: 50px; flex-shrink: 0; background: url(/user/images/sub/btn_search.png)no-repeat center center; }
 
