@@ -152,6 +152,7 @@ $(function(){
 	var swiper2 = new Swiper('.db_slide_st2 .swiper-container', {
 		slidesPerView: 4,
 		spaceBetween: 20,
+		effect: 'slide',
 		parallax: true,
 		loop: true,
 		speed: 300,
@@ -166,16 +167,43 @@ $(function(){
 		},
 		breakpoints: {
 			1300: {
-				slidesPerView: 4,
-				slidesPerGroup: 4,
+				slidesPerView: 4
 			},
 			730: {
-				slidesPerView: 3,
-				slidesPerGroup: 3,
+				slidesPerView: 3
 			},
 			300: {
-				slidesPerView: 2,
-				slidesPerGroup: 2,
+				slidesPerView: 2
+			}
+		}
+	});
+
+	//DB검색상세페이지2
+	var swiper4 = new Swiper('.db_slide_st4 .swiper-container', {
+		slidesPerView: 5,
+		spaceBetween: 20,
+		effect: 'slide',
+		parallax: true,
+		loop: true,
+		speed: 300,
+		pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+		type: 'fraction',
+		},
+		navigation: {
+		nextEl: '.swiper-button-next_st4',
+		prevEl: '.swiper-button-prev_st4',
+		},
+		breakpoints: {
+			1300: {
+				slidesPerView: 5
+			},
+			730: {
+				slidesPerView: 3
+			},
+			300: {
+				slidesPerView: 2
 			}
 		}
 	});
