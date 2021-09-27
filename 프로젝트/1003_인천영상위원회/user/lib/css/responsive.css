@@ -301,6 +301,7 @@
 	.search_wrap button[type='submit'] { width: 40px; height: 20px; background-size: contain; }
 	.sub_search { flex-direction: column; width: 100%; }
 	.sub_search .select_wrap { width: 100%; margin-right: 0; margin-bottom: 15px; }
+	.sub_search .custom-select .select-items div{ padding: 10px; font-size: 14px;}
 	.form-style { height: 40px; line-height: 40px; }
 	input.form-style { font-size: 14px; }
 	input.login-style { font-size: 14px; height: 40px; line-height: 40px; }

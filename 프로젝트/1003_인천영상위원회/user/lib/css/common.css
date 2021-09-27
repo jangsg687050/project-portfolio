@@ -176,7 +176,7 @@
 .table_list_st3 .e-mail { margin: 0 10px; }
 .table_list_st3 .anti-spam { width: 130px; height: 60px; background: #e8e8e8; margin-right: 10px; }
 .table_list_st3 .refresh { margin-left: 10px; display: flex; align-items: center; white-space: nowrap; }
-.table_list_st3 .refresh button { background: url(/user/images/sub/btn_refresh.png)no-repeat; width: 21px; height: 25px; border: none; transition-duration: 3s; }
+.table_list_st3 .refresh button { background: url(/user/images/sub/btn_refresh.png)no-repeat; width: 20px; height: 18px; border: none; transition-duration: 3s; }
 .table_list_st3 .refresh p { font-size: 18px; margin-left: 10px; }
 .table_list_st3 .refresh button:focus { transform: rotate(360deg); }
 .table_list_st3 .content-inputwrap { display: inline-flex; align-items: center; justify-content: flex-start; }
@@ -227,7 +227,7 @@
 .list-st1 .img-thumb { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-size: cover; background-repeat: no-repeat; background-position: center; overflow: hidden; }
 .list-st1 .img:after { content: ""; display: block; padding-top: 67.58%; }
 .list-st1 .con-box { padding-top: 30px; }
-.list-st1 .con-box span { font-size: 20px; font-weight: 500; display: inline-block; width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 1.2; height: 1.2em; text-align: left; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; }
+.list-st1 .con-box span { margin-bottom: 20px; font-size: 20px; font-weight: 500; display: inline-block; width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 1.2; height: 1.2em; text-align: left; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; }
 .list-st1 .con-box > ul { font-size: 16px; font-weight: 400; }
 .list-st1 .con-box > ul > li { margin-bottom: 15px; color: #444; font-weight: 500; }
 .list-st1 .con-box > ul > li:last-child { margin-bottom: 0; }
@@ -276,8 +276,17 @@
 /*search*/
 .sub_search { display: flex; align-items: center; margin-bottom: 40px; }
 .select_wrap { position: relative; width: 150px; height: 50px; border-bottom: 2px solid #222; font-size: 18px; margin-right: 20px; }
-.select_wrap select { text-align: left; border: none; padding-left: 15px; padding-right: 0; width: 100%; height: 50px; display: block; background: none; padding-bottom: 20px; }
-.select_wrap:after { content: ""; position: absolute; top: 50%; margin-top: -9px; transform: translateY(-50%); right: 10px; background: url(/user/images/sub/icon_select.png)no-repeat; width: 15px; height: 7px; }
+.select_wrap select { display: none; }
+.sub_search .custom-select .select-items div{ font-size: 18px; padding: 15px 20px; padding-right: 40px; cursor: pointer; user-select: none; }
+.sub_search .custom-select .select-selected { display: block; cursor: pointer; user-select: none; position: relative; background-color: transparent; width: 100%; text-align: left; flex-shrink: 0; height: 100%; padding: 5px 0 0 10px; }
+.sub_search .custom-select .select-items { position: absolute; z-index: 2; top: 104%; right: -1px; left: -1px; visibility: hidden; overflow-y: auto; max-height: 145px; pointer-events: none; opacity: 0; border: 1px solid #222; background-color: #fff; }
+.sub_search .custom-select .select-control{ position: relative; height: 100%;}
+.sub_search .custom-select .select-control:after { content: ""; position: absolute; top: 50%; margin-top: -9px; transform: translateY(-50%); right: 10px; background: url(/user/images/sub/icon_select.png)no-repeat; width: 15px; height: 7px; }
+.sub_search .custom-select .select-control.opened:after{ background: url(/user/images/sub/icon_select_over.png)no-repeat;}
+.sub_search .custom-select .select-control.opened .select-items { visibility: visible; pointer-events: all; opacity: 1; }
+.sub_search .custom-select .select-hide { display: none; }
+.sub_search .custom-select .select-items .selection { background-color: #f3f3f3;}
+.sub_search .custom-select .select-items div:hover{ background-color: #f3f3f3; }
 .search_wrap { width: 400px; height: 50px; background: #fff; border-bottom: 2px solid #222; padding-bottom: 20px; align-items: center; display: flex; }
 .search_wrap input[type='text'] { width: 100%; height: 50px; border: none; padding-left: 10px; font-size: 18px; }
 .search_wrap input[type='text']::placeholder { font-size: 18px; color: #666; }

@@ -92,6 +92,73 @@ function layer_pop_control(type, popup) {
 	});
 };
 
+//커스텀 셀렉트 박스
+$(document).ready(function(){
+			customSelect();
+});
+
+function customSelect(){
+	$(".custom-select select").each(function() {
+		var template = '<div class="select-control">';
+		var optionTemplate = "";
+		var selectedText = "";
+		
+		$(this)
+			.find("option")
+			.each(function() {
+				if($(this).attr("selected")) {
+					selectedText = $(this).text();
+				}
+				
+				optionTemplate +=
+					"<div " +
+					" data-value=" +
+					$(this).attr("value") +
+					">" +
+					$(this).html() +
+					"</div>";
+			});
+		optionTemplate += "</div></div>";
+		
+		template +=
+			'<div class="select-selected">' +
+			((selectedText != "") ? selectedText : $(this).find('option:eq(0)').text()) +
+			"</div>";
+		template += '<div class="select-items">';
+
+		$(this).hide();
+		$(this).after(template + optionTemplate);
+	});
+	$(".custom-select .select-selected").on("click", function() {
+		$("html").one("click", function() {
+			$(".custom-select .select-control").removeClass("opened");
+		});
+		$(this)
+			.parents(".select-control")
+			.toggleClass("opened");
+		event.stopPropagation();
+	});
+	$(".custom-select .select-items div").on("click", function() {
+		$(this)
+			.parents(".custom-select")
+			.find("select")
+			.val($(this).data("value"));
+		$(this)
+			.parents(".select-items")
+			.find("div")
+			.removeClass("selection");
+		$(this).addClass("selection");
+		$(this)
+			.parents(".select-control")
+			.removeClass("opened");
+		$(this)
+			.parents(".select-control")
+			.find(".select-selected")
+			.text($(this).text());
+	});
+}
+
+
 
 $(function(){
 	
@@ -134,6 +201,29 @@ $(function(){
 	showMonthAfterYear: true,
 	yearSuffix: '.'
 	});
+
+	//서브페이지 검색 bar
+	$('.sub_search .select_wrap').on('click', function(e) {
+			var btn = $(this);
+			var lst = btn.next();
+			openDropDown(btn, lst);
+		});
+		//DIV 드롭다운
+		function openDropDown(btn, lst) {
+			btn.attr('title', '열기');
+
+			if (!lst.is(':animated')) {
+				btn.attr('title', (lst.parent('div').hasClass('active')) ? '열기' : '닫기');
+				lst.slideToggle(250, 'easeInOutExpo').parent('div').toggleClass('active').siblings('div').removeClass('active').children('div').slideUp(250, 'easeInOutExpo').prev(btn).attr('title', '열기');
+			}
+		}
+
+		function closeDropDown(btn, lst, open_btn) {
+			if (!lst.is(':animated')) {
+				lst.slideUp(250, 'easeInOutExpo').parent('div').removeClass('active');
+				lst.siblings(open_btn).attr('title', '열기');
+			}
+		}
 
 	//swiper
 	//DB검색상세페이지1
