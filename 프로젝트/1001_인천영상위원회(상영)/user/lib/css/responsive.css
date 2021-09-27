@@ -31,9 +31,11 @@
 	.list-st1 li{ width: 50%; }
 	
 	/*인스파이어링 로케이션 인천*/
+	.inspiring_locaion:before{ display: none;}
 	.inspiring_locaion .ins_inner{ padding: 0 30px;}
 	.inspiring_locaion .ins_topbox{ flex-direction: column; margin-top: 50px;}
 	.inspiring_locaion .ins_topbox .main_thumb_info{ margin-left: 0; margin-top: 30px;}
+	.inspiring_locaion .ins_topbox .main_thumb_info .btn_more{ float: left;}
 }
 
 
@@ -78,7 +80,7 @@
 	.inspiring_locaion .ins_topbox .main_thumb_info{ margin-top: 15px; }
 	.inspiring_locaion .ins_topbox .main_thumb_info span{ font-size: 20px;}
 	.inspiring_locaion .ins_topbox .main_thumb_info dl{ font-size: 14px; margin-top: 10px; }
-	.inspiring_locaion .ins_topbox .main_thumb_info .btn_more{ margin-top: 15px; font-size: 16px; width: 130px; height: 26px; padding-top: 6px;}
+	.inspiring_locaion .ins_topbox .main_thumb_info .btn_more{  margin-top: 15px; font-size: 16px; width: 130px; height: 26px; padding-top: 6px;}
 
 }
 

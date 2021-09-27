@@ -144,7 +144,7 @@
 	#container .inner{ margin: 50px auto;}
 
 	/* section1 */
-	.section1 dl{ flex-direction: column; align-items: center;}
+	.section1 dl{ display: block;}
 	.section1 dl dt{ margin-bottom: 50px;}
 	.section1 dl dd{ width: 100%;  padding: 20px;}
 	.section1 dl dd span{ font-size: 22px;}
@@ -158,8 +158,9 @@
 	.section2 ul li:before{ display: none;}
 
 	/* 사업공고 */
-	.bussiness_announce .announce_table_head{ flex-direction: column-reverse; margin-bottom: 15px; align-items: flex-start;}
-	.bussiness_announce .announce_table_head .total{ margin-top: 20px;}
+	.bussiness_announce .sub_search_wrap{ display: block; }
+	.bussiness_announce .announce_table_head{ display: block; margin-bottom: 15px;}
+	.bussiness_announce .announce_table_head .total{ display: block; margin-bottom: 20px;}
 
 }
 

@@ -129,9 +129,6 @@
 	.introduce .section4 { background: url(/user/images/sub/intro_bg04.png)no-repeat left 11vw bottom; }
 	.introduce .section4 .brochure { padding-left: 30px; }
 
-	/*공지사항*/
-	.notice .search_position { justify-content: center; }
-
 	/*공지사항(상세)*/
 	.detail-page .detail-page-header { display: block;}
 	.detail-page dl { text-align: center; }
@@ -407,6 +404,7 @@
 
 	/*회원가입*/
 	.membership .step { margin-bottom: 30px; }
+	.membership .step li{ padding-right: 8.2500vw;}
 	.membership .step dl dt { width: 65px; height: 65px; }
 	.membership .step dl dt:after { width: 65px; height: 65px; }
 	.membership .step dl dd { font-size: 16px; }
@@ -546,7 +544,7 @@
 
 	/* 로케파일 */
 	.rocafile .title dl dd { padding-left: 0; }
-	.rocafile .search_place { justify-content: center; margin-bottom: 30px; }
+	.rocafile .search_place { justify-content: center; margin-bottom: 30px; display: block; }
 	.rocafile_detail .detail-page { margin-bottom: 0; }
 	.rocafile_detail .detail-page-chapter { margin-top: 30px; }
 	.rocafile_detail .detail-page-chapter ul { margin-top: 20px; }

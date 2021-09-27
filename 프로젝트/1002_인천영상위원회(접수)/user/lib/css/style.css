@@ -49,7 +49,7 @@
 /* section3 */
 .section3 { margin-top: 80px; }
 .section3 .title { display: flex; align-items: center; justify-content: space-between; }
-.section3 .title a { position: relative; font-family: 'GongGothicMedium'; font-size: 14px; padding-right: 20px; }
+.section3 .title a { position: relative; font-family: 'GongGothicMedium'; font-size: 14px; padding-right: 20px; white-space: nowrap;}
 .section3 .title a:after { content: ""; position: absolute; right: 0; top: 50%; background: url(/user/images/common/icon_moreview_b.png)no-repeat; margin-top: -5px; width: 6px; height: 11px; }
 .section3 strong { font-size: 36px; margin-bottom: 40px; }
 .section3 strong b { font-weight: bold; }
