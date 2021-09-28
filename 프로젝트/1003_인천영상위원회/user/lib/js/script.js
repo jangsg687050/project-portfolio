@@ -232,9 +232,13 @@ $(function(){
 		parallax: true,
 		loop: true,
 		speed: 300,
+		loopedSlides: 4,
 		navigation: {
 		nextEl: '.swiper-button-next_st1',
 		prevEl: '.swiper-button-prev_st1',
+	  },
+		thumbs: {
+		swiper: swiper2
 	  }
 	});
 
@@ -255,6 +259,7 @@ $(function(){
 		nextEl: '.swiper-button-next_st2',
 		prevEl: '.swiper-button-prev_st2',
 		},
+		loopedSlides: 4,
 		breakpoints: {
 			1300: {
 				slidesPerView: 4
@@ -268,7 +273,11 @@ $(function(){
 		}
 	});
 
-	//DB검색상세페이지2
+	swiper1.controller.control = swiper2;
+    swiper2.controller.control = swiper1;
+
+
+	//DB검색상세페이지4
 	var swiper4 = new Swiper('.db_slide_st4 .swiper-container', {
 		slidesPerView: 5,
 		spaceBetween: 20,
