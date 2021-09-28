@@ -158,6 +158,11 @@ function customSelect(){
 	});
 }
 
+//모바일메뉴 열고닫기 btn
+function main_navToggle(btn){ //파라미터1 = btn인데 btn이 여기서는 <a>
+	$(btn).parents('.gnb_btn').siblings('.gnb_btn').removeClass('active');
+	$(btn).parents('.gnb_btn').toggleClass('active');
+}
 
 
 $(function(){
@@ -183,6 +188,30 @@ $(function(){
 	$('.depth_02 > li > a').click(function(){
 	$('.depth_02 > li').removeClass('active');
 		$(this).parents('.depth_02 > li').addClass('active');
+	});
+
+	//모바일메뉴
+	$('.main_nav').click(function() {
+		if ($(".mobile-menu").css("display") == "none") {
+			jQuery('.mobile-menu').css("display", "block");
+			jQuery('.mobile-menu').css("width", "100vw");
+			jQuery('.mobile-menu').css("height", "100vh");
+			$("html, body").addClass("not_scroll");
+		} else {
+			jQuery('.mobile-menu').css("display", "none");
+			jQuery('.mobile-menu').css("width", "0");
+			jQuery('.mobile-menu').css("height", "0");
+			$("html, body").removeClass("not_scroll");
+		}
+	});
+
+	$(".mobile-menu-con > .depth_01_m > li > a").click(function(){
+		if($(this).parent("li").attr("class") != "active"){
+			$(".mobile-menu-con > .depth_01_m > li").removeClass("active"); //<-이부분 없애면 다른 메뉴 누를시 자동 닫기는거 없어짐. 클릭으로 열리고 닫김.
+			$(this).parent("li").addClass("active");
+		}else{
+			$(this).parent("li").removeClass("active");
+		}
 	});
 	
 
