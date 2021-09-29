@@ -95,6 +95,7 @@ function layer_pop_control(type, popup) {
 //커스텀 셀렉트 박스
 $(document).ready(function(){
 			customSelect();
+			scrollTest();
 });
 
 function customSelect(){
@@ -189,6 +190,15 @@ $(function(){
 	$('.depth_02 > li').removeClass('active');
 		$(this).parents('.depth_02 > li').addClass('active');
 	});
+
+	//탭효과
+	$(".tab-title.history > li > a").click(function(){
+		$('.depth_02 > li').removeClass('colorover');
+		$(this).parents('.tab-title > li').addClass('colorover');
+		$(this).parents('.tab-title > li').prevAll().addClass('colorover');
+		$(this).parents('.tab-title > li').nextAll().removeClass('colorover');
+	});
+
 
 	//모바일메뉴
 	$('.main_nav').click(function() {
@@ -335,5 +345,22 @@ $(function(){
 			}
 		}
 	});
-
 });
+
+function scrollTest(){
+	var val1 = $('.history .tabwrap-box').offset().top;
+	var val2 = val1 - 87;
+	console.log(val1);
+
+	$(window).scroll(function(){
+		var scroll = $(this).scrollTop();
+		console.log("현재 top " + scroll + "px");
+
+		if(scroll >= val2){
+			console.log("1");
+			$('.history .left_con').addClass('fix');
+		} else {
+			$('.history .left_con').removeClass('fix');
+		}
+	});
+}

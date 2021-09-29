@@ -217,6 +217,24 @@
 .detail-page-chapter li.page-back a { display: block; position: relative; width: 85px; height: 85px; background: #222; }
 .detail-page-chapter li.page-back a:before { position: absolute; content: ""; background: url(/user/images/sub/icon_pageback.png)no-repeat center center; width: 85px; height: 85px; }
 
+/* 연혁 */
+.history .tab_info .tab { display: none; }
+.history .tab_info .tab.tab1{ display: flex; }
+.history .tab{ position: relative; display: flex; flex-wrap: wrap; align-items: flex-start; }
+.history .left_con{ position: absolute; width: 700px; padding-right: 200px; }
+.history .right_con{ width: 50%; margin-left: 700px; }
+.history .history_year{ font-size: 60px; font-weight: bold; margin-bottom: 30px; display: block;}
+.history .left_con .img { position: relative; }
+.history .left_con .img-thumb { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-size: cover; background-repeat: no-repeat; background-position: center; overflow: hidden; }
+.history .left_con .img:after { content: ""; display: block; padding-top: 70%; }
+.history .history_month{ border-top: 1px solid #efefef; width: 100%; padding-top: 50px; padding-bottom: 50px;}
+.history .history_month:first-child{ padding-top: 0; border-top: none;}
+.history_month li{ font-size: 17px; display: flex; margin-bottom: 30px;}
+.history_month li b{ max-width: 120px; font-weight: bold; width: 100%;}
+.history_month li:last-child{ margin-bottom: 0;  }
+.history .left_con.fix{position:fixed;top:225px;}
+.history .tabwrap-box { position: sticky; top: 100px; z-index: 1; }
+
 /* ********************************************************************************* *
 * 02) 로케이션
 * ********************************************************************************* */

@@ -211,6 +211,22 @@
 	.main_gnb_wrap .logo a{ height: 33px; width: 105px; background-size: contain;}
 	.main_gnb{ display: none;}
 	.right_menu .mian_login{ display: none; }
+
+	/*footer*/
+	#footer .inner{ padding: 30px 15px; }
+	#footer .footer_con { display: block; margin-bottom: 30px;}
+	#footer .footer_con .address ul li{ font-size: 11px;}
+	#footer .footmenu ul li{ font-size: 11px;}
+	#footer .copyright{ font-size: 11px; text-align: center;}
+	#footer .footer_con .address ul{ display: block; text-align: center;}
+	#footer .footer_con .address ul li:first-child{ width: 100%; margin-bottom: 10px; display: block;}
+	#footer .footer_con .address ul li{ display: inline-block; text-align: center; margin-bottom: 20px; }
+	#footer .footmenu ul{ justify-content: center; }
+	#footer .footmenu ul li{ padding-left: 15px;}
+	#footer .footmenu ul li:after{ left: 6px;}
+	#footer .footer_con .address ul li b{ padding-left: 5px;}
+	#footer .footer_con .address ul li:first-child b{ padding-left: 0;}
+	#footer .footer_con .address ul li:nth-of-type(2) b{ padding-left: 0;}
 	
 	/* pagination */
 	.pagination a { width: 25px; height: 25px; line-height: 25px; font-size: 12px; margin: 0 2px; }

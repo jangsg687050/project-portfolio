@@ -353,7 +353,7 @@ input.login-style:disabled { background: #f7f7f7; cursor: default; }
 * ********************************************************************************* */
 .tabwrap-box { margin-bottom: 70px; }
 .tab_info .tab { display: none; }
-.tab_info .tab:first-of-type { display: block; }
+.tab_info .tab.tab1{ display: block; }
 .tab_st1 { border-bottom: 1px solid #ddd; border-top: 1px solid #ddd; display: flex; align-items: center; justify-content: center; }
 .tab_st1 li { position: relative; padding: 0 40px; height: 70px; line-height: 70px; }
 .tab_st1 li:after { position: absolute; content: ""; height: 12px; width: 1px; background: #222; right: 0; top: 50%; transform: translateY(-50%); }
@@ -361,6 +361,13 @@ input.login-style:disabled { background: #f7f7f7; cursor: default; }
 .tab_st1 li a { font-size: 20px; display: block; white-space: nowrap; }
 .tab_st1 li a.active { font-weight: 500; position: relative; z-index: 1; }
 .tab_st1 li a.active:before { content: ""; position: absolute; height: 5px; bottom: 0; left: 0; right: 0; z-index: -1; background: #222; }
+
+.tab_st2{ display: flex; align-items: center; justify-content: space-around; padding-top: 30px; padding-bottom: 30px; border-bottom: 1px solid #d0d0d0; background: #fff; }
+.tab_st2 li{ position: relative; }
+.tab_st2 li a{ font-size: 20px; font-weight: bold; color: #888;}
+.tab_st2 li:after{ content:""; position: absolute; width: 10px; height: 10px; background:#c1c1c1; border-radius: 100%; bottom: -30px; left: 50%; margin: 0 -5px -5px 0; }
+.tab_st2 li.colorover:after{ background:#222; }
+.tab_st2 li.colorover a{ position: relative; color: #222;}
 
 /* ********************************************************************************* *
 * 12) calendar
