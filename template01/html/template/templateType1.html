@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>디자인랩 퍼블리싱 라이브러리</title>
+
+	<!-- favicon -->
+	<!-- <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico"> -->
+
+	<!-- JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../../lib/js/gsap.min.js"></script>
+	<script src="../../lib/js/ScrollTrigger.min.js"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollToPlugin3.min.js"></script>
+	<script src="../../lib/js/script.js"></script>
+
+	<!-- highlight -->
+    <link rel="stylesheet" href="../../lib/jquery/vs2015.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script> -->
+    <script src="../../lib/jquery/highlight.pack.js"></script>
+    <script src="../../lib/jquery/highlightjs-badge.min.js"></script>
+
+	<!-- scrollbar -->
+    <link rel="stylesheet" href="../../lib/jquery/jquery.scrollbar.css">
+    <script src="../../lib/jquery/jquery.scrollbar.min.js"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../../lib/css/fonts.css">
+	<link rel="stylesheet" href="../../lib/css/common.css">
+	<link rel="stylesheet" href="../../lib/css/style.css">
+</head>
+
+<body>
+    <div id="skipNavi">
+        <a href="#container">본문 바로가기</a>
+    </div>
+
+    <div id="wrap">
+        <!-- container -->
+        <div id="container">
+            <div class="inner">
+                <!-- 미리보기 -->
+                <div class="preview_wrap">
+                    <div class="stage">
+						<div class="slide slide--1" id="slide-1">
+							<div class="col col--1">
+								<div class="col__content col__content--1">
+									<div class="col__content-wrap">
+										<h2 class="col__content-title">Title</h2>
+										<span class="col__content-txt col__content-txt01">subsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsu</span>
+										<em class="col__content-txt col__content-txt02">subsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsu</em>
+									</div>
+								</div>
+							</div>
+							<div class="col col--2">
+								<div class="col__image-wrap">
+									<img class="img img--1" src="https://picsum.photos/1900/1700" />
+								</div>
+							</div>
+						</div>
+
+						<div  class="slide slide--2" id="slide-2">
+							<div class="col col--1">
+								<div class="col__content col__content--2">
+									<div class="col__content-wrap">
+										<h2 class="col__content-title">Title</h2>
+										<span class="col__content-txt col__content-txt01">subsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsu</span>
+										<em class="col__content-txt col__content-txt02">subsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsu</em>
+									</div>
+								</div>
+							</div>
+							<div class="col col--2">
+								<div class="col__image-wrap">
+									<img class="img img--1" src="https://picsum.photos/1700/1800" />
+								</div>
+							</div>
+						</div>
+
+						<div  class="slide slide--3" id="slide-3">
+							<div class="col col--1">
+								<div class="col__content col__content--3">
+									<div class="col__content-wrap">
+										<h2 class="col__content-title">Title</h2>
+										<span class="col__content-txt col__content-txt01">subsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsu</span>
+										<em class="col__content-txt col__content-txt02">subsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsu</em>
+									</div>
+								</div>
+							</div>
+							<div class="col col--2">
+								<div class="col__image-wrap">
+									<img class="img img--1" src="https://picsum.photos/1600/1500" />
+								</div>
+							</div>
+						</div>
+
+						<div  class="slide slide--4" id="slide-4">
+							<div class="col col--1">
+								<div class="col__content col__content--4">
+									<div class="col__content-wrap">
+										<h2 class="col__content-title">Title</h2>
+										<span class="col__content-txt col__content-txt01">subsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsu</span>
+										<em class="col__content-txt col__content-txt02">subsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsu</em>
+									</div>
+								</div>
+							</div>
+							<div class="col col--2">
+								<div class="col__image-wrap">
+									<img class="img img--1" src="https://picsum.photos/1700/1500" />
+								</div>
+							</div>
+						</div>
+
+						<div  class="slide slide--5" id="slide-5">
+							<div class="col col--1">
+								<div class="col__content col__content--5">
+									<div class="col__content-wrap">
+										<h2 class="col__content-title">Title</h2>
+										<span class="col__content-txt col__content-txt01">subsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsu</span>
+										<em class="col__content-txt col__content-txt02">subsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsu</em>
+									</div>
+								</div>
+							</div>
+							<div class="col col--2">
+								<div class="col__image-wrap">
+									<img class="img img--1" src="https://picsum.photos/1800/1600" />
+								</div>
+							</div>
+						</div>
+
+						<div  class="slide slide--6" id="slide-6">
+							<div class="col col--1">
+								<div class="col__content col__content--6">
+									<div class="col__content-wrap">
+										<h2 class="col__content-title">Title</h2>
+										<span class="col__content-txt col__content-txt01">subsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsu</span>
+										<em class="col__content-txt col__content-txt02">subsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsu</em>
+									</div>
+								</div>
+							</div>
+							<div class="col col--2">
+								<div class="col__image-wrap">
+									<img class="img img--1" src="https://picsum.photos/1900/1500" />
+								</div>
+							</div>
+						</div>
+
+						<div  class="slide slide--7" id="slide-7">
+							<div class="col col--1">
+								<div class="col__content col__content--7">
+									<div class="col__content-wrap">
+										<h2 class="col__content-title">Title</h2>
+										<span class="col__content-txt col__content-txt01">subsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsu</span>
+										<em class="col__content-txt col__content-txt02">subsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsu</em>
+									</div>
+								</div>
+							</div>
+							<div class="col col--2">
+								<div class="col__image-wrap">
+									<img class="img img--1" src="https://picsum.photos/1000/1500" />
+								</div>
+							</div>
+						</div>
+					</div>
+                </div>
+                <!-- // 미리보기 -->
+
+                <!-- 코드보기 -->
+                <a href="#코드보기" class="btn_code_view" onclick="layerOpen('.code_layer')">code view</a>
+                <div class="code_layer layer_wrap">
+                    <div class="layer_cont scrollbar-inner">
+                        <a href="#닫기" class="btn_code_close" onclick="layerClose(this)">닫기</a>
+                        <div class="code_wrap">
+
+                            <!-- html -->
+                            <p class="code_title">HTML</p>
+                            <pre><code class="language-xml">
+                                HTML 작성
+                            </code></pre>
+                            <!-- // html -->
+
+                            <!-- css -->
+                            <p class="code_title">CSS</p>
+                            <pre><code class="language-css">
+                                CSS 작성
+                            </code></pre>
+                            <!-- // css -->
+
+                            <!-- script -->
+                            <p class="code_title">SCRIPT</p>
+                            <pre><code class="language-javascript">
+                                SCRIPT 작성
+                            </code></pre>
+                            <!-- // script -->
+
+                            <!-- 참고 -->
+                            <p class="code_title">참고</p>
+                            <pre><code class="language-xml">
+                                참고내용 작성
+                            </code></pre>
+                            <!-- // 참고 -->
+
+                        </div>
+                    </div>
+                </div>
+                <!-- // 코드보기 -->
+            </div>
+        </div>
+        <!-- // container -->
+    </div>
+    <!-- // wrap -->
+	<script>
+		$(function () {
+			gsap.registerPlugin(ScrollTrigger);
+
+			select = e => document.querySelector(e);
+			selectAll = e => document.querySelectorAll(e);
+
+			const stage = select('.stage');
+			const slides = selectAll(".slide");
+			let slideID = 0;
+
+			function initSlides() {
+				slides.forEach((slide, i) => {
+					let tl = gsap.timeline({
+						scrollTrigger: {
+							trigger: slide,
+							start: "40% 50%",
+						}
+					});
+
+					tl.from(slide.querySelectorAll('.col__content-title'), {
+						ease: "power4",
+						y: 50,
+						opacity: 0,
+						duration: 1,
+					})
+					.from(slide.querySelectorAll('.col__content-txt'), {
+						y: 50,
+						opacity: 0,
+						duration: 1,
+						ease: "power4"
+					}, 0.5)
+
+				});
+			}
+			function initParallax() {
+
+				slides.forEach((slide, i) => {
+					let imageWrappers = slide.querySelectorAll('.col__image-wrap');
+
+					gsap.fromTo(imageWrappers, {
+						y: "-40vh"
+					},{
+						y: "40vh",
+						scrollTrigger: {
+							trigger: slide,
+							scrub: true,
+							start: "top bottom",
+						},
+						ease: 'none'
+					})
+				});
+			}
+			function init() {
+				initSlides();
+				initParallax();
+			}
+
+			init();
+
+		});
+	</script>
+</body>
+</html>

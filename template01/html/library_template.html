@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>디자인랩 퍼블리싱 라이브러리</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+
+	<!-- JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../lib/js/script.js"></script>
+
+	<!-- highlight -->
+    <link rel="stylesheet" href="../lib/jquery/github.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script> -->
+    <script src="../lib/jquery/highlight.pack.js"></script>
+    <script src="../lib/jquery/highlightjs-badge.min.js"></script>
+
+	<!-- scrollbar -->
+    <link rel="stylesheet" href="../lib/jquery/jquery.scrollbar.css">
+    <script src="../lib/jquery/jquery.scrollbar.min.js"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../lib/css/fonts.css">
+	<link rel="stylesheet" href="../lib/css/common.css">
+	<link rel="stylesheet" href="../lib/css/style.css">
+</head>
+
+<body>
+<div id="wrap">
+
+    <!-- header -->
+    <header>
+        <div class="inner">
+            <h1>
+                <a class="logo" href="index.html">디자인랩</a>
+            </h1>
+
+            <a href="#메뉴버튼" class="btn_nav"><span>메뉴버튼</span></a>
+            <ul class="nav_wrap">
+                <li class="nav_depth1">
+                    <a href="index.html">
+                        <span>기본환경</span>
+                    </a>
+                </li>
+                <!-- // 가이드 요약 -->
+
+                <li class="nav_depth1">
+                    <a href="#표준규칙">
+                        <span>표준규칙</span>
+                        <span class="icon_arrow"></span>
+                    </a>
+                    <div class="nav_depth2">
+                        <div>
+                            <a href="guide_naming.html">네임 규칙</a>
+                            <a href="guide_html_code.html">HTML 작성규칙</a>
+                            <a href="guide_css_code.html">CSS 작성규칙</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- // 파일 작성 규칙 -->
+
+                <li class="nav_depth1 on active">
+                    <a href="#라이브러리">
+                        <span>라이브러리</span>
+                        <span class="icon_arrow"></span>
+                    </a>
+                    <div class="nav_depth2">
+                        <div>
+                            <a href="library_member.html" class="on">Members</a>
+                            <a href="library_form.html">Forme</a>
+                            <a href="library_form.html">template</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- // 라이브러리 -->
+            </ul>
+            <div class="nav_bg"></div>
+
+            <div class="text_version">가이드 초안 수정중<br>v.0</div>
+        </div>
+    </header>
+    <!-- // header -->
+
+    <!-- container -->
+    <div id="container">
+        <!-- contents -->
+        <div class="contents">
+            <h2 class="page_title">회원 라이브러리</h2>
+            <div class="library_wrap">
+                <div class="list_area scrollbar-inner">
+                    <ul> <!-- data-link="파일명" data-cate="폴더명" -->
+                        <li data-link="templateType1" data-cate="template" class="list_item current"><a href="#template Type1">template Type1</a></li>
+                        <li data-link="templateType2" data-cate="template" class="list_item"><a href="#template Type2">template Type2</a></li>
+                        <li data-link="templateType3" data-cate="template" class="list_item"><a href="#template Type3">template Type3</a></li>
+                    </ul>
+                </div>
+
+                <div class="preview_area">
+                    <div class="view_box">
+                        <iframe src="" frameborder="0" class="view_iframe"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // Contents -->
+        <footer>
+            <p class="copyright">Copyright © Pentachord 2021</p>
+        </footer>
+        <!-- // footer -->
+    </div>
+    <!-- // container -->
+
+</div>
+
+<script>
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>디자인랩 퍼블리싱 라이브러리</title>
+
+	<!-- favicon -->
+	<!-- <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico"> -->
+
+	<!-- JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../../lib/js/gsap.min.js"></script>
+	<script src="../../lib/js/ScrollTrigger.min.js"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollToPlugin3.min.js"></script>
+	<script src="../../lib/js/script.js"></script>
+
+	<!-- highlight -->
+    <link rel="stylesheet" href="../../lib/jquery/vs2015.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script> -->
+    <script src="../../lib/jquery/highlight.pack.js"></script>
+    <script src="../../lib/jquery/highlightjs-badge.min.js"></script>
+
+	<!-- scrollbar -->
+    <link rel="stylesheet" href="../../lib/jquery/jquery.scrollbar.css">
+    <script src="../../lib/jquery/jquery.scrollbar.min.js"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../../lib/css/fonts.css">
+	<link rel="stylesheet" href="../../lib/css/common.css">
+	<link rel="stylesheet" href="../../lib/css/style.css">
+</head>
+
+<body>
+    <div id="skipNavi">
+        <a href="#container">본문 바로가기</a>
+    </div>
+
+    <div id="wrap">
+        <!-- container -->
+        <div id="container">
+            <div class="inner">
+                <!-- 미리보기 -->
+                <div class="preview_wrap">
+                    <div class="panel">
+                    	<div class="img-section">
+							<div class="img-section-inner">
+								<strong>What is Lorem Ipsum?</strong>
+								<p><em>porro</em> <a href="https://www.chosun.com/people/kim-seungbeom/">Neque</a>·<a href="https://www.chosun.com/people/kim-sungmo/">porro</a> porro<br class="screen-only-m">  <em>porro</em>Neque porro quisquam</p>
+							</div>
+						</div>
+
+						<div class="txt-section" >
+
+							<p class="sub-info">
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							</p>
+
+							<strong class="panel-main-title">Where can I get some?</strong>
+
+							<div class="panel-group-wrap">
+								<div class="panel-group" onclick="menuToggle(this);">
+									<div class="panel-secondary">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												What is Lorem Ipsum?
+											</h4>
+										</div>
+										<div class="panel-collapse">
+											<div class="panel-body">
+												<p>
+													Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+												</p>
+												<a class="more" href="#!"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="panel-group" onclick="menuToggle(this);">
+									<div class="panel-secondary">
+										<div class="panel-heading" >
+											<h4 class="panel-title">
+												Why do we use it?
+											</h4>
+										</div>
+										<div class="panel-collapse">
+											<div class="panel-body">
+												<p>
+													It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+												</p>
+												<a class="more" href="#!"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="panel-group" onclick="menuToggle(this);">
+									<div class="panel-secondary">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												Where does it come from?
+											</h4>
+										</div>
+										<div class="panel-collapse">
+											<div class="panel-body">
+												<p>
+													Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+												</p>
+												<a class="more" href="#!"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>
+                </div>
+                <!-- // 미리보기 -->
+
+                <!-- 코드보기 -->
+                <a href="#코드보기" class="btn_code_view" onclick="layerOpen('.code_layer')">code view</a>
+                <div class="code_layer layer_wrap">
+                    <div class="layer_cont scrollbar-inner">
+                        <a href="#닫기" class="btn_code_close" onclick="layerClose(this)">닫기</a>
+                        <div class="code_wrap">
+
+                            <!-- html -->
+                            <p class="code_title">HTML</p>
+                            <pre><code class="language-xml">
+                                HTML 작성
+                            </code></pre>
+                            <!-- // html -->
+
+                            <!-- css -->
+                            <p class="code_title">CSS</p>
+                            <pre><code class="language-css">
+                                CSS 작성
+                            </code></pre>
+                            <!-- // css -->
+
+                            <!-- script -->
+                            <p class="code_title">SCRIPT</p>
+                            <pre><code class="language-javascript">
+                                SCRIPT 작성
+                            </code></pre>
+                            <!-- // script -->
+
+                            <!-- 참고 -->
+                            <p class="code_title">참고</p>
+                            <pre><code class="language-xml">
+                                참고내용 작성
+                            </code></pre>
+                            <!-- // 참고 -->
+
+                        </div>
+                    </div>
+                </div>
+                <!-- // 코드보기 -->
+            </div>
+        </div>
+        <!-- // container -->
+    </div>
+    <!-- // wrap -->
+	<script>
+		function menuToggle(btn){
+			$(btn).parents('.panel-group-wrap').siblings('.panel-group-wrap').children('.panel-group').removeClass('active');
+			$(btn).siblings('.panel-group').removeClass('active');
+			$(btn).toggleClass('active');
+		};
+	</script>
+</body>
+</html>

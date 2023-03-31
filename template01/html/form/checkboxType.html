@@ -5,10 +5,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
 	<meta name="format-detection" content="telephone=no, address=no, email=no">
-	<title>펜타코드 퍼블리싱 라이브러리</title>
+	<title>디자인랩 퍼블리싱 라이브러리</title>
 
 	<!-- favicon -->
-	<link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+	<!-- <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico"> -->
 
 	<!-- JS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -30,12 +30,12 @@
 	<link rel="stylesheet" href="../../lib/css/common.css">
 	<link rel="stylesheet" href="../../lib/css/style.css">
 </head>
- 
+
 <body>
     <div id="skipNavi">
         <a href="#container">본문 바로가기</a>
     </div>
- 
+
     <div id="wrap">
         <!-- container -->
         <div id="container">
@@ -58,7 +58,7 @@
                             <label for="checkbox03">checkbox</label>
                         </div>
                     </div>
-                    
+
                     <h4 class="card_body_title">버튼형 체크박스</h4>
                     <div class="preview_wrap">
                         <div class="check_btn_style mr10 mb10">
@@ -78,7 +78,7 @@
                             <label for="checkbox07"><span>선택4</span></label>
                         </div>
                     </div>
-                    
+
                     <h4 class="card_body_title">토글형 체크박스</h4>
                     <div class="preview_wrap">
                         <div class="check_toggle_style mr10 mb10">
@@ -104,7 +104,7 @@
                     <div class="layer_cont scrollbar-inner">
                         <a href="#닫기" class="btn_code_close" onclick="layerClose(this)">닫기</a>
                         <div class="code_wrap">
-                        
+
                             <!-- html -->
                             <p class="code_title">HTML</p>
                             <pre><code class="language-xml">&lt;!-- 기본 체크박스 --&gt;
@@ -119,7 +119,7 @@
     .check_style input[type='checkbox']:disabled + label::before {border: 1px solid #ddd;}
     .check_style input[type='checkbox']:disabled + label::after {display: block; background: #ddd;}
     &lt;/style&gt;
-                                
+
     &lt;div class=&quot;check_style&quot;&gt;
         &lt;input type=&quot;checkbox&quot; id=&quot;checkbox&quot; /&gt;
         &lt;label for=&quot;checkbox&quot;&gt;checkbox&lt;/label&gt;
@@ -135,7 +135,7 @@
     .check_btn_style input[type='checkbox']:checked + label {color: #fff; background: #4e73de; border-color: #4e73de;}
     .check_btn_style input[type='checkbox']:disabled + label {color: #fff; background: #ddd; border-color: #ddd; cursor: default;}
     &lt;/style&gt;
-                                                        
+
     &lt;div class=&quot;check_btn_style mr10&quot;&gt;
         &lt;input type=&quot;checkbox&quot; id=&quot;checkbox&quot; checked /&gt;
         &lt;label for=&quot;checkbox&quot;&gt;&lt;span&gt;선택&lt;/span&gt;&lt;/label&gt;
@@ -152,7 +152,7 @@
     .check_toggle_style input[type='checkbox']:checked + label:after {-webkit-transform: translateX(30px); transform: translateX(30px); /* 60px(label) - 22px(toggle) - 8px(toggle 좌+우 위치) */}
     .check_toggle_style input[type='checkbox']:disabled + label {background: #ddd; cursor: default;}
     &lt;/style&gt;
-                                                        
+
     &lt;div class=&quot;check_toggle_style mr10&quot;&gt;
         &lt;input type=&quot;checkbox&quot; id=&quot;checkbox&quot; /&gt;
         &lt;label for=&quot;checkbox&quot;&gt;&lt;/label&gt;
@@ -180,7 +180,7 @@
                                 참고내용 작성
                             </code></pre>
                             <!-- // 참고 -->
-                            
+
                         </div>
                     </div>
                 </div>

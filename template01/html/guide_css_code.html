@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
 	<meta name="format-detection" content="telephone=no, address=no, email=no">
-	<title>펜타코드 퍼블리싱 라이브러리</title>
+	<title>디자인랩 퍼블리싱 라이브러리</title>
 
 	<!-- favicon -->
 	<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
@@ -33,12 +33,12 @@
 
 <body>
 <div id="wrap">
-    
+
     <!-- header -->
     <header>
         <div class="inner">
             <h1>
-                <a class="logo" href="index.html">PENTACHORD</a>
+                <a class="logo" href="index.html">디자인랩</a>
             </h1>
 
             <a href="#메뉴버튼" class="btn_nav"><span>메뉴버튼</span></a>
@@ -55,7 +55,7 @@
                         <span class="icon_arrow"></span>
                     </a>
                     <div class="nav_depth2">
-                        <div> 
+                        <div>
                             <a href="guide_naming.html">네임 규칙</a>
                             <a href="guide_html_code.html">HTML 작성규칙</a>
                             <a href="guide_css_code.html" class="on">CSS 작성규칙</a>
@@ -69,9 +69,10 @@
                         <span class="icon_arrow"></span>
                     </a>
                     <div class="nav_depth2">
-                        <div> 
+                        <div>
                             <a href="library_member.html">Members</a>
                             <a href="library_form.html">Forme</a>
+							<a href="library_template.html">template</a>
                         </div>
                     </div>
                 </li>
@@ -107,14 +108,14 @@
 
 /* 잘못된 예 */
 .contents {
-    display: block; 
-    width: 100%; 
-    padding: 0 20px; 
+    display: block;
+    width: 100%;
+    padding: 0 20px;
     background: #fff;
 }
                         </code></pre>
                     </div>
-                    
+
                     <h4 class="card_body_title">세미콜론</h4>
                     <ul class="text_list">
                         <li>마지막 선언된 속성에도 세미콜론(;)을 사용한다.</li>
@@ -127,7 +128,7 @@
 .contents {display: block; width: 100%; padding: 0 20px; background: #fff}
                         </code></pre>
                     </div>
-                    
+
                     <h4 class="card_body_title">선택자</h4>
                     <ul class="text_list">
                         <li>'*' 공통 선택자는 웹 페이지의 성능을 저하를 가져오기 때문에 가급적 사용하지 않는다.</li>
@@ -137,7 +138,7 @@
 * {margin: 0; padding: 0;}
                         </code></pre>
                     </div>
-                    
+
                     <h4 class="card_body_title">주석</h4>
                     <ul class="text_list">
                         <li>주석 사용시 날짜, 설명을 정확히 작성한다. (예: YYYY.MM.DD 이미지 추가)</li>
@@ -231,7 +232,7 @@
 /* ********************************************************************************* *
     * 01) Reset
     * ********************************************************************************* */
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
     v2.0 | 20110126
     License: none (public domain)
 */
@@ -244,13 +245,13 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {display: block;}
 body {line-height: 1;}
 ol, ul {list-style: none;}
@@ -283,7 +284,7 @@ a {text-decoration: none;}
 
 /* Float */
 .clearfix {*zoom: 1;}
-.clearfix:before, 
+.clearfix:before,
 .clearfix:after {display: block; content: ""; line-height: 0;}
 .clearfix:after {clear: both;}
 .float_left {float: left !important;}
@@ -312,20 +313,20 @@ a {text-decoration: none;}
 .ellipsis3 {display: -webkit-box; text-overflow: ellipsis; -webkit-line-clamp: 3; overflow: hidden;}
 
 /* Form */
-input[type='text'], 
-input[type='search'], 
-input[type='password'], 
-input[type='file'], 
-input[type='submit'], 
-input[type='image'], 
+input[type='text'],
+input[type='search'],
+input[type='password'],
+input[type='file'],
+input[type='submit'],
+input[type='image'],
 input[type='button'] {-webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 0; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
-input::-webkit-input-placeholder, 
+input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {color: #999;}
-input:-ms-input-placeholder, 
+input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {color: #999;}
-input::-ms-input-placeholder, 
+input::-ms-input-placeholder,
 textarea::-ms-input-placeholder {color: #999;}
-input::placeholder, 
+input::placeholder,
 textarea::placeholder {color: #999;}
 
 select {-webkit-appearance: none; -moz-appearance: none; appearance: none;}
@@ -358,8 +359,8 @@ legend, caption {position: absolute; top: -9999px; left: -9999px; z-index: -1;}
 /* Skip Navi */
 #skipNavi {position: absolute; top: 0; left: 0; width: 100%; z-index: 500;}
 #skipNavi a {display: block; position: absolute; top: -9999px;}
-#skipNavi a:hover, 
-#skipNavi a:active, 
+#skipNavi a:hover,
+#skipNavi a:active,
 #skipNavi a:focus {display: block; top: 0; width: 100%; padding: 10px 0; color: #000; font-size: 16px; text-align: center; background: #fafafa; border: 2px solid #666;}
 
 
@@ -562,7 +563,7 @@ legend, caption {position: absolute; top: -9999px; left: -9999px; z-index: -1;}
 .wd200 {width: 200px !important;}
 .wd250 {width: 250px !important;}
 .wd300 {width: 300px !important;}
-                            
+
                         </code></pre>
                     </div>
                 </div>
@@ -573,7 +574,7 @@ legend, caption {position: absolute; top: -9999px; left: -9999px; z-index: -1;}
 
         <!-- footer -->
         <footer>
-            <p class="copyright">Copyright © Pentachord 2021</p>
+            <p class="copyright">Copyright 조선일보 All rights reserved.</p>
         </footer>
         <!-- // footer -->
     </div>

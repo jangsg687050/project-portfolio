@@ -1,0 +1,37 @@
+{
+    "status": "D",
+    "_id": "designlab_2022011200001",
+    "site": "designlab",
+    "category_code": "/yearEndTax",
+    "category_name": "티끌모아 연말정산 Q&A",
+    "category_path": "경제",
+    "title": "티끌모아 연말정산 Q&A",
+    "sub_title": "꿀꿀이가 알려주는 티끌모아 연말정산 Q&A",
+    "body": "직장인들 사이에서 ‘13월의 월급’이라고 불리는 연말정산 시즌이 돌아왔습니다. 15일 국세청 홈페이지인 홈택스에서 연말정산 간소화 서비스가 개통된다고 해요. 작년 한해 월급에서 빠져나간 세금과 소득공제 혜택을 따져 최종 결정된 세금을 비교해 미리 낸 세금이 많으면 2월 월급날 돈을 더 받게 되죠. 반대로 덜 낸 세금이 있으면 세금을 더 내야 합니다. 국세청 원천세과 직원들의 도움을 받아 연말정산을 둘러싼 궁금증을 질의‧응답 형태로 정리해봤어요.",   
+    "authors": [
+        {
+            "name": "정석우",
+            "email": "swjung@chosun.com"
+        }
+    ],
+    "keyword": ["연말","연말정산","세금","국세청","간소화"],
+    "media": {
+        "flag": false
+    },
+    "image": {
+        "presen_thumb_url": "https://designlab.chosun.com/202201/yearEndTax/user/images/thum_ch.png",
+        "thumb_url": "https://designlab.chosun.com/202201/yearEndTax/user/images/thum_ch.png",
+        "image_url": "https://designlab.chosun.com/202201/yearEndTax/user/images/thum_ch.png",
+        "caption": [
+            "꿀꿀이가 알려주는 티끌모아 연말정산 Q&A"
+        ]
+    },
+    "paper" : {
+        "flag" : false
+    },
+    "voice" : false,
+    "regdate": "2022-01-12T15:00:00+09:00",
+    "update": "2022-01-12T15:00:00+09:00",
+    "url": "https://designlab.chosun.com/202201/yearEndTax/user/html/index.html"
+}
+

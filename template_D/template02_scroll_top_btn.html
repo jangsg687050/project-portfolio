@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>template02</title>
+
+
+ <!-- CSS Files -->
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/fonts.css" />
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/swiper.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
+<!--JS Files -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+
+
+</head>
+
+<body>
+<!-- header start -->
+<header id="pub_header">
+	
+</header>
+
+<!-- sub start -->
+
+
+
+<!--여기서부터 content-->
+<div class="sub-content-wrap">
+	<div class="sub-content">
+		<div style="height: 1600px; width: 100%; background: #eee;" ></div>
+	</div>
+</div>
+
+	<script>
+	//탑버튼
+	function moveTop(){
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 200) {
+				$('#footer .btn-top').fadeIn();
+			} else {
+				$('#footer .btn-top').fadeOut();
+			}
+		});
+		$('#footer .btn-top').click(function() {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 500);
+		});
+	};
+</script>
+<script>
+	$(function(){
+	//탑버튼
+	moveTop();
+	});
+</script>
+<!--//여기까지 content-->
+
+<!--//sub start -->
+
+<!-- footer start -->
+<footer id="footer">
+    <a href="javascript:;" class="btn-top" style="display: inline;">상단으로</a>
+
+</footer>
+
+</body>
+
+
+
+</html>
