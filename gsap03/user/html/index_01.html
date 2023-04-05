@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<!--썸네일-->
+	<!-- <meta property="og:url" content="https://designlab.chosun.com/202111/mobility/user/html/index.html"/>
+	<meta property="og:title" content="모빌리티 혁명(Mobility Revolution)">
+	<meta property="og:description" content="우리가 타고 있는 자동차는 앞으로 어떻게 바뀌게 될까요?">
+	<meta property="og:image" content="https://designlab.chosun.com/202111/mobility/user/images/thum.jpg?ver=20211203.24"> -->
+	<!--캐시삭제-->
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+	<meta http-equiv="Expires" content="-1"/>
+	<meta http-equiv="Pragma" content="no-cache"/>
+	<meta http-equiv="Expires" content="Mon, 06 Jan 1990 00:00:01 GMT">
+	<title>타이틀</title>
+	<!--header meta-->
+	<meta name="referrer" content="no-referrer-when-downgrade"/>
+	<!-- Google Tag Manager -->
+	<script>
+	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-WNX23JV');
+	</script>
+	<!-- End Google Tag Manager -->
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/user/images/favicon.ico">
+    <!-- CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://codepen.io/GreenSock/pen/7ba936b34824fefdccfe2c6d9f0b740b.css">
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://s.electerious.com/basicScroll/dist/basicScroll.min.js"></script>
+
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One');
+
+*{
+  box-sizing: border-box;
+}
+
+body, html{
+    margin: 0;
+    height: 100%;
+}
+
+.wrapper{
+    background-color: #343434;
+}
+
+.scroll-parallax{
+    overflow: hidden;
+}
+
+.text{
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  position: relative;
+  min-height: 100vh;
+}
+
+.text-inner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1em;
+  width: 100%;
+}
+
+.text-inner a{
+  color: #29cccc;
+}
+
+.text-inner div{
+  font-size: 34px;
+  padding: 20px 0;
+}
+
+.text-inner div:last-child{
+  font-size: 24px;
+}
+
+.scroll-parallax-text{
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  padding-top: 50px;
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+  z-index: 101;
+  font-family: 'Bowlby One', cursive;
+}
+</style>
+<body>
+	 <div class="wrapper">
+  <div class="scroll-parallax">
+    <div class="scroll-parallax-text">Scroll down</div>
+  </div>
+   <div class="text">
+     <div class="text-inner">
+     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ante metus, pharetra at quam at, rhoncus tincidunt dui. Nunc a tellus id magna efficitur dignissim. Integer pulvinar elementum augue vitae sollicitudin. Fusce lobortis vulputate nunc. Ut eros purus, pellentesque vel turpis sit amet, blandit pretium risus. Curabitur iaculis lectus eget enim dictum tincidunt. Aliquam consequat augue at dui hendrerit posuere. Pellentesque gravida euismod molestie. Duis tincidunt maximus tortor, eget faucibus felis eleifend a. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed consequat diam non ultrices finibus. Nam malesuada ligula id sem tristique dapibus. Pellentesque felis dolor, vehicula eu facilisis vel, ultricies tincidunt leo. Duis rhoncus suscipit pharetra. Aenean elementum elit rhoncus libero consequat, eu lobortis felis egestas. Nullam accumsan nec nisl eget molestie.
+
+Ut gravida erat ut feugiat dapibus. Proin sit amet placerat elit. Fusce imperdiet fringilla nisi ut tempor. Praesent hendrerit nibh et lacus lacinia, eget accumsan tellus venenatis. Nunc dolor libero, bibendum ut ante at, ornare ornare diam. Mauris ante nisl, feugiat quis orci eu, dignissim ultrices elit. Aliquam viverra risus malesuada velit facilisis, et mattis neque interdum. Phasellus ac augue at ipsum mattis dictum interdum at augue. Aenean at maximus orci. Proin sollicitudin sit amet est non fermentum.
+
+Quisque egestas ligula id velit euismod pellentesque. Aliquam ullamcorper et arcu dictum molestie. Donec condimentum nisi in pharetra porta. Pellentesque molestie gravida diam, in vulputate enim placerat non. Maecenas tempus varius posuere. Aliquam id malesuada sem. Phasellus id est vel eros efficitur varius eget sit amet nunc. Sed non tincidunt massa. Suspendisse cursus purus eget lorem bibendum gravida. Proin efficitur maximus ligula, a fringilla est. Nullam rutrum, lacus in blandit rhoncus, quam enim imperdiet ipsum, at laoreet justo orci vitae turpis. Sed pellentesque sem nec magna feugiat, eget euismod mauris laoreet. Donec quis turpis nec lorem rutrum condimentum. Nam pellentesque ipsum at scelerisque suscipit.
+
+Pellentesque egestas luctus diam vitae tempus. Vestibulum placerat, nunc eu sodales porttitor, orci augue luctus massa, sit amet posuere neque lectus porttitor eros. Nullam eu ante id nulla tincidunt tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean nulla nunc, sodales et nulla id, gravida condimentum neque. Proin tincidunt eros sit amet neque rutrum scelerisque at sed lectus. Fusce sit amet imperdiet turpis, eu vehicula justo. Duis porta tempus orci, quis feugiat libero mollis a. Nam ac pretium ipsum, in ullamcorper lorem. Morbi dolor arcu, viverra non orci nec, dignissim placerat mi. Ut in massa ut dolor vestibulum pulvinar at eu justo. Sed nisi magna, eleifend et suscipit at, efficitur id mi. Praesent congue ante ut nunc ornare mattis.
+
+Etiam eget lorem id mi finibus accumsan et at ipsum. Nunc feugiat risus rhoncus, tincidunt erat ac, tincidunt eros. Integer tempus nisi eu elit tristique, et varius massa pulvinar. Morbi consequat justo semper consequat ornare. Aliquam sapien ipsum, imperdiet vel tortor a, pellentesque volutpat nibh. Duis congue ligula vel neque dignissim pharetra. Quisque faucibus mattis nulla in rutrum. Fusce finibus facilisis aliquet. Vivamus maximus sapien purus.
+     </div>
+   </div>
+</div>
+    <!-- // wrap -->
+	<script>
+;(function(){
+    window.ScrollParallax = function(options){
+        this.options = options.styles || false;
+        this.commonStyles = options && options.commonStyles ? options.commonStyles : false;
+        this.container = options && options.container ? document.querySelector(options.container) : null;
+        this.items = options && options.items ? options.items : [];
+        this.itemsDom = [];
+
+        this.bindStyles = function(item, styles){
+            if(!item || !styles) return false;
+            for(var style in styles){
+                item.style[style] = styles[style];
+            }
+        };
+
+        this.createItem = function(item){
+            var tag = item.tag || 'div',
+                element = document.createElement(tag);
+            if(item.className) element.setAttribute('class', item.className);
+            this.bindStyles(element, this.commonStyles);
+            this.bindStyles(element, item.styles);
+            this.itemsDom.push(element);
+            return element;
+        };
+
+        this.build = function(){
+            var items = this.items,
+                container = this.container,
+                self = this;
+            self.bindStyles(container, self.options);
+            if(!items.length) return false;
+            items.forEach(function(item, index){
+                item.index = index;
+                container.appendChild(self.createItem(item));
+            });
+        };
+
+        this.addScrollEvent = function(){
+            var container = this.container,
+                itemsDom = this.itemsDom,
+                items = this.items;
+            window.addEventListener('scroll', function(event){
+                var windowTop = this.pageYOffset,
+                    containerTop = container.offsetTop;
+                if(windowTop >= containerTop){
+                    itemsDom.forEach(function(element, index){
+                        var deep = items[index].deep,
+                            inverst = items[index].inverst;
+                        if(deep){
+                            var transition = (windowTop - containerTop) / deep;
+                            if(inverst) transition = transition * -1;
+                            element.style.transform = 'translateY('+ transition +'px)';
+                            element.style.webkitTransform = 'translateY('+ transition +'px)';
+                        }
+                    });
+                }
+            });
+        };
+
+        this.init = function(){
+            if(!this.container) return false;
+            this.build();
+            this.addScrollEvent();
+        };
+
+        this.init();
+
+    };
+})();
+
+new ScrollParallax({
+    container: '.scroll-parallax',
+    styles: {
+        height: window.innerWidth+'px',
+        position: 'relative'
+    },
+    commonStyles: {
+        top: 0,
+        left: 0,
+        position: 'absolute',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center bottom',
+        backgroundRepeat: 'no-repeat',
+        height: '100%',
+        width: '100%'
+    },
+    items: [{
+        deep: 8,
+        tag: 'div',
+        className: 'first-layout',
+        styles: {
+            zIndex: 6,
+            backgroundImage: 'url(https://raw.githubusercontent.com/EugeneBurlak/assets/master/scroll-parallax/bridge.png)'
+        }
+    },{
+        deep: 5,
+        tag: 'div',
+        className: 'second-layout',
+        styles: {
+            zIndex: 5,
+            backgroundImage: 'url(https://raw.githubusercontent.com/EugeneBurlak/assets/master/scroll-parallax/forest.png)'
+        }
+    },{
+        deep: 2,
+        tag: 'div',
+        className: 'third-layout',
+        styles: {
+            zIndex: 4,
+            backgroundImage: 'url(https://raw.githubusercontent.com/EugeneBurlak/assets/master/scroll-parallax/clouds.png)'
+        }
+    },{
+        deep: 2.5,
+        tag: 'div',
+        className: 'four-layout',
+        styles: {
+            zIndex: 3,
+            backgroundImage: 'url(https://raw.githubusercontent.com/EugeneBurlak/assets/master/scroll-parallax/mountain.png)'
+        }
+    },{
+        deep: 2,
+        tag: 'div',
+        className: 'five-layout',
+        styles: {
+            zIndex: 2,
+            backgroundImage: 'url(https://raw.githubusercontent.com/EugeneBurlak/assets/master/scroll-parallax/clouds4.png)'
+        }
+    },{
+        deep: 7,
+        tag: 'div',
+        className: 'seven-layout',
+        styles: {
+            zIndex: 1,
+            backgroundImage: 'url(https://raw.githubusercontent.com/EugeneBurlak/assets/master/scroll-parallax/clouds5.png)'
+        }
+    }]
+})
+
+
+	</script>
+</body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNX23JV"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</html>

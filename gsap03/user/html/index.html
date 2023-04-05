@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<!--썸네일-->
+	<!-- <meta property="og:url" content="https://designlab.chosun.com/202111/mobility/user/html/index.html"/>
+	<meta property="og:title" content="모빌리티 혁명(Mobility Revolution)">
+	<meta property="og:description" content="우리가 타고 있는 자동차는 앞으로 어떻게 바뀌게 될까요?">
+	<meta property="og:image" content="https://designlab.chosun.com/202111/mobility/user/images/thum.jpg?ver=20211203.24"> -->
+	<!--캐시삭제-->
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+	<meta http-equiv="Expires" content="-1"/>
+	<meta http-equiv="Pragma" content="no-cache"/>
+	<meta http-equiv="Expires" content="Mon, 06 Jan 1990 00:00:01 GMT">
+	<title>타이틀</title>
+	<!--header meta-->
+	<meta name="referrer" content="no-referrer-when-downgrade"/>
+	<!-- Google Tag Manager -->
+	<script>
+	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-WNX23JV');
+	</script>
+	<!-- End Google Tag Manager -->
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/user/images/favicon.ico">
+    <!-- CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://codepen.io/GreenSock/pen/7ba936b34824fefdccfe2c6d9f0b740b.css">
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://s.electerious.com/basicScroll/dist/basicScroll.min.js"></script>
+
+</head>
+
+<style>
+	.scene {
+	position: absolute;
+	width: 100%;
+	transform: translateY(var(--translateY));
+	will-change: transform;
+}
+</style>
+<body>
+
+            <img class="scene" data-modifier="30" src="https://s.electerious.com/parallaxscene/p0.png">
+<img class="scene" data-modifier="18" src="https://s.electerious.com/parallaxscene/p1.png">
+<img class="scene" data-modifier="12" src="https://s.electerious.com/parallaxscene/p2.png">
+<img class="scene" data-modifier="8" src="https://s.electerious.com/parallaxscene/p3.png">
+<img class="scene" data-modifier="6" src="https://s.electerious.com/parallaxscene/p4.png">
+<img class="scene" data-modifier="0" src="https://s.electerious.com/parallaxscene/p6.png">
+
+    <!-- // wrap -->
+	<script>
+		// More information about this technique/pen:
+// https://medium.com/@electerious/parallax-scrolling-with-js-controlled-css-variables-63cfe96820c7#.o1kkd4cte
+
+document.querySelectorAll('.scene').forEach((elem) => {
+
+	const modifier = elem.getAttribute('data-modifier')
+
+	basicScroll.create({
+		elem: elem,
+		from: 0,
+		to: 519,
+		direct: true,
+		props: {
+			'--translateY': {
+				from: '0',
+				to: `${ 10 * modifier }px`
+			}
+		}
+	}).start()
+
+})
+	</script>
+</body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNX23JV"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</html>
